@@ -24,6 +24,7 @@
 ;; (package-install 'use-package)
 ;; (require 'use-package)
 ;; Install dependencies
+(package-install 'org)
 (package-install 'find-lisp)
 (package-install 'ox-hugo)
 ;; Load the publishing system
