@@ -1,0 +1,25 @@
++++
+title = "Archery Machine"
+author = ["System Administrator"]
+tags = ["machine", "Archery"]
+draft = false
++++
+
+## Principles {#principles}
+
+
+### Field {#field}
+
+
+#### Weather {#weather}
+
+<!--list-separator-->
+
+-  Rain Cloud <span class="tag"><span class="unchecked">unchecked</span></span>
+
+    When it start to rain, look at the clouds:
+
+    -   Look heavy and dark
+        It's going to rain heavily after a while ==&gt; Run Fast
+    -   Not little, but thin
+        The rain would be minor and stop soon ==&gt; Stay and Watch

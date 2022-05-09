@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       DC5167CD-BFBC-4DE3-8B89-7E1ABFCA6433
+:END:
+#+title: SQL
+#+HUGO_SECTION:main
+Database Language for [[id:8BAE149F-6FC2-4818-8C7D-AC33277422D2][Relational Database]]
+* Use Emacs
+* SQL Background
+SQL == Structured Query Language
+keywords ==> not case-sensitive
+names ==> case sensitive
+end with ~;~
+** 2 Parts
++ Data Definition Language
+  + Create tables & their constraints
+  + Changing columns/constraints
+  + Tuples Adding/Updating/Remoing
++ Data Manipulation Language
+** Hierarchy of database containment
++ Computer
+  + Cluster 1
+    a database server
+    + Catalog 1
+      just database
+      + Schema 1
+        namespace of table.
+        [tables, views, domains, assertions, collations, translation, character sets]
+        same owner
+      + Schema 2
+    + Catalog 2
+  + Cluster 2
+** SQL DB and Related Softwares
+DBMS is an application. Usually runs on a server ~MySQL server~
+Different client Applications access this server the same time.[fn:1]
+* ~SELECT~ Command
+#+begin_src sql
+  select * from table-name
+         where predicate;
+  -- the predicate is like conditions in if and where statement in python
+#+end_src
+** Predicates
+warning: *Include all specifications.*
+** Select XX
+can put boolean expression after ~XX~
+** From multiple tables
+==> [[id:FEF31CA5-A17D-4A38-B97B-61B322CF6F8D][Cartesian Product]]
+** Alias
+*** Self join
+Consider the situation:
+ find all staff same department as andy.
+ Without alias and 1 table, 2 selects have to be performed
+ With alias, and a copy of the table, 1 select is needed.
+* Creating Tables
+=varchar= for strings.
+=not null= to have no =NULL= in this column
+#+begin_src sql
+create table `teachers`
+  (
+      `id` int, -- we will add primary key later. NOT NULL and UNIQUE is not needed.
+      `name` varchar(200) not null,
+      `tel_no` varchar(40),  -- not using INT here as we have numbers like +44
+      `office` varchar(15) not null
+  );
+  
+  
+#+end_src
+** CreateSchema
+#+begin_src sql
+        select 
+#+end_src
+* Tuple Manipulation
+* Constraints
+
+* Footnotes
+
+[fn:1]like GNU/Linux
+

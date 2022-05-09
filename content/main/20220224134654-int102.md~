@@ -1,0 +1,274 @@
++++
+title = "INT102"
+author = ["System Administrator"]
+draft = false
++++
+
+Algorithm
+
+
+## UTS {#uts}
+
+
+### Deliver Plan {#deliver-plan}
+
+
+#### Lectrue {#lectrue}
+
+<https://xjtlu.zhumu.com/j/6208331180>
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 1
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 2
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 3
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 4
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 5
+
+    <!--list-separator-->
+
+    -  Greedy Method
+
+        Best move in `each` step.
+        make for the current best choice
+
+        <!--list-separator-->
+
+        -  pro
+
+            -   fast
+            -   easy
+            -   good
+
+        <!--list-separator-->
+
+        -  con
+
+            -   good solution, but no the best
+
+        <!--list-separator-->
+
+        -  How to design
+
+            1.
+
+        <!--list-separator-->
+
+        -  example
+
+            <!--list-separator-->
+
+            -  Minimum spanning tree
+
+                A graph G with weighted edges, from which a Tree is generated with all vertices of G with minimum weight.
+
+                <!--list-separator-->
+
+                -  Prim's algorithm
+
+                    1.  define graph G(V,E)
+                    2.  Start state: V'={v0},E'={}
+                    3.  find the vn in V-V' that connect to any item in V' with the smallest weight.
+                    4.  add the vn into V', and the weight into E'
+
+                    <!--list-separator-->
+
+                    -  time complexity
+
+                        -   weight matrix : O(|V|2)
+                        -   `adjacent lis` t ,and `priority queue` implemented by min-heap: O(|E|log(|V|))
+
+                <!--list-separator-->
+
+                -  kruskal;s algorithm
+
+                    1.  arrange the edges from smallest to largest weight
+                    2.  take from the lowest to largest,
+
+                    <!--list-separator-->
+
+                    -  proof for correctnesss
+
+                    <!--list-separator-->
+
+                    -  time complexity
+
+                        incidence matrix
+
+            <!--list-separator-->
+
+            -  single-source shortest-path
+
+                <!--list-separator-->
+
+                -  Dij's algorithm
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 6
+
+    <!--list-separator-->
+
+    -  Dynamic Programming(tabular method)
+
+        F(n) = 1 when n = 0; F(n-1) + F(n-2) when n&gt;2.
+
+        <!--list-separator-->
+
+        -  2 ways
+
+            <!--list-separator-->
+
+            -  1. recursive
+
+                from the last problem, to F(n) = F(n-1) + F(n-2)
+                it's a O(2^n)
+
+            <!--list-separator-->
+
+            -  2. accumulating
+
+                from the first problem, F(2) = F(1) + F(0)
+                and build the whole thing in a[0], a[1], a[2].....
+                it's a O(n)
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 7
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 8
+
+    <!--list-separator-->
+
+    -  Space-time-tradeoff
+
+        <!--list-separator-->
+
+        -  Input-enhancement
+
+            preprocess the input to store info
+
+            <!--list-separator-->
+
+            -  distribution counting sort
+
+            <!--list-separator-->
+
+            -  horspool algorithm for string search
+
+        <!--list-separator-->
+
+        -  pre-structuring
+
+            preprocess the input to access easier
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 9
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Ledcture 10
+
+    <!--list-separator-->
+
+    -  NP problems
+
+        <!--list-separator-->
+
+        -  efficient
+
+            an algorithm is `efficient` if:
+
+            -   time bounded by a polynomial of its input size.O(N^3)
+
+<!--list-separator-->
+
+-  Lecture 11
+
+<!--list-separator-->
+
+-  Lecture 12
+
+<!--list-separator-->
+
+-  Lecture 13
+
+
+#### Tutorial {#tutorial}
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 1
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 2
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 3
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 4
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 5
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 6
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 7
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 8
+
+<!--list-separator-->
+
+-  Tutorial 9
+
+<!--list-separator-->
+
+-  Tutorial 10
+
+<!--list-separator-->
+
+-  Tutorial 11
+
+<!--list-separator-->
+
+-  Tutorial 12
+
+<!--list-separator-->
+
+-  Tutorial 13
+
+
+## PAS {#pas}
+
+
+### THREAD Self-learning {#thread-self-learning}
+
+The speed of the course and content doesn't meet my need.
+I need it faster, and more advanced.
+go through the slides myself

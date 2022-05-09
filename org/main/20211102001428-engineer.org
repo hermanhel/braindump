@@ -1,0 +1,738 @@
+:PROPERTIES:
+:ID:       9C7D0D76-725F-45D6-B84A-4F75C11E164F
+:CATEGORY: Engineer
+:END:
+#+title: Engineer
+#+HUGO_SECTION:main
+* Computer Science
+** Programming
+*** Programming languages
+As a engineer, I need to master some PL to be able to create some accountable work.
+Though the philosophy would be the same
+**** C/C++ language
+**** Java
+**** Python
+**** Lisp
+***** ACTIVE Clojure
+
+****** how to do things
+in the [[id:FF2E7FC4-3E64-4791-B320-2B5A0CC852EA][clojure]] page. use [[file:~/playground/clojure-cookbook/my-practice/1_primitive-data.clj][my-practice]] to hold the .clj files.
+
+****** Use of Lein
+
+****** Graphics
+
+**** Javascript
+*** Algorithms 
+**** PLAN Art of Computer programming
+***** Process
+1. First went through the math very quickly.
+   + outline content
+   + no questions
+   + no eval
+   save for further times encountering the real question.
+2. then skim through the MIX part.
+   + understand the syntax and mechanism
+   + make a cheetsheet
+3. then go through the data structure part 2 times
+   1. 1st time to skim
+      + outline contents
+      + brief explain
+   2. 2st time to dig in
+      + find hard points
+      + go back to math and MIX if required.
+****** Method
++ Feynman's technique
++ Mind map
++ Spaced Repetition
+  use Anki. Break the whole into bite size chunks. just specify the question in the heading of Anki card.
+***** New Process!
+****** the coding
+use c/java/clojure to write them!
+****** the text
+I can read them like read other papers and text!
+***** Vol 1: Fundamental Algorithms
+This volumn contains fundamental math, the tutorial of the programming language MIX used in the book, and some data structures.
+
+The notes are exclusively on Onenote
+
+**** THREAD Calculus rehab
+I really need to recall some basic calculus techniques. Got some questions and answers
+
+**** THREAD Machine Learning                                      :agenda:
+***** Scheduling Recommandation
+****** Time
+None Special.
+Frequent As possible
+****** Recource
+Check [[id:0A261A32-82AD-469F-94C4-2A512ACDB1C5][INT104]], where Dr.Li provided some resouces.
+[[https://kaggle.com][Kaggle]] have series of tutorials and Practices.
+***** TODO Kaggle Intro to ML 4/7 Model Validation
+:PROPERTIES:
+:Effort:   15
+:END:
+[[https://www.kaggle.com/dansbecker/model-validation][Model Validation]]
+***** THREAD With Math.
+I'd like to check out some math stuff about machine learning
+****** DONE Tackle the class slide -> problem list!
+CLOSED: [2022-03-03 Thu 17:30]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-03 Thu 17:30]
+CLOCK: [2022-03-03 Thu 17:15]--[2022-03-03 Thu 17:30] =>  0:15
+:END:
++ Matrix decomposition
+  + Determinant
+  + Eigenvalue
+  + Singular Value Decomposition
+  + Principle Component Analysis
+  + Independent component Analysis
+  + Non-negative
++ Continous optimization
+  + gradient desent
+  + constrained optimization
+  + convex optimization
++ 2,4,5,7 chapter of the book Math. for ML
++ linear algebra words
+  + rank
+  + row/column space
+  + Gram- Schmidt process
+****** DONE Determinant
+CLOSED: [2022-03-03 Thu 17:39]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-03 Thu 17:39]
+CLOCK: [2022-03-03 Thu 17:31]--[2022-03-03 Thu 17:39] =>  0:08
+:END:
+****** DONE Eigens
+CLOSED: [2022-03-03 Thu 18:38]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-03 Thu 18:38]
+:END:
+****** TODO Sigular Value Decomposition
+:LOGBOOK:
+CLOCK: [2022-03-04 Fri 09:28]--[2022-03-06 Sun 16:00] => 54:32
+CLOCK: [2022-03-03 Thu 21:57]--[2022-03-03 Thu 23:28] =>  1:31
+CLOCK: [2022-03-03 Thu 20:15]--[2022-03-03 Thu 20:43] =>  0:28
+:END:
+[[https://www.youtube.com/watch?v=xy3QyyhiuY4#0][SVD by Steve Brunton]]a
+****** TODO Matrix Decomposition.
+Understand every matrix decomposition talked about.
+***** THREAD Hands on instruction of data science
+****** Schedule Recommendation
+******* Time
+I'd suggest As frequent.
+but the materials are messive. Especially the non-technique parts. I suggest 1 chapter each day, as it's an important on.
+******* Reference
+/Hands-on Instruction of Data Science/ by Craig Shrah.
+******* Organization
+****** TODO Planning Stuff
+:LOGBOOK:
+CLOCK: [2022-03-06 Sun 17:43]--[2022-03-06 Sun 17:52] =>  0:09
+CLOCK: [2022-03-06 Sun 16:00]--[2022-03-06 Sun 16:52] =>  0:52
+:END:
+So the Part I covers some concept for understanding the whole concept of /Data Science/, including the =thinking paradigm= =skillset/toolkit= =interfere with other fields= =how data would look like= and data analyse =techniques=. I look forward to how the book would make it concrete and hands-on
+
+And Part II introducing the tools, covering simple usage of =UNIX= =R= =Python= and =MySQL= in his data analyse process.
+
+It seems that the author use R as primary language of data analysis. The Part III go through several algorithms of =supervised= and =unsupervised= classifier training using R.
+
+And the Part IV get into real problems with =using API= to get data, and analyse them. Then talk about how to =choose/evaluate methods=
+
+1. Therefore I suggest a very quick overview of everything in Part I, and just go to the tests.
+2. Afterwards, could play with the tools a little bit, but I guess it won't be long since I have known UNIX, python, and pretty much of MySQL, and how to learn a new language.
+3. Followed by Part III, it could be tricky, but I see it didn't involve much math, yet still long, so I guess he might have been doing a great job in explaining it. There's still practices I could reflex upon, so no worry. Apply the solving problem application of [[id:B4444AFF-ACC4-452E-8AE3-294C1E1B7409][Feynman Techinique]] and I'll be well tended.
+4. And the Part IV could be very fun because of the real world involed in, and very troublesome, because real world is.
+****** DONE Part I: Conceptual Introduction
+CLOSED: [2022-03-16 Wed 23:28]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-16 Wed 23:28]
+:END:
+******* TODO Going over 1. introduction very fast
+
+******* TODO Going through the key terms with [[id:B4444AFF-ACC4-452E-8AE3-294C1E1B7409][Feynman Techinique]]
+******* TODO Answer the Conceptual questions
+******* TODO Do the Hands=on Problems
+****** TODO Part II: Tools for Data Science
+******* TODO Unix part
+:LOGBOOK:
+CLOCK: [2022-03-17 Thu 11:11]--[2022-03-17 Thu 12:01] =>  0:50
+CLOCK: [2022-03-16 Wed 23:28]--[2022-03-17 Thu 00:10] =>  0:42
+:END:
+******* TODO Python part
+:LOGBOOK:
+CLOCK: [2022-03-22 Tue 16:41]--[2022-03-22 Tue 18:44] =>  2:03
+:END:
+just going through it
+
+******* TODO Going through the key terms with [[id:B4444AFF-ACC4-452E-8AE3-294C1E1B7409][Feynman Techinique]]
+******* TODO Answer the Conceptual questions
+******* TODO Do the Hands=on Problems
+******** Regression practice
+:LOGBOOK:
+CLOCK: [2022-03-22 Tue 18:44]--[2022-03-22 Tue 18:51] =>  0:07
+:END:
+#+caption: Import
+#+begin_src ipython :session reg-prac :file  :exports both
+  import pandas as pd
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import statsmodels.api as sm
+  
+  df = pd.read_excel("./resource/mlr05.xls")
+  df.columns=["annual_net_sales","advertising","competitors","X4","X5","X6"]
+  df
+#+end_src
+
+#+RESULTS:
+#+begin_example
+# Out[4]:
+,#+BEGIN_EXAMPLE
+  annual_net_sales  advertising  competitors    X4         X5  X6
+  0              231.0          3.0          294   8.2   8.200000  11
+  1              156.0          2.2          232   6.9   4.100000  12
+  2               10.0          0.5          149   3.0   4.300000  15
+  3              519.0          5.5          600  12.0  16.100000   1
+  4              437.0          4.4          567  10.6  14.100000   5
+  5              487.0          4.8          571  11.8  12.700000   4
+  6              299.0          3.1          512   8.1  10.100000  10
+  7              195.0          2.5          347   7.7   8.400000  12
+  8               20.0          1.2          212   3.3   2.100000  15
+  9               68.0          0.6          102   4.9   4.700000   8
+  10             570.0          5.4          788  17.4  12.300000   1
+  11             428.0          4.2          577  10.5  14.000000   7
+  12             464.0          4.7          535  11.3  15.000000   3
+  13              15.0          0.6          163   2.5   2.500000  14
+  14              65.0          1.2          168   4.7   3.300000  11
+  15              98.0          1.6          151   4.6   2.700000  10
+  16             398.0          4.3          342   5.5  16.000000   4
+  17             161.0          2.6          196   7.2   6.300000  13
+  18             397.0          3.8          453  10.4  13.900000   7
+  19             497.0          5.3          518  11.5  16.299999   1
+  20             528.0          5.6          615  12.3  16.000000   0
+  21              99.0          0.8          278   2.8   6.500000  14
+  22               0.5          1.1          142   3.1   1.600000  12
+  23             347.0          3.6          461   9.6  11.300000   6
+  24             341.0          3.5          382   9.8  11.500000   5
+  25             507.0          5.1          590  12.0  15.700000   0
+  26             400.0          8.6          517   7.0  12.000000   8
+,#+END_EXAMPLE
+#+end_example
+
+#+caption: advertising, competitors -> net sales
+#+begin_src ipython :session reg-prac :file  :exports both
+  #1. prepare for lr-model
+  y = df.annual_net_sales
+  X = df[["advertising","competitors"]]
+  X = sm.add_constant(X)
+  lr_model = sm.OLS(y,X).fit()
+  lr_model.summary()
+#+end_src
+
+#+RESULTS:
+#+begin_example
+# Out[11]:
+,#+BEGIN_EXAMPLE
+  <class 'statsmodels.iolib.summary.Summary'>
+  """
+  OLS Regression Results
+  ==============================================================================
+  Dep. Variable:       annual_net_sales   R-squared:                       0.926
+  Model:                            OLS   Adj. R-squared:                  0.920
+  Method:                 Least Squares   F-statistic:                     150.7
+  Date:                Tue, 22 Mar 2022   Prob (F-statistic):           2.59e-14
+  Time:                        21:33:29   Log-Likelihood:                -144.57
+  No. Observations:                  27   AIC:                             295.1
+  Df Residuals:                      24   BIC:                             299.0
+  Df Model:                           2
+  Covariance Type:            nonrobust
+  ===============================================================================
+  coef    std err          t      P>|t|      [0.025      0.975]
+  -------------------------------------------------------------------------------
+  const         -77.8992     24.003     -3.245      0.003    -127.439     -28.359
+  advertising    31.9491      9.860      3.240      0.003      11.599      52.299
+  competitors     0.6664      0.104      6.424      0.000       0.452       0.880
+  ==============================================================================
+  Omnibus:                        3.050   Durbin-Watson:                   1.613
+  Prob(Omnibus):                  0.218   Jarque-Bera (JB):                1.606
+  Skew:                          -0.508   Prob(JB):                        0.448
+  Kurtosis:                       3.630   Cond. No.                         989.
+  ==============================================================================
+  
+  Notes:
+  [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+  """
+,#+END_EXAMPLE
+#+end_example
+
+#+caption: 3D plot
+#+begin_src ipython :session reg-prac :file ./ipython-ZVADWG.png :exports both :results raw drawer
+  from mpl_toolkits.mplot3d import Axes3D
+  X_axis,Y_axis = np.meshgrid([X.advertising.min(),X.advertising.max()],[X.competitors.min(),X.competitors.max()])
+  
+  Z_axis = lr_model.params[0] + lr_model.params[1] * X_axis + lr_model.params[2] * Y_axis
+  fig = plt.figure(figsize = (12,8))
+  ax = Axes3D(fig,azim=-100)
+  ax.plot_surface(X_axis,Y_axis,Z_axis,alpha = 0.5, linewidth=0)
+  
+  ax.scatter(X.advertising,X.competitors,y)
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[19]:
+<mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x7fc37c7f21c0>
+[[file:./obipy-resources/r5IDzm.png]]
+:end:
+******** Classification practice
+uses KNN algorithm:
+1. find similar points
+2. select the most similar ~k~ points
+3. the ~mode~ of label of the ~k~ points is the predicted label.
+#+begin_src ipython :session class :file ./ipython-VxXpoX.png :exports both :results raw drawer
+  import numpy as np
+  import pandas as pd
+  import matplotlib.pyplot as plt
+  from sklearn.neighbors import KNeighborsClassifier
+  from sklearn.model_selection  import train_test_split
+  df = pd.read_csv("./resource/wine.csv")
+  X_train,X_test,y_train,y_test = train_test_split(df[["density","sulfates","residual_sugar"]],df["high_quality"],test_size = .3)
+  #make classifers and fit
+  classifier = KNeighborsClassifier(n_neighbors = 3)
+  classifier.fit(X_train,y_train)
+  #test classifers
+  prediction = classifier.predict(X_test)
+  #calculate the correctness
+  correct =  np.where(prediction == y_test,1,0).sum()
+  print(correct)
+  
+  accuracy =  correct/len(y_test)
+  print(accuracy)
+  
+  #plot the accuracy from 1 to 51 step 2
+  results= []
+  for k in range(1,51):
+      classifier = KNeighborsClassifier(n_neighbors = k)
+      classifier.fit(X_train,y_train)
+      prediction = classifier.predict(X_test)
+      accuracy = np.where(prediction == y_test,1,0).sum()/(len(y_test))
+      results.append([k,accuracy])
+  
+  #plotting
+  results = pd.DataFrame(results,columns = ["k","accuracy"])
+  plt.plot(results.k,results.accuracy)
+  plt.title("k vs. accuracy")
+  plt.show()
+  
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[19]:
+[[file:./obipy-resources/Q8E07V.png]]
+:end:
+******** Cluster Practice
+#+begin_src ipython :session Cluster :file ./ipython-fxVHQO.png :exports both :results raw drawer
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import matplotlib.style as stl
+  stl.use("ggplot")
+  
+  #get kmeans
+  from sklearn.cluster import KMeans
+  X = np.array([[1,2],[3,4],[7,2],[11,4],[5,8],[2,9],[4,2]])
+  
+  kmeans = KMeans(n_clusters = 2)
+  kmeans.fit(X)
+  
+  centroids = kmeans.cluster_centers_
+  labels = kmeans.labels_
+  
+  centroids, labels
+  
+  colors = ["g.","r.","c.","y."]
+  
+  for i in range(len(X)):
+      plt.plot(X[i][0],X[i][1],colors[labels[i]],markersize = 10)
+  
+  
+  plt.scatter(centroids[:,0],centroids[:,1], marker = "x",s = 150,linewidth=2,zorder=10)
+  
+  plt.show()
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[14]:
+[[file:./obipy-resources/GqpjGC.png]]
+:end:
+******** Density estimation
+#+begin_src ipython :session density :file ./ipython-Yal00n.png :exports both :results raw drawer
+  import numpy as np
+  from sklearn.cluster import MeanShift
+  from sklearn.datasets.samples_generator import make_blobs
+  import matplotlib.pyplot as plt
+  from mpl_toolkits.mplot3d import Axes3D
+  import matplotlib.style as stl
+  stl.use("ggplot")
+  centers = [[1,1,1],[5,5,5],[10,10,10]]
+  X,y = make_blobs(n_samples= 100,centers= centers,cluster_std= 2)
+  ms = MeanShift()
+  ms.fit(X)
+  centroids = ms.cluster_centers_
+  labels = ms.labels_
+  n_clusters_ = len(np.unique(labels))
+  print("estimated clusters: " ,n_clusters_)
+  
+  colors= ["r","g","b","c","y","m","k"]
+  
+  fig =  plt.figure()
+  ax = fig.add_subplot(111,projection = "3d")
+  
+  for i in range(len(X)):
+      ax.scatter(X[i][0],X[i][1],X[i][2],c = colors[labels[i]],marker ="o")
+  ax.scatter(centroids[:,0],centroids[:,1],centroids[:,2], marker = "x", s = 150, linewidth=5, zorder=10)
+  plt.show()   
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[8]:
+[[file:./obipy-resources/HTCqHs.png]]
+:end:
+******** Python
+********* Stat
+#+begin_src python
+  import numpy as np
+  X = np.array([164, 158, 172, 153, 144, 156, 189, 163, 134, 159, 143, 176, 177, 162, 141, 151, 182, 185, 171, 152])
+  import matplotlib.pyplot as plt
+  plt.figure()
+  hist1,edges1 = np.histogram(X,bins=4)
+  plt.bar(edges1[:-1],hist1,width = edges1[1:]-edges1[:-1])
+  plt.show()
+  return np.mean(X),np.median(X),np.std(X)
+  
+#+end_src
+
+#+RESULTS:
+| 161.6 | 160.5 | 15.057888298164519 |
+********* Boston
+#+begin_src ipython :session boston :file ./ipython-V2Tyf5.png :exports both
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import pandas as pd
+  import statsmodels.api as sm
+  df = pd.read_csv("~/playground/General Resources/Data and code/Datasets/OA 5.7 - boston.csv")
+  df.describe()
+  
+  X = df["AGE"]
+  y = df["NOX"]
+  X = sm.add_constant(X)
+  
+  linear_model = sm.OLS(y,X).fit()
+  linear_model.rsquared
+  rsquares = []
+  for column in df.columns:
+       X = df[column]
+       y = df["NOX"]
+       X = sm.add_constant(X)
+       linear_model = sm.OLS(y,X).fit()
+       rsquares.append(linear_model.rsquared)
+  result = list(zip(df.columns,rsquares))
+  result
+#+end_src
+
+#+RESULTS:
+#+begin_example
+# Out[20]:
+,#+BEGIN_EXAMPLE
+  [('CRIM', 0.17721718179269352),
+  ('ZN', 0.26687939094162105),
+  ('NDUS', 0.5831635323844071),
+  ('CHAS', 0.008317951975949422),
+  ('NOX', 1.0),
+  ('RM', 0.09131770087582114),
+  ('AGE', 0.535048512732641),
+  ('DIS', 0.5917149670934201),
+  ('RAD', 0.37385956267556064),
+  ('TAX', 0.44625499627669685),
+  ('PTRATIO', 0.035695556480997426),
+  ('B', 0.1444384872864103),
+  ('LSTAT', 0.3491378991413132),
+  ('MEDV', 0.1826030425016989)]
+,#+END_EXAMPLE
+#+end_example
+
+#+begin_src ipython :session boston :file ./ipython-VzYgVm.png :exports both
+  X = df.DIS
+  y = df.NOX
+  
+  X = sm.add_constant(X)
+  X_axis = np.linspace(X.DIS.min(),X.DIS.max(),100)
+  X_axis = sm.add_constant(X_axis)
+  linear_model = sm.OLS(y,X).fit()
+  y_hat = linear_model.predict(X_axis)
+  plt.figure()
+  plt.plot(X_axis,y_hat)
+  plt.show()
+  print("the equation is :", "y = ", linear_model.params[0], " + ", linear_model.params[1], " * x" )
+#+end_src
+
+#+RESULTS:
+: # Out[36]:
+: [[file:./obipy-resources/Oywtol.png]]
+[[file:./obipy-resources/cNPPVS.png]]
+[[file:./obipy-resources/w9tl7I.png]]
+********* IRIS
+#+caption: KNN
+#+begin_src ipython :session IRIS :file ./ipython-h2ym4e.png :exports both
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import pandas as pd
+  import matplotlib.style as stl
+  stl.use("ggplot")
+  from sklearn.neighbors import KNeighborsClassifier
+  from sklearn.svm import SVC
+  from sklearn import datasets
+  from sklearn.model_selection import train_test_split
+  
+  iris = datasets.load_iris()
+  df = pd.DataFrame(iris.data)
+  df["class"] = iris.target
+  df.columns = ["Sepal length","Sepal width","Pedal langth","Pedal width","Class"]
+  
+  X_train,X_test,y_train,y_test = train_test_split(df[["Sepal length","Sepal width"]],df["Class"],test_size = .3)
+  
+  classifier = KNeighborsClassifier(n_neighbors = 5)
+  classifier.fit(X_train,y_train)
+  
+  prediction = classifier.predict(X_test)
+  correct = np.where(prediction == y_test, 1,0).sum()
+  
+  accuracy = correct/(len(y_test))
+  accuracy
+
+
+  
+  
+  #kmeans = KNeighborsClassifier(n_neighbors = 4)
+  #kmeans.fit()
+#+end_src
+
+#+RESULTS:
+: # Out[19]:
+: : 0.7111111111111111
+
+#+caption: SVM
+#+begin_src ipython :session IRIS :file ./ipython-4MbNoB.png :exports both
+  
+  svm_kernel_types = ["linear","rbf","poly"]
+  svm = SVC(kernel = "poly")
+  svm.fit(X_train,y_train)
+  
+  prediction = svm.predict(X_test)
+  correct = np.where(prediction == y_test,1,0).sum()
+  accuracy = correct/(len(y_test))
+  accuracy
+  
+#+end_src
+
+#+RESULTS:
+: # Out[25]:
+: : 0.7555555555555555
+
+#+caption: Cluster
+#+begin_src ipython :session IRIS :file ./ipython-LVBMbn.png :exports both
+  from sklearn.cluster import KMeans
+  kmeans = KMeans(n_clusters = 3)
+  kmeans.fit(df[["Sepal length","Sepal width"]])
+  
+  centroids,labels = kmeans.cluster_centers_,kmeans.labels_
+  colors = ["g","r","c","y."]
+  
+  for i in range(len(df)):
+       plt.scatter(df["Sepal length"][i],df["Sepal width"][i],c = colors[labels[i]])
+  
+  plt.scatter(centroids[:,0],centroids[:,1],marker = "x",s = 150, linewidth = 2, zorder = 10)
+  df["Sepal length"][2]
+#+end_src
+
+#+RESULTS:
+: # Out[44]:
+: : 4.7
+ [[file:./obipy-resources/MEzL5y.png]]
+********* Breast Cancer
+#+begin_src ipython :session Breast :file ./ipython-JBcW7X.png :exports both
+  import numpy as np
+  import matplotlib.pyplot as plt
+  from sklearn.cluster import KMeans
+  import pandas as pd
+  df = pd.read_csv("/Users/hermanhe/playground/General Resources/Data and code/Datasets/dataR2.csv")
+  type(df["Leptin"][1])
+  df["Leptin"] = list(map(lambda x:int(x * 100)/100,df["Leptin"]))
+  X = df[df.columns[:9]]
+  kmeans = KMeans(n_clusters = 2)
+  kmeans.fit(X)
+  labels = kmeans.labels_
+  
+  accuracy = np.where(labels!=df.Classification,1,0).sum()/(len(labels))
+  accuracy
+  
+  
+  
+#+end_src
+
+#+RESULTS:
+: # Out[41]:
+: : 0.896551724137931
+
+****** TODO Part III: Machine Learning for Data Science
+******* TODO Going through the key terms with [[id:B4444AFF-ACC4-452E-8AE3-294C1E1B7409][Feynman Techinique]]
+******* TODO Answer the Conceptual questions
+******* TODO Do the Hands=on Problems
+****** TODO Part IV: Application, evaluations, and methods.
+******* TODO Going through the key terms with [[id:B4444AFF-ACC4-452E-8AE3-294C1E1B7409][Feynman Techinique]]
+******* TODO Answer the Conceptual questions
+******* TODO Do the Hands=on Problems
+**** THREAD Project Euler                                         :agenda:
+***** Scheduling Recommandation
+****** Time
+none
+could frequently.
+****** Recource
+[[https://projecteuler.net][Project Euler]]
+***** DONE Prob. 9
+CLOSED: [2022-02-25 Fri 17:16]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-02-25 Fri 17:16]
+CLOCK: [2022-02-25 Fri 14:08]--[2022-02-25 Fri 14:40] =>  0:32
+:END:
+[[file:~/playground/clojure/.#project_euler.clj::+ 1 1][code]]
+use algebra.
+a = 2mn, b = m2-n2, c = m2+ n2.
+==> m>n>0, m(m+n)=500. 500 = 2 * 2 * 5 * 5 * 5
+|   m | m+n | correct? |
+|   2 | 250 | no       |
+|   4 | 125 | no       |
+|  20 |  25 | yes      |
+| 100 |   5 | no       |
+| 500 |   1 | no       |
+|  10 |  50 | no       |
+***** TODO Prob. 10
+:LOGBOOK:
+CLOCK: [2022-02-25 Fri 17:46]--[2022-02-25 Fri 18:46] =>  1:00
+:END:
+sum of primes below 2,000,000
+***** Prob.13
+:LOGBOOK:
+CLOCK: [2022-03-30 Wed 19:40]--[2022-03-30 Wed 19:48] =>  0:08
+:END:
+The brute force. And a slightly performance version.
+Both use the long-add function.
+** Coding
+SCHEDULED: <2022-03-27 Sun +1d>
+:PROPERTIES:
+:STYLE:    habit
+:LAST_REPEAT: [2022-03-27 Sun 14:45]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2022-03-27 Sun 14:45]
+- State "DONE"       from              [2022-03-27 Sun 14:45]
+:END:
+*** Habit contract
+I like coding, and I want be better at coding and engineering, I want to be an exellent hacker, so I code everyday, with conscious and wise mind.
+
+I shall code with my wits, my integrity, and my dedicated loyalty.
+I shall not code with distracting, nor code dumb without thinking
+I shall log everything I see and thought about them properly.
+--> I shall code to the standard of [[id:C88B46D2-AD9F-4359-A93C-AE3C38074595][coding machine]]
+
+And if I haven't achieve all the descriptions above, I shall add 2 more minutes of running/10 more pull up this day. Record in the day's page.
+**** + coding(to a book/a problem I encounter)
+****** Cue - obvious
++ Habit stack: I'll start coding, Right after I take my morning dump. I could use toilet time to think/deside what to do
++ environment: I ahve ACP side of my desk.
+****** Craving - attractive
++ Reprogramming the brain
+  + the benefit of improving my coding skill:
+    1. I'll be more capable in engineering.
+    2. I'll be powerful
+    3. People would admire me
+    4. I'll have a lot of fun in programming and engineering a system
+    5. It'll enable me to eventually build my baby AI
+    6. The whole thing of coding/engineering would be more clear to me, instead of vague and frustrating mistery
++ Temptation bundling
+  After I've done a session of coding, I'll practice a knot
+****** Response - easy
++ least effort:
+  I just have to code for 1 session to whatever material at hand.
+  It could be from the /Hands-on intro to ML/ book, or a projectEuler challenge, or a random program from my todo list, anything would be suffice
++ Prime the environment:
+  Choose a coding task before I went to toilet, and open the file I needed.
++ Use a 2-minuet version:
+  Do 2-minute coding first if procrastinate. But I doubt if I will.
+****** Reward - satisfying
++ Adding little pleasure
+  After the session, tie a knot.
+  They are both engineering & art
++ Habit track
+  Make a subtree coding in Engineering, style habit. Each day ofter the 1 session, set it marked.
++ Habit contract
+  In the heading, make declaims
++ Visual measurements
+  log every thing done. Round thing up
+****** Mindset - continue process
++ I'm a hacker
++ 1% improvement a day.
++ showing up's half the bottle
+*** logs
+**** 2022
+***** 2022-03 March
+****** 2022-03-26 Saturday
+******* 11:10 AM - coding on  org-capture in chrome
+:LOGBOOK:
+CLOCK: [2022-03-26 Sat 11:10]--[2022-03-26 Sat 11:38] =>  0:28
+:END:
+ # [[file:~/.emacs.d/Emacs.org::*Basic Config][Basic Config]]
+
+****** 2022-03-27 Sunday
+
+******* 10:52 AM - coding on  ML
+:LOGBOOK:
+CLOCK: [2022-03-27 Sun 10:52]--[2022-03-27 Sun 12:42] =>  1:50
+:END:
+  [[*Classification practice][Classification practice]]
+  
+ doing KNN of classification practice with /Hands-on Intro of ML/
+ Then applied it to the CW_Data.csv data
+
+******* 02:18 PM - coding on  ML-cluster
+:LOGBOOK:
+CLOCK: [2022-03-27 Sun 14:18]--[2022-03-27 Sun 14:30] =>  0:12
+:END:
+  [[file:20220224134643-int104.org::*Cluster: use Q1 and Q2][Cluster: use Q1 and Q2]]
+  
+ sklearn.Cluster.KMeans 里的attributes很多后面带一个_, cluster_centers_, labels_之类的.
+
+ use =zip= to zip 2 columns (with pandas, very handy)
+
+ Apply the technique to CW2 Q1 and Q2, very neat clustering. Very different with the real cluster with label programme, which is interleaved.
+
+******* 02:51 PM - coding on  density estimation
+:LOGBOOK:
+CLOCK: [2022-03-27 Sun 14:51]--[2022-03-27 Sun 15:43] =>  0:52
+:END:
+
+  
+ Doing a dencity estimation in /Hands-on/
+ have the results not in a drawer, but prefixed by =:= can have the history not edited.(if I hand remove the =:=)
+ When with CW_Data, 1 looks similar.
+
+******* 04:34 PM - coding on  python problems
+:LOGBOOK:
+CLOCK: [2022-03-27 Sun 16:34]--[2022-03-27 Sun 19:12] =>  2:38
+:END:
+  
+ going through the problems in /Hands-on/
+
+***** 2022-04 April
+
+****** 2022-04-12 Tuesday

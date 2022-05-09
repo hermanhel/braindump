@@ -1,0 +1,233 @@
++++
+title = "CPT107"
+author = ["System Administrator"]
+draft = false
++++
+
+## COMPLETED CPT107 <span class="tag"><span class="agenda">agenda</span></span> {#completed-cpt107}
+
+Class about [Discrete Mathematics]({{< relref "20211027151914-discrete_mathematics.md" >}})
+
+
+## Class Information {#class-information}
+
+
+### Credits {#credits}
+
+| num | Method | range | time      | %  |
+|-----|--------|-------|-----------|----|
+| 1   | CW     | ALL   | Exam week | 80 |
+| 2   | CW     | LO1-3 | Week 6    | 10 |
+| 3   | CW     | LO4-6 | Week 13   | 10 |
+
+
+#### <span class="org-todo todo TODO">TODO</span> Assessment 1 {#assessment-1}
+
+Using Texmacs to write the result.
+[Questions](/ox-hugo/CPT07_Assessment_I_2021_22_Que_Oct_19(1).pdf)
+DEADLINE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-10-29 Fri 17:00&gt;</span></span>
+
+<!--list-separator-->
+
+-  Proof Techniques
+
+    <!--list-separator-->
+
+    -  Formality of writing the proofs
+
+    <!--list-separator-->
+
+    -  contradiction machine
+
+    <!--list-separator-->
+
+    -  general proof machine
+
+<!--list-separator-->
+
+-  Set theory
+
+    <!--list-separator-->
+
+    -  Marks
+
+    <!--list-separator-->
+
+    -  Theories?
+
+<!--list-separator-->
+
+-  Relations
+
+    <!--list-separator-->
+
+    -  Transitive relations?
+
+    <!--list-separator-->
+
+    -  Transitive Closure
+
+
+### Professor {#professor}
+
+
+#### Prof. Ka Lok Man {#prof-dot-ka-lok-man}
+
+Dr.Eng. in EE in Politecnico di Torino, Italy
+Phd in CS, Technishe Universiteit Eindhoven, Netherlands
+Industrial Experience in integrated circuit design
+Many Publication
+
+<!--list-separator-->
+
+-  Contact
+
+    -   email(prefered): ka.man@xjtlu.edu.cn
+    -   Office telephone: 0512-8816-1509
+    -   Room and Office Hour: SD437, Fri. 11-13
+
+
+### Content {#content}
+
+
+#### Number systems {#number-systems}
+
+
+#### Proof techniques {#proof-techniques}
+
+
+#### Set theory {#set-theory}
+
+
+#### relations {#relations}
+
+
+#### Funcitons {#funcitons}
+
+
+#### Logic {#logic}
+
+
+#### Combinatorics {#combinatorics}
+
+
+#### Probability {#probability}
+
+
+### Tutoring Schedule {#tutoring-schedule}
+
+
+#### Class/Tutorial {#class-tutorial}
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  CPT107 Lecture SA169
+
+    at SA169
+    recommandations:
+
+    -   get Copies of the slides
+        from LMO
+        -   read before and after lecture
+    -   Take notes
+
+
+#### Time sink {#time-sink}
+
+-   7-8 hour of self study expected
+
+nn      + reflection: 4h
+	on lecutre material
+
+-   background reading: 3h
+
+
+#### Textbooks {#textbooks}
+
+_Logic in Computer Science_ by Michael Huth
+_Discrete Mathematics for Computing_ by R. Haggarty.
+_Discrete Mathematics for Computer Scientists_ by Addison Wesley
+_Discrete Mathematics with Applications_ by Brooks Cole
+
+
+## resources {#resources}
+
+
+### Textbook {#textbook}
+
+_Computer Systems Architecture: A Networking Approach._ by Rob Williams
+I have a copy of it. This is the mandatory textbook.
+
+
+### Lecture Slides {#lecture-slides}
+
+Lecture slides are often released a week before.
+The professor would be covering the exact content of the slids.
+Maybe base of Exams.
+
+
+### Online Resources {#online-resources}
+
+I would say MIT OCW definitely have courses under the topic.
+
+
+## Tasks {#tasks}
+
+
+### <span class="org-todo done DONE">DONE</span> Preview #1 {#preview-1}
+
+
+### <span class="org-todo done DONE">DONE</span> Preview #2 {#preview-2}
+
+
+### <span class="org-todo done DONE">DONE</span> Course information {#course-information}
+
+I don't know most things about CPT107. That's not right for a module I enrolled in, a great university student enrolled in. Fix that.
+The Approach is:
+
+1.  I go to course page
+2.  I find credit information
+3.  I find Professor information
+4.  I find course content information
+5.  I find module specific information
+    like `the server the module is using, delivery plan, classroom`
+
+Collect the information's here under
+<https://sso.xjtlu.edu.cn/login>
+
+
+## Assesments {#assesments}
+
+
+### <span class="org-todo done DONE">DONE</span> Assesment 2 {#assesment-2}
+
+
+### <span class="org-todo done DONE">DONE</span> Final Assignment<code>[6/6]</code> {#final-assignment}
+
+-   [X] Proof
+    -   [X] 1
+        0:00:08
+    -   [X] 2 0:11:21
+    -   [X] 3 0:22:05
+-   [X] Set
+    -   [X] 1 0:29:19
+    -   [X] 2 0:39:30
+    -   [X] 3 0:50:19
+-   [X] Relation
+    -   [X] 1 0:55:46
+    -   [X] 2 1:25:55
+    -   [X] 3 1:41:05
+    -   [X] 4 2:01:58
+-   [X] Function
+    -   [X] 1 2:18:17
+    -   [X] 2 2:40:34
+    -   [X] 3 2:51:53
+-   [X] Logic
+    -   [X] 1 3:12:27
+    -   [X] 2 3:39:47
+    -   [X] 3 3:59:37
+-   [X] Combinatorics
+    -   [X] 1 4:23:58
+    -   [X] 2 4:27:29
+    -   [X] 3 4:57:47
+    -   [X] 4 5:28:48

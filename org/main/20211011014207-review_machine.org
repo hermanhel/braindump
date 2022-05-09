@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       6F5C6663-0E88-4122-AE35-A6F4B0784F1A
+:END:
+#+title: Review Machine
+#+HUGO_SECTION:main
+This machine is for review of everything worth look back on in a 1d, 7d, 14d, 30d cycle.
+* Flow
+** 1. Record
+Record the content worth reviewing by hitting ~C-c c (org-capture)~ and ~r(review)~.
+Record the summary and resource/notes for review.
+Records would be kept in  ~OrgNotes/Review.org~
+** 2. Review
+Go to ~OrgNotes/Review.org~, and run command ~org-review~[fn:1]. A sparse tree showing the items would be automatically generated.
+The log of the reviewing should be done seperately in every entry (C-c C-x i/o)
+
+* Footnotes
+
+[fn:1]: a self written function taking advantage of the ~date~ shell command and ~datetree~ option in org-capture.

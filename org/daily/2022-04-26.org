@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       44B6E92F-6FCB-4322-9983-C7163F0DE617
+:END:
+#+title: 2022-04-26
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* TODO Meeting on TB Test and Financial Evidence Guide for 2022 Entry
+SCHEDULED: <2022-04-26 Tue 19:00>
+** TB Test
+Tuberculosis Test
+*** need? yes if in China
+*** TB clinic
+*** 1. Valid Passport
+*** certificate valid for 6 month
+UoL's address: University of Liverpool, Brownlow Hill, Liverpool, L69 7ZX 
+*** before go to the clinic, check website
+*** need
++ photo
++ passport
++ 550RMB
+*** location: Hangzhou included
+*** contact the clinic to make TB test appointment
++ call, is the clinic still on the approved list?
+  + document?
+  + fee?
+  + appointment
++ make it clear the test is for UK visa
+
+** Financial Evidance
+
+*** Chinese Certificate of Deposits
+
+**** total: tuition + 9207 E
+
+**** cod in my parents' name 
+
+***** consent letter
+
+***** 
+
+**** 28 days prior to the visa application. then, there's a 31 day valid for application
+
+**** After received 
+
+**** withdraw
+
+** IAG Team
+*** do
++ visa
++ budget
++ settling in
++ british culture
++ improve English
++ travel information
++ registering with police
++ referrals to other services
+

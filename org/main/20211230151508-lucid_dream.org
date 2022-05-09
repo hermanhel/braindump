@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       C7BA45FA-AE8F-4D92-A1F5-AD2BED82B8DD
+:END:
+#+title: Lucid Dream
+#+HUGO_SECTION:main

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       EC2ADAA4-0DD4-46EB-94E3-95B1DA6FCE7A
+:END:
+#+title: MySQL
+* Using MySQL Server
+** Emacs
+I Think that I'll be using this approach mainly. Check that out.
+*** Using eshell
+#+begin_src shell
+ mysql -h [server] -u [usrname] -p # RET, then input the passward
+#+end_src
+*** Using sql-MySQL
+1. Edit a .sql file
+2. M-x sql-MySQL
+3. usrname, password, database, server.
+**** Error: cannot find mysqlo
+** TODO phpMyAdmin
+ This is the official way taught in class, should be. I should Check that out later
+ 

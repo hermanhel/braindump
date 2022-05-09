@@ -1,0 +1,88 @@
+:PROPERTIES:
+:ID:       5813D47F-4268-46DA-B99A-C529E2BCBFAD
+:END:
+#+title: CPT107
+
+* ACTIVE CPT107
+* Class Information
+** Credits
+   | num | Method | range | time      |  % |
+   |   1 | CW     | ALL   | Exam week | 80 |
+   |   2 | CW     | LO1-3 | Week 6    | 10 |
+   |   3 | CW     | LO4-6 | Week 13   | 10 |
+** Professor
+*** Prof. Ka Lok Man
+    Dr.Eng. in EE in Politecnico di Torino, Italy
+    Phd in CS, Technishe Universiteit Eindhoven, Netherlands
+    Industrial Experience in integrated circuit design
+    Many Publication
+**** Contact
+     + email(prefered): ka.man@xjtlu.edu.cn
+     + Office telephone: 0512-8816-1509
+     + Room and Office Hour: SD437, Fri. 11-13
+** Content
+*** Number systems
+*** Proof techniques
+*** Set theory
+*** relations
+*** Funcitons
+*** Logic
+*** Combinatorics
+*** Probability
+** Tutoring Schedule
+*** Class/Tutorial
+**** CPT107 Lecture SA169
+     SCHEDULED: <2021-10-15 Fri 09:00-11:00 +1w>
+     at SA169
+     recommandations:
+     + get Copies of the slides
+       from LMO
+       + read before and after lecture
+     + Take notes
+**** CPT107 Tutorial SA169
+     at SA169
+      SCHEDULED: <2021-10-15 Fri 14:00-16:00 +1w>
+*** Time sink
+    + 7-8 hour of self study expected
+      + reflection: 4h
+	on lecutre material
+      + background reading: 3h
+
+*** Textbooks
+    /Logic in Computer Science/ by Michael Huth
+    /Discrete Mathematics for Computing/ by R. Haggarty.
+    /Discrete Mathematics for Computer Scientists/ by Addison Wesley
+    /Discrete Mathematics with Applications/ by Brooks Cole
+* resources
+** Textbook
+   /Computer Systems Architecture: A Networking Approach./ by Rob Williams
+   I have a copy of it. This is the mandatory textbook.
+** Lecture Slides
+   Lecture slides are often released a week before.
+   The professor would be covering the exact content of the slids.
+   Maybe base of Exams.
+** Online Resources
+   I would say MIT OCW definitely have courses under the topic.
+* Tasks
+** WEEK Preview #1
+SCHEDULED: <2021-10-13 Wed +1w>
+** WEEK Preview #2
+SCHEDULED: <2021-10-13 Wed +1w>
+ 
+** DONE Course information
+CLOSED: [2021-10-11 Mon 14:11]
+   :LOGBOOK:
+   - State "DONE"       from "NEXT"       [2021-10-11 Mon 14:11]
+   CLOCK: [2021-10-07 Thu 14:46]--[2021-10-07 Thu 15:30] =>  0:44
+   :END:
+   I don't know most things about CPT107. That's not right for a module I enrolled in, a great university student enrolled in. Fix that.
+   The Approach is:
+   1. I go to course page
+   2. I find credit information
+   3. I find Professor information
+   4. I find course content information
+   5. I find module specific information
+      like =the server the module is using, delivery plan, classroom=
+
+   Collect the information's here under
+   https://sso.xjtlu.edu.cn/login

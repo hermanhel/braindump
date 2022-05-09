@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       F8B7DBCB-A620-413D-997B-4ED0C38FF85E
+:END:
+#+title: blues
+#+HUGO_SECTION:main
+* Analysis
+** Rhythem
+*** Melody
+*** Drum
+*** Harmony
+** Groove
+Rhythm is about the presence and absence of 8th notes, and groove is about how these notes are played
+
+** Notes
+*** Melody
+**** Keep back to 1 note                                         :problem:
+
+*** Scale
+*** Harmony
+** Form
+

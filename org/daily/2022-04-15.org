@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID:       5CA1FCB7-1A2E-46A3-A90D-1DCC0F805307
+:END:
+#+title: 2022-04-15
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* morning page
+I made up my mind. I'm going to take the initiative, gain control of my life.
+I'll live up to my goals, to my values.
+
+plus I draw that map very beautifully.
+
+I'll be an amazing programmer/neuroscientist, and almost all my times have best chance of flow experiance when it's dedicated to that goal. Or jazz, painting, writing, they are similar.
+
+I shall not see compitition in social media. It's finite game, plus jealousy is ugly, guilt is unnecessary. I play infinite games.
+
+don't meditate when just wake up, or close to sleep. mind's already blank then.
+
+Today, I'll listen to tutor's lab instruction with care, and do my lab practice, having a juicy result.
+* Task 2
+使用task1的数据
+使用3个分类器做分类
+使用监督学习
+解释分类器的比较评估
+可以用:sklearn,PyTorch
+*** sklearn
+use this
+*** pytorch
+* Cross-validation
+basically K-fold.
+*** K-fold validation
+1. split X into [x1, x2, x3, x4]
+2. loop for every x in X
+   1. x as test, X-x as train set.
+   2. take the mean.
+#+begin_src ipython :session session01 :file ./ipython-PdKlYl.png :exports both :results raw drawer
+    from sklearn.model_selection import cross_val_score
+  # in preprocessing seccion, have new X_tran.
+    clf = MLPClassifier(solver='lbfgs', alpha=1e-5,
+                      hidden_layer_sizes=(5, 2), random_state=1)
+    scores = cross_val_score(clf, X_tran, y_all, cv=2)
+    scores
+#+end_src      
+* Adjusting Parameters in SKLearn
+* Task 1
+It's mainly eliminating outliners.
+* Notes -> blog
+Org made it extremely easy to have notes export to blog to be seen.
+I'll make good notes, and make them good blogs, and share them with others. I would be worshipped, and helping other.
+* Themes
+I like jazz and doom-one now
+* ~[[]]~
+Nodes: org-node, org-roam-node in one file, org-roam-nodes in different files.
+The change should be continuous. When in 1 topic, it's hard to tell what should be in a seperate org-roam-node.
+The change should depend on whether the node is =large enough= to be treated as 1 independent topic.
+
+And from the start, when and why should a node be set? =When the information a word contain is too much=
+=standard deviation= is a word with too many meaning, therefore [[standard deviation]], and a heading(node) would be created on hit. The heading would be create at bottom as a 1st-level heading. The privious position is recorded in org-mark-ring, so when I'm finished editing that new node, I can navigate it to the right location, and...
+1. =[[]]= juicy jargons along the way
+2. after current node done...
+3. navigate to the first link(=C-c C-x C-p=)
+4. Create and edit the node
+5. Refile it to where it belong(=C-c m=)
+6. Back to the point using =org-mark-ring-goto(C-c 5)=
+7. Go to next link(=C-c C-x C-n=)
+8. Repeat step 4-7 until all links are pointing to somewhere.
+* standard deviation

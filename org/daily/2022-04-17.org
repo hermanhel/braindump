@@ -1,0 +1,134 @@
+:PROPERTIES:
+:ID:       CEE038A7-CCA7-4F48-A2B5-1E7208A588E8
+:END:
+#+title: 2022-04-17
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Good Morning! I'm going to change to Jazz Theme
+So the red modified highlight just comes with the Jazz theme. Next time use something else
+** Roger that!
+I always wanted to use that phrase! I used it today to my externel mentor.
+** clear mind = no frown
+Relax the eye area. Keep the mind environment simple and focused.
+
+Don't frown on unexpected or bad things, for that would bring attention to the eyes and reduce focus and calmness.
+** R18 Picture make me relax -- only in small amount
+I find making imitation copy of R18 Illustrates relaxing.
+
+Partly I assume that it's an activity I'm interested in, while it also being creative and static, with all the resources at hand. It's a calming thing to do, So I do it to calm.
+
+But the creative nature must be strong enough to retain the calming effect. When I'm skimming through a whole bunch of illustrate, the idea/focus then changed. Therefore, keep that in a small amount, like 2 illustrates, and only imitate 1 small feature, like foot, ear, booby, or light.
+** org notification
+let org-agenda warn me of event beforehead!
+solutions:
++ a tweak using terminal notification [[https://lists.gnu.org/archive/html/emacs-orgmode/2013-02/msg00644.html][gnu mail list]]
++ a package called =org-wild-notification=
+  only report =TODO= items.
+* DONE Externel Mentor Meeting
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-17 Sun 14:00>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-04-21 Thu 23:16]
+:END:
+I'm kind of excited!
+** Talking about...
+*** Programming
+**** Theory is important
+It's better to read more about various theories about programming, like Knuff's AOC.
+
+Lots of people write code without convergence to any theories. Well, they should. 
+**** Math -> Application
+Good math books contains lots of application examples.
+**** Machine learning
+It's desending. Not very more new things coming out
+**** programming languages
+=C= and =Java= are great, and should write them more.
+Knowing others are great, functional something
+
+Fullfilling some basic features, like logic, copy, and a third, I can't remember.
+**** Trend
++ Machine learning descending,
++ NLP could be better,
++ some structureal description by UCLA's professor Zhu seems promising,
++ context specific language understanding looks cool.
+*** About neuroscience
+Could read more papers, and find out who is doing better in my field.
+
+Neuro system is a good and not discovered enough field.
+*** It's all Data structure + Algorithm
+*** Computer Science + Something
+It's better to have computer science combined with a field, like:
++ Robotic
+  a robot in the deep sea, how to control it, the algorithm and form of system...
++ Medicine
++ Video
++ Signal
+
+So it's easier to find interesting things, and make creative discoveries.
+*** Life and work in ...
+**** Europe & New Zeland
++ not migrant society, so isolation is inevitable.
++ Muslims coming, so danger increasing
+**** America
++ migrant society, so they treat everyone like neighbour
++ Safety differ, and some places very good, some very bad
++ Computer jobs very easy to find
++ California, very good.
++ Recently, both China and America have come crazy about politics. so that's a con, but everywhere is in similar condition.
++ If want to stay in america, better study in america. The relation in school is useful.
+** I admire and respect Dr. Jun Zhang.
+*** Scholarly style
+He have this calmness, scholarly style I very much want a share for myself.
+* Idea!
+** Wolrds, the interfaces
+I saw Xixi wetland. In the river, the fishes hover like in air.
+There's this other world in the waters. Is this matter water so special or the interface, the boundary so delicate to divide 2 worlds?
+The boat sail on the surface of both worlds. Pedals stopped on the boundary as if it marks.
+
+River have this charm of another world in itself, so with a little manipulation, a fantasy view of worlds and their interaction could be created.
+
+And there's so much to see and tell... air is just like water, so if there's other people sailing on the surface of air?
+** Answer for and run
+Answer for the ordering guy, "ice or warm?" "ICE!" And run.
+* Auto Publish Scheme
+** Methods
+*** 1. Copy and paste
+cp the file to org-website project, and commit
+*** 2. Sync
+Have 1 of the fl
+* Use Org-mode to write stuff.
+:PROPERTIES:
+:ID:       9E109660-DECC-4493-A736-0E6C05DC31BE
+:END:
+
+** org-ref learning
+*** How it works
+**** Where the bibtex comes from?
+**** How to use it with bibtex setup in org-mode?
+*** Tutorial
+**** 1. Create Bib file
+=bibliography:na.bib= in the file.
+***** [solved] but clicking it don't create new file
+need a =./= on front of filename. it needs to be a path
+**** 2. add entry in bib file
+use doi link work.
+but the end "dir:" prompt is confusing to me. I don't know what it represents.
+*** Notes on articles.
+**** 1. Add into my .bib file
+I'm still thinking if I should use ~neuroscience.bib~ and ~computerscience.bib~, or just a large ~references.bib~ in general.
+
+Either way, First find article, then get doi, use =doi-utils-add-bibtex-entry-from-doi= to insert bibtex entry.
+**** 2. Go to the note file
+again, I'm dangling on a org-roam node =papers.org= or single note single file.
+
+I'll chose the large file.
+**** 3. Create citation
+=org-ref-insert-link= to invoke the search prompt. search for the paper I want to read/take notes on, and =C-c C-o h= to have a heading with title of the paper.
+
+Yank the title before the citation
+***** Sometimes it report error
+make sure that =bibtex-completion-bibliography= is not nil. org-ref use this variable to search for entry,
+**** 4. Just read the paper and take note
+this is how I made it
+
+

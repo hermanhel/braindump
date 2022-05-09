@@ -1,0 +1,44 @@
+on:
+  push:
+    branches:
+      - main
+
+      
+name: publish to blog
+jobs:
+  update-blog:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout code
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+
+    - name: install exif tool
+      run: sudo apt install libimage-exiftool-perl
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@2e89aa66d0093e4cd14751b3028fc1a179452c2e
+      with:
+        hugo-version: '0.81.0'
+
+    - name: Hugo Build
+      run: hugo --minify
+
+    - name: clean Exif metadata
+      run: exiftool -overwrite_original -recurse -all= public/
+
+    - name: publish blog to hermanhel/braindump:gh-pages
+      run: |
+        eval "$(ssh-agent -s)"
+        ssh-add - <<< "${{ secrets.BRAINDUMP_DEPLOY }}"
+        git config --global user.name "Herman He"
+        git config --global user.email "Hermanhelf@yeah.net"
+
+        git clone git@github.com:hermanhel/braindump.git && mkdir blog && cd blog
+        git checkout --orphan gh-pages      
+        cp -ar ../public/* .
+        git add .
+        git commit -m "update blog"
+        git push --set-upstream --force git@github.com:hermanhel/braindump.git gh-pages
+

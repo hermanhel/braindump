@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       F2CB79B7-B426-4842-966E-7534691DF805
+:END:
+#+title: macOS
+#+HUGO_SECTION:main
+* Crash - Repair
+** DYLD Problem
+#+begin_src shell
+  brew install node
+  # or
+  brew upgrade node
+#+end_src
+It could be that later installed softwares messed up the path. ~node~ could fix that.

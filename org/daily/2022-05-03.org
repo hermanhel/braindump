@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       DA5E8E13-1F9B-443F-9BA6-E74A963FAFC9
+:END:
+#+title: 2022-05-03
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+*  dedicated session package dev
+I wrote doing. releasing is just like rest, plus a log.
+and there is also the timer feature to be added
++ [ ] log
++ [ ] timer
++ [ ] wrote releasing
+* log template
+

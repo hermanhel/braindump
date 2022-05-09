@@ -1,0 +1,113 @@
+:PROPERTIES:
+:ID:       F81AC427-B6C4-40ED-9232-2C5D8D760145
+:END:
+#+title: 2022-04-20
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* freedom!
+A normal narrative is that I do things to feel good. However, the relativity of "feeling good" can be misinterrepted into "stop feeling bad", which probably is what I do after being hooked up by an activity.
+
+Take the example of watching /Brooklyn 99/. A common senario is that I start watching with total freedom, where I can actively choose from several activities with similar desire rate, and =continue= to watch, because my mind can't do anything else.
+
+The priority and "level of fun" of watching this show was then raised to the maximum of all desires, often with my consciouse fading, and my ability to make educated thoughts and decisions declining. I now view this situation as a loss of freedom.
+
+Then what is freedom? In this circumstance, freedom is =capability to choose from several similarly weighted options=. If after doing an activity, I'm so hooked up that I countinoue on doing this without any thoughts, stopping doing make me miserable, and I don't have any desire on anything else, then it's functioning as drugs, stripping freedom of thinking, options, and having fun from me. In the end I don't feel happy doing the thing, but rely on it to escape from misery.
+** way out
+*** ideal senario
+an ideal senario is that =me as a scholar= doing scholar stuff--reading and writing, generating my own idea. =Me as hacker doing hacker= stuff--disintegrating and resolving problems, achieving my own goals. The key lead here is the creative nature of the activity.
+*** hack into wrong habits
++ wrong habit
+  For years, I have the fallback behaviour to converge myself to what I read, instead of examining them with what I have. There's zero creativity in them, which I cannot stand and bores me out. The origin might be some massive reading and urge to be viewed as genius in my early days.
++ solution: _when doing a thing, ask, /is my way of doing it creative?/ __
+  1. if it's not creative, and not elementary: =not doing it=
+     Game, but game without style? Game it not!!! Not worth hacking it.
+  2. if it's not creative, and elementary: =make it creative=
+     There's a creative route in everything. I have my opinion, my interpretation, my definition and lecture on everything. Being creative equals not to new to anyone, but authored by me. It's Herman's opinion, with confident.
+  3. if it's creative, and not elementary: =fit it somewhere=
+     Well, there's interesting things to do everywhere, I don't need to restrain myself to only elementary things, and all things are connected. I'm sure that could fit in somewhere.
+  4. if it's creative, and elementary: =I got lucky= and =log everything=
+     How I made it creative? Log that down so I have something to refer to when I need to creatively do dumb thing in the future.
+* value propositions
+Rich Hickey use this concept to describe sentences like "value is immutable".
+I think it's a very clear vocabulary and concept 
+* Machine learning
+so steps.
+** 1. Preprocessing
+Bad data have:
+1. missing value
+   cause error in an automated program(assume presense of value)(wrong number of args)
+2. wrongly inputed value
+   negative numbers of people alive.(range fault, program error, or wrongful result)
+3. seldom extreme value(outliners)
+   1 to raise the average to much.0,0,0,0,0,20. It's definitely better to guess 0 rather than 3.333
+4. differently scaled value
+   some algorithms work differently with scales. the functions it used, it might be subject to.
+** 
+* Time out                                                        :principle:
+I debugged the prime program far too long. It's not worth that much time, with that little progress.
+
+Thus, I decided to introduce a time out mechanism, so I don't dangle on 1 thing too long, that other things become compromised.
+
+
+** when
+Time out should be introduced when there's no progress, or too little progress.
++ When the work is complete and there's a result, like running the program
+  fail for X times?
+  default X = 5
++ When the work can't get on going
+  feeling not progressing, and press the button for X minute timer.
+  A timer of digging
++ When the working environment became too chaotic
+  Go back and log/organize.
+  
+* clear mind - focus                                              :principle:
+
+** dumping
+After a [[extensive]] work session, the environment of mind would be full of short-term memory piecies, and tensions from the hard processing.
+
+dumping is any activity that could clear out the piecies and tensions from mind environment
+*** extensive
++ content is new
++ high intellectual work load
++ keep track of large set of notion
+** notion of memory
+sometimes I hold everything too tight and close because I want a perfect memory of the session, I want maximum gain/result from the work.
+
+Yet that's very [[id:DD529D9C-924E-4E3B-908E-9CED572243D1][consumer-oriented thinking]], and that's even not how memory work, nor how the knowledge would be used
+*** memory
++ it forget and recall, forget and recall, and then memory.
++ practice
++ high intensity emotion
++ relax
++ in 3-7 chunk size.
++ target is clear and unary
+*** knowledge application
++ senario: I, in writing a program, suddenly recalled out of blue a principle in this particular circumstance.
++ not: I from now on remember these words forever and check on them whenever I see something
+** action: clear the mind
+Like dumping CPU registers, I need to clear my mind between tasks, or even between sessions, when focus start to fade
+*** for fear of losing result of last session: don't fear, you'll lost it anyway.
++ that's how it stick: lost and found
++ provide a larger view for the association
+  + summarize and generate oppurtunity
+  + test of creation(whether I could define the concept myself)
+  + practice looking from a more general view
+    #+attr_html: :width 600px 
+    #+ATTR_ORG: :width 400
+    [[/Users/hermanhe/Notes/RoamNotes/daily/sessioncom.png]]
+    this is how I use the knowledge-by various kinds of associations
++ just look back, it's easy, and all things counts and adds up.
+
+** in larger scale of time: they come back
+I inevitably will re-embrace these experiances multiple times. No rush this small moment of "stick". Just relax and let it flow, let wave rise and fall, for it's destiny that they will come back, they always will
+** well-being
+It's ungood to have too much things in the head, worse if they are only illusions of tensions. And they finally will, when my short-term memory faded, they will all be just tensions.
+*** don't want to do stuff under fluffy mind
+well-being is the base variable of motivation. When well-being is cracked, there's no motivation on the table.
+** well-functioning
+Man can't work with brain locked up with all the tensions.
+We feel tensions on the outside world, on our body, by releasing the tensions in us and converge to the tension outside us. We don't flow with the outside world if we kept our tension and be rock hard in our stance.
+** clear my mind between sessions
+forget about everything. Retrieve them from my own logic and memory.
+And focus, being motivated. Log anything notable.

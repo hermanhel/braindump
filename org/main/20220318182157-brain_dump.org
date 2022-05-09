@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       0C975C57-512D-4AE0-9F09-77A0E5DAE672
+:END:
+#+title: Brain Dump
+#+HUGO_SECTION:main
+This is my brain dump. It is used in a term of very =present=. The life of all stuffs stock in here won't be centry long, but like =a week old=.
+There are people use brain dump as dumping everything out and store them for document for search. That's valid.
+However, this brain dump is to dump the most =important thing at hand=, against forgetting. So this page would be constantly exit between days, and I shall delete a entry once it don't excite me, to make the whole thing pleasant.
+* Skill
+I want to engineer a system, where it could =fix itself=, and =grow by itself=.
+I define =skill= as =machine=, and =mastering a skill= as =being familiar with the machine=. so the system would make it easy to obtain new skills, and formalize the existing skills.
+
+I see this system something like the lisp, or emacs it self: =a small compiler, and a fully extensible system=, where the system contains only the compiler at first, but using the compiler, various packages could be pluged in to the system, make it really huge and powerful with time.
+
+In this analogy, if skill = machine, then a system like that that work with machine, would be a machine as the...
+
+the =key defference= here is that for a compiler, it's executed by =natural law=. And human's acting a machine involves lots of decision, with emphasis on =construction= and =familiarence=
+
+The compiler way may be unrealistic. but it's a =option=
+
+The other =option= is the extensible language approach, In which, the fundamental computing is implemented, and macros can be defined to use these features. This is, make a set of very simple machines that implement basic behaviours, like:
++ read
++ machine consturction
+  the log utility should be included in the construction machine, not session. the session are meant to be very small to be managable and boost focus. There then would be too many logs with few really content. Should just note randomly at session, and log formally in the machine specified log utility.
++ machine familiarence aquisition
++ memorize things
++ understand
++ direct practice
++ sport
+  As a whole
+  I'm thinking of a work-out plan. It's impossible to have a very large plan scheduled to every hour, and no chance I'll go through that right accordingly.
++ session
+  note randomly
+
+Then, for further machines, could use these machines as facility. like in a project machine to take a cource, could =(do (read material) (machine-construct specification) (machine-familiarence-aquire 上一个machine))= . Or combine them into a new machine, =read-skill-aquire=.
+
+If treat machine like function, then can't skip macro. The key difference between macro and function is =function is recursively executed= and macro is transforming the instruction, and then call functions. In term of machine, is whether to (function) go through the inner procedure 1 by 1 or (macro) first transform the input.
+** manage skills as machines
+Skills sound like very static thing, with same input and output, and no integration to other fields, except when learning a new skill. If manage skill as machines, the integration could be simpler to think about, and the skill could be simpler to deal with(develop, maintain, apply), because it's been =formally defined=. 
+* [[id:391C5CF3-2A11-4BC3-ADE3-6F8C6E557B82][Neuralscientist]]
+I always remember that I wanted to be a neuroscientist, and read related materials to gain knowledge when available.
+* Topics
+** Blender
+** Bondage/Knots
+** Learning CPT104 OS
+** Maintain the good credit machine. Become familiar with it.

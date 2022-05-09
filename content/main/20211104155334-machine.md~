@@ -1,0 +1,61 @@
++++
+title = "Machine"
+author = ["System Administrator"]
+draft = false
++++
+
+## Categories {#categories}
+
+
+### Purpose {#purpose}
+
+
+#### Project machines {#project-machines}
+
+A machine could be constructed just for a particular project, with itself used for only once.
+
+Such machine have components that should work with each other that will make the project success, like my credit in EAP121 or make a particular robot.
+
+components could be preparation of a presentation or moving algorithm of the robot
+
+
+#### Everyday machines {#everyday-machines}
+
+machines could also be designed to deal with a type of repetitive occuring tasks, like loundary.
+
+
+### Shape {#shape}
+
+
+#### Chain {#chain}
+
+with steps and components and levels one after another to reach a higher height
+
+
+#### Loop {#loop}
+
+With repeating steps to accumulate and build height.
+
+
+## Machine page {#machine-page}
+
+machine page holdes all information of the machine, including implementation, scientific source, experiance reasons .etc.
+
+
+### Implementation {#implementation}
+
+When applying the machine in task/sessions, there could be some measures as below:
+
+
+#### Information Scheme {#information-scheme}
+
+There could be specific place to seek information needed for the machine.
+
+Example:
+
+-   slides-from lmo
+-   mail list-collect through university websites
+
+Currently, the informations are perfered to be collected in the scheme session, and wrote as detailed plan in the task descriptions.
+
+Instead of that, a _Information Scheme_ could be established in the task description, with structure specified in the [Machine page](#machine-page) .

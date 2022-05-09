@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-11-08 Mon 20:53 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Terraria Goingthrough</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Linfeng  He" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Terraria Goingthrough</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga1b3307">1. 后肉山计划</a>
+<ul>
+<li><a href="#org6e11ba3">1.1. <span class="done DONE">DONE</span> 1.准备阶段</a>
+<ul>
+<li><a href="#org5e73b38">1.1.1. <span class="done DONE">DONE</span> 1.基于矿石：钯金，秘银，钛金，山铜</a></li>
+<li><a href="#org5a76115">1.1.2. <span class="done DONE">DONE</span> 2.魔法装备</a></li>
+<li><a href="#org1202b8b">1.1.3. <span class="todo TODO">TODO</span> 3.近战装备</a></li>
+<li><a href="#org0d21117">1.1.4. <span class="todo TODO">TODO</span> 4.远程装备</a></li>
+</ul>
+</li>
+<li><a href="#orgbb29f1f">1.2. <span class="done DONE">DONE</span> 2.新三王</a>
+<ul>
+<li><a href="#org90770bb">1.2.1. 新的装备</a></li>
+</ul>
+</li>
+<li><a href="#orga1ca95a">1.3. <span class="todo TODO">TODO</span> 3.新丛林&amp;地狱</a></li>
+<li><a href="#org4de1ab8">1.4. <span class="todo TODO">TODO</span> 4.世纪之花</a></li>
+<li><a href="#orge76a5ff">1.5. <span class="todo TODO">TODO</span> 5.神庙</a></li>
+<li><a href="#orgf01ed1a">1.6. <span class="todo TODO">TODO</span> 6.石巨人</a></li>
+<li><a href="#org345b49a">1.7. <span class="todo TODO">TODO</span> 7.地牢</a></li>
+<li><a href="#org7b9838f">1.8. <span class="todo TODO">TODO</span> 8.猪龙鱼公爵</a></li>
+<li><a href="#org947546a">1.9. <span class="todo TODO">TODO</span> 9.拜月教邪教徒</a></li>
+<li><a href="#orge0d0e28">1.10. <span class="todo TODO">TODO</span> 10.天界柱</a></li>
+<li><a href="#orgd09e67e">1.11. <span class="todo TODO">TODO</span> 11.月亮领主</a></li>
+<li><a href="#org712e3c5">1.12. <span class="todo TODO">TODO</span> 12.</a></li>
+</ul>
+</li>
+<li><a href="#orgd225075">2. Terraria 网络服务器</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga1b3307" class="outline-2">
+<h2 id="orga1b3307"><span class="section-number-2">1.</span> 后肉山计划</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+ref：<a href="https:https://terraria.fandom.com/zh/wiki/%E6%8C%87%E5%8D%97:%E9%80%9A%E5%85%B3%E6%94%BB%E7%95%A5/Hardmode#.E7.B2.89.E7.A2.8E.E7.A5.AD.E5.9D.9B">TerraWiki困难模式指南</a>
+</p>
+</div>
+<div id="outline-container-org6e11ba3" class="outline-3">
+<h3 id="org6e11ba3"><span class="section-number-3">1.1.</span> <span class="done DONE">DONE</span> 1.准备阶段</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org5e73b38" class="outline-4">
+<h4 id="org5e73b38"><span class="section-number-4">1.1.1.</span> <span class="done DONE">DONE</span> 1.基于矿石：钯金，秘银，钛金，山铜</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+标题顺序为强度顺序
+</p>
+</div>
+</div>
+<div id="outline-container-org5a76115" class="outline-4">
+<h4 id="org5a76115"><span class="section-number-4">1.1.2.</span> <span class="done DONE">DONE</span> 2.魔法装备</h4>
+<div class="outline-text-4" id="text-1-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgec21bf7"></a>以装备为目标<br />
+<div class="outline-text-5" id="text-1-1-2-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 诅咒焰
+弹射，高伤害，燃烧，连发,重力</li>
+<li class="off"><code>[&#xa0;]</code> 黄金雨
+去树妖那里买猩红种子，做猩红之地，在猩红之地刷灵液做</li>
+<li>[ ]神灯烈焰
+<ul class="org-ul">
+<li>沙漠幽魂灯
+沙漠幽魂</li>
+<li>禁戒碎片
+沙尘精</li>
+<li>暗影之魂</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> 裂天剑
+在拜月教邪教徒前都很强
+
+<ul class="org-ul">
+<li>魔法导弹</li>
+<li>光明碎块2</li>
+<li>光明之魂15</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> 魔力花
+在丛林找大自然的恩赐</li>
+<li class="off"><code>[&#xa0;]</code> 雨云魔杖
+来自愤怒雨云
+持续伤害</li>
+<li class="off"><code>[&#xa0;]</code> 水晶蛇
+在神圣之地钓鱼
+直线攻击，分裂</li>
+<li class="off"><code>[&#xa0;]</code> 彩虹魔杖
+合成:</li>
+<li class="off"><code>[&#xa0;]</code> 剧毒法杖
+来自黑隐士</li>
+<li class="off"><code>[&#xa0;]</code> 冰霜法杖
+来自冰雪地带，冰雪人鱼和冰雪精</li>
+</ul>
+</div>
+</li>
+<li><a id="org8149066"></a>以敌怪为目标<br />
+<div class="outline-text-5" id="text-1-1-2-2">
+<ul class="org-ul">
+<li>宝箱怪
+宝箱怪掉落很多钱和珍贵道具
+在地狱有很多，在冰雪，地下腐化和神圣之地能找到特殊。</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org1202b8b" class="outline-4">
+<h4 id="org1202b8b"><span class="section-number-4">1.1.3.</span> <span class="todo TODO">TODO</span> 3.近战装备</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgb67ad49"></a>yoyo<br />
+<div class="outline-text-5" id="text-1-1-3-1">
+<ul class="org-ul">
+<li>amarok</li>
+<li>hel-fire</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org0d21117" class="outline-4">
+<h4 id="org0d21117"><span class="section-number-4">1.1.4.</span> <span class="todo TODO">TODO</span> 4.远程装备</h4>
+<div class="outline-text-4" id="text-1-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgd76425e"></a>箭<br />
+<ol class="org-ol">
+<li><a id="org77f12f9"></a>圣箭<br />
+<div class="outline-text-6" id="text-1-1-4-1-1">
+<p>
+落星星
+</p>
+<ul class="org-ul">
+<li>妖精尘</li>
+<li>独角兽角</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org0a78d67"></a>枪械<br />
+<ol class="org-ol">
+<li><a id="org4eff54f"></a>Uzi<br />
+<div class="outline-text-6" id="text-1-1-4-2-1">
+<p>
+Highest priority
+打丛林的食人花，1%
+</p>
+</div>
+</li>
+<li><a id="orgdf5d276"></a>爆破子弹<br />
+<div class="outline-text-6" id="text-1-1-4-2-2">
+<p>
+打毁灭者很有用的子弹
+强击退
+可以配合霰弹枪
+</p>
+<ul class="org-ul">
+<li>空心子弹&#x2013;军火商</li>
+<li>爆破粉&#x2013;炸弹商</li>
+</ul>
+</div>
+</li>
+<li><a id="org993615a"></a>水晶子弹<br />
+<div class="outline-text-6" id="text-1-1-4-2-3">
+<p>
+打得很快，爆炸，碎片
+巨兽鲨+水晶子弹可以在几秒内干掉wall of flesh
+</p>
+<ul class="org-ul">
+<li>火枪子弹</li>
+<li>水晶碎块
+地下神圣之地</li>
+</ul>
+</div>
+</li>
+<li><a id="orge5c0e4e"></a>高速子弹<br />
+<div class="outline-text-6" id="text-1-1-4-2-4">
+<p>
+很快，不太用预测
+可以打两次
+</p>
+<ul class="org-ul">
+<li>子弹</li>
+<li>齿轮
+蒸汽朋克人</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgbb29f1f" class="outline-3">
+<h3 id="orgbb29f1f"><span class="section-number-3">1.2.</span> <span class="done DONE">DONE</span> 2.新三王</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+打完一个新三王后就可以打撒旦军队了
+</p>
+</div>
+
+<div id="outline-container-org90770bb" class="outline-4">
+<h4 id="org90770bb"><span class="section-number-4">1.2.1.</span> 新的装备</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org701f7e0"></a>魔法<br />
+<div class="outline-text-5" id="text-1-2-1-1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 彩虹魔杖
+<ul class="org-ul">
+<li>水晶碎块10</li>
+<li>独角兽角2</li>
+<li>妖精尘10</li>
+<li>光明之魂8</li>
+<li>视域之魂15 （双子魔眼）</li>
+</ul></li>
+<li>[ ]无限智慧巨著
+来自打败一个机械Boss后的撒旦军队食人魔Boss
+笑杀毁灭者</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga1ca95a" class="outline-3">
+<h3 id="orga1ca95a"><span class="section-number-3">1.3.</span> <span class="todo TODO">TODO</span> 3.新丛林&amp;地狱</h3>
+</div>
+<div id="outline-container-org4de1ab8" class="outline-3">
+<h3 id="org4de1ab8"><span class="section-number-3">1.4.</span> <span class="todo TODO">TODO</span> 4.世纪之花</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+</div>
+<div id="outline-container-orge76a5ff" class="outline-3">
+<h3 id="orge76a5ff"><span class="section-number-3">1.5.</span> <span class="todo TODO">TODO</span> 5.神庙</h3>
+</div>
+<div id="outline-container-orgf01ed1a" class="outline-3">
+<h3 id="orgf01ed1a"><span class="section-number-3">1.6.</span> <span class="todo TODO">TODO</span> 6.石巨人</h3>
+</div>
+<div id="outline-container-org345b49a" class="outline-3">
+<h3 id="org345b49a"><span class="section-number-3">1.7.</span> <span class="todo TODO">TODO</span> 7.地牢</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 磁球</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7b9838f" class="outline-3">
+<h3 id="org7b9838f"><span class="section-number-3">1.8.</span> <span class="todo TODO">TODO</span> 8.猪龙鱼公爵</h3>
+<div class="outline-text-3" id="text-1-8">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 利刃台风</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org947546a" class="outline-3">
+<h3 id="org947546a"><span class="section-number-3">1.9.</span> <span class="todo TODO">TODO</span> 9.拜月教邪教徒</h3>
+</div>
+<div id="outline-container-orge0d0e28" class="outline-3">
+<h3 id="orge0d0e28"><span class="section-number-3">1.10.</span> <span class="todo TODO">TODO</span> 10.天界柱</h3>
+</div>
+<div id="outline-container-orgd09e67e" class="outline-3">
+<h3 id="orgd09e67e"><span class="section-number-3">1.11.</span> <span class="todo TODO">TODO</span> 11.月亮领主</h3>
+</div>
+<div id="outline-container-org712e3c5" class="outline-3">
+<h3 id="org712e3c5"><span class="section-number-3">1.12.</span> <span class="todo TODO">TODO</span> 12.</h3>
+</div>
+</div>
+<div id="outline-container-orgd225075" class="outline-2">
+<h2 id="orgd225075"><span class="section-number-2">2.</span> Terraria 网络服务器</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+使用我的GigsGigsCloud服务器host一个Terraria的网络服务器
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Linfeng  He</p>
+<p class="date">Created: 2021-11-08 Mon 20:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

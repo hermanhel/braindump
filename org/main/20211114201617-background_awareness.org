@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1626B7D4-5023-4E58-AA39-4CEC5E188FF5
+:END:
+#+title: background awareness
+#+HUGO_SECTION:main
+

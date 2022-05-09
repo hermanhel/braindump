@@ -1,0 +1,187 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/hermanhe/Notes/RoamNotes/20220224134643-int104.org
+
+
+* Playing around
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-15 Fri 10:12
+:ARCHIVE_FILE: ~/Notes/RoamNotes/20220224134643-int104.org
+:ARCHIVE_OLPATH: CW2
+:ARCHIVE_CATEGORY: INT104
+:END:
+#+begin_src ipython :session int104 :file ./ipython-ImEGvQ.png :exports both :results raw drawer
+  import numpy as np
+  import pandas as pd
+  import matplotlib.pyplot as plt
+  from sklearn.neighbors import KNeighborsClassifier
+  from  sklearn.model_selection import train_test_split
+  
+  df = pd.read_csv("resource/CW_Data.csv")
+  
+  df = df.dropna()
+  df = df.drop(columns = "ID")
+  df
+  
+  
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[2]:
+#+BEGIN_EXAMPLE
+  Q1   Q2    Q3    Q4    Q5  Programme
+  0    32.0  7.0   3.0  12.0   4.0        1.0
+  1    32.0  7.0  10.0  12.0  12.0        2.0
+  2    12.0  0.0   0.0   0.0   0.0        1.0
+  3    16.0  0.0   2.0   0.0   1.0        3.0
+  4    28.0  0.0   0.0   0.0   0.0        2.0
+  ..    ...  ...   ...   ...   ...        ...
+  509  26.0  0.0   7.0   0.0   4.0        2.0
+  510  34.0  5.0  10.0  20.0  20.0        2.0
+  511  14.0  7.0  10.0   2.0   0.0        1.0
+  512  22.0  1.0  10.0   0.0   6.0        0.0
+  513  24.0  0.0  10.0   2.0   4.0        0.0
+  
+  [514 rows x 6 columns]
+#+END_EXAMPLE
+:end:
+** PCA
+#+begin_src ipython :session int104 :file ./ipython-SVX5Fo.png :exports both :results raw drawer
+  import sklearn.decomposition as sd
+  pca = sd.PCA(n_components=2)
+  pcaed_df = pca.fit_transform(df)
+  pcaed_df,len(pcaed_df)
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[7]:
+#+BEGIN_EXAMPLE
+  (array([[ -4.8209599 ,  -7.15654506],
+  [-10.44146518,  -1.0091752 ],
+  [ 17.86451187,   2.0547266 ],
+  ...,
+  [ 12.36908206,   0.20398769],
+  [  6.08437123,   0.99583379],
+  [  5.01219816,  -2.06698548]]),
+  514)
+#+END_EXAMPLE
+:end:
+#+begin_src ipython :session int104 :file ./ipython-CP5hlK.png :exports both :results raw drawer
+pcaed_df_x = []
+pcaed_df_y = []
+
+for item in pcaed_df:
+    pcaed_df_x.append(item[0])
+    pcaed_df_y.append(item[1])
+
+plt.scatter(x = pcaed_df_x, y = pcaed_df_y)
+plt.show()
+
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[8]:
+[[file:./obipy-resources/K0fmEC.png]]
+:end:
+
+** KNN: 0.47 accuracy
+#+begin_src ipython :session int104 :file ./ipython-TfE5aX.png :exports both
+  accuracies = []
+  for i in range(5):
+      X_train, X_test, y_train, y_test = train_test_split(df[["Q1","Q2","Q3","Q4","Q5"]],df["Programme"],test_size = .3)
+  
+      classifier = KNeighborsClassifier(n_neighbors = 3)
+      classifier.fit(X_train,y_train)
+  
+      prediction = classifier.predict(X_test)
+      accuracy = np.where(prediction == y_test,1,0).sum()/(len(y_test))
+      accuracies.append(accuracy)
+  np.average(accuracies)
+#+end_src
+
+#+RESULTS:
+: # Out[31]:
+: : 0.4774193548387096
+** Cluster: use Q1 and Q2
+#+begin_src ipython :session int104 :file ./ipython-KJtGgm.png :exports :results raw drawer
+  from  sklearn.cluster import KMeans
+  kmeans = KMeans(n_clusters = 5)
+  X =df[["Q1","Q2"]]
+  # X = list(zip(df[["Q1","Q2"]]))
+  X = list(zip(X.Q1,X.Q2))
+  kmeans.fit(X)
+  
+  centroids = kmeans.cluster_centers_
+  labels=  kmeans.labels_
+  colors = ["g.","r.","c.","y.","b."]
+  for i in range(len(X)):
+      plt.plot(X[i][0],X[i][1],colors[labels[i]],markersize = 10)
+  plt.scatter(centroids[:,0],centroids[:,1],marker = "x",s = 150, linewidth=2,zorder = 10)
+  plt.show()
+  
+  
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[45]:
+[[file:./obipy-resources/divbD8.png]]
+:end:
+#+begin_src ipython :session int104 :file ./ipython-5eDn0x.png :exports both :results raw drawer
+  programmes = df["Programme"]
+  for i in range(len(X)):
+      plt.plot(X[i][0],X[i][1],colors[int(programmes[i])],markersize = 10)
+  plt.show()
+  
+#+end_src
+
+#+RESULTS:
+:results:
+# Out[47]:
+[[file:./obipy-resources/7BAwT0.png]]
+:end:
+** Density Estimation
+#+begin_src ipython :session int104 :file ./ipython-b51zkQ.png :exports both
+  import numpy as np
+  from sklearn.cluster import MeanShift
+  import matplotlib.pyplot as plt
+  from mpl_toolkits.mplot3d import Axes3D
+  import matplotlib.style as stl
+  stl.use("ggplot")
+  
+  X = list(zip(df.Q1,df.Q2,df.Q3))
+  print(X)
+  ms = MeanShift()
+  ms.fit(X)
+  centroids = ms.cluster_centers_
+  labels = ms.labels_
+  n_clusters_ = len(np.unique(labels))
+  print("estimated clusters: " ,n_clusters_)
+  colors= ["r","g","b","c","y","m","k"]
+  
+  fig = plt.figure()
+  ax = fig.add_subplot(111,projection = "3d")
+  
+  
+  for i in range(len(X)):
+      ax.scatter(X[i][0],X[i][1],X[i][2], c = colors[int(programmes[i])],marker = "o")
+  ax.scatter(centroids[:,0],centroids[:,1],centroids[:,2],marker = "x",s = 150, linewidth = 5,zorder = 10)
+#+end_src
+
+#+RESULTS:
+: # Out[54]:
+: : <mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x7f8ec7e3da30>
+ [[file:./obipy-resources/PLDY4h.png]]
+ [[file:./obipy-resources/87HNaf.png]]
+#+begin_src ipython :session int104 :file ./ipython-ucOXKp.png :exports both
+  for i in range(len(X)):
+        ax.scatter(X[i][0],X[i][1],X[i][2], c = colors[int(programmes[i])],marker = "o")
+  plt.show()
+#+end_src
+
+#+RESULTS:
+: # Out[53]:

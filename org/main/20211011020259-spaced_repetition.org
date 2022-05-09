@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       CA269485-1B2F-4494-9DDB-ED33B00939F7
+:END:
+#+title: Spaced Repetition
+#+HUGO_SECTION:main
+Repetition of simple message(usually facts in bite size) in small time intervals and long periods.
+e.g: =4 times of a word list for 3 days=
+
+* Flashcard
+:PROPERTIES:
+:ID:       9A766E2D-8851-4E30-A4B7-21AFC25F1CB3
+:END:
+Flashcard is a tool and form of spaced repetition.
+Sides of Flashcard record information that should be remembered and related together.
+** Anki
+Anki is an =important= spaced repetition, and actually the best choice. other methods would be requivelent or less convinient.
+*** TODO Find a way to edit Anki conviniently
+like, with org-roam, or org, or markdown, or other in emacs

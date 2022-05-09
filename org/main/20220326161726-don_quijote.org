@@ -1,0 +1,106 @@
+:PROPERTIES:
+:ID:       E008CB50-8ED1-4C41-8852-6D337737F65E
+:END:
+#+title: Don Quijote
+#+HUGO_SECTION:main
+* Read Don Quijote
+SCHEDULED: <2022-03-27 Sun +1d>
+:PROPERTIES:
+:STYLE:    habit
+:LAST_REPEAT: [2022-03-26 Sat 17:15]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2022-03-26 Sat 17:15]
+- State "DONE"       from              [2022-03-26 Sat 17:15]
+CLOCK: [2022-03-26 Sat 16:21]--[2022-03-26 Sat 17:15] =>  0:54
+:END:
+** notes
+Don;t dangle on 1 sentance too much.
+** read Don quijote
+*** Cue - obvious
++ Time and place
+  ~I will read 1 page of Don Quijote with all words and usages figured out at 4 p.m. at my desk~
++ I have my yellow grammar book on my desk
+*** Craving - attractive
++ Reprogramming the brain
+  + the benefit of improving my coding skill
+    1. I'll be better in spanish
+    2. I could really understand what Cervantes have to say, these spirits.
+    3. I could recite the classic lines to impress other people
+    4. I could reference these very good lines in my own speaking
++ Temptation bundling
+  After I've done a 1 page, I'll read it aloud
+*** Response - easy
++ Least effort:
+  1 page a day
++ The environmnet:
+  The book, Emacs/org-roam/don-quijote for note, Esdict/Collins for reference. 
+*** Reward - satisfying
++ Adding little pleasure
+  A knot after the page
+*** Mindset - continue process
++ 1% improvement
++ I'm a writer
+* Notes
+
+** Primera Parte
+*** Capítulo I
+**** Pagina 1
+***** Que trata de la condición y ejercicio del famoso y valiente hidalgo don Quijote de la Mancha
+****** Que trata
+****** Trata
+Tratar - deal
+****** condición
+****** ejercicio
+exerice
+****** valiente
+Excellent
+****** hidalgo
+little land lord
+***** En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha muchao tiempo que viviá un hidalgo de los de lanza en astillero, adarga antigua rocín flaco y galgo corredor.
+****** En un lugar de la mancha
+in a place of la manche
+****** de cuyo nombre
+whose name
+****** cuyo
+whose. the number mactch the noun.
+****** Acordarme
+remind.
+put =me= in the back of =acordar=.
+****** que viviá
+****** de los de lanza de astillero
+lanza - lance
+astillero - lance stand
+****** adarga
+a kind of leather shield
+****** rocín
+thin horce
+****** flaco
+thin
+****** galgo corredor
+a fast hounddog
+***** Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda.
+****** una olla de algo
+pan of something?
+usual olla(a dish use pan)
+
+****** más vaca que carnero
+more beef than lamb
+****** salpicón
+拌菜
+****** las más noches
+most nights
+****** duelos y quebrantos
+a dish. 脂油煎鸡蛋
+****** lantejas
+小扁豆汤
+****** algún palomino
+some pigeon
+****** de añadidura
+加饶头
+****** consumían 
+consumir. consume
+****** tres partes
+3/4
+****** hacienda
+income

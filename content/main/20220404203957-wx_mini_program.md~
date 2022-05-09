@@ -1,0 +1,51 @@
++++
+title = "wx mini program"
+author = ["System Administrator"]
+draft = false
++++
+
+wx mini program have a lot in common with html+js programming combination, but with some features.
+
+
+## Data and Storage {#data-and-storage}
+
+
+### Page Runtime memory {#page-runtime-memory}
+
+```js
+function onLoad(option){
+    var that = this // Use variable that to refer to the page when "this" have other meaning.
+    this.setData({
+	field : value,
+	field2: value2
+    })
+  }
+```
+
+<div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 1</span>:
+  Setdata
+</div>
+
+
+## qrcode util {#qrcode-util}
+
+the QRcode util is provided with WeChat's own Scan function.
+It's pretty.
+
+```js
+wx.scanCode({
+    //success function is that is called when the decoding succeeded.
+    success (res) { //the results are stored in res. specifically, the decoded result is stored in res.result.
+	console.log(res)
+	that.setData({
+	    scanresult : res
+	})
+	wx.navigateTo({
+	    url: '../contentview/contentview?id=' + that.data.scanresult,
+
+	})
+
+    }
+})
+```

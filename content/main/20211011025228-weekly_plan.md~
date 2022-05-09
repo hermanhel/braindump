@@ -1,0 +1,91 @@
++++
+title = "Weekly Plan"
+author = ["System Administrator"]
+draft = false
++++
+
+This machine is for Weekly Plan
+
+
+## Schedule {#schedule}
+
+The Weekly Plan Machine call scheduled on every Saturday night
+Change if needed
+
+
+### <span class="org-todo todo TODO">TODO</span> Weekly Plan {#weekly-plan}
+
+:LAST_REPEAT: <span class="timestamp-wrapper"><span class="timestamp">[2022-03-18 Fri 16:46]</span></span>
+
+Make Weekly Plan According to this machine
+
+
+## Flow of Weekly Plan Machine {#flow-of-weekly-plan-machine}
+
+
+### 1. Confirm on the [Roles]({{< relref "20211008132927-roles.md" >}}) {#1-dot-confirm-on-the-roles--20211008132927-roles-dot-md}
+
+Recognize the roles and the priority and first things.
+
+
+#### Repeated schedules {#repeated-schedules}
+
+<!--list-separator-->
+
+-  [Neuralscientist]({{< relref "20211012021721-neuralscientist.md" >}})
+
+    <!--list-separator-->
+
+    -  [Academic Machine]({{< relref "20211011005922-academic_machine.md" >}})
+
+        -   Preview Session
+        -   Tutoring Session
+        -   Homework Session
+
+
+### 2. Project: TODO -&gt; WEEK -&gt; NEXT {#2-dot-project-todo-week-next}
+
+Base on the Roles, Find in the Projects nested under roles that are active, and allocate Tasks to this WEEK. First Thing First, always.
+After that, Change the First things to NEXT
+Should set effort
+Refresh NEXT every day.
+
+
+### 3. Maintain: TODO -&gt; WEEK -&gt; NEXT {#3-dot-maintain-todo-week-next}
+
+Things not in project but are necessary for roles and living.
+eg.: Go to teh hospital, Get Fruits, Repair gear, buying fancy things
+also to WEEK
+
+
+### 4. Schedule Time {#4-dot-schedule-time}
+
+According to effort and priority, allocate each Task to days.
+
+
+## `NEXT` Task {#next-task}
+
+Focus on the NEXT Tasks only
+
+
+### Flow {#flow}
+
+1.  Mark the Tasks I want to focus on NEXT in the TODO list.
+2.  Focus only on the NEXT tasks
+3.  When the NEXT list is empty, repeat step 1.
+
+
+## Content {#content}
+
+
+### [Academic Machine]({{< relref "20211011005922-academic_machine.md" >}}) {#academic-machine--20211011005922-academic-machine-dot-md}
+
+This is the most important project now.
+
+
+#### Preview sessions {#preview-sessions}
+
+See [Self-Learning Machine]({{< relref "20211011015906-self_learning_machine.md" >}})
+
+
+#### Homework sessions {#homework-sessions}

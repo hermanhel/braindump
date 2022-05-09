@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       43B460FE-3B7A-487B-A6B3-1209F9767F9A
+:END:
+#+title: 2022-04-21
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* 先做必做之事,再做想做之事                                       :principle:
+** 必做之事
+不做的成本,或者做得不好的惩罚很高的事.
+** 想做之事
+也处于动机范围之内,但是不做或是做得不好不会有惩罚.
+** 创造性
+给必做之事赋予创造性.在里面发现想法、现象、原则.
+** 一些必做之事
+*** [#A] write INT104 wiki
+[[file:2022-04-18.org::*\[\[id:0A261A32-82AD-469F-94C4-2A512ACDB1C5\]\[INT104 AI\]\]][INT104 AI]]
+*** [#A] write INT104 paper
+*** [#A] practice INT104 project
+*** [#B] Solidify INT102 included algorithms
+**** creative
++ feature?
++ data stucture?
++ illustrate?
++ wiki/blog?
++ when to apply?
++ the look of problem suit the algorithm?
++ related algorithms?
+*** [#B] practice CPT102 included data structures and implementation
+**** creative
++ java implementation?
+*** [#C] Recite SPA003 included vocabulary and grammar
+**** creative
++ first draft: bear in mind the draft is very likely to be restructured into more concise one.
+*** [#C] Recite SPA003 included usefull sentences
+*** [#B] solidify CPT104 included concepts
+*** [#B] practice CPT104 related codes
+*** [#A] exercise
+I need my body healthy and strong, to stay focused.
+*** [#C] GRE word recite
+I need GRE done early
+** 一些想做之事
+*** Practice AOC
+*** Research Neuroscience
+*** Practice application software
+*** Play Hearthstone
+*** Write Literature
+*** Practice jazz piano
+*** pracitce singing
+* 每天做三件事情:喝水,锻炼,学习音乐                               :principle:
+quote 张大米老师.
+对我来说,再加上学习计算机科学.
+

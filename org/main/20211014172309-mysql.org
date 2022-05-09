@@ -1,0 +1,242 @@
+:PROPERTIES:
+:ID:       EC2ADAA4-0DD4-46EB-94E3-95B1DA6FCE7A
+:END:
+#+title: MySQL
+#+HUGO_SECTION:main
+* Using MySQL Server
+** Emacs
+I Think that I'll be using this approach mainly. Check that out.
+*** Using eshell
+#+begin_src shell
+ mysql -h [server] -u [usrname] -p # RET, then input the passward
+#+end_src
+*** Using sql-MySQL
+1. Edit a .sql file
+2. M-x sql-MySQL
+3. usrname, password, database, server.
+**** Error: cannot find mysql exec
+Find the exec. Usually a binary exec under ~"/some/where/bin"~
+
+** TODO phpMyAdmin
+ This is the official way taught in class, should be. I should Check that out later
+ 
+* MySQL Commands
+| ~COMMAND~                         | Description                            |
+|-----------------------------------+----------------------------------------|
+| ~show databases;~                 | Show database                          |
+| ~use XXX; show tables;~           | Show table names                       |
+| ~use XXX; create table YYY(ZZZ);~ | Create table YYY in XXX with speci ZZZ |
+| ~describe XXX;~                   | Show table XXX's structure             |
+| ~create database XXX;~            | Create database                        |
+| ~drop database/table XXX;~        | Delete XXX                             |
+| ~delete from XXX~                 | Clear out XXX                          |
+
+** Setting
+
+*** Create Table
+
+*** Alter
+#+begin_src sql
+    alter table `tablename`
+    add
+          primary key (`column`)
+          
+          constraint fk_module_teacher foreign key (`column`)
+          references `teachers` (`id`);
+    
+    drop primary key
+#+end_src
+
+*** Insert data
+#+begin_src sql
+    insert into `table` values(field1, filed2);
+  
+    insert into `student` values 
+  (156123,'Nuno Bloggs','nuno@bloggs.com'),
+  (156897,'John Trump','John@trump.com'),
+  (123987,'Lidia Elliott','Lidia@gmail.com'),
+  (777123,'Alicia Smith','Alicia123@456.com'),
+  (127845,'Sophie Johns','S.Johns@nott.edu.cn');
+  
+#+end_src
+只插入一定列
+
+#+begin_src sql
+  insert into persons (LastName, Address) VALUES ('JSLite', 'shanghai');
+  INSERT INTO meeting SET a=1,b=2;
+  
+         
+#+end_src
+
+表到表
+#+begin_src sql
+          INSERT INTO orders (user_account_id, title) SELECT m.user_id, m.title FROM meeting m where m.id=1;
+  
+#+end_src
+
+
+**** Update data
+#+begin_src sql
+update `modules` set `teacher_id` = 7099543 where `code` = 'MC2'; -- update the teacher reference
+
+#+end_src
+
+** Query
+*** ~SELECT~ Command
+Syntax: ~select FIELD from TABLE where CONDITON;~
+Return a set.
+this set could be used with the ~in~ syntax in [[Subquery]]
+
+
+**** Exec Flow
+1. ~select FIELD from TABLE~
+2. ~where CONDITION~
+**** Rename
+***** Display
+This alters the column name in display
+~select (FIELD*3) as ABC~
+***** Reference
+~select * from Dormitory as D~
+This make reference like ~Dormitory.roomid~ shorten to ~D.roomid~
+*** Select from () as x
+only
+
+*** Query Flow
+1. Tables join
+2. ~where~ clauses
+3. ~group by~ clasuses and aggregates
+4. column selecion
+5. ~having~ clauses
+6. ~order by~ clauses
+   #+begin_src sql
+     select XXX from YYY as ZZZ
+            where predicates
+            group by AAA
+            having predicatesBBB
+            order by ZZZ asc	
+   #+end_src
+
+*** Subquery
+#+begin_src sql
+  select Name from Employee
+       where Dept =
+     (select Dept from Employee
+   where name = "andy")
+#+end_src
+
+**** Set
+Subquery meet problems in case of sets
+| option    | usage                           | meaning                |
+|-----------+---------------------------------+------------------------|
+| ~in~      | ~where COL in SET/(select...);~ | check if COL is in SET |
+| ~exists~  |                                 |                        |
+| ~all/any~ | ~val = any (set)~               | used with ~<,>,<=,etc~ |
+| ~not~     |                                 |                        |
+
+*** Joins
+syntax: ~select * from A TYPE join B~
+| ~TYPE~  | meaning                                                |
+| cross   | all pair of A and B                                    |
+| Inner   | paris of rows satisfying a CONDITION                   |
+| natural | pairs of rows with common values in same named columns |
+| outer   | pairs of rows satisfying a condition with ~NULLS~      |
+requivalent to ~select...~ with proper ~where~ clauses.
+
+**** Cross join
+
+**** inner join
+#+begin_src sql
+   select * from A inner join B
+        on CONDITION;
+
+      select * from A inner join B
+    using (COL1, COL2);
+  -- COL1 and COL2 must appear in both A and B
+#+end_src
+**** natural join
+
+**** outer join
+#+begin_src sql
+  select COLS from
+       TABLE1 TYPE outer join TABLE2
+     on CONDITION
+#+end_src
+| TYPE  | meaning                              |
+| left  | retain the left table, NULL in right |
+| right | retain the right tabel,NULL in left  |
+| full  | retain both tables                   |
+
+***** full outer join not supported by MySQL
+...left...
+union
+...right...
+
+*** Order by
+syntax: ~select... order by cols [asc|desc ]~
+multiple cols:
+#+begin_src sql
+  select * from grades
+       ORDER BY
+     code asc, mark desc;
+#+end_src
+
+*** Aggregate functions
+Only in [filed] part
+**** count
+the number of rows
+#+begin_src sql
+  select
+        count(*) as count
+      from grades;
+  select
+        count(code) as count
+      from grades;
+  select
+        count(distinct code) as count
+      from grades;
+#+end_src
+**** sum
+sum of entries in the column
+**** avg
+avaerage entry in a col
+**** min/max
+*** group by
+Group by syntax will first sort the COLUMN_SET1 alphabatically,
+then seperate it to seperate groups to, resulting in 1 row each group.
+
+Used to combine a group of rows together for aggregate functions like ~avg()~ (in =COLUMN_SET1= part)
+#+begin_src sql
+  select column_set1 from tables
+         where predicate
+         group by column_set2
+#+end_src
+*** Set operation
+**** Union
+**** except
+
+*** Query Techniques
+
+**** Subquery
+
+**** Selfjoin                                                        :bug:
+#+begin_src sql
+select FIELD from TABLE_NAMd as E1, E2
+#+end_src
+
+** If
+#+begin_src sql
+  create dastabase if not exists jianjun;
+  drop table if exists module_enrollment, activity, student, modules;
+
+  
+#+end_src
+
+** Date
+
+*** calculate
+#+begin_src sql
+  select * from test
+         where time > Date_add(now(),interval -3 hour)
+  
+#+end_src
+

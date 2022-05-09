@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       E64C8603-E218-44FC-AE46-B6399B65D6AA
+:END:
+#+title: Focus machine
+#+HUGO_SECTION:main
+

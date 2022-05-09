@@ -1,0 +1,194 @@
++++
+title = "Me_meta"
+author = ["System Administrator"]
+draft = false
++++
+
+## Weakness {#weakness}
+
+
+### My Greatest weakness {#my-greatest-weakness}
+
+
+#### Memory {#memory}
+
+I can remember little thing at a time.
+It is said that human can maintain 3-7 chunks of information at a time, for me the figure is 1.
+I can still recall other things, but harder, and not spontaneously. It's like register and memory in computer. I have well working memory and a very small amont of register.
+
+<!--list-separator-->
+
+-  Account
+
+    <!--list-separator-->
+
+    -  Disadvantage
+
+        <!--list-separator-->
+
+        -  Constant/continueous converging.
+
+            My working memory contains 1 things for most. That means if the place was hold by [a task/a desire(like sex)/a strategy[for game]/.etc], there will be no room for my moral, [principle]({{< relref "20211005121901-principle.md" >}}), goals, or [background awareness]({{< relref "20211114201617-background_awareness.md" >}}).
+
+            The result is me converging to the first things I saw in a session.
+
+            ```example
+            If I saw a vim documentation, I would start testing vim; if I have a snack in front of me, I would start eating; if there's a game in front of me, I would start playing; if there's a atmosphere in the room, I would blend in.
+            ```
+
+            My time would therefore be used unaware. There would be no time for important things, because this feature tends to do urgent things and urgent things only, and I won't be remembering to think about a wiser option. I would do things stupidly, either converging to atmosphere of the room or my nature against my principle.
+
+    <!--list-separator-->
+
+    -  Advantages
+
+        <!--list-separator-->
+
+        -  Focus
+
+            I would be very focused on concepts at hand. Understanding and precision would be piece of cake.
+
+<!--list-separator-->
+
+-  Solution
+
+    <!--list-separator-->
+
+    -  Crutch
+
+        <!--list-separator-->
+
+        -  Procedural check
+
+            A whole procedure on a piece of paper would work.
+            A step in the [General task doing machine]({{< relref "20211108153719-general_task_doing_machine.md" >}}) to check for principles and goals
+
+        <!--list-separator-->
+
+        -  Mnemonic
+
+            Set mnemonic for key figures. Door--entering the door and remember the social principles--a small story about door and my social principles like jigsaws
+
+    <!--list-separator-->
+
+    -  Practice
+
+        When I have practiced and got familiar with the principles or tasks I should bare in mind, they would be naturally out with ease.
+
+        <!--list-separator-->
+
+        -  Example
+
+            玩云顶之弈时，拿到什么英雄，什么装备，可以组成什么阵容，还需要什么英雄和装备，甚至海克斯强化，在一开始看着攻略打的时候是记不得的。但是重复两三次之后就不需要再看攻略了。
+
+    <!--list-separator-->
+
+    -  Review
+
+        Frequently review on my deeds, record, goals, schemes and such.
+        Spaced repetition meaning also, but review here mainly refer to my own decision and thoughts. I of course wish to remember all knowledge, but as I can refer to them in my notes, My `OWN DECISION` and `OWN THOUGHTS` are more important, as I'll use and live out them everyday.
+
+
+## Goals {#goals}
+
+
+### Accomplishing my [Roles]({{< relref "20211008132927-roles.md" >}}) {#accomplishing-my-roles--20211008132927-roles-dot-md}
+
+I have many roles, of them the most important are four:
+
+-   Neuralscientist
+-   Artist
+-   Engineer
+-   Athlete
+
+
+## Study interest {#study-interest}
+
+
+### Neuroscience {#neuroscience}
+
+I'm interested in the way memory and conscious work, and is curious to building an agent that could grow like a human.
+
+Also interested in capturing and injecting sence/information out of/from brain. Like Fully immersed experiance, remote neural control
+
+
+### Quantum Computing {#quantum-computing}
+
+I have a instinct that the model of conscious/StrongAI would require quantum computer architecture to realize.
+
+
+### Computer Science {#computer-science}
+
+`General Model Generator`, a algorithm to generate models. Neuroscience is having bottleneck developing because of lack of model. A algorithm that could generate model on its own would be of great help.
+
+This could be combined with a `General Model Testor`, which could generate test/experiments on top of models, and/or test model with already take experiments' data.
+
+
+## Way of doing things {#way-of-doing-things}
+
+I do things according to my machines. Everything. Projects like getting grade in certain phase I do with a giant project machine, Skills and routines that would appear many times I do with normal machine.
+
+I call a time period dedicated to one thing `session`, and the thing in the session `task`. Generally I'm doing tasks all the time, and they all converge to the [General task doing machine]({{< relref "20211108153719-general_task_doing_machine.md" >}}). This machine is dedicated to deal with my personal [Weakness](#weakness), espeicially [My Greatest weakness](#my-greatest-weakness) of rememberance. Several moral and artful aspects are dealt, too. The machine would be carried throughout my everyday life. Exceptions are that moments I make desisions and times I think that I should listen to my nature self(reassesment), like relaxation or having fun.
+
+With the [General task doing machine]({{< relref "20211108153719-general_task_doing_machine.md" >}}) as a base and fallback, I have machines for certain things I do, like [Archery Machine]({{< relref "20211008154820-archery_machine.md" >}}) for Shooting and practice of shooting and [Self-Learning Machine]({{< relref "20211011015906-self_learning_machine.md" >}}) for self-learning and review based on material without tutors.
+
+Another important machine would be the [Scheme machine]({{< relref "20211114220218-scheme_machine.md" >}}). While According to it, the projects are nested under [Artist]({{< relref "20211008134350-artist.md" >}}), [Engineer]({{< relref "20211102001428-engineer.md" >}}), [Athlete]({{< relref "20211008134506-athlete.md" >}}), and [Neuralscientist]({{< relref "20211012021721-neuralscientist.md" >}}) seperately, to show the relation of the project and the goal they serve to, A list of all Scheme's and their results is maintained under the [Scheme machine]({{< relref "20211114220218-scheme_machine.md" >}}). It have very close relationship with my memoir and CV, personal history, which is also maintained there.
+
+The last important machine in my general way of doing things is [Task management machine]({{< relref "20211114223436-task_management_machine.md" >}}). It take advantage of org-mode's features like org-agenda and org-capture to construct a way where I can take task from.
+
+The whole flow could be described as:
+
+1.  [Scheme machine]({{< relref "20211114220218-scheme_machine.md" >}}) make scheme machines (project plans) filled with tasks
+2.  [Task management machine]({{< relref "20211114223436-task_management_machine.md" >}}) takes the tasks from schemes and present them to me everyday
+3.  and Everyday, in each session, I do the tasks with machines converging to the [General task doing machine]({{< relref "20211108153719-general_task_doing_machine.md" >}}).
+
+Of course, there will be other spontaneous actions like the making of machines, recording of cluttering tasks and logs, journals, but the main way important things are done is described in the flow above.
+
+
+### Weakness troubleshooting {#weakness-troubleshooting}
+
+Additionally, as my weakness is critical, a [Media control machine]({{< relref "20211116133253-media_control_machine.md" >}}) is also critical to deal with the problem of too masive media consumption.
+
+Bare [Media control machine]({{< relref "20211116133253-media_control_machine.md" >}}) in mind every time with media. take log of it.
+
+
+## Physical Attributes {#physical-attributes}
+
+
+### Medical state {#medical-state}
+
+
+#### sore shoulder {#sore-shoulder}
+
+{{< figure src="/Users/hermanhe/Notes/RoamNotes/resource/soreshoulder.png" width="600px" >}}
+
+<!--list-separator-->
+
+-  solution
+
+    <!--list-separator-->
+
+    -  垂头
+
+        把头自然垂下有帮助
+
+        {{< figure src="/Users/hermanhe/Notes/RoamNotes/shouldersol.png" width="600px" >}}
+
+    <!--list-separator-->
+
+    -  偏头
+
+        向左侧微偏可以稍微缓解.
+
+
+#### belly {#belly}
+
+有游泳圈.
+
+
+#### 鼻炎 {#鼻炎}
+
+
+#### 右手 {#右手}
+
+{{< figure src="/Users/hermanhe/Notes/RoamNotes/resource/sorehand.png" width="600px" >}}

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       C115E110-9021-4D60-970B-BEE34391E4CE
+:END:
+#+title: 2022-03-16
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* 角元塞瓦定理
+https://zhuanlan.zhihu.com/p/122455316

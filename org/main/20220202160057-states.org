@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6C1046F6-B312-4D5B-82F5-10C15A440E8E
+:END:
+#+title: states
+#+HUGO_SECTION:main
+atom, ref, var and agent

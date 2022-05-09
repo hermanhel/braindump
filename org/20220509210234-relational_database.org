@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8BAE149F-6FC2-4818-8C7D-AC33277422D2
+:END:
+#+title: Relational Database
+#+HUGO_SECTION:
+

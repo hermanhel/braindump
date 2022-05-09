@@ -1,0 +1,196 @@
+:PROPERTIES:
+:ID:       50A687F9-9642-4A7B-94F3-156F97D6D40D
+:END:
+#+title: CPT111
+#+HUGO_SECTION:main
+
+* COMPLETED CPT111                                                   :agenda:
+CLOSED: [2022-01-03 Mon 15:25]
+* Tutoring Schedule
+** DONE Lecture SB102
+CLOSED: [2021-11-01 Mon 12:42] SCHEDULED: <2021-10-27 Wed 09:00-10:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-01 Mon 12:40]
+:END:
+:LOGBOOK:
+- State "DONE"       from "DONE"       [2021-11-01 Mon 12:42]
+- State "DONE"       from              [2021-11-01 Mon 12:42]
+- State "DONE"       from ""           [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-10-14 Thu 15:54]
+:END:
+** DONE Lab SD546
+CLOSED: [2021-11-24 Wed 12:11] SCHEDULED: <2021-11-19 Fri 11:00-13:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-12 Fri 16:58]
+:END:
+:LOGBOOK:
+- State "DONE"       from "DONE"       [2021-11-24 Wed 12:11]
+- State "DONE"       from              [2021-11-24 Wed 12:11]
+- State "DONE"       from ""           [2021-11-12 Fri 16:58]
+- State "DONE"       from              [2021-11-12 Fri 16:58]
+- State "DONE"       from ""           [2021-11-01 Mon 12:42]
+- State "DONE"       from ""           [2021-11-01 Mon 12:41]
+- State "DONE"       from              [2021-11-01 Mon 12:41]
+- State "DONE"       from ""           [2021-11-01 Mon 12:41]
+- State "DONE"       from              [2021-11-01 Mon 12:41]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+** DONE Study for CW2 [10/10]
+CLOSED: [2021-11-24 Wed 12:09]
+:PROPERTES:
+:Effort:   200
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-11-24 Wed 12:09]
+CLOCK: [2021-11-18 Thu 21:12]--[2021-11-18 Thu 22:41] =>  1:29
+CLOCK: [2021-11-18 Thu 20:38]--[2021-11-18 Thu 21:07] =>  0:30
+CLOCK: [2021-11-18 Thu 19:58]--[2021-11-18 Thu 20:29] =>  0:31
+CLOCK: [2021-11-18 Thu 16:26]--[2021-11-18 Thu 17:42] =>  1:16
+:END:
+The CW2 is filling the code.
++ [X] Week 1
++ [X] Week 2
++ [X] Week 3
++ [X] Week 4
++ [X] Week 5
++ [X] Week 6
++ [X] Week 7
++ [X] Week 8
++ [X] Week 9
++ [X] Week 10
+** DONE CW2 lab test
+CLOSED: [2021-12-29 Wed 00:43] SCHEDULED: <2021-11-19 Fri 11:00-13:00>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-29 Wed 00:43]
+:END:
+** DONE Prepare for CW2 lab test
+CLOSED: [2021-11-24 Wed 12:09]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-11-24 Wed 12:09]
+:END:
+*** TODO Try the mock exam
+*** TODO Find neccesary skill
+
+* Tasks
+** DONE Preview #1
+SCHEDULED: <2021-12-06 Mon +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:11]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:11]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-09 Tue 22:57]
+- State "DONE"       from              [2021-11-09 Tue 22:57]
+- State "DONE"       from ""           [2021-11-09 Tue 22:55]
+- State "DONE"       from              [2021-11-09 Tue 22:55]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-11-01 Mon 12:38]
+- State "DONE"       from              [2021-11-01 Mon 12:38]
+- State "DONE"       from ""           [2021-10-16 Sat 12:17]
+:END:
+** DONE Preview #2
+CLOSED: [2021-11-24 Wed 12:10] SCHEDULED: <2021-11-17 Wed +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-12 Fri 16:58]
+:END:
+:LOGBOOK:
+- State "DONE"       from "DONE"       [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-12 Fri 16:58]
+- State "DONE"       from              [2021-11-12 Fri 16:58]
+- State "DONE"       from ""           [2021-11-09 Tue 22:56]
+- State "DONE"       from              [2021-11-09 Tue 22:56]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+** TODO Catch up the content.
+for doing homework
+for CW2 this 
+*** 
+* Assesments
+** DONE Coursework 3 [/ ]
+CLOSED: [2021-12-24 Fri 01:16] DEADLINE: <2021-12-17 Fri 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2021-12-24 Fri 01:16]
+:END:
+*** DONE load person file
+CLOSED: [2021-12-17 Fri 12:08]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-17 Fri 12:08]
+:END:
+**** TODO Person class
+:LOGBOOK:
+CLOCK: [2021-12-16 Thu 14:39]--[2021-12-16 Thu 14:59] =>  0:20
+:END:
+***** DONE Image datatype?
+CLOSED: [2021-12-16 Thu 20:27]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-16 Thu 20:27]
+:END:
+**** DONE readFile() in fileutil.java 
+CLOSED: [2021-12-17 Fri 11:19]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-17 Fri 11:19]
+:END:
+**** DONE loadfiles() menu.java
+CLOSED: [2021-12-17 Fri 11:58]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-17 Fri 11:58]
+:END:
+*** DONE list all persons
+CLOSED: [2021-12-17 Fri 12:31]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-17 Fri 12:31]
+:END:
+**** TODO listIDs() in menu
+**** TODO Person.toString()
+*** DONE search for a person
+CLOSED: [2021-12-17 Fri 12:54]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-17 Fri 12:54]
+CLOCK: [2021-12-17 Fri 12:32]--[2021-12-17 Fri 12:54] =>  0:22
+:END:
+**** TODO menu.searchIDs()
+***** TODO metahces of input string
+***** TODO by first, family, nick, id....
+***** TODO display list of match
+***** TODO total number of match
+***** TODO not case sensitive
+*** DONE generate stats
+CLOSED: [2021-12-17 Fri 13:13]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-17 Fri 13:13]
+:END:
+**** TODO methods called by generateStats()
+**** TODO number of persons
+**** TODO number of nationalities
+**** TODO average age
+**** TODO percentage of males and females
+*** TODO check for id fraud
+**** TODO menu.checkFraud()
+***** TODO list of IDs, input String of ID
+**** TODO Valid ID
+***** TODO matching ID in system
+***** TODO 8 char long
+***** TODO beging with case sensitive "A", "B","C"
+***** TODO the 3rd char matches the last number of their year of birth
+***** TODO the final 2 char are checksum, should add up to 7
+
+*** TODO generate a wanted poster
+**** TODO ID -> Menu.generatePoster()
+***** TODO check for match
+***** TODO create a JFrame
+***** TODO create an ImagePanel object
+****** TODO receive Person object
+****** TODO paintComponent()
+**** TODO Design it
+***** TODO Minimum
+***** TODO advanced

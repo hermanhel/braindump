@@ -1,0 +1,78 @@
+:PROPERTIES:
+:ID:       40A955DE-5B95-41AD-9074-36CDBA2FC416
+:END:
+#+title: R language
+#+HUGO_SECTION:main
+* Arithmetics
+** infix
++ 1
++ 1 + 2
++ (1 + 2)
++ z < -1
++ z = 2
++ 2 == 2
++ %% for mod
++ ^ for power
+* Control flow
+** decision
+*** if-else
+#+begin_src r
+  if(condition){
+    statements()
+  } else if (condition){
+    statements()
+  } else {
+    statements()
+  }
+#+end_src
+
+** loop
+
+*** While
+#+begin_src r
+  while(condition){
+    statements()
+  }
+#+end_src
+
+*** for
+#+begin_src r
+  for (count in 1:7){
+    cat("hi, ", name, "it's 7:00")
+  }
+  
+#+end_src
+
+* Funciton
+
+** define
+#+begin_src r
+  Square =  function(x){
+    return(x*x)
+  }
+#+end_src
+
+** useful ones
+
+*** ls()
+it shows all binded vars in the namespace.
+
+* Importing Data
+#+begin_src r
+  df = read.table(file.choose(),header=TRUE,sep=",")
+  brain = df["Brain"]
+  print(summary(brain))
+#+end_src
+* Strange Things
+
+** assign cat(z,2) to z
+#+begin_src r
+> z = c(20,30)
+> z
+[1] 20 30
+> z = cat(z,2)
+20 30 2> z
+NULL
+> 
+#+end_src
+

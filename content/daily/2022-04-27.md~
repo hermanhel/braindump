@@ -1,0 +1,531 @@
++++
+title = "2022-04-27"
+author = ["System Administrator"]
+tags = ["draft", "draft"]
+draft = false
++++
+
+## emacs-人類最好的朋友. {#emacs-人類最好的朋友-dot}
+
+無論我有多少失去鬥志,失去慾望,失去想做事情的動力,我總不會拒絕在emacs裏面打一點字,運行一點代碼.誠然,如此沮喪而無情感地氛圍下無法開展具有結構的工作,但是隨機地寫一點放在org-roam的daily page裏的隨筆,一個eulerproject的問題,或者寫一個簡單的reduce語句,是沒有問題,或者讓人有一點開心起來的.
+
+一方面,我覺得這是習慣使然,我使用emacs很久,已經幾乎把這個編輯器作為自己的房間,或者最簡單的紙筆,寫一點東西就像在房間裏踱步、蹭床,或者在草稿紙上塗鴉一般.
+
+另一方面,我也覺得是因為emacs的使用體驗實在是很令人舒適,在事不如意,能夠驅動地精力很少的時候,也不需要多少精力就可以使用.想像一下如果我使用MS word寫我的morning page,或者即使是使用obsidian吧,一定要在屏幕上尋找好久morning page的圖標,或者一個一個目錄點進去,總之要控制小滑鼠去擊中好多小點,終於進入寫作介面,還要面對不能算好看的UI和font,編輯也有許多要花好多精力才能夠寫地和諧,稱心滿意的操作.想必還沒找到文件夾,我就幾乎要放棄了.
+
+而在emacs之中,我只需要C-c n d t就好轉到今天的morning page,或者即使我忘記快捷鍵,只要M-x org-roam today就能找到這個函數.我甚至都不需要看屏幕,就能進入-寫-開新標題-保存-離開進行這一系列,幾乎是所有需要的操作.完全沒有給我放棄的空間嘛.
+
+這是我希望如emacs一般高昂的學習成本所能換回的那種,如同文明的進步一般,對於基礎的一些操作所花的精力能夠極其劇烈地減少的結果.就今天的我來說,學習emacs所在我身上停留的一切,是如此的.而這種體驗,在其他任何代碼或者文本編輯器裏,是難得一見的.
+
+
+## 看《Barry》 {#看-barry}
+
+由Bill Hader導演和編劇和演出的電視 _Barry_ 不得不說是一個精緻的作品.
+如果帶入哲學和價值認知,把演劇當作一門藝術而非技術來對待,真實、誠實是必不可少的.而對於有些人來說真實則是十分危險,無論對於自己的內心還是人身自由.
+
+但是我還有其他重要的事,所以---我現在看到第二季第六集.
+
+
+## I cheered up! and going to the javaaaaaaaaaa! {#i-cheered-up-and-going-to-the-javaaaaaaaaaa}
+
+
+### java implemented data structures. {#java-implemented-data-structures-dot}
+
+
+#### Bag {#bag}
+
+<!--list-separator-->
+
+-  specification
+
+    -   no structure
+    -   no access constraints
+    -   have duplicates
+
+<!--list-separator-->
+
+-  methods
+
+    -   add(value)
+    -   remove(value)
+    -   contains(value)
+    -   findElement(value)
+
+    and
+
+    -   size()
+    -   isEmpty()
+    -   iterator()
+    -   clear()
+    -   addAll(collection)
+    -   removeAll(collection)
+    -   containsAll(collection)
+
+<!--list-separator-->
+
+-  implementation
+
+    <!--list-separator-->
+
+    -  main body
+
+        ```java
+        public class IntArrayBag implements Clonable
+        {
+            private int[] data; //where the data go in
+            private int manyItems;//number of items in bag
+        }
+        ```
+
+    <!--list-separator-->
+
+    -  functions
+
+        <!--list-separator-->
+
+        -  init
+
+            ```java
+            public IntArrayBag(){
+                final int INITIAL_CAPACITY = 10;
+                manyItems = 0;
+                data = new int[INITIAL_CAPACITY];
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  init with capacity
+
+            ```java
+            public IntArrayBag(int initial_cap){
+                if (initial_cap < 0)
+            	throw new IllegalArgumentException("The initialCapacity is negative: " + initialCapacity);
+                data = new int[inital_cap];
+                manyItems = 0;
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  add
+
+            ```java
+            public void add(int element){
+                if(manyItems == data.length()){
+            	ensureCapacity((manyItems + 1 ) * 2);
+                }
+                data[manyItems+1]=element;
+                manyItems = manyItems + 1;
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  addmany
+
+            -   `int... elements` is like `[& elements]` in clojure.
+            -   `System.arraycopy(src,srcPos,dest,destPos,length)` copy 1 array into another array.
+
+            <!--listend-->
+
+            ```java
+            public void addMany(int... elements){
+                if (manyItems + elements.length > data.length){
+            	ensureCapacity((manyItems + elements.length)*2);// Ensure twice as much space as we need.
+                }
+                System.arraycopy(elements, 0, data, manyItems, elements.length);
+                manyItems += elements.length;
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  addall
+
+            ```java
+            public void addAll(IntArrayBag addend){
+                ensureCapacity(manyItems + addend.manyItems);
+                System.arraycopy(addend.data,0,data,manyItems,addend.manyItems);
+                manyItems += addend.manyItems;
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  clone
+
+            return a clone of the object(in differnet memory location)
+
+            ```java
+            public IntArrayBag clone(){
+                IntArrayBag answer;
+                try{
+            	answer = (IntArrayBag)super.clone();//if the super class have clone.
+                }
+                catch (CloneNotSupportedException e){
+            	throw new RuntimeException("This class does not implement Cloneable");
+                }
+                answer.data = data.clone(); //cloneing the data array.
+                return answer;
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  countOccurences
+
+            ```java
+            public int countOccurrences(int target){
+               int answer;
+               int index;
+
+               answer = 0;
+               for (index = 0; index < manyItems; index++)
+                  if (target == data[index])
+            	 answer++;
+               return answer;
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  ensureCapacity
+
+            ```java
+            public void ensureCapacity(int capacity){
+                int[] BiggerArray;
+                if (data.length < BiggerArray.length ){
+            	BiggerArray  = new int[capacity];
+            	System.arraycopy(data,0,BiggerArray,0,manyItems);
+            	data = BiggerArray;
+
+            }}
+            ```
+
+        <!--list-separator-->
+
+        -  getCapacity
+
+            ```java
+            public int getCapacity(){
+                return data.length
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  remove
+
+            ```java
+            public boolean remove(int target){
+                int index; // The location of target in the data array.
+
+                // First, set index to the location of target in the data array,
+                // which could be as small as 0 or as large as manyItems-1; If target
+                // is not in the array, then index will be set equal to manyItems;
+                for (index = 0; (index < manyItems) && (target != data[index]); index++);
+
+                if (index == manyItems) // The target was not found, so nothing is removed.
+            	return false;
+                else{  // The target was found at data[index].
+
+            	// So reduce manyItems by 1 and copy the last element onto data[index].
+            	data[index] = data[--manyItems];
+            	return true;
+                }
+            }
+
+            ```
+
+        <!--list-separator-->
+
+        -  removeMany
+
+            ```java
+            public int removeMany(int...targets){
+                int count = 0;
+                //students implementation here.
+                for(int target : targets){ //iterating or the array targets
+            	remove(target);
+            	count ++;
+                }
+
+                return count;
+
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  size
+
+            ```java
+            public int size(){
+                return manyItems;
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  trimToSize
+
+            basically, create a place first, and do things in that place, and change the pointer.
+
+            ```java
+            public void trimToSize(){
+                int[] trimed;
+                if (data.length != manyItems){
+            	trimed = new int[manyItems];
+            	System.copyarray(data,0,trimed,0,manyItems);
+            	data = trimed;
+                }
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  union
+
+            ```java
+            public IntArrayBag union(IntArrayBag B1, IntArrayBag B2){
+                IntArrayBag answer = new IntArrayBag(B1.getCapacity()+ B2.getCapacity());
+
+                System.arraycopy(B1,0,answer,0,B1.manyItems);
+                System.arraycopy(B2,0,answer,B1.manyItems,B2.manyItems);
+                return answer;
+            }
+            ```
+
+        <!--list-separator-->
+
+        -  intersaction
+
+            ```java
+            public IntArrayBag intersaction(IntArrayBag B1, IntArrayBag B2)
+            {
+                IntArrayBag answer = new IntArrayBag();
+                for (int i = 1;i < B1.manyItems; i++){
+            	int item = B1[i];
+            	if (answer.countOccurence(item) == 0){
+            	    int count = min(B1.countOccurence(item),B2.countOccurence(item));
+            	    for (int j=0;j < count;j++){
+            		answer.add(item);
+            	    }
+            	}
+                }
+                return answer;
+            }
+            ```
+
+
+#### ArrayList {#arraylist}
+
+<!--list-separator-->
+
+-  Array and ArrayList
+
+    -   array: `int[] arr = new int[3];`
+        -   basic funcionality of java
+        -   access member with []
+        -   can contain primitive and object
+    -   ArrayList: `ArrayList<Integer>arrL = new ArrayList<>(2);`
+        nothing in the new &lt;&gt;.
+        -   part of collection framework in java
+        -   set of methods to access elements
+        -   cannot be created for primitive types (no int, but yes Integer)
+
+<!--list-separator-->
+
+-  Generic types
+
+    &lt;E&gt; in `public class ArrayList<E>`
+
+    -   parameters (only reference types, not primitive)
+        -   E: element
+        -   K: key
+        -   N: number
+        -   T: type
+        -   V: value
+
+<!--list-separator-->
+
+-  Generic method
+
+    choose method on type.
+
+    ```java
+    public void method(Integer i);
+    public void method(Double d);
+
+    public <T> void method(T t);
+    ```
+
+    <!--list-separator-->
+
+    -  bounded
+
+        ```java
+        public static <T extends Comparable<T>> T maximum(T x, T y)
+        ```
+
+
+#### Tree {#tree}
+
+<!--list-separator-->
+
+-  Binary Search Tree
+
+    <!--list-separator-->
+
+    -  specification
+
+        -   2 childs max.
+        -   left subtree of node all smaller than the node
+        -   right subtree of node all greater than the node
+        -   no duplicate
+        -   left and right are binary search tree
+
+    <!--list-separator-->
+
+    -  implementation
+
+        <!--list-separator-->
+
+        -  treeNode
+
+            ```java
+            public class treeNode{
+                int key;
+                treeNode left;
+                treeNode right;
+            }
+            ```
+
+            <!--list-separator-->
+
+            -  init
+
+                ```java
+                public treeNode(int initial){
+                    key = initial;
+                    left = null;
+                    right = null;
+                }
+                public treeNode(int inital, treeNode inileft, treeNode iniright){
+                    key = initial;
+                    left = inileft;
+                    right = iniright;
+                }
+                ```
+
+            <!--list-separator-->
+
+            -  left/rightmost value
+
+                ```java
+                public int getLeftmost(){
+                    if (left ==null) retrun key;
+                    else return left.getLeftmost();
+                }
+                ```
+
+            <!--list-separator-->
+
+            -
+
+        <!--list-separator-->
+
+        -  tree
+
+<!--list-separator-->
+
+-  app
+
+    -   hierarchical data
+    -   search
+    -   sorted list
+    -   router algorithms
+    -   multi-stage decision-making
+    -   compositing digital images for visual effects(krita folders)
+
+
+#### Set {#set}
+
+<!--list-separator-->
+
+-  specification
+
+    -   • no structure or order maintained
+    -   • no access constraints (access any item any time)
+    -   duplicates are excluded
+
+<!--list-separator-->
+
+-  methods
+
+    -   add(value)
+    -   remove(value)
+    -   contains(value)
+    -   findElement(value)
+
+
+#### java syntax stuff {#java-syntax-stuff}
+
+<!--list-separator-->
+
+-  interface
+
+    ```java
+    // example of defining a interface
+    public interface X {
+
+        public void f(int x);
+
+        public void g(int x);
+    }
+    ```
+
+<!--list-separator-->
+
+-  implements
+
+    could implement any number of [interface](#interface)s just have all the methods
+
+    ```java
+    // example of implementing a interface
+    public class Y implements X {
+
+        int n = 0;
+
+        public void f(int x) {
+    	n = n + x;
+        }
+
+        public void g(int x) {
+    	n = n - x;
+        }
+
+        public static void main(String[] args) {
+    	System.out.println("hello");
+        }
+
+    }
+    ```
+
+<!--list-separator-->
+
+-  extends
+
+    Class C is identical of Class B if:
+
+    ```java
+    class B {
+        int x = 0;
+    }
+    class C extends B{
+
+    }
+    ```
+
+    And everything declared in `class C` will be use prior to finding stuff in `class B`

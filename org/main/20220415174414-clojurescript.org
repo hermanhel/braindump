@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       3E331B73-58FC-4858-8D84-4E02932D85C1
+:END:
+#+title: clojurescript
+#+HUGO_SECTION:main
+clojure, but compile into ECMAScript
+* Hello cljs
+** project
+#+begin_example
+hello-world        # Our project folder
+├─ src             # The CLJS source code for our project
+│  └─ hello_world  # Our hello_world namespace folder
+│     └─ core.cljs # Our main file
+├─ cljs.jar        # (Windows only) The standalone Jar you downloaded earlier
+└─ deps.edn        # (macOS/Linux only) A file for listing our dependencies
+#+end_example
+#+caption: deps.edn
+#+begin_src clojurescript
+{:deps {org.clojure/clojurescript {:mvn/version "1.10.758"}}}
+#+end_src
+** run the project
+#+caption:macOS/Linux
+#+begin_src shell
+#in the project directory  
+  clj -M --main cljs.main --compile hello-world.core --repl
+#+end_src
+#+caption:windows
+#+begin_src shell
+java -cp "cljs.jar;src" cljs.main --compile hello-world.core --repl
+#+end_src
+*** the command flags
++ =clj --main cljs.main= invokes =cljs.main= function
++ =--compile hello-world.core= compile =hello-world.core= namespace
++ =--repl= launch repl.
++ =--help= to see other #+OPTIONS: 0
++ =--serve= simple web server. no repl, but the code would work on local:9000.
++ =--target= who the code are generated for. Node.js(node) or Browser(default).
++ =--output-to= which file the output code goes to
++ =--repl-env= specify the environment of repl to be browser REPL(default) or node.
+*** repl
+a webpage poped up, saying it's the page hosting the repl.
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/repl.png]]
+**** =js= namespace
+could use ~(js/alert STRING)~ to pop an alert in the browser.
+**** speed
+=(time)= showes "Elapsed time: 0.000000 msecs", but it takes a while to response. I guess the lagging is in the connection.
+**** recompile/reload namespace
+=(require '[hello-world.core :as hello] :reload)=
+don't forget that you defined the function in a ns, not =user= ns.
+** Production Build
+the compiler + google closure compiler provide optimization options with =--optimization= flag.
+| none | advanced | whitespace | simple |
+are 4 available options.
+
+=Longer build time= when in optimization enabled.
+** run on Node.js
+*** install Node.js
+Node.js (>= 0.12.X) are supported
+*** enable source mapping 
+#+begin_src shell
+npm install source-map-support
+#+end_src
+*** compile
+#+begin_src shell
+clj -M -m cljs.main --target node --output-to main.js -c hello-world.core
+
+#+end_src
+report error =js/alert is not defined=. Guess because there's no browser.
+*** Node.js REPL
+#+begin_src sh
+clj -M -m cljs.main --repl-env node
+#+end_src
+** Dependencies
+*** including =React=
+#+caption:deps.edn
+#+begin_src clojurescript
+  {:deps {org.clojure/clojurescript {:mvn/version "1.10.758"}
+          cljsjs/react-dom {:mvn/version "16.2.0-3"}}}
+#+end_src
+* Project Setup
+[[https://clojurescript.org/guides/project-templates][official website]] included several templates.
+Good news Leiningen still work with cljs.

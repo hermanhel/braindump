@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       F4D2C45E-6E42-43AA-840A-6B8D5CFBFD2B
+:END:
+#+title: Ultra Project Machine
+#+HUGO_SECTION:main
+* Ultralearning Principles
+:PROPERTIES:
+:ID:       F8085BA8-3004-4F9B-BF44-CDDD77CDD04B
+:END:
+
+** 1. Metalearning
+** 2. Focus
+** 3. Direct
+** 4. Drill
+** 5. Retrieval
+** 6. Feedback
+** 7. Retention
+** 8. Intuition
+*** Rules
+**** Rule 1: Don't give up on Hard Problems Easily             :principle:
+Feynman hand calculate forces, so as to understand them better.
+
+could use a struggle timer, like 30 minutes
++ Pro
+  + Sometimes it just need a little more thinking
+  + Retrieving non-existing info, make remember easier
+**** Rule 2: Prove things to Understand Them                   :principle:
+Understanding is to re-create the results
+**** Rule 3: Always start with a concrete example              :principle:
+**** Rule 4: Don't fool yourself                               :principle:
+我可以分辨我是否知道一个东西,是否发现了一个东西.我不愚弄自己来让自己感觉良好.我接受现实.
+** [[id:B4444AFF-ACC4-452E-8AE3-294C1E1B7409][Feynman Techinique]]
+The technique of understanding and intuition.
+
+** 9. Experiment
+

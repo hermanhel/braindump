@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       FEF31CA5-A17D-4A38-B97B-61B322CF6F8D
+:END:
+#+title: Cartesian Product
+#+HUGO_SECTION:main
+A x B ==> for every A's row, concat B's rows.

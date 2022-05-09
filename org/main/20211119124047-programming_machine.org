@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       90C59DC3-23C1-461E-BD9D-0CA3438B155A
+:END:
+#+title: Programming Machine
+#+HUGO_SECTION:main
+* Principles/Strategies
+** Function
+*** Return time
+In what circumstance to return?
+**** Example
+searching for all occurance of "country" in "xdffsdg  country dfef country wdfd"
+#+begin_src java
+while(index < input.length()){
+if(){
+find input.indexOf("country",index)
+}
+else if (){
+
+}
+}
+#+end_src>
+note that, indexOf() returns -1 if not find, and all circumtance must end with that condition.
+Therefore, an ~else if (index < -1){return input}~ clause is neccesary.
+** Functional Programming Paradigm

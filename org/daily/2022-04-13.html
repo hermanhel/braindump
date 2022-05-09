@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-04-13 Wed 12:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2022-04-13</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-org82dfba9" class="outline-2">
+<h2 id="org82dfba9"><span class="section-number-2">1.</span> Morning Page</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+My once and for all,
+</p>
+
+<p>
+杯子.
+</p>
+
+<p>
+纸.
+</p>
+
+<p>
+下午考试.
+</p>
+
+<p>
+应该早开始准备,但是中间distract了很多.
+</p>
+
+<p>
+应该在最早的时候就认真听课.但是中间distract了很多.我都不记得distract到什么上面了.如果我做事情是为了记住,那么这些distract是不明智的.
+</p>
+
+<p>
+我要做log.Bug Machine.在处理error的时候要把要处理的记录下,要把solution和相对应发生的事情和以为的原理记录,备后来和其他人参考.
+</p>
+
+<p>
+如果我之前做一些事情的时候保存了全面的log,我最近做的一些事情就会很方便,以至于应该会有所改进了.所以log的完全覆盖和可搜索是很重要的.
+</p>
+
+<p>
+我冥想,为了把焦虑从思想的环境里清除.之后我要重新明确我的目标,和它与我的做法的关系.我现在之所以努力学西班牙语,是为了两个目标.一方面,我是喜欢这一门语言的.另一方面,我也需要西语的分数愈高愈好,因为我将要成为Neuroscientist,而相关的项目总是要求高的分数成绩.我现在在西语上的努力,直接地作用在我的分数,也就是我成为Neuroscientist的未来上.这就是为什么我将要不分心地梳理西班牙语.在考试结束后,我还要总结这一次使用的方法是否成效,可能的问题,并排到我的验证队列.
+</p>
+
+<p>
+我今天将要在西语考试前一小时前都不分心地复习和梳理西班牙语,记录我认为重要的内容.来源是slide,黄书和我的笔记.一个小时时,我将设置好考场,进入考试房间,熟悉我的笔记和它的分布.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2022-04-12 Tue 20:23&gt;</span></span>cccc.
+</p>
+</div>
+</div>
+<div id="outline-container-org2df5775" class="outline-2">
+<h2 id="org2df5775"><span class="section-number-2">2.</span> Spanish!!!!!</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The Exam is due  <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-04-13 Wed&gt; </span></span> .
+I should start my preparation right away.
+</p>
+
+<p>
+I like spanish, so I'll make the work open-ended, and managable, so that it'd not be just a one-time show, but part of the greater spanish machine.
+</p>
+</div>
+
+<div id="outline-container-org796c299" class="outline-3">
+<h3 id="org796c299"><span class="section-number-3">2.1.</span> update: only 1 day</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+The test is 
+</p>
+</div>
+</div>
+<div id="outline-container-org96f72d0" class="outline-3">
+<h3 id="org96f72d0"><span class="section-number-3">2.2.</span> Weapons</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org26ab8c2" class="outline-4">
+<h4 id="org26ab8c2"><span class="section-number-4">2.2.1.</span> Direct Practice</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+This exam have listening part. I speak the language to be able to listen it. I speak sentences.
+</p>
+
+<p>
+So collect sentences for <a href="#org1eb4101">2.2.2</a> !
+</p>
+</div>
+</div>
+<div id="outline-container-org1eb4101" class="outline-4">
+<h4 id="org1eb4101"><span class="section-number-4">2.2.2.</span> Flashcard</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<p>
+Having spanish being a language, flashcard make a big part of the useful weaponry.
+I used to use Anki to rule the exam, but this time, I'll be using <code>org-drill</code>. 
+</p>
+</div>
+</div>
+<div id="outline-container-orgd2b0c41" class="outline-4">
+<h4 id="orgd2b0c41"><span class="section-number-4">2.2.3.</span> Notes</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<p>
+The test is open-book, no reason I don't make good print note for use.
+Maybe a function to print my org notes!
+Charts, illustrates, and Mindmaps are useful tools, Chart being the best I think.
+</p>
+</div>
+</div>
+<div id="outline-container-org273c7c7" class="outline-4">
+<h4 id="org273c7c7"><span class="section-number-4">2.2.4.</span> Resource</h4>
+</div>
+</div>
+<div id="outline-container-orgc46bfd5" class="outline-3">
+<h3 id="orgc46bfd5"><span class="section-number-3">2.3.</span> Exam content</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org40ef54e" class="outline-4">
+<h4 id="org40ef54e"><span class="section-number-4">2.3.1.</span> 1. Listening Comprehension (.24)</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<p>
+1 listening, 12 question
+</p>
+</div>
+</div>
+<div id="outline-container-org7263ebc" class="outline-4">
+<h4 id="org7263ebc"><span class="section-number-4">2.3.2.</span> 2. Reading Comprehension (.15)</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<p>
+1 article, 6 question
+</p>
+</div>
+</div>
+<div id="outline-container-org88d929e" class="outline-4">
+<h4 id="org88d929e"><span class="section-number-4">2.3.3.</span> 3. Grammar (.21)</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<p>
+2 Large question, no MCQ
+</p>
+</div>
+</div>
+<div id="outline-container-orgc7a5765" class="outline-4">
+<h4 id="orgc7a5765"><span class="section-number-4">2.3.4.</span> 4. Writing Task (.40)</h4>
+<div class="outline-text-4" id="text-2-3-4">
+<p>
+2 Large Task, 1 on sentences, 1 on paragraph.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8c8cc8d" class="outline-3">
+<h3 id="org8c8cc8d"><span class="section-number-3">2.4.</span> Resources</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org6f7523d" class="outline-4">
+<h4 id="org6f7523d"><span class="section-number-4">2.4.1.</span> Wechat Log</h4>
+<div class="outline-text-4" id="text-2-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org9238015"></a>1<br />
+<div class="outline-text-5" id="text-2-4-1-1">
+<p>
+@所有人 感谢大家参与！
+</p>
+<ol class="org-ol">
+<li>今日答疑的回看录播（也在群公告里平时课程视频的同一个文件夹里）：</li>
+</ol>
+<p>
+<a href="https://box.xjtlu.edu.cn/f/c0dbd172136c434b9da6/">https://box.xjtlu.edu.cn/f/c0dbd172136c434b9da6/</a>
+</p>
+
+<ol class="org-ol">
+<li>今天玩的几个小游戏（以及以后打算找机会课堂玩的……）都上传到Extra Pratice里了：</li>
+</ol>
+<p>
+<a href="https://www.learningmall.cn/course/view.php?id=3273&amp;section=9">https://www.learningmall.cn/course/view.php?id=3273&amp;section=9</a>
+另外推荐一个动词变位趣味练习网站Conjuguemos，有学习模式和游戏模式，不需要注册就可以用：
+<a href="https://conjuguemos.com/activities/spanish/verb/1">https://conjuguemos.com/activities/spanish/verb/1</a>
+</p>
+
+<ol class="org-ol">
+<li>平时学习推荐使用的西英词典（考试时不可以用）：</li>
+</ol>
+<p>
+WordReference: <a href="https://www.wordreference.com/">https://www.wordreference.com/</a>
+SpanishDict: <a href="https://www.spanishdict.com/">https://www.spanishdict.com/</a>
+Collins Spanish Dictionary: <a href="https://www.collinsdictionary.com/dictionary/english-spanish">https://www.collinsdictionary.com/dictionary/english-spanish</a>
+Linguee: <a href="https://www.linguee.com/">https://www.linguee.com/</a>
+据不完全统计，习惯性依赖西语助手的同学，平均成绩明显低于学会使用以上词典之一的同学。
+</p>
+
+<ol class="org-ol">
+<li>考试的时候不可以使用如TypeIt (<a href="https://spanish.typeit.org/">https://spanish.typeit.org/</a>) 这类帮助输入特殊字符的网站，因为这也属于打开了其他网站。也不可以另开Word文档复制粘贴，因为这属于打开了其他软件。</li>
+</ol>
+<p>
+西语输入法使用教程见以下视频和键盘布局。
+</p>
+
+<ol class="org-ol">
+<li>强烈建议不要使用iPad或手机之类的移动设备考试，很可能会出现浏览器跟LMO页面设计不兼容，导致显示不正常的情况（平时quiz已经出现这样的问题了）。学习和考试这么重要的事情，就还是开一下电脑吧。</li>
+</ol>
+</div>
+</li>
+<li><a id="org41c7f63"></a>2<br />
+<div class="outline-text-5" id="text-2-4-1-2">
+<p>
+@所有人  整理了一下昨天mock全程的聊天记录，统一答复所有问题：
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org5611851"></a>关于考试流程（这个过两天会再发个正式的）：<br />
+<div class="outline-text-6" id="text-2-4-1-2-1">
+<ol class="org-ol">
+<li>不用打开自己面前电脑的摄像头。</li>
+<li>做听力部分的时候允许使用耳麦。</li>
+<li>全程允许使用纸笔打草稿或做记录。</li>
+<li>再说最后一遍，电子的、数码的、虚拟的、网络的……非纸质的学习资料或其他设备、软件，一律不可以使用。</li>
+<li>听力音频的BOX备用链接就做在题目的Instructions里，超链接处字体颜色有所不同，鼠标挪上去的时候指针会变……</li>
+<li>开启代理或VPN有可能会影响到LMO的连接状态，尤其是在翻页或提交修改的时候，建议提前检查好自己的网络连接设置。</li>
+<li>遇到意外情况请及时截图截屏（Win 10截屏快捷键：Windows + Shift + S），或者立即跟监考老师沟通，经允许后拍照存据。</li>
+<li>万一学校官方SSO账号登录不了，只要用普通账号能登入并改为真实姓名都可以。</li>
+<li>学生在进入瞩目会议室以后会被自动静音，监考老师除必要通知外也会静音，如果因为这一设置导致了听不见听力音频，请尝试将麦克风和扬声器都设置为“与系统一致”。</li>
+<li>正式考试之前为了调试设备一定提前半小时加入，这样在考试过程中就不太会被提醒了。</li>
+</ol>
+
+<p>
+另外，我给昨天模考过程中曾通过Chat提醒过后置设备位置问题的所有同学刚才又发了邮件提醒。总的来说要么就是位置太低，导致屏幕上半截看不见，要么就是位置接近正后方，导致你自己挡住了大半屏幕。建议就是把后置设备的视角放在与电脑桌面相似高度，然后再偏左或者偏右一点就可以了。
+</p>
+</div>
+</li>
+<li><a id="org7ffdcb7"></a>* 关于考试内容：<br />
+<div class="outline-text-6" id="text-2-4-1-2-2">
+<p>
+正式考试每一个部分都会比模拟更难。听力和阅读更长，并会包含多种题型。语法部分没有选择题，并且最后还有写作练习（句子和短文）。前后可以翻页。模拟成绩不够理想的各位请加油复习和解决疑问。模拟结果还不错的，请注意在正式考试的时候把握时间（不要因为开卷而过于纠结磨蹭完美主义）。建议尽量给整个第四部分（Writing Tasks）预留40分钟时间。
+</p>
+</div>
+</li>
+<li><a id="org8a00609"></a>* 关于考前复习：<br />
+<div class="outline-text-6" id="text-2-4-1-2-3">
+<ol class="org-ol">
+<li>时间日期的读法会再讲。</li>
+<li>LMO上所有到期关闭的quiz（包括昨天的mock）全部都重新开放了。</li>
+<li>周四下午14:00-16:00有统一直播答疑活动。</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org928181d" class="outline-4">
+<h4 id="org928181d"><span class="section-number-4">2.4.2.</span> learning mall</h4>
+<div class="outline-text-4" id="text-2-4-2">
+<p>
+Dates in Spanish: How to Write and Ask Any Date (Interactive Calendar) <a href="https://spanishnumbers.guide/dates-in-spanish.html">https://spanishnumbers.guide/dates-in-spanish.html</a>
+<a href="https://www.learningmall.cn/mod/quiz/view.php?id=226115">https://www.learningmall.cn/mod/quiz/view.php?id=226115</a>
+<a href="https://www.learningmall.cn/course/view.php?id=3273&amp;section=5">https://www.learningmall.cn/course/view.php?id=3273&amp;section=5</a>
+<a href="https://www.learningmall.cn/mod/page/view.php?id=202233">https://www.learningmall.cn/mod/page/view.php?id=202233</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5a87ea5" class="outline-3">
+<h3 id="org5a87ea5"><span class="section-number-3">2.5.</span> Plan</h3>
+<div class="outline-text-3" id="text-2-5">
+</div>
+<div id="outline-container-orgdd98d35" class="outline-4">
+<h4 id="orgdd98d35"><span class="section-number-4">2.5.1.</span> <span class="todo TODO">TODO</span> Class notes -&gt; #org-drill</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<p>
+attach org-drill tag to the class notes, and fill them right.
+</p>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 1 hour to fill and drill all once.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgada2e8b" class="outline-4">
+<h4 id="orgada2e8b"><span class="section-number-4">2.5.2.</span> <span class="todo TODO">TODO</span> 标准西班牙语语法精解与练习</h4>
+<div class="outline-text-4" id="text-2-5-2">
+</div>
+</div>
+<div id="outline-container-org847018d" class="outline-4">
+<h4 id="org847018d"><span class="section-number-4">2.5.3.</span> <span class="todo TODO">TODO</span> Class SLIDEs</h4>
+<div class="outline-text-4" id="text-2-5-3">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org42392a5" class="outline-2">
+<h2 id="org42392a5"><span class="section-number-2">3.</span> Logs</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2022-04-13 Wed 11:29&gt;</span></span>
+messing around herlm-world-clock.
+distracted, brain dumbed.
+</p>
+
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2022-04-13 Wed 11:45&gt; </span></span> decided to take computer and print method.
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2022-04-13 Wed 11:54&gt; </span></span> Print set. use printer <code>HP Laserjet 1018 3</code>.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2022-04-13 Wed 12:05</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

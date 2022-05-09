@@ -1,0 +1,28 @@
++++
+title = "bug machine"
+author = ["System Administrator"]
+draft = false
++++
+
+## flow {#flow}
+
+
+### 1. collect bug list {#1-dot-collect-bug-list}
+
+collect all the errors reported
+
+
+### 2. find solution to each {#2-dot-find-solution-to-each}
+
+search engine, stackoverflow/stackexchange
+
+
+### 3. log solution/not solved {#3-dot-log-solution-not-solved}
+
+log the solution or progress/trys if didn't work it out
+in a easy-to-find place. maybe the program's org-roam page, maybe the daily page.
+
+
+### 4. publish {#4-dot-publish}
+
+issue? or on my website.

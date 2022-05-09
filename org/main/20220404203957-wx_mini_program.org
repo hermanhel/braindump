@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       4F1BF8A4-BEAD-4414-9DB1-C81438F40DD4
+:END:
+#+title: wx mini program
+#+HUGO_SECTION:main
+wx mini program have a lot in common with html+js programming combination, but with some features.
+* Data and Storage
+** Page Runtime memory
+#+Caption: Setdata
+#+begin_src js
+  function onLoad(option){
+      var that = this // Use variable that to refer to the page when "this" have other meaning.
+      this.setData({
+          field : value,
+          field2: value2
+      })
+    }
+#+end_src
+* qrcode util
+the QRcode util is provided with WeChat's own Scan function.
+It's pretty.
+#+begin_src js
+  wx.scanCode({
+      //success function is that is called when the decoding succeeded.
+      success (res) { //the results are stored in res. specifically, the decoded result is stored in res.result.
+          console.log(res)
+          that.setData({
+              scanresult : res
+          })
+          wx.navigateTo({
+              url: '../contentview/contentview?id=' + that.data.scanresult,
+  
+          })
+  
+      }
+  })
+#+end_src
+

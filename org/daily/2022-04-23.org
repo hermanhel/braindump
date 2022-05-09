@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       24080251-0810-413C-8FE2-7BA9C1D3E2C1
+:END:
+#+title: 2022-04-23
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:

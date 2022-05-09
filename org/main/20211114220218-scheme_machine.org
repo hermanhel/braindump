@@ -1,0 +1,80 @@
+:PROPERTIES:
+:ID:       41C1D7B1-FD6D-487E-A50A-91F5F84704D2
+:END:
+#+title: Scheme machine
+#+HUGO_SECTION:main
+
+* Making Scheme
+Scheme are catagorized based on the target and period
+** [[id:188F8050-7BAF-494E-847D-9265398B570A][Weekly Plan]]
+Weekly plans are schemes dedicated to the tasks of a week
+Target: Tasks in a week
+Goal:
+1. Balence between different aspects
+2. Psycho peace
+3. to have time used.
+
+Weekly plan sessions occur once a week, typically on saturday.
+** [[id:8F2292BD-3E31-4CB5-AE23-0AEDD8FF895D][Project plan machine]]
+Project plans are schemes dedicated to finish a project
+Target: a precise goal/game.
+Goal:
+1. Archive some specific goal(like good EAP121 credit)
+2. Have time and task managed.
+
+Project plan machine would make a Project Machine(project plan) which is a plan in machine shape. It will declare how the machine would have its parts working together to ensure the target/goal tackled.
+** [[id:F4D2C45E-6E42-43AA-840A-6B8D5CFBFD2B][Ultra Project Machine]]
+A type of project that is very dedicated, very intense.
+** Day Scheduling
+Day scheduling is not exactly a plan. It is the implementation of all the promises, the project tasks, the habits, the accumulative acquisition --> falling on a =hour-to-hour= basis.
+
+A very handy tool would be =org-agenda=.
+#+begin_src clojure
+  
+#+end_src
+
+1. 进入Thread,选择并标注Next tasks
+2. 在完成Task后,根据Thread的时间安排建议(Scheduling Recommandation)设定下一个任务(如SPA背单词),或者下一个任务的时间.
+3. 重复步骤1
+
+可预见的,会存在:
+1. 由以前的设定,预定在今天完成的任务
+2. 临时决定今天完成的任务
+3. Hanging Thread
+
+对应地,可以在当天的today file里说今天应对哪些thread,做哪些方面的事情.
+***  Decided Day Scheduling Machine                           :machine:
+:PROPERTIES:
+:ID:       DA21803A-F151-4BC0-9165-2EE6217DA64D
+:END:
+1. In morning, decide the day's tasks. Mark them NEXT.
+   + time
+     no period
+     with effort
+     effort adds up lower than the day's all effort(8 hours).
+   + Step & Resource
+     1. Previously planed
+        from Threads preceding task/weekly plan/critical time...
+     2. Check Threads
+        find something interesting & appropriate in time.
+        这里也可以有“这个session块头很大,找一天空的塞进去,然后再放一点边边角角”之类
+     3. Today's Thread
+        A heading in org-roam-today file. This thread is for daily last-minute things like grab some food, go out with mom, buy vegetable something, and some unexpected things like a mp3 to hand in.
+2. In during the day, Get the NEXTs done.
+   in wondering around, just log, or add to today's thread.
+
+* Checking Scheme
+
+* Reviewing Scheme
+
+* Scheme list
+To look for current ongoing scheme, use ~(org-agenda)~ and hit ~d~ for dashboard view. The ongoing scheme are displayed in the scheme section.
+
+This list is maintained majorly for archive and future plan purpose.
+** Archive(major)
+** Ongoing(minor)
+** Future(major)
+* Personal History
+** Memoir
+** CV
+

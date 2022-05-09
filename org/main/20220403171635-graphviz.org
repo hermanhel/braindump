@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       CAB1B725-3DB6-4C54-AA26-C2DAEBF51137
+:END:
+#+title: Graphviz
+#+HUGO_SECTION:main
+* Dot lang.
+#+begin_src dot
+  graph graph1 {
+        something;
+  }
+#+end_src
+** indirected
+#+begin_src dot
+  graph graph1{
+        a -- b -- c;
+        b -- d;
+        }
+#+end_src
+** directed
+#+begin_src dot
+  digraph graph1{
+          a -> b -> c;
+          b -> d;
+          }
+#+end_src
+** attrs
+#+begin_src dot
+  strict graph{
+         // node attr
+         b [shape = box];
+         // edge attr
+         a -- b [color=blue,style = dotted];
+         }
+#+end_src
+** subgraph
+#+begin_src dot
+digraph graphname{ 
+    a -> {b c};
+    c -> e;
+    b -> d;
+
+    subgraph cluster_bc {
+        bgcolor=red;
+        b;
+        c;
+    }
+
+    subgraph cluster_de {
+        label="Block"
+        d;
+        e;
+    }
+}
+#+end_src
+* Use
+** in Shell
+#+begin_src sh
+  dot -Tpdf filename.dot > filename.pdf
+#+end_src
+

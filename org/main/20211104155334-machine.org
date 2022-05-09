@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       BE1A7182-CCEC-4722-BAC6-70E67337C2F6
+:END:
+#+title: Machine
+#+HUGO_SECTION:main
+* Categories
+
+** Purpose
+
+*** Project machines
+A machine could be constructed just for a particular project, with itself used for only once.
+
+Such machine have components that should work with each other that will make the project success, like my credit in EAP121 or make a particular robot.
+
+components could be preparation of a presentation or moving algorithm of the robot
+*** Everyday machines
+machines could also be designed to deal with a type of repetitive occuring tasks, like loundary.
+
+** Shape
+
+*** Chain
+with steps and components and levels one after another to reach a higher height
+
+*** Loop
+With repeating steps to accumulate and build height.
+
+* Machine page
+machine page holdes all information of the machine, including implementation, scientific source, experiance reasons .etc.
+
+** Implementation
+When applying the machine in task/sessions, there could be some measures as below:
+*** Information Scheme
+There could be specific place to seek information needed for the machine.
+
+Example:
++ slides-from lmo
++ mail list-collect through university websites
+
+Currently, the informations are perfered to be collected in the scheme session, and wrote as detailed plan in the task descriptions.
+
+Instead of that, a /Information Scheme/ could be established in the task description, with structure specified in the [[Machine page]] .
+

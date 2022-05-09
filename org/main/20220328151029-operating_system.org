@@ -1,0 +1,1426 @@
+:PROPERTIES:
+:ID:       6254A9CC-22CD-4480-9BB9-F8981EC81D5A
+:END:
+#+title: Operating System
+#+HUGO_SECTION:main
+The Info comes most from MITOCW
+
+* MIT 6.S081
+
+** meta
+6.s081. a website.
+qemu, a hardware simulation under linux
+xv6, a teaching OS, on RISC-V processor
+** Overview                                                            
+:PROPERTIES:
+
+:END:
+*** What Operating system do 
+SCHEDULED: <2022-04-02 Sat>
+:PROPERTIES:
+:END:
++ Abstract Hardware
++ Multiplex
++ Isolation
++ Sharing
++ Security
+  access
++ Preformance
++ Range of application
+*** orgnization Image
+#+ATTR_ORG: :width 400
+[[/Users/hermanhe/Notes/RoamNotes/os1.png]]
+Kernel have filesystem, process management, memory management...codes.
++ filesystem: give more high-level way to name files, orgnize directories,etc.
++ process management: vi, cc are like different processes, and we want then to run concurrently, without interfering each other.
++ memory: and we divide and allocate memory to them.
+*** API - kernel
+~fd = open("path",1)~
+much like defining a funciton, but =system calls= jump into kernel and run kernel code. The kernel code have the special access to hardware and other kernel code user-defined function don't have
+*** Why OS is interesting?
+**** OS have it's projection into all softwares
+**** Tensions
+***** efficient - abstract
+***** powerful - simple
+***** flexible - secure
+want the user code to as flexible as possible, but don't want them to subatage other programs.
+**** the interaction of funcitons OS provided
+fork() create a new process that is a copy of the currrent one, then how will the resources this process accesed interact with this copy?
+**** The infrastructures and services
+**** Tracking bugs
+*** Example of system call - what it looks like?
+**** Installing xv6
+***** 1. installing i386 elf
+with macport installed
+~sudo port install i386-elf-gcc~
+**** Simple program
+#+caption: copy.c
+#+begin_src c
+  #include "kernel/types.h"
+  #include "user/user.h"
+  
+  int main(){
+    char buf[64];
+  
+    while(1){
+      int n = read(0,buf,sizeof(buf)); //0 console input, 1 console output by shell.
+      //buf is a pointer to a memory address where the program ask the OS to read the data into. it's a reserved 64 cells on the stack.
+      //sizeof(buf) is the maximum read size.
+      if(n<=0) break;
+      write(1,buf,n);
+    }
+    exit(0);
+  }
+#+end_src
+chapter 2 of the xv6 book have a table of all system call args.
+**** Fork()
+it created 1 identical children process, return the pid of the process, and return 0 if used in the children process. The copy doesn't start/stop corresponding to where the fork() system call is used, but the whole process, and the only difference of the 2 process, is the pid, and what fork() would return.
+
+the memory's the same. in different memory
+**** exec()
+replace the current process's memory entirely, and never return. return only under error.
+#+caption: exec.c
+#+begin_src c
+  int main(){
+    char *argv[] = {"echo","this","is","echo",0}; //0 to signify the end of the array
+    //each "sth" is a pointer pointing to a address storing the bytes. 0 points to NULL. when pointer's value is 0, it's a NULL pointer.
+    exec("echo",argv);
+    printf("exec failed!\n");
+    exit(0);
+  }
+#+end_src
+shell use forkexac to execute a command on the fork() of it, and then regain control when the child process exited
+**** redirection
+#+begin_src c
+  int main(){
+    int pid;
+  
+    pid = fork();
+    if(pid == 0){
+      close(1);
+      open("output.txt", O_WRONLY | O_CREATE);
+      char *arg[]={"echo","This","is","echo","redirected",0};
+      exec("echo",argv);
+      printf("exxec failed");
+      exit(1);
+  
+    } else {
+      wait((int *) 0);
+    }
+    exit(0);
+  }
+#+end_src
+after ~close(1);~, file descriptor ~1~ is closed. ~open("output.txt",)~ will bind the lowest number of available file descriptor(1) to ~output.txt~
+** OS organization
+
+*** to check
+
+
+prime
+pipe: in fork, it will have 4 ends.
+concurent
+*** isolation
+strong isolation between OS and app. So OS won't crash with error of app
+**** If there's no OS?
+no multiplexing. The dead loop will continue to run to the end of time
+so we want the app to give up cpu once in a while
+
+also, with memory, the perculating of echo and shell. echo can't overwrite shell's physical memory
+**** OS's perpose
++ enforce strong isolation
++ enforce multiplexing
+**** Unix Interface
+Abstract the HW resource
+like process. process system calls act on the abstraction of process, not directly to CPU. So the kernel could allow multiplexing of CPU.
+
+The kernel would force the idea that a process won't be able to run for >100ms.
+exec() is abstraction of memory. The file it works with act like a part of program working memory, which have no physical correspondance with a partucular location.
+
+file() abstract disk blocks. You can't directly read or write. The OS have its way to map the files to disk locations, and make sure the file in that block is unique system-wise. Other people can't know/access it.
+**** OS should be defensive
++ app can't crash the OS
++ app can't break the isolation
+**** typical: HW support
+to strong isolation.
+***** user/kernel mode
+****** user mode
+only unpriveleged instructions =add= =sub=
+****** kernel mode
+priviledge of instructions. =manitulating hw directely= =setting up page table= =disable clock interupt=
+***** page table/virtual memory
+****** page table
+map virtual addr to physical addr
+vew on memory
+basic idea: give every process its own page table.
+so that the process don't have knowledge of others physical memory
+strong memory isolation
+**** Entering kernel
+sometimes we want to transfer control to kernel in user app.
+~ecall(n)~ n is a number of system call number
+enter kernel at a =entry point=
+
+fork() = ecall(n) n is the system call number of fork
+it goes in the kernel, in a file called syscall.c, in which it checked the number, and then call the function
+**** trusted computing base (TCP)
++ kernel have no bug
++ kernel treat software as malicious
+***** kernel design
+****** monolithic kernel design
+all OS code in kernel mode
++ serious bug
++ tight integration - high performance
++ large more(historical reason)
+****** microkernel design
++ some in kernel mode
+  + ipc
+  + vm
+  + multiplex
++ bulk of OS run in user mode
++ fewer bugs
++ use msgs.
+  Shell -msg- ipc -msg- FS -msg- ipc -msg- Shell
++ performance
+  + jumping
+  + tight integration
++ embeded more
+**** Makefile of xv6
+proc.h -gcc- proc.s -assembler- proc.o -ld- kernel (all the *.o files load together)
+a kernel.asm is gnerated to see the full form of kernel.
+
+The qemu enulate a board of risc5 schema board. Should think it that way. It's a c program of for loop
+
+*** kernel/user mode
+*** system call
+*** the above in xv6
+** Page Tables (virtual memory)
+
+** Inbox
+*** hold and wait condition
+to prevail
+*** Mutual exclusion
+*** Scheduling
+**** Round Robin Scheduling Algorithm
+* the Dinosaur book
+:LOGBOOK:
+CLOCK: [2022-04-03 Sun 15:03]--[2022-04-03 Sun 15:22] =>  0:19
+CLOCK: [2022-04-03 Sun 11:47]--[2022-04-03 Sun 12:03] =>  0:16
+:END:
+** Introduction
+*** What is OS?
+**** Kernel
+a program runing all the time
++ System programs
+  part of OS but not in kernel
++ Middleware
+  set of software framework
+  provide additional servises
+  graphic, database, multimedia
+*** Computer-System Operation
+**** Bootstrap program(firmware)
++ to start the computer
++ in ROM or EEPROM
++ =locate OS Kernal and load it into Memory=
+**** Kernel start
+**** System process
++ after kernel start, it would start some system processes(system daemons)
++ They run while kernel is runing
++ After this, the whole system is =booted=. The system then wait for =event to occur=
+**** Interupt
++ Interupt signal the =event=
++ Trigered by:
+  + hardware: sending signal to CPU
+  + software: =system call= (monitor call)
++ After interupted, CPU:
+  1. Stop what it's doing
+  2. Transfer execution to a fixed point
+***** Interupt Vector
+A table holding some commonly used interupt service for some devises
+
+** Operating-System Structure
+** Processes
+:LOGBOOK:
+CLOCK: [2022-04-05 Tue 14:00]--[2022-04-05 Tue 14:41] =>  0:41
+CLOCK: [2022-04-05 Tue 11:49]--[2022-04-05 Tue 12:19] =>  0:30
+CLOCK: [2022-04-03 Sun 16:15]--[2022-04-03 Sun 17:08] =>  0:53
+CLOCK: [2022-04-03 Sun 15:22]--[2022-04-03 Sun 16:05] =>  0:43
+:END:
+*** Process
+Program in execution
+Program = xx.exe. Process = that thing in memory after you load xx.exe into memory
+****  Composition
+#+ATTR_ORG: :width 200
+[[/Users/hermanhe/Notes/RoamNotes/process.png]]
++ Text section: program code
++ Program counter: the current activity
++ Stack: temporary data(like funciton parameter.etc)
++ Data section: global vars
++ Heap: dynamically allocated memory
+
+*** States
+As the program executed, the states change.
+states: ~new,ready,running,waiting,terminated~
++ new: the process is created
++ running: instructions are being executed
++ waiting: the process is waiting some event to occur
+  like I/O or siganl
++ Ready: the process is waiting to be assigned to a processor
++ terminated: the process has finished execution
+#+ATTR_ORG: :width 500
+[[/Users/hermanhe/Notes/RoamNotes/procstates.png]]
+*** Queues
+Queue is where process is put when not executing
+Dispatch: selected to exec
+#+ATTR_ORG: :width 900
+[[/Users/hermanhe/Notes/RoamNotes/queues.png]]
+
+**** I/O request queue
+**** Ready Queue
+contains all processes ready to exec. Waiting for CPU
+Each Process is represented with [[PCB]] in Ready Queue
+Generally a =linked list=
++ header: contains pointer to 1st and final PCB.
+Each PCB have a field pointing to next PCB
+*** PCB
+Process Control Block(task control block) is the representation of Process
+#+ATTR_ORG: :width 400
+[[/Users/hermanhe/Notes/RoamNotes/pcb.png]]
++ Process state as in [[States]]
++ Program Counter: Address of next instruction to exec for this proc.
++ Registers: The condition of all registers of that CPU execing the Proc.
+  When Interupt comes, Program Counter and Registers are stored, so that when it's back on the table, they could continue.
++ CPU scheduling information:(more in [[CPU Scheduling]])
+  + process priority
+  + pointer to scheduling queues
+  + other scheduling parameters
++ Memory-Management information(more in [[Main Memory]])
+  memory stuffs, like page table.
++ Accounting information
+  + amount of CPU
+  + real time used
+  + time limit
+  + account number
+  + job/proc number
+  + etc
++ I/O status information
+  + list of I/O devices allocated to the process
+  + list of open files
+*** Thread
+the [[PCB]] will be modified to include thread information to support multi thread system
+*** Scheduling
+**** Objectives
++ multiprogramming: have something to run always
++ time-sharing: have everything running interactive
+
+to meet these objectves, the =process scheduler= select proc.
+**** Long-term(job) scheduler
+Process are stored on a disk when first submitted.
+Job scheduler select from that pool to load into memeory
+controls the =degree of multiprogramimg= (how many proc.s in memory)
+
+selection of process that will be allowd to get in touchwith CPU
+Influenced by: =resource allocation consideration=
+
+sometimes absent, like in unix/ms.
+***** careful selection
++ Bound:
+  + I/O-bound: more time in I/O
+  + CPU-bound: more time in computation
++ a good process fix: both of them mixed nicely, so that no device is wasted.(no too long queue and empty queue)
+**** Short-term(CPU)
+select from ready processes to feed CPU
+Very frequent, least once every 100ms
+
+selection of 1 process from CPU
+**** Medium-term scheduler
+sometimes it's good to swap a proc out.
+swapping(more in [[Main Memory]])
+**** Context Switch
+include:
++ CPU Registers
++ process state
++ memory-management information
+Few ms speed.
+putting the context in other place, and load the context in the new process's PCB
+*** Operations on Process
+**** Creation
+=Parent= proc. create =Child= proc. Forming a tree, starting from the proc with pid=0
+***** Resource Options
++ share all resource
++ child use subset of parent's resource
++ share no resource
+***** Execution Options
++ concurrently
++ parent wait for child to terminate.
+**** Termination
+Process use =exit()= to ask OS to delete it.
+This:
++ return status data from child to parent (0 for normal)
++ cause the resource to be relocated
+Parent use =wait()= to wait for child to finish
+  
+*** Parent/Child process
+**** execution
+wait, or concurrently
+Concurrent is good forL =information sharing, computation speedup, modularity, and convenience=
+*** Coorperating process
+**** interprocess communication mechanism
+***** shared memory
+share some variables
+
++ type of buffer
+  + bounded: fixed buffer size
+  + unbounded: no limit on the size of buffer
+****** how to do it?
+
+***** message passing
+#+ATTR_ORG: :width 400
+[[/Users/hermanhe/Notes/RoamNotes/resource/messagepassing.png]]
+
+****** How?
+a message passing facility provide:
++ send(message)
++ receive(message)
+
+a communication link must exist between them
+
+****** Direct/indirect communication
+Messages goes into a queue
+Buffering of the queue:
++ Zero capacity
++ Bounded
++ unbounded
+
+******* Direct Communication
+use =send(P,message)= and =recieve(Q,message)=.
+use pid for the communication (P,Q)
+hard to find the sender.
+
+******* Indirect
+1. Create a port A
+2. use =send(A,message)=, =recieve(A,message)=
+3. destroy a port
+****** Synchronous/asynchronous communication
+Blocking is synchronous, non-blocking is asynchronous
++ Blocking
+  + send: sender is blocked until message recieved
+  + recieve: reciever is blocked until recieve message
++ non-blocking
+  + send: send and go
+  + recieve: recieve something or NULL
+****** Automatic/explicit buffering
+
+**** communication in client-server systems
+
+***** socket
+socket = endpoint of communication
+a connection between 2 applications include 2 sockets on each end of communication channel
+***** remote procedure call(RPC)
+1 process/thread call procedure on remote application
+***** pipes
+take output of a command as input of another
+** Threads
+Thread is a =stream of instruciton=
++ Benefits:
+  1. less time to create/terminate/switch than proc.
+  2. better communication efficiency
++ Representation: Thread Control block
+  + Thread ID
+  + Program counter: which instruciton next
+  + Register set: current working variables
+  + Stack: history of thread execution
+  + other things it share with other threads in the proc.
+*** Multicore Programming
+**** Concurrency / Parallelism
++ Concurrency: Overlaped executing period.
++ Parallelism: Multicore multitasking.
+
+*** Multithreading Models
+
+**** User level threading
+some software library with threading util take care of that.
++ Pro
+  + No mode switiching -> fast
+  + cross-OS
+  + flexible. We can write the scheduling algor. ourselves.
++ Con
+  + system calls block for process. All thread in the process will be blocked altogether.
+  + only concurrecy, not parallelism. only 1 processor.
+**** Kernel level threading
+**** Many to One Model
+=Thread library= do the thread in user space
+**** One-to-One model
+Kernel knows.
+Each user thread map into 1 kernel thread
+
+*** Thread Libraries
+*** Implicit Threading
+*** Threading issues/Design method
+
+** Process Synchronization
+** CPU Scheduling
+** Deadlocks
+** Main Memory
+** Virtual Memory
+** Mass-Storage Structure
+** File-System Interface
+** File-System Implement
+** I/O Systems
+** Protection
+** Security
+** Virtual Machines
+** Distributed Systems
+* Trying Machine
+** Thread
+*** Thread
+stream of instruciotn
+flow of control in a process
+*** Pros of Thread
++ Responsiveness
+  have 1 thread doing a very difficult job
+  other threads works normal, and interact immediately
++ Resource sharing
+  thread of 1 process share the memories without explicit specification
++ Economy
+  faster in creation and context switch due to resource sharing
++ Scalability
+  can run faster on multicore systems. while 1 thread process runs the same on multicore or singlecore.
+*** Thread Control Block
++ thread ID
++ program counter
++ register set
++ stack
+*** Sequential/Multi-threaded program
++ Sequential program: program with only 1 stream of instruction
++ multi-threaded program: program with n streams of instruction
+*** single/multi-threaded processes
++ single thread process: traditional process
++ multithreaded process: same code, data, file. but multiple threads. Perform more than 1 task at time
+*** Thread life cycle
+#+ATTR_ORG: :width 400
+[[/Users/hermanhe/Notes/RoamNotes/threadlifecycle.png]]
+**** Preemption
+*** Amdahl's law
+$speedup \le \frac{1}{S + \frac{(1 - S)}{N}}$ where S stands for =serial parts of the program=
+the law states:
++ the speed up rise with N(core number) rise
++ the speed converge to $\frac{1}{S}$ as N approach $\inf$.
+*** Challenges with multicore programming
++ Identifying Tasks
+  find areas that can be devided into concurrent threads
+  They should be independent.
++ Balance
+  some task are too small to run seperately. like x = x + 1.
++ Data splitting
+  the data accessed should be devided to corresponding processors.
++ Data dependency
+  when proc1 depend on the result of proc2. They should be synchronized, so that the data is used right.
++ Testing and debugging
+  The possible order of instruction execution increase largely when concurent.
+*** Concurrency/Parallelism
++ Concurrency: little bit of every one
++ parallelism: more cores.
+**** types of parallelism
++ data parallelism
+  data is divided to cores for identical operation
+  array1.sum() => array1[:5].sum() + array1[5:].sum()
++ Task parallelism
+  unique operation to cores
+*** Synchrounous threading
+**** fork-join strategy
+parent fork child, and wait for them all to terminate.
+data sharing is significant. The parent may use all the data child manipulated.
+*** Threading Support
+**** User level libraries
+library create and manages threads
+program -libs-> multiple little threads scheduled -> new program -> load as process -> single threaded process on 1 core.
+***** pro
++ no mode switching -> fast
++ options for scheduling
++ not OS specific
+***** con
++ the blocking system calls would block the whole process, and threfore all threads of the process
++ no parallelism
+**** Kernel level
+kernel create and manages, schedules threads.
+***** pro
++ use multiple cores
++ blocking at thread level
++ multithread kernel routines(everybody multithread)
+***** con
++ thread switch always involves kernel -> mode switch -> slower
+*** lightweight process
+an intermediate data structure between user and kernel threads
++ to user: virtual processor
++ to kernel: attach to a kernel therads
++ when blocking happens: block on thread level, not process.
++ could use multiple cores.
+*** multithreading models
+**** M to O
+with Thread librarys.
+the functions in the library schedule the threads into 1 large thread, feeding to 1 kernel thread.
+**** O to M
+each user thread map to one kernel thread.
+concurrency, clever blocking.
+the overhead could be troublesome, so often the number of threads are restricted
+**** M to M
+a set of threads map to a set of kernel therad with less or equal degree.
+Therefore unlimited user threads, concurrency and clever blocking.
+**** 2 level
+M to M + O to O side by side.
+*** Thread libraries
+lib that provide functions to ~create~ ~use~ ~terminate~ therads
+**** Thread API
+Functions and Data structure of the thread library.
+like ~future~, ~thread~.
+**** POSIX
+***** Pthread
+**** Java
+**** Win32
+**** Implementation
++ in user space: local function call
+  codes and data structure in user space
++ kernel level: system call
+  codes and data structure in kernel space
+*** Asynchronous/synchronous threading
++ Asynchronous: parent don't wait child
++ synchronous: parent wait child.
+
+*** Explicit/Inplicit threading
+**** Explicit threading
+Programmer create and manage the threads
+**** Inplicit threading
+compilers and run-time libs create and manage threads
+***** Thread pool
+a pool of threads init at process init.
+They sit and wait for work.
+when works come, 1 thread will be call from the pool, and return after the work done.
+***** OpenMP
+set of compiler directives for C,C++,Fortran, that instruct compiler to generate parallel code automatically.
+=parallel region= is idendtified with the directives.
+****** parallel region
+#+begin_src c
+  #include <omp.h>
+  #include <stdio.h>
+  
+  int main(int argc, char *argv[]){
+    #pragma omp parallel //the parallel region
+    {
+      printf("I am a parallel region.");
+    }
+    return 0;
+  }
+#+end_src
+
+***** Grand Central Dispatch
+extension to C and C++ on macOS and iOS to support parallelism
+it use 
+****** blocks
+~^{printf("hi");}~
+****** dispatch queue
+blocks as unit, go in that queue.
+when block removed, the block goes to a thread.
++ queue types:
+  + serial: FIFO, 1 by 1
+  + concurrent: FIFO, n by n.
+    there's 3 concurrent queue with different priority.
+****** main queue
+every process have this serial queue
+*** asynchronous procedure call (APC)
+*** fork()
+create a new child thread from the parent thread. an identical copy.
+**** child/parent thread
+*** exec()
+replace the executable of the thread. others stay the same.
+**** interaction of exec() and fork()
+*** signal handling
+a interrupt or event generated by a unix system
+in response to a condition/actoin
+**** signal handler
+the function handling the signal
+all signals are handled exactly once
+**** asynchronous signal
+from outside the process that receives it
+**** synchronous signal
+from the same process
+*** thread cancellation
+**** target thread
+**** Asynchronous cancellation
+terminate the target thread immediately
+**** Deferred cancellation
+the target thread periodically check if it should be terminated.
+the canceled thread has sent the cancellation request
+***** cancellation point
+***** cleanup handler
+*** single- to multi-thread
+*** Thread-local storage (TLS)
+*** Scheduler Activations (lightweight process)
+**** upcall
+**** upcall handler
+*** Linux thread story
+** Process Synchronization
+*** coordination of process
+manageing the execution of processes so that no 2 processes access same resource the same time
+*** share resource
+*** critical-section problem
+**** critical section
+the area where the shared data is accesed
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/racecondition.png]]
+to ensure the correctness, the logical parallelism is turned off in critical section.
+**** entry section
+code entering critical section
+**** exit section
+code leaves critical section
+**** remainder section
+code other than the above 3 sections.
+**** solution
+***** requirement
+****** Mutal Exclusion
+only 1 process is in critical section.
+****** Progress
+when 0 process is in critical section, someone could get into critical section.
+when 2 process competeing, 1 must win.
+****** Bounded waiting.
+the waiting time should be limited.
+1 process would lose,lose,lose...win!
+***** software
+rely on algorithms ensuring only 1 process in critical section.
+since CS is untouchable, use entry and exit section to build the system.
+****** Peterson's Solution
+by Gary L. Peterson in 1981
+between 2 process P0 and P1
+#+begin_src c
+  int turn; //whose turn it is to enter
+  boolean flag[2]; //init to FALSE. flag[i] = TRUE -> Pi is ready.
+#+end_src
+******* Peterson's Algorithm
+#+begin_src c
+  do {
+    //entry section start
+    flag[0] = true; //P0 ready
+    turn = 1; //give away turn
+    while (flag[1]&&turn==1); //wait while P1 is ready and having its turn
+    critical_section();
+    //entry section end
+    flag[0] = false; //exit section
+    //remainder section.
+   } while (true);
+#+end_src
+****** cons
++ complicated to program
++ busy waiting(CPU wasted)
++ it's better to just block the waiting process.
+  but that involves OS
+***** hardware
+rely on machine instruction of [[Locks]]
+****** Locks
+lock on the required resource at [[entry section]]
+remove lock at [[exit section]]
+******* Test and Set solution
+******* compare and swap
+the Pi finds lock = 0 proceed.
+Pi lock other proc by setting lock = 1.
+at exit, Pi set lock = 0 to enable progress.
+****** pro
++ scalable.
+  work on n proc. on n cores.
++ simple
++ multipel CS supported
+****** con
+******* busy-waiting
+******* starvation
+infinite blocking
+1 proc leave CS, multiple waiting.
+******* deadlock
+iofinite waiting to a signal from the other.
+priority. High priority will obtain processor, while the current proc. don't have one to exit CS
+***** OS and PL solution
+provide function/stucture to use for synchronization
+***** Mutex lock/Mutual Exclusion
+apply lock at entry, remove lock at exit.
+block proc. asking for lock while the lock is unavailable
+****** kernel-level
+disable interupts
+****** software-level
+******* busy waiting(spinning)
+constantly check if a lock is available.
+****** spinlock
+***** Semaphores
+Semaphore is a Integer var, that is only accessed by wait() and signal().
+#+begin_src c
+  wait(){
+    while(signal<=0);
+    signal--;
+  }
+  siganl(){
+    signal++;
+  }
+#+end_src
+by init signal to n, enable n processes into CS at same time.
+****** counting semaphore
+semaphore goes to n
+for resource having multiple instances
+****** binary semaphore
+semaphore init to 1
+****** issue with semaphore
+*** atomic instuction
+instruction that is not interuptable.
+
+*** Preemptive/nonpreemptive kernel
+
+*** multiprogramming
+*** Synchronization hardware
+*** Race condition
+the condition that multiple proc.s manipulate same shared data concurrently.
+final value depends on the random order of the manipulation.
+
+To prevent race condition, concurrent processes must be synchronized
+*** classical process-synchronization probelms
+**** The Bounded-Buffer / Producer-Consumer Problem
+#+ATTR_ORG: :width 900
+[[/Users/hermanhe/Notes/RoamNotes/boundedbuffer.png]]
+**** The Readers–Writers Problem
+n readers, n writers.
+readers read, writers write.
+write: only 1 writer access the shared data.
+read: all reader and non writer can access the shared data
+use a reader-writer lock that specify the mode of lock.
+**** The Dining-Philosophers Problem
+#+ATTR_ORG: :width 300
+[[/Users/hermanhe/Notes/RoamNotes/diningphilosopher.png]]
+***** solutions
++ allow only 4 philosopher to be hungary together
++ allow pickup only if both chopsticks available(in CS)
++ odd # philosophers pick left chopstick 1st
++ Even # philosopher always picks up right chopstick 1st
+
+*** Monitor
+** CPU Scheduling
+*** concepts
+**** Execution phases of a process
+interleaved with =cpu-burst= and =io-burst=
+**** CPU-I/O Burst Cycle
+each process is build up with interleaved cpu-burst and io-burst.
+**** Type of I/O Processes
+whether the process is I/O bound or CPU bound determined the apropriate scheduling algorithm
+***** I/O bound
+many short cpu burst
+mostly waiting for I/O
+affect user interaction.(word processor/emacs)
+***** CPU Bound
+few long cpu burst
+I/O very few
+long cpu burst helps
+could do with lower priority(3d rendering, machine learning)
+**** Preemptive/non-preemptive Scheduling
++ preemptive: the OS can stop execution of the running process on cpu
++ non-preemptive: the OS can't stop the current process. Must wait until it exit.
+**** CPU Schedulers
++ Trigger:
+  + timer interrupt
+  + running process blocked by I/O
+  + By means of state change:
+    + Running to Ready [interrupt] =preemptive=
+    + Running to Waiting [I/O request/wait()] =non-preemptive=
+    + Waiting to Ready [I/O complete] =preemptive=
+    + * to Terminate =non-preemptive=
++ deed:
+  1. triggered
+  2. pick another process from ready queue
+  3. perform context switch
+**** Dispatcher
+hand in control of CPU to the selected process(by short-term scheduler)
+called in every process switch
+1. switch context
+2. switch to user-mode
+3. jump to the execution location in the program
+***** dispatch latency
+time of dispatcher stop and start process.
+
+
+*** criteria
++ Max CPU utilization – keep the CPU as busy as possible
++ Max Throughput – complete as many processes as possible per unit time
++ Fairness - give each process a fair share of CPU
++ Min Waiting time – process should not wait long in the ready queue
++ Min Response time – CPU should respond immediately
+*** algorithms
+**** Terms
+***** Arrive Time
+point of process arrives in the _ready queue_
+***** Completion Time
+point of process complete execution
+***** Burst time
+duration required by a process for CPU execution
+***** Turnaround time
+duration of | 1st time into ready state -...-> complete |
+turnaround time = Completion time - Arrive time
+***** Waiting Time
+duration of process waiting in ready queue
+Waiting Time = Turnaround Time - Burst Time
+***** Response Time
+Point of process gets CPU for the 1st time
+**** Algors
+***** First-Come, First-Served (FCFS) Scheduling
++ first-come, first-served
++ waiting time high
+***** Shortest-Job-First (SJF) Scheduling
+without preemption
+aims at =shortest burst time=
+
+****** estimate next burst time
+e = estimated time
+t = actual time
+a = weight factor (1 < a < 0)
+
+$e_{n+1} = at_n +(1-a)e_{n}$
+****** pro
++ min average waiting time
++ min average response time
+****** con
++ not practical: burst time unknown
+  so SJF cannont be implemented at short term scheduling level
++ starve long job.
+***** Shortest Remaining Time First (SRTF) Scheduling
++ When the new-comer have the shortest burst time, switch to him.
+***** Priority Scheduling
++ Each process assigned a priority
+  + based on:
+    + OS criteria(memory...)
+    + admin's choice
++ cpu allocated to highest priority
++ Probelm:
+  + Starvation: low priority never exec.
+    + solution: aging.
+***** Round Robin(RR) Scheduling
++ a quantom of time =q= for everyone
+  q of P1, then q of P2....
+****** Performance
++ large q: FCFS
++ small q: cost of overhead. Large compared with context switch.
+
+***** Multiple-Level Queues Scheduling
++ Ready queue partitioned (permanantly) into 2 queues:
+  + Foreground Proc
+  + Background Proc
++ Schedule in 2 types:
+  + To the Queues
+  + In the Queue
++ Among the Queues:
+  + Fixed Priority Scheduling
+    first forground, then backgound
+  + Time slice
+    80% time Forground in RR, 20% time Background in FCFS
++ Categories of Proc: in them the priority desc
+  + Interactive processes
+  + Non-interactive processes
+  + CPU-bound processes
+  + I/O-bound processes
+  + Background processes
+  + Foreground processes
+***** Multilevel Feedback Queue Scheduling
+place process into priority queues based on their CPU burst behaviour
++ IO higher, CPU lower
++ Basic Rules:
+  1. New proc. highest priority
+  2. quantum finished: (if proc not finish) into next lower queuef
++ Parameters
+  + n queues
+  + scheduling algorithem for each queue
+  + upgrade method
+  + demote method
+  + queue select method
++ Example
+  + Q1: RR 8ms
+  + Q2: RR 16ms
+  + Q3: FCFS
+***** Thread Scheduling
+****** contention scope
+the scope where the user threads compete for use of physical CPU
+******* Process Contention Scope PCS (unbound thread)
+local.
+many-to-one
+******* System Contention Scope SCS (bound thread)
+global
+one-to-one
+***** Multiple-Processor Scheduling
+****** inside Multiprocessor OS
++ Require different inter-proc. comminucation & synchronization techniques
++ All processors share a memory
++ 
+****** 3 structures
+
+******* Separate Kernel Configuration
+every Processor have it's own I/O device and file system
+little interdependency
++ no parrallel execution
+*******  Master–Slave Configuration (Asymmetric Configuration)
+ 1 master processor and other slave processors
+OS run by master
+process scheduling run by master
+******* Symmetric Configuration
+Any processor can access any device and can handle any interrupts generated on it.
+
+Mutual Exclusion for the OS is required.
+OS is seperated into independent parts. to prevent concurrency
+******** approaches
+********* common ready queue
+********* per-core run queues
+******** Process Affinity
+caches make 1 processor more "familier" for a process.
+So it's better to use 1 processor all along.
+********* soft affinity
+no guarentee
+********* hard affinity
+allowing a 
+******** Load Balencing
+for each core's queue
+********* Push migration
+when too long, push task to other processor's queue
+********* Pull migration
+when empty ready queue, read from othre processors' queue. Transfer them into my own queue
+******** Multicore Processors
+a core executes a thread a time
+********* Memory stall
+single-core processor waiting for the data to become available.
+
+use that time to execute other thread.
+******** Hyperthreading
+a intel technology
+a physical processor divieded into 2 logical processors that are treated like seperate physical processors.
+******** Multithreading
+multiple thread on same core
+********* coarse-grained
+switch thread only when 1 thread block
+********* fine-grained
+scheduling in Round Robin policy
+***** Real-Time CPU Scheduling 
+****** Real-time system
+a system where time play important role
+******* hard real-time system
+must meet deadline
+******* soft real-time system
+desirable not not necesary
+******** aperiodic tasks
+irregular arrival time
+******** periodic tasks
+once per period T
+****** Scheduling real-time tasks
+#+ATTR_ORG: :width 200
+[[/Users/hermanhe/Notes/RoamNotes/realtimelatency.png]]
+******* interrupt latency
+determine interrupt type
+switch context
+******* dispatch latency
+****** Static Scheduling
+schedule prepared before app startup
+****** Priority-based scheduling
+priority assigned base on how quickly it must react
+****** Dynamic scheduling
+schedule change over time.
+****** timing constraints
++ period:
++ deadline:
++ 
+****** scheduling criteria
++ timing constraints met
++ cost of context switch, while preempting, must be reduced
++ 
+****** preemptively/non-preemptively, staticly/dynamically
+****** Rate-Monotonic Scheduling
+static priority-based preemptive scheduling algorithm
+
+shortest period = highest priority
+****** Earlies-Deadline-First Scheduling
+deadline - priority
+dynamically assign priority according to deadline
+****** Proportional Share Scheduling
+T shares are allocated to all procs. in the system
+An app recive N shares. N < T
+****** Process in here
+periodic.
++ once the process get CPU, it has:
+  + fixed processing time $t$
+  + deadline $d$
+  + period $p$
+  + $0 \le t \le d \le p$
+  + rate $\frac{1}{p}$
+  + illustrate
+    #+ATTR_ORG: :width 500
+    [[/Users/hermanhe/Notes/RoamNotes/ptd.png]]
+***** Algorithm Evaluation
+❑ 
+****** Deterministic evaluation
+1. define workload: avg waiting time?
+2. test.
+******  Queueing Models
+we define queues for I/O and CPU, then queueing theory comes in handy
+******* little's formula
+$n = \lambda \times W$
+n:average queue length
+W:avg waiting time
+$\lambda$:avg arrival rate
+if we know 2 of the parameters, we know the thirs
+******  Simulations
+trace tapes to provide real machine process to simulate algorithms on.
+** Deadlock
+*** System Model
++ system have resources.
++ Resource have R types
++ Resource have W Instances
++ Process Use Resource with:
+  + request
+  + use
+  + release
+*** Deadlock Characterizaiton
+deadlock arise if the four condition the same time
+**** Mutual exclusion
+1 process at a time hold that resource
+**** Hold and wait
+the process holding 1 resource wait for the other one
+**** No preemption
+resource released only voluntarily
+**** Circular wait
+closed chain of process waiting for resource from the next one in chain
+**** Resource allocation Graph
+#+ATTR_ORG: :width 400
+[[/Users/hermanhe/Notes/RoamNotes/resourceallocationgraph.png]]
+**** Basic Facts
++ graph have no cycle = no deadclock
++ have cycle:
+  + 1 instance per resource type = deadclock
+  + n instances per resource type: possibilities.
+*** Methods for handling Deadlocks
+**** Deadlock Prevention
+try to eliminate 1 of the 4 conditions
+***** Mutual exclusion
+no
+***** Hold and wait
+limit max resource hold to 1.
+-> low resource use, 
+***** No preemption
++ when holding 1 asking 1 denyed, release all.
++ or if the asked 1 is held by other, preempt him
+***** Circular wait
+order the resource types.
+restrict request object to R3-5 after holding R3.
+**** Deadlock Avoidence
+constrain request to prevent least 1 of the 4 conditions.
++ don't start dangerous proc.
++ don't grant dangerous request.
+***** safe state
+at least 1 sequence of resource allocation that does not result in deadlock
+***** Max need
+total amount of each resources
+***** available resource
+total amount of each unallocated resources
+***** need
+future request from P1 for R2
+***** allocation
+the R0 and R1 that P1 have been holding.
+***** single instance of Resource
+****** claim edge
+Pi may request Rj.
+if check cycle, reject, otherwise claim -> request
+***** Multiple Instances of REsources
+****** =Banker's algorithm=
+******* Data structures
+#+begin_src c
+  n = number of process;
+  m = number of resource type;
+  avalable[m] containing instance numbers;
+  Max[n,m]. Max[i,j]=k,then Pi may request at most k instances of Rj;
+  Allocation[n,m];Pi have k of Rjs;
+  Need[n,m];Pi still need k of Rjs. Need[i,j] = Max[i,j]-Allocaiton[i,j]
+#+end_src
+******* Safety Test algo
+1. init
+ #+begin_src c
+  Work[m] = available[m];
+  Finish[n]= false;
+ #+end_src
+2. find =i= such that:
+   + Finish[i] = false
+   + Need[i]<=Work[i]
+   + if no, goto step 4
+3. work = work + allocation; finish[i]= true;goto step 2
+4. if finish[i] = true for all i, then safe state.
+
+  
+******* Resource request algo
+pretend to do the request.
+check that map.
+**** Deadlock Detection
+***** Detection of single instance of resource
+****** wait-for graph
+merge resource.
+****** detection
+search for loop in wait-for graph. O(n2)
+***** Detection for multiple instances of resources
+banker's algorithm.
+****** available
+****** allocation
+****** request
+
+***** Usage
+when?
+if too late, the deadlock would grow large and hard to deal with
+*** Recovery from deadlock
+
+**** Process Termination / Abort Process
+➢ Abort all deadlocked processes
+➢ Abort one process at a time until the deadlock cycle is eliminated
++ Order
++ Priority of the process
+  1. How long process has computed, and how much longer to completion
+  2. Resources the process has used
+  3. Resource's process needs to complete
+  4. How many processes will need to be terminated
+  5. Is process interactive or batch?
+**** Resource Preemption
+1. select victim
+2. rollback
+3. starvation
+   make sure limited time 1 is a victim
+* The Project
+** Scheduler
+My goal is to:
+1. Gain practical experiance of OS
+2. Pass [[id:814578FE-18C2-4612-BBB9-EA33701728FB][CPT104 OS Concepts]] with High score
+
+In order to do that, not only I should complete all CPT104 Activities, but also dig in using
++ MIT6.S081
+  I stored thing in my download drive
+  [[https://pdos.csail.mit.edu/6.828/2020/schedule.html][official schedule]] holds schedule information of the course.
++ the Dinosaur book
+  it contains much practical problems.
+
+The MIT course is in video and practices, and the dinosour book is a book. I plan to use [[page reading machine]] on [[the Dinosaur book]] and [[video watching machine]] on the video materails of MIT.
+
+I'll be holding Notes in this page, which, will be transformed into blogs in the future on my website.
+
+Keep that in mind, and knows that there's an audiance. So make them comprehensible, and complete.
+
+** page reading machine
+*** Principle
+**** Distributed Exposure
+Various exposure to the materials build familiarance, the key to memory and understanding/processing.
+**** Initiative
+Taking Initiative counters dizziness and copying.
+*** Flow
+1. Go through the headings, mark seemed important keywords to headings
+2. after the first skim, go to the notes and try to explain them. When failed, check the text.
+3. =[[]]= juicy jargons along the way
+4. after current node done...
+5. navigate to the first link(=C-c C-x C-p=)
+6. Create and edit the node
+7. Refile it to where it belong(=C-c m=)
+8. Back to the point using =org-mark-ring-goto(C-c 5)=
+9. Go to next link(=C-c C-x C-n=)
+10. Repeat step 4-7 until all links are pointing to somewhere.
+** video watching machine
+*** TODO Constructing video watching machine
+**** TODO Do a class conventionally, record obstacles.
+Goal - Problem record - Diagnose - Plan - Execution.
+***** conventianl watching
+1. Watch video
+2. (Pause video to)Take note of every section
+3. Take note of every listed experiance
+4. Take note of every code.
+5. Try the code myself.
+****** Note
+******* Page table
+a.k.a, virtual memory.
+******** why use Page table? => Isolation.
+To implement =isolation between programs= in a =whole bulk of physical memory space=.
+
+[[Address space]] is the idea of an ideal Isolated Senario.
+******** Address Space
+Give every process it's own =Address space=
+
+~illustrate of 3 process having there own address space~
+
+There are various approaches to implement Address space. [[Page Table]] is one approach.
+******** Pageing Hardware
+The hardware structure that supports [[Page Table]], mainly by processor, or MMU
+********* Page Table
+~Illustrate of paging~
++ VA: Virtual Address, PA: Physical Address
+  + VA: location of the code from the process's perspective
+  + PA: location of the code from main memory's perspective
++ CPU holds:
+  + satp register: PA, location of page table in main memory.
+  + other: VA, location of data or code address.
+******** xv6 vm code+layout
+** Practice
+The MIT course provides extensive lab practices.
+The completion and logging would be stored in [[MIT 6.S081 Lab Logs]]
+* MIT 6.S081 Lab Logs
+** Lab 1: Unix utils
+*** TODO reading xv6 ch1
+:LOGBOOK:
+- Note taken on [2022-04-19 Tue 12:55] \\
+  sleep.c completed, raised a page fault
+- Note taken on [2022-04-19 Tue 11:32] \\
+  读完第一遍
+CLOCK: [2022-04-19 Tue 11:20]--[2022-04-19 Tue 12:55] =>  1:35
+:END:
+*** xv6 system calls
+|---------------------------------------+--------------------------------------------------------------------------|
+| System call                           | Description                                                              |
+|---------------------------------------+--------------------------------------------------------------------------|
+| int fork()                            | Create a process, return child’s PID.                                    |
+| int exit(int status)                  | Terminate the current process; status reported to wait(). No return.     |
+| int wait(int *status)                 | Wait for a child to exit; exit status in *status; returns child PID.     |
+| int kill(int pid)                     | Terminate process PID. Returns 0, or -1 for error.                       |
+| int getpid()                          | Return the current process’s PID.                                        |
+| int sleep(int n)                      | Pause for n clock ticks.                                                 |
+| int exec(char *file, char *argv[])    | Load a file and execute it with arguments; only returns if error.        |
+| char *sbrk(int n)                     | Grow process’s memory by n bytes. Returns start of new memory.           |
+| int open(char *file, int flags)       | Open a file; flags indicate read/write; returns an fd (file descriptor). |
+| int write(int fd, char *buf, int n)   | Write n bytes from buf to file descriptor fd; returns n.                 |
+| int read(int fd, char *buf, int n)    | Read n bytes into buf; returns number read; or 0 if end of file.         |
+| int close(int fd)                     | Release open file fd.                                                    |
+| int dup(int fd)                       | Return a new file descriptor referring to the same file as fd.           |
+| int pipe(int p[])                     | Create a pipe, put read/write file descriptors in p[0] and p[1].         |
+| int chdir(char *dir)                  | Change the current directory.                                            |
+| int mkdir(char *dir)                  | Create a new directory.                                                  |
+| int mknod(char *file, int, int)       | Create a device file.                                                    |
+| int fstat(int fd, struct stat *st)    | Place info about an open file into *st.                                  |
+cci| int stat(char *file, struct stat *st) | Place info about a named file into *st.                                  |
+| int link(char *file1, char *file2)    | Create another name (file2) for the file file1.                          |
+| int unlink(char *file)                | Remove a file.                                                           |
+*** fork()
+create a child process
+**** positions
++ memory: same content, different location
++ file descriptors: the same
+**** behaviour
++ a child process created, with identical everything of the parent process.
++ child process and parent process don't share memory variables
++ [?] whereever the =fork()= call is at, the whole program is duplicated
+**** returns
++ pid of the created child [in parent]
++ 0 [in child]
+***** Tree of child processes
++ Since
+  + in child processes, the value of the creating fork() is 0
+  + memory is duplicated for every child.
++ Therefore
+  + on a leaf child
+    if use =pid1=fork()= to store the pid, then all processes in the route from root to this child would have pid stored 0.
+*** wait()
+wait() is companion of [[fork()]], parent block until childs finish.
+*** exit()
+
+*** File Descriptor
+it's an integer.
+like, 0 - standard in, 1 - standard out, 2 - standard error
+
+*** read()
+
+*** write()
+
+*** File system
+
+*** Pipe
++ 1 pipe for one way communication.
++ the file
+
+*** lab1.2: sleep()
+I see that you need 1 pipe for each direction of communication, 1 for P1 to P2, and 1 for P2 to P1
+Otherwise, when P1 finished writing and start to read, it could read the data it just write into the pipe.
+
+*** lab1.3: prime()
++ I see that procedure doing it is not promising: no
++ I see that funciton layer_init don't work well. it don't tell whether the nums are prime.
++ It's key where the child is inited in the recursive calls.
+  it should be not in the while loop for while loop is giving it chance to
+#+begin_src c
+#include "../kernel/types.h"
+#include "user.h"
+#include "../kernel/stat.h"
+
+int main(){
+  int p1[2];
+  pipe(p1);
+  if (fork() == 0){
+    for(int i = 2;i<32;i++){
+      write(p1[1],&i,4);
+      printf("inited %d\n",i);
+      }
+    exit(0);
+  }else
+  {
+    child_process(p1);
+  } 
+  return 0;
+}
+
+void child_process(int p[2]){
+  int prime;
+  int child_p[2];
+  pipe(child_p);
+  close(p[1]);
+  int len = read(p[0],&prime,4);
+  printf("prime: %d\n",prime);
+  if (len==0){close(p[0]);exit(0);}
+  if (fork()==0){
+    close(p[0]);
+    child_process(child_p);
+  } else {
+    while(1){
+      int num;
+      int len = read(p[0],&num,4);
+      if (len==0){close(p[0]);close(child_p[1]);
+        wait(0);
+        exit(0);
+      } else
+      if ( num % prime!= 0){
+        write(child_p[1],&num,4);
+      }
+    }
+  }
+  
+}
+#+end_src
+
+**** good recursive concurrent process call sturcure
+1. every child process have it's own setup -> child_process()
+2. fork(), and on the child process, invoke child_process()
+Then, the structure would be a lovely:
+#+attr_html: :width 400px 
+#+ATTR_ORG: :width 400
+[[/Users/hermanhe/Notes/RoamNotes/resource/recurrent.png]]
+*** miscellaneous
+
+**** main(int argc, char* argv[])
++ argc: count of args passed by command-line
++ argv: args.
+  typically, for =echo hi!=, =argv[0] = "echo", argv[1] = "hi!"=
+
+**** how to add program?
+1. write source code
+2. add path to =UPROC= variable in =riscv-2019fall/Makefile=
+3. recompile with =make qemu= and the program should be loaded to the shell
+
+**** in usys.S
+what =li= means in =li a7, SYS_sleep=?
+
+**** loading sleep
+write the code into user/sleep.c, and the Make would take care of later things.
+
+**** page fault!
+#+caption:shell output
+#+begin_src example
+init: starting sh
+$ sleep
+sleep
+wrong number of args!usertrap(): unexpected scause 0x000000000000000f (store/AMO page fault) pid=3
+            sepc=0x00000000000000fe stval=0x0000000000003038
+#+end_src
+
+**** how large is 1 byte?
+a int? a char?
+
+* Address space

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       403F3273-E84F-4ABE-8C2E-819F3EB09247
+:END:
+#+title: Shell Command
+#+HUGO_SECTION:main
+

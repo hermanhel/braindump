@@ -1,0 +1,214 @@
++++
+title = "5 step method"
+author = ["System Administrator"]
+draft = false
++++
+
+## Description {#description}
+
+Formally addressed by _Ray Dalio_.
+A progressive evolution machine to make anything better.
+
+
+## Flow {#flow}
+
+
+### 1. Set Goal {#1-dot-set-goal}
+
+
+#### Outcome {#outcome}
+
+-   Goal list (ordered)
+    all in headings
+    -   Goals
+    -   Desires
+    -   Assosaries
+    -   Moderation
+
+
+#### Procedure {#procedure}
+
+<!--list-separator-->
+
+-  1. Have a list of goals
+
+    Use headings so wikilinks like[1. Set Goal](#1-dot-set-goal)s would be available
+
+<!--list-separator-->
+
+-  2. Check/Filter
+
+    Sort out Desires and Assosaries
+
+<!--list-separator-->
+
+-  3. Order the goals/desires
+
+    What is wanted the most? What's the best?
+
+<!--list-separator-->
+
+-  4. Ask: "How I'm gonna moderate my goals and desires?"
+
+    Time spend? Money spend? Energy? schedule?
+
+
+### 2. Find problem {#2-dot-find-problem}
+
+
+#### Outcome {#outcome}
+
+-   Problem list (ordered)
+    -   Problem 1
+    -   Problem 2
+
+
+#### Procedure {#procedure}
+
+<!--list-separator-->
+
+-  1. have a list of problems
+
+<!--list-separator-->
+
+-  2. Check
+
+    Miss of problems:
+
+    -   Cause of problems?
+
+    What kind it is:
+
+    -   Skill?
+    -   Weakness?
+
+<!--list-separator-->
+
+-  3. Order the problems
+
+    Big problems and small problems
+
+
+### 3. Analyse the problem to find the root of it {#3-dot-analyse-the-problem-to-find-the-root-of-it}
+
+
+#### Outcome {#outcome}
+
+-   Cause list
+    -   Cause 1
+    -   Cause 2
+
+
+#### Procedure {#procedure}
+
+<!--list-separator-->
+
+-  1. Analyse each Problem
+
+    have problem at on window, and cause list part on another window
+    use wikilink to Link problems and causes
+
+    Write direct cause in the problem list, and root cause in the cause list
+
+
+### 4. Make solution to solve the problem. {#4-dot-make-solution-to-solve-the-problem-dot}
+
+
+#### Outcome {#outcome}
+
+-   Solution
+    -   review
+    -   future
+    -   machine-modifications
+    -   solution list
+        -   SOLUTION solution 1
+            -   TODO task 1
+
+
+#### Procedure {#procedure}
+
+<!--list-separator-->
+
+-  1. Review
+
+    What have been going through before the current state?
+    What have been done?
+
+    This part try to see the history and reality
+
+<!--list-separator-->
+
+-  2. Future
+
+    What to do next to approach the goals?
+
+    This part answer to the [1. Review](#1-dot-review) and the goals in Goal list
+
+<!--list-separator-->
+
+-  3. What to mend?
+
+    Problems are results of the machines.
+    What machines should be fixed? How to do that?
+
+    This part answer to the Problem list
+
+    Project proposed should be nested under goals or roles. Goals should be in roles.
+
+<!--list-separator-->
+
+-  4. Solutions `> =Tasks`
+
+    There are machines for 1 type of tasks like reading, and machines for 1 project that is important like Winning my module credits. Each could have `bugs` like lost of key elements, or mismatch of flow, etc. Solution are established to fix those `bugs`
+
+    Bugs:
+
+    -   in Project machine
+    -   in everyday machines
+
+    **Solutions** (Make preparation to the presentations) should be direct on point of problem and whole, while **tasks** (write script) will be concrete and complement solution, make sure it will work
+
+    This part answer to [2. Future](#2-dot-future) and [3. What to mend?](#3-dot-what-to-mend)
+
+    solutions are denoted with tags on the solution list heading `:solution:`
+
+
+### 5. Do anything necessary to practice the solution, and realize it. {#5-dot-do-anything-necessary-to-practice-the-solution-and-realize-it-dot}
+
+
+#### Outcome {#outcome}
+
+
+#### Procedure {#procedure}
+
+When doing tasks
+
+<!--list-separator-->
+
+-  1. Tasks - Goals
+
+    Ask the relations.
+    get ref for it if don't remember
+
+<!--list-separator-->
+
+-  2. Make a standard of process for the task.
+
+    This make sure that the solution are done strictly.
+
+
+## Tasks {#tasks}
+
+
+### <span class="org-todo todo TODO">TODO</span> A function to calculate Goal's time {#a-function-to-calculate-goal-s-time}
+
+How many time I have spent in the goals?
+
+
+## Aware of these things {#aware-of-these-things}
+
+
+### Priorities in setting goals {#priorities-in-setting-goals}
+
+Currently as default in org to be 3 levels.
+See if it's too many or less.

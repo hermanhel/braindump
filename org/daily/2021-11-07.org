@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       964F68A1-B079-40F6-8FBE-0A3C87D57E80
+:END:
+#+title: 2021-11-07
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:

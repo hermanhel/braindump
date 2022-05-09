@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       42B341E3-4A7C-47FA-B172-36749140D512
+:END:
+#+title: Paper Reading Machine
+#+HUGO_SECTION:main
+* Process
+Answer the following questions in context of every paper:
++ What's the problem
++ What's the finding
++ What's the interpretation
++ What's the design/logic of the experiment/research
++ What exactly was done
++ How were the data analysed
+** 1. Early stage questions
+Answer could be found in the abstract.
+
+If not, they should be appearing in the introduction or conclusion
+*** What's the problem
+*** What's the finding
+*** What's the interpretation
+** 2. Further questions
+Answer might not be easily found.
+
+Need fish through the text to find the answer.
+*** What's the design/logic of the experiment/research
+*** What exactly was done
+*** How were the data analysed
+

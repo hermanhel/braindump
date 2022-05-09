@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       CA8EAD92-EB09-433D-ADBF-B12AF975DC0B
+:END:
+#+title: 2022-03-01
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* 做了什么?
+我不知道我做了什么.学到了怎么做一件事,如何确定,如何得知有一件事被做下了?
+
+准确来说,如何知道「我学到了一个知识」这个目标或者行为,得到了达成?
+
+考试是一个方面.于此相同的,quiz,Active Recall.
+
+另一方面,实用的知识可以用以建造和工程.在这一方面,对于所学技巧/原则/知识的应用可以体现在实施的工程,比如写一个函数、曲子,建造一个结构.
+
+在这些之上,知识在头脑里的储存,是联想、多维度的.能够将其转化为一维的语言,也可以看作是能够活学活用的体现.所以写Tutorial,解释文章,博客,或者Essay是好的「做了什么」的衡量.
+* 复习一下9个学习策略
+1. Metalearning
+2. Focus
+3. Direct
+4. Drill
+5. Active Recall/retrival
+6. [] Feedback
+7. [] Retention
+8. [] Intuition
+9. Experiment
+* 做了什么事之后,可以确定是学习了呢?
+我上了一节课,我在什么时候学习了呢?
+
+学习了能够用来做东西的原则,那么就拿它来做东西.
+学习了好像不太能直接拿来做东西的知识,就用它写essay.
+可以写很多次同一个范围的essay.就像小泉八云写东西的方法一样.
+
+其中可以一直使用Active Recall.
+做事情的过程就是学习,这样是direct.每一次带入新的原则,每一次总结新的点,得到新的知识和knowledge of dependency.

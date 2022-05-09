@@ -1,0 +1,378 @@
+:PROPERTIES:
+:ID:       164D4757-5345-4355-BEAE-03F5E060E897
+:END:
+#+title: Linear Algebra
+#+HUGO_SECTION:main
+Linear Algebra is set of algebra =formulated rules=, =formulated methods= and =found facts=
+* Resource
+1. This note is originally a reading note on [[http://gwthomas.github.io/docs/math4ml.pdf\]\[http://gwthomas.github.io/docs/math4ml.pdf][math4ml]].
+2. I'm adding my own insights afterwards.
+* Spaces
+** Vector space
+set of vectors defining:
++ =add= operation: v1 + v2
++ =scale= operation: n * v1
+*** propositions
++ 0: x + 0 = x
++ -x: for each x, exist -x + x = 0
++ 1: 1x = x
++ commutativity: x+y=y+x
++ Associativity: (x+y)+z=x+(y+z),(ab)x=a(bx)
++ Distributivity: a(x + y) = ax + ay
+*** linear combination
++ set of vectors: $V=\{v_1,v_2...\}$
++ set of real numbers: $R = \{a_1,a_2...\}$
++ =linear combination=: $a_1v_1 + a_2v_2+...+a_nv_n$
+*** linear independent
+only combination of $a_1v_1+a_2v_2+a_3v_3+...=0$ is $a_1 = a_2 = ... = 0$
+*** span
+$span(V)$ is set that: for every $v \in span(V)$, $v$ can be written as a [[linear combination]]
+of $V$.
+*** basis
+basis is a set of vector $V$ such that:
++ $V$ is linear independent
++ with respect to $span(V)$
+
+for every set of linear independent vectors, they are a basis for its span.
+*** finite-dimensional                                          :confusing:
+vector space $V$ that is spanned by a finite number of vectors.
++ Infinite-dimensional vector space: spanned by infinite number of vectors
++ dimension: $dim(V)$ of $span(V)$ is the number of vectors in $V$
+** Euclidean space
+$\mathbb{R}^n$. [[Vector space]] [[span]]ned by a n-tuple [[linear independent]] [[basis]].
++ used to represent physical space.
+*** subspace
+$S$ is part of $V$
+**** propositions
++ 0: $0 \in S$
++ +: $S$ is closed under addition
++ *: $S$ is closed under scale.
++ self: $V$ is a subspace of $V$, 0 is a subspace of 0
++ space+space: $U \in V + W \in V = S \in V$
++ dim of space+space: $dim(U + W) = dim(U)+dim(W)-dim(U \cap W)$
+**** direct sum
+$U \oplus W$ when $U \cup W =\{0\}$.
+***** propositions
++ unique linear combination: each $v$ in $U \oplus W$ can be uniquely written as $u + w$
++ $dim(U + W) = dim(U)+dim(W)$
+** Metric space
+** Normed Space
+** Inner product space
+* Linear Map
+ a function $T:V \rightarrow W$
+** satisfies:
++ T(x+y)=T(x)+T(y)
++ T(ax)=aT(x)
+identical sturcutr to Vector space
+** Linear Operator
+a [[Linear Map]] from $V$ to $V$
+** homomorphism                                                  :confusing:
+a map is a homomorphism if:
++ input and output is the same type(both are Vector Space)
++ the structure is preserved
+*** is a 3d to 2d map homomorphism?
+*** ismorphism
+invertible [[homomorphism]]
++ $V$ and $W$ are =ismorphic= when $\exists$ homomorphism between $V$ and $W$: $V \cong W$
++ ismorphic vecter spaces are =the same= in =algebraic structure= (both [x1,x2,x3,x4])
+**** proposition
++ dimension: finite-dimensional vector space of the same dimension are ismorphic
++ to Eucliead: any n-dimensional vector space is ismorphic to $\mathbb{R}^n$
+  + proof:
+    at least exist a map that map n bases of $V$ to n bases of $W$.
+    \begin{aligned}
+    \varphi: V & \rightarrow W \\
+    \alpha_{1} \mathbf{v}_{1}+\cdots+\alpha_{n} \mathbf{v}_{n} & \mapsto \alpha_{1} \mathbf{w}_{1}+\cdots+\alpha_{n} \mathbf{w}_{n}
+    \end{aligned}
+*** 
+** Matrix of Linear Map
+for $T:V \rightarrow W$ where $V$ have basis $v_1,v_2,...,v_n$, $W$ have basis $w_1,w_2,...,w_m$.
+
+*** formulated notation
+for $Tx = Ax = v$, $A$ is matrix representing [[Linear Map]] T
++ A consist of:
+  + columns: base vectors in column space $V$.
++ x is vector in row space $V$, that will be mapped into $W$ by $A$.
+*** Transpose
+flip the matrix by diagnoal, row->column, column->row
+**** operations
++ double: $(A^T)^T = A$
++ $(A+B)^T=A^T+B^T$
++ $(aA)^T=aA^T$
++ $(AB)^T=B^TA^T$
+*** TODO Column space and row space
+difference between left product and right product, how do they(column space and row space) connect.
+*** domain
+$V$
+*** codomain
+$W$
+*** Nullspace
+$null(T)=\{v \in V | Tv=0\}$
++ the space being mapped into 0
++ subspace of V(domain)
+
+*** Range
+$range(T)=\{w\in W|\exists v \in V$ such that $Tv=w\}$
++ parts of $W$ that is filled by $TV$
++ subspace of W(codomain)
+
+*** columnspace
+span of $A$'s columns.
++ exactly the range of $A$. so denoted by $range(A)$
+
+**** TODO Formulated proof of columnspace=range(A)
+
+*** rowspace
+span of $A$'s rows.
++ exactly the range of $A^T$. so denoted by $range(A^T$)
+
+*** rank
+the [[dimension]] of [[columnspace]] and [[rowspace]] is the same. And that's the rank of $A$.
+
+** Metric Space
+a set with a difined [[metric]] is a metric space
+
+generalization of =distant= from [[Euclidean space]]
+*** metric
+distant function.
+
+a metric $d$ on set $S$ is a function $d: S \times S \rightarrow \mathbb{R}$
+the $S \times S$ means $d$ take 2 args from set $S$
+
+motivation: to define limit to enable calculus.
+**** propositions
++ $d(x,y) \ge 0$
++ $d(x,y)=d(y,x)$
++ $d(x,z) \ge d(x,y)+d(y,z)$
+
+**** example in sequence
+converge: d(x_n,x)<e, where d(x_n,x) is defined as d(x,y)=|x - y|
+
+** Normed space
+a [[Vector space]] with [[norm]] defined.
+
+generalization of =length= from [[Euclidean space]]
+
+*** norm
+a function ∥·∥:V →R.
+
+**** propositions
++ $||x|| \ge 0$
++ $||ax|| = |a|||x||$
++ $||x+y|| \le ||x||+||y||$
++ a [[Normed space]] is a [[Metric space]]
++ in [[finite-dimensional]] space, all norms converge the same time.
+  + proof:
+  
+**** important norms
+\begin{aligned}
+\|\mathbf{x}\|_{1} &=\sum_{i=1}^{n}\left|x_{i}\right| \\
+\|\mathbf{x}\|_{2} &=\sqrt{\sum_{i=1}^{n} x_{i}^{2}} \\
+\|\mathbf{x}\|_{p} &=\left(\sum_{i=1}^{n}\left|x_{i}\right|^{p}\right)^{\frac{1}{p}} \quad(p \geq 1) \\
+\|\mathbf{x}\|_{\infty} &=\max _{1 \leq i \leq n}\left|x_{i}\right|
+\end{aligned}
+1: sum of cordinates
+2: Pythagorean distance
+
+** Inner product space
+a real [[Vector space]] that defines [[inner product]]
+
+*** inner product
+function $\langle\cdot, \cdot\rangle: V \times V \rightarrow \mathbb{R}$
+
+**** propositions
++ greater than 0
++ linear in the first slot.
+  + why?
++ no direction
++ inner produt induce a norm $||x||=\sqrt{\langle x,x \rangle}$, so an [[Inner product space]] is also a [[Normed space]]
+
+**** standard inner product on $\mathbb{R}^{n}$
+$\langle\mathbf{x}, \mathbf{y}\rangle=\sum_{i=1}^{n} x_{i} y_{i}=\mathbf{x}^{\top} \mathbf{y}$
+
+*** orthogonal
+vectors x and y are orthogonal if $\langle\cdot, \cdot\rangle = 0$ 
+
+**** orthonormal
+vectors x and y are orthonormal if:
++ $\langle x, y \rangle = 0$
++ $||x||=||y||=1$
+  
+**** Pythagorean Theorem
+
+**** Cauchy-Schwarz inequality
+comes in handy sometimes in proving bounds
+$| \langle x,y \rangle| \le ||x|| ||y||$
++ Equal when:
+  + x = ay
+    when they are [[linear independent]]
+
+**** orthogonal complement
+for $S \sube V$ where $V$ is an [[Inner product space]]:
+$S^{\perp}$, the =orthogonal complement= of S, is
+$S^{\perp}=\{\mathbf{v} \in V \mid \mathbf{v} \perp \mathbf{s}$ for all $\mathbf{s} \in S\}$
+i.e. all other vectors in V that is orthogonal to all vectors in S
+***** propositions
+****** when S is a finite dimensional subspace of V
++ $v = v_S+v_{\perp}$ for every $v \in V$
+  + when V is a inner product space
+******* TODO proof
+******* TODO proof of uniqueness
+****** orthogonal projection
+\begin{aligned} P_{S}: & V \rightarrow S \\ \mathbf{v} & \mapsto \mathbf{v}_{S} \end{aligned}The mapping from V to S. Project to the (plane) space S
+******* propoties
+1. content: $P_Sv=\langle v,u_1 \rangle u_1 + ... + \langle v,u_m \rangle u_m$
+   u_1 are [[orthonormal]] basis of /S/
+2. triangle $v-P_sv \perp S$
+3. $P_S$ is a linear map
+4. $P_Ss=s$
+5. $range(P_S)=S$, $null(P_S)=S^{\perp}$
+6. $P_S^2=P_S$
+7. $||P_Sv|| \le ||v||$
+8. shortest path:
+   $\left\|\mathbf{v}-P_{S} \mathbf{v}\right\| \leq\|\mathbf{v}-\mathbf{s}\|$ 
+   with equality if and only if $\mathbf{s}=P_{S} \mathbf{v}$. That is,
+   $P_{S} \mathbf{v}=\underset{\mathbf{s} \in S}{\arg \min }\|\mathbf{v}-\mathbf{s}\|$
+9. $P_S=\sum^{m}_{i=1}u_iu_i^T=UU^T$, where $U$ have $u_1,...,u_m$ as it's columns
+   
+******** TODO Proof of the propoty 8
+x-devonthink-item://717C4CDF-09AB-41FA-95C1-BBB9155432C6?page=12
+****** projection
+linear map $P$ that:
++ $P^2 = P$
+
+***** S don't have to be a subspace of V?                     :confusing:
+
+***** argmin?                                                 :confusing:
+* Eigenthings
+for any $Ax=\lambda x$, i.e. after [[Linear Map]] $x$ only scaled on its direction:
++ $\lambda$ is =eigenvalue=
++ $x$ is =eigenvector=
++ 0 is excluded in vector, but not eigenvalue.
+** propositions: for $Ax=\lambda x$
+1. $x$ is an =eigenvector= of $A+aI$ with =eigenvalue= $\lambda + a$
+2. if A is [[invertible]], x is an =eigenvector= of $A^{-1}$ with =eigenvalue $\lambda^{-1}$
+3. $A^kx=\lambda^kx$
+*** TODO proof of 1,2,3
+* Trace
+Trace of a =square matrix= is the sum of its diagonal entries
+$tr(A)=\sum_{i=1}^n A_{ii}$
+** properties
+1. $tr(A+B)=tr(A)+tr(B)$
+2. $tr(\alpha A)=\alpha tr(b)$
+3. $tr(A^T)=tr(A)$
+4. $tr(ABCD)=tr(BCDA)=tr(CDAB)=tr(DABC)$
+5. trace of A equals to the sum of its =eigenvalues=
+* Determinant
+** properties
+1. det(I)= 1
+2. $(detA^T)=det(A)$
+3. det(A)det(B)=det(AB)
+4. $(detA^{-1})=det(A)^{-1}$
+5. $det(\alpha A)=\alpha^n det(A)$
+6. determinant of A is the product of its =eigenvalues=
+* orthogonal matrix
+an orthogonal matrix have its colulmns [[orthonormal]] pairwise(every pair)
+** propositions
+1. $Q^TQ=QQ^T=I$, $Q^T=Q^{-1}$
+2. [[inner product]] is reserved the same after both are mapped. (rotate/reflax)
+3. [[norm]] is reserved the same after both are mapped. (rotate/reflax)
+* symmetric matrix
+symmetric matrix $A=A^T$
+** propositions
+*** Spectral Theorem
+a square matrix A is a [[symmetric matrix]] -> $\exists$ an [[orthonormal]] basis of A consisting of =eigenvectors= of A.
+**** spectral decomposition(eigendecomposition)
+$A=QUQ^T$
++ Q: matrix with columns eigenvectors
++ U: matrix with diagnol eigenvalues corresponding
+*** Rayleigh quotients
+for a symmetric matrix A
+$R_A(x)=\frac{x^TAx}{x^Tx}$
+**** propositions
+1. scale invariance: $R_A(\alpha x)=R_A(x)$
+2. eigen: if x is a eigenvector of A with eigenvalue $\lambda$, then $R_A(x)=\lambda$
+3. $\lambda_{min}(A) \le x^TAx \le \lambda_{max}(A)$, equal when x is eigenvector
+4. $\lambda_{min}(A) \le R_A(x) \le \lambda_{max}(A)$, equal when x is eigenvector
+***** TODO prrof of 3,4
+**** quadratic form
+for a symmetric $A \in \mathbb{R}^{n \times n}$, $x^TAx$ is a =quadratic form=
+*** Positive semi-definite matrix
+a [[symmetric matrix]] A is positive semi-definite if:
++ for all $x \in \mathbb{R}^n$, $x^TAx \ge 0$
+**** positive definite matrix
+a [[symmetric matrix]] A is positive semi-definite if:
++ for all nonzero $x \in \mathbb{R}^n$, $x^TAx > 0$
+
+positive definite matrix is subset of positive semi-definite matrix
+**** propositions
+1. a [[symmetric matrix]] is a [[Positive semi-definite matrix]] if and only if:
+   + all its eigenvalues are =nonnegative=
+2. a [[symmetric matrix]] is a [[Positive semi-definite matrix]] if and only if:
+   + all its eigenvalues are =positive=
+3. [arise] for $A \in \mathbb{R}^{m \times n}$, $A^TA$ is a [[Positive semi-definite matrix]]. If $null(A) = \{0\}$, then $A^TA$ is a [[positive definite matrix]]
+   in the proof, we round $A^TA$ with $x^T(...)x$. Product of a matrix and its transpose.
+4. [[positive definite matrix]] is invertible (with nonzero eigenvalues).
+5. [making] for [[Positive semi-definite matrix]] A and positive $\alpha$, $A+\alpha I$ is [[positive definite matrix]]
+**** geometry with [[positive definite matrix][positive definite]] [[quadratic form]]
+the c-isocontour of function $f(x)=x^TAx$ are ellopsoids such that:
++ it's axes point in the directions of eigenvectors of A
++ it's radii of these axes are proportional to the inverse quare roots of corresponding eigenvalues
+***** level set
+level set or isocontour.
+$\{x \in dom f \colon f(x)=c\}$
+where a =level= line cut through the function contour.
+* singular value decomposition
+(SVD)
+every matrix $A \in \mathbb{R}^{m \times n}$ has a SVD:
+$A=U \Sigma V^T$, where:
++ $U \in \mathbb{R}^{m \times m}$ is [[orthogonal matrix]]
++ $V \in \mathbb{R}^{n \times n}$ is [[orthogonal matrix]]
++ $\Sigma \in \mathbb{R}^{m \times n}$ is a diagonal matrix with:
+  + =sigular values of A= ($\sigma_i$) on its diagonal
+  + the entries in non-increasing order(by convention)
+
+anothre notation (with sum of outer product):
+$A=\sum_{i=1}^{r}\sigma_iu_iv_i^T$, where:
++ u_i is ith column of U
++ v_i is ith column of V
++ $\sigma_i$ is ith singular value
+** propositions
++ [valid entry] only =first r = rank(A) singular values= are nonzero.
+** eigendecomposition for $A^TA$ and $AA^T$
+$A^TA = (U\Sigma V^T)^TU\Sigma V^T = V\Sigma^TU^TU\Sigma V^T=V\Sigma^T\Sigma V^T$
+$AA^T = U\Sigma V^T(U\Sigma V^T)^T =TU\Sigma V^T V\Sigma^TU^=U\Sigma\Sigma^T V^T$
+Therefore:
++ columns of V are eigenvectors of $A^TA$
++ columns of U are eigenvectors of $AA^T$
++ singular values of A are square roost of eigenvalues of $A^TA$
+* Fundamental Theorem of Linear Algebra
+there are various versions.
+for $A \in \mathbb{R}^{m \times n}$:
++ $null(A)= range(A^T)^{\perp}$
++ $null(A) \oplus range(A^T)=\mathbb{R}^n$
++ $\underbrace{\operatorname{dim} \operatorname{range}(\mathbf{A})}_{\operatorname{rank}(\mathbf{A})}+\operatorname{dim} \operatorname{null}(\mathbf{A})=n$
++ for [[singular value decomposition]] $A=U\SigmaV^T$, columns of U and V form [[orthonormal]] bases for the =four fundamental subspaces= of A:
+  r = rank(A)
+  | subspace   | columns               |
+  | range(A)   | first r columns of U  |
+  | range(A^T) | first r columns of V  |
+  | null(A^T)  | last m-r columns of U |
+  | null(A)    | last n-r columns of V |
+* operator norm
+for $T \colon V \rightarrow W$, the operator norm of T is defined as:
+$\|T\|_{\mathrm{op}}=\max _{\substack{\mathbf{x} \in V \\ \mathbf{x} \neq \mathbf{0}}} \frac{\|T \mathbf{x}\|_{W}}{\|\mathbf{x}\|_{V}}$
+** for $R^n \rightarrow R^m$
+for matrix $A \in \mathbb{R}^{m \times n}$, when p-norm is used in both domain and codomain:
++ matrix p-norm: $\|\mathbf{A}\|_{p}=\max _{\mathbf{x} \neq \mathbf{0}} \frac{\|\mathbf{A} \mathbf{x}\|_{p}}{\|\mathbf{x}\|_{p}}$
++ matrix 1-norm:$\|\mathbf{A}\|_{1}=\max _{1 \leq j \leq n} \sum_{i=1}^{m}\left|A_{i j}\right|$(the largest column sum)
++ matrix $\infty - norm$:$\|\mathbf{A}\|_{\infty}=\max _{1 \leq i \leq m} \sum_{j=1}^{n}\left|A_{i j}\right|$(the largest row sum)
++ matrix 2-norm: $\|A\|_2 =\sigma_1(A)$(the largest sigular value of A) 
+** Propositions
++ $\|Ax\|_p \le \|A\|_P\|x\|_p$(by definition)
++ $\|AB\|_p \le \|A\|_P\|B\|_p$(proof)
+** Frobenius norm
+$\|\mathbf{A}\|_{\mathrm{F}}=\sqrt{\sum_{i=1}^{m} \sum_{j=1}^{n} A_{i j}^{2}}=\sqrt{\operatorname{tr}\left(\mathbf{A}^{\top} \mathbf{A}\right)}=\sqrt{\sum_{i=1}^{\min (m, n)} \sigma_{i}^{2}(\mathbf{A})}$
+* dimension
+dimension is the number of vectors in 1 orthonormal base of V
+* invertible

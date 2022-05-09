@@ -1,0 +1,625 @@
+:PROPERTIES:
+:ID:       1C716C73-DC8E-45EA-A998-42DDE75C338D
+:CATEGORY: CPT103
+:END:
+#+title: CPT103
+#+HUGO_SECTION:main
+* COMPLETED CPT103                                                   :agenda:
+CLOSED: [2022-01-03 Mon 15:25]
+* Class Information
+:LOGBOOK:
+CLOCK: [2021-10-11 Mon 14:20]--[2021-10-11 Mon 14:42] =>  0:22
+:END:
+  *CPT103* is of Database.
+  The class. I seemed to be missing a lot. Got to see that Again
+** Credits - 5
+| num | Method   | rnage | time |  % |
+|   1 | LMo test |       |      | 15 |
+|   2 | LMO test |       |      | 15 |
+|   3 | Project  |       |      | 70 |
+** Professor Info
+*** Jianjun Chen
+**** Contact
++ email(prefer): jianjun.chen@xjtlu.edu.cn
++ office tele:0512-81889137
++ Office hour: SD541 Tuesday 16:00-18:00
+** Course Content Info
+*** [[id:DC5167CD-BFBC-4DE3-8B89-7E1ABFCA6433][SQL]]
+**** Data Def
+**** Queries
+*** Entity-relationship modeling
+*** Normalisation
+*** Transactions
+*** Relational algebra
+** Module Specific Info
+*** Database Server
+**** Type
+DB server: MySqL
+Client for labs: PhpMyAdmin
+**** Logging Info
++ Address: csse-mysql.xjtlu.edu.cn
++ condition: XJTLU wifi or VPN
++ Account
+  + accountname: LinfengHe20
+  + password: 123
+* Resources
+** Lecture slide
+** Online Resoureces
+* Tutoring Schedule
+** DONE Lecture EB138
+DEADLINE: <2021-12-24 Fri> SCHEDULED: <2021-11-29 Mon 16:00-18:00 +1w>--<2021-12-24 Fri>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:12]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-09 Tue 22:57]
+- State "DONE"       from              [2021-11-09 Tue 22:57]
+- State "DONE"       from ""           [2021-11-02 Tue 00:00]
+- State "DONE"       from              [2021-11-02 Tue 00:00]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-10-14 Thu 15:54]
+:END:
+** DONE Comp. Lab SC464
+SCHEDULED: <2021-11-25 Thu 17:00-18:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:10]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-12 Fri 16:58]
+- State "DONE"       from              [2021-11-12 Fri 16:58]
+- State "DONE"       from ""           [2021-11-09 Tue 22:56]
+- State "DONE"       from              [2021-11-09 Tue 22:56]
+- State "DONE"       from ""           [2021-11-01 Mon 12:41]
+- State "DONE"       from              [2021-11-01 Mon 12:41]
+- State "DONE"       from ""           [2021-11-01 Mon 12:41]
+- State "DONE"       from              [2021-11-01 Mon 12:41]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+on week 5,6,8-11
+* Tasks
+** DONE Preview #1
+SCHEDULED: <2021-11-27 Sat +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:13]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:13]
+- State "DONE"       from              [2021-11-24 Wed 12:13]
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-09 Tue 22:57]
+- State "DONE"       from              [2021-11-09 Tue 22:57]
+- State "DONE"       from ""           [2021-11-09 Tue 22:55]
+- State "DONE"       from              [2021-11-09 Tue 22:55]
+- State "DONE"       from ""           [2021-11-01 Mon 14:10]
+- State "DONE"       from              [2021-11-01 Mon 14:10]
+- State "DONE"       from ""           [2021-11-01 Mon 14:10]
+- State "DONE"       from              [2021-11-01 Mon 14:10]
+:END:
+*** Preview session W6
+
+** DONE Preview #2
+SCHEDULED: <2021-11-23 Tue +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:13]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:13]
+- State "DONE"       from              [2021-11-24 Wed 12:13]
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-12 Fri 16:58]
+- State "DONE"       from              [2021-11-12 Fri 16:58]
+- State "DONE"       from ""           [2021-11-09 Tue 22:55]
+- State "DONE"       from              [2021-11-09 Tue 22:55]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+*** Preview session W5
+  
+** DONE Coursework project
+CLOSED: [2021-12-22 Wed 17:32]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-12-22 Wed 17:32]
+:END:
+** DONE Class content Mindmap
+CLOSED: [2021-12-29 Wed 00:43] SCHEDULED: <2021-10-12 Tue>
+:LOGBOOK:
+- State "DONE"       from "WEEK"       [2021-12-29 Wed 00:43]
+:END:
+   I have little conscious understanding about the topic.
+   I need to make a mindmap out of the syllabus, and what I know.
+   Structural
+** TODO Catch up [3/7]
+:PROPERTIES:
+:Effort:   2:00
+:END:
+SCHEDULED: <2021-11-22 Mon>
+:LOGBOOK:
+CLOCK: [2021-11-22 Mon 14:57]--[2021-11-22 Mon 15:30] =>  0:33
+CLOCK: [2021-11-22 Mon 14:15]--[2021-11-22 Mon 14:51] =>  0:36
+CLOCK: [2021-11-22 Mon 13:36]--[2021-11-22 Mon 14:08] =>  0:32
+:END:
++ [X] ER modeling whole
++ [X] ER modeling detail
++ [X] Normalisation whole
++ [ ] Normalisation detail
++ [ ] Coursework check
++ [ ] Coursework past check
++ [ ] Coursework planning.
+*** Session
+4 of 30m
+*** Strategy
+:PROPERTIES:
+:Effort:   2:00
+:END:
+ER modeling. Mindmap. Whole then detail.
+Noramlisation. the same
+** DONE Course Information CPT103
+CLOSED: [2021-10-12 Tue 01:09] SCHEDULED: <2021-10-11 13:00-13:30 Mon>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-12 Tue 01:09]
+:END:
+   Could use the approach in [[file:20211007013423-cpt107.org::*Course information][Course information]]. Could make a machine out of that.
+   
+** DONE SQL Catch up
+CLOSED: [2021-10-12 Tue 01:09] SCHEDULED: <2021-10-11 13:30-14:30 Mon>
+  :PROPERTIES:
+  :Effort:   60
+  :END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-12 Tue 01:09]
+CLOCK: [2021-10-11 Mon 14:43]--[2021-10-11 Mon 16:41] =>  1:58
+:END:
+  I would say with pity that I'm left behind a little bit in the course.
+  The content would definitely be in my range, but I still have to learn them to have them, and I need to be reliable and at least following the module's schedule.
+  The Approach is:
+  1. I read a tutorial
+  2. I write paper note
+  3. I do exercise
+  4. I write org-roam node [[id:DC5167CD-BFBC-4DE3-8B89-7E1ABFCA6433][SQL]]
+  5. I go back to exercises.
+
+  It's worth mention that this could be a reuseable machine for self-learning of other similar skills.
+  For this task, do as this flow. In the future, could test on other flows like =that without paper note=
+
+** TODO Do Labs [0/6]
+:PROPERTIES:
+:Effort:   3:00 
+:END:
+:LOGBOOK:
+CLOCK: [2021-12-06 Mon 16:53]--[2021-12-06 Mon 17:18] =>  0:25
+CLOCK: [2021-12-06 Mon 09:52]--[2021-12-06 Mon 10:32] =>  0:40
+CLOCK: [2021-12-05 Sun 18:22]--[2021-12-05 Sun 19:02] =>  0:40
+:END:
+Do labs to ensure that I know everything nessasary
++ [ ] lab 1
+
+  + [ ] Task 1
+
+  + [ ] Task 2
+
+  + [ ] Task 3
+
+  + [ ] Task 4
+  
++ [ ] lab 2
++ [ ] lab 3
++ [ ] lab 4
++ [ ] lab 5
++ [ ] lab 6
+* Notes
+| class  | instance |
+| Schema | record   |
+
+** Entity-Relation Modelling
+
+*** Spec
+
+**** from written requirement
+
+**** What database going to be used for
+
+**** what tables attributes keys areneeded
+
+*** conponents
+
+**** Entities
+object
+**** Attributes
+property
+**** Realtionships
+link
+Students-enrolment-modules
+*** Entity-Relationship Diagrams
+Conceptual view of the database
+independent from the database
+**** Diagram Conventions
+
+***** Entities
++ Is a general type or class, ~Lecturer~, ~Module~
++ Have instances, ~Steven Guan~, ~CPT101~
++ have Attributes
+
+****** Representation
+rounded Box with label
+***** Attributes
+Have:
++ A name
++ an associated entity
++ domain of possible values
++ each instance, each value from domain
+****** Representation
+ovals linked to entity with  line
+***** Relationship
+have:
++ a name
++ a set of entities participating
++ a degree
+  number of entities participating(2 for most cases)
++ a cardianlity ratio
+****** Cardinality Ratios
+******* 1:1
+lecturer-unique office
+******* 1:M
+lecturer-many students
+******* M:M
+many students-many modules
+****** Representation
+Links between 2 entities. Name in a diamond box. End of link show cardinality(M or 1)
+**** Designing ER Models
+
+***** Identification
++ Entities
++ Attributes
++ Relations and Cardinality ratios
+
+obtain them from problem des.
+***** General guidelines
+
+****** noun and verb
+noun-entity/property
+verb-relationship
+****** order: noun then verb
+1. Find the nouns
+2. Find the verbs of the interacton of these nouns
+3. Draw entities
+4. Draw each sentence of the nouns.
+***** M:M relationships
+
+****** Issue
+Difficult to represent in a database
+****** Solution
+Split a M:M into 2 1:M with addtional entity like ~enrolment~
+******* The enrolment
++ ~StudentID~ and ~courseCode~ (primary key in both M end entity)
++ foreign key to both entity
+***** Entity and Relation
+
+***** Entity and Attribute
++ Entities can have attributes but attributes have no smaller parts
++ Entities can have relationships between them, but an attribute belongs to a single entity
+  Simple tree can use attribute
+***** 1:1 relationship
+would be redundent if:
++ it's 1:1 relationship on A and B
++ every A is to a B and every B is to an A
+  it can be inversed
+****** Solution
+Merge them.
+***** Steps
+
+****** 1. Description of requirements
+******* Identification
++ Entities
++ Attributes
++ Relations and Cardinality ratios
+
+****** 2. Draw the ER Diagram and then
+
+******* Merge 1:1
+
+******* Split M:M
+
+**** ER diagram to SQL Tables
+Entity - table name
+Attribute - column
+Relationship - foreign key
+**** Sunny Isle Hotel example
+
+***** 1. Entities and Attributes
+
+***** 2. RElationship
+
+***** 3. Design Issues
+
+** Normalisation
+
+*** Feature of Good DB design
++ Minimal attributes
++ Find close attributes in one place
++ Minimal Redundancy
+  except foreign keys,each attributes represented only once
+*** Normalisation-Defi
+re-organise data in to tables to minimise data redundancy
+*** Data Redundancy
+
+**** Problems
+
+***** Memory usage
+
+***** Update Anomalies
+insert, delete, change of repeated informations
+*** Re-organise Tables
+
+**** Observing Table Data
+see properties:
++ 1:1 - same table
++ 1:M - different tables
+  find the 1:1 properties, and find them a entity to group them
++ M:M 
+**** Functional Dependency
+each A would map into a B.
+ M A - 1 B
+ 1 A - 1 B
+all involved Functional dependency could make a good table, with the determinant being the unique key
+**** Fall and Partial FD
+
+***** Determinants in Full/Partial FD
+
+****** Full
+candidate key if we split the table
+
+****** partial
+super keys
+
+**** Transitie Dependency
+
+*** Normal Form
+
+*** The process of normalisation
+
+**** First Normal Form
+all values are atomic.
+not atomic,like (T1,T2) will be UNF
+***** Problem with UNF
+
+**** Normalise to 1NF
+1. Flatten the table
+2. reassign primary/unique key (module,text)
+
+1. or, use a seperate relation. 
+***** Problem in 1NF
+adding and modifying
+**** Second Normal Form
+1NF with no partially dependency of primary key.
+This difference occurs often in repeating in the flattened 1NF table.
+***** 1NF to 2NF
+Split
+**** Third Normal Form 3NF
+2NF with no transitive dependency on primary key
+***** 2NF to 3NF
+
+***** Problems resolved in 3NF
+
+**** Transitive Dependency and FK 
+
+**** Practice Example
+
+* Assesments
+
+** DONE Assesment 3
+CLOSED: [2021-12-24 Fri 01:16] DEADLINE: <2021-12-13 Mon 23:59>
+:LOGBOOK:
+- State "DONE"       from "DONE"       [2021-12-24 Fri 01:16]
+- State "DONE"       from              [2021-12-24 Fri 01:16]
+:END:
+Max delay is 12-17
+*** Submission
+**** Format
+Everything packed into =2034693_Linfeng_He.zip=
+
+inside =2034693_Linfeng_He.zip= are =report.pdf= and =script.sql
+**** Location
+Submit to lmo's Dropbox:[the link]
+*** Task and Marking criteria
+**** Create Database
+***** TODO Script Work
+:LOGBOOK:
+CLOCK: [2021-12-13 Mon 19:37]--[2021-12-13 Mon 20:20] =>  0:43
+:END:
+***** TODO ER Modeling
+writing the ER modeling explanation
+
+**** Use cases
+to accomplish each use case, seperate data and screenshot.
+I need test data to think in a fixed way. otherwise I can't think. So make test data first.
+***** Asked[8/9]
+****** DONE alert phone
+CLOSED: [2021-12-14 Tue 23:06]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-14 Tue 23:06]
+CLOCK: [2021-12-14 Tue 16:58]--[2021-12-14 Tue 17:04] =>  0:06
+CLOCK: [2021-12-14 Tue 13:08]--[2021-12-14 Tue 14:50] =>  1:42
+:END:
+https://www.cnblogs.com/werewolfBoy/p/11429973.html
+check on every record in between mark's
++ [-] Test data
+  + [X] Districts
+  + [ ] record
+    + [ ] 233636
+    + [ ] 233635
+    + [ ] 233634
++ [ ] Select
++ [ ] screenshot
+****** DONE G""PS[3/3]
+CLOSED: [2021-12-13 Mon 23:36]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-13 Mon 23:36]
+CLOCK: [2021-12-13 Mon 21:28]--[2021-12-13 Mon 23:36] =>  2:08
+CLOCK: [2021-12-13 Mon 19:21]--[2021-12-13 Mon 19:37] =>  0:16
+CLOCK: [2021-12-13 Mon 17:00]--[2021-12-13 Mon 19:12] =>  1:00
+:END:
+the nearest base
+
++ [X] make the insert statement
++ [X] Make the data
+  + [X] 做数据的方法
+  + [X] record
+    + [X] 233636之前的两次记录
+  + [X] base_station
+    + [X] 一份全的bases_station记录
+    + [X] district
+  + [X] current_timestamp in insert
++ [X] take the screenshot
+****** DONE Least report generate time[3/3]
+:LOGBOOK:
+CLOCK: [2021-12-14 Tue 15:42]--[2021-12-14 Tue 16:29] =>  0:47
+:END:
++ [X] Test data
+  + [X] Foreignkeys
+  + [X] tests
+    different date_sub(now(),interval x minutes) in test time and report time
+    9
++ [X] Select statement
+  + [X] 
++ [X] Screenshot
+****** DONE citizens with viral test in a period
+CLOSED: [2021-12-14 Tue 23:06]
+:LOGBOOK:
+- State "DONE"       from "WEEK"       [2021-12-14 Tue 23:06]
+CLOCK: [2021-12-14 Tue 17:04]--[2021-12-14 Tue 23:06] =>  6:02
+CLOCK: [2021-12-14 Tue 16:29]--[2021-12-14 Tue 16:58] =>  0:29
+:END:
++ [X] TEST DATA
+  + [X] patient 13[4/4]
+    + [X] patients
+    + [X] before
+      + [X] 2 time all before
+        + [X] bigger gap
+        + [X] smaller gap
+      + [X] 2 tiem 1 before 1 after
+      + [X] 2 time 1 before, 1 in
+        + [X] bigger gap
+        + [X] smaller gap
+      + [X] 1 time before
+    + [X] after
+      + [X] 2 time all after
+        + [X] bigger gap
+        + [X] smaller gap
+      + [X] 2 time, 1 in 1 after
+        + [X] bigger gap
+        + [X] smaller gap
+      + [X] 1 time after
+    + [X] both in the time
+      + [X] 2 time with bigger gap
+      + [X] 2 time with smaller gap
+  + [X] test
+    + [X] collect date
++ [ ] statement
++ [ ] screenshot
+****** DONE Risk billboard
+CLOSED: [2021-12-15 Wed 08:18]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-15 Wed 08:18]
+:END:
+****** DONE test data checklist generator [0/3]
+CLOSED: [2021-12-15 Wed 09:19]
+:PROPERTIES:
+:Effort:   30
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-15 Wed 09:19]
+CLOCK: [2021-12-15 Wed 08:31]--[2021-12-15 Wed 09:01] =>  0:30
+:END:
++ [ ] =+ [ ]= syntax
++ [ ] /n at the end of a line
++ [ ] all cases
+  + [ ] flipping every possibility
+    input: a[0:10], a[0]=[possibility1, possibility2,...,possibilityn]
+****** DONE positive from a district [4/4]
+CLOSED: [2021-12-15 Wed 13:04]
+:PROPERTIES:
+:Effort:   30
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-15 Wed 13:04]
+CLOCK: [2021-12-15 Wed 09:23]--[2021-12-15 Wed 11:16] =>  1:53
+:END:
++ [X] data in
+  + [X] districts
+  + [X] test
+  + [X] record
+  + [X] patient
+  + [X] base_station
+    
++ [X] Test data 8 cases in 
+  + [X] positivein Con 2021-10-04
+  + [X] positivein Cnot on 2021-10-04
+  + [X] positivenot in Con 2021-10-04
+  + [X] positivenot in Cnot on 2021-10-04
+  + [X] negativein Con 2021-10-04
+  + [X] negativein Cnot on 2021-10-04
+  + [X] negativenot in Con 2021-10-04
+  + [X] negativenot in Cnot on 2021-10-04
++ [X] select statement
+  + [X] period chart
+  + [X] 对齐
+  + [X] make sure the man's positive
+  + [X] make sure the man's in centre lukewarm
+  + [X] make sure the man's collected at 2021-10-04
++ [X] screenshot
+****** DONE increment in a district
+CLOSED: [2021-12-15 Wed 14:02]
+:PROPERTIES:
+:Effort:   30
+:END:
+:LOGBOOK:
+- State "DONE"       from "WEEK"       [2021-12-15 Wed 14:02]
+CLOCK: [2021-12-15 Wed 13:05]--[2021-12-15 Wed 13:48] =>  0:43
+:END:
++ [X] test dat a
++ [ ] select
+  + [ ] all positive in 1 day
+  + [ ] count()
+  + [ ] minus
++ [ ] screenshot
+****** TODO Spread rate
+:LOGBOOK:
+CLOCK: [2021-12-15 Wed 14:04]--[2021-12-15 Wed 15:43] =>  1:39
+:END:
++ [ ] test data
++ [ ] select
++ [ ] screenshot
+***** Self-generated[0/2]
+Try have 2 tables placed together, and make some sence out of it.
+Inovation is a synonym for traversing through every possiblity.
+****** TODO How like to wander 1 people can be
+****** TODO How like to wander 1 district/region can be.
+** DONE Assesment 1 and 2
+CLOSED: [2021-12-13 Mon 16:51] DEADLINE: <2021-12-09 Thu 19:00-21:00>
+:LOGBOOK:
+- State "DONE"       from              [2021-12-13 Mon 16:51]
+:END:
+
+* Labs
+
+* Questions
+
+** TODO What's super key?
+Candidate key + other things
+** TODO Why is super key bad?
+other things aren't nessasary
+** TODO How to set a column unique and remove?
+
+** TODO select distinct?

@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       0F2EA780-24A5-4216-935A-0D253F38036B
+:END:
+#+title: Statistics
+#+HUGO_SECTION:main
+* Exploratory Data Analysis
+** The Materials
+*** Elements of structured data
+*** Rectangular
+**** Dataframe/spread sheet
+in python, pandas offer ~DataFrame~
+in R, ~data.frame~ is offered.
+**** non rectangular data structures
++ Time series data
++ Spatial data structures
++ Graph data structures
+
+** Estimates of Location
+where on the axises are the data? (central value?)
++ Mean
++ Weighted mean
++ Median
++ Weighted median
++ Trimmed mean
++ Robust
++ Outlier
+** Estimates of Variability
+** 
+* Data and Sampling Distributions
+* Statistical Experiments and Significance Testing
+* Regression and Prediction
+* Classification
+* Statistical Machine Learning
+* Unsupervised Learning
+

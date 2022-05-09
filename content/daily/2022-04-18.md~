@@ -1,0 +1,614 @@
++++
+title = "2022-04-18"
+author = ["System Administrator"]
+tags = ["draft", "draft"]
+draft = false
++++
+
+## HI!! This Morning Rocks! {#hi-this-morning-rocks}
+
+I got up so early! I twisted so many time in bed and still got up 6:14!
+
+But time are not to be wasted! I'll have my time dedicated to seems fun to me.
+
+And that's------AOC!
+
+
+### Plan: Get good, and get better {#plan-get-good-and-get-better}
+
+
+#### get good {#get-good}
+
+Keep me up with taught content
+
+it's not a 1 day process, I plan to do it in 2 week.
+
+-   the re-exposure law: all process round robined for through the week
+
+<!--list-separator-->
+
+-  PLAN Get Good <span class="tag"><span class="agenda">agenda</span></span>
+
+    2 ways of establish and logging the plan, per-project or in one place.
+    I choose the `one place` way.
+
+    <!--list-separator-->
+
+    -  [CPT104 OS Concepts]({{< relref "../main/20220220183600-cpt104.md" >}})
+
+        <!--list-separator-->
+
+        -  goal
+
+            <!--list-separator-->
+
+            -  note wiki
+
+                A wiki all written with my own insights.
+
+            <!--list-separator-->
+
+            -  exported blog
+
+            <!--list-separator-->
+
+            -  experiance
+
+                mainly coding, interacting with the concepts I'm presented.
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Wiki Implement
+
+            <!--list-separator-->
+
+            -  Important: Written by Herman
+
+                It's not a matter of paraphrase, but a matter of generating the idea in my own thinking env. My style, My thoughts, the wiki should be filled with these aromas of mine.
+
+            <!--list-separator-->
+
+            -  para, code, image
+
+                since it's a Herman's work, I shall choose medias I like.
+
+            <!--list-separator-->
+
+            -  Base: xv6 with mit lectures.
+
+                There's differences, but I think I would tell in the end
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  D1: MIT6.S082 Week 1-3
+
+                <!--list-separator-->
+
+                - <span class="org-todo todo TODO">TODO</span>  1: Unix util
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Blog
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Export
+
+                1.  use a fnisessen's setup.
+                2.  use a directory to hold all imgs for this wiki
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Deploy
+
+                1.  Copy this wiki to org-website. and all the imgs into resource.
+                2.  commit.
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  experiance
+
+            Do all the labs from MITOCW schedule pages. Record them, what have I done, into blog.
+
+    <!--list-separator-->
+
+    -  [CPT102 Data Structures]({{< relref "../main/20220220160309-cpt102.md" >}})
+
+        <!--list-separator-->
+
+        -  goal
+
+            <!--list-separator-->
+
+            -  note wiki
+
+            <!--list-separator-->
+
+            -  exported blog
+
+            <!--list-separator-->
+
+            -  experiance
+
+                Implementing the data structures and algorithms myself
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Wiki implement
+
+            Entries in [CPT102 Data Structures#wiki]({{< relref "../main/20220220160309-cpt102.md" >}}).
+
+            <!--list-separator-->
+
+            -  Important: Written by Herman
+
+                It's not a matter of paraphrase, but a matter of generating the idea in my own thinking env. My style, My thoughts, the wiki should be filled with these aromas of mine.
+
+            <!--list-separator-->
+
+            -  para, code, image
+
+                since it's a Herman's work, I shall choose medias I like.
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Blog
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Export
+
+                1.  use a fnisessen's setup.
+                2.  use a directory to hold all imgs for this wiki
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Deploy
+
+                1.  Copy this wiki to org-website. and all the imgs into resource.
+                2.  commit.
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  experiance
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Implementing all data stuctures
+
+                Implement towards the wiki. Write the code on my own, define snippet when find them useful.
+
+                Illustrate them in the wiki.
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Implement the algorithms with the data structures.
+
+                follow wiki
+
+    <!--list-separator-->
+
+    -  [INT102]({{< relref "../main/20220224134654-int102.md" >}})
+
+        <!--list-separator-->
+
+        -  goal
+
+            <!--list-separator-->
+
+            -  note wiki
+
+                all algorithms stuffs and dependencies explained by Herman
+
+            <!--list-separator-->
+
+            -  exported blog
+
+            <!--list-separator-->
+
+            -  experiance
+
+                Implementing the data structures and algorithms myself, using c, java and clojure
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Wiki implement
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Blog
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Large file export to website
+
+    <!--list-separator-->
+
+    -  [INT104 AI]({{< relref "../main/20220224134643-int104.md" >}})
+
+        <!--list-separator-->
+
+        -  goal
+
+            <!--list-separator-->
+
+            -  note wiki
+
+                all mentioned basic ideas explained by herman
+                understand the ideas with math involved
+
+            <!--list-separator-->
+
+            -  exported blog
+
+            <!--list-separator-->
+
+            -  experiance
+
+                coding with packages that achieves my goal.
+
+            <!--list-separator-->
+
+            -  CW1 and CW2
+
+                do the CW1 and CW2 up to day's process
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  wiki implement
+
+            <!--list-separator-->
+
+            -  all the jargons
+
+                A word I don't know? An Entry in Wiki!
+                Math Math MAth!!!!
+
+            <!--list-separator-->
+
+            - <span class="org-todo done DONE">DONE</span>  1.build [Artificial Intelligence]({{< relref "../main/20220423143740-artificial_intelligence.md" >}}) page
+
+                build the page
+
+            <!--list-separator-->
+
+            - <span class="org-todo done DONE">DONE</span>  2. Inbox the...JARGONS
+
+                from the lectur slides first, then book I have.
+                I'm working on `knowing what's out there, the range, the names` so I don't go into explaination, just spot important/structural/unfamilliar words, and heading them done
+
+                <!--list-separator-->
+
+                -  lecture
+
+                <!--list-separator-->
+
+                -  oops!
+
+                    I steped into details. Not a good move in the stage, I messed the levels.
+                    sol: exit details, inputing the...... `JARGONS!!!!!`
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  3. Starting from the Math Prerequisites.
+
+                <!--list-separator-->
+
+                - <span class="org-todo todo TODO">TODO</span>  Linear Algebra
+
+                    building org-roam page [Linear Algebra]({{< relref "../main/20220423190558-linear_algebra.md" >}})
+
+                <!--list-separator-->
+
+                - <span class="org-todo todo TODO">TODO</span>  Probability
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Blog
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Experiance
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Using
+
+                use `sklearn` to get a hint of what all the things look like
+
+            <!--list-separator-->
+
+            - <span class="org-todo todo TODO">TODO</span>  Implementing
+
+                after knowing the math, I could write the funcitons myself. I could write some clojrue machine learning code.
+
+                I could build a Github repo for that. Named: `hermanhel/clml`
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Cw1 and Cw2
+
+            Read the task sheet again and confirm the project machine.
+
+    <!--list-separator-->
+
+    -  [SPA003]({{< relref "../main/20220224134707-spa003.md" >}})
+
+        <!--list-separator-->
+
+        -  goal
+
+            <!--list-separator-->
+
+            -  sentence library
+
+                all seen interesting/useful sentences
+
+            <!--list-separator-->
+
+            -  grammer library
+
+                all mentioned grammers explained/exampled by Herman
+
+            <!--list-separator-->
+
+            -  vocabulary library
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Sentence sweep
+
+            sweep sentences from past
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  sentence capture
+
+            build capture machine
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  grammer wiki
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  vocabulary wiki
+
+            both in the spanish.org.
+
+    <!--list-separator-->
+
+    -  scale
+
+        It's 8 weeks content reviewed and rewrited in 2 weeks, so every week is assigned 4 weeks of content, each course. And there's 5 of them. so it's 20 week\*course/week = 3 week\*course/day.
+
+        So each day I should get at least 3 weeks of 1 class's content right. I guess that'll leave space for get better, keep good or other plans like fitness.
+
+
+#### get better {#get-better}
+
+Read and learn things I love so much
+
+-   AOC
+-   Neuroscience papers
+-   AI papers
+-   GIT
+-   C
+-   Java
+-   clojure
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  AOC
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  Read Volumn 1.
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Personal Wiki
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  Experiance
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  blogging
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  Math
+
+
+#### keep good {#keep-good}
+
+after I have become good, a machine of keep good should be established and practiced in regard of every course's context
+
+<!--list-separator-->
+
+-  Keep up machine
+
+    <!--list-separator-->
+
+    -  Basic idea: Be good in small scale
+
+        but when the chunk is small, the overhead cost might be too great, so any sign of that should be fixed.
+
+
+## Fun fact {#fun-fact}
+
+
+### my dream {#my-dream}
+
+
+#### 企鹅 {#企鹅}
+
+我进入一个房间,里面有一只企鹅.它看见我之后就一直来追我.
+我吓坏了,就跑.房间是一个连续的区域,贯穿三楼,下了两层楼之后从一楼的出口出来.但是企鹅也出来了.女生A在一楼看见我之后追上我,问我为什么跑,我对A说明企鹅的情况.我们遂逐渐接近了高楼层.我们的目的地教室在很高的楼层,有复杂的路径,比如正经过的这一段有平行的两条路通向一远一近两个楼楼梯,之后远的能到达我们的教室.
+
+但是企鹅还是追上了.我之后牵着它的手,和A一起上到楼上
+
+
+#### 潜水艇 {#潜水艇}
+
+我们要进入教室时经历了第一个场景扭曲.保留了进入的动作,教室成为了潜水艇,我们进入的入口成为一个极其危险的处所,与入口前有一个两米长,一米宽的洞,洞的对面是一个像是树干内部的管道,直径约八十公分,皆通向极虚无而寒冷的不知名处,而入口在树干的上方(不确定).进入的办法是从我们所在的地方(变成了一个不定的木头平台,像是支点在不远处的后方的一个跷跷板)下到右侧的一个突起,沿着前往入口.
+
+我和企鹅之前是A和另外一个小男孩.A小心地把小男孩放到突起上,他去树干里看了一眼,之后进入入口.A在他之后,我把企鹅也放了下去.它很害怕地但也进入了入口.这时我背后的高大男生B举着一个小女孩说,下一个让她进吧.高大男生在放小女孩下去之后,自己也进去了.我终于要下去的时候.
+
+
+#### 秋游 {#秋游}
+
+第二个场景扭曲保留了我所在的入口和目的地的潜水艇,将不知名处变成了水汔,将所在的高处变为了学校秋游或是夏令营常见的一个户外处所.我很努力地尝试进入入口,但是突然一切坍塌了,原来是活动的时间结束,下一个使用场地的足球活动已经进场,有三个吹着哨子的管理女老师进入又出去.我想和她们说话,她们说她们什么都不知道.我看见有应一同进入,且应已在里面的同学走过,想去问里面的情况,他们笑,但不与我交流,其中包括三位一起住在一个消防队里(仅在夏令营时)的同学.原来上一次其中的一位也是住在消防队的,他以工作交换了住宿.这一次他带了两位另外的同学.
+
+我接着前往了另一个地方,但是是全裸仅除了有一个前列腺按摩仪.我把它塞到后庭之内,然后前去.回来时在路上碰见了我爸妈和另外一对爸妈.我随他们进入一个房间,是大家聚会的房间.我想要回住所着装,遂前去.出门时我打开了按摩仪的开关.我大幅度地奔跑,而按摩仪毫无脱落的迹象,前列腺的紧迫感很快加剧,遂高潮,其射液起三米,而持续少时.我看到一只跳一人高而动作浮夸的青蛙,其准备动作似乎要鼓到炸开一般.
+
+我在道路旁的一个园地希望关掉按摩仪,但是关不掉,长按只加剧震动,遂射液不止.我抽其出来,发现多了一套按钮.
+
+
+#### 后来. {#后来-dot}
+
+我醒过来.发现内裤湿了.看来确实高潮了.我听见楼下吹落叶的声音嗡嗡嗡,可能这是按摩仪声音的来源
+
+
+## Drawing and Music are similar {#drawing-and-music-are-similar}
+
+If I wait, and try &amp; asking, "is it sound like this?" I'll finally make the piece I imagined
+if I rush, though I know all the components, I still could make the shape twisted and not ideal, to not generally good.
+
+
+## A section as a movie {#a-section-as-a-movie}
+
+Should watch in a continuous time, before forgetting the names, plots, and relationships.
+
+
+## 大脑神经化学变化 {#大脑神经化学变化}
+
+
+### miscellaneous {#miscellaneous}
+
+
+#### 高季染色法 {#高季染色法}
+
+
+#### 神经调质 NEuromodulator {#神经调质-neuromodulator}
+
+dark enrgy of nervous system, inferred but not measured
+
+<!--list-separator-->
+
+-
+
+
+#### 发展新的技术 {#发展新的技术}
+
+<!--list-separator-->
+
+-  从已有方法的缺点中
+
+    需要有好的灵敏度,特异性
+    时空分辨率: spatial resolution
+    非损伤性:活的大脑
+    temporal resolution
+
+    <!--list-separator-->
+
+    -  microdialysis
+
+        慢
+
+    <!--list-separator-->
+
+    -  amperometry &amp;FSCV
+
+        fast,
+
+    <!--list-separator-->
+
+    -  CPCR based FRET-sensors
+
+        遗传编码,打荧光,但是基本看不到,信噪比不够
+
+    <!--list-separator-->
+
+    -  Tango assay
+
+        放大荧光
+
+<!--list-separator-->
+
+-  从交叉学科手段
+
+<!--list-separator-->
+
+-  希望有光学信号
+
+<!--list-separator-->
+
+-  即蛋白酶
+
+<!--list-separator-->
+
+-  结构生物学
+
+<!--list-separator-->
+
+-  beta-2
+
+<!--list-separator-->
+
+-  配体结合导致构像变化,发光
+
+    在有机化合物分子中，由C—C单键旋转而产生的原子或基团在空间排列的无数特定的形象称为构象。
+    指一个分子中，不改变共价键结构，仅单键周围的原子放置所产生的空间排布。
+
+<!--list-separator-->
+
+-  大麻素
+
+    利用人的内源大麻素系统产生作用
+
+<!--list-separator-->
+
+-  2-AG, AEA
+
+    思考：AEA和2-AG的区别是什么？
+
+<!--list-separator-->
+
+-  2-花生四烯酰甘油(2-AG) 是最有效和最丰富的内源性CB
+
+<!--list-separator-->
+
+-  具体可查一下癫痫诱导的模型，一般分急性和慢性诱导
+
+<!--list-separator-->
+
+-  :无法解析新突触神经元形成产生的存储，当然够他们研究一辈子。
+
+<!--list-separator-->
+
+-  现在有谷氨酸的探针么，没查到 用的细菌周质蛋白，不同的策略
+
+<!--list-separator-->
+
+-  催产素有助于克服社交羞涩感，培养社交能力。social reward
+
+<!--list-separator-->
+
+-  imaging
+
+<!--list-separator-->
+
+-  SST
+
+<!--list-separator-->
+
+-  two-photon imaging
+
+
+## I like my life to be {#i-like-my-life-to-be}
+
+听听报告,读读paper,做做实验,写写程序,挺好的.
+再弹弹琴,画画画,写写文章,日子不要太美.

@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       FDC29926-4580-476F-934B-7E816F9A8F86
+:END:
+#+title: Drawing Machine
+#+HUGO_SECTION:main
+* Flow
+** 1. Line Art
+[[id:86F5C12A-5581-492B-840D-D59FB5B0F4EF][Lineart Machine]]
+*** 1. Rhythm Line
+The line abstracting the body into impression of lines
+**** The Rate
+head = 1 he
+body = 1.5 he
+butt = 1 he
+leg = 1.5 he + 1.5 he
+palm = 1 he + 1 he + 2/3 he(hand)
+*** 2. Shape
+impression of shape
+**** Shapes
++ Head = Square + Triangel
++ Body = Square
++ Butt = Square + Triangle(wider than head)
++ Leg:
+  + upper = straight 1 side, middle out other side
+  + downner = strat 1 side, up out other side
++ Palm: same as leg
+*** 3. Space
+3-d. Give it some space
+** 2. Color
+*** 1. Origin
+*** 2. Light
+*** 3. Shadow
+* Principles
+** The Shape = boarder line + shades
++ Boarder line
+  + Draw Only the boarder line, when it cames to boarder.
+    The left, The Right boarder, Things that could be seen, and that's it.
+    Imagine the light goes in the front, and only the light's covering is drawn with boarder lines.
+    Or in the other way, only the boarder of the shadow.
+  + Boarder line is where the eyes =see no more=. =The shape ends there=. The edges, up, down, left, right. But not front
+  + The Front, the waves you illustrate with =shades=
+  

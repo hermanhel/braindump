@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       141D6ECA-3317-4059-8E8C-6F4C6D22700A
+:END:
+:PROPERTIES:
+:ROAM_REFS:[cite:@purpuraNeuralSignalProcessing2008]
+:END:
+#+title: Purpura, Bokil :: Neural Signal Processing: Tutorial
+#+HUGO_SECTION:reference
+#+filetags: :draft:
+

@@ -1,0 +1,222 @@
+:PROPERTIES:
+:ID:       69E6B0B6-9288-4467-8313-E729306A51DC
+:END:
+#+title: Artificial Intelligence
+#+HUGO_SECTION:main
+Guide page to various AI-related topics
+* Categories
+** Herman's categories
+*** Expert System
+[[https://en.wikipedia.org/wiki/Expert_system][wikipedia]]
+use knowledge and processes an expert would have. Pretty much every algorithm.
+*** Learning
+use standards to evolve by the system itself.
+**** supervised learning
+with correct answer(label)
+**** unsupervised learning
+without correct answer
+** Ray Dalio's categories
+*** Expert System
+algorithms/machines formulated from 5 step process coded into computer.
+*** Pattern finding
+find pattern in the facts by itself
+*** Data Mining
+reveal view of the world inside 1 particular large bunch of data.
+* Math prerequisites
+** [[id:164D4757-5345-4355-BEAE-03F5E060E897][Linear Algebra]]
+*** matrix decomposition
+data comes as matrix.
+| id | feature1 | feature2 |
+|----+----------+----------|
+|  1 |        4 |     2.72 |
+|  2 |        5 |     1.61 |
+1 matrix have various properties inside its strucutre. Matrix decomposition describes methods that explicitify the properties.
+**** Determinant
+**** Eigenvalues/Eigenvectors
+**** Sigular Value Decomposition(SVD)
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/resource/svd.png]]
++ U: orthogonal matrix
++ v: orthogonal matrix
++ $\$: diagnal matrix. filled with singular values
+***** seeing the results
+****** U: important patterns
+as the $\$ is in descending order, column vectors $u_{i}$ in $U$ are in desc order by importance evaluated by singular values in $/$
+****** $\$ weights
+****** 
+
+***** computing SVD
+**** Principle Component Analysis(PCA)
+Finding $n$ principle components (column ) in the matrix
+**** Independent Component Analysis(ICA)
+seperate mixed signals
+**** Non-Negative Matrix Factorization(NMF)
+*** continuous optimization
+**** sovlable
++ least-square
++ linear programming
++ convex optimization
+*** gradient descent
+*** constrained optimization
+*** convex optimization
+** probabilistic model
+distribution and stuff
+*** discrete probabilities
+*** continuous probabilities
+**** probability density function
+*** Gaussian Distribution
+*** conditional probability
+*** Baye's therorem
+most important formula in all of probability
+* Data Preprocessing
+Prepare input for the program to prevent errors/low performance
+** bad value
+some values are input wrongly, like a 1000C water temperature
+** bad entry
+very outliners should be excluded from cirtain classes.
+** bad distribution/scale
+some algorithms do better on a cirtain value range, like [-1,1]. some assume standard distribution. Scaling/normalizing the data to such range boost performance/enable algorithm to run.
+** better features
+** data analytics
+*** data analysis
+**** frequency distribution
+***** normal distribution
+**** pointiness
+**** lack of symmetry
+**** centrality
+***** mean
+***** median
+***** mode
+**** dispersion
+***** range
+***** interquartile range
+***** variance
+***** standard deviation
+*** diagnostic analytics
+find possible relations
+**** correlation
+**** Peawrson's r correlation
+*** prescriptive analytics
+*** exploratory analysis
+to find some questions(relations) to explore
+*** mechanistic analysis
+how change in =x= result in change in =y=.
+tool: regression.
+* Carrier of algorithms
+** Languages
+any language, but cirtain languages have special libs/functionalities comes in handy
++ python: very many libraries
++ R
++ java
++ c/c++
++ Lisp(scheme,common-lisp,clojure)
+** platforms
+*** python
++ pytorch libs
++ sklearn libs: implementation of various learning algorithms/tests
++ numpy/matplotlib/pandas libs: basic science computing utils
++ tensorflow
+* Machine learning
+** Mathematical regression/classification
+** Classifer training via gradient descent
+** supervised learning algorithms
+predict a value. use label.
+*** classification
+**** Support Vector Machine
+***** hyperplane
+***** Support vector
+***** kernel functions
+make the data points linear separable
+***** Multiple classes
+****** 1 vs 1
+****** 1 vs Many
+****** Many vs Many
+**** Naive Bayes
+***** Bayes' Rule
+***** use Bayes' Rule for classification: MAP estimation
+MAP: Maximum a posteriori estimation
+***** Naive Bayes Classifier
+the system
+**** Model likelihood
+***** log-likelihood
+***** bayesian estimation & laplacian correction
+***** Likelihood & Cross Validation & Entropy Measures
+**** Parametric/non-parametric methods
+**** Decision Tree
+***** select attributes
+****** entropy gain
+****** ratio gain
+****** Gini index(CART)
+***** Overfitting
+***** Random Forest
+**** kNN
+*** regression
+**** linear regression
+***** least square
+***** multiple linear regression
+***** how clever is the model.
+***** model selection
+***** outliers
+****** spot outliner: cook's distance
+**** polynomial regression
+**** logistic regression
+for classification
+map data to a probability
+***** alternative funcitons
++ Softmax
++ tanh
+** unsupervised learning algorithms
+don't predict a value. use no label
+*** clustering
+
+**** hierachical clustering
+agglomerative clustering (bottom-up)
+
+***** algorithm
+
+***** group strategy
+
+****** single linkage
+
+****** complete linkage
+
+****** average linkage
+**** k-means
+divisive clustering (top-down)
+***** algorithm
+***** k = ?
+**** model based clustering
+***** Gaussian Mixture Model
+****** definition
+****** Expectation Maximisation
+
+ref: section 11.4, Machine Learning – A Probabilistic Perspective by Keven P. Murphy, the MIT Press
+******* expectation step
+******* maximmisation step
+
+**** performance evaluation
+smaller intra-cluster distance, larger inter-cluster distance
+[[https://scikit-learn.org/stable/modules/clustering.html#clustering-performance-evaluation][sklearn module]]
++ Davies-Bouldin Index
++ Calinski-Harabasz Index
++ Silhouette Coefficient
++ Homogeneity & Completeness
++ Fowlkes-Mallows Scores
+**** Distance mesurements
+[[https://www.mathworks.com/help/stats/pdist.html#mw_238ce485-9126-46a1-beaa-f2dcc12573eb][mathwork list]]
++ Euclidean Distance
++ City Block Distance
++ Mahalanobis Distance
++ Correlation Distance
++ Cosine Distance
++ Hamming Distance
++ Chebyshev Distance
++ Spearman Distance
++ Jaccard Distance
+*** density estimation
+* some application
+** computer vision
+** Natural Language Processing
+** machine learning
+

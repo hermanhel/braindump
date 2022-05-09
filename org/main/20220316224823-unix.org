@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       C9E5C53E-EB47-46A5-90CF-FDC88EB4F9C3
+:END:
+#+title: Unix
+#+HUGO_SECTION:main
+* Use unix on [___]
+** macOS
+got it.
+** Linux
+got it.
+** windows
+Cygwins.
+* Connecting to a Unix Server
+** SSH
+You need:
++ Address/hostname - =224.235.43.6=
++ username - =hermanhe=
++ password - =hermanheveryhandsome123=
+*** windows
+PuTTY, WinSCP
+*** with unix in hand
+=ssh username@hostname=
+it'll prompt for password
+* The COMMANDS!!!
+That is an order!!!!
++ =pwd= path
++ =rm= remove
+  + =rm -r= recursive remove, to remove an entire 
++ =du= disk usage
+  + =du -h= in MB and GB
++ =wc= word count, in line, word, chars
++ =cat= type a file
++ =more= =cat= per page.
++ =head -3 filename= first 3 line of file
+** with process
++ =C-c= interrupt
++ =C-d= log out
++ =ps= process that run throuhgh the current term
+  + =ps aux= all processes
+  + =ps aux | grep daffy= all processes for user daffy
++ =top= the realtime monitor of processes
+* Settings
+Use =~/.bashrc= to store environment settings.
+=. .bashrc= to run/refresh it.
+* Redirecting/Piping
+
++ =>= to redirect output to a file
+  =ls > output= rewrite
++ =>>= similar, but append
++ =<= to give a command an input
++ =|= pipe work the same, but between commands
+  + =cat test.txt | head -5 | tail -1= the fifth line 
+* Prob/Sol
++ combine multiple file
+  =cat file1 file2 > files=
++ sort
+  =sort [-r] file=
+  per line. -r to sort in descending order.
+  =sort -k2 file= to sort according to the 2nd column
+  =sort -t "," -k2 -nr file= split using ",", in reverse
+  
++ unique token
+  =sort file | uniq= uniq work on sorted file
++ counting unique token
+  =sort file | uniq | wc -l=
++ search test
+  =grep 'fox' text.txt= or *.txt for all txts
++ search and replace
+  =sed 's/fox/sox/' text.txt > text2.txt=
++ field/rectangle substraction
+  =cut -d " " -f1 filename= filed count from 1. -d for delimiter
++ limiting words/line
+  =fmt - 1 filename=
++ combine vertically/rectanglly
+  =paste name.txt phone.txt=
++ arithmetic
+  + compact assignment
+    write =a=10= instead of =a = 10=. the later one treat a as a command.
+  + operation
+    =total=`expr $a + $b`= .if write =$a+$b= will return =10+5= instead of =15=
+    =\*= for mul, =/= for div, =%= for mod
+* Problems
+** TODO How to filter with respect to values in field?
+like, filter out all lines with "population" field larger than 5000?

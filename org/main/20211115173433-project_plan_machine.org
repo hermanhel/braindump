@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8F2292BD-3E31-4CB5-AE23-0AEDD8FF895D
+:END:
+#+title: Project plan machine
+#+HUGO_SECTION:main
+

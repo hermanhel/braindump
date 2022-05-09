@@ -1,0 +1,263 @@
+:PROPERTIES:
+:ID:       9D223719-28CC-4680-B68D-4DF7953C4EF1
+:END:
+#+title: 2022-03-25
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+*  Atom habits                                                        :habit:
+:PROPERTIES:
+:ID:       5C9597D2-7727-4205-BE92-B541CDB9D1D0
+:END:
+Atom habits is a book with 4 laws which:
++ treat habit as atoms, that impact on each other to form moleculars
++ works as atoms that seperately influence the process of habit forming
++ tackle 4 atomic period of the process of doing a thing, to make it a habit, or make it not a habit.
+** The 4 phases of the process in sight of habit. (continuous feedback loop)
+*** 1.cue
+~phone buzz~
+*** 2.craving
+~"who messaged?"~
+*** 3.response(take action to the crave)
+~checking who messaged~
+*** 4.reward
+~sovled the probelm and happy.~
+** The power of =atomic= habit
+*** 1. Massive action vs. 1% improvement
+=the 1% improvement rules=
+success is product of =daily progress=, and not =once-in-a-life action=
+*** 2. truth of progress.
+#+ATTR_ORG: :width 900
+[[/Users/hermanhe/Notes/RoamNotes/daily/progresstruth.png]]
+*** 3. goals and systems
+Forget about the goals, focus on the =systems= instead
++ goals: the abstract outcome, result, like /get fit/
++ systems: the process that get you to the actual result
+
+connecting with [[id:B92A7F7E-2E72-4816-917C-2A8CCBD6EEC8][5-step-analysis]] , where the goals are put forwarded first, but as a must followed by 4 other steps which refine the machine/system of accomplishing the goal.
+
+#+begin_quote
+Goals -> direction
+Systems -> making progress
+#+end_quote
+*** 4. atomic habits are the building block of remarkable result
+*** 5. 3 layers of bahaviour change
+1. outcome
+   the result, the goal, the actual consequence
+2. process
+   [[id:BE1A7182-CCEC-4722-BAC6-70E67337C2F6][Machine]]s
+3. identity
+   role in [[id:1130F0BE-A5C1-4E0F-8AF7-9BC582111108][Roles]].
+  like [[id:BCAC2B73-634A-4A49-8962-40CC2DF03751][Athlete]]
+*** 6. habit loop
+habit is formed with repeated small session every day, each session formed with [[The 4 phases of the process in sight of habit. (continuous feedback loop)][continous feedback loop]]
+#+ATTR_ORG: :width 900
+[[/Users/hermanhe/Notes/RoamNotes/daily/habitloop.png]]
+over time, =Chain= formed between =cue= and =reward=
+** The 4 laws
+*** 1. Make it =obvious=
+**** 1. Habit score card
+1. list all behaviours
+2. mark =+=, =-=, ===, for positive, negative, and neutral
+**** 2. set Time and location
+~I will _behaviour_ at _time_ in _this location_.~
+I will read at 6 p.m on my desk.
+
+use a cue to trigger the habit. the cue should be something you do automatically without failing.
+**** 3. Habit stacking
+~After doing _current habit_, I will _new habit_.~
+after _brushing my teeth, I'll strech for 5 minutes.
+**** 4. Environment vs. Motivation
+context is the cue.
+think: the house full with +object+ =relations=
+I relax on my bed. I work on my desk
+one space, one use
+***** 1. make cue for good habit more easy to be seen
+place bottle in the house -> drink more
+place book in the house -> read more
+***** 2. make cue for bad habits invisible 
+*** 2. Make it =attractive=
+**** 1. dopamine spikes
++ Dopamine spikes in =craving=
+  when a drug addicter =sees= drug.
++ The =craving= causes us to =take action=
+  the drug addicter =uses= drug after.
+**** 2. temptation bundling
+premack's principle: more prabable behaviors promote less prabable behaviors
+**** 3. group influence
+into a culture where the habit is norm
+**** 4. primitive =motives= -> source of craving
+=the habits are modern-day solution to ancient desires=
+**** 5. reprogram the brain to accept hard habits
+Make the hard habits attractive by accosiating them with a positive experiance
++ highlight the =benifit=
+  fitness = =wellbeing= +fatigue+
+**** 6. Make bad habit unattractive
+*** 3. Make it easy
+**** 1. habit is framed in terms of number of repetitions
++time+
+**** 2. Reducing Friction: law of least effort
+read 1 page of book every day
+**** 3. Prime the environment for use
+Prepare the environment before.
+**** 4. use 2-minute rule to stop procrastinating
+just, 2-minute version of the habit.
+target: anchor the repetition
+consequence: sometimes the motivation of completion arrive after the start.
+**** 5. make bad habit impractical as possible
+*** 4. Make it satisfying
+**** 1. The most important rule
+Satisfaction after the action promote =repetition=
+"This feels good, let's do it for another time"
+What is immediately rewarded is repeated, what is immediately punished, is avoided
+**** 2. Immediate/long-term award/punish
+adding little pleasure to long-run benefit, and pain to the long-run bad habit
+**** 3. Rewarding yourself and feeling succesful
+Use little wins, like a progress bar, a jar of marble, paper clip,
+**** 4. visual measurements
+logs, pagenumbers, journals...
+**** 5. Habit track
+**** 6. when bad days come......
+=Don't break the chain!=
+do the small version, just don't break the chain.
+**** 7. Habit contract.
+claims clear that you will honor a particular habit and that there will be punishments if you do not
+** Method
+1. set target HABIT, and GOOD? to signify if it's a good habit.
+2. for each phase of habit loop, take corresponding action to push the habit to a direction of:
+   + obvious - invisible (for cue)
+   + attractive - unattractive (for craving)
+   + easy - hard (for responsing)
+   + satisfying/pleasure - unsatisfying/painful (for reward)
+3. Set mindset(background sound/principle/belief/viewpoint)
+   + like, when developing work out habit:
+     + thinking that 1% improvement rules
+     + thinking that showing up's half the bottle
+     + thinking that from the 3 layers, I identity myself as an athelete
+     + knowing that I'm probably in the valley of disappointment, so be patient.
+       it's not a decision-result correspondency, but a viewpoint with respect of fact. It's a cognition, a thinking and evaluation with no interacting with the world, not changing the facts, no engineering, but by making evaluation of myself to certain realistic standards, I gain a cirtain emotion mode, which impact my feeling, action, motivation, crave, and reward(satisfacition.)
+* Doing Atom Habit Analysis
+:LOGBOOK:
+CLOCK: [2022-03-26 Sat 10:30]--[2022-03-26 Sat 11:05] =>  0:35
+:END:
+** My behaviors thorught the day
++ + coding(to a book/a problem I encounter)
++ + Do projectEuler challenges
++ + drink hot water
++ + eat my mom's cooking
++ + Get up 
++ + Running
++ + take a dump
+  but quickly
++ + Take class
++ -  Watch porn while in class
++ - Check social media
++ - Consume social media(wechat,telegram)
++ - lazy in bed
++ - play game
++ - Watching funny videos
++ - Watching movie/shows
++ = Masturbate
++ = Sing song
++ = solve software issue 
++ = Take shower
++ = Write journal when I found something
+** The Bad habits I want to get rid of
++ - Watch porn while in class
++ - Check social media
++ - Consume social media(wechat,telegram)
++ - lazy in bed
++ - play game too much
++ - Watching funny videos too much
++ - Watching movie/shows too much
++ bad body stance(low chest and neck)
+** The Good habits I want to develop
+*** + coding(to a book/a problem I encounter)
+**** Cue - obvious
++ Habit stack: I'll start coding, Right after I take my morning dump. I could use toilet time to think/deside what to do
++ environment: I ahve ACP side of my desk.
+**** Craving - attractive
++ Reprogramming the brain
+  + the benefit of improving my coding skill:
+    1. I'll be more capable in engineering.
+    2. I'll be powerful
+    3. People would admire me
+    4. I'll have a lot of fun in programming and engineering a system
+    5. It'll enable me to eventually build my baby AI
+    6. The whole thing of coding/engineering would be more clear to me, instead of vague and frustrating mistery
++ Temptation bundling
+  After I've done a session of coding, I'll practice a knot
+**** Response - easy
++ least effort:
+  I just have to code for 1 session to whatever material at hand.
+  It could be from the /Hands-on intro to ML/ book, or a projectEuler challenge, or a random program from my todo list, anything would be suffice
++ Prime the environment:
+  Choose a coding task before I went to toilet, and open the file I needed.
++ Use a 2-minuet version:
+  Do 2-minute coding first if procrastinate. But I doubt if I will.
+**** Reward - satisfying
++ Adding little pleasure
+  After the session, tie a knot.
+  They are both engineering & art
++ Habit track
+  Make a subtree coding in Engineering, style habit. Each day ofter the 1 session, set it marked.
++ Habit contract
+  In the heading, make declaims
++ Visual measurements
+  log every thing done. Round thing up
+**** Mindset - continue process
++ I'm a hacker
++ 1% improvement a day.
++ showing up's half the bottle
+*** read Don quijote
+**** Cue - obvious
++ Time and place
+  ~I will read 1 page of Don Quijote with all words and usages figured out at 4 p.m. at my desk~
++ I have my yellow grammar book on my desk
+**** Craving - attractive
++ Reprogramming the brain
+  + the benefit of improving my coding skill
+    1. I'll be better in spanish
+    2. I could really understand what Cervantes have to say, these spirits.
+    3. I could recite the classic lines to impress other people
+    4. I could reference these very good lines in my own speaking
++ Temptation bundling
+  After I've done a 1 page, I'll read it aloud
+**** Response - easy
++ Least effort:
+  1 page a day
++ The environmnet:
+  The book, Emacs/org-roam/don-quijote for note, Esdict/Collins for reference. 
+**** Reward - satisfying
++ Adding little pleasure
+  A knot after the page
+**** Mindset - continue process
++ 1% improvement
++ I'm a writer
+*** + Do projectEuler challenges
+*** + drink hot water regularly
+*** + eat my mom's cooking
+*** + Get up early
+*** + Running
+*** + take a dump
+but quickly
+*** + Take class
+*** Work out(with a plan and every in a while)
+*** Find in my threads for tasks in leisure
+*** Do every session with accordence to the [[id:E48DECC9-A139-4F6D-B6F6-62B3570959D6][General task doing machine]]
+*** Read every book with speed reading skill
+*** Make big projects
+*** Self-learn neuroscience.
+*** self-learn Machine learning.
+*** do things with aware of time, and log notes/observation often
+** Tools
+*** Temptations
++ tie knot
++ game
++ 
+*** 
+
+* INT104 CW2
+#+ATTR_ORG: :width 900
+[[/Users/hermanhe/Notes/RoamNotes/daily/cw2.png]]
+

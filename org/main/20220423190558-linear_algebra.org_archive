@@ -1,0 +1,25 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/hermanhe/Notes/RoamNotes/20220423190558-linear_algebra.org
+
+
+* direct sum
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-23 Sat 20:08
+:ARCHIVE_FILE: ~/Notes/RoamNotes/20220423190558-linear_algebra.org
+:ARCHIVE_OLPATH: Spaces/Euclidean space/subspace
+:ARCHIVE_CATEGORY: 20220423190558-linear_algebra
+:END:
+$U \oplus W$ when $U W =$
+
+* proposition
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-24 Sun 09:47
+:ARCHIVE_FILE: ~/Notes/RoamNotes/20220423190558-linear_algebra.org
+:ARCHIVE_OLPATH: Linear Map/homomorphism/ismorphism
+:ARCHIVE_CATEGORY: 20220423190558-linear_algebra
+:ARCHIVE_ITAGS: confusing
+:END:
++ dimension: finite-dimensional vector space of the same dimension are ismorphic
++ to Eucliead: any n-dimensional vector space is ismorphic to $\mathbb{R}^n$

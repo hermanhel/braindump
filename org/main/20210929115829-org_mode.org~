@@ -1,0 +1,73 @@
+:PROPERTIES:
+:ID:       DA737403-A61E-4473-80D0-228698867137
+:END:
+#+title: Org-mode
+see [[https://orgmode.org/worg/orgcard.html][org-card]]
+* Task management
+** Agenda
+   /Agenda/ is a functionality of *Org-mode* focusing on _Task Management_.
+   /Agenda/ provides a view to see all the tasks in a _Daily/Weekly Base_
+*** Add to Agenda
+    Add Tasks to agenda by:
+    1. Add TODO to the front of heading
+    2. *Schedule* by _C-c C-s_- or *Deadline* by _C-c C-d_
+**** ~TODO~ States
+***** Next
+      TODO in (TODO NEXT | DONE)
+      ~Next~ means the next task to do.
+      + Marked by hand from all TODOS(access by agenda command)
+      + DO only the NEXT tasks.
+***** NEXT Set a machine with the NEXT tasks
+      embed the NEXT principle into the machines.
+      
+*** Agenda view
+    Called by _M-x org-agenda(bind to C-c a)_
+**** Basic Use
+     As opened, _Week View_ will be shown. Upon selecting weekdays, the day will be focused.
+**** Dashboard
+     into agenda view, hit _d_.
+*** Agenda files
+    Agenda access files marked in the list variable _org-agenda-files_
+    should be kept in [[file:~/.emacs.d/lisp/init-org.el][init-org.el]]
+** Tags								
+   Use _C-c C-q_ to quily insert Tags(C-c C-c on headings)
+   Use _M-x Counsel-org-tag_ to search for tags
+*** Contents of tags
+    + Place
+      + @errand
+      + @home
+      + @work
+    + Type
+      + agenda
+	for =works, time, schedule, .etc=
+	Personal Things, like Meeting information, Coursework information
+      + planning
+	a task to make plan about something
+      + batch
+	a task to do something in batch
+      + note
+	a note about non-personal things, like Math or Code or Principle
+      + idea
+	a =programming idea= or a =drawing idea=...
+    + Machine specific
+      + machine
+	a bunch of procedurals constructed and executed with awareness to cirtain principles.
+      + principle
+	see [[id:E339CEF9-FCFA-414A-BC08-787F5C3039CF][principle]]
+* Org-capture
+org-capture, bind by ~C-c c~, capture random thought and throw them into buckets.
+** org-capture templates
+specified in [[file:~/.emacs.d/lisp/init-org.el::(setq org-capture-templates][<init-org.el>]].
+syntax:[[https://xuchengpeng.com/hugo-blog/2018/07/20/powerful-org-capture/][ org-capture syntax sheet]]
+* Timer
+** Start
+C-c C-x 0 : start timer
+C-c C-x ; : start countdown timer
+** Use
+All under C-c C-x prefix
+- . insert the timer time
+- - insert a timer time list item
+- M-RET on the list item create anotehr list item follow the format
+** Stop/pause
+- , pause
+- _ stop

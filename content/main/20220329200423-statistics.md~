@@ -1,0 +1,68 @@
++++
+title = "Statistics"
+author = ["System Administrator"]
+draft = false
++++
+
+## Exploratory Data Analysis {#exploratory-data-analysis}
+
+
+### The Materials {#the-materials}
+
+
+#### Elements of structured data {#elements-of-structured-data}
+
+
+#### Rectangular {#rectangular}
+
+<!--list-separator-->
+
+-  Dataframe/spread sheet
+
+    in python, pandas offer `DataFrame`
+    in R, `data.frame` is offered.
+
+<!--list-separator-->
+
+-  non rectangular data structures
+
+    -   Time series data
+    -   Spatial data structures
+    -   Graph data structures
+
+
+### Estimates of Location {#estimates-of-location}
+
+where on the axises are the data? (central value?)
+
+-   Mean
+-   Weighted mean
+-   Median
+-   Weighted median
+-   Trimmed mean
+-   Robust
+-   Outlier
+
+
+### Estimates of Variability {#estimates-of-variability}
+
+
+###  {#d41d8c}
+
+
+## Data and Sampling Distributions {#data-and-sampling-distributions}
+
+
+## Statistical Experiments and Significance Testing {#statistical-experiments-and-significance-testing}
+
+
+## Regression and Prediction {#regression-and-prediction}
+
+
+## Classification {#classification}
+
+
+## Statistical Machine Learning {#statistical-machine-learning}
+
+
+## Unsupervised Learning {#unsupervised-learning}

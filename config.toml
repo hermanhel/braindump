@@ -1,0 +1,4 @@
+baseURL = 'https://hermanhel.github.io/braindump/'
+languageCode = 'en-us'
+title = "Herman's Place"
+theme="cortex"

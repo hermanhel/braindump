@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       5D8E1791-D00A-48F9-837F-CFD23643E9C9
+:END:
+#+title: Emacs
+#+HUGO_SECTION:main
+* Window movement
+** Defalt actions
+** Window move
+| function    | key             | description                      |
+|-------------+-----------------+----------------------------------|
+| winner-mode | C-c left/right  | undo/redo window modification    |
+| winum-mode  | C-x w           | focus jump to numbered window    |
+| buf-move    | C-c w arrow key | buffer move to neibouring window |
+* Crashes
+** org-babel-tangle
+   =org-babel-tangle-single-block= can fail due to the fault of syntax in src blocks
+   like: [+begin instead of #+begin]
+* Hooks
+  =add-hook hook function= to add a hook
+  =remove-hook hook function= to remove a hook
+* coding system
+to change coding system to =gb18030= such,
++ =C-x RET c (coding-system) C-x C-f= to open file with a coding system

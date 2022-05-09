@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       D7CDC25B-82AF-4C55-8055-CE461B9553D1
+:END:
+#+title: my CV
+#+HUGO_SECTION:main
+* Education
++ 2016.9-2020.6
+  The Highschool Attached to Zhejiang University
++ 2020.9-Now
+  Xi'an Jiao Tong Liverpool University, Information and Computing Science
+* Experiance
++ 2020-2021
+  Lecturer in XJTLU Peer Tutoring Club, Linear Algebra.
++ 2020-2022
+  Actor in XJTLU Musical Club, /Les Miseráble/, /Next to Normal/, /The Greatest Showman/, /Mozart L'Opera Rock/, /Heaven Listened/.
++ 2018-Now
+  Blog Writer, mainly on social/philosophical issues.
+  [[https://hermanhelf.lofter.com/][https://hermanhelf.lofter.com/]], https://hermanhel.github.io/.
++ 2020-2021
+  Attended APMCM and MCM. Both 3rd Prize.
+* Skills
++ Programming Languages
+  + Mediocre Clojrue.
+  + Basic of Python, ECMAScript, C/C++, Java, Emacs-lisp.
++ Music-related
+  + Piano performance. Mediocre.
+  + Jazz/New-age piano/improvisation. Mediocre.
+  + Composition. Mediocre
++ Literatur-related
+  + Non-fiction Writing in Chinese. Fluent.
+    (in Maxim-style like /Menschliches, Allzumenschliches/)
++ Creative thinking.
+  o
+  Widely acknowledged, though I don't totally understnand the meaning of it.
+  Maybe just for I don't take things for granted.
++ Emacs usage, Fluent.
++ Languages
+  + Chinese, fluent.
+  + English, midiocre.
+  + Spanish, basic.
+  + German, pronunciation.
+* Interests
++ Computer Programming
+  in Computer Vision, Graphics, Frontend/Backend Developing, Artifical Intelligence, Communication, Programming Language, Computer System.
++ Neuroscience
+  in Conscious(mainly computational model), Acquisition, Brain-Machine Interface.
++ Music
+  in Jazz, Musical, Music Input using Brain-Mahchine Interface.
++ Literature
+  in Fiction, Philosophy, Technology.
+* Charactor
++ Generally Optimistic.
++ Generally Calm.
++ Generally not Serious.(Though showing such gesture)
++ Generally Focused.
++ Generally Neutral/Critical to most opinions.
++ Seldom have strong Feith in certain Premises. (such as freedom and equality)
++ Generally Steady. (but without warranty)
++ Generally prefer Low Information Intake.
+* Contacts
++ Email: hermannhel@gmail.com
++ Mobile: +86-18058132020
++ Github Page: [[https://hermanhel.github.io/][https://hermanhel.github.io/]] (Github:hermanhel)
+  

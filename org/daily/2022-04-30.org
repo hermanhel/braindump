@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       1FFFF642-365A-4947-9109-BC3C864DD146
+:END:
+#+title: 2022-04-30
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* examining org-clock-in
+how it facilitate the concept of a session.
+* use defvar to give variables
+* org-current-time for the current time
+
+

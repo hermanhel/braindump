@@ -1,0 +1,224 @@
++++
+title = "CPT111"
+author = ["System Administrator"]
+draft = false
++++
+
+## COMPLETED CPT111 <span class="tag"><span class="agenda">agenda</span></span> {#completed-cpt111}
+
+
+## Tutoring Schedule {#tutoring-schedule}
+
+
+### <span class="org-todo done DONE">DONE</span> Lecture SB102 {#lecture-sb102}
+
+
+### <span class="org-todo done DONE">DONE</span> Lab SD546 {#lab-sd546}
+
+
+### <span class="org-todo done DONE">DONE</span> Study for CW2 <code>[10/10]</code> {#study-for-cw2}
+
+:Effort:   200
+
+The CW2 is filling the code.
+
+-   [X] Week 1
+-   [X] Week 2
+-   [X] Week 3
+-   [X] Week 4
+-   [X] Week 5
+-   [X] Week 6
+-   [X] Week 7
+-   [X] Week 8
+-   [X] Week 9
+-   [X] Week 10
+
+
+### <span class="org-todo done DONE">DONE</span> CW2 lab test {#cw2-lab-test}
+
+
+### <span class="org-todo done DONE">DONE</span> Prepare for CW2 lab test {#prepare-for-cw2-lab-test}
+
+
+#### <span class="org-todo todo TODO">TODO</span> Try the mock exam {#try-the-mock-exam}
+
+
+#### <span class="org-todo todo TODO">TODO</span> Find neccesary skill {#find-neccesary-skill}
+
+
+## Tasks {#tasks}
+
+
+### <span class="org-todo done DONE">DONE</span> Preview #1 {#preview-1}
+
+
+### <span class="org-todo done DONE">DONE</span> Preview #2 {#preview-2}
+
+
+### <span class="org-todo todo TODO">TODO</span> Catch up the content. {#catch-up-the-content-dot}
+
+for doing homework
+for CW2 this
+
+
+####  {#d41d8c}
+
+
+## Assesments {#assesments}
+
+
+### <span class="org-todo done DONE">DONE</span> Coursework 3 [/ ] {#coursework-3}
+
+
+#### <span class="org-todo done DONE">DONE</span> load person file {#load-person-file}
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  Person class
+
+    <!--list-separator-->
+
+    - <span class="org-todo done DONE">DONE</span>  Image datatype?
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  readFile() in fileutil.java
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  loadfiles() menu.java
+
+
+#### <span class="org-todo done DONE">DONE</span> list all persons {#list-all-persons}
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  listIDs() in menu
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  Person.toString()
+
+
+#### <span class="org-todo done DONE">DONE</span> search for a person {#search-for-a-person}
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  menu.searchIDs()
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  metahces of input string
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  by first, family, nick, id....
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  display list of match
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  total number of match
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  not case sensitive
+
+
+#### <span class="org-todo done DONE">DONE</span> generate stats {#generate-stats}
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  methods called by generateStats()
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  number of persons
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  number of nationalities
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  average age
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  percentage of males and females
+
+
+#### <span class="org-todo todo TODO">TODO</span> check for id fraud {#check-for-id-fraud}
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  menu.checkFraud()
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  list of IDs, input String of ID
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  Valid ID
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  matching ID in system
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  8 char long
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  beging with case sensitive "A", "B","C"
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  the 3rd char matches the last number of their year of birth
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  the final 2 char are checksum, should add up to 7
+
+
+#### <span class="org-todo todo TODO">TODO</span> generate a wanted poster {#generate-a-wanted-poster}
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  ID -&gt; Menu.generatePoster()
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  check for match
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  create a JFrame
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  create an ImagePanel object
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  receive Person object
+
+        <!--list-separator-->
+
+        - <span class="org-todo todo TODO">TODO</span>  paintComponent()
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  Design it
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  Minimum
+
+    <!--list-separator-->
+
+    - <span class="org-todo todo TODO">TODO</span>  advanced

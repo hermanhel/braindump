@@ -1,0 +1,748 @@
+<!doctype html><html><title>INT104 AI</title><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=apple-mobile-web-app-capable content="yes"><link rel=stylesheet href=https://hermanhel.github.io/braindump/css/main.min.291920189b1189fd3388c38fd9e8ccbdf24640f05f020c32e3da5ba83f9bd5d8.css><body><header><a href=/ id=logo><svg id="Capa_1" enable-background="new 0 0 511.992 511.992" height="512" viewBox="0 0 511.992 511.992" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><g><path d="m256 420.826c0 38.345-11.844 68.545-49.991 68.014-27.744-.385-51.481-15.31-61.853-39.46-1.239-2.887-4.024-4.734-7.154-4.725-.07.0-.135.0-.201.0-47.474.0-75.537-26.171-75.537-73.882.0-5.633.542-11.138 1.568-16.468.62-3.229-.825-6.489-3.671-8.125C23.668 325.748 10 300.053 10 255.997c0-44.057 13.668-69.757 49.161-90.185 2.846-1.636 4.291-4.896 3.671-8.13-1.026-5.33-1.568-10.83-1.568-16.463.0-47.711 28.064-73.882 75.537-73.882h.201c3.13.009 5.915-1.837 7.154-4.729 10.372-24.145 34.109-39.069 61.853-39.455C244.159 22.621 256 52.821 256 91.166" fill="#ff9eb1"/></g><g><g><g><path d="m256 91.166c0-38.344 11.844-68.545 49.991-68.014 27.744.385 51.481 15.31 61.853 39.46 1.239 2.887 4.024 4.734 7.154 4.724h.201c47.474.0 75.537 26.171 75.537 73.882.0 5.633-.542 11.138-1.568 16.468-.62 3.229.825 6.489 3.671 8.125C488.332 186.245 502 211.939 502 255.996s-13.668 69.756-49.161 90.185c-2.846 1.636-4.291 4.896-3.671 8.13 1.026 5.33 1.568 10.83 1.568 16.463.0 47.711-28.064 73.882-75.537 73.882h-.201c-3.13-.009-5.915 1.837-7.154 4.729-10.372 24.145-34.109 39.069-61.853 39.455-38.15.531-49.991-29.669-49.991-68.014" fill="#ff7d97"/></g></g><g><g><path d="m502 265.996c-4.193.0-7.984-2.713-9.407-6.636-1.419-3.912-.16-8.459 3.063-11.092 3.291-2.689 8.009-2.99 11.621-.758 3.568 2.205 5.404 6.578 4.478 10.669-1.02 4.501-5.126 7.817-9.755 7.817z"/></g></g></g><g><path d="m340.83 229.18h-58.013v-58.014h-53.634v58.014H171.17v53.633h58.013v58.013h53.634v-58.013h58.013z" fill="#faf7f5"/></g></g><g><g><path d="m498.468 291.859c-5.141-2.02-10.945.508-12.965 5.648-6.442 16.389-18.055 28.727-37.649 40.005-6.513 3.746-9.932 11.253-8.505 18.689.921 4.783 1.388 9.686 1.388 14.572.0 41.792-22.662 63.882-65.537 63.882h-.225c-.938.0-1.864.074-2.771.217-15.031-4.92-23.796-20.93-19.661-36.479 1.42-5.337-1.757-10.815-7.094-12.234-5.333-1.418-10.814 1.756-12.234 7.094-5.958 22.405 4.241 45.396 23.384 56.443-9.583 17.791-28.602 28.836-50.748 29.145-11.303.146-19.802-2.743-26.011-8.867-9.184-9.057-13.84-25.592-13.84-49.148v-70h16.816c5.522.0 10-4.477 10-10v-48.014h48.014c5.522.0 10-4.477 10-10V229.18c0-5.523-4.478-10-10-10h-48.014v-48.014c0-5.523-4.478-10-10-10H266v-70c0-23.555 4.657-40.09 13.841-49.148 6.21-6.123 14.696-9.022 26.011-8.867 23.862.332 44.096 13.132 52.803 33.405.218.509.458 1.003.719 1.483-3.225 8.243-9.084 15.093-16.833 19.574-8.993 5.2-19.465 6.581-29.485 3.89-5.337-1.434-10.819 1.73-12.251 7.064-1.433 5.334 1.729 10.819 7.063 12.252 5.074 1.363 10.221 2.037 15.338 2.037 10.2.0 20.272-2.681 29.346-7.928 11.083-6.408 19.607-16.017 24.616-27.575 41.6.67 63.569 22.718 63.569 63.866.0 4.89-.467 9.794-1.389 14.582-1.427 7.426 1.991 14.933 8.502 18.678 19.572 11.267 31.176 23.584 37.625 39.936 1.552 3.934 5.318 6.334 9.306 6.333 1.221.0 2.462-.225 3.666-.7 5.138-2.026 7.66-7.834 5.634-12.972-7.943-20.141-22.201-35.773-44.801-49.086.967-5.521 1.457-11.155 1.457-16.772.0-52.114-31.48-83.391-84.288-83.876-12.157-26.863-38.963-43.753-70.318-44.189-16.67-.232-30.255 4.688-40.332 14.625-3.813 3.76-7.08 8.226-9.797 13.382-2.717-5.156-5.984-9.622-9.797-13.382-10.075-9.937-23.668-14.852-40.333-14.625-31.353.437-58.158 17.325-70.32 44.189-52.807.485-84.286 31.762-84.286 83.876.0 5.617.49 11.253 1.458 16.771-37.422 22.031-52.724 50.552-52.724 98.008.0 47.451 15.299 75.969 52.721 98.006-.967 5.521-1.457 11.154-1.457 16.772.0 52.114 31.48 83.391 84.288 83.876 12.157 26.863 38.963 43.753 70.318 44.189.377.005.751.008 1.125.008 16.172.0 29.358-4.92 39.207-14.632 3.813-3.76 7.08-8.226 9.797-13.382 2.717 5.156 5.984 9.622 9.797 13.382 9.849 9.713 23.034 14.633 39.208 14.632.373.0.749-.003 1.125-.008 31.352-.436 58.158-17.325 70.32-44.189 52.807-.485 84.286-31.762 84.286-83.876.0-5.617-.49-11.253-1.458-16.772 22.634-13.329 36.901-28.989 44.838-49.178 2.022-5.14-.507-10.945-5.647-12.966zM282.816 239.18h48.014v33.633h-48.014c-5.522.0-10 4.477-10 10v48.014h-33.633v-48.014c0-5.523-4.477-10-10-10H181.17V239.18h48.014c5.523.0 10-4.477 10-10v-48.014h33.633v48.014c-.001 5.523 4.477 10 9.999 10zm-50.657 230.794c-6.21 6.124-14.717 9.018-26.011 8.867-23.862-.331-44.096-13.132-52.803-33.405-.218-.509-.458-1.003-.719-1.483 3.225-8.243 9.085-15.093 16.833-19.574 8.992-5.2 19.463-6.581 29.485-3.89 5.337 1.434 10.819-1.73 12.251-7.064 1.433-5.333-1.73-10.819-7.064-12.251-15.188-4.08-31.059-1.988-44.684 5.891-11.083 6.408-19.607 16.017-24.616 27.575-41.6-.67-63.569-22.718-63.569-63.866.0-4.89.467-9.794 1.389-14.582 1.427-7.427-1.991-14.934-8.502-18.678-32.183-18.528-44.149-40.621-44.149-81.517.0-40.9 11.966-62.994 44.146-81.517 6.513-3.746 9.932-11.253 8.505-18.689-.921-4.783-1.388-9.686-1.388-14.572.0-41.792 22.662-63.882 65.537-63.882h.225c.938.0 1.864-.074 2.771-.217 15.031 4.92 23.796 20.93 19.661 36.479-1.42 5.337 1.757 10.815 7.094 12.234.861.229 1.726.338 2.577.338 4.422.0 8.467-2.956 9.657-7.432 5.958-22.405-4.241-45.396-23.384-56.443 9.583-17.791 28.602-28.836 50.748-29.145 11.267-.15 19.801 2.743 26.011 8.867 9.184 9.057 13.84 25.592 13.84 49.148v70h-16.816c-5.522.0-10 4.477-10 10v48.014H171.17c-5.522.0-10 4.477-10 10v53.633c0 5.523 4.478 10 10 10h48.014v48.014c0 5.523 4.478 10 10 10H246v70c0 23.554-4.657 40.09-13.841 49.147z"/><path d="m139.699 228.227c-6.766.0-13.186 1.514-18.907 4.31-3.049-8.65-8.286-16.485-15.336-22.673-4.151-3.643-10.469-3.233-14.113.918-3.643 4.15-3.232 10.469.918 14.112 6.711 5.891 10.816 14.143 11.498 22.953-1.213 1.914-2.293 3.946-3.225 6.088-1.145 2.633-2.015 5.316-2.615 8.019-13.414 11.422-33.601 10.834-46.225-1.792-3.906-3.904-10.236-3.904-14.143.0-3.905 3.905-3.905 10.237.0 14.143 10.524 10.524 24.354 15.784 38.193 15.784 8.04.0 16.083-1.775 23.484-5.325 1.904 5.443 4.967 10.557 9.136 15.03.596.639 1.204 1.269 1.826 1.891 1.953 1.953 4.512 2.929 7.071 2.929 2.56.0 5.118-.976 7.071-2.929 3.905-3.905 3.905-10.237.0-14.143-.458-.458-.906-.922-1.342-1.389-6.26-6.716-7.799-15.778-4.118-24.241 2.878-6.616 9.86-13.686 20.826-13.686 5.522.0 10-4.477 10-10 .001-5.522-4.476-9.999-9.999-9.999z"/><path d="m387.667 287.543c-3.905 3.905-3.905 10.237.0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929c.622-.622 1.23-1.253 1.83-1.896 4.167-4.471 7.229-9.583 9.133-15.025 7.401 3.549 15.444 5.324 23.484 5.324 13.839.0 27.67-5.261 38.193-15.784 3.905-3.905 3.905-10.237.0-14.143-3.906-3.904-10.236-3.904-14.143.0-12.624 12.625-32.811 13.214-46.225 1.792-.6-2.702-1.47-5.386-2.615-8.019-.932-2.142-2.012-4.175-3.225-6.088.682-8.81 4.787-17.062 11.498-22.953 4.15-3.644 4.561-9.962.918-14.112-3.646-4.151-9.964-4.563-14.113-.918-7.05 6.189-12.287 14.023-15.336 22.673-5.721-2.796-12.141-4.31-18.907-4.31-5.523.0-10 4.477-10 10s4.477 10 10 10c10.966.0 17.948 7.07 20.826 13.686 3.681 8.463 2.142 17.525-4.114 24.237-.44.47-.888.935-1.346 1.393z"/></g></g></g></svg></a><h3 class=site-title>Herman's Place</h3><form id=search action=https://hermanhel.github.io/braindump/search/ method=get><label hidden for=search-input>Search site</label>
+<input type=text id=search-input name=query placeholder="Type here to search">
+<input type=submit value=search></form></header><div class=grid-container><div class=grid><div class=page data-level=1><div class=content><h1>INT104 AI</h1><p>AI</p><h2 id=uts>UTS</h2><h3 id=deliver-plan>Deliver Plan</h3><p><a href=https://xjtlu.zhumu.com/j/606851045>https://xjtlu.zhumu.com/j/606851045</a></p><h4 id=lecture>Lecture</h4><ul><li>DONE Lecture 1</li></ul><ul><li>DONE Lecture 2</li></ul><ul><li>DONE Lecture 3</li></ul><ul><li>DONE Lecture 4</li></ul><ul><li><p>DONE Lecture 5</p><ul><li>What is AI</li></ul><ul><li><p>Label visualization</p><ul><li>superised</li></ul><ul><li>unsupervised</li></ul><ul><li><p>semi-supervised</p><ul><li>save labour of labeling</li><li>High efficiency for data usage</li></ul></li></ul></li></ul><ul><li><p>Math representation</p><p>s: feature vector,
+S = sts
+I = labels vector
+I = F(S) would be an ideal</p></li></ul><ul><li>regression</li></ul></li></ul><ul><li><p>DONE Lecture 6</p><ul><li><p>SVM</p><ul><li><p>one v one dividing</p><ol><li>classifier that devide only 2 clusters</li><li>each cluster will be identified by each classifier</li><li>the mode of the identification (voting) will become the</li></ol><p>c(2,n) classifiers. more robust</p></li></ul><ul><li><p>one v multiple dividing</p><ol><li>classifier that devide 1 cluster from all others.</li></ol><p>n classifier.</p></li></ul><ul><li><p>many v many dividing</p><p>ECOC
+more information</p><ol><li>classifier that devide many cluster from many cluster</li><li>define C1 as the + side of f1,f2,f3</li></ol></li></ul></li></ul><ul><li><p>Bayes' Rule</p><p>P(C|X)P(X) = P(C)P(X|C)'
+If \(a^2=b\) and \( b=2 \), then the solution must be
+either \[ a=+\sqrt{2} \] or \[ a=-\sqrt{2} \]</p><ul><li>CCP Table</li></ul></li></ul><ul><li>Parametric Methods</li></ul><ul><li><p>Non-parametric Methods</p><p>use large dataset
+use close computation &ndash; expensive computation</p><ul><li><p>Desision Tree</p><ul><li><p>machine</p><ol><li>given a node(root node)</li><li>determine if the node is leaf node</li><li>Decision of leaf is made by voting</li><li>select attribute j in x*j to form new branch<ul><li>Entropy gain
+does not consider the size of dataset</li><li>Ratio gain (C4.5)
+prefer a smaller dataset</li><li>Gini index(CART) (works better)</li></ul></li></ol></li></ul><ul><li><p>Random Forest</p><p>typical example of <code>boosting</code>
+with a set of decision trees. Vote for the final results
+each tree take a subset of all attributes</p></li></ul></li></ul></li></ul><ul><li>cross validation?</li></ul></li></ul><ul><li>DONE Lecture 7</li></ul><ul><li>DONE Lecture 8</li></ul><ul><li>DONE Lecture 9</li></ul><ul><li><p>Lecture 10</p><ul><li><p>Evaluation</p><ul><li><p>confusion matrix</p><ul><li><p>outcomes: True/False for prediction correctness, Positive/Negative for truth</p><ul><li>True Positive</li><li>True Negative</li><li>False Positive</li><li>False Negative</li></ul></li></ul><ul><li><p>metrics from confusion matrix</p><figure><img src=/Users/hermanhe/Notes/RoamNotes/resource/confmatmetrics.png width=600px></figure><ul><li><p>rate of X against n+ or n-</p><ul><li><p>Recall(Sensitivity)</p><p>\(\frac{TP}{TP+FN}\)</p></li></ul><ul><li><p>Fall-out</p><p>\(\frac{FP}{TN+FP}\)</p></li></ul><ul><li><p>Miss</p><p>\(\frac{FN}{TP+FN}\)</p></li></ul><ul><li><p>Specificity(selectivity)</p><p>\(\frac{TN}{TN+FP}\)</p></li></ul></li></ul><ul><li><p>correct</p><ul><li><p>Accuracy</p><p>fraction of right prediction
+\(Accuracy=\frac{TP+TN}{TP+TN+FP+FN}=\frac{TP+TN}{n}\)</p></li></ul><ul><li><p>Precision</p><p>fraction of positive right prediction
+\(Precision = \frac{TP}{TP+FP}\)</p></li></ul><ul><li><p>F1 score</p><p>precision plus recall
+\(F_1score=\frac{2 \times TP}{2 \times TP + FP + FN}=2 \times \frac{Precision \times Recall}{Precision + Recall}\)</p></li></ul><ul><li><p>F-beta score</p><p>introducing parameter to adjust balance between <a href=#precision>Precision</a> and <a href=#recall--sensitivity>Recall</a>.
+\(F_\beta score=(1 + \beta^2) \times \frac{Precision \times Recall}{\beta^2 \times Precision + Recall}\)</p><ul><li>\(\beta &lt; 1\): focus on precision</li><li>\(\beta > 1\): focus on Recall</li></ul></li></ul></li></ul></li></ul></li></ul><ul><li><p>Receiver operation characteristices</p><p>a graph. shows performance.
+points are selected by threshold, with attributes (FP rate, NP rate)</p><ul><li><p>Explanation、</p><figure><img src=/Users/hermanhe/Notes/RoamNotes/resource/rocexplain.png width=600px></figure></li></ul><ul><li><p>AOC</p><p>Area under ROC curve.</p></li></ul></li></ul><ul><li><p>Bias and variance</p><ul><li><p>Errors</p><ul><li>Machine learning errors<ul><li>irreducible error: unknown variabel</li><li>reducible error<ul><li>bias variance</li></ul></li></ul></li></ul></li></ul><ul><li>bias</li></ul><ul><li><p>variance</p><p>how the model&rsquo;s output change base on the change of input</p></li></ul><ul><li>bias-variance tradeoff</li></ul></li></ul><ul><li><p>Hypothesis testing</p><ul><li>Null hypothesis</li></ul><ul><li></li></ul><ul><li><p>Z-test</p><ul><li>population standard deviation</li></ul></li></ul><ul><li><p>T-test</p><ul><li>sample standard deviation</li></ul></li></ul><ul><li><p>Z-test vs T-test</p><ul><li>sample size<ul><li>n>30: Z-test</li><li>n&lt;30: T-test</li></ul></li><li>Use<ul><li>population standard deviation is know: Z-test</li><li>population standard deviaiton unknown: T-test</li></ul></li><li>Distribution<ul><li>Z-test: Normal distribution</li><li>T-test: Student&rsquo;s t-distribtuion</li></ul></li></ul></li></ul><ul><li>P-value</li></ul><ul><li>Critical value</li></ul><ul><li><p>Example</p><p>a teacher claims <code>mean score of his class is above mean score of the school</code>, providing:</p><ul><li>random 30 sample of his class with mean score 112.5</li><li>mean score of school 100, std 15</li></ul><p>the process</p><ol><li>set H_0, H_1</li><li>state p-value</li><li>determin the rejection region and the critical value</li><li>compute Z score, compare with critical value</li><li>result: reject the null hypothesis or not</li></ol></li></ul></li></ul><ul><li>Cross validation</li></ul></li></ul></li></ul><ul><li>Lecture 11</li></ul><ul><li>Lecture 12</li></ul><ul><li>Lecture 13</li></ul><h4 id=tutorial>Tutorial</h4><ul><li>DONE Tutorial 1</li></ul><ul><li>DONE Tutorial 2</li></ul><ul><li>DONE Tutorial 3</li></ul><ul><li>DONE Tutorial 4</li></ul><ul><li>DONE Tutorial 5</li></ul><ul><li>DONE Tutorial 6</li></ul><ul><li>DONE Tutorial 7</li></ul><ul><li>DONE Tutorial 8</li></ul><ul><li>DONE Tutorial 9</li></ul><ul><li>Tutorial 10</li></ul><ul><li>Tutorial 11</li></ul><ul><li>Tutorial 12</li></ul><ul><li>Tutorial 13</li></ul><h2 id=threads>Threads</h2><h3 id=thread-lecture-notes>THREAD Lecture notes</h3><h4 id=resource>Resource</h4><h4 id=semana-3>TODO Semana 3</h4><ul><li><p>Data Analysis</p><ul><li>Descriptive analysis</li></ul><ul><li>exploratory analysi</li></ul></li></ul><ul><li><p>Data Analytics</p><ul><li>diagnostic analytics</li></ul><ul><li>predictive analytics</li></ul><ul><li>prescriptive analytics</li></ul></li></ul><h2 id=notes>Notes</h2><h3 id=some-python-usage>some python usage</h3><h2 id=cw2>CW2</h2><p>The task is to look at the data, and find something..?</p><h3 id=tasks>Tasks</h3><ul><li>Task1:</li><li>Task2:</li><li>Task3: unsupervised</li></ul><h3 id=playing-around>Playing around</h3><h4 id=preprocessing>Preprocessing</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#f92672>as</span> np
+<span style=color:#f92672>import</span> pandas <span style=color:#f92672>as</span> pd
+<span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#f92672>as</span> plt
+<span style=color:#f92672>from</span> sklearn.neighbors <span style=color:#f92672>import</span> KNeighborsClassifier
+<span style=color:#f92672>from</span>  sklearn.model_selection <span style=color:#f92672>import</span> train_test_split
+
+df <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>read_csv(<span style=color:#e6db74>&#34;resource/CW_Data.csv&#34;</span>)
+
+df <span style=color:#f92672>=</span> df<span style=color:#f92672>.</span>dropna()
+df <span style=color:#f92672>=</span> df<span style=color:#f92672>.</span>drop(columns <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ID&#34;</span>)
+X_all <span style=color:#f92672>=</span> df[[<span style=color:#e6db74>&#34;Q1&#34;</span>,<span style=color:#e6db74>&#34;Q2&#34;</span>,<span style=color:#e6db74>&#34;Q3&#34;</span>,<span style=color:#e6db74>&#34;Q4&#34;</span>,<span style=color:#e6db74>&#34;Q5&#34;</span>]]
+y_all <span style=color:#f92672>=</span> df[<span style=color:#e6db74>&#34;Programme&#34;</span>]
+X_train,X_test,y_train,y_test <span style=color:#f92672>=</span> train_test_split(df[[<span style=color:#e6db74>&#34;Q1&#34;</span>,<span style=color:#e6db74>&#34;Q2&#34;</span>,<span style=color:#e6db74>&#34;Q3&#34;</span>,<span style=color:#e6db74>&#34;Q4&#34;</span>,<span style=color:#e6db74>&#34;Q5&#34;</span>]],df[<span style=color:#e6db74>&#34;Programme&#34;</span>],test_size <span style=color:#f92672>=</span> <span style=color:#f92672>.</span><span style=color:#ae81ff>3</span>)
+df
+
+
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>Q1   Q2    Q3    Q4    Q5  Programme
+0    32.0  7.0   3.0  12.0   4.0        1.0
+1    32.0  7.0  10.0  12.0  12.0        2.0
+2    12.0  0.0   0.0   0.0   0.0        1.0
+3    16.0  0.0   2.0   0.0   1.0        3.0
+4    28.0  0.0   0.0   0.0   0.0        2.0
+..    ...  ...   ...   ...   ...        ...
+509  26.0  0.0   7.0   0.0   4.0        2.0
+510  34.0  5.0  10.0  20.0  20.0        2.0
+511  14.0  7.0  10.0   2.0   0.0        1.0
+512  22.0  1.0  10.0   0.0   6.0        0.0
+513  24.0  0.0  10.0   2.0   4.0        0.0
+
+[514 rows x 6 columns]
+</code></pre></div><h4 id=pca>PCA</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> sklearn.decomposition <span style=color:#f92672>as</span> sd
+pca <span style=color:#f92672>=</span> sd<span style=color:#f92672>.</span>PCA(n_components<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>)
+pcaed_df <span style=color:#f92672>=</span> pca<span style=color:#f92672>.</span>fit_transform(df)
+pcaed_df,len(pcaed_df)
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>(array([[ -4.8209599 ,  -7.15654506],
+[-10.44146518,  -1.0091752 ],
+[ 17.86451187,   2.0547266 ],
+...,
+[ 12.36908206,   0.20398769],
+[  6.08437123,   0.99583379],
+[  5.01219816,  -2.06698548]]),
+514)
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>pcaed_df_x <span style=color:#f92672>=</span> []
+pcaed_df_y <span style=color:#f92672>=</span> []
+
+<span style=color:#66d9ef>for</span> item <span style=color:#f92672>in</span> pcaed_df:
+    pcaed_df_x<span style=color:#f92672>.</span>append(item[<span style=color:#ae81ff>0</span>])
+    pcaed_df_y<span style=color:#f92672>.</span>append(item[<span style=color:#ae81ff>1</span>])
+
+plt<span style=color:#f92672>.</span>scatter(x <span style=color:#f92672>=</span> pcaed_df_x, y <span style=color:#f92672>=</span> pcaed_df_y)
+plt<span style=color:#f92672>.</span>show()
+
+</code></pre></div><figure><img src=/ox-hugo/K0fmEC.png></figure><h4 id=mlpclassification-0-dot-53-accuracy>MLPClassification: 0.53 accuracy</h4><ul><li><p>preprocessing</p><p>MLP is sensitive to the scale of data, so better squeeze everything into [0,1] [-1,+1], or mean = 0 variance = 1</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> sklearn.preprocessing <span style=color:#f92672>import</span> StandardScaler
+scaler <span style=color:#f92672>=</span> StandardScaler()
+<span style=color:#75715e># Don&#39;t cheat - fit only on training data</span>
+scaler<span style=color:#f92672>.</span>fit(X_train)
+X_train <span style=color:#f92672>=</span> scaler<span style=color:#f92672>.</span>transform(X_train)
+<span style=color:#75715e># apply same transformation to test data</span>
+X_test <span style=color:#f92672>=</span> scaler<span style=color:#f92672>.</span>transform(X_test)
+X_test
+y_train
+scaler<span style=color:#f92672>.</span>fit(X_all)
+X_tran <span style=color:#f92672>=</span> scaler<span style=color:#f92672>.</span>transform(X_all)
+X_tran
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>array([[ 0.85263779,  1.06261764, -1.26152125,  1.06866748, -0.58574649],
+[ 0.85263779,  1.06261764,  0.58058648,  1.06866748,  0.60603459],
+[-1.91412877, -1.11465928, -2.05099599, -0.83091206, -1.18163703],
+...,
+[-1.63745212,  1.06261764,  0.58058648, -0.51431547, -1.18163703],
+[-0.53074549, -0.80361972,  0.58058648, -0.83091206, -0.28780122],
+[-0.25406884, -1.11465928,  0.58058648, -0.51431547, -0.58574649]])
+</code></pre></div></li></ul><ul><li><p>Classification</p><ul><li><p>example</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> sklearn.neural_network <span style=color:#f92672>import</span> MLPClassifier
+X <span style=color:#f92672>=</span> [[<span style=color:#ae81ff>0.</span>, <span style=color:#ae81ff>0.</span>], [<span style=color:#ae81ff>1.</span>, <span style=color:#ae81ff>1.</span>]]
+y <span style=color:#f92672>=</span> [<span style=color:#ae81ff>0.0</span>, <span style=color:#ae81ff>1.0</span>]
+clf <span style=color:#f92672>=</span> MLPClassifier(solver<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;lbfgs&#39;</span>, alpha<span style=color:#f92672>=</span><span style=color:#ae81ff>1e-5</span>,
+            hidden_layer_sizes<span style=color:#f92672>=</span>(<span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>2</span>), random_state<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>)
+
+clf<span style=color:#f92672>.</span>fit(X, y)
+clf<span style=color:#f92672>.</span>predict([[<span style=color:#ae81ff>2.</span>, <span style=color:#ae81ff>2.</span>], [<span style=color:#f92672>-</span><span style=color:#ae81ff>1.</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>2.</span>]])
+len(y)
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>2
+</code></pre></div></li></ul><ul><li><p>Doing it</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> sklearn.neural_network <span style=color:#f92672>import</span> MLPClassifier
+clf <span style=color:#f92672>=</span> MLPClassifier(solver<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;lbfgs&#39;</span>, alpha<span style=color:#f92672>=</span><span style=color:#ae81ff>1e-5</span>,
+            hidden_layer_sizes<span style=color:#f92672>=</span>(<span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>2</span>), random_state<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>)
+clf<span style=color:#f92672>.</span>fit(X_train,y_train)
+prediction <span style=color:#f92672>=</span> clf<span style=color:#f92672>.</span>predict(X_test)
+correct <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>where(prediction <span style=color:#f92672>==</span> y_test,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>0</span>)<span style=color:#f92672>.</span>sum()
+accuracy <span style=color:#f92672>=</span> correct<span style=color:#f92672>/</span>(len(y_test))
+accuracy
+
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>0.4967741935483871
+</code></pre></div></li></ul><ul><li><p>cross-validation doing it</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>  <span style=color:#f92672>from</span> sklearn.model_selection <span style=color:#f92672>import</span> cross_val_score
+<span style=color:#75715e># in preprocessing seccion, have new X_tran.</span>
+  clf <span style=color:#f92672>=</span> MLPClassifier(solver<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;lbfgs&#39;</span>, alpha<span style=color:#f92672>=</span><span style=color:#ae81ff>1e-5</span>,
+            hidden_layer_sizes<span style=color:#f92672>=</span>(<span style=color:#ae81ff>10</span>,<span style=color:#ae81ff>7</span>), random_state<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>)
+  scores <span style=color:#f92672>=</span> cross_val_score(clf, X_tran, y_all, cv<span style=color:#f92672>=</span><span style=color:#ae81ff>10</span>)
+  scores
+  <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>%0.2f</span><span style=color:#e6db74> accuracy with a standard deqviation of </span><span style=color:#e6db74>%0.2f</span><span style=color:#e6db74>&#34;</span> <span style=color:#f92672>%</span> (scores<span style=color:#f92672>.</span>mean(), scores<span style=color:#f92672>.</span>std())
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>&#39;0.53 accuracy with a standard deviation of 0.09&#39;
+</code></pre></div></li></ul></li></ul><h4 id=knn-0-dot-48-accuracy>KNN: 0.48 accuracy</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>accuracies <span style=color:#f92672>=</span> []
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>5</span>):
+    X_train, X_test, y_train, y_test <span style=color:#f92672>=</span> train_test_split(df[[<span style=color:#e6db74>&#34;Q1&#34;</span>,<span style=color:#e6db74>&#34;Q2&#34;</span>,<span style=color:#e6db74>&#34;Q3&#34;</span>,<span style=color:#e6db74>&#34;Q4&#34;</span>,<span style=color:#e6db74>&#34;Q5&#34;</span>]],df[<span style=color:#e6db74>&#34;Programme&#34;</span>],test_size <span style=color:#f92672>=</span> <span style=color:#f92672>.</span><span style=color:#ae81ff>3</span>)
+
+    classifier <span style=color:#f92672>=</span> KNeighborsClassifier(n_neighbors <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>)
+    classifier<span style=color:#f92672>.</span>fit(X_train,y_train)
+
+    prediction <span style=color:#f92672>=</span> classifier<span style=color:#f92672>.</span>predict(X_test)
+    accuracy <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>where(prediction <span style=color:#f92672>==</span> y_test,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>0</span>)<span style=color:#f92672>.</span>sum()<span style=color:#f92672>/</span>(len(y_test))
+    accuracies<span style=color:#f92672>.</span>append(accuracy)
+np<span style=color:#f92672>.</span>average(accuracies)
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[31]:
+: 0.4774193548387096
+</code></pre></div><ul><li><p>cross-validating it</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> sklearn.model_selection <span style=color:#f92672>import</span> cross_val_score
+model <span style=color:#f92672>=</span> KNeighborsClassifier(n_neighbors <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>)
+scores <span style=color:#f92672>=</span> cross_val_score(model,X_tran,y_all,cv<span style=color:#f92672>=</span><span style=color:#ae81ff>10</span>)
+scores<span style=color:#f92672>.</span>mean()
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>0.4864253393665159
+</code></pre></div></li></ul><h4 id=cluster-use-q1-and-q2>Cluster: use Q1 and Q2</h4><p>0.53 accuracy
+the labels and centroids are stored in <code>kmeans</code>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span>  sklearn.cluster <span style=color:#f92672>import</span> KMeans
+kmeans <span style=color:#f92672>=</span> KMeans(n_clusters <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>)
+X <span style=color:#f92672>=</span>df[[<span style=color:#e6db74>&#34;Q1&#34;</span>,<span style=color:#e6db74>&#34;Q2&#34;</span>]]
+<span style=color:#75715e># X = list(zip(df[[&#34;Q1&#34;,&#34;Q2&#34;]]))</span>
+X <span style=color:#f92672>=</span> list(zip(X_all<span style=color:#f92672>.</span>Q1,X_all<span style=color:#f92672>.</span>Q2,X_all<span style=color:#f92672>.</span>Q3,X_all<span style=color:#f92672>.</span>Q4,X_all<span style=color:#f92672>.</span>Q5))
+kmeans<span style=color:#f92672>.</span>fit(X)
+
+centroids <span style=color:#f92672>=</span> kmeans<span style=color:#f92672>.</span>cluster_centers_
+labels<span style=color:#f92672>=</span>  kmeans<span style=color:#f92672>.</span>labels_
+colors <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;g.&#34;</span>,<span style=color:#e6db74>&#34;r.&#34;</span>,<span style=color:#e6db74>&#34;c.&#34;</span>,<span style=color:#e6db74>&#34;y.&#34;</span>,<span style=color:#e6db74>&#34;b.&#34;</span>]
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(X)):
+    plt<span style=color:#f92672>.</span>plot(X[i][<span style=color:#ae81ff>0</span>],X[i][<span style=color:#ae81ff>1</span>],colors[labels[i]],markersize <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>)
+plt<span style=color:#f92672>.</span>scatter(centroids[:,<span style=color:#ae81ff>0</span>],centroids[:,<span style=color:#ae81ff>1</span>],marker <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;x&#34;</span>,s <span style=color:#f92672>=</span> <span style=color:#ae81ff>150</span>, linewidth<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>,zorder <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>)
+plt<span style=color:#f92672>.</span>show()
+
+
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>programmes <span style=color:#f92672>=</span> df[<span style=color:#e6db74>&#34;Programme&#34;</span>]
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(X)):
+    plt<span style=color:#f92672>.</span>plot(X[i][<span style=color:#ae81ff>0</span>],X[i][<span style=color:#ae81ff>1</span>],colors[int(programmes[i])],markersize <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>)
+plt<span style=color:#f92672>.</span>show()
+
+</code></pre></div><figure><img src=/ox-hugo/HPvObK.png></figure><p>truth: find mode of the value (prediction - actual) in 1 cluster. any thing not the mode is incorret</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>y_all_list <span style=color:#f92672>=</span> list(y_all)
+
+clusters <span style=color:#f92672>=</span> [[], [], [], [], []]
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>, len(labels)):
+    clusters[labels[i]]<span style=color:#f92672>.</span>append(i)
+<span style=color:#75715e># clusters.append(2)</span>
+right <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#75715e># print(clusters)</span>
+<span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>5</span>):
+    yOfThisCluster <span style=color:#f92672>=</span> []
+    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> clusters[j]:
+	yOfThisCluster<span style=color:#f92672>.</span>append(y_all_list[i])
+    counts <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>bincount(yOfThisCluster)
+    <span style=color:#75715e># print(counts)</span>
+    right <span style=color:#f92672>+=</span> np<span style=color:#f92672>.</span>max(counts)
+
+<span style=color:#e6db74>&#34;number of right prediction: &#34;</span> ,right,<span style=color:#e6db74>&#34;accuracy: &#34;</span>,(right<span style=color:#f92672>/</span>len(labels))
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>(&#39;number of right prediction: &#39;, 275, &#39;accuracy: &#39;, 0.5350194552529183)
+</code></pre></div><h4 id=density-estimation-failed>Density Estimation: failed</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#f92672>as</span> np
+<span style=color:#f92672>from</span> sklearn.cluster <span style=color:#f92672>import</span> MeanShift
+<span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#f92672>as</span> plt
+<span style=color:#f92672>from</span> mpl_toolkits.mplot3d <span style=color:#f92672>import</span> Axes3D
+<span style=color:#f92672>import</span> matplotlib.style <span style=color:#f92672>as</span> stl
+stl<span style=color:#f92672>.</span>use(<span style=color:#e6db74>&#34;ggplot&#34;</span>)
+
+X <span style=color:#f92672>=</span> list(zip(df<span style=color:#f92672>.</span>Q1,df<span style=color:#f92672>.</span>Q2,df<span style=color:#f92672>.</span>Q3))
+<span style=color:#66d9ef>print</span>(X)
+ms <span style=color:#f92672>=</span> MeanShift()
+ms<span style=color:#f92672>.</span>fit(X)
+centroids <span style=color:#f92672>=</span> ms<span style=color:#f92672>.</span>cluster_centers_
+labels <span style=color:#f92672>=</span> ms<span style=color:#f92672>.</span>labels_
+n_clusters_ <span style=color:#f92672>=</span> len(np<span style=color:#f92672>.</span>unique(labels))
+<span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;estimated clusters: &#34;</span> ,n_clusters_)
+colors<span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;r&#34;</span>,<span style=color:#e6db74>&#34;g&#34;</span>,<span style=color:#e6db74>&#34;b&#34;</span>,<span style=color:#e6db74>&#34;c&#34;</span>,<span style=color:#e6db74>&#34;y&#34;</span>,<span style=color:#e6db74>&#34;m&#34;</span>,<span style=color:#e6db74>&#34;k&#34;</span>]
+
+fig <span style=color:#f92672>=</span> plt<span style=color:#f92672>.</span>figure()
+ax <span style=color:#f92672>=</span> fig<span style=color:#f92672>.</span>add_subplot(<span style=color:#ae81ff>111</span>,projection <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;3d&#34;</span>)
+
+
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(X)):
+    ax<span style=color:#f92672>.</span>scatter(X[i][<span style=color:#ae81ff>0</span>],X[i][<span style=color:#ae81ff>1</span>],X[i][<span style=color:#ae81ff>2</span>], c <span style=color:#f92672>=</span> colors[int(programmes[i])],marker <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;o&#34;</span>)
+ax<span style=color:#f92672>.</span>scatter(centroids[:,<span style=color:#ae81ff>0</span>],centroids[:,<span style=color:#ae81ff>1</span>],centroids[:,<span style=color:#ae81ff>2</span>],marker <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;x&#34;</span>,s <span style=color:#f92672>=</span> <span style=color:#ae81ff>150</span>, linewidth <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>,zorder <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>)
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[54]:
+: &lt;mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x7f8ec7e3da30&gt;
+</code></pre></div><p><img src=/ox-hugo/PLDY4h.png alt>
+<img src=/ox-hugo/87HNaf.png alt></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(X)):
+      ax<span style=color:#f92672>.</span>scatter(X[i][<span style=color:#ae81ff>0</span>],X[i][<span style=color:#ae81ff>1</span>],X[i][<span style=color:#ae81ff>2</span>], c <span style=color:#f92672>=</span> colors[int(programmes[i])],marker <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;o&#34;</span>)
+plt<span style=color:#f92672>.</span>show()
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[53]:
+</code></pre></div><h4 id=svm-dot-56-accurace>SVM: .56 accurace</h4><p>Support Vector machine.
+Draw boarder lines.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> sklearn.svm <span style=color:#f92672>import</span> SVC
+<span style=color:#f92672>from</span> sklearn.model_selection <span style=color:#f92672>import</span> cross_val_score
+svm_kernel_types <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;linear&#34;</span>,<span style=color:#e6db74>&#34;rbf&#34;</span>,<span style=color:#e6db74>&#34;poly&#34;</span>]
+svm <span style=color:#f92672>=</span> SVC(kernel <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;linear&#34;</span>)
+scores <span style=color:#f92672>=</span> cross_val_score(svm,X_tran,y_all,cv <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>)
+scores<span style=color:#f92672>.</span>mean(),scores<span style=color:#f92672>.</span>std()
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>(0.5620663650075415, 0.06470135554979618)
+</code></pre></div><h4 id=desicion-tree-dot-42-accuracy>Desicion Tree: .42 accuracy</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> sklearn.model_selection <span style=color:#f92672>import</span> cross_val_score
+<span style=color:#f92672>from</span> sklearn <span style=color:#f92672>import</span> tree
+
+  model <span style=color:#f92672>=</span> tree<span style=color:#f92672>.</span>DecisionTreeClassifier(max_depth <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>)
+  scores <span style=color:#f92672>=</span> cross_val_score(model,X_tran,y_all,cv <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>)
+  scores<span style=color:#f92672>.</span>mean(),scores<span style=color:#f92672>.</span>std()
+  model <span style=color:#f92672>=</span> model<span style=color:#f92672>.</span>fit(X_tran,y_all)
+  tree<span style=color:#f92672>.</span>plot_tree(model)
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>[Text(180.76014799154333, 211.7178947368421, &#39;X[4] &lt;= -0.064\ngini = 0.626\nsamples = 514\nvalue = [12, 164, 262, 30, 46]&#39;),
+Text(106.26736918604651, 200.2736842105263, &#39;X[1] &lt;= -0.648\ngini = 0.638\nsamples = 265\nvalue = [11, 117, 105, 10, 22]&#39;),
+Text(50.487645348837205, 188.82947368421054, &#39;X[0] &lt;= -1.776\ngini = 0.666\nsamples = 149\nvalue = [11, 50, 67, 4, 17]&#39;),
+Text(11.325158562367864, 177.38526315789474, &#39;X[0] &lt;= -2.329\ngini = 0.715\nsamples = 23\nvalue = [6, 9, 5, 0, 3]&#39;),
+Text(8.4938689217759, 165.94105263157894, &#39;X[1] &lt;= -0.959\ngini = 0.691\nsamples = 9\nvalue = [4, 1, 2, 0, 2]&#39;),
+Text(7.078224101479915, 154.49684210526317, &#39;X[0] &lt;= -2.882\ngini = 0.625\nsamples = 8\nvalue = [4, 0, 2, 0, 2]&#39;),
+Text(5.662579281183932, 143.05263157894737, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(8.4938689217759, 143.05263157894737, &#39;X[4] &lt;= -0.437\ngini = 0.653\nsamples = 7\nvalue = [3, 0, 2, 0, 2]&#39;),
+Text(7.078224101479915, 131.60842105263157, &#39;X[2] &lt;= -0.34\ngini = 0.667\nsamples = 6\nvalue = [2, 0, 2, 0, 2]&#39;),
+Text(5.662579281183932, 120.16421052631578, &#39;X[2] &lt;= -1.656\ngini = 0.64\nsamples = 5\nvalue = [1, 0, 2, 0, 2]&#39;),
+Text(4.24693446088795, 108.72, &#39;X[4] &lt;= -0.884\ngini = 0.625\nsamples = 4\nvalue = [1, 0, 2, 0, 1]&#39;),
+Text(2.831289640591966, 97.27578947368421, &#39;X[0] &lt;= -2.606\ngini = 0.444\nsamples = 3\nvalue = [1, 0, 2, 0, 0]&#39;),
+Text(1.415644820295983, 85.83157894736843, &#39;gini = 0.5\nsamples = 2\nvalue = [1, 0, 1, 0, 0]&#39;),
+Text(4.24693446088795, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(5.662579281183932, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(7.078224101479915, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(8.4938689217759, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(9.909513742071882, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(9.909513742071882, 154.49684210526317, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(14.15644820295983, 165.94105263157894, &#39;X[3] &lt;= -0.673\ngini = 0.602\nsamples = 14\nvalue = [2, 8, 3, 0, 1]&#39;),
+Text(12.740803382663847, 154.49684210526317, &#39;X[0] &lt;= -2.052\ngini = 0.556\nsamples = 13\nvalue = [1, 8, 3, 0, 1]&#39;),
+Text(11.325158562367864, 143.05263157894737, &#39;gini = 0.5\nsamples = 4\nvalue = [0, 2, 2, 0, 0]&#39;),
+Text(14.15644820295983, 143.05263157894737, &#39;X[4] &lt;= -0.884\ngini = 0.519\nsamples = 9\nvalue = [1, 6, 1, 0, 1]&#39;),
+Text(12.740803382663847, 131.60842105263157, &#39;X[2] &lt;= -0.735\ngini = 0.562\nsamples = 8\nvalue = [1, 5, 1, 0, 1]&#39;),
+Text(11.325158562367864, 120.16421052631578, &#39;gini = 0.612\nsamples = 7\nvalue = [1, 4, 1, 0, 1]&#39;),
+Text(14.15644820295983, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(15.572093023255814, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(15.572093023255814, 154.49684210526317, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(89.65013213530655, 177.38526315789474, &#39;X[0] &lt;= 0.714\ngini = 0.637\nsamples = 126\nvalue = [5, 41, 62, 4, 14]&#39;),
+Text(73.12690274841438, 165.94105263157894, &#39;X[3] &lt;= 0.515\ngini = 0.614\nsamples = 106\nvalue = [4, 33, 56, 4, 9]&#39;),
+Text(54.94471458773784, 154.49684210526317, &#39;X[1] &lt;= -0.959\ngini = 0.628\nsamples = 96\nvalue = [4, 32, 48, 4, 8]&#39;),
+Text(31.67505285412262, 143.05263157894737, &#39;X[2] &lt;= -1.393\ngini = 0.594\nsamples = 61\nvalue = [2, 18, 34, 4, 3]&#39;),
+Text(22.296405919661733, 131.60842105263157, &#39;X[0] &lt;= -1.222\ngini = 0.608\nsamples = 24\nvalue = [0, 11, 10, 1, 2]&#39;),
+Text(16.9877378435518, 120.16421052631578, &#39;X[0] &lt;= -1.499\ngini = 0.56\nsamples = 5\nvalue = [0, 1, 3, 1, 0]&#39;),
+Text(15.572093023255814, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(18.40338266384778, 108.72, &#39;X[2] &lt;= -1.788\ngini = 0.375\nsamples = 4\nvalue = [0, 0, 3, 1, 0]&#39;),
+Text(16.9877378435518, 97.27578947368421, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]&#39;),
+Text(19.819027484143763, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(27.60507399577167, 120.16421052631578, &#39;X[0] &lt;= -0.946\ngini = 0.576\nsamples = 19\nvalue = [0, 10, 7, 0, 2]&#39;),
+Text(24.065961945031713, 108.72, &#39;X[4] &lt;= -1.033\ngini = 0.48\nsamples = 5\nvalue = [0, 3, 0, 0, 2]&#39;),
+Text(22.65031712473573, 97.27578947368421, &#39;X[3] &lt;= -0.673\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 0, 0, 2]&#39;),
+Text(21.234672304439744, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2]&#39;),
+Text(24.065961945031713, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(25.481606765327694, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(31.144186046511628, 108.72, &#39;X[4] &lt;= -0.884\ngini = 0.5\nsamples = 14\nvalue = [0, 7, 7, 0, 0]&#39;),
+Text(29.728541226215643, 97.27578947368421, &#39;X[0] &lt;= -0.116\ngini = 0.486\nsamples = 12\nvalue = [0, 7, 5, 0, 0]&#39;),
+Text(26.89725158562368, 85.83157894736843, &#39;X[0] &lt;= -0.392\ngini = 0.408\nsamples = 7\nvalue = [0, 5, 2, 0, 0]&#39;),
+Text(25.481606765327694, 74.38736842105263, &#39;X[0] &lt;= -0.669\ngini = 0.5\nsamples = 4\nvalue = [0, 2, 2, 0, 0]&#39;),
+Text(24.065961945031713, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(26.89725158562368, 62.943157894736856, &#39;gini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(28.31289640591966, 74.38736842105263, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]&#39;),
+Text(32.55983086680761, 85.83157894736843, &#39;X[0] &lt;= 0.438\ngini = 0.48\nsamples = 5\nvalue = [0, 2, 3, 0, 0]&#39;),
+Text(31.144186046511628, 74.38736842105263, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(33.9754756871036, 74.38736842105263, &#39;X[3] &lt;= -0.673\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 1, 0, 0]&#39;),
+Text(32.55983086680761, 62.943157894736856, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(35.39112050739958, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(32.55983086680761, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(41.05369978858351, 131.60842105263157, &#39;X[0] &lt;= -1.222\ngini = 0.533\nsamples = 37\nvalue = [2, 7, 24, 3, 1]&#39;),
+Text(35.39112050739958, 120.16421052631578, &#39;X[2] &lt;= -0.34\ngini = 0.625\nsamples = 4\nvalue = [0, 2, 1, 0, 1]&#39;),
+Text(33.9754756871036, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(36.80676532769556, 108.72, &#39;X[0] &lt;= -1.499\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 0, 0, 1]&#39;),
+Text(35.39112050739958, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(38.22241014799154, 97.27578947368421, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 1]&#39;),
+Text(46.71627906976744, 120.16421052631578, &#39;X[0] &lt;= -0.669\ngini = 0.479\nsamples = 33\nvalue = [2, 5, 23, 3, 0]&#39;),
+Text(45.30063424947146, 108.72, &#39;gini = 0.0\nsamples = 10\nvalue = [0, 0, 10, 0, 0]&#39;),
+Text(48.131923890063426, 108.72, &#39;X[0] &lt;= -0.392\ngini = 0.609\nsamples = 23\nvalue = [2, 5, 13, 3, 0]&#39;),
+Text(41.05369978858351, 97.27578947368421, &#39;X[4] &lt;= -1.033\ngini = 0.5\nsamples = 4\nvalue = [0, 0, 2, 2, 0]&#39;),
+Text(39.63805496828753, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(42.46934460887949, 85.83157894736843, &#39;X[3] &lt;= -0.514\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 1, 2, 0]&#39;),
+Text(41.05369978858351, 74.38736842105263, &#39;X[4] &lt;= -0.735\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(39.63805496828753, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(42.46934460887949, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(43.88498942917548, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(55.21014799154334, 97.27578947368421, &#39;X[4] &lt;= -0.735\ngini = 0.582\nsamples = 19\nvalue = [2, 5, 11, 1, 0]&#39;),
+Text(49.54756871035941, 85.83157894736843, &#39;X[3] &lt;= -0.673\ngini = 0.645\nsamples = 11\nvalue = [1, 4, 5, 1, 0]&#39;),
+Text(46.71627906976744, 74.38736842105263, &#39;X[4] &lt;= -1.033\ngini = 0.625\nsamples = 4\nvalue = [1, 2, 0, 1, 0]&#39;),
+Text(45.30063424947146, 62.943157894736856, &#39;X[0] &lt;= -0.116\ngini = 0.444\nsamples = 3\nvalue = [1, 2, 0, 0, 0]&#39;),
+Text(43.88498942917548, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(46.71627906976744, 51.49894736842106, &#39;X[0] &lt;= 0.161\ngini = 0.5\nsamples = 2\nvalue = [1, 1, 0, 0, 0]&#39;),
+Text(45.30063424947146, 40.05473684210526, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(48.131923890063426, 40.05473684210526, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(48.131923890063426, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(52.378858350951376, 74.38736842105263, &#39;X[4] &lt;= -1.033\ngini = 0.408\nsamples = 7\nvalue = [0, 2, 5, 0, 0]&#39;),
+Text(50.96321353065539, 62.943157894736856, &#39;X[3] &lt;= 0.198\ngini = 0.278\nsamples = 6\nvalue = [0, 1, 5, 0, 0]&#39;),
+Text(49.54756871035941, 51.49894736842106, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 0, 4, 0, 0]&#39;),
+Text(52.378858350951376, 51.49894736842106, &#39;X[0] &lt;= 0.438\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(50.96321353065539, 40.05473684210526, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(53.79450317124736, 40.05473684210526, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(53.79450317124736, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(60.87272727272727, 85.83157894736843, &#39;X[3] &lt;= -0.673\ngini = 0.406\nsamples = 8\nvalue = [1, 1, 6, 0, 0]&#39;),
+Text(58.041437632135306, 74.38736842105263, &#39;X[0] &lt;= -0.116\ngini = 0.278\nsamples = 6\nvalue = [0, 1, 5, 0, 0]&#39;),
+Text(56.62579281183932, 62.943157894736856, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(59.45708245243129, 62.943157894736856, &#39;X[2] &lt;= 0.186\ngini = 0.375\nsamples = 4\nvalue = [0, 1, 3, 0, 0]&#39;),
+Text(58.041437632135306, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(60.87272727272727, 51.49894736842106, &#39;gini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(63.704016913319236, 74.38736842105263, &#39;X[0] &lt;= 0.023\ngini = 0.5\nsamples = 2\nvalue = [1, 0, 1, 0, 0]&#39;),
+Text(62.288372093023256, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(65.11966173361522, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(78.21437632135306, 143.05263157894737, &#39;X[3] &lt;= -0.752\ngini = 0.656\nsamples = 35\nvalue = [2, 14, 14, 0, 5]&#39;),
+Text(67.9509513742072, 131.60842105263157, &#39;X[0] &lt;= -1.222\ngini = 0.648\nsamples = 18\nvalue = [1, 9, 4, 0, 4]&#39;),
+Text(65.11966173361522, 120.16421052631578, &#39;X[2] &lt;= -0.472\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(63.704016913319236, 108.72, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(66.5353065539112, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(70.78224101479915, 120.16421052631578, &#39;X[4] &lt;= -0.213\ngini = 0.622\nsamples = 15\nvalue = [1, 8, 2, 0, 4]&#39;),
+Text(69.36659619450317, 108.72, &#39;X[2] &lt;= -1.262\ngini = 0.582\nsamples = 14\nvalue = [1, 8, 1, 0, 4]&#39;),
+Text(67.9509513742072, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(70.78224101479915, 97.27578947368421, &#39;X[2] &lt;= 0.449\ngini = 0.625\nsamples = 12\nvalue = [1, 6, 1, 0, 4]&#39;),
+Text(69.36659619450317, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2]&#39;),
+Text(72.19788583509514, 85.83157894736843, &#39;X[4] &lt;= -1.033\ngini = 0.58\nsamples = 10\nvalue = [1, 6, 1, 0, 2]&#39;),
+Text(69.36659619450317, 74.38736842105263, &#39;X[0] &lt;= -0.116\ngini = 0.375\nsamples = 4\nvalue = [0, 3, 1, 0, 0]&#39;),
+Text(67.9509513742072, 62.943157894736856, &#39;X[0] &lt;= -0.669\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(66.5353065539112, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(69.36659619450317, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(70.78224101479915, 62.943157894736856, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(75.0291754756871, 74.38736842105263, &#39;X[4] &lt;= -0.735\ngini = 0.611\nsamples = 6\nvalue = [1, 3, 0, 0, 2]&#39;),
+Text(73.61353065539112, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(76.44482029598308, 62.943157894736856, &#39;X[0] &lt;= -0.807\ngini = 0.56\nsamples = 5\nvalue = [1, 3, 0, 0, 1]&#39;),
+Text(75.0291754756871, 51.49894736842106, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 1]&#39;),
+Text(77.86046511627907, 51.49894736842106, &#39;X[4] &lt;= -0.437\ngini = 0.444\nsamples = 3\nvalue = [1, 2, 0, 0, 0]&#39;),
+Text(76.44482029598308, 40.05473684210526, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(79.27610993657505, 40.05473684210526, &#39;gini = 0.5\nsamples = 2\nvalue = [1, 1, 0, 0, 0]&#39;),
+Text(72.19788583509514, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(88.47780126849894, 131.60842105263157, &#39;X[4] &lt;= -0.362\ngini = 0.561\nsamples = 17\nvalue = [1, 5, 10, 0, 1]&#39;),
+Text(84.93868921775898, 120.16421052631578, &#39;X[4] &lt;= -0.735\ngini = 0.556\nsamples = 13\nvalue = [1, 5, 7, 0, 0]&#39;),
+Text(82.10739957716702, 108.72, &#39;X[0] &lt;= -0.116\ngini = 0.42\nsamples = 10\nvalue = [0, 3, 7, 0, 0]&#39;),
+Text(80.69175475687103, 97.27578947368421, &#39;X[3] &lt;= -0.356\ngini = 0.5\nsamples = 6\nvalue = [0, 3, 3, 0, 0]&#39;),
+Text(79.27610993657505, 85.83157894736843, &#39;X[2] &lt;= 0.054\ngini = 0.375\nsamples = 4\nvalue = [0, 1, 3, 0, 0]&#39;),
+Text(77.86046511627907, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(80.69175475687103, 74.38736842105263, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]&#39;),
+Text(82.10739957716702, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(83.523044397463, 97.27578947368421, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 0, 4, 0, 0]&#39;),
+Text(87.76997885835095, 108.72, &#39;X[2] &lt;= -1.788\ngini = 0.444\nsamples = 3\nvalue = [1, 2, 0, 0, 0]&#39;),
+Text(86.35433403805497, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(89.18562367864693, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(92.0169133192389, 120.16421052631578, &#39;X[2] &lt;= -0.472\ngini = 0.375\nsamples = 4\nvalue = [0, 0, 3, 0, 1]&#39;),
+Text(90.60126849894291, 108.72, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(93.43255813953488, 108.72, &#39;X[0] &lt;= -0.807\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 0, 1]&#39;),
+Text(92.0169133192389, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(94.84820295983086, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(91.30909090909091, 154.49684210526317, &#39;X[3] &lt;= 1.939\ngini = 0.34\nsamples = 10\nvalue = [0, 1, 8, 0, 1]&#39;),
+Text(89.89344608879492, 143.05263157894737, &#39;gini = 0.0\nsamples = 8\nvalue = [0, 0, 8, 0, 0]&#39;),
+Text(92.7247357293869, 143.05263157894737, &#39;X[3] &lt;= 2.098\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 1]&#39;),
+Text(91.30909090909091, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(94.14038054968287, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(106.17336152219873, 165.94105263157894, &#39;X[0] &lt;= 0.991\ngini = 0.685\nsamples = 20\nvalue = [1, 8, 6, 0, 5]&#39;),
+Text(101.21860465116279, 154.49684210526317, &#39;X[1] &lt;= -0.959\ngini = 0.494\nsamples = 9\nvalue = [0, 6, 1, 0, 2]&#39;),
+Text(98.38731501057082, 143.05263157894737, &#39;X[4] &lt;= -0.735\ngini = 0.278\nsamples = 6\nvalue = [0, 5, 1, 0, 0]&#39;),
+Text(96.97167019027484, 131.60842105263157, &#39;X[4] &lt;= -1.033\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 1, 0, 0]&#39;),
+Text(95.55602536997885, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(98.38731501057082, 120.16421052631578, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(99.80295983086681, 131.60842105263157, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]&#39;),
+Text(104.04989429175475, 143.05263157894737, &#39;X[3] &lt;= -0.356\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 0, 0, 2]&#39;),
+Text(102.63424947145877, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(105.46553911205073, 131.60842105263157, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 1]&#39;),
+Text(111.12811839323467, 154.49684210526317, &#39;X[4] &lt;= -0.437\ngini = 0.678\nsamples = 11\nvalue = [1, 2, 5, 0, 3]&#39;),
+Text(109.71247357293869, 143.05263157894737, &#39;X[0] &lt;= 1.544\ngini = 0.64\nsamples = 10\nvalue = [1, 1, 5, 0, 3]&#39;),
+Text(108.2968287526427, 131.60842105263157, &#39;X[3] &lt;= 0.515\ngini = 0.568\nsamples = 9\nvalue = [1, 0, 5, 0, 3]&#39;),
+Text(106.88118393234672, 120.16421052631578, &#39;X[0] &lt;= 1.268\ngini = 0.531\nsamples = 8\nvalue = [1, 0, 5, 0, 2]&#39;),
+Text(104.04989429175475, 108.72, &#39;X[2] &lt;= -1.13\ngini = 0.375\nsamples = 4\nvalue = [1, 0, 3, 0, 0]&#39;),
+Text(102.63424947145877, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(105.46553911205073, 97.27578947368421, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]&#39;),
+Text(109.71247357293869, 108.72, &#39;X[3] &lt;= -0.673\ngini = 0.5\nsamples = 4\nvalue = [0, 0, 2, 0, 2]&#39;),
+Text(108.2968287526427, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(111.12811839323467, 97.27578947368421, &#39;X[1] &lt;= -0.959\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 1, 0, 2]&#39;),
+Text(109.71247357293869, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(112.54376321353065, 85.83157894736843, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 0, 1]&#39;),
+Text(109.71247357293869, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(111.12811839323467, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(112.54376321353065, 143.05263157894737, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(162.0470930232558, 188.82947368421054, &#39;X[3] &lt;= 2.177\ngini = 0.555\nsamples = 116\nvalue = [0, 67, 38, 6, 5]&#39;),
+Text(152.09334038054968, 177.38526315789474, &#39;X[0] &lt;= 0.991\ngini = 0.54\nsamples = 112\nvalue = [0, 67, 35, 5, 5]&#39;),
+Text(136.43276955602536, 165.94105263157894, &#39;X[0] &lt;= -2.329\ngini = 0.523\nsamples = 97\nvalue = [0, 61, 27, 5, 4]&#39;),
+Text(135.0171247357294, 154.49684210526317, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(137.84841437632136, 154.49684210526317, &#39;X[3] &lt;= 1.939\ngini = 0.514\nsamples = 96\nvalue = [0, 61, 27, 4, 4]&#39;),
+Text(136.43276955602536, 143.05263157894737, &#39;X[4] &lt;= -0.809\ngini = 0.504\nsamples = 95\nvalue = [0, 61, 27, 3, 4]&#39;),
+Text(121.39154334038055, 131.60842105263157, &#39;X[0] &lt;= 0.161\ngini = 0.454\nsamples = 38\nvalue = [0, 27, 7, 1, 3]&#39;),
+Text(113.95940803382663, 120.16421052631578, &#39;X[2] &lt;= -1.788\ngini = 0.339\nsamples = 25\nvalue = [0, 20, 2, 0, 3]&#39;),
+Text(112.54376321353065, 108.72, &#39;gini = 0.0\nsamples = 6\nvalue = [0, 6, 0, 0, 0]&#39;),
+Text(115.37505285412261, 108.72, &#39;X[0] &lt;= -1.776\ngini = 0.421\nsamples = 19\nvalue = [0, 14, 2, 0, 3]&#39;),
+Text(113.95940803382663, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(116.7906976744186, 97.27578947368421, &#39;X[0] &lt;= -0.946\ngini = 0.37\nsamples = 18\nvalue = [0, 14, 2, 0, 2]&#39;),
+Text(115.37505285412261, 85.83157894736843, &#39;gini = 0.0\nsamples = 5\nvalue = [0, 5, 0, 0, 0]&#39;),
+Text(118.20634249471459, 85.83157894736843, &#39;X[4] &lt;= -1.033\ngini = 0.473\nsamples = 13\nvalue = [0, 9, 2, 0, 2]&#39;),
+Text(115.37505285412261, 74.38736842105263, &#39;X[2] &lt;= -0.209\ngini = 0.43\nsamples = 11\nvalue = [0, 8, 2, 0, 1]&#39;),
+Text(113.95940803382663, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(116.7906976744186, 62.943157894736856, &#39;X[1] &lt;= 0.907\ngini = 0.32\nsamples = 10\nvalue = [0, 8, 2, 0, 0]&#39;),
+Text(115.37505285412261, 51.49894736842106, &#39;X[3] &lt;= 0.356\ngini = 0.444\nsamples = 6\nvalue = [0, 4, 2, 0, 0]&#39;),
+Text(113.95940803382663, 40.05473684210526, &#39;X[3] &lt;= -0.593\ngini = 0.5\nsamples = 4\nvalue = [0, 2, 2, 0, 0]&#39;),
+Text(112.54376321353065, 28.610526315789485, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(115.37505285412261, 28.610526315789485, &#39;X[2] &lt;= 0.317\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(113.95940803382663, 17.166315789473686, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(116.7906976744186, 17.166315789473686, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(116.7906976744186, 40.05473684210526, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(118.20634249471459, 51.49894736842106, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 4, 0, 0, 0]&#39;),
+Text(121.03763213530655, 74.38736842105263, &#39;X[1] &lt;= 0.441\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 1]&#39;),
+Text(119.62198731501057, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(122.45327695560253, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(128.82367864693447, 120.16421052631578, &#39;X[3] &lt;= 0.198\ngini = 0.556\nsamples = 13\nvalue = [0, 7, 5, 1, 0]&#39;),
+Text(125.2845665961945, 108.72, &#39;X[1] &lt;= 0.752\ngini = 0.444\nsamples = 9\nvalue = [0, 6, 3, 0, 0]&#39;),
+Text(122.45327695560253, 97.27578947368421, &#39;X[0] &lt;= 0.438\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(121.03763213530655, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(123.86892177589851, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(128.11585623678647, 97.27578947368421, &#39;X[0] &lt;= 0.438\ngini = 0.278\nsamples = 6\nvalue = [0, 5, 1, 0, 0]&#39;),
+Text(126.70021141649048, 85.83157894736843, &#39;X[3] &lt;= -0.673\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 1, 0, 0]&#39;),
+Text(125.2845665961945, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(128.11585623678647, 74.38736842105263, &#39;X[4] &lt;= -1.033\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(126.70021141649048, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(129.53150105708244, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(129.53150105708244, 85.83157894736843, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]&#39;),
+Text(132.36279069767443, 108.72, &#39;X[0] &lt;= 0.438\ngini = 0.625\nsamples = 4\nvalue = [0, 1, 2, 1, 0]&#39;),
+Text(130.94714587737843, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(133.7784355179704, 97.27578947368421, &#39;X[1] &lt;= 0.752\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 1, 0]&#39;),
+Text(132.36279069767443, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(135.1940803382664, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(151.4739957716702, 131.60842105263157, &#39;X[0] &lt;= -0.946\ngini = 0.52\nsamples = 57\nvalue = [0, 34, 20, 2, 1]&#39;),
+Text(143.68794926004227, 120.16421052631578, &#39;X[2] &lt;= -0.077\ngini = 0.604\nsamples = 13\nvalue = [0, 4, 7, 1, 1]&#39;),
+Text(138.02536997885835, 108.72, &#39;X[3] &lt;= -0.673\ngini = 0.56\nsamples = 5\nvalue = [0, 3, 1, 1, 0]&#39;),
+Text(136.60972515856236, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(139.44101479915432, 97.27578947368421, &#39;X[3] &lt;= -0.277\ngini = 0.375\nsamples = 4\nvalue = [0, 3, 0, 1, 0]&#39;),
+Text(138.02536997885835, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(140.8566596194503, 85.83157894736843, &#39;X[0] &lt;= -1.222\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 1, 0]&#39;),
+Text(139.44101479915432, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(142.2723044397463, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(149.3505285412262, 108.72, &#39;X[3] &lt;= 0.277\ngini = 0.406\nsamples = 8\nvalue = [0, 1, 6, 0, 1]&#39;),
+Text(147.93488372093023, 97.27578947368421, &#39;X[0] &lt;= -1.499\ngini = 0.245\nsamples = 7\nvalue = [0, 1, 6, 0, 0]&#39;),
+Text(146.51923890063424, 85.83157894736843, &#39;X[2] &lt;= 0.449\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(145.10359408033827, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(147.93488372093023, 74.38736842105263, &#39;X[1] &lt;= -0.182\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(146.51923890063424, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(149.3505285412262, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(149.3505285412262, 85.83157894736843, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 0, 4, 0, 0]&#39;),
+Text(150.7661733615222, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(159.2600422832981, 120.16421052631578, &#39;X[1] &lt;= -0.337\ngini = 0.447\nsamples = 44\nvalue = [0, 30, 13, 1, 0]&#39;),
+Text(157.8443974630021, 108.72, &#39;gini = 0.0\nsamples = 6\nvalue = [0, 6, 0, 0, 0]&#39;),
+Text(160.67568710359407, 108.72, &#39;X[1] &lt;= -0.026\ngini = 0.483\nsamples = 38\nvalue = [0, 24, 13, 1, 0]&#39;),
+Text(159.2600422832981, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(162.09133192389007, 97.27578947368421, &#39;X[1] &lt;= 1.685\ngini = 0.461\nsamples = 36\nvalue = [0, 24, 11, 1, 0]&#39;),
+Text(160.67568710359407, 85.83157894736843, &#39;X[1] &lt;= 0.907\ngini = 0.447\nsamples = 35\nvalue = [0, 24, 10, 1, 0]&#39;),
+Text(153.59746300211415, 74.38736842105263, &#39;X[3] &lt;= -0.039\ngini = 0.537\nsamples = 18\nvalue = [0, 10, 7, 1, 0]&#39;),
+Text(152.1818181818182, 62.943157894736856, &#39;X[2] &lt;= -0.867\ngini = 0.556\nsamples = 13\nvalue = [0, 5, 7, 1, 0]&#39;),
+Text(149.3505285412262, 51.49894736842106, &#39;X[1] &lt;= 0.285\ngini = 0.375\nsamples = 4\nvalue = [0, 3, 1, 0, 0]&#39;),
+Text(147.93488372093023, 40.05473684210526, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(150.7661733615222, 40.05473684210526, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]&#39;),
+Text(155.01310782241015, 51.49894736842106, &#39;X[4] &lt;= -0.362\ngini = 0.494\nsamples = 9\nvalue = [0, 2, 6, 1, 0]&#39;),
+Text(153.59746300211415, 40.05473684210526, &#39;gini = 0.0\nsamples = 5\nvalue = [0, 0, 5, 0, 0]&#39;),
+Text(156.42875264270612, 40.05473684210526, &#39;X[1] &lt;= 0.596\ngini = 0.625\nsamples = 4\nvalue = [0, 2, 1, 1, 0]&#39;),
+Text(155.01310782241015, 28.610526315789485, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(157.8443974630021, 28.610526315789485, &#39;X[3] &lt;= -0.593\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(156.42875264270612, 17.166315789473686, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(159.2600422832981, 17.166315789473686, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(155.01310782241015, 62.943157894736856, &#39;gini = 0.0\nsamples = 5\nvalue = [0, 5, 0, 0, 0]&#39;),
+Text(167.753911205074, 74.38736842105263, &#39;X[3] &lt;= 1.227\ngini = 0.291\nsamples = 17\nvalue = [0, 14, 3, 0, 0]&#39;),
+Text(166.338266384778, 62.943157894736856, &#39;X[1] &lt;= 1.218\ngini = 0.219\nsamples = 16\nvalue = [0, 14, 2, 0, 0]&#39;),
+Text(163.50697674418603, 51.49894736842106, &#39;X[2] &lt;= 0.449\ngini = 0.142\nsamples = 13\nvalue = [0, 12, 1, 0, 0]&#39;),
+Text(162.09133192389007, 40.05473684210526, &#39;X[2] &lt;= -0.472\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 1, 0, 0]&#39;),
+Text(160.67568710359407, 28.610526315789485, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(163.50697674418603, 28.610526315789485, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(164.92262156448203, 40.05473684210526, &#39;gini = 0.0\nsamples = 10\nvalue = [0, 10, 0, 0, 0]&#39;),
+Text(169.16955602536999, 51.49894736842106, &#39;X[0] &lt;= -0.392\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 1, 0, 0]&#39;),
+Text(167.753911205074, 40.05473684210526, &#39;X[3] &lt;= 0.594\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(166.338266384778, 28.610526315789485, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(169.16955602536999, 28.610526315789485, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(170.58520084566595, 40.05473684210526, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(169.16955602536999, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(163.50697674418603, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(139.26405919661732, 143.05263157894737, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(167.753911205074, 165.94105263157894, &#39;X[3] &lt;= 0.673\ngini = 0.551\nsamples = 15\nvalue = [0, 6, 8, 0, 1]&#39;),
+Text(166.338266384778, 154.49684210526317, &#39;X[1] &lt;= 1.218\ngini = 0.43\nsamples = 11\nvalue = [0, 2, 8, 0, 1]&#39;),
+Text(164.92262156448203, 143.05263157894737, &#39;X[1] &lt;= 0.285\ngini = 0.32\nsamples = 10\nvalue = [0, 2, 8, 0, 0]&#39;),
+Text(163.50697674418603, 131.60842105263157, &#39;X[0] &lt;= 1.268\ngini = 0.5\nsamples = 4\nvalue = [0, 2, 2, 0, 0]&#39;),
+Text(162.09133192389007, 120.16421052631578, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(164.92262156448203, 120.16421052631578, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(166.338266384778, 131.60842105263157, &#39;gini = 0.0\nsamples = 6\nvalue = [0, 0, 6, 0, 0]&#39;),
+Text(167.753911205074, 143.05263157894737, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(169.16955602536999, 154.49684210526317, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 4, 0, 0, 0]&#39;),
+Text(172.00084566596195, 177.38526315789474, &#39;X[0] &lt;= 1.268\ngini = 0.375\nsamples = 4\nvalue = [0, 0, 3, 1, 0]&#39;),
+Text(170.58520084566595, 165.94105263157894, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]&#39;),
+Text(173.4164904862579, 165.94105263157894, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(255.25292679704017, 200.2736842105263, &#39;X[3] &lt;= 0.198\ngini = 0.551\nsamples = 249\nvalue = [1, 47, 157, 20, 24]&#39;),
+Text(223.9704941860465, 188.82947368421054, &#39;X[0] &lt;= 0.714\ngini = 0.58\nsamples = 142\nvalue = [1, 39, 82, 7, 13]&#39;),
+Text(197.01794397463001, 177.38526315789474, &#39;X[2] &lt;= -1.13\ngini = 0.616\nsamples = 103\nvalue = [1, 34, 53, 7, 8]&#39;),
+Text(176.24778012684988, 165.94105263157894, &#39;X[1] &lt;= -0.648\ngini = 0.565\nsamples = 20\nvalue = [0, 11, 7, 0, 2]&#39;),
+Text(173.4164904862579, 154.49684210526317, &#39;X[4] &lt;= 1.276\ngini = 0.62\nsamples = 10\nvalue = [0, 3, 5, 0, 2]&#39;),
+Text(172.00084566596195, 143.05263157894737, &#39;X[2] &lt;= -1.788\ngini = 0.531\nsamples = 8\nvalue = [0, 1, 5, 0, 2]&#39;),
+Text(169.16955602536999, 131.60842105263157, &#39;X[0] &lt;= -0.116\ngini = 0.32\nsamples = 5\nvalue = [0, 0, 4, 0, 1]&#39;),
+Text(167.753911205074, 120.16421052631578, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 0, 4, 0, 0]&#39;),
+Text(170.58520084566595, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(174.8321353065539, 131.60842105263157, &#39;X[1] &lt;= -0.959\ngini = 0.667\nsamples = 3\nvalue = [0, 1, 1, 0, 1]&#39;),
+Text(173.4164904862579, 120.16421052631578, &#39;X[4] &lt;= 0.308\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 1]&#39;),
+Text(172.00084566596195, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(174.8321353065539, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(176.24778012684988, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(174.8321353065539, 143.05263157894737, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(179.07906976744187, 154.49684210526317, &#39;X[0] &lt;= 0.438\ngini = 0.32\nsamples = 10\nvalue = [0, 8, 2, 0, 0]&#39;),
+Text(177.66342494714587, 143.05263157894737, &#39;gini = 0.0\nsamples = 7\nvalue = [0, 7, 0, 0, 0]&#39;),
+Text(180.49471458773783, 143.05263157894737, &#39;X[4] &lt;= 0.159\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(179.07906976744187, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(181.91035940803383, 131.60842105263157, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(217.78810782241015, 165.94105263157894, &#39;X[4] &lt;= 0.755\ngini = 0.604\nsamples = 83\nvalue = [1, 23, 46, 7, 6]&#39;),
+Text(195.97832980972515, 154.49684210526317, &#39;X[4] &lt;= 0.159\ngini = 0.645\nsamples = 50\nvalue = [1, 18, 23, 5, 3]&#39;),
+Text(186.15729386892178, 143.05263157894737, &#39;X[3] &lt;= -0.119\ngini = 0.486\nsamples = 24\nvalue = [0, 6, 16, 2, 0]&#39;),
+Text(184.7416490486258, 131.60842105263157, &#39;X[0] &lt;= -1.222\ngini = 0.43\nsamples = 22\nvalue = [0, 4, 16, 2, 0]&#39;),
+Text(183.3260042283298, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(186.15729386892178, 120.16421052631578, &#39;X[1] &lt;= 0.596\ngini = 0.39\nsamples = 21\nvalue = [0, 3, 16, 2, 0]&#39;),
+Text(183.3260042283298, 108.72, &#39;X[0] &lt;= 0.161\ngini = 0.153\nsamples = 12\nvalue = [0, 1, 11, 0, 0]&#39;),
+Text(181.91035940803383, 97.27578947368421, &#39;gini = 0.0\nsamples = 8\nvalue = [0, 0, 8, 0, 0]&#39;),
+Text(184.7416490486258, 97.27578947368421, &#39;X[1] &lt;= 0.129\ngini = 0.375\nsamples = 4\nvalue = [0, 1, 3, 0, 0]&#39;),
+Text(183.3260042283298, 85.83157894736843, &#39;X[1] &lt;= -0.648\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(181.91035940803383, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(184.7416490486258, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(186.15729386892178, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(188.98858350951375, 108.72, &#39;X[1] &lt;= 0.907\ngini = 0.593\nsamples = 9\nvalue = [0, 2, 5, 2, 0]&#39;),
+Text(187.57293868921775, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(190.4042283298097, 97.27578947368421, &#39;X[0] &lt;= -0.392\ngini = 0.531\nsamples = 8\nvalue = [0, 1, 5, 2, 0]&#39;),
+Text(188.98858350951375, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(191.8198731501057, 85.83157894736843, &#39;X[1] &lt;= 1.529\ngini = 0.449\nsamples = 7\nvalue = [0, 1, 5, 1, 0]&#39;),
+Text(190.4042283298097, 74.38736842105263, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]&#39;),
+Text(193.23551797040167, 74.38736842105263, &#39;X[3] &lt;= -0.356\ngini = 0.625\nsamples = 4\nvalue = [0, 1, 2, 1, 0]&#39;),
+Text(191.8198731501057, 62.943157894736856, &#39;X[0] &lt;= 0.438\ngini = 0.667\nsamples = 3\nvalue = [0, 1, 1, 1, 0]&#39;),
+Text(190.4042283298097, 51.49894736842106, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(193.23551797040167, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(194.65116279069767, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(187.57293868921775, 131.60842105263157, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(205.79936575052852, 143.05263157894737, &#39;X[0] &lt;= -0.392\ngini = 0.686\nsamples = 26\nvalue = [1, 12, 7, 3, 3]&#39;),
+Text(197.48245243128963, 131.60842105263157, &#39;X[0] &lt;= -1.222\ngini = 0.562\nsamples = 8\nvalue = [1, 5, 0, 1, 1]&#39;),
+Text(196.06680761099366, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(198.89809725158563, 120.16421052631578, &#39;X[1] &lt;= 1.529\ngini = 0.449\nsamples = 7\nvalue = [1, 5, 0, 1, 0]&#39;),
+Text(197.48245243128963, 108.72, &#39;X[3] &lt;= -0.673\ngini = 0.278\nsamples = 6\nvalue = [1, 5, 0, 0, 0]&#39;),
+Text(196.06680761099366, 97.27578947368421, &#39;X[4] &lt;= 0.457\ngini = 0.5\nsamples = 2\nvalue = [1, 1, 0, 0, 0]&#39;),
+Text(194.65116279069767, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0]&#39;),
+Text(197.48245243128963, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(198.89809725158563, 97.27578947368421, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 4, 0, 0, 0]&#39;),
+Text(200.3137420718816, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(214.11627906976744, 131.60842105263157, &#39;X[1] &lt;= 1.685\ngini = 0.673\nsamples = 18\nvalue = [0, 7, 7, 2, 2]&#39;),
+Text(212.70063424947145, 120.16421052631578, &#39;X[3] &lt;= -0.277\ngini = 0.68\nsamples = 16\nvalue = [0, 5, 7, 2, 2]&#39;),
+Text(208.0997885835095, 108.72, &#39;X[4] &lt;= 0.457\ngini = 0.58\nsamples = 10\nvalue = [0, 5, 4, 0, 1]&#39;),
+Text(203.14503171247355, 97.27578947368421, &#39;X[3] &lt;= -0.673\ngini = 0.5\nsamples = 6\nvalue = [0, 4, 1, 0, 1]&#39;),
+Text(200.3137420718816, 85.83157894736843, &#39;X[0] &lt;= 0.299\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 1]&#39;),
+Text(198.89809725158563, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(201.7293868921776, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(205.97632135306554, 85.83157894736843, &#39;X[3] &lt;= -0.435\ngini = 0.375\nsamples = 4\nvalue = [0, 3, 1, 0, 0]&#39;),
+Text(204.56067653276955, 74.38736842105263, &#39;X[1] &lt;= 0.129\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 1, 0, 0]&#39;),
+Text(203.14503171247355, 62.943157894736856, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(205.97632135306554, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(207.3919661733615, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(213.05454545454546, 97.27578947368421, &#39;X[2] &lt;= 0.054\ngini = 0.375\nsamples = 4\nvalue = [0, 1, 3, 0, 0]&#39;),
+Text(211.63890063424947, 85.83157894736843, &#39;X[1] &lt;= -0.648\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(210.22325581395347, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(213.05454545454546, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(214.47019027484143, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(217.3014799154334, 108.72, &#39;X[2] &lt;= 0.186\ngini = 0.611\nsamples = 6\nvalue = [0, 0, 3, 2, 1]&#39;),
+Text(215.88583509513742, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(218.71712473572939, 97.27578947368421, &#39;X[4] &lt;= 0.457\ngini = 0.48\nsamples = 5\nvalue = [0, 0, 3, 2, 0]&#39;),
+Text(217.3014799154334, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(220.13276955602535, 85.83157894736843, &#39;X[1] &lt;= -0.648\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 1, 2, 0]&#39;),
+Text(218.71712473572939, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(221.54841437632135, 74.38736842105263, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 2, 0]&#39;),
+Text(215.5319238900634, 120.16421052631578, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]&#39;),
+Text(239.59788583509513, 154.49684210526317, &#39;X[3] &lt;= 0.04\ngini = 0.479\nsamples = 33\nvalue = [0, 5, 23, 2, 3]&#39;),
+Text(234.9970401691332, 143.05263157894737, &#39;X[3] &lt;= -0.752\ngini = 0.425\nsamples = 31\nvalue = [0, 4, 23, 2, 2]&#39;),
+Text(230.04228329809723, 131.60842105263157, &#39;X[0] &lt;= -0.946\ngini = 0.64\nsamples = 15\nvalue = [0, 3, 8, 2, 2]&#39;),
+Text(228.62663847780127, 120.16421052631578, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 0, 4, 0, 0]&#39;),
+Text(231.45792811839323, 120.16421052631578, &#39;X[0] &lt;= 0.438\ngini = 0.727\nsamples = 11\nvalue = [0, 3, 4, 2, 2]&#39;),
+Text(230.04228329809723, 108.72, &#39;X[0] &lt;= 0.161\ngini = 0.7\nsamples = 10\nvalue = [0, 3, 4, 2, 1]&#39;),
+Text(228.62663847780127, 97.27578947368421, &#39;X[4] &lt;= 1.649\ngini = 0.719\nsamples = 8\nvalue = [0, 3, 2, 2, 1]&#39;),
+Text(225.7953488372093, 85.83157894736843, &#39;X[1] &lt;= -0.959\ngini = 0.611\nsamples = 6\nvalue = [0, 3, 2, 1, 0]&#39;),
+Text(224.3797040169133, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(227.21099365750527, 74.38736842105263, &#39;X[0] &lt;= -0.669\ngini = 0.48\nsamples = 5\nvalue = [0, 3, 2, 0, 0]&#39;),
+Text(225.7953488372093, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(228.62663847780127, 62.943157894736856, &#39;X[1] &lt;= 0.752\ngini = 0.375\nsamples = 4\nvalue = [0, 3, 1, 0, 0]&#39;),
+Text(227.21099365750527, 51.49894736842106, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]&#39;),
+Text(230.04228329809723, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(231.45792811839323, 85.83157894736843, &#39;X[1] &lt;= -0.026\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 0, 1, 1]&#39;),
+Text(230.04228329809723, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(232.87357293868922, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(231.45792811839323, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(232.87357293868922, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(239.9517970401691, 131.60842105263157, &#39;X[4] &lt;= 1.649\ngini = 0.117\nsamples = 16\nvalue = [0, 1, 15, 0, 0]&#39;),
+Text(238.53615221987314, 120.16421052631578, &#39;X[0] &lt;= -0.116\ngini = 0.32\nsamples = 5\nvalue = [0, 1, 4, 0, 0]&#39;),
+Text(237.12050739957715, 108.72, &#39;X[1] &lt;= 0.285\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(235.70486257928118, 97.27578947368421, &#39;X[2] &lt;= 0.054\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(234.2892177589852, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(237.12050739957715, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(238.53615221987314, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(239.9517970401691, 108.72, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(241.3674418604651, 120.16421052631578, &#39;gini = 0.0\nsamples = 11\nvalue = [0, 0, 11, 0, 0]&#39;),
+Text(244.19873150105707, 143.05263157894737, &#39;X[0] &lt;= 0.023\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 1]&#39;),
+Text(242.7830866807611, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(245.61437632135306, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(250.923044397463, 177.38526315789474, &#39;X[1] &lt;= -0.959\ngini = 0.414\nsamples = 39\nvalue = [0, 5, 29, 0, 5]&#39;),
+Text(247.03002114164903, 165.94105263157894, &#39;X[4] &lt;= 0.904\ngini = 0.48\nsamples = 5\nvalue = [0, 0, 3, 0, 2]&#39;),
+Text(245.61437632135306, 154.49684210526317, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(248.44566596194502, 154.49684210526317, &#39;X[3] &lt;= -0.356\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 1, 0, 2]&#39;),
+Text(247.03002114164903, 143.05263157894737, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2]&#39;),
+Text(249.86131078224102, 143.05263157894737, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(254.81606765327695, 165.94105263157894, &#39;X[2] &lt;= 0.186\ngini = 0.386\nsamples = 34\nvalue = [0, 5, 26, 0, 3]&#39;),
+Text(253.40042283298095, 154.49684210526317, &#39;gini = 0.0\nsamples = 5\nvalue = [0, 0, 5, 0, 0]&#39;),
+Text(256.23171247357294, 154.49684210526317, &#39;X[3] &lt;= -0.277\ngini = 0.435\nsamples = 29\nvalue = [0, 5, 21, 0, 3]&#39;),
+Text(252.69260042283298, 143.05263157894737, &#39;X[3] &lt;= -0.593\ngini = 0.34\nsamples = 20\nvalue = [0, 2, 16, 0, 2]&#39;),
+Text(251.276955602537, 131.60842105263157, &#39;X[0] &lt;= 1.544\ngini = 0.529\nsamples = 11\nvalue = [0, 2, 7, 0, 2]&#39;),
+Text(249.86131078224102, 120.16421052631578, &#39;X[3] &lt;= -0.752\ngini = 0.46\nsamples = 10\nvalue = [0, 1, 7, 0, 2]&#39;),
+Text(248.44566596194502, 108.72, &#39;X[4] &lt;= 0.457\ngini = 0.37\nsamples = 9\nvalue = [0, 1, 7, 0, 1]&#39;),
+Text(245.61437632135306, 97.27578947368421, &#39;X[1] &lt;= -0.182\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 0, 1]&#39;),
+Text(244.19873150105707, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(247.03002114164903, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(251.276955602537, 97.27578947368421, &#39;X[1] &lt;= -0.648\ngini = 0.245\nsamples = 7\nvalue = [0, 1, 6, 0, 0]&#39;),
+Text(249.86131078224102, 85.83157894736843, &#39;X[0] &lt;= 1.268\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(248.44566596194502, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(251.276955602537, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(252.69260042283298, 85.83157894736843, &#39;gini = 0.0\nsamples = 5\nvalue = [0, 0, 5, 0, 0]&#39;),
+Text(251.276955602537, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(252.69260042283298, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(254.10824524312895, 131.60842105263157, &#39;gini = 0.0\nsamples = 9\nvalue = [0, 0, 9, 0, 0]&#39;),
+Text(259.7708245243129, 143.05263157894737, &#39;X[0] &lt;= 1.544\ngini = 0.568\nsamples = 9\nvalue = [0, 3, 5, 0, 1]&#39;),
+Text(258.3551797040169, 131.60842105263157, &#39;X[4] &lt;= 1.5\ngini = 0.611\nsamples = 6\nvalue = [0, 3, 2, 0, 1]&#39;),
+Text(255.52389006342494, 120.16421052631578, &#39;X[1] &lt;= -0.648\ngini = 0.375\nsamples = 4\nvalue = [0, 3, 1, 0, 0]&#39;),
+Text(254.10824524312895, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(256.9395348837209, 108.72, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]&#39;),
+Text(261.1864693446089, 120.16421052631578, &#39;X[0] &lt;= 0.991\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 0, 1]&#39;),
+Text(259.7708245243129, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(262.60211416490483, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(261.1864693446089, 131.60842105263157, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]&#39;),
+Text(286.5353594080338, 188.82947368421054, &#39;X[3] &lt;= 1.227\ngini = 0.478\nsamples = 107\nvalue = [0, 8, 75, 13, 11]&#39;),
+Text(277.4663847780127, 177.38526315789474, &#39;X[0] &lt;= 0.714\ngini = 0.472\nsamples = 36\nvalue = [0, 1, 25, 3, 7]&#39;),
+Text(271.09598308668075, 165.94105263157894, &#39;X[1] &lt;= 0.907\ngini = 0.545\nsamples = 22\nvalue = [0, 1, 13, 1, 7]&#39;),
+Text(266.8490486257928, 154.49684210526317, &#39;X[0] &lt;= -0.392\ngini = 0.401\nsamples = 18\nvalue = [0, 0, 13, 0, 5]&#39;),
+Text(265.4334038054968, 143.05263157894737, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]&#39;),
+Text(268.2646934460888, 143.05263157894737, &#39;X[2] &lt;= -0.735\ngini = 0.444\nsamples = 15\nvalue = [0, 0, 10, 0, 5]&#39;),
+Text(266.8490486257928, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(269.68033826638475, 131.60842105263157, &#39;X[0] &lt;= -0.116\ngini = 0.408\nsamples = 14\nvalue = [0, 0, 10, 0, 4]&#39;),
+Text(266.8490486257928, 120.16421052631578, &#39;X[4] &lt;= 1.053\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 1, 0, 2]&#39;),
+Text(265.4334038054968, 108.72, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2]&#39;),
+Text(268.2646934460888, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(272.51162790697674, 120.16421052631578, &#39;X[0] &lt;= 0.438\ngini = 0.298\nsamples = 11\nvalue = [0, 0, 9, 0, 2]&#39;),
+Text(271.09598308668075, 108.72, &#39;gini = 0.0\nsamples = 6\nvalue = [0, 0, 6, 0, 0]&#39;),
+Text(273.92727272727274, 108.72, &#39;X[4] &lt;= 0.457\ngini = 0.48\nsamples = 5\nvalue = [0, 0, 3, 0, 2]&#39;),
+Text(272.51162790697674, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(275.3429175475687, 97.27578947368421, &#39;X[1] &lt;= -0.182\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 1, 0, 2]&#39;),
+Text(273.92727272727274, 85.83157894736843, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2]&#39;),
+Text(276.75856236786467, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(275.3429175475687, 154.49684210526317, &#39;X[4] &lt;= 1.053\ngini = 0.625\nsamples = 4\nvalue = [0, 1, 0, 1, 2]&#39;),
+Text(273.92727272727274, 143.05263157894737, &#39;X[3] &lt;= 0.673\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 1, 0]&#39;),
+Text(272.51162790697674, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(275.3429175475687, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(276.75856236786467, 143.05263157894737, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2]&#39;),
+Text(283.8367864693446, 165.94105263157894, &#39;X[0] &lt;= 1.544\ngini = 0.245\nsamples = 14\nvalue = [0, 0, 12, 2, 0]&#39;),
+Text(281.00549682875265, 154.49684210526317, &#39;X[4] &lt;= 1.649\ngini = 0.153\nsamples = 12\nvalue = [0, 0, 11, 1, 0]&#39;),
+Text(279.58985200845666, 143.05263157894737, &#39;gini = 0.0\nsamples = 9\nvalue = [0, 0, 9, 0, 0]&#39;),
+Text(282.4211416490486, 143.05263157894737, &#39;X[0] &lt;= 0.991\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 2, 1, 0]&#39;),
+Text(281.00549682875265, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(283.8367864693446, 131.60842105263157, &#39;X[0] &lt;= 1.268\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(282.4211416490486, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(285.2524312896406, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(286.6680761099366, 154.49684210526317, &#39;X[3] &lt;= 0.752\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(285.2524312896406, 143.05263157894737, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(288.0837209302326, 143.05263157894737, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(295.60433403805496, 177.38526315789474, &#39;X[0] &lt;= -0.669\ngini = 0.471\nsamples = 71\nvalue = [0, 7, 50, 10, 4]&#39;),
+Text(294.18868921775896, 165.94105263157894, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(297.01997885835095, 165.94105263157894, &#39;X[1] &lt;= -0.959\ngini = 0.459\nsamples = 70\nvalue = [0, 6, 50, 10, 4]&#39;),
+Text(295.60433403805496, 154.49684210526317, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(298.43562367864695, 154.49684210526317, &#39;X[0] &lt;= 0.438\ngini = 0.445\nsamples = 69\nvalue = [0, 5, 50, 10, 4]&#39;),
+Text(292.3306553911205, 143.05263157894737, &#39;X[3] &lt;= 1.464\ngini = 0.219\nsamples = 16\nvalue = [0, 2, 14, 0, 0]&#39;),
+Text(289.4993657505285, 131.60842105263157, &#39;X[4] &lt;= 0.606\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(288.0837209302326, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(290.9150105708245, 120.16421052631578, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(295.1619450317125, 131.60842105263157, &#39;X[1] &lt;= -0.648\ngini = 0.133\nsamples = 14\nvalue = [0, 1, 13, 0, 0]&#39;),
+Text(293.7463002114165, 120.16421052631578, &#39;X[0] &lt;= -0.116\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2, 0, 0]&#39;),
+Text(292.3306553911205, 108.72, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(295.1619450317125, 108.72, &#39;X[4] &lt;= 0.308\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1, 0, 0]&#39;),
+Text(293.7463002114165, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(296.57758985200843, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(296.57758985200843, 120.16421052631578, &#39;gini = 0.0\nsamples = 11\nvalue = [0, 0, 11, 0, 0]&#39;),
+Text(304.54059196617334, 143.05263157894737, &#39;X[2] &lt;= -0.34\ngini = 0.494\nsamples = 53\nvalue = [0, 3, 36, 10, 4]&#39;),
+Text(303.12494714587734, 131.60842105263157, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(305.95623678646933, 131.60842105263157, &#39;X[4] &lt;= 0.457\ngini = 0.476\nsamples = 52\nvalue = [0, 2, 36, 10, 4]&#39;),
+Text(299.4088794926004, 120.16421052631578, &#39;X[3] &lt;= 1.623\ngini = 0.694\nsamples = 7\nvalue = [0, 1, 3, 2, 1]&#39;),
+Text(297.9932346723044, 108.72, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(300.8245243128964, 108.72, &#39;X[0] &lt;= 1.544\ngini = 0.72\nsamples = 5\nvalue = [0, 1, 1, 2, 1]&#39;),
+Text(299.4088794926004, 97.27578947368421, &#39;X[1] &lt;= 1.218\ngini = 0.625\nsamples = 4\nvalue = [0, 1, 0, 2, 1]&#39;),
+Text(297.9932346723044, 85.83157894736843, &#39;X[3] &lt;= 1.86\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 0, 2, 0]&#39;),
+Text(296.57758985200843, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(299.4088794926004, 74.38736842105263, &#39;X[3] &lt;= 2.177\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 1, 0]&#39;),
+Text(297.9932346723044, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(300.8245243128964, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(300.8245243128964, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(302.24016913319235, 97.27578947368421, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(312.50359408033825, 120.16421052631578, &#39;X[4] &lt;= 0.829\ngini = 0.426\nsamples = 45\nvalue = [0, 1, 33, 8, 3]&#39;),
+Text(306.48710359408034, 108.72, &#39;X[3] &lt;= 2.177\ngini = 0.24\nsamples = 15\nvalue = [0, 0, 13, 1, 1]&#39;),
+Text(305.07145877378434, 97.27578947368421, &#39;gini = 0.0\nsamples = 10\nvalue = [0, 0, 10, 0, 0]&#39;),
+Text(307.90274841437633, 97.27578947368421, &#39;X[0] &lt;= 0.991\ngini = 0.56\nsamples = 5\nvalue = [0, 0, 3, 1, 1]&#39;),
+Text(306.48710359408034, 85.83157894736843, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(309.31839323467227, 85.83157894736843, &#39;X[1] &lt;= 1.218\ngini = 0.375\nsamples = 4\nvalue = [0, 0, 3, 1, 0]&#39;),
+Text(307.90274841437633, 74.38736842105263, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0]&#39;),
+Text(310.73403805496827, 74.38736842105263, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(318.5200845665962, 108.72, &#39;X[4] &lt;= 1.127\ngini = 0.496\nsamples = 30\nvalue = [0, 1, 20, 7, 2]&#39;),
+Text(317.1044397463002, 97.27578947368421, &#39;gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 2, 0]&#39;),
+Text(319.93572938689215, 97.27578947368421, &#39;X[3] &lt;= 1.623\ngini = 0.452\nsamples = 28\nvalue = [0, 1, 20, 5, 2]&#39;),
+Text(314.98097251585625, 85.83157894736843, &#39;X[4] &lt;= 1.5\ngini = 0.667\nsamples = 6\nvalue = [0, 0, 2, 2, 2]&#39;),
+Text(313.56532769556026, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(316.3966173361522, 74.38736842105263, &#39;X[2] &lt;= 0.186\ngini = 0.64\nsamples = 5\nvalue = [0, 0, 2, 2, 1]&#39;),
+Text(314.98097251585625, 62.943157894736856, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]&#39;),
+Text(317.8122621564482, 62.943157894736856, &#39;X[1] &lt;= 1.529\ngini = 0.5\nsamples = 4\nvalue = [0, 0, 2, 2, 0]&#39;),
+Text(316.3966173361522, 51.49894736842106, &#39;X[1] &lt;= 0.752\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 2, 1, 0]&#39;),
+Text(314.98097251585625, 40.05473684210526, &#39;gini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(317.8122621564482, 40.05473684210526, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(319.2279069767442, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(324.8904862579281, 85.83157894736843, &#39;X[1] &lt;= -0.337\ngini = 0.31\nsamples = 22\nvalue = [0, 1, 18, 3, 0]&#39;),
+Text(323.4748414376321, 74.38736842105263, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0]&#39;),
+Text(326.3061310782241, 74.38736842105263, &#39;X[0] &lt;= 0.714\ngini = 0.245\nsamples = 21\nvalue = [0, 0, 18, 3, 0]&#39;),
+Text(323.4748414376321, 62.943157894736856, &#39;X[4] &lt;= 1.5\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(322.05919661733617, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(324.8904862579281, 51.49894736842106, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(329.13742071881603, 62.943157894736856, &#39;X[3] &lt;= 1.939\ngini = 0.188\nsamples = 19\nvalue = [0, 0, 17, 2, 0]&#39;),
+Text(327.7217758985201, 51.49894736842106, &#39;gini = 0.0\nsamples = 8\nvalue = [0, 0, 8, 0, 0]&#39;),
+Text(330.553065539112, 51.49894736842106, &#39;X[1] &lt;= 1.529\ngini = 0.298\nsamples = 11\nvalue = [0, 0, 9, 2, 0]&#39;),
+Text(329.13742071881603, 40.05473684210526, &#39;X[1] &lt;= 0.907\ngini = 0.375\nsamples = 8\nvalue = [0, 0, 6, 2, 0]&#39;),
+Text(326.3061310782241, 28.610526315789485, &#39;X[3] &lt;= 2.177\ngini = 0.278\nsamples = 6\nvalue = [0, 0, 5, 1, 0]&#39;),
+Text(324.8904862579281, 17.166315789473686, &#39;X[1] &lt;= 0.596\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(323.4748414376321, 5.722105263157886, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(326.3061310782241, 5.722105263157886, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(327.7217758985201, 17.166315789473686, &#39;gini = 0.0\nsamples = 4\nvalue = [0, 0, 4, 0, 0]&#39;),
+Text(331.968710359408, 28.610526315789485, &#39;X[3] &lt;= 2.177\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 1, 1, 0]&#39;),
+Text(330.553065539112, 17.166315789473686, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]&#39;),
+Text(333.384355179704, 17.166315789473686, &#39;gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0]&#39;),
+Text(331.968710359408, 40.05473684210526, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]&#39;)]
+</code></pre></div><figure><img src=/ox-hugo/hENyXO.png></figure></div><div class=bl-section><h4>Links to this note</h4><div class=backlinks><ul><li><a href=/braindump/daily/2022-04-18/>2022-04-18</a></li><li><a href=/braindump/main/20211102001428-engineer/>Engineer</a></li></ul></div></div></div></div></div><script src=https://hermanhel.github.io/braindump/js/URI.js type=text/javascript></script><script src=https://hermanhel.github.io/braindump/js/page.js type=text/javascript></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></body></html>

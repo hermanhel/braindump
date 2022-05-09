@@ -1,0 +1,220 @@
+:PROPERTIES:
+:ID:       DA737403-A61E-4473-80D0-228698867137
+:END:
+#+title: Org-mode
+#+HUGO_SECTION:main
+see [[https://orgmode.org/worg/orgcard.html][org-card]]
+* Task management 
+:PROPERTIES:
+:ID:       46DF256E-84B7-46E6-9709-A6BF46DBC1BD
+:END:
+** Agenda 
+:PROPERTIES:
+:ID:       E01C40E3-8607-4DCB-B275-CD255D14A76C
+:END:
+   /Agenda/ is a functionality of *Org-mode* focusing on _Task Management_.
+   /Agenda/ provides a view to see all the tasks in a _Daily/Weekly Base_
+*** Add to Agenda
+    Add Tasks to agenda by:
+    1. Add TODO to the front of heading
+    2. *Schedule* by _C-c C-s_- or *Deadline* by _C-c C-d_
+**** ~TODO~ States
+***** Next
+      TODO in (TODO NEXT | DONE)
+      ~Next~ means the next task to do.
+      + Marked by hand from all TODOS(access by agenda command)
+      + DO only the NEXT tasks.
+      embed the NEXT principle into the machines.
+***** DONE Set a machine with the NEXT tasks
+CLOSED: [2021-10-16 Sat 14:56]
+      
+*** Agenda view
+    Called by _M-x org-agenda(bind to C-c a)_
+**** Basic Use
+     As opened, _Week View_ will be shown. Upon selecting weekdays, the day will be focused.
+**** Dashboard
+     into agenda view, hit _d_.
+*** Agenda files
+    Agenda access files marked in the list variable _org-agenda-files_
+    should be kept in [[file:~/.emacs.d/lisp/init-org.el][init-org.el]]
+** Tags								
+   Use _C-c C-q_ to quily insert Tags(C-c C-c on headings)
+   Use _M-x Counsel-org-tag_ to search for tags
+*** Contents of tags
+    + Place
+      + @errand
+      + @home
+      + @work
+    + Type
+      + agenda
+	for =works, time, schedule, .etc=
+	Personal Things, like Meeting information, Coursework information
+      + planning
+	a task to make plan about something
+      + batch
+	a task to do something in batch
+      + note
+	a note about non-personal things, like Math or Code or Principle
+      + idea
+	a =programming idea= or a =drawing idea=...
+    + Machine specific
+      + machine
+	a bunch of procedurals constructed and executed with awareness to cirtain principles.
+      + principle
+	see [[id:E339CEF9-FCFA-414A-BC08-787F5C3039CF][principle]]
+* Org-capture
+org-capture, bind by ~C-c c~, capture random thought and throw them into buckets.
+** org-capture templates
+specified in [[file:~/.emacs.d/lisp/init-org.el::(setq org-capture-templates][<init-org.el>]].
+syntax:[[https://xuchengpeng.com/hugo-blog/2018/07/20/powerful-org-capture/][ org-capture syntax sheet]]
+** elisp inside the template
+I can call function(that I wrote) in the template, to fill in information. that's pretty cool, if I'm doing something like making word card.
+* Time
+** Timer
+*** Start
+C-c C-x 0 : start timer
+C-c C-x ; : start countdown timer
+*** Use
+All under C-c C-x prefix
+- . insert the timer time
+- - insert a timer time list item
+- M-RET on the list item create anotehr list item follow the format
+*** Stop/pause
+- , pause
+- _ stop
+** Clock-in, Clock-out
+:PROPERTIES:
+:ORDERED:  t
+:END:
+:LOGBOOK:
+CLOCK: [2022-03-22 Tue 16:40]--[2022-03-22 Tue 16:41] =>  0:01
+:END:
++ C-c-x-i
++ C-c-x-o
++ C-c-x-q :cancel
++ c-c-x-j :jump to
++ C-c-x-x :in-last
++ C-c-x-d :display the total time of subtree
+
+* Document Writing
+** THREAD Figure how to write documnet with org-mode                :agenda:
+*** TODO Find way to organize refs
+The capture and orgnize in database is well done by /Zotero/.
+But how to take note of them, and how to use them in org-mode doc writing is still under investigation.
+** Jupyter integration
+*** sessions
+different file often are onto different projects, so to signify the them from each, add =sessionname= after the ~:session~ option
+#+begin_src ipython :session example_session01 :file ./ipython-mSdNTO.png :exports both
+  data = [1,2,3,4]
+#+end_src
+
+#+RESULTS:
+: # Out[1]:
+
+#+begin_src ipython :session example_session03 :file ./ipython-FoLisV.png :exports both
+  data = [5,6,7,8]
+#+end_src
+
+#+RESULTS:
+: # Out[1]:
+
+#+begin_src ipython :session example_session01 :file ./ipython-7S5rGe.png :exports both
+data
+#+end_src
+
+#+RESULTS:
+: # Out[2]:
+: [1, 2, 3, 4]
+
+#+begin_src ipython :session example_session03 :file ./ipython-nMWy19.png :exports both
+data
+#+end_src
+
+#+RESULTS:
+: # Out[2]:
+: [5, 6, 7, 8]
+
+#+name:the processes
+#+begin_example
+kernel-default               55849       run       *ob-ipython-kernel-default*                         /dev/ttys002            Main            jupyter console --simple-prompt -f emacs-default.json
+kernel-example_session               59617       run       *ob-ipython-kernel-example_session*                         /dev/ttys007            Main            jupyter console --simple-prompt -f emacs-example_session.json
+kernel-example_session01               59603       run       *ob-ipython-kernel-example_session01*                         /dev/ttys006            Main            jupyter console --simple-prompt -f emacs-example_session01.json
+kernel-example_session02               59635       run       *ob-ipython-kernel-example_session02*                         /dev/ttys008            Main            jupyter console --simple-prompt -f emacs-example_session02.json
+kernel-example_session03               59660       run       *ob-ipython-kernel-example_session03*                         /dev/ttys009            Main            jupyter console --simple-prompt -f emacs-example_session03.json
+kernel-example_session04               59672       run       *ob-ipython-kernel-example_session04*                         /dev/ttys010            Main            jupyter console --simple-prompt -f emacs-example_session04.json
+kernel-session01               59538       run       *ob-ipython-kernel-session01*                         /dev/ttys004            Main            jupyter console --simple-prompt -f emacs-session01.json
+kernel-session02               59566       run       *ob-ipython-kernel-session02*                         /dev/ttys005            Ma
+#+end_example
+*** Display images
+standard output are like
+#+RESULTS:
+: # Out[3]:
+: [1]
+with the ~:~ in the front, which org-mode doesn't read to show inline-image. add ~:results raw drawer~ in options to put it in a drawer, and getting rid of the ~:~ at the same time.
+** HTML Document/Website
+*** Style themes
+[[https://github.com/fniessen/org-html-themes/][https://github.com/fniessen/org-html-themes/]] offered 2 good themes, =bigblow= and =readtheorg=
+use: put
+# =#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup=
+to the front of the file.
+** ref
+*** org-ref
+**** errors
+***** couldn't find entry
+=Warning (:warning): Bibtex-completion couldn't find entry with key "yoshimuraProductionMonocyteChemoattractant2017". Disable showing Disable logging=
+reported due to absenteeism of the variable =bibtex-files=. set it to be the same as the the included .bib in the org document, or have it holding all .bib libraries I have on the computerb, in the init.el.
+* Snippets :drill:
+:PROPERTIES:
+:ID:       7549C970-0F19-42A8-9317-00E296115F92
+:END:
+** Usable
++ Author
+*** latex/html marks/doc meta
++ <c :center block
++ <da :date
++ <em :email
++ desc :description
++ <e :example
++ fig_ :latex figure
+*** Babel
++ elisp_ :elisp block that tangle
+*** Other
++ <im
++ img_ :html image
+** Don't understand
++ dot_
++ emb_
++ entry_
++ <ex :export
++ <ht
++ <i :include
+* org-drill 
+SCHEDULED: <2022-04-02 Sat>
+:PROPERTIES:
+:ID:       553A58A9-8ACC-4184-976B-D9A324119CA1
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2022-03-29 Tue 22:00]
+:END:
+[[https://gitlab.com/phillord/org-drill][org-drill]] is a package for spaced repetition
+it doesn't read headings with more than 4 hierachies inside.
+** Using :drill:
+:PROPERTIES:
+:ID:       56C6E563-F32E-48BE-83AC-FBE791B2EB63
+:END:
+*** set question
+topics with tag matching value of ~org-drill-question-tag~, by default ~drill~, will be treated as drill material
+**** types
++ cloze deletion: [text]
++ cloze text hint: [text || hint]
+***** 2-sided cards :drill:
+:PROPERTIES:
+:ID:       02DDAA55-668E-4623-970F-9847085AC9BA
+:END:
+~DRILL-CARD-TYPE~ = ~twosided~
+

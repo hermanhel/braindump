@@ -1,0 +1,111 @@
+:PROPERTIES:
+:ID:       7FDF98A0-7C62-4F02-A5D9-1087B4AEE001
+:CATEGORY: Household
+:END:
+#+title:  Household Machine
+#+HUGO_SECTION:main
+The machine is particularly for household and chores
+* Construction
+:LOGBOOK:
+CLOCK: [2021-10-16 Sat 15:00]--[2021-10-16 Sat 16:24] =>  1:24
+:END:
+
+* Cloth
+** Washing
+SCHEDULED: <2022-04-22 Fri 21:00 +1d>
+:PROPERTIES:
+:Effort:   30
+:LAST_REPEAT: [2022-04-21 Thu 23:17]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2022-04-21 Thu 23:17]
+- State "DONE"       from              [2022-04-21 Thu 23:17]
+- State "DONE"       from ""           [2022-04-21 Thu 23:17]
+- State "DONE"       from              [2022-04-21 Thu 23:17]
+- State "DONE"       from ""           [2022-04-21 Thu 23:16]
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+- State "DONE"       from ""           [2021-10-16 Sat 23:26]
+:END:
+Once a day. Should be done by hand.
+Clothes, and Socks.
+
+** Archive
+Fold the clothes out of season and archive.
+Don't forget anti-bug facility and dryer
+** Store
+Store in the closet and myside case
+Dryer!
+* Bed
+** Make bed
+:PROPERTIES:
+:Effort:   5
+:END:
+Should make bed after get up
+** Washing bed
+Should wash bed to a period.
+To be checked
+* Tidy Space
+** Desktop
+SCHEDULED: <2022-04-22 Fri 21:40 +1d>
+:PROPERTIES:
+:Effort:   5
+:LAST_REPEAT: [2022-04-21 Thu 23:16]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2022-04-21 Thu 23:16]
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+Destop should be orgnized. Clean Desktop everyday before sleep
+** Surronding
+SCHEDULED: <2022-04-22 Fri +3d>
+:PROPERTIES:
+:Effort:   15
+:LAST_REPEAT: [2022-04-21 Thu 23:16]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2022-04-21 Thu 23:16]
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+CLOCK: [2022-04-14 Thu 13:10]--[2022-04-14 Thu 13:50] =>  0:40
+:END:
+
+The surronding could compromise to 3 days
+* Shoe
+** Washing
+Should check the period of shoe washing
+** Archive
+Should find a way to archive shoes
+could use dedicated shoebox
+** Store
+Should find a way to store shoes
+* Book
+** Store
+Should place and renew dryer
+Find online book store solutions
+* Computer
+** Cleaning
+SCHEDULED: <2022-04-22 Fri +4d>
+:PROPERTIES:
+:Effort:   10
+:LAST_REPEAT: [2022-04-21 Thu 23:16]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2022-04-21 Thu 23:16]
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+Should Clean computer every 4 day. Didn't know if it's enough or too much.
+Test for the first cycle.
+* Rope
+** Processing
+Should Process Rope upon receiving
+** Store
+on dry winded area
+* Bow
+** Store
+** maintain
+* Washing Things
+Tooth brushes, bath towel...
+** maintain
+** renew
+* Daily Supply
+** Food
+** Water

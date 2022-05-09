@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       32C68C01-E94C-4993-8977-71457F72CECD
+:END:
+#+title: Log Machine
+There are 2 kinds of log machine, dealing with 2 situations
+| Doing bunch of small tasks | Doing a scheduled big tasks |
+| Journal.org                | Tasks.org                   |
+* methods
+** Journal.org
+   1. C-c c org-capture j j Journal entry
+      before the whole session start, open the Journal entry.
+      Timer will be automatically set
+      Could be put on Top left of screen
+   2. Record Deeds, Principles, and Outcome, in the entry
+
+** Tasks.org 

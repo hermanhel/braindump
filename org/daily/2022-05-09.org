@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       42C22294-2A5C-4692-AC8F-F865B9EE7EA5
+:END:
+#+title: 2022-05-09
+#+HUGO_SECTION:daily
+#+filetags: 
+* The braindump repo!
+I needed to write a good dps. But I can't get it right.
+Therefore, I dicided to
+1. [X] tag everything draft
+2. [X] rsync the whole RoamNotes into braindump/org/
+3. [X] tag checked node "not draft", call ~hermanhel/sync-RoamNotes~ after that 
+4. [ ] make a private repo braindump-source
+5. [ ] use [[https://jandelgado.github.io/blog/posts/github-pages-with-private-repo/][this tutorial's github action]] to push the build from braindump-source to braindump
+6. 
+** tag everything draft
+#+caption:1.
+#+begin_src emacs-lisp
+  
+  (setq org-files (directory-files-recursively ".." "\.org$"))
+  (print org-files)
+  (dolist (org-file org-files)
+          (with-temp-buffer
+            (insert-file-contents org-file)
+            (org-mode)
+            (search-forward "#+title:")
+            (end-of-line)
+            (org-return)
+            (insert "#+filetags: :draft:")
+            (write-region (point-min) (point-max) org-file)
+            )
+          )
+#+end_src
+
+#+caption:2.
+#+begin_src emacs-lisp
+  
+  (defun hermanhel/sync-RoamNotes ()
+    "sync my RoamNotes into the private repo of braindump"
+    (interactive)
+   (start-process-shell-command "rsync" "*rsync*" "rsync -avz --progress ~/Notes/RoamNotes/ ~/playground/projects/braindump-source/org/"))
+#+end_src
+
+#+RESULTS:
+: #<process rsync>

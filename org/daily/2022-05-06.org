@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       F3794C6B-3040-4010-AFAD-4A6E17A7CC94
+:END:
+#+title: 2022-05-06
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* The AI Lab
+** Task3
+use a =unsupervised= method to classify
+details
+*** clustering
++ k-means
++ dbsvan
++ density peaks
++ hierachical clustering
++ spectral clustering
+
+cate
++ density
++ tree:hierachical
++ graph:spectral
+*** get a python company back end
+#+begin_src emacs-lisp
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends 'company-jedi))
+
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+#+end_src
+* I tried supercollider
+[[file:~/Library/Application Support/SuperCollider/startup.scd::Server.local.options.sampleRate = 44100; // increase sampling rate (if your hardware supports it)][this startup file]] change the output sample rate of supercollider's server or something. It booted! yes!
+* OverTONE!!!!!
+ the ~at~ function don't work at all. all time related don't work.
+ a frequently occured error is 
+~java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Cannot open <nil> as a Reader.~
+Maybe the thread pool of the java library is not well mentained.

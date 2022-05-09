@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       FDC29926-4580-476F-934B-7E816F9A8F86
+:END:
+#+title: Drawing Machine
+* Flow
+** 1. Line Art
+*** 1. Rhythm Line
+The line abstracting the body into impression of lines
+**** The Rate
+head = 1 he
+body = 1.5 he
+butt = 1 he
+leg = 1.5 he + 1.5 he
+palm = 1 he + 1 he + 2/3 he(hand)
+*** 2. Shape
+impression of shape
+**** Shapes
++ Head = Square + Triangel
++ Body = Square
++ Butt = Square + Triangle(wider than head)
++ Leg:
+  + upper = straight 1 side, middle out other side
+  + downner = strat 1 side, up out other side
++ Palm: same as leg
+*** 3. Space
+3-d. Give it some space
+** 2. Color
+*** 1. Origin
+*** 2. Light
+*** 3. Shadow
+

@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       CEEC218D-CE8B-435A-8C78-4208607DD4DD
+:END:
+#+title: Self-Learning Machine
+* Self-Learning Machine
+This machine is for complete self-learning
+This machine stands alone and can be use for non-academic purpose.
+** Principles
+CLOSED: [2021-10-11 Mon 01:59]
+**** Ahead of time(prepare)
+The self learning must be done at least ~2 day~ before the Tutoring take place.
+**** Self awareness(feedback)
+self-learning can easily fall into meaningless grinding without consciousness about what is being done.
+Having self awareness is crucial, and can be achived with feedback from myself.
+This implies that [[id:32C68C01-E94C-4993-8977-71457F72CECD][Log Machine]] should be applied in the self-learning machine
+**** Review
+Repeat sticks.
+When mentioned hear, reviewing refer to not spaced repetition, which is a method for fact learning, but refer to the review to the 1d, 7d, 14d, 30d cycle. 艾宾浩斯遗忘曲线。
+This implies that [[id:6F5C6663-0E88-4122-AE35-A6F4B0784F1A][Review Machine]] should be applied.
+**** TODO can check on Ultralearning Principles.
+ultralearning principles can be useful for self-learning machine
+** Submachines
+self-learning is a huge topic. according to the content and goals, the flow and selection of machines would also vary.
+*** [[id:6F5C6663-0E88-4122-AE35-A6F4B0784F1A][Review Machine]]
+*** [[id:CA269485-1B2F-4494-9DDB-ED33B00939F7][Spaced Repetition]]
+*** [[id:B4444AFF-ACC4-452E-8AE3-294C1E1B7409][Feynman Techinique]]
+*** [[id:32C68C01-E94C-4993-8977-71457F72CECD][Log Machine]]
+** flows
+order of the machines call, and flow of action&data.
+*** Preview
+Preview is a flow particularly relevent to [[id:4972A60D-3727-4422-B73F-BAF3289C1DB8][Academic Machine]].(especialy [[file:20211011005922-academic_machine.org::*Tutor Machine][Tutor Machine]]
+)
+**** 1. Schedule
+Schedule the preview session *3 days before*
+that is to say, every day ~check tutoring session after 3 days~ and make preview task scheduled 1 day after.
+Or better, with each [[id:188F8050-7BAF-494E-847D-9265398B570A][Weekly Plan]] session, plan for the preview sessions of the week
+
+with Schedule, confirm on the content, type and method of studying. Best include the materials
+**** 2. Do self-study according to type and plan
+*** content
+*** procedure
+*** fact
+*** Mixed
+**** Programing
+***** Programing Language
+

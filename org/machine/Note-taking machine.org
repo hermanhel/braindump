@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       03422E6A-85CC-4123-B800-AE5CE62A2C66
+:END:
+#+title: Note-taking machine
+#+HUGO_SECTION:machine
+#+filetags: :draft:
+#+filetags: :draft:
+#+filetags: :draft:machine:
+* Machine
+
+* source and attribution
+This machine borrowed vastly from [[id:8DC2D01C-1B93-4046-BA96-551F4D2D2AC4][Jethro Kuan's way of note-taking]].
+(print org-capture-templates)

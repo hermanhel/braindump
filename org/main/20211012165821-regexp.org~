@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8105C7F5-9CBF-4309-A307-400040EAADB8
+:END:
+#+title: Regexp
+* Ref
+* Tools
+* Methods
+** substract informations
+Using the group of matches: (.*)
+group option present in many languages
+#+begin_src python
+  import re
+  mysearch = re.search(regexp, text)
+  if mysearch:
+      name = mysearch.group(1)
+      mylist.append(name)
+#+end_src
+The code above would allocate the first match group to name.
+** Occur: Find specific information
+By Using [a|b], specific info could be matched.

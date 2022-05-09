@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       CE891478-E137-487D-8268-184585FCA46E
+:END:
+#+title: My Website
+#+HUGO_SECTION:main
+* Current
+host under [[https://hermanhel.github.io][hermanhel.github.io]]
+** Functionality
+host blog
+*** Blog
+Write standalone org file under blog folder.
+Add link mannually to the main page.
+*** Per-webpage html export of org
+use configuration
+check system crafters' video for more details.
+
+* Future
+
+** Blog
+
+*** Add Golden statement?
+
+** Brain dump
+
+*** knowledge database?
+
+*** Wiki
+
+*** Card-note?
+
+** Dynamic Website
+include comment
+
+*** Approach
+1. Rent a server
+2. Implement Backend
+3. Buy a name.
+

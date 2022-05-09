@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       6D123C5A-AAF7-4914-BF25-6D0485F5BF9E
+:CATEGORY: Information
+:END:
+#+title: Information Updating Machine
+#+HUGO_SECTION:main
+updating informations gethered from:
++ Website RSS Feeds
++ Blog feeds
++ Mailbox(mail.xjtlu)
++ Wechat groups
++ Ebridge
++ Learning mall
++ Texting Inbox
+* Period
+** Email
+SCHEDULED: <2021-11-21 Sun 9:00>
+Every day at 9:00.
+In days 9:00 is occupied, the next leisure.
+
+* Process
+** Email
+*** 1. Deleting/Filtering
+Delete everything I thought is irrelevent to me
+*** 2. Important things
+Record everything that's nessacery into my agenda.
+*** 3. Oppurtunity
+Fetch oppurtunity into the coresponding Role
+** Course/task (asigned) information 
+*** Information Scheme
+**** Information host position
+The website/software/address that the information is held.
+**** Local task position
+The place I kept the information to myself, like Emacs Org-roam
+*** Steps
+**** 1. Get to the host
+have =Information host position= connected at hand
+**** 2. Find unfamiliar information
+Mark them up in the task description
+
+#+begin_example
++ [ ] CPT103 CW1 Information
++ [ ] CPT111 CW2 Information
+#+end_example
+This also have process control use.
+**** 3. Record neccesary Information locally
+Write down the Deadlines/schedule/spec/... in my =Local task position=
+**** 4. Make them ready for a scheme session.
+They should be automatically ready for scheme session. So the format of recording in step 3 could be modified.

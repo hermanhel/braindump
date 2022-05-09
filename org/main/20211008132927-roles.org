@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       1130F0BE-A5C1-4E0F-8AF7-9BC582111108
+:END:
+#+title: Roles
+#+HUGO_SECTION:main
+I organize my life around roles: 4 Major Roles and other minor roles.(this would change over time)
+It's fun that the Major and Minor roles have similar feature to Major and Minor modes in emacs.
+
+* Core Idendificaiton
+
+** Scholar
+I'm a scholar.
+
+By that I mean I'm a scholar who grow his intimacy with the notes, books, ideas and reallity.
+I get to know things, I became familiar, became friends with them.
+I create my own calming air.
+I do things with my own pace, I do them actively and out of my own intention of having fun.
+All the stuffs I play with, they are not tools leading to fortune or fame or power. They are loyal friends, they are funs to have.
+
+It's a totally different mindset that I endure unpleasant to have fortune and I endure unpleasant to have fun with the area prerequisiting the unpleasant parts.
+
+* Major Roles
+  
+  :LOGBOOK:
+  CLOCK: [2021-10-08 Fri 13:32]--[2021-10-08 Fri 23:25] =>  9:53
+  :END:
+** [[id:F1E6F424-6DD8-462A-B2C3-AD0EE8CD579F][Artist]]
+   Artist treat everything with *art*
+** [[id:391C5CF3-2A11-4BC3-ADE3-6F8C6E557B82][Neuralscientist]]
+   Neuralscientist could understand brain and *consciousness*
+** [[id:9C7D0D76-725F-45D6-B84A-4F75C11E164F][Engineer]]
+   Engineer *hack* things
+** [[id:BCAC2B73-634A-4A49-8962-40CC2DF03751][Athlete]]
+   Athlete have sportsmanship and strong *willpower*
+* Minor Roles
+** Relationships
+*** Son
+ 

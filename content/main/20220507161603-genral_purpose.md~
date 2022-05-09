@@ -1,0 +1,9 @@
++++
+title = "Genral Purpose"
+author = ["System Administrator"]
+draft = false
++++
+
+funciton like `(sort col compare-fn)`.
+
+The `compare-fn` can be customized, so the `sort` won't just sort to asending order, but also other `prupose` like descending order, or other order based on (somefunc x) or specific entry in composite date.

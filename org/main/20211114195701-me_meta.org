@@ -1,0 +1,122 @@
+:PROPERTIES:
+:ID:       A2F291A6-C043-4939-8366-F94590C42488
+:END:
+#+title: Me_meta
+#+HUGO_SECTION:main
+* Weakness
+** My Greatest weakness
+*** Memory
+I can remember little thing at a time.
+It is said that human can maintain 3-7 chunks of information at a time, for me the figure is 1.
+I can still recall other things, but harder, and not spontaneously. It's like register and memory in computer. I have well working memory and a very small amont of register.
+
+
+**** Account
+***** Disadvantage
+****** Constant/continueous converging.
+My working memory contains 1 things for most. That means if the place was hold by [a task/a desire(like sex)/a strategy[for game]/.etc], there will be no room for my moral, [[id:E339CEF9-FCFA-414A-BC08-787F5C3039CF][principle]], goals, or [[id:1626B7D4-5023-4E58-AA39-4CEC5E188FF5][background awareness]].
+
+The result is me converging to the first things I saw in a session.
+
+#+begin_src example
+If I saw a vim documentation, I would start testing vim; if I have a snack in front of me, I would start eating; if there's a game in front of me, I would start playing; if there's a atmosphere in the room, I would blend in.
+#+end_src
+
+My time would therefore be used unaware. There would be no time for important things, because this feature tends to do urgent things and urgent things only, and I won't be remembering to think about a wiser option. I would do things stupidly, either converging to atmosphere of the room or my nature against my principle.
+***** Advantages
+****** Focus
+I would be very focused on concepts at hand. Understanding and precision would be piece of cake.
+
+**** Solution
+***** Crutch
+****** Procedural check
+A whole procedure on a piece of paper would work.
+A step in the [[id:E48DECC9-A139-4F6D-B6F6-62B3570959D6][General task doing machine]] to check for principles and goals
+****** Mnemonic
+Set mnemonic for key figures. Door--entering the door and remember the social principles--a small story about door and my social principles like jigsaws
+
+
+***** Practice
+When I have practiced and got familiar with the principles or tasks I should bare in mind, they would be naturally out with ease.
+
+****** Example
+玩云顶之弈时，拿到什么英雄，什么装备，可以组成什么阵容，还需要什么英雄和装备，甚至海克斯强化，在一开始看着攻略打的时候是记不得的。但是重复两三次之后就不需要再看攻略了。
+
+***** Review
+Frequently review on my deeds, record, goals, schemes and such.
+Spaced repetition meaning also, but review here mainly refer to my own decision and thoughts. I of course wish to remember all knowledge, but as I can refer to them in my notes, My =OWN DECISION= and =OWN THOUGHTS= are more important, as I'll use and live out them everyday.
+* Goals
+
+** Accomplishing my [[id:1130F0BE-A5C1-4E0F-8AF7-9BC582111108][Roles]]
+I have many roles, of them the most important are four:
++ Neuralscientist
++ Artist
++ Engineer
++ Athlete
+
+* Study interest
+
+** Neuroscience
+I'm interested in the way memory and conscious work, and is curious to building an agent that could grow like a human.
+
+Also interested in capturing and injecting sence/information out of/from brain. Like Fully immersed experiance, remote neural control
+
+** Quantum Computing
+I have a instinct that the model of conscious/StrongAI would require quantum computer architecture to realize.
+
+** Computer Science
+=General Model Generator=, a algorithm to generate models. Neuroscience is having bottleneck developing because of lack of model. A algorithm that could generate model on its own would be of great help.
+
+This could be combined with a =General Model Testor=, which could generate test/experiments on top of models, and/or test model with already take experiments' data.
+* Way of doing things
+I do things according to my machines. Everything. Projects like getting grade in certain phase I do with a giant project machine, Skills and routines that would appear many times I do with normal machine.
+
+I call a time period dedicated to one thing ~session~, and the thing in the session ~task~. Generally I'm doing tasks all the time, and they all converge to the [[id:E48DECC9-A139-4F6D-B6F6-62B3570959D6][General task doing machine]]. This machine is dedicated to deal with my personal [[Weakness]], espeicially [[*My Greatest weakness][My Greatest weakness]] of rememberance. Several moral and artful aspects are dealt, too. The machine would be carried throughout my everyday life. Exceptions are that moments I make desisions and times I think that I should listen to my nature self(reassesment), like relaxation or having fun.
+
+With the [[id:E48DECC9-A139-4F6D-B6F6-62B3570959D6][General task doing machine]] as a base and fallback, I have machines for certain things I do, like [[id:5AA94607-4D2C-431C-AEB1-8F0552732B3D][Archery Machine]] for Shooting and practice of shooting and [[id:CEEC218D-CE8B-435A-8C78-4208607DD4DD][Self-Learning Machine]] for self-learning and review based on material without tutors.
+
+Another important machine would be the [[id:41C1D7B1-FD6D-487E-A50A-91F5F84704D2][Scheme machine]]. While According to it, the projects are nested under [[id:F1E6F424-6DD8-462A-B2C3-AD0EE8CD579F][Artist]], [[id:9C7D0D76-725F-45D6-B84A-4F75C11E164F][Engineer]], [[id:BCAC2B73-634A-4A49-8962-40CC2DF03751][Athlete]], and [[id:391C5CF3-2A11-4BC3-ADE3-6F8C6E557B82][Neuralscientist]] seperately, to show the relation of the project and the goal they serve to, A list of all Scheme's and their results is maintained under the [[id:41C1D7B1-FD6D-487E-A50A-91F5F84704D2][Scheme machine]]. It have very close relationship with my memoir and CV, personal history, which is also maintained there.
+
+The last important machine in my general way of doing things is [[id:16F83A85-2D45-4784-8F03-E0C535FED8AC][Task management machine]]. It take advantage of org-mode's features like org-agenda and org-capture to construct a way where I can take task from.
+
+The whole flow could be described as:
+1. [[id:41C1D7B1-FD6D-487E-A50A-91F5F84704D2][Scheme machine]] make scheme machines (project plans) filled with tasks
+2. [[id:16F83A85-2D45-4784-8F03-E0C535FED8AC][Task management machine]] takes the tasks from schemes and present them to me everyday
+3. and Everyday, in each session, I do the tasks with machines converging to the [[id:E48DECC9-A139-4F6D-B6F6-62B3570959D6][General task doing machine]].
+
+Of course, there will be other spontaneous actions like the making of machines, recording of cluttering tasks and logs, journals, but the main way important things are done is described in the flow above.
+
+** Weakness troubleshooting
+Additionally, as my weakness is critical, a [[id:A7D2930A-A934-444B-A5F9-08C153F9D7EF][Media control machine]] is also critical to deal with the problem of too masive media consumption.
+
+Bare [[id:A7D2930A-A934-444B-A5F9-08C153F9D7EF][Media control machine]] in mind every time with media. take log of it.
+
+* Physical Attributes
+
+** Medical state
+
+*** sore shoulder
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/resource/soreshoulder.png]]
+
+**** solution
+
+***** 垂头
+把头自然垂下有帮助
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/shouldersol.png]]
+
+***** 偏头
+向左侧微偏可以稍微缓解.
+
+*** belly
+有游泳圈.
+
+*** 鼻炎
+
+*** 右手
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/resource/sorehand.png]]

@@ -1,0 +1,30 @@
++++
+title = "XJTLU-Y2S1"
+author = ["System Administrator"]
+draft = false
++++
+
+This is the overall plan and navigation of my academic life in Y2S1 in XJTLU.
+The Whole Y2S1 project is constructed in 2 aspects:
+
+-   University Modules
+    the modules I enrolled in
+    -   [CPT101]({{< relref "20211007013240-cpt101.md" >}})
+        Computer System
+    -   [CPT103]({{< relref "20211007013434-cpt103.md" >}})
+        Discrete Mathematics
+    -   [CPT107]({{< relref "20211007013423-cpt107.md" >}})
+        Database System
+    -   [CPT111]({{< relref "20211007013349-cpt111.md" >}})
+        Java Programming
+    -   [EAP121]({{< relref "20211007013334-eap121.md" >}})
+        Academic English
+-   Self Involved Academic Activities
+    Other things I do with the University and/or fellow students with academic aims
+    This could be easily messed up with my owned projects, the difference is:
+    -   SIAC is with academic aim.
+        That is, for me, with aim into neuralscience and computer science, with not only the goal of enrich my knowledge/have fun, but also of gaining credits. Examples are `papers, contests, research under professor's instructions`
+    -   SIAC is with other academic people
+        Usually SIAC is with fellow students and professors. in respect of the audience, SIAC would be judged finally by the audiance of scholars. with the academic aim, SIAC is [Finite Game]({{< relref "20211007012920-finite_game.md" >}}), with and watched by fellow scholars.
+
+    -   The Naviagtion of SIACs:

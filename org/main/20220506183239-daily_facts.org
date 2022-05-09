@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID:       B5B14EBC-9125-45E6-B66F-C6846AF63874
+:END:
+#+title: Daily Facts
+#+HUGO_SECTION:main
+Some daily beliefs and facts
+* Energy
+** [Hypo] 6 Hour Maximum
+I can maintain up to *6 Hour* of very concentrated work(i.e. effective work)
+*** simple math
+6 Hour = 2 * 3 Hour = 3 * 2 Hour.
+A [[id:38AD2373-C5E5-4796-B31A-01FCA5C6999B][Dedicated Session]] typically claims 2-3 hour, so it make =2-3 Things to be done= to be the maximam of a day.
+
+I could start 2-3 dedicated session to tweak on 2-3 different topic a day. If outside dedicated-session, I think the time would drop, but I didn't count
+* Things I do
+** Common Practice
+我看到一個藝術家講述他畫畫的經歷,其中說到一句「我喜歡畫畫,我喜歡在紙上嘗試畫出我喜歡的卡通角色,動物,嘗試那些光影和效果的技巧,我每天都這樣做,我很享受其中的過程.」
+
+對過程的珍視,並非與結果相對,而是單純地珍視過程,享受過程.
+** Befriend the environment
+What I do, as a [[id:A2F291A6-C043-4939-8366-F94590C42488][scholar]], is to get familiar with the ideas, facts, knowledge, skills in the field. I become a friend, rather than owner/employer to them.
+
+In this mindset, I could:
++ escape profit-oriented mindset ruling the whole world
++ be able to do things in their own pace, rather than a "required one"
++ maintain the atmosphere around me to be open, calm, and friendly.
+** Signal-Noise ratio(SNR)
+siganl-noise ratio matters. It matters a lot.
+*** high SNR
+Information that is relevent and concise.
+
+I generally want my notes, my tutorials to have a high SNR, so that I could read it smoothly, and work with it easily.
+*** low SNR
+Information hiding in context and environment.
+
+I generally want some descriptive art pieces of mine to have low SNR, like a delicate jazz song with harmony, or a drawing of a scene where I want to provide a journey and let the viewer find the informations for herself.
+* Time
+** Time does not add up. The side-effects adds up.
+Things add up only when they are duplicable and could present in plural.
+You can't save a minute for later, Time is not that kind of concept.
+What you do in the time is the thing that adds up. If you make no change to the environment, then there's nothing to add up.
+
+Compare to saving time, start early and stop lat, it's more important to:
+*** Set up outcome facility
+In what stage, what should be done, creating what effect...... The thing people often refer to as a =plan=.
+
+(like linear regression model and the mean)
+Plan is a concept established with close reference to the fact that [[*Time does not add up. The side-effects adds up.][Time does not add up. The side-effects adds up.]]:
++ Need a way to make sure that side-effects are present in the process.
+  a plan is the patch to check for fulfilment of =desired outcome=
++ Need a way to translate time into side-effects
+  a plan is the patch to =organize time into activities=
+
+if a plan give no information about either =outcome= or =map of time into activity=, it's no plan, but a writing with similar format to a plan script.
+**** plan and script
+Plan is script: it specifies when what should be done.
+

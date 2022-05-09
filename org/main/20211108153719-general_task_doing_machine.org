@@ -1,0 +1,111 @@
+:PROPERTIES:
+:ID:       E48DECC9-A139-4F6D-B6F6-62B3570959D6
+:END:
+#+title: General task doing machine
+#+HUGO_SECTION:main
+strategy/principle and flows for doing task in a session
+
+* Background Sound
+
+** Magic image
+Imagin the thing I'm learning is a kind of magic. Being able to understand and use the thing would give me the ability to perform magic.
+
+Imagine the power. The power I could get from the knowledge, the power scene.
+
+* Strategy/Principle
+** Take Log
+*** Log or not
+
+Could skip log only with tasks too simple/used to that I could resite  the whole process with ease
+
+#+begin_src python
+  if (taskEasy or taskSkilled):
+      log.takelog = False
+#+end_src
+** Have Priority
+Do the important part first
+** Have process control standard
+Where am I? How much left?
+Have a simple process bar.
+** Session time-small as possible
+My consciousness fades quickly. Keep the session small as possible, dedicated to only thing. A session with more than 1 goal make my consciousness fade even faster.
+
+It depends on my body condition. If my condition allow, the session could be longer.
+
+for now, =30 minutes= of a session is a taken standard
+** No distraction
+Distraction here means embracing the strategy and structure I see randomly the first sight.
+
+BE LOYAL TO THE TASK AT HAND!!!
+** Regular little exercise
+could use pormordo timer, 25m of sitting and 5m of exercise.
+This time period, I know, don't fit me very well. Could find better.
+** Focus
+Stay outsider, stay evaluating the deed.
+Do so by lay focus on the back of head.
+** Water rule
+Drink as more hot water as I could. Drink continuously.
+The hot steam help too.
+
+This make me calm, relax and mind to be open.
+** Outline rule(doc)
+Always keep a outline of the work.
+work is essentially building system. The outline of the system take the black box abstraction to enable higher thinking and memory.
+
+This help =remember= and =understanding= the content and structure of the system. Even when I'm following a detailed instruction.
+
+Ignorance of this leads to bunch of =vague code= which I don't know I wrote them nor what they are for.
+** Background sound
+*** Genius of myself
+I'm genius of myself and myself only
+I create things, I'm legend, but only to myself. Personal victory, and there's nothing to compete with others.
+*** Calm awareness
+Aware of all things I would be interacting during the session, and repect them, be thankful to them.
+It's their precence make this session happen.
+*** Prevent
+Prevent bad things from happenning by organize and deal with the seeds in advance
+* Flow
+** 1. Hot Water Cycle
+Make sure to drink continuously in the process.
+Every 30m, get up to refill the bottle. Exercise a little bit, maybe.
+** 2. Check in the task
+When checking in the task,
+1. Make sure the focus is right
+   on the back of brain
+   calm, relax, especially the muscle around eye.(hot water helps)
+2. review the outline(or make one)
+   make sure you know that where in the world are you, clearly.
+   use Black Box abstraction.
+** commented flow
+# should check the commented flow later. But for now, adopt a much more simpler one
+# ** 1. Check agenda
+# for next NEXT task
+# ** Scheme review
+# look up scheme the task belong to. Summarize already did works.(let me know that I'm standing on my shoulders)
+# aware of the position of the task in scheme, the goal, and my life.
+# ** Set session time(effort)
+# the effort in planning is a rough reckon
+# ** Prioritizing parts
+# make a list of actions. prioritize.
+# Set strategy, and imagine doing it for a sec(it's for motivation)
+# ** Monitor process when 1 action's done
+# make a [1/4] on top of the list
+# + [X] first action
+# + [ ] 
+# + [ ] 
+# + [ ]
+# ** Exercise every 30m
+# ** last. Check agenda
+# for next NEXT task
+
+* Submachines
+** [[id:E64C8603-E218-44FC-AE46-B6399B65D6AA][Focus machine]]
+When having difficulty focusing, could apply the machine
+I'm usually focused. But might with inappropriate type of focus. 
+* Improvisation
+maybe a improvisation machine would be better.
+** Flow
+*** Improvisation strategy check
+Check for strategy/principle always in improvisation
+** Improvisation Strategy/principle
+*** Inbox

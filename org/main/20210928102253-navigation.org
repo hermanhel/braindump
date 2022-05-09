@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5311BAAE-1837-4EE7-B339-C1742DAC8439
+:END:
+#+title: Navigation
+#+HUGO_SECTION:main
+The navigation to:
++ Projects
++ Roles
++ Knowledge areas
++ etc...

@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       A7D2930A-A934-444B-A5F9-08C153F9D7EF
+:END:
+#+title: Media control machine
+#+HUGO_SECTION:main
+* Target
+Target of media control includes:
++ Game
++ Movie
++ Video
++ Music
++ Novel
++ Illustrat
++ etc
+* Restriction
+Focus of Consumption of media, with no further specifiction, is less important than my goals.
+
+But Medias have strong strategy implication and urges for its lasting existence. Left it un-supervised will result in it dominating every piece of time in my life.
+
+Therefore, restriction measure should be applied
+** Time limit
+A overall time limit to media consumption
+Current time limit is ~60~ minutes
+#+begin_src emacs-lisp
+(setq media-time-limit 60)
+#+end_src>
+** Focused session
+No media consumption in sessions.
+No media consumption in rest.
+No media consumption in eating, shower, or washing sessions.
+
+Media consumption only in Schemed sessions.
+*** Senarios
++ waiting for drink
++ waiting for food
++ with friend
+* Moderate
+I have desire to consume media. The desire could violate focused session.
+
+Measures are to be established to moderate the desire to have the sessions unviolated
+** Media session
+Media session are to be schemed for relation/myself
+
+It's a normal session. owns it's own project page [[id:029EFEC5-830A-4455-B36A-4719D86BD2E4][Media consumption project]]. scheme could be very random. Follow [[id:E48DECC9-A139-4F6D-B6F6-62B3570959D6][General task doing machine]], espeicially the effort part.
+
+** Emergency relax
+*** Signal
+Count 3 of wanting to do something in a session.
+*** Procedure
+1. signal observed.
+2. scheme a [[Media session]] after 1 other sessions.

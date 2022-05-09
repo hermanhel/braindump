@@ -1,0 +1,363 @@
++++
+title = "MySQL"
+author = ["System Administrator"]
+draft = false
++++
+
+## Using MySQL Server {#using-mysql-server}
+
+
+### Emacs {#emacs}
+
+I Think that I'll be using this approach mainly. Check that out.
+
+
+#### Using eshell {#using-eshell}
+
+```shell
+mysql -h [server] -u [usrname] -p # RET, then input the passward
+```
+
+
+#### Using sql-MySQL {#using-sql-mysql}
+
+1.  Edit a .sql file
+2.  M-x sql-MySQL
+3.  usrname, password, database, server.
+
+<!--list-separator-->
+
+-  Error: cannot find mysql exec
+
+    Find the exec. Usually a binary exec under `"/some/where/bin"`
+
+
+### <span class="org-todo todo TODO">TODO</span> phpMyAdmin {#phpmyadmin}
+
+This is the official way taught in class, should be. I should Check that out later
+
+
+## MySQL Commands {#mysql-commands}
+
+| `COMMAND`                         | Description                            |
+|-----------------------------------|----------------------------------------|
+| `show databases;`                 | Show database                          |
+| `use XXX; show tables;`           | Show table names                       |
+| `use XXX; create table YYY(ZZZ);` | Create table YYY in XXX with speci ZZZ |
+| `describe XXX;`                   | Show table XXX's structure             |
+| `create database XXX;`            | Create database                        |
+| `drop database/table XXX;`        | Delete XXX                             |
+| `delete from XXX`                 | Clear out XXX                          |
+
+
+### Setting {#setting}
+
+
+#### Create Table {#create-table}
+
+
+#### Alter {#alter}
+
+```sql
+alter table `tablename`
+add
+      primary key (`column`)
+
+      constraint fk_module_teacher foreign key (`column`)
+      references `teachers` (`id`);
+
+drop primary key
+```
+
+
+#### Insert data {#insert-data}
+
+```sql
+  insert into `table` values(field1, filed2);
+
+  insert into `student` values
+(156123,'Nuno Bloggs','nuno@bloggs.com'),
+(156897,'John Trump','John@trump.com'),
+(123987,'Lidia Elliott','Lidia@gmail.com'),
+(777123,'Alicia Smith','Alicia123@456.com'),
+(127845,'Sophie Johns','S.Johns@nott.edu.cn');
+
+```
+
+只插入一定列
+
+```sql
+insert into persons (LastName, Address) VALUES ('JSLite', 'shanghai');
+INSERT INTO meeting SET a=1,b=2;
+
+
+```
+
+表到表
+
+```sql
+INSERT INTO orders (user_account_id, title) SELECT m.user_id, m.title FROM meeting m where m.id=1;
+
+```
+
+<!--list-separator-->
+
+-  Update data
+
+    ```sql
+    update `modules` set `teacher_id` = 7099543 where `code` = 'MC2'; -- update the teacher reference
+
+    ```
+
+
+### Query {#query}
+
+
+#### `SELECT` Command {#select-command}
+
+Syntax: `select FIELD from TABLE where CONDITON;`
+Return a set.
+this set could be used with the `in` syntax in [Subquery](#subquery)
+
+<!--list-separator-->
+
+-  Exec Flow
+
+    1.  `select FIELD from TABLE`
+    2.  `where CONDITION`
+
+<!--list-separator-->
+
+-  Rename
+
+    <!--list-separator-->
+
+    -  Display
+
+        This alters the column name in display
+        `select (FIELD*3) as ABC`
+
+    <!--list-separator-->
+
+    -  Reference
+
+        `select * from Dormitory as D`
+        This make reference like `Dormitory.roomid` shorten to `D.roomid`
+
+
+#### Select from () as x {#select-from--as-x}
+
+only
+
+
+#### Query Flow {#query-flow}
+
+1.  Tables join
+2.  `where` clauses
+3.  `group by` clasuses and aggregates
+4.  column selecion
+5.  `having` clauses
+6.  `order by` clauses
+
+    ```sql
+    select XXX from YYY as ZZZ
+           where predicates
+           group by AAA
+           having predicatesBBB
+           order by ZZZ asc
+    ```
+
+
+#### Subquery {#subquery}
+
+```sql
+select Name from Employee
+     where Dept =
+   (select Dept from Employee
+ where name = "andy")
+```
+
+<!--list-separator-->
+
+-  Set
+
+    Subquery meet problems in case of sets
+
+    | option    | usage                           | meaning                |
+    |-----------|---------------------------------|------------------------|
+    | `in`      | `where COL in SET/(select...);` | check if COL is in SET |
+    | `exists`  |                                 |                        |
+    | `all/any` | `val = any (set)`               | used with `<,>,<=,etc` |
+    | `not`     |                                 |                        |
+
+
+#### Joins {#joins}
+
+syntax: `select * from A TYPE join B`
+
+| `TYPE`  | meaning                                                |
+|---------|--------------------------------------------------------|
+| cross   | all pair of A and B                                    |
+| Inner   | paris of rows satisfying a CONDITION                   |
+| natural | pairs of rows with common values in same named columns |
+| outer   | pairs of rows satisfying a condition with `NULLS`      |
+
+requivalent to `select...` with proper `where` clauses.
+
+<!--list-separator-->
+
+-  Cross join
+
+<!--list-separator-->
+
+-  inner join
+
+    ```sql
+     select * from A inner join B
+          on CONDITION;
+
+        select * from A inner join B
+      using (COL1, COL2);
+    -- COL1 and COL2 must appear in both A and B
+    ```
+
+<!--list-separator-->
+
+-  natural join
+
+<!--list-separator-->
+
+-  outer join
+
+    ```sql
+    select COLS from
+         TABLE1 TYPE outer join TABLE2
+       on CONDITION
+    ```
+
+    | TYPE  | meaning                              |
+    |-------|--------------------------------------|
+    | left  | retain the left table, NULL in right |
+    | right | retain the right tabel,NULL in left  |
+    | full  | retain both tables                   |
+
+    <!--list-separator-->
+
+    -  full outer join not supported by MySQL
+
+        ...left...
+        union
+        ...right...
+
+
+#### Order by {#order-by}
+
+syntax: `select... order by cols [asc|desc ]`
+multiple cols:
+
+```sql
+select * from grades
+     ORDER BY
+   code asc, mark desc;
+```
+
+
+#### Aggregate functions {#aggregate-functions}
+
+Only in [filed] part
+
+<!--list-separator-->
+
+-  count
+
+    the number of rows
+
+    ```sql
+    select
+          count(*) as count
+        from grades;
+    select
+          count(code) as count
+        from grades;
+    select
+          count(distinct code) as count
+        from grades;
+    ```
+
+<!--list-separator-->
+
+-  sum
+
+    sum of entries in the column
+
+<!--list-separator-->
+
+-  avg
+
+    avaerage entry in a col
+
+<!--list-separator-->
+
+-  min/max
+
+
+#### group by {#group-by}
+
+Group by syntax will first sort the COLUMN_SET1 alphabatically,
+then seperate it to seperate groups to, resulting in 1 row each group.
+
+Used to combine a group of rows together for aggregate functions like `avg()` (in `COLUMN_SET1` part)
+
+```sql
+select column_set1 from tables
+       where predicate
+       group by column_set2
+```
+
+
+#### Set operation {#set-operation}
+
+<!--list-separator-->
+
+-  Union
+
+<!--list-separator-->
+
+-  except
+
+
+#### Query Techniques {#query-techniques}
+
+<!--list-separator-->
+
+-  Subquery
+
+<!--list-separator-->
+
+-  Selfjoin <span class="tag"><span class="bug">bug</span></span>
+
+    ```sql
+    select FIELD from TABLE_NAMd as E1, E2
+    ```
+
+
+### If {#if}
+
+```sql
+create dastabase if not exists jianjun;
+drop table if exists module_enrollment, activity, student, modules;
+
+
+```
+
+
+### Date {#date}
+
+
+#### calculate {#calculate}
+
+```sql
+select * from test
+       where time > Date_add(now(),interval -3 hour)
+
+```

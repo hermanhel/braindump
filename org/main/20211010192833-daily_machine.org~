@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       D1FEE62A-AE79-4838-AD17-A006E608CE02
+:END:
+#+title: Daily Machine
+/Daily Machine/ is the machine that loop on daily basis. It's the machine of the process of the day.
+Imagin it like a main() method in C.
+The /Daily Machine/ establishes the common structure of days, and provide API(or hubs) to call other machines.
+It serves more like a navigation.
+The whole /Daily Machine/ is constructed with with 3 basic machine according to time of a day:
+- Morning Machine
+- Stuff Machine
+- Evening Machine
+* Morning Machine
+In the scope of waking up the day and set up the tone.
+** Morning Page
+* Stuff Machine
+Doing Stuffs
+** [[id:4972A60D-3727-4422-B73F-BAF3289C1DB8][Academic Machine]]
+** [[id:7FDF98A0-7C62-4F02-A5D9-1087B4AEE001][Household Machine]]
+** Project Machine
+a machine to perform and manage projects
+** [[id:188F8050-7BAF-494E-847D-9265398B570A][Weekly Plan]]
+Every Saturday.
+For the First week, [2021-10-11 Mon], Today afternoon.
+* Evening Machine
+Maintaining, reflecting
+** Daily reflection

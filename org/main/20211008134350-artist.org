@@ -1,0 +1,189 @@
+:PROPERTIES:
+:ID:       F1E6F424-6DD8-462A-B2C3-AD0EE8CD579F
+:CATEGORY: Artist
+:END:
+#+title: Artist
+#+HUGO_SECTION:main
+I have the gut to say, that I am a artist right here, right now.
+Long way to go, but I am doing art and creation.
+* Projects
+** ACTIVE Musical Actor
+I am doing [[file:20210929010628-projects.org::*The Greatest Show][The Greatest Show]].
+*** Musical Club
+**** ACTIVE The Greatest Show
+***** DONE Stage Motion
+CLOSED: [2021-10-13 Wed 21:36] SCHEDULED: <2021-10-11 Mon>--<2021-10-13 Wed>
+:LOGBOOK:
+- State "DONE"       from "WEEK"       [2021-10-13 Wed 21:36]
+- State "DONE"       from "TODO"       [2021-10-12 Tue 01:07]
+:END:
+follow [[file:~/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb06efae5a760fd2124679565f0fd6fc/Message/MessageTemp/d7067759c6c85bff4c11fd9ac3ccc1fd/Video/1633853013086851.mp4][Greatest Sqqqhow Stage Motion]]
+****** 1. Before & Graph 1
+****** 2. My opening
+****** 3. See See
+****** 4. Showing Huang & Graph 2
+****** 5. Grpah 3 and cycle
+****** 6. Go to the Piano and Play
+******* DONE WEEK Gotta prepare the piano session
+CLOSED: [2021-11-01 Mon 12:33] SCHEDULED: <2021-10-13 Wed>
+:LOGBOOK:
+- State "DONE"       from              [2021-11-01 Mon 12:33]
+:END:
+****** 7. Finish Piano and back wave and Sing Catch phrase
+****** 8. get in line again 
+****** 9. Back to Piano and Gliss the final note.
+***** DONE Rehearsal
+CLOSED: [2021-10-16 Sat 23:33] SCHEDULED: <2021-10-16 Sat 20:00>
+PB221
+****** DONE Appraisal
+CLOSED: [2021-11-01 Mon 12:33] SCHEDULED: <2021-10-17 Sun 19:00>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-11-01 Mon 12:33]
+:END:
+** ACTIVE Style Copy Project
+Mainly using [[id:432FA37B-68E6-4E04-8518-98A57C873E52][Copy Machine]]'s drawing aspect.
+*** Meta
++ Model: /村上水军/
++ Current Loop: 1
+*** Problems
+*** DONE 1. Practice
+CLOSED: [2021-10-23 Sat 10:57]
+**** Machine
+[[id:FDC29926-4580-476F-934B-7E816F9A8F86][Drawing Machine]]
+*** DONE 2. Compare and find problem
+CLOSED: [2021-10-23 Sat 10:57]
+**** TODO How to draw pieces of Hair
+**** TODO Highlight on hair
+**** TODO Eye's change of shape when head rotated
+**** TODO How to represent nose
+**** TODO Where is nose
+**** TODO how to illustrate mouth
+**** TODO Shoulder Joint
+**** TODO Butt Joint
+**** TODO How to illustrate the neck body joint
+**** TODO Shape of head, in perspective
+**** TODO Representation of Knee
+**** TODO Real world shoes and leg-foot joint
+**** TODO Use of shadows to highlight the space and shape of body
+**** TODO Highlight's use 
+**** TODO The radius of arm and leg, and body
+*** TODO 3. Drill on 1 problem
+**** TODO Eyes' position and shape
+***** TODO What's the shape of eyes
+***** TODO Assosaries of eyes
+***** TODO How the shape of eyes change in the different perspective
+***** TODO How to render the eye details
+***** TODO Where shold eyes be placed
+*** TODO 4. Return to Practice
+** ACTIVE Keyboard Band
+*** TODO Training
+SCHEDULED: <2021-11-02 Tue 19:00 +1w>
+at G13W
+
+* Learning
+I've been thinking if I should nest the topic under project, or stand alone.
+Plus, or under different aspects of artist, like writer/drawer
+** Writing
+*** Franklin Method
+1. Take a paragraph.
+2. Write it.
+3. Compare to the original one.
+** Drawing
+*** Workflow Speci
+The WorkFolder is under ~~/Ultra Projects/Ultra Draw/Drawabox~
+*** Drawabox
+Drawabox is a website with a bunch of progressive drills and concepts about drawing
+After trying it, I think it's a very good progress line to follow.
+I'm taking a drawabox exercise each day before doing anything to remember the grinding work of life.
+**** Process
+***** TODO Boxes
+*** Other Drills
+**** Copy Machine
+**** Drafting (exclusive)
+** Model
+Using Blender
+** Jazz Piano
+Jazz Piano!
+Herbie Hancock's having a master class
+Peter Martin's got his tutorial too
+** Blues Harp
+WILL WILDE's got very excellent style and tech in Harp
+[[https://www.bilibili.com/video/BV1Mv411T7in?p=1&share_medium=ipad&share_plat=ios&share_source=COPY&share_tag=s_i&timestamp=1628933816&unique_k=4NKTBH][Wilde's Tutorial on Bili]]
+** Sing
+* Aspects
+** Jazz piano
+*** Tutorial(my)
+**** Section 1: the composition
+Jazz piano is not self completing. To play good jazz piano, you need to play at least 1 other instrumment. Bass, Harp, and Guitar are usually popular choices. Drum is not always a popular second instrument, but it's also a good one.
+
+One reason you need another instrument is that Jazz music is of interaction. Piano's having very unique logic, you need to understand other instrument. A good way is to play one.
+
+Another good reason is that, piano's logic is kind of disguising. You could play 7 or 8 notes together, all the sounds, without knowing them. A Bass, on the other hand, plays only base and its own solo, Harp too. The switch of logic provide comparison that could guide you to avoid unconscious playing, and make things more fun.
+*** Database(songs) 
+** Singer
+*** Database(songs)
+**** Besame Mucho
+***** Lyrics
+bésame, bésame mucho,
+
+como si fuera esta noche la última vez,
+
+bésame, bésame mucho,
+
+que tango miedo a perderte perderte después
+
+bésame, bésame mucho,
+
+como si fuera esta la última vez,
+
+bésame, bésame mucho,
+
+que tango miedo a perderte, perderte después
+
+quiero tenerte muy cerca mirarme en tus ojos verte junto a mí
+
+piensa que tal vez mañana yo ya estaré lejos, muy lejos deti
+
+bésame, bésame mucho
+
+como si fuera esta noche la última vez.
+
+bésame, bésame mucho
+
+que tango miedo a perderte, perderte después
+***** Harmony
+On G, but alt 3.(3 b on G)
+A - 
+**** Hotel California
+***** Lyrics
+On a dark desert highway
+
+Cool wind in my hair
+
+Warm smell of colitas
+
+Rising up through the air
+
+Up ahead in the distance
+
+I saw a shimmering light
+
+my head grew heavy and my sight grew dim
+
+I had to stop for the night
+
+There she stood in the doorway
+
+I heard the mission bell
+
+ANd I was thinking to myself this could be heaven or this could be hell
+
+Then she lit up a candle
+
+And she showed me the way.
+
+There were voices down the corridor,
+
+I thought I head them say 
+**** Sweet Vitory
+

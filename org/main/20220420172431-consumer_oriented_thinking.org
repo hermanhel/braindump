@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID:       DD529D9C-924E-4E3B-908E-9CED572243D1
+:END:
+#+title: consumer-oriented thinking
+#+HUGO_SECTION:main
+consumer-oriented thinking is propositions and perspectives centered around the activity of =transaction=. Often, the thinker would take the position of consumer or employee.
+* Transaction
+A classic definition of transaction is exchange of matter between entities, usually with reference to modern business, where money and product are exchanged between people.
+* Centering Transaction
+** Input-output and output-input
+consumer-oriented thinking focuses on relation of input and output.
+
+Traditionally, the input-output relation are often refered as =consequence knowledge=, base on which prediction could be made from previous experiance of similar input.
+
+Now ,COT emphasize on the output, and use the output to evaluate the whole process.
+** Gaining
+A typical proposition of COT is =how much I have gained from this activity=. Similarly, the accumulated result of activities are examined by COT as important standard of evaluation of people.
+
+
+The reason was considered to lie in the implicit product identity. COT consider everything as product that would involve in a trade some day. The ultimate goal is to gain as much of value from that transection. The definition of the trade is vague and not specific to 1 target, but always being bore in mind.
+
+examples are:
++ Time is money
++ in exchange of time, we got the skill
++ in exchange of effort, we got the payment
++ 
+** The best product
+From marketing COT borrowes the idea of comparison between product. The goal is to make the product the best product, with high quality in market or high share in market.
+
+Simple standard with attributed evaluation like "time/speed", "accuracy", "maximum power" are used by COT to evaluate whether a product is good.
+** Right and wrong and better
+COT take thoughts for granted, and usually with a small space. There's 1 thinking, and 1 thinking great, like "8 bottle of water 1 day", but with no further comment.
+
+"This thinking sounds right and sane, so I could use it to prove myself honorable. By assuming this idea true I gain priviledge/advantage over other people."
+
+Therefore, the process of evaluating ideas is:
++ to normal default:
+  + evaluating truth by logic, truth set and evident
+  + evaluating turth by tradition or faith
++ to COT default:
+  + selecting 1 idea product in the idea supermarket.
+    + myself being a consumer, so no modification to idea, but selection.
+    + no creation or self generating ideas, being consumer
+    + select 1 idea that's the greatest bargain
+  + using libraries in machine learning
+    + test libraries for best score.
+    + no modification to libraries, being a consumer.
+    + little self written function/code, being a consumer.

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       E9CF3278-CC02-4C51-8A43-D9BFE2337233
+:END:
+#+title: 2021-09-29
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* DONE 给弓装窥孔
+  CLOSED: [2021-10-05 Tue 00:58] SCHEDULED: <2021-10-04 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-05 Tue 00:58]
+:END:
+  带上弓和窥孔去对面找陈朗
+  
+  

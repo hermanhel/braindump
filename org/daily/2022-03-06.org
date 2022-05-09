@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ED19D165-1E73-4FAD-BEA6-4FFE5789ADA8
+:END:
+#+title: 2022-03-06
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Speed Reading!
+Use Spead Reading Software to train the skill!

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       FFEB6023-94FB-4C85-A14E-928E3114CFF9
+:END:
+#+title: Finite Game
+#+HUGO_SECTION:main
+#+FILETAGS: :Peter:Boss:Secret:

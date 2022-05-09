@@ -1,0 +1,80 @@
++++
+title = "c language"
+author = ["System Administrator"]
+draft = false
++++
+
+## Structures {#structures}
+
+```c
+#include <stdio.h>
+
+struct student{
+  char familyName[30];
+  char firstName[20];
+  int age;
+  double aveGrade;
+};
+
+int main(){
+  struct student stu1 = {"He", "Linfeng", 24,4.9};
+  stu1.age = 21;
+  printf("Name: %s %s\n",stu1.familyName,stu1.firstName);
+}
+
+void printStudetn(struct student stu){
+  printf("Name:%s %s\n",stu1.familyName,stu1.firstName);
+
+}
+```
+
+
+## Pointer {#pointer}
+
+
+### pointer and array {#pointer-and-array}
+
+```c
+int * p, i;
+int val[5];
+p = val; equals p = &val[0];
+*(p+1); refers to val[1]
+printf("val is %d",*p); would print the value p points to
+			/* d
+			   df*/
+
+
+
+```
+
+
+### with struct {#with-struct}
+
+use `->` to get fields.
+
+```c
+struct man
+{
+  int age;
+};
+
+int main()
+{
+  struct man herman;
+  herman.age = 20;
+  struct man * thatguy = & herman;
+  thatguy->age = 21;
+  return herman.age;
+}
+```
+
+
+## Useful Information {#useful-information}
+
+
+### syscalls {#syscalls}
+
+
+#### wait() {#wait}
+
+wait() is in `sys/wait.h`.

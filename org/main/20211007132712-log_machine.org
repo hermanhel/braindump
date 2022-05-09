@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       32C68C01-E94C-4993-8977-71457F72CECD
+:END:
+#+title: Log Machine
+#+HUGO_SECTION:main
+There are 2 kinds of log machine, dealing with 2 situations
+| Doing bunch of small tasks | Doing a scheduled big tasks |
+| Journal.org                | Tasks.org                   |
+* Description
+Log machine takes in experiences, make them capable to reflect on.
+it will be further checked by [[id:EAD2BDED-4AE1-4E91-BF44-24BAD882447A][Reflect Machine]], to generate [[id:E339CEF9-FCFA-414A-BC08-787F5C3039CF][principle]]s to follow on the next run.
+
+Similarly described in 
+* methods
+** Journal.org
+   1. C-c c org-capture j j Journal entry
+      before the whole session start, open the Journal entry.
+      Timer will be automatically set
+      Could be put on Top left of screen
+   2. Record Deeds, Principles, and Outcome, in the entry
+
+** Tasks.org 
+
+** Detailed log
+in either method above.
+Start a timer while clock in.
+~C-c C-x i (clock-in)~
+~C-c C-x 0 (timer-start)~
+Create a timer item list to record realtime thoughts and doings.
+~C-c C-x - (timer-item)~
+

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       BB4F4DF9-FEB2-4A0C-9B6C-2320B8611BEF
+:END:
+#+title: Git
+#+HUGO_SECTION:main
+* Magit
+/Magit/ is a git interface in Emacs.
+** Commands
+*** 1. Magit status
+
+~C-x g~
+~?~ show all commands
+~TAB~
+~s~ stage change
+~S~ stage change all
+*** 2. Branch
+~b~
+*** 3. stash
+* Hosting github projects
+** Setup
+1. new repository on [[https://github.com][github.com]]
+2. in local repository place, like ~~/playground/projects~, do ~git clone git@github.....~
+3. first push: ~git remote add gh git@github....~, then ~git push gh~
+** Modifying
+** Pull request?
+** merge
+
+

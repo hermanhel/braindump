@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       8E8D8989-1C41-45FD-9141-9D22C52FA56F
+:END:
+#+title: My braindump build
+#+HUGO_SECTION:main
+#+filetags: :draft:
+* Method
+I used the ~build.py~ and ~ninja~ approach and copyed ~publish.el~ most from 
+[[https://github.com/jethrokuan/braindump/][Jethro's Braindump]].
+The build.py didn't work for me, so I borrowed from system crafter's org website tutorial the way to build: instead of a complete ~init.el~, I used a minimal ~init.el~ to do the work.

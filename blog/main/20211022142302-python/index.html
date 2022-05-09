@@ -1,0 +1,378 @@
+<!doctype html><html><title>Python</title><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=apple-mobile-web-app-capable content="yes"><link rel=stylesheet href=https://hermanhel.github.io/braindump/css/main.min.291920189b1189fd3388c38fd9e8ccbdf24640f05f020c32e3da5ba83f9bd5d8.css><body><header><a href=/ id=logo><svg id="Capa_1" enable-background="new 0 0 511.992 511.992" height="512" viewBox="0 0 511.992 511.992" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><g><path d="m256 420.826c0 38.345-11.844 68.545-49.991 68.014-27.744-.385-51.481-15.31-61.853-39.46-1.239-2.887-4.024-4.734-7.154-4.725-.07.0-.135.0-.201.0-47.474.0-75.537-26.171-75.537-73.882.0-5.633.542-11.138 1.568-16.468.62-3.229-.825-6.489-3.671-8.125C23.668 325.748 10 300.053 10 255.997c0-44.057 13.668-69.757 49.161-90.185 2.846-1.636 4.291-4.896 3.671-8.13-1.026-5.33-1.568-10.83-1.568-16.463.0-47.711 28.064-73.882 75.537-73.882h.201c3.13.009 5.915-1.837 7.154-4.729 10.372-24.145 34.109-39.069 61.853-39.455C244.159 22.621 256 52.821 256 91.166" fill="#ff9eb1"/></g><g><g><g><path d="m256 91.166c0-38.344 11.844-68.545 49.991-68.014 27.744.385 51.481 15.31 61.853 39.46 1.239 2.887 4.024 4.734 7.154 4.724h.201c47.474.0 75.537 26.171 75.537 73.882.0 5.633-.542 11.138-1.568 16.468-.62 3.229.825 6.489 3.671 8.125C488.332 186.245 502 211.939 502 255.996s-13.668 69.756-49.161 90.185c-2.846 1.636-4.291 4.896-3.671 8.13 1.026 5.33 1.568 10.83 1.568 16.463.0 47.711-28.064 73.882-75.537 73.882h-.201c-3.13-.009-5.915 1.837-7.154 4.729-10.372 24.145-34.109 39.069-61.853 39.455-38.15.531-49.991-29.669-49.991-68.014" fill="#ff7d97"/></g></g><g><g><path d="m502 265.996c-4.193.0-7.984-2.713-9.407-6.636-1.419-3.912-.16-8.459 3.063-11.092 3.291-2.689 8.009-2.99 11.621-.758 3.568 2.205 5.404 6.578 4.478 10.669-1.02 4.501-5.126 7.817-9.755 7.817z"/></g></g></g><g><path d="m340.83 229.18h-58.013v-58.014h-53.634v58.014H171.17v53.633h58.013v58.013h53.634v-58.013h58.013z" fill="#faf7f5"/></g></g><g><g><path d="m498.468 291.859c-5.141-2.02-10.945.508-12.965 5.648-6.442 16.389-18.055 28.727-37.649 40.005-6.513 3.746-9.932 11.253-8.505 18.689.921 4.783 1.388 9.686 1.388 14.572.0 41.792-22.662 63.882-65.537 63.882h-.225c-.938.0-1.864.074-2.771.217-15.031-4.92-23.796-20.93-19.661-36.479 1.42-5.337-1.757-10.815-7.094-12.234-5.333-1.418-10.814 1.756-12.234 7.094-5.958 22.405 4.241 45.396 23.384 56.443-9.583 17.791-28.602 28.836-50.748 29.145-11.303.146-19.802-2.743-26.011-8.867-9.184-9.057-13.84-25.592-13.84-49.148v-70h16.816c5.522.0 10-4.477 10-10v-48.014h48.014c5.522.0 10-4.477 10-10V229.18c0-5.523-4.478-10-10-10h-48.014v-48.014c0-5.523-4.478-10-10-10H266v-70c0-23.555 4.657-40.09 13.841-49.148 6.21-6.123 14.696-9.022 26.011-8.867 23.862.332 44.096 13.132 52.803 33.405.218.509.458 1.003.719 1.483-3.225 8.243-9.084 15.093-16.833 19.574-8.993 5.2-19.465 6.581-29.485 3.89-5.337-1.434-10.819 1.73-12.251 7.064-1.433 5.334 1.729 10.819 7.063 12.252 5.074 1.363 10.221 2.037 15.338 2.037 10.2.0 20.272-2.681 29.346-7.928 11.083-6.408 19.607-16.017 24.616-27.575 41.6.67 63.569 22.718 63.569 63.866.0 4.89-.467 9.794-1.389 14.582-1.427 7.426 1.991 14.933 8.502 18.678 19.572 11.267 31.176 23.584 37.625 39.936 1.552 3.934 5.318 6.334 9.306 6.333 1.221.0 2.462-.225 3.666-.7 5.138-2.026 7.66-7.834 5.634-12.972-7.943-20.141-22.201-35.773-44.801-49.086.967-5.521 1.457-11.155 1.457-16.772.0-52.114-31.48-83.391-84.288-83.876-12.157-26.863-38.963-43.753-70.318-44.189-16.67-.232-30.255 4.688-40.332 14.625-3.813 3.76-7.08 8.226-9.797 13.382-2.717-5.156-5.984-9.622-9.797-13.382-10.075-9.937-23.668-14.852-40.333-14.625-31.353.437-58.158 17.325-70.32 44.189-52.807.485-84.286 31.762-84.286 83.876.0 5.617.49 11.253 1.458 16.771-37.422 22.031-52.724 50.552-52.724 98.008.0 47.451 15.299 75.969 52.721 98.006-.967 5.521-1.457 11.154-1.457 16.772.0 52.114 31.48 83.391 84.288 83.876 12.157 26.863 38.963 43.753 70.318 44.189.377.005.751.008 1.125.008 16.172.0 29.358-4.92 39.207-14.632 3.813-3.76 7.08-8.226 9.797-13.382 2.717 5.156 5.984 9.622 9.797 13.382 9.849 9.713 23.034 14.633 39.208 14.632.373.0.749-.003 1.125-.008 31.352-.436 58.158-17.325 70.32-44.189 52.807-.485 84.286-31.762 84.286-83.876.0-5.617-.49-11.253-1.458-16.772 22.634-13.329 36.901-28.989 44.838-49.178 2.022-5.14-.507-10.945-5.647-12.966zM282.816 239.18h48.014v33.633h-48.014c-5.522.0-10 4.477-10 10v48.014h-33.633v-48.014c0-5.523-4.477-10-10-10H181.17V239.18h48.014c5.523.0 10-4.477 10-10v-48.014h33.633v48.014c-.001 5.523 4.477 10 9.999 10zm-50.657 230.794c-6.21 6.124-14.717 9.018-26.011 8.867-23.862-.331-44.096-13.132-52.803-33.405-.218-.509-.458-1.003-.719-1.483 3.225-8.243 9.085-15.093 16.833-19.574 8.992-5.2 19.463-6.581 29.485-3.89 5.337 1.434 10.819-1.73 12.251-7.064 1.433-5.333-1.73-10.819-7.064-12.251-15.188-4.08-31.059-1.988-44.684 5.891-11.083 6.408-19.607 16.017-24.616 27.575-41.6-.67-63.569-22.718-63.569-63.866.0-4.89.467-9.794 1.389-14.582 1.427-7.427-1.991-14.934-8.502-18.678-32.183-18.528-44.149-40.621-44.149-81.517.0-40.9 11.966-62.994 44.146-81.517 6.513-3.746 9.932-11.253 8.505-18.689-.921-4.783-1.388-9.686-1.388-14.572.0-41.792 22.662-63.882 65.537-63.882h.225c.938.0 1.864-.074 2.771-.217 15.031 4.92 23.796 20.93 19.661 36.479-1.42 5.337 1.757 10.815 7.094 12.234.861.229 1.726.338 2.577.338 4.422.0 8.467-2.956 9.657-7.432 5.958-22.405-4.241-45.396-23.384-56.443 9.583-17.791 28.602-28.836 50.748-29.145 11.267-.15 19.801 2.743 26.011 8.867 9.184 9.057 13.84 25.592 13.84 49.148v70h-16.816c-5.522.0-10 4.477-10 10v48.014H171.17c-5.522.0-10 4.477-10 10v53.633c0 5.523 4.478 10 10 10h48.014v48.014c0 5.523 4.478 10 10 10H246v70c0 23.554-4.657 40.09-13.841 49.147z"/><path d="m139.699 228.227c-6.766.0-13.186 1.514-18.907 4.31-3.049-8.65-8.286-16.485-15.336-22.673-4.151-3.643-10.469-3.233-14.113.918-3.643 4.15-3.232 10.469.918 14.112 6.711 5.891 10.816 14.143 11.498 22.953-1.213 1.914-2.293 3.946-3.225 6.088-1.145 2.633-2.015 5.316-2.615 8.019-13.414 11.422-33.601 10.834-46.225-1.792-3.906-3.904-10.236-3.904-14.143.0-3.905 3.905-3.905 10.237.0 14.143 10.524 10.524 24.354 15.784 38.193 15.784 8.04.0 16.083-1.775 23.484-5.325 1.904 5.443 4.967 10.557 9.136 15.03.596.639 1.204 1.269 1.826 1.891 1.953 1.953 4.512 2.929 7.071 2.929 2.56.0 5.118-.976 7.071-2.929 3.905-3.905 3.905-10.237.0-14.143-.458-.458-.906-.922-1.342-1.389-6.26-6.716-7.799-15.778-4.118-24.241 2.878-6.616 9.86-13.686 20.826-13.686 5.522.0 10-4.477 10-10 .001-5.522-4.476-9.999-9.999-9.999z"/><path d="m387.667 287.543c-3.905 3.905-3.905 10.237.0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929c.622-.622 1.23-1.253 1.83-1.896 4.167-4.471 7.229-9.583 9.133-15.025 7.401 3.549 15.444 5.324 23.484 5.324 13.839.0 27.67-5.261 38.193-15.784 3.905-3.905 3.905-10.237.0-14.143-3.906-3.904-10.236-3.904-14.143.0-12.624 12.625-32.811 13.214-46.225 1.792-.6-2.702-1.47-5.386-2.615-8.019-.932-2.142-2.012-4.175-3.225-6.088.682-8.81 4.787-17.062 11.498-22.953 4.15-3.644 4.561-9.962.918-14.112-3.646-4.151-9.964-4.563-14.113-.918-7.05 6.189-12.287 14.023-15.336 22.673-5.721-2.796-12.141-4.31-18.907-4.31-5.523.0-10 4.477-10 10s4.477 10 10 10c10.966.0 17.948 7.07 20.826 13.686 3.681 8.463 2.142 17.525-4.114 24.237-.44.47-.888.935-1.346 1.393z"/></g></g></g></svg></a><h3 class=site-title>Herman's Place</h3><form id=search action=https://hermanhel.github.io/braindump/search/ method=get><label hidden for=search-input>Search site</label>
+<input type=text id=search-input name=query placeholder="Type here to search">
+<input type=submit value=search></form></header><div class=grid-container><div class=grid><div class=page data-level=1><div class=content><h1>Python</h1><h2 id=control-flow>control flow</h2><h3 id=branching>Branching</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>if</span> predicate:
+    statement(s)
+<span style=color:#66d9ef>elif</span> predicate:
+    statement(s)
+<span style=color:#66d9ef>else</span>:
+    statemnt(s)
+</code></pre></div><h3 id=loop>Loop</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>while</span> predicate:
+    statement(s)
+<span style=color:#66d9ef>else</span>:
+    statements(s)
+
+<span style=color:#66d9ef>for</span> item <span style=color:#f92672>in</span> seq:
+    statements(S)
+</code></pre></div><h2 id=numpy>Numpy</h2><h3 id=array-concat>Array concat</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#f92672>as</span> np
+
+np<span style=color:#f92672>.</span>append(ARRAY,X) <span style=color:#75715e># X could be a array or a number</span>
+
+np<span style=color:#f92672>.</span>concatenate(ARRAY_A,ARRAY_B,ARRAY_C<span style=color:#f92672>.....</span>,axis<span style=color:#f92672>=</span>AXIS)
+</code></pre></div><h3 id=numpy-statistic>numpy statistic</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#f92672>as</span> np
+data1 <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>randn(<span style=color:#ae81ff>20</span>)
+max <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>max(data1)
+min <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>min(data1)
+mean <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>mean(data1)
+variance <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>var(data1)
+standard_deviation <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>std(data1)
+median <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>median(data1)
+max,min, <span style=color:#e6db74>&#34;Mean:{0:8.4f}&#34;</span><span style=color:#f92672>.</span>format(mean),variance,standard_deviation,median
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[1]:
+#+BEGIN_EXAMPLE
+  (1.1057284718245466,
+  -2.8926183169702746,
+  &#39;Mean: -0.4856&#39;,
+  0.720476572143028,
+  0.8488089137980515,
+  -0.4399858919336215)
+#+END_EXAMPLE
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>(2.528059789910588,
+-1.0987823427134304,
+&#39;Mean:  0.3014&#39;,
+0.8535340225783912,
+0.9238690505577027,
+0.1951073740774753)
+</code></pre></div><h2 id=statistic>Statistic</h2><p>a simple exercise in</p><h3 id=import-data>Import data</h3><p>Use <code>pandas</code> <code>Dataframe</code> to import/store data is quite neat.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> pandas <span style=color:#f92672>as</span> pd
+df <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>read_csv(<span style=color:#e6db74>&#34;./resource/data.csv&#34;</span>)
+df
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[4]:
+#+BEGIN_EXAMPLE
+  fixed_acidity  volatile_acidity  citric_acid  residual_sugar  chlorides  \
+  0               7.4              0.70         0.00             1.9      0.076
+  1               7.8              0.88         0.00             2.6      0.098
+  2               7.8              0.76         0.04             2.3      0.092
+  3              11.2              0.28         0.56             1.9      0.075
+  4               7.4              0.70         0.00             1.9      0.076
+  ...             ...               ...          ...             ...        ...
+  6492            6.2              0.21         0.29             1.6      0.039
+  6493            6.6              0.32         0.36             8.0      0.047
+  6494            6.5              0.24         0.19             1.2      0.041
+  6495            5.5              0.29         0.30             1.1      0.022
+  6496            6.0              0.21         0.38             0.8      0.020
+
+  free_sulfur_dioxide  total_sulfur_dioxide  density    pH  sulfates  \
+  0                    11.0                  34.0  0.99780  3.51      0.56
+  1                    25.0                  67.0  0.99680  3.20      0.68
+  2                    15.0                  54.0  0.99700  3.26      0.65
+  3                    17.0                  60.0  0.99800  3.16      0.58
+  4                    11.0                  34.0  0.99780  3.51      0.56
+  ...                   ...                   ...      ...   ...       ...
+  6492                 24.0                  92.0  0.99114  3.27      0.50
+  6493                 57.0                 168.0  0.99490  3.15      0.46
+  6494                 30.0                 111.0  0.99254  2.99      0.46
+  6495                 20.0                 110.0  0.98869  3.34      0.38
+  6496                 22.0                  98.0  0.98941  3.26      0.32
+
+  alcohol  quality  color  is_red  high_quality
+  0         9.4        5    red       1             0
+  1         9.8        5    red       1             0
+  2         9.8        5    red       1             0
+  3         9.8        6    red       1             0
+  4         9.4        5    red       1             0
+  ...       ...      ...    ...     ...           ...
+  6492     11.2        6  white       0             0
+  6493      9.6        5  white       0             0
+  6494      9.4        6  white       0             0
+  6495     12.8        7  white       0             1
+  6496     11.8        6  white       0             0
+
+  [6497 rows x 15 columns]
+#+END_EXAMPLE
+</code></pre></div><p>saving, use <code>pd.to_csv("filename")</code></p><h3 id=finding-elementlement>Finding elementlement</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>df<span style=color:#f92672>.</span>at[<span style=color:#ae81ff>1</span>,<span style=color:#e6db74>&#34;quality&#34;</span>] <span style=color:#75715e>#use at[rowname,columnname]</span>
+df<span style=color:#f92672>.</span>iat[<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>1</span>] <span style=color:#75715e>#use iat[rowindex,columnindex] y,</span>
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[5]:
+0.7
+</code></pre></div><h3 id=correlation>Correlation</h3><p>correlation can be scaled by the correlation coefficient</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#f92672>as</span> np
+np<span style=color:#f92672>.</span>corrcoef(df<span style=color:#f92672>.</span>fixed_acidity,df<span style=color:#f92672>.</span>quality)[<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>1</span>]
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[8]:
+-0.0767432079096198
+</code></pre></div><p>It&rsquo;s not large. and oppsite. Maybe large fixed acidity have a slight negative impact on the wine quality</p><h3 id=linear-regression>Linear Regression</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> statsmodels.api <span style=color:#f92672>as</span> sm
+<span style=color:#75715e>#np.corrcoef(df.volatile_acidity,df.quality)[0,1] #: -0.265699477611468</span>
+lr_model<span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>OLS(df<span style=color:#f92672>.</span>quality,df<span style=color:#f92672>.</span>volatile_acidity)<span style=color:#f92672>.</span>fit() <span style=color:#75715e># OLS(y,X)</span>
+lr_model<span style=color:#f92672>.</span>summary()
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[15]:
+#+BEGIN_EXAMPLE
+  &lt;class &#39;statsmodels.iolib.summary.Summary&#39;&gt;
+  &#34;&#34;&#34;
+  OLS Regression Results
+  =======================================================================================
+  Dep. Variable:                quality   R-squared (uncentered):                   0.762
+  Model:                            OLS   Adj. R-squared (uncentered):              0.762
+  Method:                 Least Squares   F-statistic:                          2.076e+04
+  Date:                Tue, 22 Mar 2022   Prob (F-statistic):                        0.00
+  Time:                        17:06:17   Log-Likelihood:                         -16074.
+  No. Observations:                6497   AIC:                                  3.215e+04
+  Df Residuals:                    6496   BIC:                                  3.216e+04
+  Df Model:                           1
+  Covariance Type:            nonrobust
+  ====================================================================================
+  coef    std err          t      P&gt;|t|      [0.025      0.975]
+  ------------------------------------------------------------------------------------
+  volatile_acidity    13.6033      0.094    144.069      0.000      13.418      13.788
+  ==============================================================================
+  Omnibus:                     1411.191   Durbin-Watson:                   0.891
+  Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3102.947
+  Skew:                          -1.246   Prob(JB):                         0.00
+  Kurtosis:                       5.292   Cond. No.                         1.00
+  ==============================================================================
+
+  Notes:
+  [1] R² is computed without centering (uncentered) since the model does not contain a constant.
+  [2] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+  &#34;&#34;&#34;
+#+END_EXAMPLE
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#f92672>as</span> np
+<span style=color:#f92672>import</span> pandas <span style=color:#f92672>as</span> pd
+<span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#f92672>as</span> plt
+<span style=color:#f92672>import</span> statsmodels.api <span style=color:#f92672>as</span> sm
+
+<span style=color:#75715e>#1. load the data from csv into Dataframe</span>
+df <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>read_csv(<span style=color:#e6db74>&#34;./resource/data.csv&#34;</span>)
+<span style=color:#75715e>#2. find the correlation between volatile_acidity and quality</span>
+<span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Correlation coefficient: &#34;</span>,np<span style=color:#f92672>.</span>corrcoef(df<span style=color:#f92672>.</span>quality,df<span style=color:#f92672>.</span>volatile_acidity)[<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>1</span>])
+<span style=color:#75715e>#3. make X and y for Regression Model</span>
+y <span style=color:#f92672>=</span> df<span style=color:#f92672>.</span>quality
+X <span style=color:#f92672>=</span> df<span style=color:#f92672>.</span>volatile_acidity
+X <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>add_constant(X) <span style=color:#75715e>#adds a constant term to the predictor</span>
+<span style=color:#75715e>#4. build and fit the regression model using OLS(ordinary least square)</span>
+lr_model <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>OLS(y,X)<span style=color:#f92672>.</span>fit()
+<span style=color:#66d9ef>print</span>(lr_model<span style=color:#f92672>.</span>summary())
+<span style=color:#75715e>#5. pick 100 points eauqlly spaced from min to max</span>
+X_prime <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>linspace(X<span style=color:#f92672>.</span>volatile_acidity<span style=color:#f92672>.</span>min(),X<span style=color:#f92672>.</span>volatile_acidity<span style=color:#f92672>.</span>max(),<span style=color:#ae81ff>100</span>) <span style=color:#75715e>#linspace?</span>
+X_prime <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>add_constant(X_prime) <span style=color:#75715e>#add_sonstent?</span>
+<span style=color:#75715e>#6. calculate the predicated point</span>
+y_hat <span style=color:#f92672>=</span>lr_model<span style=color:#f92672>.</span>predict(X_prime)
+<span style=color:#75715e>#7.plotting</span>
+
+<span style=color:#75715e>#datapoints</span>
+plt<span style=color:#f92672>.</span>scatter(X<span style=color:#f92672>.</span>volatile_acidity,y)
+plt<span style=color:#f92672>.</span>xlabel(<span style=color:#e6db74>&#34;volatile acidity&#34;</span>)
+plt<span style=color:#f92672>.</span>ylabel(<span style=color:#e6db74>&#34;quality&#34;</span>)
+
+<span style=color:#75715e># add regression line in red</span>
+plt<span style=color:#f92672>.</span>plot(X_prime[:,<span style=color:#ae81ff>1</span>],y_hat,<span style=color:#e6db74>&#34;red&#34;</span>,alpha <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.9</span>)
+</code></pre></div><p>[&lt;matplotlib.lines.Line2D at 0x7f98aa5c2130>]
+<img src=/ox-hugo/QJa4nJ.png alt></p><h3 id=multiple-linear-regression>DONE Multiple Linear Regression</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#f92672>as</span> np
+<span style=color:#f92672>import</span> pandas <span style=color:#f92672>as</span> pd
+<span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#f92672>as</span> plt
+<span style=color:#f92672>import</span> statsmodels.api <span style=color:#f92672>as</span> sm
+
+<span style=color:#75715e>#1.load the csv to dataframe</span>
+df<span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>read_csv(<span style=color:#e6db74>&#34;./resource/data.csv&#34;</span>)
+<span style=color:#75715e>#2. see the effectiveness of the linear regression</span>
+y <span style=color:#f92672>=</span> df<span style=color:#f92672>.</span>density
+X <span style=color:#f92672>=</span> df<span style=color:#f92672>.</span>chlorides
+X <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>add_constant(X)
+lr_model <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>OLS(y,X)<span style=color:#f92672>.</span>fit()
+lr_model<span style=color:#f92672>.</span>summary()
+
+plt<span style=color:#f92672>.</span>figure()
+plt<span style=color:#f92672>.</span>scatter(df<span style=color:#f92672>.</span>chlorides,df<span style=color:#f92672>.</span>density)
+plt<span style=color:#f92672>.</span>xlabel(<span style=color:#e6db74>&#34;chlorides&#34;</span>)
+plt<span style=color:#f92672>.</span>ylabel(<span style=color:#e6db74>&#34;density&#34;</span>)
+<span style=color:#75715e>#R-squared - 0.13</span>
+</code></pre></div><p>Text(0, 0.5, &lsquo;density&rsquo;)
+<img src=/ox-hugo/v6XBul.png alt></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>y <span style=color:#f92672>=</span> df<span style=color:#f92672>.</span>density
+X <span style=color:#f92672>=</span> df<span style=color:#f92672>.</span>residual_sugar
+X <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>add_constant(X)
+
+lr_model <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>OLS(y,X)<span style=color:#f92672>.</span>fit()
+lr_model<span style=color:#f92672>.</span>summary()
+
+plt<span style=color:#f92672>.</span>figure()
+plt<span style=color:#f92672>.</span>scatter(df<span style=color:#f92672>.</span>residual_sugar,df<span style=color:#f92672>.</span>density)
+plt<span style=color:#f92672>.</span>xlabel(<span style=color:#e6db74>&#34;residual_sugar&#34;</span>)
+plt<span style=color:#f92672>.</span>ylabel(<span style=color:#e6db74>&#34;density&#34;</span>)
+<span style=color:#75715e># r-squred = 0.30</span>
+</code></pre></div><p>Text(0, 0.5, &lsquo;density&rsquo;)
+<img src=/ox-hugo/xMjtCl.png alt></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>y <span style=color:#f92672>=</span> df[<span style=color:#e6db74>&#34;density&#34;</span>]
+X <span style=color:#f92672>=</span> df[[<span style=color:#e6db74>&#34;residual_sugar&#34;</span>,<span style=color:#e6db74>&#34;chlorides&#34;</span>]]
+X <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>add_constant(X)
+
+lr_model <span style=color:#f92672>=</span> sm<span style=color:#f92672>.</span>OLS(y,X)<span style=color:#f92672>.</span>fit()
+lr_model<span style=color:#f92672>.</span>summary() <span style=color:#75715e>#r-squred = 0.497</span>
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[61]:
+#+BEGIN_EXAMPLE
+  &lt;class &#39;statsmodels.iolib.summary.Summary&#39;&gt;
+  &#34;&#34;&#34;
+  OLS Regression Results
+  ==============================================================================
+  Dep. Variable:                density   R-squared:                       0.497
+  Model:                            OLS   Adj. R-squared:                  0.497
+  Method:                 Least Squares   F-statistic:                     3204.
+  Date:                Tue, 22 Mar 2022   Prob (F-statistic):               0.00
+  Time:                        18:32:44   Log-Likelihood:                 30757.
+  No. Observations:                6497   AIC:                        -6.151e+04
+  Df Residuals:                    6494   BIC:                        -6.149e+04
+  Df Model:                           2
+  Covariance Type:            nonrobust
+  ==================================================================================
+  coef    std err          t      P&gt;|t|      [0.025      0.975]
+  ----------------------------------------------------------------------------------
+  const              0.9905   6.14e-05   1.61e+04      0.000       0.990       0.991
+  residual_sugar     0.0004    5.6e-06     68.644      0.000       0.000       0.000
+  chlorides          0.0378      0.001     49.696      0.000       0.036       0.039
+  ==============================================================================
+  Omnibus:                      542.900   Durbin-Watson:                   1.063
+  Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3234.966
+  Skew:                          -0.123   Prob(JB):                         0.00
+  Kurtosis:                       6.448   Cond. No.                         210.
+  ==============================================================================
+
+  Notes:
+  [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+  &#34;&#34;&#34;
+#+END_EXAMPLE
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>X<span style=color:#f92672>.</span>residual_sugar
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text># Out[67]:
+#+BEGIN_EXAMPLE
+  0       1.9
+  1       2.6
+  2       2.3
+  3       1.9
+  4       1.9
+  ...
+  6492    1.6
+  6493    8.0
+  6494    1.2
+  6495    1.1
+  6496    0.8
+  Name: residual_sugar, Length: 6497, dtype: float64
+#+END_EXAMPLE
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> mpl_toolkits.mplot3d <span style=color:#f92672>import</span> Axes3D
+X_axis,Y_axis <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>meshgrid(np<span style=color:#f92672>.</span>linspace(X<span style=color:#f92672>.</span>residual_sugar<span style=color:#f92672>.</span>min(),X<span style=color:#f92672>.</span>residual_sugar<span style=color:#f92672>.</span>max(),<span style=color:#ae81ff>100</span>),np<span style=color:#f92672>.</span>linspace(X<span style=color:#f92672>.</span>chlorides<span style=color:#f92672>.</span>min(),X<span style=color:#f92672>.</span>chlorides<span style=color:#f92672>.</span>max(),<span style=color:#ae81ff>100</span>))
+
+<span style=color:#75715e>#1. calculate the Z_axis use the linear model and X,Y&#39;s from above</span>
+Z_axis <span style=color:#f92672>=</span> lr_model<span style=color:#f92672>.</span>params[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>+</span> lr_model<span style=color:#f92672>.</span>params[<span style=color:#ae81ff>1</span>] <span style=color:#f92672>*</span> X_axis <span style=color:#f92672>+</span> lr_model<span style=color:#f92672>.</span>params[<span style=color:#ae81ff>2</span>] <span style=color:#f92672>*</span> Y_axis
+fig <span style=color:#f92672>=</span> plt<span style=color:#f92672>.</span>figure(figsize <span style=color:#f92672>=</span> (<span style=color:#ae81ff>12</span>,<span style=color:#ae81ff>8</span>))
+ax <span style=color:#f92672>=</span> Axes3D(fig,azim<span style=color:#f92672>=-</span><span style=color:#ae81ff>100</span>)
+<span style=color:#75715e>#2. plot the plane</span>
+ax<span style=color:#f92672>.</span>plot_surface(X_axis,Y_axis,Z_axis,alpha <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.5</span>, linewidth<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>)
+<span style=color:#75715e># plot the data points</span>
+ax<span style=color:#f92672>.</span>scatter(X<span style=color:#f92672>.</span>residual_sugar,X<span style=color:#f92672>.</span>chlorides,y)
+ax<span style=color:#f92672>.</span>set_xlabel(<span style=color:#e6db74>&#34;residual_suagr&#34;</span>)
+ax<span style=color:#f92672>.</span>set_ylabel(<span style=color:#e6db74>&#34;chlorides&#34;</span>)
+ax<span style=color:#f92672>.</span>set_zlabel(<span style=color:#e6db74>&#34;quality&#34;</span>)
+</code></pre></div><p>Text(0.5, 0, &lsquo;quality&rsquo;)
+<img src=/ox-hugo/aAEEfp.png alt></p><h2 id=visuals>Visuals</h2><h3 id=histogram>histogram</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>%</span>matplotlib inline
+<span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#f92672>as</span> plt
+
+plt<span style=color:#f92672>.</span>figure()
+hist1,edges1 <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>histogram(data1,bins<span style=color:#f92672>=</span><span style=color:#ae81ff>100</span>)
+plt<span style=color:#f92672>.</span>bar(edges1[:<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>],hist1,width<span style=color:#f92672>=</span>edges1[<span style=color:#ae81ff>1</span>:]<span style=color:#f92672>-</span>edges1[:<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>])
+
+plt<span style=color:#f92672>.</span>show()
+edges1,hist1
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>(array([-2.89261832, -2.85263485, -2.81265138, -2.77266791, -2.73268445,
+-2.69270098, -2.65271751, -2.61273404, -2.57275057, -2.53276711,
+-2.49278364, -2.45280017, -2.4128167 , -2.37283323, -2.33284977,
+-2.2928663 , -2.25288283, -2.21289936, -2.17291589, -2.13293243,
+-2.09294896, -2.05296549, -2.01298202, -1.97299856, -1.93301509,
+-1.89303162, -1.85304815, -1.81306468, -1.77308122, -1.73309775,
+-1.69311428, -1.65313081, -1.61314734, -1.57316388, -1.53318041,
+-1.49319694, -1.45321347, -1.41323001, -1.37324654, -1.33326307,
+-1.2932796 , -1.25329613, -1.21331267, -1.1733292 , -1.13334573,
+-1.09336226, -1.05337879, -1.01339533, -0.97341186, -0.93342839,
+-0.89344492, -0.85346145, -0.81347799, -0.77349452, -0.73351105,
+-0.69352758, -0.65354412, -0.61356065, -0.57357718, -0.53359371,
+-0.49361024, -0.45362678, -0.41364331, -0.37365984, -0.33367637,
+-0.2936929 , -0.25370944, -0.21372597, -0.1737425 , -0.13375903,
+-0.09377556, -0.0537921 , -0.01380863,  0.02617484,  0.06615831,
+0.10614177,  0.14612524,  0.18610871,  0.22609218,  0.26607565,
+0.30605911,  0.34604258,  0.38602605,  0.42600952,  0.46599299,
+0.50597645,  0.54595992,  0.58594339,  0.62592686,  0.66591033,
+0.70589379,  0.74587726,  0.78586073,  0.8258442 ,  0.86582766,
+0.90581113,  0.9457946 ,  0.98577807,  1.02576154,  1.065745  ,
+1.10572847]),
+array([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 1, 1, 1, 1, 0, 1, 1,
+0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]))
+</code></pre></div><figure><img src=/Users/hermanhe/Notes/RoamNotes/resource/pyDBRhQm.png></figure><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>return</span> [<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>,<span style=color:#ae81ff>4</span>,<span style=color:#ae81ff>5</span>,<span style=color:#ae81ff>6</span>,<span style=color:#ae81ff>7</span>][<span style=color:#ae81ff>1</span>q:]
+</code></pre></div><h3 id=pie-chart>Pie chart</h3><h4 id=basic-setting>Basic setting</h4><p>setting up a pie chart</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#f92672>as</span> plt
+<span style=color:#f92672>import</span> palettable
+<span style=color:#75715e>#dpi setting</span>
+my_dpi<span style=color:#f92672>=</span><span style=color:#ae81ff>96</span>
+<span style=color:#75715e># canvas</span>
+plt<span style=color:#f92672>.</span>figure(figsize<span style=color:#f92672>=</span>(<span style=color:#ae81ff>480</span><span style=color:#f92672>/</span>my_dpi,<span style=color:#ae81ff>480</span><span style=color:#f92672>/</span>my_dpi),dpi<span style=color:#f92672>=</span>my_dpi)
+
+
+plt<span style=color:#f92672>.</span>pie(x<span style=color:#f92672>=</span>[<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>],<span style=color:#75715e>#指定绘图数据</span>
+	labels<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#39;A&#39;</span>,<span style=color:#e6db74>&#39;B&#39;</span>,<span style=color:#e6db74>&#39;C&#39;</span>],<span style=color:#75715e>#为饼图添加标签说明</span>
+       )
+plt<span style=color:#f92672>.</span>show()
+</code></pre></div><h4 id=colors>Colors</h4><p>#+begin_src python
+plt.pie(x=[1,2,3],
+lables = [&lsquo;a&rsquo;,&lsquo;b&rsquo;,&lsquo;c&rsquo;]
+colors = ["#d5695d",,] # color list
+)
+#+end_src></p><h4 id=explode>Explode</h4><p>the bigger the value, the farther the piece
+#+begin_src python
+plt.pie(x=[]
+lables = []
+explode = [0,0.2,0])
+#+end_src></p><h4 id=format-display-data>Format display data</h4><p>#+begin_src python
+plt.pie(
+x=[],
+labels=[],
+autopct='$.2f%%' # 格式化输出百分比
+)
+#+end_src></p><h2 id=pandas>Pandas</h2><h3 id=to-apply-operation-on-column>To apply operation on column</h3><p>use <code>map</code> and <code>lambda</code> (like in clojure)</p><h2 id=i-o>I/O</h2><h3 id=keyboard>Keyboard</h3><h4 id=raw-input>Raw_input</h4><p>take raw_input</p><h4 id=input>Input</h4><p>also take python expression and return the result</p><h2 id=r-w-files>R/W Files</h2><h3 id=files>Files</h3><p>Use <code>file</code> object to do most of things</p><h4 id=open>open</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>file object <span style=color:#f92672>=</span> open(file_name [, access_mode][, buffering])
+</code></pre></div><h4 id=write>Write</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>fileObject<span style=color:#f92672>.</span>write(string)
+</code></pre></div><h4 id=close>Close</h4><p>#+begin_src python
+fileObject.close()
+#+end_src></p><h3 id=jasn>jasn</h3><p>Objects could be easily stored using jasn.</p><h4 id=load-from-json>Load from json</h4><ul><li><p>load</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>object <span style=color:#f92672>=</span> jason<span style=color:#f92672>.</span>loads(stringdata
+             )
+</code></pre></div><p>When loading from a file, use <code>read()</code> method of the file object to get string.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>data <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>loads(open(<span style=color:#e6db74>&#34;file_name&#34;</span>)<span style=color:#f92672>.</span>read())
+</code></pre></div></li></ul><h4 id=write-into-json>write into json</h4><ul><li><p>dumps</p><p>dumps only recieve primitive types in python.
+Use <code>list()</code> to transform <code>ndarray</code> defined in <code>NumPy</code> to plain list</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>data <span style=color:#f92672>=</span> jason<span style=color:#f92672>.</span>dumps(object)
+</code></pre></div><p>list example</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> json
+<span style=color:#f92672>import</span> numpy
+
+nparray <span style=color:#f92672>=</span> numpy<span style=color:#f92672>.</span>zeros(<span style=color:#ae81ff>3</span>)
+nparray[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+<span style=color:#75715e># data = json.dumps(list(nparray))</span>
+data <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>dumps([<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>])
+m <span style=color:#f92672>=</span> <span style=color:#66d9ef>print</span>(data)
+<span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;2&#34;</span>)
+<span style=color:#66d9ef>return</span> <span style=color:#ae81ff>2</span>
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#ae81ff>1</span><span style=color:#f92672>+</span><span style=color:#ae81ff>2</span>
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-emacs-lisp data-lang=emacs-lisp>(<span style=color:#a6e22e>+</span> <span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span>)
+</code></pre></div></li></ul><h2 id=strings>Strings</h2><h3 id=format-string>format string</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>
+</code></pre></div><h2 id=gui>GUI</h2><h3 id=pyqt6>pyqt6</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> sys
+
+<span style=color:#f92672>from</span> PyQt6.QtCore <span style=color:#f92672>import</span> QSize, Qt
+<span style=color:#f92672>from</span> PyQt6.QtWidgets <span style=color:#f92672>import</span> QApplication, QMainWindow, QPushButton
+
+
+<span style=color:#75715e># Subclass QMainWindow to customize your application&#39;s main window</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>MainWindow</span>(QMainWindow):
+    <span style=color:#66d9ef>def</span> __init__(self):
+	super()<span style=color:#f92672>.</span>__init__()
+
+	self<span style=color:#f92672>.</span>setWindowTitle(<span style=color:#e6db74>&#34;My App&#34;</span>)
+	button <span style=color:#f92672>=</span> QPushButton(<span style=color:#e6db74>&#34;Press Me!&#34;</span>)
+
+	<span style=color:#75715e># Set the central widget of the Window.</span>
+	self<span style=color:#f92672>.</span>setCentralWidget(button)
+
+
+app <span style=color:#f92672>=</span> QApplication(sys<span style=color:#f92672>.</span>argv)
+
+window <span style=color:#f92672>=</span> MainWindow()
+window<span style=color:#f92672>.</span>show()
+
+app<span style=color:#f92672>.</span><span style=color:#66d9ef>exec</span>()
+
+</code></pre></div></div><div class=bl-section><h4>Links to this note</h4><div class=backlinks><ul><li><a href=/braindump/main/20220301151624-programming_languages/>Programming Languages</a></li></ul></div></div></div></div></div><script src=https://hermanhel.github.io/braindump/js/URI.js type=text/javascript></script><script src=https://hermanhel.github.io/braindump/js/page.js type=text/javascript></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></body></html>

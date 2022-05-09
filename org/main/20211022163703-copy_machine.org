@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       432FA37B-68E6-4E04-8518-98A57C873E52
+:END:
+#+title: Copy Machine
+#+HUGO_SECTION:main
+Copy machine is a method to approach a specific output.
+E.g: I want to draw exactly like X, I apply copy machine to X.
+
+Copy machine is exclusive. It have massive cost of attenction and focus and time, and have a massive result.
+* in Writing
+Benjamin mentioned his method once:
+1. Find a paragraph
+2. Read to get the main idea
+3. Rewrite the paragraph myself
+4. Compare and make modification
+5. return to step 3
+In his case, he claimed that it helps him build style
+* in Drawing
+a Youtuber(later get the name) mentioned his method in his video:
+** 1. Find Model
+** 2. Practice
+** 3. Compare and Find Problem
+** 4. Drill on 1 problem
+** 5. Return to Practice

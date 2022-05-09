@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       83F71A45-25AA-44E5-AA20-CCEE05225001
+:END:
+#+title: 2022-03-26
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* completing the atom habit
+* THREAD Habits :agenda:
+1 good habit more every day
+The habits could be found the node following [[id:5C9597D2-7727-4205-BE92-B541CDB9D1D0][Atom habits]]
+It would take probably a month to finish the list.
+** <2022-03-26 Sat> Coding
+relevent in [[id:C88B46D2-AD9F-4359-A93C-AE3C38074595][coding machine]] and [[id:9C7D0D76-725F-45D6-B84A-4F75C11E164F][Engineer]]'s coding node.
+** <2022-03-26 Sat> Read Don Quijote
+** <2022-03-27 Sun> Running
+*** Cue - Obvious
+I will Go running at 8 a.m. beside the river.
+*** Attractive
+**** Temptation bundling
+Take my favourite podcast/jazz with me.
+**** primitive motive
+To have a very sound mind/body
+**** Benefits
+1. To become stronger
+2. Sound mind
+3. feeling the body
+4. loose weight and be fit
+5. run faster
+6. sing with better breath
+*** Easy
+**** Reducing Friction
+I will have my clothes ready at bed.
+**** 2-minute
+Just, run for a song/2 minute, and then decide to go back or carry on.
+*** satisfying
+**** Track
+org-habit
+**** visual measurement
+log of where I have been to, what I have seen, what I have listened.
+how long this time it lasts
+maybe use the memory techniques.
+

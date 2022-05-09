@@ -1,0 +1,314 @@
+:PROPERTIES:
+:ID:       78B35333-C194-4CE0-A6D0-39A1FBCDF319
+:END:
+#+title: Java
+#+HUGO_SECTION:main
+
+* Setup
+* Language
+** Common syntax
+*** Variable declare
+**** unary Datatypes
+***** Numeric
+#+begin_src java
+  Int num = 2;
+  Double numd = 2.9;
+#+end_src
+***** String
+#+begin_src java
+  String str = "this is a stinrg"; 
+#+end_src
+***** Boolen
+#+begin_src java
+boolean bool = false;
+#+end_src
+**** List
+***** Array
+#+begin_src java
+  int [] myArray; //declare
+  myArray = new int[5]; // create a new array object; Assign it to myArray
+  myArray[0] = 100;
+  int[] myArray ={100,200,3,4,5};
+  int[] anArray = new int[5];
+  
+  String[] s = new String[100]; //initialization
+#+end_src
+****** Array method
+#+begin_src java
+  //Length
+  len=myArray.length;
+#+end_src
+****** Remove entry
+#+begin_src java
+array[4] = null
+#+end_src
+**** Struct/Object
+**** Global
+#+begin_src java
+public static int x;
+#+end_src
+*** Control Flow
+**** loop
+***** While
+#+begin_src java
+  while (condition) {
+      statement;
+  }
+#+end_src
+****** Infinite loop
+#+begin_src java
+  while(true){
+      statment;
+  }
+#+end_src
+***** For
+#+begin_src java
+  for (init; conditionl; modification){
+      statment;
+  }
+#+end_src
+
+**** If else
+#+begin_src java
+  if (condition){
+      statements;
+  }
+  else if (condition) {
+      statements;
+  }
+  else {
+      statements;
+  }
+#+end_src
+*** Arithmetic
+~/~ for division, ~%~ for mod
+**** unary operator
++ ~a++~ a=a+1
++ ~a+=1~ a = a + 1
+**** Boolean
++ and: ~a&&b~
++ or: ~a||b~
++ not: ~!a~
+**** Comparison
++ ~==~ for equal
+**** Other Math
+use Math object
+#+begin_src java
+  Math.sqrt(4);
+  Math.pow(2,4); // the 4th power of 2
+  Math.hypot(3,4) = 5
+      Math.floor(); //floor to integer
+#+end_src
+
+*** Function call
+See [[Method]]
+*** System input/output
+
+**** ~Scanner~ opject
+
+**** Use
+#+begin_src java
+  import java.util.Scanner;
+  Scanner kb = new Scanner(System.in);
+  String next = kb.nextLine(); // invoke a wait for input
+#+end_src
+
+*** Conversion between types
+
+**** Cast
+#+begin_src java
+  double a = 2.4;
+  int b = (int) a
+  
+#+end_src
+
+**** Wrapper Class methods
+#+begin_src java
+Integer.parseInt(string s)
+string str = Integer.toString(res)
+#+end_src>
+
+** Module
+** Class
+*** Method
+#+begin_src java
+  public static int addTwoNum(){ //method header
+      statement;
+      return res;
+  }
+  public static void writeNum(int num){
+      statement;
+  }
+#+end_src
+*** Call of Method
+Inside Class: ~writeNum(num);~
+Outside Class: ~C2.writeNum(num);~
+*** Declare
+#+begin_src java
+  public class Person{
+      String name;
+      public Person(Sring name){
+          this.name = name
+      }
+  }
+#+end_src
+*** Create object
+#+begin_src java
+  public static void main(String[] args){
+      Person p1 = new Person("James bond")
+  }
+#+end_src
+*** Public and private
+Private: for surcurity!
+**** Private var and getter/setter function
+#+begin_src java
+  private String name;
+  public String getName(){
+      return name;
+  }
+#+end_src
+*** Static
+only one instance.
+#+begin_src java
+static String leader = herman;
+#+end_src
+*** compare
+**** .equals()
+**** samePerson(Person that)
+*** print: overriding toString() method
+*** Overload
+Same name, different parmeter number
+
+** OOP
+
+*** Inheritance
+
+**** superclass and subclass
+copying all codes of Swordsman class
+#+begin_src java
+  public class Pillar extends Swordsman{
+      
+  }
+#+end_src
+
+***** Constructer
+use super() to call superclass' constructor and pass values
+
+***** Override
+#+begin_src java
+  @Override public int attackDamage(){
+      return 10
+  }
+#+end_src
+~@Override~ mark the method is a overriding method. could prevent typo mistakes
+
+*** Polymorphism
+#+begin_src java
+  Swordsman kyojuro = new Pillar()
+#+end_src
+getter of Pillar specific variable would report compile error
+However, Pillar-overided method could be called
+** Char and String
+*** Difference
+Char is primitive, String, like array, is refference
+Char is 'a' with only one character
+*** Construct String like a objectt
+#+begin_src java
+string cosmo = new String("Hallo");
+#+end_src>
+*** char test
+#+begin_src java
+Character.isLetter(firstLetter);
+#+end_src
+*** String methods
+**** Methods
+***** Substring(
+***** Error avoid measure
+use a if statement
+#+begin_src java
+  if (str.length() >= 5){
+      prefix = str.substring(0.5)
+  }
+#+end_src
+***** equals()
+SourceString.equalsIgnoreCase(targetString) ignores the case
+***** toUpperCase()
+***** Test
+cosmo.isEmpty()
+.contains()
+.startsWith()
+.endsWith()
+***** charAt(int i)
+returns the char at index i
+***** indexOf(string target)
+left to right
+-1 if not found
+case-sensitive
+lastIndexOf() to serach from right to left
+****** fromIndex
+search begin at given fromIndex
+if is negative, from start of the string
+if >len, return -1
+***** Trim, split and Replace
+****** trim
+remove head and tail whitespace
+****** replace and replaceAll(string a, string b)
+****** split
+#+begin_src java
+String[] split(String delimiter);//like , - or :
+#+end_src>
+** Exception
+*** Try-catch
+#+begin_src java
+  try {
+  
+  }
+  catch(NumberFormatException e){
+      
+  }
+#+end_src
+NumberFormatException can also be ~Exception~, the superclass
+**** Ask for retry
+when ilegel input in metohd, try-catch, and in the cathc block, call the method again
+
+**** catch exceptions
++ ~NumberFormatException~
++ ~ArrayIndexOutOtBoundsException~
+
+**** Handleing and exit
+use ~System.exit(0)~
+
+*** Throw exception
+#+begin_src java
+throw new IllegalArgumentException();
+#+end_src>
+
+*** Exception objects
+
+*** 
+
+** Switch
+alternative of ~if~
+#+begin_src java
+  switch(userChoice){
+  case 1:
+  
+  case 2:
+      statement;
+      break
+  
+  default:
+      statement;
+  }
+#+end_src
+
+* GUI
+awt -> swing & swt -> javafx & flutter
+https://www.zhihu.com/question/323058868
+
+use qt.
+
+other:
++ Qt Jambi
++ Apache Pivot  
+  

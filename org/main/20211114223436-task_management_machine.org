@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       16F83A85-2D45-4784-8F03-E0C535FED8AC
+:END:
+#+title: Task management machine
+#+HUGO_SECTION:main
+* Next Task
+All tasks are stored in the =TODO= task list.(with =TODO= heading prefix)
+
+Among them, choose 5-6 to be focused in a few sessions, like a day or two. They are the =NEXT= tasks. Upon choosing, change their prefix to =NEXT=, and they will be displayed in the dashboard's NEXT tasks area.
+** Add =NEXT= tasks
+*** 1. Emergency
+When some task needed to be dealt with immediately, add them to =NEXT= tasks.
+*** 2. Running out
+can treat every few =NEXT= tasks like a sprint. Select 5-6 tasks =NEXT=, and that's the sprint, and after all 5-6 tasks are done, the sprint's over.
+
+Then, choose another 5-6 tasks.
+

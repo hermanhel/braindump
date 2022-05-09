@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       F9CBAE44-6966-4312-B58B-F78BE75B3655
+:END:
+#+title: Presentation
+#+HUGO_SECTION:main
+* Resource
+** TODO Ted Talks
++ [ ] https://www.ted.com/talks/chris_anderson_ted_s_secret_to_great_public_speaking/details#t-94408
++ [ ] https://www.learningmall.cn/mod/mediasite/view.php?inpopup=true&id=166574
+** TODO EAP121 Workbook
+** TODO EAP121 Slides
+* Idea
+
+Idea is the fundamental part of speech and presentation
+** Guideline
+*** 1. Focus on 1 major idea
+*** 2. Curiosity
+*** 3. Use language of the audience
+*** 4. Worth sharing
+* Common mistakes
+** Reading slides
+** text too small
+** Bad color choices
+** moving object
+** overly complex diagram
+** irrelevent image
+* Outline
+Use 1st/2nd slide as an outline of the presentation
+
+use main points/headings
+* Criteria
+** Good slide structure
++ 1-2 slides per minute
++ in =point= form, rather than complete sentences
++ 4-5 =points= per slide
++ avoid wordiness: use key word/phrase only
++ Show 1 point at a time
+** Fonts
++ >= 18 points
++ Use different size of fonts(heading:36,main point:28,minor point:24)
++ Use standard font like Times New Roman/Arial
++ Don't use complicated font
+** Color
++ stand out of the background
++ to mark up
++ to emphasize(occasionally)
+** Background
++ Use light background
++ Use simple background
++ Use the same background
+** Conclusion
++ Use an effective and strong closing
++ Use concluion slide to
+  + Summarize the main points
+  + Suggest future avenues of research

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       50A687F9-9642-4A7B-94F3-156F97D6D40D
+:END:
+#+title: CPT111
+
+* ACTIVE CPT111
+* Tutoring Schedule
+** Lecture SB102
+SCHEDULED: <2021-10-20 Wed 09:00-10:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-14 Thu 15:54]
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2021-10-14 Thu 15:54]
+:END:
+** Lab SD546
+SCHEDULED: <2021-10-15 Fri 11:00-13:00 +1w>
+* Tasks
+** WEEK Preview #1
+SCHEDULED: <2021-10-11 Mon +1w>
+** WEEK Preview #2
+SCHEDULED: <2021-10-13 Wed +1w>

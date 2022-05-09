@@ -1,0 +1,78 @@
+:PROPERTIES:
+:ID:       5D6DD0C3-EE0B-4CC3-988B-31C828E3F414
+:END:
+#+title: 2022-04-14
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Morning Page
+I kind of made up my mind yesterday
+* 心理创伤
+** 重大事件对人身心的影响
+*** 身体
++ 交感神经功能亢进
+  + 紧张
+  + 警觉
+  + 感觉增强
+  + 心悸心慌
+  + 失眠
+  + 食欲改变
++ 身体疼痛,躯体化
+  + 胃功能
+*** 情绪
++ 抑郁感
+  + 无力,无助,无望,悲伤
++ 不确定感
+  + 焦虑,恐惧,害怕
++ 愤怒,罪恶,羞耻感
+*** 人际
++ 无法信任和亲密
+  情侣分手.
++ 失控、冲动
++ 退缩
+  不去找他女朋友.
+*** 认知
++ 注意力不集中,侵入性的回忆和想法
++ 记忆里衰退,隔离
++ 自责和内疚
+** 情绪脑和理性脑
+*** 情绪脑
+边缘系统
++ 海马体
++ 杏仁核
++ 脑干
+*** 理性脑(新皮层)
+大脑皮层和小脑
+*** 杏仁核
+对危险信号十分敏感
+烟雾弹也会识别
+*** 不好!
+**** 风和日丽时
+理性脑作为骑手,
+**** 危机时
+前额叶与边缘系统联结下降,理性脑无法控制.
+** 引发
+*** 公众视角
+大事引发
+*** 心理师视角
+**** 丧失
++ 失去关系
++ 失去目标
++ 期待愿景
++ 原有生活方式
+**** 挫折
++ 关系建立失败
++ 努力未得结果
+** LCU 应激值
+Life change units生活变故单位
+|  150 |      150-199 | 200-299 | 300 |
+| 转折 | .37 下一年病 |     .51 | .99 |
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/daily/srrsad.png]]
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/daily/srrsun.png]]
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/daily/hahah.png]]

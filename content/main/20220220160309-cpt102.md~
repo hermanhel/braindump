@@ -1,0 +1,722 @@
++++
+title = "CPT102 Data Structures"
+author = ["System Administrator"]
+draft = false
++++
+
+Data structures
+
+
+## look up {#look-up}
+
+Docs stored in DEVONThink3
+The MCS UTS PAS notation: [Get to know the modules]({{< relref "2022-02-20#get-to-know-the-modules" >}})
+
+
+## MCS {#mcs}
+
+
+### Goals {#goals}
+
+-   Data structure's internal representation
+-   data structure's algorithms
+-   Use `time/space comlexity` to choose from ways of implementation
+-   `appropriate data structures` to ensure efficient imple... of algorithm
+
+
+### Assesment {#assesment}
+
+| Method           | Type     | Duration | %  |
+|------------------|----------|----------|----|
+| Assesment Task 1 | CW(quiz) |          | 10 |
+| Assesment Task 2 | CW(quiz) |          | 10 |
+| Final Exam       | Exam     | 2 hour   | 80 |
+
+
+### Materials {#materials}
+
+-   DATA STRUCTURES AND PROBLEM SOLVING USING JAVA by M. A. WEISS
+-   DATA STRUCTURES AND ALGORITHMS IN JAVA by M.T. Goodrich and R. Tamassia
+
+
+### Syllabus {#syllabus}
+
+
+#### Ours {#ours}
+
+-   Week 1
+    -   Introduction to Data Structures Data Structures
+    -   Data Types
+    -   and Abstraction Data Types
+-   Week2 abstraction/static &amp; dynamic data structures
+    -   Abstraction
+    -   Information Hiding
+    -   and Encapsulation
+    -   Huffman Codes and ADT
+    -   Priority Queues
+    -   Efficiency
+    -   Static vs. Dynamic Data Structures
+-   Week3 Java collections
+    -   Overview of Data Structure Programming
+    -   Programming with Java Libraries
+    -   Java Collections
+    -   Programming with Lists of Objects
+    -   Linear Collections vs Hierarchical Collections
+    -   Type Parameter
+    -   Abstract Datatype definition
+    -   Java arrays and ArrayLists
+    -   Collections and List
+    -   Using List and ArrayList
+    -   Iterating through List
+    -   Iterators
+    -   Interfaces vs Classes
+-   Week4 Java Stack
+    -   Bags
+    -   Sets
+    -   Queues
+    -   Lists
+    -   Stacks
+    -   Maps. Operations upon various data structures
+    -   Applications of data structures
+    -   Recursive methods
+    -   Stack ADT
+    -   Stack for web document processing
+    -   Program Stacks
+    -   Stack for postfix conversion
+    -   Stack for postfix processing
+    -   Stack for evaluating expressions
+    -   Java Stack Interface Specification
+    -   Examples of using Map
+    -   Iterating through a Map
+-   Week5 tor vs able
+    -   Queues and Priority Queues
+    -   Iterator vs Iterable
+    -   Sorting collections
+    -   Iterator vs Comparator
+    -   Comparator vs Comparable
+    -   Sorting with Comparators
+    -   Using Multiple Comparators
+    -   compareTo vs compare
+-   Week6 exceptions/ implementing col.
+    -   Exceptions
+    -   Types of Exceptions
+    -   Catching exceptions
+    -   Throwing Exceptions
+    -   Implementing Collections
+    -   Abstract Classes
+    -   Interfaces vs Abstract Classes vs Classes
+    -   Lists Abstract Datatype definition
+    -   Defining ArrayList
+    -   Realisation of lists using arrays
+    -   Singly linked lists in Java (declaration
+    -   initialisation
+    -   use
+    -   iteration)
+    -   Data representation of singly linked lists
+    -   Immutable List
+    -   ArrayList: fields and constructor
+    -   ArrayList methods
+    -   ArrayList: ensureCapacity
+    -   Cost of ArrayList operations
+    -   Cost of ArraySet operations
+    -   Time vs Space
+    -   Algorithm complexity
+-   Week 7
+-   Week 8
+    -   Recursions
+    -   recursion vs iteration
+    -   Testing collection implementations
+    -   Motivation for linked lists
+    -   Linked Structures
+    -   Linked structures for implementing Collections
+    -   linked lists operations
+    -   Memory allocation
+    -   Heap &amp; memory allocation
+    -   Linked Node class
+    -   List using linked nodes with header
+    -   Using Linked Nodes
+    -   Creating &amp; Iterating through a linked list
+    -   cost of Linked Collection methods
+-   Week 9
+    -   Stacks/queues and their implementation
+    -   LIFO
+    -   Creating a Stack using a Linked List with a header
+    -   FIFO
+    -   Creating a Queue using a Linked List with a header
+    -   Application of Queues
+    -   User job queu e
+    -   Print spooling queue
+    -   I/O event queue
+-   Week 10
+    -   Cost of ArraySet operations
+    -   Binary Search
+    -   Cost of SortedArraySet with Binary Search
+    -   Selection sort
+    -   Insertion sort
+    -   Merge sort
+    -   Quick sort
+    -   Bucket sort
+    -   slow sorts vs fast sorts
+    -   Sorting by Divide and Conquer
+    -   Cost of various sorting algorithms
+-   Week11
+    -   Trees Abstract Datatype definition (trees
+    -   binary trees)
+    -   Realisation of trees using references or arrays
+    -   Tree Ordering
+    -   Tree traversal
+    -   Breadth-First traversal
+    -   Tree and Recursion
+    -   Recursion tree
+-   Week 12
+    -   Search lists
+    -   (binary) Search trees
+    -   Balanced Search Trees
+    -   AVL trees
+    -   AVL Rotation
+    -   AVL height balancing
+    -   Tree examples &amp; applications
+    -   Tree implementation
+    -   Implementing Binary Trees
+    -   Implementing General Trees
+    -   Hash tables
+    -   Hash function
+    -   Keys
+    -   Security
+-   Week13
+    -   Basic definitions of graph theory
+    -   Properties of graphs
+    -   Paths
+    -   Trees
+    -   Digraphs and their applications
+    -   network flows
+    -   Connected graphs
+    -   Incidence matrix and adjacency matrix of a graph
+    -   Trees and forests
+    -   Spanning trees
+    -   Minimum spanning tree
+    -   Greedy algorithm for determining a minimum spanning tree
+    -   Shortest path problem
+    -   Networks
+    -   To determine the maximum flow between two points (source and sink) in a network
+
+
+#### Harverd {#harverd}
+
+-   Abstrct Data Types + OOP
+-   Recursion and Backtracking
+-   Sorting and Algorithom analysis
+-   Linked Lists
+-   List stacks and queues
+-   State-space search
+-   binary trees and Huffman Encoding
+    -   bianry search trees
+    -   balenced search tree(2-3 B-trees)
+-   Heaps and Priority queues
+-   Hash tables
+-   Graphs
+
+
+#### OSU {#osu}
+
+-   Big O
+-   ADTs
+-   List in python
+-   Amortized Analysis
+-   Linked list
+-   Stack Queue Deque
+-   Encapsulation and Iterators
+-   binary Search
+-   Trees
+-   Binary Trees
+-   BST Operations
+-   AVL Trees/ Balancing
+-   AVL Tree Rotation
+    -   Rotation Implementation
+-   Priority Queues and Heaps
+    -   Heap imple
+-   Maps and Hash Tables
+-   Hash Table Collision
+-   Hash table and heap Implementation
+-   Graphs
+
+
+### Resource Pull Method {#resource-pull-method}
+
+No need for further resource.
+Current resource in DevonThink3 Academics database, Y2S2, CPT102
+
+
+### Summary {#summary}
+
+The CPT102 Module Content System is built with a book, several practice, and a bunch of lecture slides.
+
+The contents basically covers ADT use in Java, some basic data types, some graph theory, some algorithms on some data structures.
+
+
+### <span class="org-todo todo TODO">TODO</span> Hiearachy {#hiearachy}
+
+When I have some insight(have read the lecture notes through) about the course, I'll update the outline of the module.
+
+
+## UTS {#uts}
+
+
+### Deliver Plan {#deliver-plan}
+
+
+#### Lectures {#lectures}
+
+every monday 9:00 in SA169/online
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 1
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 2
+
+    Overview and quality sofware design, and why data structure is related
+
+    <!--list-separator-->
+
+    -  Software Quality
+
+    <!--list-separator-->
+
+    -  Abstraction
+
+        <!--list-separator-->
+
+        -  Data/procedural
+
+        <!--list-separator-->
+
+        -  as Process/Entity
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 3
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 4
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 5
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 6
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Mid term
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 7
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 8
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Lecture 9
+
+    <!--list-separator-->
+
+    -  Linkedlist
+
+        <!--list-separator-->
+
+        -  Implementing Collections with arrays
+
+            <!--list-separator-->
+
+            -  ArrayList
+
+                O(n) to add/remove(exclude at end)
+
+            <!--list-separator-->
+
+            -  Stack
+
+                O(1) of all
+
+            <!--list-separator-->
+
+            -  ArraySet
+
+                O(n) of all, due to cost of searching
+
+        <!--list-separator-->
+
+        -  Testing Collection Implementations
+
+            <!--list-separator-->
+
+            -  Test method
+
+                <!--list-separator-->
+
+                -  object hiearachy
+
+                    -   part of data class
+                    -   standalone testing class
+
+                <!--list-separator-->
+
+                -  include
+
+                    -   all operations
+                    -   cases:
+                        -   normal
+                        -   extreme
+
+                <!--list-separator-->
+
+                -  1 practice
+
+                    1.  Write `test` first(black box)
+                        base on specification(mathematically)
+                    2.  implement `collection`
+                    3.  extend `test` to cover `special cases` of the implementation.(white box)
+
+                <!--list-separator-->
+
+                -  Nice design with `tests/assertions`
+
+                    -   check the correctness of the code
+                    -   only report when error emerge.
+
+            <!--list-separator-->
+
+            -  Implementing Queues
+
+                <!--list-separator-->
+
+                -  use array
+
+                    -   vars
+                        -   data[]: array
+                        -   front: index of the first entry
+                        -   back: index of the last entry
+                    -   Methods:
+                        -   ensureCapacity()
+
+            <!--list-separator-->
+
+            -  inserting fast
+
+                <!--list-separator-->
+
+                -  for array
+
+                    -   inserting in front/back: good(O(1))
+                    -   inserting in the middle: bad(O(n))
+
+                <!--list-separator-->
+
+                -  Linked Structures: insert in the middle
+
+                    -   inserting: good(O(1))
+
+                    <!--list-separator-->
+
+                    -  inserting in empty linked list
+
+                        list -&gt; NULL to list -&gt; G|next -&gt; NULL
+
+                    <!--list-separator-->
+
+                    -  inserting before node
+
+                        lost track of the front neighbor
+                        solution:
+
+                        -   p,c pointer to front and current
+
+<!--list-separator-->
+
+-  Lecture 10
+
+<!--list-separator-->
+
+-  Lecture 11
+
+<!--list-separator-->
+
+-  Lecture 12
+
+<!--list-separator-->
+
+-  Lecture 13
+
+
+#### Tutorials {#tutorials}
+
+Thursday 9:00 at SA169
+<https://xjtlu.zhumu.com/j/6372801134>
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 1
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 2
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 3
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Tutorial 4
+
+<!--list-separator-->
+
+-  Tutorial 5
+
+
+#### Comp. Labs {#comp-dot-labs}
+
+Friday 15:00 at SD554
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Comp. Lab 0 1
+
+    SD554
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Comp. Lab 2
+
+    SD554
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  Comp. Lab 3
+
+    SD554
+
+
+### Suggested Method {#suggested-method}
+
+Lecture -&gt; Introduce content and practical skills
+Help session -&gt; practice skills. interact with TA
+Private study -&gt; 3 hour/week
+
+
+### Servise and Tools {#servise-and-tools}
+
+Help session.
+other, none
+
+
+### Teachers {#teachers}
+
+
+#### Steven Guan {#steven-guan}
+
+machine learning, modelling, security, networking, and pseudorandom number generation
+
+Email address: steven.guan@xjtlu.edu.cn
+Office telephone number: 0512-8816-1501
+Room number and office hours: SD425; by appointment Preferred means of contact: e-mail
+
+
+#### Kok Hoe Wong {#kok-hoe-wong}
+
+good at software engineering and manage
+
+Email address: kh.wong@xjtlu.edu.cn
+Office telephone number: 8188-4951
+Room number and office hours: SD431, by appointment Preferred means of contact: e-mail
+
+
+#### Mechanisms {#mechanisms}
+
+Lecture introduces skills, and Lab practice these skills. Problems and ask TA on site.
+
+Go to Prof. after class
+
+Email to Prof.
+
+
+#### Summary {#summary}
+
+The UTS have little extra. Contents would be delivered in lecture and Practice with errors/correction happen in lab.
+
+<!--list-separator-->
+
+-  APIs
+
+    -   Attend Schedule
+        -   Attend Lec
+            get content, skill def
+        -   Attend Tutorial
+            get practice, corection
+    -   Go to Prof.
+        -   after class
+        -   Appointment by email to room
+    -   Email to Prof.
+
+
+## PAS {#pas}
+
+All teachers are not very good at presenting. And they render the ideas very slowly. I shell take advantage of the slow course speed to get higher marks, and learn other things as much as I could. I have a potentialy 85% mark to meet.
+The slides are present, so I guess I could use the slides to go further, but only 1 week, and spare time for other things.
+
+
+### THREAD Data structure Preview <span class="tag"><span class="agenda">agenda</span></span> {#thread-data-structure-preview}
+
+
+#### Go with the slides {#go-with-the-slides}
+
+
+## wiki {#wiki}
+
+
+### Cost Analysis {#cost-analysis}
+
+ways to determine cost
+ref: lec10
+
+
+#### time cost {#time-cost}
+
+-   `(time (expr))`
+-   counting operations...
+
+
+#### space cost {#space-cost}
+
+-   memory the program uses
+-   count data items...(elementary, like int)
+
+
+#### benchmarking {#benchmarking}
+
+<!--list-separator-->
+
+-  time cost
+
+    benchmarking `real program` on `actual machine` with `specific input` by `elapsed time`.
+
+    ```java
+    System.currentTimeMillis();
+    ```
+
+    <div class="src-block-caption">
+      <span class="src-block-number">Code Snippet 1</span>:
+      function
+    </div>
+
+    <!--list-separator-->
+
+    -  issues
+
+        <!--list-separator-->
+
+        -  choose input
+
+            -   no user input
+            -   large data sets
+
+        <!--list-separator-->
+
+        -  other procs
+
+            -   run multiple times for average
+
+
+#### analysis: algorithm complexity {#analysis-algorithm-complexity}
+
+count number of steps
+
+-   worst case [easy]
+-   best case [easy, useless]
+-   average case [hard]
+
+<!--list-separator-->
+
+-  output
+
+    cost = \\(3 n^2 - n +30\\) steps
+
+    which would be then simplified to:
+
+    cost = \\(3n^2+...steps\\)
+
+    -   the consonants differes by machine
+
+<!--list-separator-->
+
+-  Big O notation
+
+    assuming a `100-MHz clock`, and N `= =1024k = $2^{20}$ =`
+
+    -   O(1) = constant time, 10ns
+    -   O(log N) - logarithmic time, 200ns
+    -   O(N) - linear time, 10.5ms
+    -   O(NlogN) - n log n time, 210ms
+    -   O(n^2) - quadratic time, 3.05 hours
+    -   O(N ^ 3) - cubic time, 365 years
+
+    <!--list-separator-->
+
+    -  growth of Os
+
+        if size = size \* 10
+
+        -   O(1) = constant time, not changing
+        -   O(log N) - logarithmic time, add log(10)
+        -   O(N) - linear time, 10 \* cost
+        -   O(NlogN) - n log n time, little more than O(N)
+        -   O(n^2) - quadratic time, 100 \* cost
+        -   O(N ^ 3) - cubic time, 1000 \* cost
+        -   O(2^n) - exponential, size + 1 -&gt; 2 \* cost
+        -   O(n!) - factorial, size + 1-&gt; n \* cost
+
+<!--list-separator-->
+
+-  counting steps....
+
+    <!--list-separator-->
+
+    -  count key step
+
+        -   place: the deepest loop
+        -   expensive
+
+
+#### Example: ArrayList with get,set,remove,add {#example-arraylist-with-get-set-remove-add}
+
+<!--list-separator-->
+
+-  ArrayList
+
+<!--list-separator-->
+
+-  Summary
+
+    -   get: O1
+    -   set: O1
+    -   remove: On
+    -   add(at i): On
+    -   add(at end):
+        -   Average: O1
+        -   Worst: On
+        -   O(1): amortised average
+
+
+#### Example: ArraySet {#example-arrayset}
+
+
+### Recursion {#recursion}

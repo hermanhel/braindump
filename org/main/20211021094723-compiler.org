@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       04626C3D-D954-4F4D-8553-480F90E611F2
+:END:
+#+title: Compiler
+#+HUGO_SECTION:main
+* The Stages
+Can access details in ~man clang~
+** 1. Preprocessing
+** 2. Parsing and Semantic Analysis
+** 3. Code Generation and Optimization
+** 4. Assembler
+** 5. Linking
+* Kinds
+** GCC(GNU Compiler Collection)
+** Clang( the Clang C, C++, and Objective-C compiler)
+** MSVC(Microsoft Visual C)
+*** Know Issue
+a ~_asm{}~ for inline  assembly language use is valid only under MSVC

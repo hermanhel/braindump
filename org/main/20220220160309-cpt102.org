@@ -1,0 +1,550 @@
+:PROPERTIES:
+:ID:       6E68E676-98FD-429F-9A2A-7C3B2BF64D02
+:CATEGORY: CPT102
+:END:
+#+title: CPT102 Data Structures
+#+HUGO_SECTION:main
+Data structures
+* look up
+Docs stored in DEVONThink3
+The MCS UTS PAS notation: [[file:~/Notes/RoamNotes/daily/2022-02-20.org::*Get to know the modules][Get to know the modules]]
+
+* MCS
+
+** Goals
++ Data structure's internal representation
++ data structure's algorithms
++ Use =time/space comlexity= to choose from ways of implementation
++ =appropriate data structures= to ensure efficient imple... of algorithm
+
+** Assesment
+| Method           | Type     | Duration |  % |
+|------------------+----------+----------+----|
+| Assesment Task 1 | CW(quiz) |          | 10 |
+| Assesment Task 2 | CW(quiz) |          | 10 |
+| Final Exam       | Exam     | 2 hour   | 80 |
+
+** Materials
++ DATA STRUCTURES AND PROBLEM SOLVING USING JAVA by M. A. WEISS
++ DATA STRUCTURES AND ALGORITHMS IN JAVA by M.T. Goodrich and R. Tamassia
+
+** Syllabus
+
+*** Ours
++ Week 1
+  + Introduction to Data Structures Data Structures
+  + Data Types
+  + and Abstraction Data Types
++ Week2 abstraction/static & dynamic data structures
+  + Abstraction
+  + Information Hiding
+  + and Encapsulation
+  + Huffman Codes and ADT
+  + Priority Queues
+  + Efficiency
+  + Static vs. Dynamic Data Structures
++ Week3 Java collections
+  + Overview of Data Structure Programming
+  + Programming with Java Libraries
+  + Java Collections
+  + Programming with Lists of Objects
+  + Linear Collections vs Hierarchical Collections
+  + Type Parameter
+  + Abstract Datatype definition
+  + Java arrays and ArrayLists
+  + Collections and List
+  + Using List and ArrayList
+  + Iterating through List
+  + Iterators
+  + Interfaces vs Classes
++ Week4 Java Stack
+  + Bags
+  + Sets
+  + Queues
+  + Lists
+  + Stacks
+  + Maps. Operations upon various data structures
+  + Applications of data structures
+  + Recursive methods
+  + Stack ADT
+  + Stack for web document processing
+  + Program Stacks
+  + Stack for postfix conversion
+  + Stack for postfix processing
+  + Stack for evaluating expressions
+  + Java Stack Interface Specification
+  + Examples of using Map
+  + Iterating through a Map
++ Week5 tor vs able
+  + Queues and Priority Queues
+  + Iterator vs Iterable
+  + Sorting collections
+  + Iterator vs Comparator
+  + Comparator vs Comparable
+  + Sorting with Comparators
+  + Using Multiple Comparators
+  + compareTo vs compare
++ Week6 exceptions/ implementing col.
+  + Exceptions
+  + Types of Exceptions
+  + Catching exceptions
+  + Throwing Exceptions
+  + Implementing Collections
+  + Abstract Classes
+  + Interfaces vs Abstract Classes vs Classes
+  + Lists Abstract Datatype definition
+  + Defining ArrayList
+  + Realisation of lists using arrays
+  + Singly linked lists in Java (declaration
+  + initialisation
+  + use
+  + iteration)
+  + Data representation of singly linked lists
+  + Immutable List
+  + ArrayList: fields and constructor
+  + ArrayList methods
+  + ArrayList: ensureCapacity
+  + Cost of ArrayList operations
+  + Cost of ArraySet operations
+  + Time vs Space
+  + Algorithm complexity
++ Week 7
++ Week 8 
+  + Recursions
+  + recursion vs iteration
+  + Testing collection implementations
+  + Motivation for linked lists
+  + Linked Structures
+  + Linked structures for implementing Collections
+  + linked lists operations
+  + Memory allocation
+  + Heap & memory allocation
+  + Linked Node class
+  + List using linked nodes with header
+  + Using Linked Nodes
+  + Creating & Iterating through a linked list
+  + cost of Linked Collection methods
++ Week 9
+  + Stacks/queues and their implementation
+  + LIFO
+  + Creating a Stack using a Linked List with a header
+  + FIFO
+  + Creating a Queue using a Linked List with a header
+  + Application of Queues
+  + User job queu e
+  + Print spooling queue
+  + I/O event queue
++ Week 10
+  + Cost of ArraySet operations
+  + Binary Search
+  + Cost of SortedArraySet with Binary Search
+  + Selection sort
+  + Insertion sort
+  + Merge sort
+  + Quick sort
+  + Bucket sort
+  + slow sorts vs fast sorts
+  + Sorting by Divide and Conquer
+  + Cost of various sorting algorithms
++ Week11
+  + Trees Abstract Datatype definition (trees
+  + binary trees)
+  + Realisation of trees using references or arrays
+  + Tree Ordering
+  + Tree traversal
+  + Breadth-First traversal
+  + Tree and Recursion
+  + Recursion tree
++ Week 12
+  + Search lists
+  + (binary) Search trees
+  + Balanced Search Trees
+  + AVL trees
+  + AVL Rotation
+  + AVL height balancing
+  + Tree examples & applications
+  + Tree implementation
+  + Implementing Binary Trees
+  + Implementing General Trees
+  + Hash tables
+  + Hash function
+  + Keys
+  + Security
++ Week13
+  + Basic definitions of graph theory
+  + Properties of graphs
+  + Paths
+  + Trees
+  + Digraphs and their applications
+  + network flows
+  + Connected graphs
+  + Incidence matrix and adjacency matrix of a graph
+  + Trees and forests
+  + Spanning trees
+  + Minimum spanning tree
+  + Greedy algorithm for determining a minimum spanning tree
+  + Shortest path problem
+  + Networks
+  + To determine the maximum flow between two points (source and sink) in a network
+
+*** Harverd
++ Abstrct Data Types + OOP
++ Recursion and Backtracking
++ Sorting and Algorithom analysis
++ Linked Lists
++ List stacks and queues
++ State-space search
++ binary trees and Huffman Encoding
+  + bianry search trees
+  + balenced search tree(2-3 B-trees)
++ Heaps and Priority queues
++ Hash tables
++ Graphs
+
+*** OSU
++ Big O
++ ADTs
++ List in python
++ Amortized Analysis
++ Linked list
++ Stack Queue Deque
++ Encapsulation and Iterators
++ binary Search
++ Trees
++ Binary Trees
++ BST Operations
++ AVL Trees/ Balancing
++ AVL Tree Rotation
+  + Rotation Implementation
++ Priority Queues and Heaps
+  + Heap imple
++ Maps and Hash Tables
++ Hash Table Collision
++ Hash table and heap Implementation
++ Graphs
+    
+** Resource Pull Method
+No need for further resource.
+Current resource in DevonThink3 Academics database, Y2S2, CPT102
+
+** Summary
+The CPT102 Module Content System is built with a book, several practice, and a bunch of lecture slides.
+
+The contents basically covers ADT use in Java, some basic data types, some graph theory, some algorithms on some data structures.
+
+** TODO Hiearachy
+When I have some insight(have read the lecture notes through) about the course, I'll update the outline of the module.
+
+* UTS
+** Deliver Plan
+*** Lectures
+every monday 9:00 in SA169/online
+**** DONE Lecture 1
+CLOSED: [2022-03-28 Mon 10:07] SCHEDULED: <2022-02-21 Mon 9:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:07]
+:END:
+
+
+**** DONE Lecture 2
+CLOSED: [2022-03-28 Mon 10:07] SCHEDULED: <2022-02-28 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:07]
+CLOCK: [2022-02-28 Mon 09:05]--[2022-02-28 Mon 11:05] =>  2:00
+:END:
+Overview and quality sofware design, and why data structure is related
+
+***** Software Quality
+
+***** Abstraction
+
+****** Data/procedural
+
+****** as Process/Entity
+
+**** DONE Lecture 3
+CLOSED: [2022-03-28 Mon 10:07] SCHEDULED: <2022-03-07 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:07]
+:END:
+
+
+**** DONE Lecture 4
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-14 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+CLOCK: [2022-03-14 Mon 09:18]--[2022-03-14 Mon 10:40] =>  1:22
+:END:
+
+
+**** DONE Lecture 5
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-21 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+
+
+**** DONE Lecture 6
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-03-28 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+CLOCK: [2022-03-28 Mon 10:29]--[2022-03-29 Tue 09:11] => 22:42
+:END:
+
+
+**** DONE Mid term
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-04 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+
+**** DONE Lecture 7
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-11 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+
+**** DONE Lecture 8
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-18 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+
+
+**** DONE Lecture 9
+CLOSED: [2022-04-25 Mon 13:57] SCHEDULED: <2022-04-25 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-25 Mon 13:57]
+CLOCK: [2022-04-25 Mon 09:02]--[2022-04-25 Mon 10:56] =>  1:54
+:END:
+
+***** Linkedlist
+****** Implementing Collections with arrays
+
+******* ArrayList
+O(n) to add/remove(exclude at end)
+******* Stack
+O(1) of all
+******* ArraySet
+O(n) of all, due to cost of searching
+
+****** Testing Collection Implementations
+
+******* Test method
+
+******** object hiearachy
++ part of data class
++ standalone testing class
+
+******** include
++ all operations
++ cases:
+  + normal
+  + extreme
+
+******** 1 practice
+1. Write =test= first(black box)
+   base on specification(mathematically)
+2. implement =collection=
+3. extend =test= to cover =special cases= of the implementation.(white box)
+******** Nice design with =tests/assertions=
++ check the correctness of the code
++ only report when error emerge.
+******* Implementing Queues
+******** use array
++ vars
+  + data[]: array
+  + front: index of the first entry
+  + back: index of the last entry
++ Methods:
+  + ensureCapacity()
+******* inserting fast
+******** for array
++ inserting in front/back: good(O(1))
++ inserting in the middle: bad(O(n))
+******** Linked Structures: insert in the middle
++ inserting: good(O(1))
+********* inserting in empty linked list
+list -> NULL to list -> G|next -> NULL
+********* inserting before node
+lost track of the front neighbor
+solution:
++ p,c pointer to front and current
+
+**** Lecture 10
+SCHEDULED: <2022-05-02 Mon 09:00>
+
+
+**** Lecture 11
+SCHEDULED: <2022-05-09 Mon 09:00>
+
+
+**** Lecture 12
+SCHEDULED: <2022-05-16 Mon 09:00>
+
+
+**** Lecture 13
+SCHEDULED: <2022-05-23 Mon 09:00>
+
+*** Tutorials
+Thursday 9:00 at SA169
+https://xjtlu.zhumu.com/j/6372801134
+**** DONE Tutorial 1
+CLOSED: [2022-03-28 Mon 10:07] SCHEDULED: <2022-03-03 Thu 9:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:07]
+:END:
+**** DONE Tutorial 2
+CLOSED: [2022-03-28 Mon 10:07] SCHEDULED: <2022-03-10 Thu 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:07]
+:END:
+**** DONE Tutorial 3
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-17 Thu 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+**** DONE Tutorial 4
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-24 Thu 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+**** Tutorial 5
+SCHEDULED: <2022-04-28 Thu 09:00>
+*** Comp. Labs
+Friday 15:00 at SD554
+**** DONE Comp. Lab 0 1
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-18 Fri>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+SD554
+**** DONE Comp. Lab 2
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-25 Fri>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+SD554
+**** DONE Comp. Lab 3
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-01 Fri>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+SD554
+** Suggested Method
+Lecture -> Introduce content and practical skills
+Help session -> practice skills. interact with TA
+Private study -> 3 hour/week
+** Servise and Tools
+Help session.
+other, none
+** Teachers
+*** Steven Guan
+machine learning, modelling, security, networking, and pseudorandom number generation
+
+Email address: steven.guan@xjtlu.edu.cn
+Office telephone number: 0512-8816-1501
+Room number and office hours: SD425; by appointment Preferred means of contact: e-mail
+*** Kok Hoe Wong
+good at software engineering and manage
+
+Email address: kh.wong@xjtlu.edu.cn
+Office telephone number: 8188-4951
+Room number and office hours: SD431, by appointment Preferred means of contact: e-mail
+*** Mechanisms
+Lecture introduces skills, and Lab practice these skills. Problems and ask TA on site.
+
+Go to Prof. after class
+
+Email to Prof.
+*** Summary
+The UTS have little extra. Contents would be delivered in lecture and Practice with errors/correction happen in lab. 
+**** APIs
++ Attend Schedule
+  + Attend Lec
+    get content, skill def
+  + Attend Tutorial
+    get practice, corection
++ Go to Prof.
+  + after class
+  + Appointment by email to room
++ Email to Prof.
+* PAS
+All teachers are not very good at presenting. And they render the ideas very slowly. I shell take advantage of the slow course speed to get higher marks, and learn other things as much as I could. I have a potentialy 85% mark to meet.
+The slides are present, so I guess I could use the slides to go further, but only 1 week, and spare time for other things.
+** THREAD Data structure Preview                                    :agenda:
+*** Go with the slides
+* wiki
+** Cost Analysis
+ways to determine cost
+ref: lec10
+*** time cost
++ =(time (expr))=
++ counting operations...
+*** space cost
++ memory the program uses
++ count data items...(elementary, like int)
+*** benchmarking
+**** time cost
+benchmarking =real program= on =actual machine= with =specific input= by =elapsed time=.
+
+#+caption: function
+#+begin_src java
+System.currentTimeMillis();
+#+end_src
+***** issues
+****** choose input
++ no user input
++ large data sets
+****** other procs
++ run multiple times for average
+*** analysis: algorithm complexity
+count number of steps
++ worst case [easy]
++ best case [easy, useless]
++ average case [hard]
+**** output
+cost = $3 n^2 - n +30$ steps
+
+which would be then simplified to:
+
+cost = $3n^2+...steps$
++ the consonants differes by machine
+**** Big O notation
+assuming a =100-MHz clock=, and N == =1024k = $2^{20}$ ==
+
++ O(1) = constant time, 10ns
++ O(log N) - logarithmic time, 200ns
++ O(N) - linear time, 10.5ms
++ O(NlogN) - n log n time, 210ms
++ O(n^2) - quadratic time, 3.05 hours
++ O(N ^ 3) - cubic time, 365 years
+***** growth of Os
+if size = size * 10
++ O(1) = constant time, not changing
++ O(log N) - logarithmic time, add log(10)
++ O(N) - linear time, 10 * cost
++ O(NlogN) - n log n time, little more than O(N)
++ O(n^2) - quadratic time, 100 * cost
++ O(N ^ 3) - cubic time, 1000 * cost
++ O(2^n) - exponential, size + 1 -> 2 * cost
++ O(n!) - factorial, size + 1-> n * cost
+**** counting steps....
+***** count key step
++ place: the deepest loop
++ expensive
+*** Example: ArrayList with get,set,remove,add
+**** ArrayList
+**** Summary
++ get: O1
++ set: O1
++ remove: On
++ add(at i): On
++ add(at end):
+  + Average: O1
+  + Worst: On
+  + O(1): amortised average
+*** Example: ArraySet
+** Recursion

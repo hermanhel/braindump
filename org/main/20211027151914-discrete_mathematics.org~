@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       0D39BCE8-E112-4DA4-A4B8-2091E1426B46
+:ROAM_REFS:
+:END:
+#+title: Discrete Mathematics
+* Number Systems
+** Natural Numbers
+*** Closed under addtition
+any 2 num in N add get 1 num in N
+*** Key property
+Any natural number can be obtained from 0
+by S(n) = n + 1
+S(0) = 1, S(S(0) = 2; =induction= !!
+** Integers
+and negative
+*** Even and odd
+0 = undefined
+** Rational Numbers
+x/y where x and y belong to Integers
+** Real numbers
+all decimal numbers
+Distances to points on a number line
+** Prinme Numbers
+
+** Perrin Numbers
+* Proof Techiniques
+** Proof by Induction
+:PROPERTIES:
+:ID:       5151E7FA-03EE-4834-AC78-E609748D2E73
+:END:
+*** Flow
+**** 1. Bace Case
+property holds for n = 0
+**** 2. Inductive Step
+n = m ==> n = m + 1
+**** 3. Conclusion
+
+** Contradiction
+
+*** Flow
+
+**** 1. Assumption by contradiction
+
+**** 2. Develop the proof
+
+**** 3. Find self conflict
+* Set Theory
+
+** Problem sheet [0/8]
++ [ ] Notation for sets
++ [ ] Subset?
++ [ ] equal of sets?
++ [ ] Operations
++ [ ] Algebra
++ [ ] Cardinality
++ [ ] Cartesion produt
++ [ ] Bit strings
+
+* Relations
+Relation over sets?
+** Problem sheet [0/7]
++ [ ] Definition
++ [ ] Binary relation representation
++ [ ] Unary relations
++ [ ] Properties of Binary relations
++ [ ] =Transitive closure=
++ [ ] Eauivalence relations adn partitions
++ [ ] =Partial orders= and total orders
+* Functions
+* Logic and Spec ification Languages
+* Propositional Logic
+* First Order Logic
+facts ==> world
+including:
++ Objects
++ Relation
++ Functions
+* Combinatorics
+** Problem sheet
++ [ ] natotions for sums and products, including the factorial function.
++ [ ] Principles for counting permutations and combinations
+* Probability and Statistics
+* 
+

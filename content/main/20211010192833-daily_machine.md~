@@ -1,0 +1,73 @@
++++
+title = "Daily Machine"
+author = ["System Administrator"]
+draft = false
++++
+
+_Daily Machine_ is the machine that loop on daily basis. It's the machine of the process of the day.
+Imagin it like a main() method in C.
+The _Daily Machine_ establishes the common structure of days, and provide API(or hubs) to call other machines.
+It serves more like a navigation.
+The whole _Daily Machine_ is constructed with with 3 basic machine according to time of a day:
+
+-   Morning Machine
+-   Stuff Machine
+-   Evening Machine
+
+
+## Background Sound {#background-sound}
+
+
+### Lost of work {#lost-of-work}
+
+
+#### Commit frequently {#commit-frequently}
+
+For every little progress, commit and describe it.
+Better have a git repository to sync in remote or local, to prevent data loss.
+
+
+## Morning Machine {#morning-machine}
+
+In the scope of waking up the day and set up the tone.
+
+
+### Morning Page {#morning-page}
+
+
+### Next TODOS {#next-todos}
+
+Make TODOs NEXT?
+
+
+### Shoudl log my wearing {#shoudl-log-my-wearing}
+
+
+## Stuff Machine {#stuff-machine}
+
+Doing Stuffs
+
+
+### [Academic Machine]({{< relref "20211011005922-academic_machine.md" >}}) {#academic-machine--20211011005922-academic-machine-dot-md}
+
+
+### [Household Machine]({{< relref "20211011010036-household_machine.md" >}}) {#household-machine--20211011010036-household-machine-dot-md}
+
+
+### Project Machine {#project-machine}
+
+a machine to perform and manage projects
+
+
+### [Weekly Plan]({{< relref "20211011025228-weekly_plan.md" >}}) {#weekly-plan--20211011025228-weekly-plan-dot-md}
+
+Every Saturday.
+For the First week, <span class="timestamp-wrapper"><span class="timestamp">[2021-10-11 Mon]</span></span>, Today afternoon.
+
+
+## Evening Machine {#evening-machine}
+
+Maintaining, reflecting
+
+
+### Daily reflection {#daily-reflection}

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       773B3AAF-1306-4359-9334-A04308D32ECB
+:END:
+#+title: Plan
+#+HUGO_SECTION:main
+A 
+

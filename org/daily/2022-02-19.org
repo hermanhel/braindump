@@ -1,0 +1,137 @@
+:PROPERTIES:
+:ID:       C32FC3FE-BC3B-4A9A-83E9-DD704FAC29FE
+:END:
+#+title: 2022-02-19
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Morning Page
+I find myself in literatures as a hobit, and today's victim is Stefen in /the Vampire Diary/.
+
+The entrancing experiance as I compete in a game have made me a different person, blocking some channels of feeling while turning on others, making me constantly engaged and always making the decision of getting more when it comes to my point of exit.
+
+This could be a hint for me to decide whether to keep on feeling bad and fighting the instinct of me to use strategy and feel good, choosing to embrace my instinct and dispose all my bad feelings, or learn to control and accomodate with my instinct.
+
+When I speak of learn, I mean that errors are to be made, and principles are to be formulated and understood. I shall make a lot of errors, and each will gave me insight, and never happen again.
+
+Learning is not reading book once, and feeling good. That's another behaviour of my feeling-good instinct, the shortcut is takeng in order to feel good instead of becoming stronger. As my errors have taught me: =Reading book once and feeling good have low efficiency in learning.=
+
+The path is proven to be false by experiance. Reading a book over and over again, would that be a good answer? As my experiance with the /Mindmap/ (Tony Bozan's series) tells: =Reading a book over and over again along does no good=
+
+Then, is there any experiance of mine telling a working strategy for my learning with *other's experiance*?
+
+As my experiance with Piano & literature taught me:
++ =mimicing great artworks works=
+  my piano/music skill builds totally on experiancing, practice, mimicing others work. All those elements are retrived from my years of memory of listening, playing the classic piano works
++ =practice and self connecting works=
+  I figured the webber's rule of motivation very early, and use that as a base theory every since. That along beyond other theories I read about but not using sticks and have more meaning to me.
+
+  However, I think, *practice or self connecting* along won't work. With art, they happens simultaneously, I write things out, I play a tone, the connecting holds in form of idea. sometimes out of instinct, because I know the field very well. However, if I'm just playing a note without no rhythm at all, or repeatedly writing "the article, the article, the article", I don't think that'll help.
+
+  this lead to a refined version of this principle:
+  =practice and self connecting *with principle* works=
+
+  Now, since =principle= have caused me a lot of trouble, I think it's appropriate to clarify what it is and how it will and won't work.
+  + What it is:
+    =principle= is abstraction of experiance. It's =rule=.
+    
+    experiance, once finished, should have a result (this is a principle too, to finish the experiance, and to have result, and the fact the experiance, once finished, should have result).
+    Then, there will be this one-to-one relationship with the decisions made during the experiance and the result. These corelations are =facts=, =experiance= some may call it.
+    To be clear, I'll refer =experiance= to the big, event-unit whole of memories, and =facts= to the small decision-result corelations.
+
+    Therefore, from =experiance=, we derive =facts=. =facts= are like points(x,y), with x the decision, y the result.
+    Among all =facts=, pattern could be recognized. But a *pitfall* could be that whether the facts are enough. I didn't do any summary work on my =facts=.
+
+    Meanwhile, I also have certain =goals=. they are my wish and intent, my imagination of future and ideal. They could be categorized into =of performance=, which most of them will be, and =of choice= which would be a handful, but also critical.
+     an example of =goal of performance= is academic credit. Generally, boost in academic credit have no effects but good in any field. It's like a black box in functional programming, we want the function just to be faster and using less space, and once it does, it can be just good. In these units of life, the =goal= is just to increase my =performance= .
+
+     an example of =goal of choice= is neuroscience participation. This field I like only out of  interest. In my whole university period, I could be participating Business fields, Stock competition, Business competition, Financial Lab, they are generally good, generally =goal of performance=, they couldn't harm, but are with no contribution to my neuroscience participation, my =goal of choice=. Nothing should be done unless it's sub to at least one =goal of choice= of mine, that's how important they are.(this is a =principle= itself!)
+
+     every =goal of performance= should be subject at least on =goal of choice= of mine.
+
+   =goal= + =fact= = =principle=
+    =goals= almost always come with =requirements=, the credit requires exam and practical skill and large-enough knowledge bank, the neuroscience requires field knowledge, appropriate skill-set and social relation network, all could be written in form of =results=, which are subject to, or should be the inevitable consequence of some =decisions=, according to the =fact=.(pitfalls to avoid to, like suspended)
+
+    Then, what to do is pretty obvious. =Do the thing that ensure credit= and =avoid things that lose credit= would be the lead principles with the =goal= credit.
+    #+begin_src clojure
+     (defmacro with-principle-do
+     [[goals facts] & doings];; goals(goal [requirements]) facts(decision [consequences]) doings(lists with decisions (decision args))
+    
+     `(do
+     ... ;; for every doing, find a coresponding facts with similar decision.
+     ;;with that decision, test if any mapped consequence fit or contrast any requirement in goals.
+     ;;if fit, do. if not fit or contradict any requirement, hold for examination
+     ))
+    
+     (defmacro find-act-with-principle
+     [[goals facts]]
+     ;; for every requirement in goals, search facts for similar consequences and return the corresponding decision
+     )
+     ;; to put the code into real use, still need:
+     ;; + data representation of the above things.
+     ;; + sementic parser for natural language and the data representation
+     ;; + a approximate "equals" function that could tell similarity in requirements and
+     ;;   consequences
+    #+end_src
+
+    from above could could tell that =principle= is a conjoint way of saying "corresponding the soncequences of facts known and the requirements of the goals". =with-principle= is just exactly that meaning.
+
+    My experiance from past with principles tells me that a randomly-stated principle with no test, experiment(formal test) or backing fact, only very abstract vagaue meaning =don't work at all=. they could even blind your eye for the really important few.
+
+    However, sometimes the there could be =stated principles=, having their own description, not just a abstraction of a relationship.
+    + examples are:
+      + from /Principle/ by /Ray Daleo/
+        + 做一个超级现实的人.
+
+        + 真相(对现实的准确理解)是任何良好结果的根本依据.
+
+        + 不要担心其他人的看法,不要让别人的看法成为你的障碍.
+
+        + 头脑极度开放、极度透明对于快速学习和有效改变来说是价值无限的.
+    + This is because
+      Most times, we don't have clear memory on every experiance, or don't recall them directly. Sometimes, we don't have personal failure/success on some topic. In both cases, =patterns= are =recognized= and =formulated= into =clever sentences introducing the pattern=, to remember or to share
+    + They are written in simple sentences. Mostly, they are field specific in topic and context, you can sence it through the words.
+    + However, pitfalls could be that these sentences are to easy to say. to easy to have wrong meaning, or no meaning at all.
+    + One should always treat =stated principle= with very high awareness and alert. Like they're mind controlling vampires and all you have against them are:
+      + clear image of how the principle =apply to reality=
+      + clear definition of your =goals of choice=
+    + rules are that a =stated principle=:
+      + should never be spoken lightly
+        must after research, or at least testing personally.
+      + should be logictically =reasoned=
+        sometimes couldn't, but at least try.
+      + should never be taken lightly
+        must after research, or at least testing personally.
+        should take 1 by 1. Multiple intake always result in ignorance and compound influence distracting you from the real good/bad ones.
+* sumary about the principle
+** Formation
+from =errors= and =experiances= comes =facts=.
+=Facts= contains =decision= and =result=
+from personal belief and reality comes =goals=, =of choice= or =of performance=.
+=goals= contains =specific goal= and =requirement=
+an act =with principle= make decisions on what strategy/thing to do *base on reality, look to goals*. That is, in combination of =requirement= and =result=, referencing the =decisions=
+
+When patterns are =recognized= and =reasoned=, =stated principle= may be addressed. They, however, could be dangerous while helpful, so must be treated with care, including double check on their =reality image=, =goal hierachy= or =reason=. Don't let them mislead you to a god-knows-where direction.
+* ACTIVE Recovery to Principles                                      :agenda:
+I decided to recover to life with machines and principles.
+Gonna add other details into the project as it proceed.
+** Goal
+*** requirement
++ [X] A machine of doing things, tested, simplified --> [[id:E48DECC9-A139-4F6D-B6F6-62B3570959D6][General task doing machine]]
++ [ ] A machine of planning, including where the records goes
++ [ ] Develop a set of principles, categorized and tagged for passible look up.
++ [ ] 
+** Actions
+*** Morning page
+include the [[1 principle more (each day)]]
+*** TODO 1 principle more (each day)
+Add 1 principle more into the set,
+add 1 principle more into action.
+**** <2022-02-19 Sat> Sleep befor ten if tommorow is to work.
+**** <2022-02-20 Sun> Always with clear outline.
+*** DONE Refine General Task doing machine
+Getting rid of the 冗余部分. Build it from scratch again
++ [X] Water rule
++ [X] cycle rule
++ [X] focus on the back of head
++ [X] outline rule(doc)

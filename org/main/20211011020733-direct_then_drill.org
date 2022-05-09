@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       9EBE99E2-D609-4B2F-B10F-ADB871C1AEFA
+:END:
+#+title: Direct-then-Drill
+#+HUGO_SECTION:main
+This is a learning method specially for procedure-centered skills.
+e.g =Jazz piano, Drawing, Writing Code.etc=
+* Flow
+** 1.Direct Practice
+Directly use relevent machine to do the thing.
+Log is possible. At least keep record.
+** 2.Diagnose
+This step is kind of dependent on the logs or records of the direct practicce. These would be the material of Dignosis of the speed-controlling element to drill on
+** 3.Drill
+** 4.Repeat

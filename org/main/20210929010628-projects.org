@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       0FE03C29-9570-4CF6-BE40-029CC2BB1BB4
+:END:
+#+title: Projects
+#+HUGO_SECTION:main
+Nav for projects.
+Project Inbox.
+* Game Projects
+** WAIT Terraria                                                    :agenda:
+:LOGBOOK:
+- State "WAIT"       from "ACTIVE"     [2021-11-09 Tue 11:39] \\
+  not playing terraria now
+:END:
+   使用[[id:EE1F0788-6742-46AC-A668-47F7D1B620DB][Terraria Goingthrough]]中的升级路径。 
+* The Greatest Show

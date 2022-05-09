@@ -1,0 +1,90 @@
+:PROPERTIES:
+:ID:       07470AEB-389E-49F1-B54F-49C3C5E15B60
+:END:
+#+title: 2022-05-05
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* timer related functions 
+** TODO find a way to wrtie background timer
+:LOGBOOK:
+CLOCK: [2022-05-05 Thu 12:02]--[2022-05-05 Thu 12:24] =>  0:22
+:END:
+is there built in function doing that?
+is there libraries doing that?
+*** in elisp builtin
+https://www.gnu.org/software/emacs/manual/html_node/elisp/Timers.html
+run-with-timer
+#+begin_src emacs-lisp
+  (defun testfunc ()
+    "docstring"
+    (message "hi!")
+    )
+#+end_src
+**** run-with-timer secs repeat function args
+**** parse time
+:PROPERTIES:
+:Effort:   70
+:END:
+(org-duration-to-minutes "2:00")
+**** conversion between string and symbol
+(intern string)
+keyword is symbol start with ":", so
+(keyword string) should be like (intern (concat ":" string))
+
+** TODO timer information functions
+*** DONE current stage elapsed/remaining
+CLOSED: [2022-05-05 Thu 17:13]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-05-05 Thu 17:13]
+:END:
+look up how long have this stage taken(how long this dumping,bar,rest,releasing have taken). and how long till effort.
+*** DONE current session elapsed/remaining
+CLOSED: [2022-05-05 Thu 17:13]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-05-05 Thu 17:13]
+:END:
+look up how long since the session started, and how there is long to its said time
+*** TODO time statistic
+over all bar time, rest time, dumping+rest+releasing, all time, 
+** TODO timer behaviours
+*** DONE environment set up
+CLOSED: [2022-05-05 Thu 17:12]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-05-05 Thu 17:12]
+:END:
+**** DONE first set the timer length
+CLOSED: [2022-05-05 Thu 13:58]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-05-05 Thu 13:58]
+CLOCK: [2022-05-05 Thu 12:24]--[2022-05-05 Thu 13:58] =>  1:34
+:END:
+*** TODO session timer
+1. [X] a time prompted when entering session
+2. [X] when near up (10m before), prompt, "extend?", if no input, no extend
+3. [ ] when up, if soft, do 1 from ~dedicated-session-bar-time-up-soft-actions-alist~
+   + insert at point "session time up"
+   + message
+   + switch to buffer with (you should rest now)
+   + change the frame to only 2 window, up is large font (you should rest now), low is currently working buffer
+4. [ ] if hard, call releasing.
+*** TODO bar timer
+doing timer would:
+1. [X] set timer with ~dedicated-session-bar-time~ (if nil, set it with bar 1's duration after bar 1's over)
+2. [ ] when timer's up, if soft(40), do a behaviour in ~dedicated-session-bar-time-up-soft-actions-alist~
+   + insert at point "you should rest now"
+   + message
+   + switch to buffer with (you should rest now)
+   + change the frame to only 2 window, up is large font (you should rest now), low is currently working buffer
+3. [ ] when timer's up if hard(40!), do a behavioour in ~dedicated-session-bar-time-up-hard-actions-alist~
+   + toggle between bar and rest
+   + save and kill current working buffer, goto rest. after rest, open that buffer again.
+*** TODO set soft/hard session/stage time
+a soft session time is suggestion, and will tell you the time is up when there's little remaining time. the same goes to the bar time
+
+a hard session time is strict, will terminate doing 10m before the session is over. a hard bar time will terminate the bar(start rest) when the timer's up
+* Log related functions
+** TODO look up logs
+* prompt text including the goal/standard of each rest/bar
+bar's quitting standard is head begin to mess
+rest's finishing benchmark is head clear again

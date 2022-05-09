@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       F989F96D-F5C2-4DCA-935D-63C673F041A2
+:END:
+#+title: CPT101
+CPT101 is into Computer System Architeture.
+The class consist of the knowledge of the computer system, and a bit of assembly language programming in the assembly language used in C, a AMD RISC.
+The class is slow and shallow. *Recommanded Method is Self Study and Go to the Professor for Problems*
+
+* ACTIVE CPT101
+* resources
+** Textbook
+   /Computer Systems Architecture: A Networking Approach./ by Rob Williams
+   I have a copy of it. This is the mandatory textbook.
+** Lecture Slides
+   Lecture slides are often released a week before.
+   The professor would be covering the exact content of the slids.
+   Maybe base of Exams.
+*** Week 5
+[[file:~/Downloads/NDM File/CS102-pdf-07 LS.pdf][Lecture 07]]
+** Online Resources
+   I would say MIT OCW definitely have courses under the topic.
+* Tutoring Schedule
+** Lecture ESG09
+SCHEDULED: <2021-10-18 Mon 09:00-11:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-14 Thu 15:53]
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2021-10-14 Thu 15:53]
+:END:
+** Comp Lab SD554
+SCHEDULED: <2021-10-19 Tue 10:00-11:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-14 Thu 15:44]
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2021-10-14 Thu 15:44]
+:END:
+Class D1/4
+only in week 5,6,9
+** Office Hour
+* Tasks
+** TODO Preview #1
+SCHEDULED: <2021-10-20 Wed  +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-14 Thu 15:52]
+:END:
+:LOGBOOK:
+- State "DONE"       from "WEEK"       [2021-10-14 Thu 15:52] actually not done.
+:END:
+** TODO Preview #2
+SCHEDULED: <2021-10-10 Sun  +1w>
+** NEXT Build the CPT101 Node
+SCHEDULED: <2021-10-12 Tue>
+* Log
+** <2021-10-11 Mon> Lecture
+- 0:00:16 ::
+- 0:48:28 :: Installed succecfully pdf-tools.el
+- 1:00:22 :: Find pdf-annot not available

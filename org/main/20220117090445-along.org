@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       AC48FED9-9162-4961-A48B-C4276F3D83DD
+:END:
+#+title: Along
+#+HUGO_SECTION:main
+Along is a musical I decided to write. The draft of the songs are in the onenote now.
+* Charactors
+** The Quiet Dying
+fixing to die.
+He knows no blues. But like blues a lot.
+The first song is 
+* Songs
+** 1. The noise of the quiet dying
+a [[id:F8B7DBCB-A620-413D-997B-4ED0C38FF85E][blues]]
+

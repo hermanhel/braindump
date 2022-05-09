@@ -1,0 +1,196 @@
+:PROPERTIES:
+:ID:       5813D47F-4268-46DA-B99A-C529E2BCBFAD
+:CATEGORY: CPT107
+:END:
+#+title: CPT107
+#+HUGO_SECTION:main
+
+* COMPLETED CPT107                                                   :agenda:
+CLOSED: [2022-01-03 Mon 15:25]
+Class about [[id:0D39BCE8-E112-4DA4-A4B8-2091E1426B46][Discrete Mathematics]]
+* Class Information
+** Credits
+   | num | Method | range | time      |  % |
+   |   1 | CW     | ALL   | Exam week | 80 |
+   |   2 | CW     | LO1-3 | Week 6    | 10 |
+   |   3 | CW     | LO4-6 | Week 13   | 10 |
+*** TODO Assessment 1
+Using Texmacs to write the result.
+[[file:~/Notes/NoteAttachments/PDF/CPT07_Assessment_I_2021_22_Que_Oct_19(1).pdf][Questions]]
+DEADLINE: <2021-10-29 Fri 17:00>
+**** Proof Techniques
+***** Formality of writing the proofs
+***** contradiction machine
+***** general proof machine
+**** Set theory
+***** Marks
+***** Theories?
+**** Relations
+***** Transitive relations?
+***** Transitive Closure
+** Professor
+*** Prof. Ka Lok Man
+    Dr.Eng. in EE in Politecnico di Torino, Italy
+    Phd in CS, Technishe Universiteit Eindhoven, Netherlands
+    Industrial Experience in integrated circuit design
+    Many Publication
+**** Contact
+     + email(prefered): ka.man@xjtlu.edu.cn
+     + Office telephone: 0512-8816-1509
+     + Room and Office Hour: SD437, Fri. 11-13
+** Content
+*** Number systems
+*** Proof techniques
+*** Set theory
+*** relations
+*** Funcitons
+*** Logic
+*** Combinatorics
+*** Probability
+** Tutoring Schedule
+*** Class/Tutorial
+**** DONE [#A] CPT107 Lecture SA169
+     DEADLINE: <2021-12-24 Fri> SCHEDULED: <2021-12-10 Fri 09:00-11:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-12-29 Wed 00:34]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-12-29 Wed 00:34]
+- State "DONE"       from              [2021-12-29 Wed 00:34]
+- State "DONE"       from ""           [2021-12-29 Wed 00:34]
+- State "DONE"       from              [2021-12-29 Wed 00:34]
+- State "DONE"       from ""           [2021-11-24 Wed 12:13]
+- State "DONE"       from              [2021-11-24 Wed 12:13]
+- State "DONE"       from ""           [2021-11-24 Wed 12:13]
+- State "DONE"       from              [2021-11-24 Wed 12:13]
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-09 Tue 22:55]
+- State "DONE"       from              [2021-11-09 Tue 22:55]
+- State "DONE"       from ""           [2021-11-08 Mon 23:17]
+- State "DONE"       from              [2021-11-08 Mon 23:17]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+     at SA169
+     recommandations:
+     + get Copies of the slides
+       from LMO
+       + read before and after lecture
+     + Take notes
+*** Time sink
+    + 7-8 hour of self study expected
+nn      + reflection: 4h
+	on lecutre material
+      + background reading: 3h
+
+*** Textbooks
+    /Logic in Computer Science/ by Michael Huth
+    /Discrete Mathematics for Computing/ by R. Haggarty.
+    /Discrete Mathematics for Computer Scientists/ by Addison Wesley
+    /Discrete Mathematics with Applications/ by Brooks Cole
+* resources
+** Textbook
+   /Computer Systems Architecture: A Networking Approach./ by Rob Williams
+   I have a copy of it. This is the mandatory textbook.
+** Lecture Slides
+   Lecture slides are often released a week before.
+   The professor would be covering the exact content of the slids.
+   Maybe base of Exams.
+   
+** Online Resources
+   I would say MIT OCW definitely have courses under the topic.
+* Tasks
+** DONE Preview #1
+SCHEDULED: <2021-11-24 Wed +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:10]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-12 Fri 16:58]
+- State "DONE"       from              [2021-11-12 Fri 16:58]
+- State "DONE"       from ""           [2021-11-01 Mon 12:42]
+- State "DONE"       from ""           [2021-11-01 Mon 12:41]
+- State "DONE"       from              [2021-11-01 Mon 12:41]
+- State "DONE"       from ""           [2021-11-01 Mon 12:41]
+- State "DONE"       from              [2021-11-01 Mon 12:41]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+** DONE Preview #2
+CLOSED: [2021-11-01 Mon 12:42] SCHEDULED: <2021-10-27 Wed +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-01 Mon 12:40]
+:END:
+:LOGBOOK:
+- State "DONE"       from "DONE"       [2021-11-01 Mon 12:42]
+- State "DONE"       from              [2021-11-01 Mon 12:42]
+- State "DONE"       from ""           [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-11-01 Mon 12:40]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+ 
+** DONE Course information
+CLOSED: [2021-10-11 Mon 14:11]
+   :LOGBOOK:
+   - State "DONE"       from "NEXT"       [2021-10-11 Mon 14:11]
+   CLOCK: [2021-10-07 Thu 14:46]--[2021-10-07 Thu 15:30] =>  0:44
+   :END:
+   I don't know most things about CPT107. That's not right for a module I enrolled in, a great university student enrolled in. Fix that.
+   The Approach is:
+   1. I go to course page
+   2. I find credit information
+   3. I find Professor information
+   4. I find course content information
+   5. I find module specific information
+      like =the server the module is using, delivery plan, classroom=
+
+   Collect the information's here under
+   https://sso.xjtlu.edu.cn/login
+
+* Assesments
+
+** DONE Assesment 2
+CLOSED: [2021-12-24 Fri 01:16] DEADLINE: <2021-12-10 Fri 17:00>
+:LOGBOOK:
+- State "DONE"       from              [2021-12-24 Fri 01:16]
+:END:
+
+** DONE Final Assignment[6/6]
+CLOSED: [2021-12-29 Wed 00:42] SCHEDULED: <2021-12-25 Sat>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-29 Wed 00:42]
+CLOCK: [2021-12-26 Sun 13:10]--[2021-12-26 Sun 14:52] =>  1:42
+CLOCK: [2021-12-25 Sat 19:18]--[2021-12-25 Sat 23:07] =>  3:49
+CLOCK: [2021-12-25 Sat 17:40]--[2021-12-25 Sat 18:13] =>  0:33
+CLOCK: [2021-12-25 Sat 16:14]--[2021-12-25 Sat 17:38] =>  1:24
+:END:
++ [X] Proof
+  + [X] 1
+    0:00:08 
+  + [X] 2 0:11:21 
+  + [X] 3 0:22:05 
++ [X] Set
+  + [X] 1 0:29:19 
+  + [X] 2 0:39:30 
+  + [X] 3 0:50:19 
++ [X] Relation
+  + [X] 1 0:55:46 
+  + [X] 2 1:25:55 
+  + [X] 3 1:41:05 
+  + [X] 4 2:01:58 
++ [X] Function
+  + [X] 1 2:18:17 
+  + [X] 2 2:40:34 
+  + [X] 3 2:51:53 
++ [X] Logic
+  + [X] 1 3:12:27 
+  + [X] 2 3:39:47 
+  + [X] 3 3:59:37 
++ [X] Combinatorics
+  + [X] 1 4:23:58 
+  + [X] 2 4:27:29 
+  + [X] 3 4:57:47 
+  + [X] 4 5:28:48 
+
+    

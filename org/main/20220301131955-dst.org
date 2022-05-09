@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       E5CEC50F-854B-4A9E-8FB8-9405A4D6DD08
+:END:
+#+title: DST
+#+HUGO_SECTION:main
+* Mods
+|         id | name                | use            |
+|------------+---------------------+----------------|
+| 2325441848 | ActionQueue RB2     | Farming        |
+| 2730172668 | 唐刀                | 一个不错的武器 |
+| 2302837868 | snapping tills      | farming        |
+|  378160973 | global positioning  |                |
+|  351325790 | geometric placement |                |
+
+
+* 20220301131955-dst
+:PROPERTIES:
+:NOTER_DOCUMENT: 20220301131955-dst.pdf
+:END:

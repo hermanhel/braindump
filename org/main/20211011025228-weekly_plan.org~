@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       188F8050-7BAF-494E-847D-9265398B570A
+:END:
+#+title: Weekly Plan
+This machine is for Weekly Plan
+* Schedule
+The Weekly Plan Machine call scheduled on every Saturday night
+Change if needed
+** Weekly Plan
+SCHEDULED: <2021-10-16 Sat +1w>
+:PROPERTIES:
+:STYLE:    habit
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-12 Tue 02:15]--[2021-10-12 Tue 03:18] =>  1:03
+:END:
+Make Weekly Plan According to this machine
+* Flow of Weekly Plan Machine
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-10-12 Tue 01:13]
+:END:
+** 1. Confirm on the [[id:1130F0BE-A5C1-4E0F-8AF7-9BC582111108][Roles]]
+Recognize the roles and the priority and first things.
+** 2. Project: TODO -> WEEK -> NEXT
+Base on the Roles, Find in the Projects nested under roles that are active, and allocate Tasks to this WEEK. First Thing First, always.
+After that, Change the First things to NEXT
+Should set effort
+Refresh NEXT every day. 
+** 3. Maintain: TODO -> WEEK -> NEXT
+Things not in project but are necessary for roles and living.
+eg.: Go to teh hospital, Get Fruits, Repair gear, buying fancy things
+also to WEEK
+** 4. Schedule Time
+According to effort and priority, allocate each Task to days.
+* Content
+** [[id:4972A60D-3727-4422-B73F-BAF3289C1DB8][Academic Machine]]
+This is the most important project now.
+*** Preview sessions
+See [[file:20211011015906-self_learning_machine.org::*1. Schedule][Preview:1. Schedule]]
+*** Homework sessions

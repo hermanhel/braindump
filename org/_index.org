@@ -1,0 +1,12 @@
+#+title: The hello page
+#+HUGO_SECTION:
+#+HUGO_SECTION:
+#+HUGO_SECTION:
+#+HUGO_SECTION:
+#+HUGO_SECTION:
+#+HUGO_SECTION:
+#+HUGO_SECTION:
+* Hi!
+You've steped into the forbidden holy garage crowned /HERMAN/'s name ~~
+
+

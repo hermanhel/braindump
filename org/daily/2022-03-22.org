@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       89CB596B-53AE-4834-B8C0-7F29170A06F2
+:END:
+#+title: 2022-03-22
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Plan
+ + [ ] Finish Python
+ + [ ] Tackle Spanish

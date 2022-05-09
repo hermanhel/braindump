@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8C76C05A-ECD1-40E6-9257-9467631918E8
+:END:
+#+title: Metalearning
+#+HUGO_SECTION:main
+Research on the learning method of the topic and resources first

@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       3DAD2346-CFDC-4B69-B202-DAB4C0767C5F
+:END:
+#+title: 2022-04-01
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Play Terraria!!
+I plan for an hour's play time.
+** 1. Basic Housing
+:LOGBOOK:
+CLOCK: [2022-04-01 Fri 18:28]--[2022-04-01 Fri 20:38] =>  2:10
+:END:
++ [ ] Get wood
++ [ ] A platform of home
++ [ ] 6 Houses
+** 2. Getting weapon 
++ [ ] 雪地: 雪花法杖
++ [ ] 丛林: 精灵杖
++ [ ] 沙漠: 太阳之灵
++ [ ] 攒材料做钨钢控制器和钨钢套
+* EAF again!
+EAF用pyqt6了,我再试试看.
+

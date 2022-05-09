@@ -1,0 +1,32 @@
+ca:PROPERTIES:
+:ID:       916112C1-589D-4FC2-B430-93EB989A1350
+:END:
+#+title: Relational Database
+#+HUGO_SECTION:main
+* Relational Model
+** Relation
+table with columns and rows
+records([[Tuple]]s) with common attributes
+** Attribute
+named column
+|attribute 1|attrbute 2|
+** Domain
+allowable values for [[Attribute]]
+e.g: Age ==> Positive Integer
+** Tuple
+a row of a relation
+** Degree
+the number of attributes of a [[Relation]]
+** Cardinality
+number of [[Tuple]]s in a [[Relation]]
+** Relation schema
+Definition of a relation
+Contains:
++ attributes
+  + name
+  + domain
+** Relational database schema
+A set of relation schemas.
+** Primary key
+** Candidate key
+** Foreign Key

@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       75A18794-52B6-413F-ACB3-6B5DE662EA13
+:END:
+#+title: 2022-05-04
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* INT104 tutorial
+** report requirement
+*** basic
+in the format specifications.
+**** page limit
+**** format
+*** tasks
+write following for each task:
+**** task1
+**** task2
+**** task3
+* regarding the template
+** control org-mode latex export behaviour
+*** settings
+[[https://github.com/Literate-DevOps/literate-programming-tutorials/blob/master/how-to/00-convert-latex-template-into-org-mode-template/how-to-migrate-latex-template-into-org-mode.org#fn.8][this tutorial]] helped me with most works.
+I haven't checked the examples, but I guess I could just use a modified version of this template
+**** for the environment
+the template would be scanned for both in the location output mentioned and the current directory (./), so just placing the template files in the same directory as the .tex files would make it work.
+**** file variables
+have to reload the file variables with ~M-x normal-mode~. 
+**** errors
+***** 1. not finding the class epj-svjour
+not loading the file variables
+solution: reload with  ~M-x normal-mode~. 
+***** 2. no author, titles, abstracts, reference...
+this is due to ~#+CALL: export-epj-latex-block()~ not being executed
+
+adding latex to babel languages make it work. not knowing why.
+

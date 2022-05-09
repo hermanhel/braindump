@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       C88B46D2-AD9F-4359-A93C-AE3C38074595
+:END:
+#+title: coding machine
+#+HUGO_SECTION:main
+The machine of _How I code_
+* Flow
+* Problem-Solution
+** Error!
+1. see if I could analyse it clear how it went wrong
+2. if not, copy and yank the error message into search engine.
+

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       6A49B5DC-AE5C-4360-9F13-2167E9616309
+:END:
+#+title: Study Methods
+#+HUGO_SECTION:main
+* Fact
+** Mnemonic
+** [[id:CA269485-1B2F-4494-9DDB-ED33B00939F7][Spaced Repetition]]
+ 
+* Procedure
+** Drill
+* Concept
+** [[id:B4444AFF-ACC4-452E-8AE3-294C1E1B7409][Feynman Techinique]]
+

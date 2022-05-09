@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       B88DB96C-ECD0-40AF-A051-D664322EAF88
+:END:
+#+title: linear progression
+#+HUGO_SECTION:main
+linear progression in a form of supervised learning
+* regularization
+** Tichonov regularization
+trace a smooth line between points -> curve estimates the shape of he data

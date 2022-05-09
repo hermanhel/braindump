@@ -1,0 +1,824 @@
+<!doctype html><html><title>clojure</title><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=apple-mobile-web-app-capable content="yes"><link rel=stylesheet href=https://hermanhel.github.io/braindump/css/main.min.291920189b1189fd3388c38fd9e8ccbdf24640f05f020c32e3da5ba83f9bd5d8.css><body><header><a href=/ id=logo><svg id="Capa_1" enable-background="new 0 0 511.992 511.992" height="512" viewBox="0 0 511.992 511.992" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><g><path d="m256 420.826c0 38.345-11.844 68.545-49.991 68.014-27.744-.385-51.481-15.31-61.853-39.46-1.239-2.887-4.024-4.734-7.154-4.725-.07.0-.135.0-.201.0-47.474.0-75.537-26.171-75.537-73.882.0-5.633.542-11.138 1.568-16.468.62-3.229-.825-6.489-3.671-8.125C23.668 325.748 10 300.053 10 255.997c0-44.057 13.668-69.757 49.161-90.185 2.846-1.636 4.291-4.896 3.671-8.13-1.026-5.33-1.568-10.83-1.568-16.463.0-47.711 28.064-73.882 75.537-73.882h.201c3.13.009 5.915-1.837 7.154-4.729 10.372-24.145 34.109-39.069 61.853-39.455C244.159 22.621 256 52.821 256 91.166" fill="#ff9eb1"/></g><g><g><g><path d="m256 91.166c0-38.344 11.844-68.545 49.991-68.014 27.744.385 51.481 15.31 61.853 39.46 1.239 2.887 4.024 4.734 7.154 4.724h.201c47.474.0 75.537 26.171 75.537 73.882.0 5.633-.542 11.138-1.568 16.468-.62 3.229.825 6.489 3.671 8.125C488.332 186.245 502 211.939 502 255.996s-13.668 69.756-49.161 90.185c-2.846 1.636-4.291 4.896-3.671 8.13 1.026 5.33 1.568 10.83 1.568 16.463.0 47.711-28.064 73.882-75.537 73.882h-.201c-3.13-.009-5.915 1.837-7.154 4.729-10.372 24.145-34.109 39.069-61.853 39.455-38.15.531-49.991-29.669-49.991-68.014" fill="#ff7d97"/></g></g><g><g><path d="m502 265.996c-4.193.0-7.984-2.713-9.407-6.636-1.419-3.912-.16-8.459 3.063-11.092 3.291-2.689 8.009-2.99 11.621-.758 3.568 2.205 5.404 6.578 4.478 10.669-1.02 4.501-5.126 7.817-9.755 7.817z"/></g></g></g><g><path d="m340.83 229.18h-58.013v-58.014h-53.634v58.014H171.17v53.633h58.013v58.013h53.634v-58.013h58.013z" fill="#faf7f5"/></g></g><g><g><path d="m498.468 291.859c-5.141-2.02-10.945.508-12.965 5.648-6.442 16.389-18.055 28.727-37.649 40.005-6.513 3.746-9.932 11.253-8.505 18.689.921 4.783 1.388 9.686 1.388 14.572.0 41.792-22.662 63.882-65.537 63.882h-.225c-.938.0-1.864.074-2.771.217-15.031-4.92-23.796-20.93-19.661-36.479 1.42-5.337-1.757-10.815-7.094-12.234-5.333-1.418-10.814 1.756-12.234 7.094-5.958 22.405 4.241 45.396 23.384 56.443-9.583 17.791-28.602 28.836-50.748 29.145-11.303.146-19.802-2.743-26.011-8.867-9.184-9.057-13.84-25.592-13.84-49.148v-70h16.816c5.522.0 10-4.477 10-10v-48.014h48.014c5.522.0 10-4.477 10-10V229.18c0-5.523-4.478-10-10-10h-48.014v-48.014c0-5.523-4.478-10-10-10H266v-70c0-23.555 4.657-40.09 13.841-49.148 6.21-6.123 14.696-9.022 26.011-8.867 23.862.332 44.096 13.132 52.803 33.405.218.509.458 1.003.719 1.483-3.225 8.243-9.084 15.093-16.833 19.574-8.993 5.2-19.465 6.581-29.485 3.89-5.337-1.434-10.819 1.73-12.251 7.064-1.433 5.334 1.729 10.819 7.063 12.252 5.074 1.363 10.221 2.037 15.338 2.037 10.2.0 20.272-2.681 29.346-7.928 11.083-6.408 19.607-16.017 24.616-27.575 41.6.67 63.569 22.718 63.569 63.866.0 4.89-.467 9.794-1.389 14.582-1.427 7.426 1.991 14.933 8.502 18.678 19.572 11.267 31.176 23.584 37.625 39.936 1.552 3.934 5.318 6.334 9.306 6.333 1.221.0 2.462-.225 3.666-.7 5.138-2.026 7.66-7.834 5.634-12.972-7.943-20.141-22.201-35.773-44.801-49.086.967-5.521 1.457-11.155 1.457-16.772.0-52.114-31.48-83.391-84.288-83.876-12.157-26.863-38.963-43.753-70.318-44.189-16.67-.232-30.255 4.688-40.332 14.625-3.813 3.76-7.08 8.226-9.797 13.382-2.717-5.156-5.984-9.622-9.797-13.382-10.075-9.937-23.668-14.852-40.333-14.625-31.353.437-58.158 17.325-70.32 44.189-52.807.485-84.286 31.762-84.286 83.876.0 5.617.49 11.253 1.458 16.771-37.422 22.031-52.724 50.552-52.724 98.008.0 47.451 15.299 75.969 52.721 98.006-.967 5.521-1.457 11.154-1.457 16.772.0 52.114 31.48 83.391 84.288 83.876 12.157 26.863 38.963 43.753 70.318 44.189.377.005.751.008 1.125.008 16.172.0 29.358-4.92 39.207-14.632 3.813-3.76 7.08-8.226 9.797-13.382 2.717 5.156 5.984 9.622 9.797 13.382 9.849 9.713 23.034 14.633 39.208 14.632.373.0.749-.003 1.125-.008 31.352-.436 58.158-17.325 70.32-44.189 52.807-.485 84.286-31.762 84.286-83.876.0-5.617-.49-11.253-1.458-16.772 22.634-13.329 36.901-28.989 44.838-49.178 2.022-5.14-.507-10.945-5.647-12.966zM282.816 239.18h48.014v33.633h-48.014c-5.522.0-10 4.477-10 10v48.014h-33.633v-48.014c0-5.523-4.477-10-10-10H181.17V239.18h48.014c5.523.0 10-4.477 10-10v-48.014h33.633v48.014c-.001 5.523 4.477 10 9.999 10zm-50.657 230.794c-6.21 6.124-14.717 9.018-26.011 8.867-23.862-.331-44.096-13.132-52.803-33.405-.218-.509-.458-1.003-.719-1.483 3.225-8.243 9.085-15.093 16.833-19.574 8.992-5.2 19.463-6.581 29.485-3.89 5.337 1.434 10.819-1.73 12.251-7.064 1.433-5.333-1.73-10.819-7.064-12.251-15.188-4.08-31.059-1.988-44.684 5.891-11.083 6.408-19.607 16.017-24.616 27.575-41.6-.67-63.569-22.718-63.569-63.866.0-4.89.467-9.794 1.389-14.582 1.427-7.427-1.991-14.934-8.502-18.678-32.183-18.528-44.149-40.621-44.149-81.517.0-40.9 11.966-62.994 44.146-81.517 6.513-3.746 9.932-11.253 8.505-18.689-.921-4.783-1.388-9.686-1.388-14.572.0-41.792 22.662-63.882 65.537-63.882h.225c.938.0 1.864-.074 2.771-.217 15.031 4.92 23.796 20.93 19.661 36.479-1.42 5.337 1.757 10.815 7.094 12.234.861.229 1.726.338 2.577.338 4.422.0 8.467-2.956 9.657-7.432 5.958-22.405-4.241-45.396-23.384-56.443 9.583-17.791 28.602-28.836 50.748-29.145 11.267-.15 19.801 2.743 26.011 8.867 9.184 9.057 13.84 25.592 13.84 49.148v70h-16.816c-5.522.0-10 4.477-10 10v48.014H171.17c-5.522.0-10 4.477-10 10v53.633c0 5.523 4.478 10 10 10h48.014v48.014c0 5.523 4.478 10 10 10H246v70c0 23.554-4.657 40.09-13.841 49.147z"/><path d="m139.699 228.227c-6.766.0-13.186 1.514-18.907 4.31-3.049-8.65-8.286-16.485-15.336-22.673-4.151-3.643-10.469-3.233-14.113.918-3.643 4.15-3.232 10.469.918 14.112 6.711 5.891 10.816 14.143 11.498 22.953-1.213 1.914-2.293 3.946-3.225 6.088-1.145 2.633-2.015 5.316-2.615 8.019-13.414 11.422-33.601 10.834-46.225-1.792-3.906-3.904-10.236-3.904-14.143.0-3.905 3.905-3.905 10.237.0 14.143 10.524 10.524 24.354 15.784 38.193 15.784 8.04.0 16.083-1.775 23.484-5.325 1.904 5.443 4.967 10.557 9.136 15.03.596.639 1.204 1.269 1.826 1.891 1.953 1.953 4.512 2.929 7.071 2.929 2.56.0 5.118-.976 7.071-2.929 3.905-3.905 3.905-10.237.0-14.143-.458-.458-.906-.922-1.342-1.389-6.26-6.716-7.799-15.778-4.118-24.241 2.878-6.616 9.86-13.686 20.826-13.686 5.522.0 10-4.477 10-10 .001-5.522-4.476-9.999-9.999-9.999z"/><path d="m387.667 287.543c-3.905 3.905-3.905 10.237.0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929c.622-.622 1.23-1.253 1.83-1.896 4.167-4.471 7.229-9.583 9.133-15.025 7.401 3.549 15.444 5.324 23.484 5.324 13.839.0 27.67-5.261 38.193-15.784 3.905-3.905 3.905-10.237.0-14.143-3.906-3.904-10.236-3.904-14.143.0-12.624 12.625-32.811 13.214-46.225 1.792-.6-2.702-1.47-5.386-2.615-8.019-.932-2.142-2.012-4.175-3.225-6.088.682-8.81 4.787-17.062 11.498-22.953 4.15-3.644 4.561-9.962.918-14.112-3.646-4.151-9.964-4.563-14.113-.918-7.05 6.189-12.287 14.023-15.336 22.673-5.721-2.796-12.141-4.31-18.907-4.31-5.523.0-10 4.477-10 10s4.477 10 10 10c10.966.0 17.948 7.07 20.826 13.686 3.681 8.463 2.142 17.525-4.114 24.237-.44.47-.888.935-1.346 1.393z"/></g></g></g></svg></a><h3 class=site-title>Herman's Place</h3><form id=search action=https://hermanhel.github.io/braindump/search/ method=get><label hidden for=search-input>Search site</label>
+<input type=text id=search-input name=query placeholder="Type here to search">
+<input type=submit value=search></form></header><div class=grid-container><div class=grid><div class=page data-level=1><div class=content><h1>clojure</h1><h2 id=meta>Meta</h2><h3 id=plan-on-the-language>plan on the language</h3><p>I hope that I would be able to: [0/5]</p><ol><li><input disabled type=checkbox> Write a website</li><li><input disabled type=checkbox> implement Machine learning Algorithm</li><li><input disabled type=checkbox> Build software</li><li><input disabled type=checkbox> Know the difference (of clojure and other) and when to use what</li><li><input disabled type=checkbox> taught others this language</li></ol><h3 id=credible-resources>Credible Resources</h3><p>list of books:</p><ul><li><input disabled type=checkbox> programming clojure</li><li><input disabled type=checkbox> the joy of clojure
+maybe too philosophy</li><li><input disabled type=checkbox> clojure programming
+maybe little complecx</li><li><input disabled type=checkbox> clojure cookbook</li><li><input disabled type=checkbox> living clojure
+simpler</li></ul><p>list of websites:</p><ul><li><input disabled type=checkbox> <a href=https://www.braveclojure.com/clojure-for-the-brave-and-true/>clojure for the brave and true</a></li><li><input disabled type=checkbox> Rich Hickey&rsquo;s talks</li><li><input disabled type=checkbox> <a href=https://clojuredocs.org/>clojuredocs.org</a></li></ul><h4 id=clojure-cookbook>clojure-cookbook</h4><p>This a source of information I found very cool, ergo I would finish.</p><h3 id=my-journey>My journey</h3><h4 id=starting-out>starting out</h4><p>I visited the official getting started page.
+I searched github keyword &ldquo;clojure&rdquo;</p><h4 id=sticking-to-cookbook>sticking to cookbook</h4><p>I found clojure-cookbook on github, then sticked to it</p><h4 id=research>Research</h4><h2 id=metalearning>Metalearning</h2><h3 id=how-to-learn-clojure-research-1>How to learn Clojure? research#1</h3><ul><li>Blog<ul><li>JUXT&rsquo;s Blog
+advanced, some thoughts from real engineers</li><li><a href=https://stuartsierra.com/>Stuart Sierra&rsquo;s Blog</a></li></ul></li><li>动手最重要，找个小项目练手<ul><li>Blog with clojure running in the backend?</li><li>Todo list</li><li>Pomodoro</li><li>Sound maker/ detecter
+for pitch</li></ul></li><li>InfoQ clojure video</li><li>solve problems from<ul><li><a href=https://www.hackerrank.com/>HackerRank</a></li><li>4clojure <a href=https://4clojure.oxal.org/>4clojure</a>
+<a href=https://github.com/4clojure/4clojure>4clojure repo</a></li><li><a href=http://clojurekoans.com/>clojure koan</a>
+will meet compile error, and that&rsquo;s the file needed to be completed</li><li><a href=https://github.com/gigasquid/wonderland-clojure-katas>Clojure Katas</a>
+like koan.</li><li><a href=http://www.parens-of-the-dead.com/>Parens of the Dead</a>
+I don&rsquo;t exactly know what is it, but it seems very fun.</li></ul></li><li>living clojure<ul><li>第一章节快速了解clojure</li><li>第二章节了解 <code>clojure社区</code></li><li>包含一个渐进的curriculum</li></ul></li><li><a href=http://iloveponies.github.io/120-hour-epic-sax-marathon/index.html>functional programming in clojure</a></li><li>Programming Clojure
+对于入门有点hard，可以先看clojure by example</li><li>clojure by example<a href=https://kimh.github.io/clojure-by-example/#about-this-page>clojure by example</a> <code>well reputation</code>
+适合上手</li><li>Clojure Programming<ul><li>入门。中等难度</li><li>设计上的动机</li><li>best practice</li></ul></li><li>SICP (Structure and Interpretation of Computer Programs) <code>a must</code><ul><li>at least 2-3 chapters</li><li>Clojure version</li><li>functional programming</li></ul></li><li>clojure for brave and true <code>the friendliest</code><ul><li>函数编程思想<ul><li>熟练核心函数 <code>map,reduce,filter,assoc</code></li></ul></li><li>熟练macro 定义，使用，坑</li><li>interop机制调用java借口</li></ul></li><li>4clojure.com
+题目</li><li>clojuredocs.org
+查看API</li><li>学习 <code>(source +)</code> 能看到的源码</li><li>Book set<ul><li>The set<ul><li>clojure programming</li><li>clojure in action</li><li>the joy of clojure
+good <code>second book</code></li></ul></li><li>Good<ul><li>质量好</li><li>对基础内容概念涵盖全面</li></ul></li><li>approach<ul><li>注意目录</li><li>对自己理解过的概念进行归类</li></ul></li></ul></li><li>Talks
+快速了解Clojure 哲学<ul><li>Rich Hickey</li><li>Stuart Halloway</li></ul></li><li>Project codes<ul><li>Zech Tellman</li><li>clj-http</li><li>ring</li></ul></li><li>Pathaways<ul><li>1<ul><li>clojure for brave and true</li><li>函数编程思想<ul><li>熟练核心函数 <code>map,reduce,filter,assoc</code></li></ul></li><li>熟练macro 定义，使用，坑</li><li>interop机制调用java接口</li><li>切实作业<ul><li>atom, pmap, async 等工程实践接口</li></ul></li><li>框架</li><li>SICP<ul><li>用lisp写代码</li><li>如何设计开发软件系统的思想</li><li>为什么面向对象编程、模式在这里价值不大</li></ul></li><li>Purely Functional Data Structures</li></ul></li><li>2
+these 2 series get you coding quickly and are challenging enough<ul><li>clojure for brave and true</li><li>clojure from ground up <a href=https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome>clojure from ground up</a></li></ul></li><li>3<ul><li>David Nolen Enlive tutorial.</li><li>Rich Hickey Talk</li><li>Toy Project/ 4clojure Challenges</li></ul></li><li>4<ol><li>Clojure for the brave and true</li><li>getting accostomed to the tools (cider/emacs)</li><li>finishing the book, start out 4clojure</li><li>the joy of clojure
+from beginner to an intermediate</li></ol></li></ul></li></ul><h3 id=active-plan-1>ACTIVE Plan #1 agenda</h3><h4 id=1-dot-start-up-clojure-for-brave-and-true>1. Start up: Clojure for brave and true</h4><p>This stage I want to get familiar with clojure and some implementations, so I could perform tasks <code>properly</code> with clojure.</p><ul><li>Main book/resource: <a href=https://www.braveclojure.com/clojure-for-the-brave-and-true/>clojure for the brave and true</a></li><li>Side Resources:<ul><li><a href=http://iloveponies.github.io/120-hour-epic-sax-marathon/index.html>functional programming in clojure</a></li><li>Clojure Programming</li><li><a href=https://kimh.github.io/clojure-by-example/#about-this-page>clojure by example</a></li><li><a href=https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome>clojure from ground up</a></li></ul></li><li>Practices:<ul><li>HackerRank</li><li>4clojure <a href=https://4clojure.oxal.org/>4clojure</a>
+<a href=https://github.com/4clojure/4clojure>4clojure repo</a></li><li><a href=http://clojurekoans.com/>clojure koan</a>
+will meet compile error, and that&rsquo;s the file needed to be complete</li><li><a href=http://www.parens-of-the-dead.com/>Parens of the Dead</a>
+I don&rsquo;t exactly know what is it, but it seems very fun.</li></ul></li><li>How the study work.<ul><li>Scope:<ul><li>Measure of end: The book Clojure for brave and true is finished.</li><li>Capability:
+I should be able to write anything stupidly with clojure, with full familiarity of a <code>complete toolbox</code>.
+I should have already a favourable <code>writing style</code> and some killer function usage.
+I should have a <code>complete develop process</code> using cider and Emacs.</li></ul></li><li>Method:<ul><li>Machines:
+later to fill</li><li>Methods:<ul><li>Feynman technique</li><li>Overstudy</li><li>Active Recall</li><li>Blogging through the treasures
+Tutorial from newbie for newbie.</li></ul></li></ul></li></ul></li></ul><ul><li><p>Track & Log</p><ul><li><p>Track</p><ul><li><p><code>[main]</code> Clojure for the brave and ture [1/3]</p><ul><li><input checked disabled type=checkbox> Part I: Environment Setup<ul><li><input checked disabled type=checkbox> Chapter 1: Building, Running, and the REPL</li><li><input checked disabled type=checkbox> Chapter 2: How to Use Emacs, an Excellent Clojure Editor</li></ul></li><li>[-] Part II: Language Fundamentals<ul><li><input checked disabled type=checkbox> Chapter 3: Do Things: A Clojure Crash Course</li><li><input checked disabled type=checkbox> Chapter 4: Core Functions in Depth</li><li><input checked disabled type=checkbox> Chapter 5: Functional Programming</li><li><input disabled type=checkbox> Chapter 6: Organizing Your Project: A Librarian’s Tale</li><li><input disabled type=checkbox> Chapter 7: Clojure Alchemy: Reading, Evaluation, and Macros</li><li><input disabled type=checkbox> Chapter 8: Writing Macros</li></ul></li><li><input disabled type=checkbox> Part III: Advanced Topics<ul><li><input disabled type=checkbox> Chapter 9: Concurrent and Parallel Programming</li><li><input disabled type=checkbox> Chapter 10: Clojure Metaphysics: Atoms, Refs, Vars, and Cuddle Zombies</li><li><input disabled type=checkbox> Chapter 11: Master Concurrent Processes with core.async</li><li><input disabled type=checkbox> Chapter 12: Interacting with Java</li><li><input disabled type=checkbox> Chapter 13: Create and Extend Abstractions with Multimethods, Protocols, and Records</li></ul></li></ul></li></ul><ul><li><p>Functional Programming in clojure [0/12]</p><ul><li><input disabled type=checkbox> Basic tools</li><li><input disabled type=checkbox> Training day</li><li><input disabled type=checkbox> I am a horse in the land of booleans</li><li><input disabled type=checkbox> Structured data</li><li><input disabled type=checkbox> style</li><li><input disabled type=checkbox> P-P-P-Pokerface</li><li><input disabled type=checkbox> Predicates</li><li><input disabled type=checkbox> Recursion</li><li><input disabled type=checkbox> Looping is recursion</li><li><input disabled type=checkbox> One Function to rule them all</li><li><input disabled type=checkbox> Blorg Blorg Blorg</li><li><input disabled type=checkbox> Sudoku</li></ul></li></ul><ul><li><p>Clojure Programming [0/20]</p><ol><li><input disabled type=checkbox> Down the Rabbit Hole</li><li><input disabled type=checkbox> Functional Programming</li><li><input disabled type=checkbox> Collection and Data Structures</li><li><input disabled type=checkbox> Concurrency and Parallelism</li><li><input disabled type=checkbox> Macros</li><li><input disabled type=checkbox> Datatypes and Protocols</li><li><input disabled type=checkbox> Multimethods</li><li><input disabled type=checkbox> Organizing and building Clojure Projects</li><li><input disabled type=checkbox> Java and JVM Interoperability</li><li><input disabled type=checkbox> REPL-Oriented Programming</li><li><input disabled type=checkbox> Numerics and Mathematics</li><li><input disabled type=checkbox> Design Patterns</li><li><input disabled type=checkbox> Testing</li><li><input disabled type=checkbox> Using Relational Databases</li><li><input disabled type=checkbox> Using Nonrelational Databases</li><li><input disabled type=checkbox> Clojure and the Web</li><li><input disabled type=checkbox> Deploying Clojure Web Applications</li><li><input disabled type=checkbox> Choosing Clojure Type Definition Forms Wisely</li><li><input disabled type=checkbox> Introducing Clojure into Your Workplace</li><li><input disabled type=checkbox> What&rsquo;s Next</li></ol></li></ul><ul><li><p>Clojure by example [0/23]</p><ol><li><input disabled type=checkbox> Hello world</li><li><input disabled type=checkbox> Bindings</li><li><input disabled type=checkbox> Functions</li><li><input disabled type=checkbox> Namespaces</li><li><input disabled type=checkbox> Control Flow</li><li><input disabled type=checkbox> Boolean</li><li><input disabled type=checkbox> Strings</li><li><input disabled type=checkbox> Integers</li><li><input disabled type=checkbox> Lists</li><li><input disabled type=checkbox> Vectors</li><li><input disabled type=checkbox> Sets</li><li><input disabled type=checkbox> Maps</li><li><input disabled type=checkbox> Sequences</li><li><input disabled type=checkbox> Recursion</li><li><input disabled type=checkbox> Macros</li><li><input disabled type=checkbox> Threading Macros</li><li><input disabled type=checkbox> Delays</li><li><input disabled type=checkbox> Futures</li><li><input disabled type=checkbox> Promises</li><li><input disabled type=checkbox> Atoms</li><li><input disabled type=checkbox> Refs</li><li><input disabled type=checkbox> Java</li></ol></li></ul><ul><li><p>Clojure from ground up [0/11]</p><ol><li><input disabled type=checkbox> Welcome</li><li><input disabled type=checkbox> basic types</li><li><input disabled type=checkbox> functions</li><li><input disabled type=checkbox> sequences</li><li><input disabled type=checkbox> macros</li><li><input disabled type=checkbox> state</li><li><input disabled type=checkbox> logistics</li><li><input disabled type=checkbox> modeling</li><li><input disabled type=checkbox> roadmap</li><li><input disabled type=checkbox> debugging</li><li><input disabled type=checkbox> polymorphism</li></ol></li></ul></li></ul></li></ul><h4 id=2-dot-getting-going-the-joy-of-clojure>2. Getting going: The Joy of clojure</h4><p>This stage I want to really get into some phylosophy of clojure</p><ul><li>Main book/resource: the joy of clojure</li><li>Side resources:<ul><li>clojure in action</li><li>Clojure For machine learning</li><li>Rick Hickey talks</li></ul></li><li>Practices:<ul><li>Following practices from privious sources</li><li>Projects<ul><li>A Website</li></ul></li><li>Algorithms<ul><li>Neural Network</li><li>聚类和比较算法。找个脑电数据集</li></ul></li><li>from resources.</li></ul></li><li>How the study work.<ul><li>Scope<ul><li>Measure of end: The book The Joy of Clojure is finished</li><li>Capability:<ul><li>I should know the phylosophy of Clojure, and why they are good</li><li>I should know at least 1 implementation of each phylosophy.</li><li>I should know when, at what tasks clojure works better, and when it don&rsquo;t work good</li><li>I should be able to write a performing web server</li><li>I should be able to write a performing neural network</li></ul></li></ul></li><li>Method:<ul><li>Machines:
+later to fill</li><li>Methods:<ul><li>Feynman technique</li><li>Overstudy</li><li>Active Recall</li><li>Blogging through the treasures
+Tutorial from newbie for newbie.</li></ul></li></ul></li></ul></li></ul><h2 id=leiningen>Leiningen</h2><h3 id=create-new-project>Create new project</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>lein new app clojure-noob
+</code></pre></div><h3 id=running-project>Running Project</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>lein run
+</code></pre></div><h3 id=building-project>Building Project</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>lein uberjar
+</code></pre></div><h2 id=feature>Feature</h2><h3 id=converting>Converting</h3><p>the conversion between datatypes became easier, because everything&rsquo;s basically list.
+use <code>(apply vector list)</code> can built a vector out of the list, and other&rsquo;s similar.</p><h3 id=evaluation-of-clojure-code>Evaluation of clojure code</h3><p>procedure:</p><ol><li>Source code or interactive input
+Provide code in unit of <code>expression</code></li><li>Reader
+Pick <code>expression</code> and translate them into clojure data structure</li><li>Compiler
+translate clojure data into bytecode for JVM
+the seperate of Reader and Compiler leave space for macros</li><li>JVM</li></ol><h4 id=structure-and-semantics>Structure and semantics</h4><p>(+ 3 4)
+Structureal:</p><ul><li><code>(...)</code> list</li><li><code>+</code> symbol</li><li><code>3</code> numbers</li></ul><p>Semantics:</p><ul><li><code>(...)</code> Invocation</li><li><code>+</code> Function</li><li><code>3</code> Arguments</li></ul><p>Most clojure literal forms evaluate to themselves, except <code>symbol</code> and <code>list</code>.</p><ul><li>symbol refer to something else</li><li>list is invocation</li></ul><ul><li><p>to hold evaluation of <code>symbols</code> and <code>lists</code></p><p>(qoute x) or &lsquo;x</p></li></ul><h3 id=repl>REPL</h3><p>Read-Eval-Print-Loop</p><p>*1 for the result 1 expression ago</p><p>import library using (require &lsquo;[clojure.repl :refer :all])</p><h4 id=some-useful-funcitons-in-clojure-dot-repl>Some useful funcitons in <code>clojure.repl</code></h4><ul><li>(doc x) to give doc of x</li><li>(apropos &ldquo;x&rdquo;) to find x by name</li><li>(find-doc &ldquo;trim&rdquo;) expand to doc string</li><li>(dir clojure.repl) give full list of funcitons in a namespace</li><li>(source dir) gives doc and source code</li></ul><h3 id=imutable>Imutable</h3><p>The <code>def</code> function <em>bond</em> value with name. And don&rsquo;t change.
+Should see it as <code>constant</code>.
+This works well with <code>Functional Programming Paradigm</code></p><h3 id=simplicity>Simplicity</h3><p>reach for built-in first
+Also inc code reusability</p><h3 id=funcitons-macro-and-special-form>Funcitons, macro and Special form</h3><p>macro and special form(like if, with only 1 operand evaluated) can&rsquo;t be passed to function as arg.</p><h3 id=abstraction>Abstraction</h3><p>Map work on all collections. It call (seq col) first.</p><h2 id=brave-clojure-notes>Brave Clojure Notes</h2><h3 id=abstractions>Abstractions</h3><p>Seq abstraction and Col abstraction</p><h3 id=sequence-abstractions>Sequence abstractions</h3><h4 id=core-funcs>core funcs</h4><ul><li><p><code>map</code></p><ul><li><code>(map str ["a" "b" "c"] ["A" "B" "C"])</code>
+pass 2 collections as arguments</li><li><code>(map #(% numbers) [sum count avg])</code>
+pass a seq of functions to perform different operations</li><li><code>(map :real identities)</code>
+retrive vals assoced with a keyword</li></ul></li></ul><ul><li><p><code>reduce</code></p><ul><li><p><code>into</code> in reduce always manage like list and not vector.
+take the example in the long-add function</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>long-add
+  <span style=color:#e6db74>&#34;add long integers represented with vector&#34;</span>
+  [s1 s2]
+  (<span style=color:#66d9ef>let </span>[large (<span style=color:#a6e22e>len-max</span> s1 s2)
+	small (<span style=color:#a6e22e>len-min</span> s1 s2)
+	filled-small (concat (take (- (count large) (count small)) (repeat <span style=color:#ae81ff>0</span>))
+                 small)
+	added-pairs (map  + large filled-small)
+	carried-pairs (reduce (<span style=color:#66d9ef>fn </span>[sum pair] (<span style=color:#66d9ef>if </span>(&gt;= (+ pair (first sum)) <span style=color:#ae81ff>10</span>)
+                           (into (drop <span style=color:#ae81ff>1</span> sum)
+                             [(- (+ pair (first sum)) <span style=color:#ae81ff>10</span>) <span style=color:#ae81ff>1</span>])
+                           (into (drop <span style=color:#ae81ff>1</span> sum)
+                             [(+ pair (first sum)) <span style=color:#ae81ff>0</span>])))
+                  [<span style=color:#ae81ff>0</span>]
+                  (reverse added-pairs))
+	result (drop-while <span style=color:#f92672>#</span>(= <span style=color:#ae81ff>0</span> %) carried-pairs)]
+    result
+
+    )
+  )
+</code></pre></div></li><li><p>go through a seq to build a result</p></li><li><p>update a maps values</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(reduce (<span style=color:#66d9ef>fn </span>[new-map [key val]]
+      (assoc new-map key (inc val)))
+	{}
+	{<span style=color:#e6db74>:max</span> <span style=color:#ae81ff>30</span> <span style=color:#e6db74>:min</span> <span style=color:#ae81ff>10</span>})
+<span style=color:#75715e>;; =&gt; {:max 31, :min 11}</span>
+</code></pre></div></li><li><p>filter out key/val pair base on pairs</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(reduce (<span style=color:#66d9ef>fn </span>[new-map [key val]]
+      (<span style=color:#66d9ef>if </span>(&gt; val <span style=color:#ae81ff>4</span>)
+        (assoc new-map key val)
+        new-map))
+	{}
+	{<span style=color:#e6db74>:human</span> <span style=color:#ae81ff>4.1</span>
+     <span style=color:#e6db74>:critter</span> <span style=color:#ae81ff>3.9</span>})
+                    <span style=color:#75715e>; =&gt; {:human 4.1}</span>
+
+</code></pre></div></li></ul></li></ul><ul><li><p><code>take(-while),drop(-while)</code></p><p>take, drop: (take 5 [1 2 3 4 5 6]) => [1 2 3 4 5]
+take-while: (take-while #(&lt; 5 %) [1 2 3 4 5 6])
+stops when first falsy for the fn.</p></li></ul><ul><li><p><code>filter,some</code></p><p>filter,some: (filter predicate col)
+filter eval <code>all</code> of the col.
+some test for at least one fulfill predicate from col.
+return the predicate returning.
+<code>#(and predicate %)</code> if want the data to be returned.</p></li></ul><ul><li><p><code>sort,sort-by</code></p><p>sort: ascending order
+sort-by: <code>(sort-by count ["aaa" "c" "bb"])</code>
+sort-by will use <code>(count "aaa")</code> as the value to sort-by</p></li></ul><ul><li><p><code>concat</code></p><p>appends members of one seq to the end of another.</p></li></ul><h4 id=lazy-seq>Lazy seq</h4><ul><li><p>creating lazyseq</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>even-numbers
+      ([] (<span style=color:#a6e22e>even-numbers</span> <span style=color:#ae81ff>0</span>)) <span style=color:#75715e>;;base case</span>
+      ([n] <span style=color:#75715e>;;</span>
+       (<span style=color:#a6e22e>cons</span>
+    n <span style=color:#75715e>;; the val</span>
+    (<span style=color:#a6e22e>lazy-seq</span> (<span style=color:#a6e22e>even-numbers</span> (+ n <span style=color:#ae81ff>2</span>))) <span style=color:#75715e>;;the recipe. including calling the function with the val.</span>
+    )))
+(<span style=color:#66d9ef>defn </span>fibo*
+([]
+ (<span style=color:#a6e22e>fibo*</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>1</span>))
+([arg1 arg2]
+ (<span style=color:#66d9ef>let </span>[arg3 (+ arg1 arg2)] <span style=color:#75715e>;; the calculation could happen here</span>
+   (<span style=color:#a6e22e>cons</span>
+    arg3
+    (<span style=color:#a6e22e>lazy-seq</span> (<span style=color:#a6e22e>fibo*</span> arg2 arg3)))))
+)
+</code></pre></div></li></ul><ul><li><p>Infinite Seq</p><p><code>repeat</code> for 1 val.
+<code>repeated</code> for 1 fn
+<code>lazy-seq</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>even-numbers
+    ([] (<span style=color:#a6e22e>even-numbers</span> <span style=color:#ae81ff>0</span>))
+    ([n] (cons n (<span style=color:#a6e22e>lazy-seq</span> (<span style=color:#a6e22e>even-numbers</span> (+ n <span style=color:#ae81ff>2</span>))))))
+
+(take <span style=color:#ae81ff>10</span> (<span style=color:#a6e22e>even-numbers</span>))
+<span style=color:#75715e>; =&gt; (0 2 4 6 8 10 12 14 16 18)</span>
+
+</code></pre></div></li></ul><h3 id=col-abstraction>Col abstraction</h3><p>the collection is considered as a whole</p><h4 id=core-funcs>core funcs</h4><ul><li><p><code>into,conj</code></p><p>convert the seq returned by funcs into other types (map,set)
+conj: similar, but take scaler instead of col.</p></li></ul><h3 id=function-functions>function functions</h3><h4 id=apply>apply</h4><p>vector of args and scalers of args.
+could use conj/into to build the vectors</p><h4 id=partial>partial</h4><p>use partial when same func-arg combination appear in different contexts
+like logger having (:warn :emergency) cond, and :warn is used frequently, could defn a <code>warn</code> functions using partial.</p><h4 id=complement>complement</h4><p>(complement predicate)
+provide the logical complement of the predicate.</p><h3 id=functional-programming>Functional Programming</h3><p>functional programming encourage you to</p><h4 id=pure-functions>Pure functions</h4><p>pure functions are reference transparent and have no side-effect</p><ul><li><p>cool things to do with pure functions</p><ul><li><p><code>comp</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>((comp inc *) <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span>)
+</code></pre></div><ol><li>the <code>*</code> can take any args, but the rest can take only 1</li><li>the order is like inc(*(2,3)) in written math.</li></ol><p>usage:</p><ol><li><p>retrive attr in RPG</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>def </span>character
+  {<span style=color:#e6db74>:name</span> <span style=color:#e6db74>&#34;Smooches McCutes&#34;</span>
+   <span style=color:#e6db74>:attributes</span> {<span style=color:#e6db74>:intelligence</span> <span style=color:#ae81ff>10</span>
+        <span style=color:#e6db74>:strength</span> <span style=color:#ae81ff>4</span>
+        <span style=color:#e6db74>:dexterity</span> <span style=color:#ae81ff>5</span>}})
+(<span style=color:#66d9ef>def </span>c-int (comp <span style=color:#e6db74>:intelligence</span> <span style=color:#e6db74>:attributes</span>))
+(<span style=color:#66d9ef>def </span>c-str (comp <span style=color:#e6db74>:strength</span> <span style=color:#e6db74>:attributes</span>))
+(<span style=color:#66d9ef>def </span>c-dex (comp <span style=color:#e6db74>:dexterity</span> <span style=color:#e6db74>:attributes</span>))
+
+(<span style=color:#a6e22e>c-int</span> character)
+<span style=color:#75715e>;; =&gt; 10</span>
+
+(<span style=color:#a6e22e>c-str</span> character)
+<span style=color:#75715e>;; =&gt; 4</span>
+
+(<span style=color:#a6e22e>c-dex</span> character)
+<span style=color:#75715e>;; =&gt; 5</span>
+
+</code></pre></div></li><li><p>when need to use more args, use anonymous function</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>def </span>spell-slots-comp (comp int inc <span style=color:#f92672>#</span>(/ % <span style=color:#ae81ff>2</span>) c-int))
+
+</code></pre></div></li></ol></li></ul><ul><li><p><code>memoize</code></p><p>remember the input/output pair.</p></li></ul><ul><li><p><code>reduce</code> over functions</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>clean
+  [text]
+  (reduce (<span style=color:#66d9ef>fn </span>[string string-fn] (<span style=color:#a6e22e>string-fn</span> string))
+      text
+      [s/trim <span style=color:#f92672>#</span>(<span style=color:#a6e22e>s/replace</span> % <span style=color:#f92672>#</span><span style=color:#e6db74>&#34;lol&#34;</span> <span style=color:#e6db74>&#34;LOL&#34;</span>)]))
+
+</code></pre></div></li></ul></li></ul><h4 id=recursion-instead-of-for>recursion instead of for</h4><h4 id=function-compisition-instead-of-mutate-middle-vars>function compisition instead of mutate middle vars</h4><ul><li>decouple functions and data</li><li>programming to a small set of abstractions</li></ul><h4 id=mindsets>mindsets</h4><p>oop: data can be pour in a object, and we shape it
+fp: data don&rsquo;t change, derive new data from old data. the property of the data rather than operation on data.</p><h3 id=declare>Declare</h3><p>to refer to functions before they&rsquo;re created</p><h2 id=clojure-for-machine-learning-notes>Clojure for Machine Learning Notes</h2><h3 id=libs>libs</h3><h4 id=matrix>matrix</h4><ul><li>core.matrix
+with clj. bit slower on big matrix</li><li>vectorz-clj
+with java</li><li>clatrix
+Basic Linear Algebra Subprograms (BLAS) spec
+native libs
+performance better
+mutable matrix</li></ul><h3 id=matrix>Matrix</h3><h4 id=representing>Representing</h4><ul><li><code>(matrix :clatrix [[1 2 3] [4 5 6]])</code></li><li><code>(pm m)</code> to print the matrix nicely</li><li>Size<ul><li><code>row-count</code></li><li><code>column-count</code></li></ul></li><li>Retrive<ul><li><code>(cl/get A row column)</code>
+the row/column index starts from 0</li><li><code>(mget A row column)</code>
+for core.matrix
+<code>(mget A index)</code> goes<table><thead><tr><th>0</th><th>2</th><th>4</th></tr></thead><tbody><tr><td>1</td><td>3</td><td>5</td></tr></tbody></table></li></ul></li><li>Change<ul><li><code>(cl/set A row column val)</code> mutate</li><li><code>(mset A row column val)</code> immutate</li></ul></li><li>Map<ul><li><code>map,cl/map</code>
+regular map
+immutable</li><li><code>(cl/map-indexed (fn [i j val]) m)</code> operates with the coordinates
+immutable</li></ul></li></ul><h4 id=generating>Generating</h4><ul><li><code>idedntity-matrix n</code>
+gives idendity matrix</li><li>could implement a square matrix functions
+2 * <code>repeat</code></li><li>random<ul><li>use generate 100 100 100 &mldr; Matrix
+then use <code>cl/map</code> <code>rand-int</code></li><li><code>cl/rnorm</code><ul><li><code>mean std row col</code> row * col</li><li><code>row</code> row * 1</li><li><code>row col</code></li></ul></li></ul></li><li><code>(compute-matrix [row col] (fn [i j] expr ))</code></li></ul><h4 id=operatiors--plus-dot-dot-dot>Operatiors (+ - * / &mldr;)</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>ns </span>my-namespace
+    (<span style=color:#e6db74>:use</span> clojure.core.matrix)
+    (<span style=color:#e6db74>:require</span> [clojure.core.matrix.operators <span style=color:#e6db74>:as</span> M]))
+</code></pre></div><ul><li><p>Adding</p><ul><li><code>M/+</code></li><li><code>M/==</code> for equality check</li><li>implementation are trival.</li></ul></li></ul><ul><li><p>Multiply</p><ul><li><code>M/*</code> for A * B
+the clatrix use native lib. loading native BLAS lib take 35-40 ms, and the multiplication afterwards take 1ms each(dim=100). in contrast of core.matrix&rsquo;s 1s.</li><li><code>scale A 10</code> for 10 * A</li></ul></li></ul><ul><li><p>Transpose/Invert</p><ul><li><code>transppose A</code></li><li><code>inverse A</code></li><li><code>det A</code> determinant</li></ul></li></ul><ul><li><p>Interpolating</p><p>using a <a href=/braindump/main/20220215212534-linear_progression/>linear progression</a></p><ol><li>create a band matrix</li><li>represent the data points</li><li>visual using <code>incanter</code> lib</li></ol></li></ul><h3 id=machine-learning>Machine learning</h3><p>ultimate objective: <code>generalize</code> facts from <em>some empirical sample data</em>. <em>generalization</em></p><p>categories:</p><ul><li>supervised ~
+labeled data</li><li>unsupervised ~
+finding pattern
+no definite yes-or-no based reward system to determin in the estimated model is accurate or not</li></ul><h2 id=setting>Setting</h2><h3 id=java>Java</h3><p>currently(2022.1.4) clojure supports java 8 and 11
+In order for clojure to work proporly, should use java 11</p><h4 id=modification-on-macos>Modification on macOS</h4><p>Should use java 8 (or 11, but haven&rsquo;t tried yet). If on java 16 will report error of lack of com.apple.ewat.quitHandler something.</p><p>from <code>usr/libexec/java_home -V</code> get existing java on the machine.
+change the environmental viriable <code>JAVA_HOME</code> to <code>`/usr/libexec/java_home -v 1.8`</code>
+Then the default java is java 8</p><h3 id=emacs>Emacs</h3><p>Use <code>cider</code> and <code>clojure</code> mode to work with clojure in emacs</p><h4 id=with-clojure-cider>with clojure/cider</h4><p><code>C-x C-e</code> and <code>C-c C-c</code> to eval the code in .clj buffer.
+<code>C-u C-x C-e</code> to print the result after mark
+<code>C-c M-n M-n</code> to switch cider to the ns stated top of the file
+<code>C-c C-k</code> to compile the current file in REPL
+<code>C-enter</code> in REPL to close the paretheses and eval.
+<code>C-c C-d C-d</code> gives doc of symbol at point. <code>q</code> to close that doc.
+<code>M-.</code> to find source, <code>M-,</code> to return to original buffer and position
+<code>C-c C-d C-a</code> to find text in function name/doc</p><h4 id=with-paredit-mode>with paredit-mode</h4><p><code>M-(</code> to wrap at point
+<code>C--></code> to slurp a thing in
+<code>C-&lt;-</code> to unslurp a thing(barf a thing)
+<code>C-M-f,C-M-b</code> to go to openning, enclosing paren</p><h2 id=walkthrough>Walkthrough</h2><h3 id=tutorial>Tutorial</h3><h4 id=official-website>Official website</h4><p>I first checked <a href=https://clojure.org/guides/getting_started>offical clojure website</a>, in search of download, tutorials and doc. I followed the install instruction step by step and went through the tutorials.</p><p>Then I checked several websites mentioned in <a href=https://clojure.org/guides/learn/flow>the control flow part</a> of the tutorial.</p><h4 id=setting-up-cider-and-failure>Setting up cider and failure</h4><p>The next thing I wanted to do is to set myself up for CIDER in Emacs. And the I met the first obstacle: it won&rsquo;t work. Both jack-in-clj in Emacs and <code>lein</code> in termianl would end up java reporting compile issue, missing class file in class path and so on. I checked the error information in DuckDuckGo, several guys have same issue, but no real solutions. I tried some solutions, including reinstalling everything, editing <code>~/.lein/profile.clj</code>, <code>~/.lein/project.clj/</code>, filling <code>~/.m2/cider/</code> with source files from github repo <code>/src</code> folder, none worked. The issue went away after I restarted the computer.</p><p>So if you have similar issue, I would suggest restart your computer.</p><h4 id=cookbook>Cookbook</h4><p>Next thing I did is visit github.com and search keyword &ldquo;clojure&rdquo;, in search of tutorial/sample repo, popular library, and other thing other clojure programmers cared about(the high star repos), where I accidentally discovered clojurescript(this stuff compiles to js! cool!), and this amazing repo <a href=https://github.com/clojure-cookbook/clojure-cookbook>clojure-cookbook</a>. It&rsquo;s like everything I want put together</p><h3 id=environment>Environment</h3><p>I first installed clojure, I forgot exactly how, I got</p><h2 id=basic-syntaxes-and-features>Basic Syntaxes & features</h2><h3 id=types>Types</h3><h4 id=numeric>Numeric</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#ae81ff>42</span> <span style=color:#75715e>; integer</span>
+<span style=color:#ae81ff>-1.5</span> <span style=color:#75715e>; float</span>
+<span style=color:#ae81ff>22</span>/7 <span style=color:#75715e>; ratio</span>
+<span style=color:#f92672>##</span>Inf, <span style=color:#f92672>##</span>-INF, <span style=color:#f92672>##</span>NaN
+</code></pre></div><h4 id=char>Char</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#e6db74>&#34;hello&#34;</span> <span style=color:#75715e>; string</span>
+<span style=color:#e6db74>\e</span> <span style=color:#75715e>; character</span>
+<span style=color:#e6db74>\n</span>ewline, <span style=color:#e6db74>\s</span>pec, <span style=color:#e6db74>\t</span>ab
+
+<span style=color:#f92672>#</span><span style=color:#e6db74>&#34;[0-9]+&#34;</span> <span style=color:#75715e>; regular expression</span>
+</code></pre></div><h4 id=symbol>Symbol</h4><p>Symbols are things that could hold something. Like a drawer with name.</p><p>Cells:</p><ul><li><p>Print name
+String. Same as the symbol. Automatically set. cannot change.</p></li><li><p>value
+store the symbol&rsquo;s value. When not void, the symbol&rsquo;s a variable</p></li><li><p>function
+store</p><ul><li>function definition object</li><li>lisp macro</li><li>other objects act as function</li></ul></li><li><p>property list
+hold a list of name/value pairs.
+Used to store meta info about the symbol.</p><p>Keywards</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>clojure.core/+ <span style=color:#75715e>; namespaced symbol</span>
+<span style=color:#e6db74>:x</span> <span style=color:#75715e>; keyward</span>
+</code></pre></div></li></ul><h4 id=literal-collection>Literal collection</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#f92672>&#39;</span>(<span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span>) <span style=color:#75715e>; list</span>
+[<span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span>]<span style=color:#75715e>; vector</span>
+<span style=color:#f92672>#</span>{<span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span>}<span style=color:#75715e>; set</span>
+{<span style=color:#e6db74>:a</span> <span style=color:#ae81ff>1</span>, <span style=color:#e6db74>:b</span> <span style=color:#ae81ff>2</span>} <span style=color:#75715e>; map</span>
+
+
+</code></pre></div><h3 id=basics>Basics</h3><h4 id=def>Def</h4><p>def = setq
+also added namespace</p><h4 id=printing>Printing</h4><ul><li>println : for humans</li><li>print</li><li>prn : readable as data</li><li>pr</li></ul><h3 id=functions>Functions</h3><p>Functions are first-class. could be passed-to or returned-from other functions</p><p><code>defn</code> defines a named funciton</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>greet [name] (str <span style=color:#e6db74>&#34;Hello, &#34;</span> name))
+
+</code></pre></div><h4 id=returning-func>returning func</h4><p>higher order functions take func as input or return funcs</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>((or + -) <span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span>)
+</code></pre></div><h4 id=multi-arity>Multi-arity</h4><p>Taking different number of args
+could be used to provide default</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>greet
+  ([] (<span style=color:#a6e22e>messenger</span> <span style=color:#e6db74>&#34;Hello World!&#34;</span>))
+  ([arg] (println arg))
+  )
+(<span style=color:#66d9ef>defn </span>greet
+  ([name title] (str <span style=color:#e6db74>&#34;Greetings, &#34;</span> title <span style=color:#e6db74>&#34; &#34;</span> name))
+  ([name] (str <span style=color:#e6db74>&#34;Greetings, &#34;</span> <span style=color:#e6db74>&#34;Stranger&#34;</span> <span style=color:#e6db74>&#34; &#34;</span> name )))
+
+</code></pre></div><h4 id=variadic>Variadic</h4><p>a bunch of parameters passing to the function without specified number.
+(+ 1 2 3 4 5 6 7 8 9)
+must at the end of parameters, and marked by a <code>&</code>
+The parameters would be collected as a list</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>hello [greeting <span style=color:#f92672>&amp;</span> who]
+  (println greeting who))
+
+</code></pre></div><h4 id=anonymous>Anonymous</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>fn </span>[message] (println message))
+
+</code></pre></div><ul><li><p>Short way</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#f92672>#</span>(+ <span style=color:#ae81ff>6</span> %1) <span style=color:#75715e>;position</span>
+<span style=color:#f92672>#</span>(print %1 $<span style=color:#f92672>&amp;</span>) <span style=color:#75715e>; %&amp; for the rest variadic parameters</span>
+</code></pre></div></li></ul><h4 id=apply>Apply</h4><p>Apply works when the parameters were get in sequence</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(apply f <span style=color:#f92672>&#39;</span>(<span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span> <span style=color:#ae81ff>4</span>))
+(<span style=color:#66d9ef>defn </span>plot [shape coords]<span style=color:#75715e>; coords = [x y]</span>
+  (<span style=color:#a6e22e>plotxy</span> shape (first coords) (second coords)))
+(<span style=color:#66d9ef>defn </span>plot [shape coords]
+  (apply plotxy shape coords))
+</code></pre></div><p>Apply works with <code>CSV</code> files well. like constructing a csv file</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#75715e>;; Constructing a CSV from a header string and vector of rows</span>
+(<span style=color:#66d9ef>def </span>header <span style=color:#e6db74>&#34;first_name,last_name,employee_number\n&#34;</span>)
+(<span style=color:#66d9ef>def </span>rows [<span style=color:#e6db74>&#34;luke,vanderhart,1&#34;</span>
+	   <span style=color:#e6db74>&#34;ryan,neufeld,2&#34;</span>])
+
+(apply str header (<span style=color:#a6e22e>interpose</span> <span style=color:#e6db74>&#34;\n&#34;</span> rows))
+<span style=color:#75715e>;; -&gt; &#34;first_name,last_name,employee_number\nluke,vanderhart,1\nryan,neufeld,2&#34;</span>
+</code></pre></div><h4 id=let>Let</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>let </span>[a <span style=color:#ae81ff>7</span> b <span style=color:#ae81ff>8</span>]
+  (print a b <span style=color:#e6db74>&#34;hello&#34;</span>))
+
+</code></pre></div><h4 id=closure>Closure</h4><p>Closure provided by fn close over the lexical scope, and hold it there for another call(maybe)</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>messenger-builder [greeting]
+  (<span style=color:#66d9ef>fn </span>[who] (println greeting who))) <span style=color:#75715e>; closes over greeting</span>
+
+<span style=color:#75715e>;; greeting provided here, then goes out of scope</span>
+(<span style=color:#66d9ef>def </span>hello-er (<span style=color:#a6e22e>messenger-builder</span> <span style=color:#e6db74>&#34;Hello&#34;</span>))
+
+<span style=color:#75715e>;; greeting value still available because hello-er is a closure</span>
+(<span style=color:#a6e22e>hello-er</span> <span style=color:#e6db74>&#34;world!&#34;</span>)
+<span style=color:#75715e>;; Hello world!</span>
+
+</code></pre></div><h4 id=destructuring>Destructuring</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>my-third <span style=color:#e6db74>&#34;return the third item&#34;</span>
+  [[_ _ third <span style=color:#f92672>&amp;</span> rest]]
+  third
+  )
+</code></pre></div><h3 id=with-java>With Java</h3><table><thead><tr><th>Task</th><th>Java</th><th>Clojure</th></tr></thead><tbody><tr><td>Create instance</td><td>new Widget(&ldquo;foo&rdquo;)</td><td>(Widget. &ldquo;foo&rdquo;)</td></tr><tr><td>Instance method</td><td>rnd.nextInt()</td><td>(.nextInt rnd)</td></tr><tr><td>Instance field</td><td>object.field</td><td>(.-filed object)</td></tr><tr><td>static method</td><td>Math.sqrt(25)</td><td>(Math/sqrt 25)</td></tr><tr><td>static field</td><td>Math.PI</td><td>Math/PI</td></tr></tbody></table><p>Java functions are not Clojure functions
+can&rsquo;t be stored or passed</p><p>can be wrapped in functions.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>fn </span>[arg] (<span style=color:#a6e22e>Math/sqrt</span> arg))
+
+<span style=color:#f92672>#</span>(<span style=color:#a6e22e>Math/sqrt</span> %)
+
+</code></pre></div><h3 id=graphics>Graphics</h3><h4 id=quil>Quil</h4><h3 id=with-datatypes>with Datatypes</h3><h4 id=sequential-collection>Sequential collection</h4><ul><li><p>vector <code>[1 2 3]</code></p><ul><li><p>indexed access</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>user=&gt; (get [<span style=color:#e6db74>&#34;abc&#34;</span> false <span style=color:#ae81ff>99</span>] <span style=color:#ae81ff>0</span>)
+<span style=color:#e6db74>&#34;abc&#34;</span>
+user=&gt; (get [<span style=color:#e6db74>&#34;abc&#34;</span> false <span style=color:#ae81ff>99</span>] <span style=color:#ae81ff>1</span>)
+false
+user=&gt; (get [<span style=color:#e6db74>&#34;abc&#34;</span> false <span style=color:#ae81ff>99</span>] <span style=color:#ae81ff>14</span>)
+nil
+</code></pre></div></li></ul><ul><li><p>Length (count)</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(count [ <span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span>])
+<span style=color:#ae81ff>3</span>
+</code></pre></div></li></ul><ul><li><p>constructing</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(vector <span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span>)
+</code></pre></div></li></ul><ul><li><p>Adding elements</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(conj [<span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>3</span>] <span style=color:#ae81ff>4</span> <span style=color:#ae81ff>5</span> <span style=color:#ae81ff>6</span>)
+</code></pre></div></li></ul></li></ul><ul><li><p>List <code>'(1 2 3)</code></p><ul><li><p>Constructing</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>def </span>cards <span style=color:#f92672>&#39;</span>(<span style=color:#ae81ff>10</span> <span style=color:#e6db74>:ace</span> <span style=color:#e6db74>:jack</span> <span style=color:#ae81ff>9</span>))
+</code></pre></div></li></ul><ul><li><p>Acsess</p><p>list is not indexed.
+use <code>first</code> and <code>rest</code> to</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>user=&gt; (first cards)
+<span style=color:#ae81ff>10</span>
+user=&gt; (rest cards)
+<span style=color:#f92672>&#39;</span>(<span style=color:#e6db74>:ace</span> <span style=color:#e6db74>:jack</span> <span style=color:#ae81ff>9</span>)
+</code></pre></div></li></ul><ul><li><p>Adding elements</p><p><code>conj</code> can add element to list.
+but to the front. like a stack</p></li></ul><ul><li><p>Stack access</p><p><code>peek</code> told you the first element
+<code>pop</code> takes out the first element</p></li></ul></li></ul><h4 id=hashed-collection>Hashed collection</h4><ul><li><p>Set</p><ul><li><p>Add</p><p>(conj players &ldquo;fred&rdquo;)</p></li></ul><ul><li><p>Remove from</p><p>(disj players &ldquo;Bob&rdquo; &ldquo;sal&rdquo;)</p></li></ul><ul><li><p>Contain?</p><p>(contains? players &ldquo;Kelly&rdquo;)</p></li></ul><ul><li><p>Sorted sets</p><p>(conj (sorted-set) &ldquo;Bravo&rdquo; &ldquo;Charlie&rdquo; &ldquo;Sigma&rdquo; &ldquo;Alpha&rdquo;)
+this uses a natural <code>compare</code> function in clojure
+could use <code>sorted-set-by</code> function to choose compare function</p></li></ul><ul><li><p>into</p><p><code>into</code> combines collections, and return the datatype of the first argument</p></li></ul></li></ul><ul><li><p>Map</p><p>hold key/value paire;hold domain application info</p><ul><li><p>Creating</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>def </span>scores {<span style=color:#e6db74>&#34;Fred&#34;</span>  <span style=color:#ae81ff>1400</span>
+         <span style=color:#e6db74>&#34;Bob&#34;</span>   <span style=color:#ae81ff>1240</span>
+         <span style=color:#e6db74>&#34;Angela&#34;</span> <span style=color:#ae81ff>1024</span>})
+</code></pre></div><p>could use <code>,</code> between pairs. they are like whitespace.</p><ul><li><p>Zipmap</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>user=&gt; (<span style=color:#66d9ef>def </span>players <span style=color:#f92672>#</span>{<span style=color:#e6db74>&#34;Alice&#34;</span> <span style=color:#e6db74>&#34;Bob&#34;</span> <span style=color:#e6db74>&#34;Kelly&#34;</span>})
+<span style=color:#f92672>#</span><span style=color:#e6db74>&#39;user/players</span>
+
+user=&gt; (zipmap players (repeat <span style=color:#ae81ff>0</span>))
+{<span style=color:#e6db74>&#34;Kelly&#34;</span> <span style=color:#ae81ff>0</span>, <span style=color:#e6db74>&#34;Bob&#34;</span> <span style=color:#ae81ff>0</span>, <span style=color:#e6db74>&#34;Alice&#34;</span> <span style=color:#ae81ff>0</span>}
+</code></pre></div></li></ul></li></ul><ul><li><p>Add</p><p>(assoc scores &ldquo;Sally&rdquo; 0)</p></li></ul><ul><li><p>Remove</p><p>(dissoc scores &ldquo;Bob&rdquo;)</p></li></ul><ul><li><p>Looking up by key</p><p>(get scores &ldquo;Angela&rdquo;)</p><ul><li><p>directly call</p><p>can call (directions :north) to have <code>:north 1</code> showed.
+will report error if no <code>:north</code> in <code>directions</code></p></li></ul><ul><li><p>with a default</p><p>(get scores &ldquo;sam&rdquo; 0)
+(directions :northwest -1)</p></li></ul></li></ul><ul><li><p>Checking contains</p><p>(contains? scores &ldquo;Fresd&rdquo;)
+true
+(find scores &ldquo;fred&rdquo;)
+[&ldquo;fred&rdquo; 1400]</p></li></ul><ul><li><p>Keys or values</p><p>user=> (keys scores)
+(&ldquo;Fred&rdquo; &ldquo;Bob&rdquo; &ldquo;Angela&rdquo;)</p><p>user=> (vals scores)
+(1400 1240 1024)</p></li></ul><ul><li><p>Combine maps</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>user=&gt; (<span style=color:#66d9ef>def </span>new-scores {<span style=color:#e6db74>&#34;Angela&#34;</span> <span style=color:#ae81ff>300</span> <span style=color:#e6db74>&#34;Jeff&#34;</span> <span style=color:#ae81ff>900</span>})
+<span style=color:#f92672>#</span><span style=color:#e6db74>&#39;user/new-scores</span>
+
+user=&gt; (merge scores new-scores)
+{<span style=color:#e6db74>&#34;Fred&#34;</span> <span style=color:#ae81ff>1400</span>, <span style=color:#e6db74>&#34;Bob&#34;</span> <span style=color:#ae81ff>1240</span>, <span style=color:#e6db74>&#34;Jeff&#34;</span> <span style=color:#ae81ff>900</span>, <span style=color:#e6db74>&#34;Angela&#34;</span> <span style=color:#ae81ff>300</span>}
+</code></pre></div><p>when 2 pairs with 1 key, the rightmost wins.</p></li></ul><ul><li>sorted maps</li></ul><ul><li><p>Domain information</p><p>Map could be used like object and fields</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>
+(<span style=color:#66d9ef>def </span>person
+  {
+   <span style=color:#e6db74>:name</span> <span style=color:#e6db74>&#34;Herman&#34;</span>
+   <span style=color:#e6db74>:lastname</span> <span style=color:#e6db74>&#34;He&#34;</span>
+   <span style=color:#e6db74>:tele</span> <span style=color:#e6db74>&#34;1234253536&#34;</span>
+
+   })
+
+</code></pre></div><ul><li><p>field accessor</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(get person <span style=color:#e6db74>:occupation</span>)
+(<span style=color:#a6e22e>person</span> <span style=color:#e6db74>:occupation</span>)
+(<span style=color:#e6db74>:occupation</span> person)
+</code></pre></div><p>all works.
+the last is used more.</p></li></ul><ul><li><p>Updating field</p><p>(assoc person :occupation &ldquo;baker&rdquo;)</p></li></ul><ul><li><p>Removing a field</p><p>(dissoc person :age)</p></li></ul><ul><li><p>Nested</p><p>Nested entities could</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>def </span>company
+  {<span style=color:#e6db74>:name</span> <span style=color:#e6db74>&#34;WidgetCo&#34;</span>
+   <span style=color:#e6db74>:address</span> {<span style=color:#e6db74>:street</span> <span style=color:#e6db74>&#34;123 Main St&#34;</span>
+         <span style=color:#e6db74>:city</span> <span style=color:#e6db74>&#34;Springfield&#34;</span>
+         <span style=color:#e6db74>:state</span> <span style=color:#e6db74>&#34;IL&#34;</span>}})
+</code></pre></div><ul><li><p>instructions</p><p>(get-in company [:address :state])
+&ldquo;IL&rdquo;</p><p>Use this could get info at any level.
+update-in</p></li></ul></li></ul><ul><li><p>Record</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#75715e>;; Define a record structure</span>
+(<span style=color:#66d9ef>defrecord </span>Person [first-name last-name age occupation])
+
+<span style=color:#75715e>;; Positional constructor - generated</span>
+(<span style=color:#66d9ef>def </span>kelly (<span style=color:#a6e22e>-&gt;Person</span> <span style=color:#e6db74>&#34;Kelly&#34;</span> <span style=color:#e6db74>&#34;Keen&#34;</span> <span style=color:#ae81ff>32</span> <span style=color:#e6db74>&#34;Programmer&#34;</span>))
+
+<span style=color:#75715e>;; Map constructor - generated</span>
+(<span style=color:#66d9ef>def </span>kelly (<span style=color:#a6e22e>map-&gt;Person</span>
+         {<span style=color:#e6db74>:first-name</span> <span style=color:#e6db74>&#34;Kelly&#34;</span>
+          <span style=color:#e6db74>:last-name</span> <span style=color:#e6db74>&#34;Keen&#34;</span>
+          <span style=color:#e6db74>:age</span> <span style=color:#ae81ff>32</span>
+          <span style=color:#e6db74>:occupation</span> <span style=color:#e6db74>&#34;Programmer&#34;</span>}))
+
+</code></pre></div><p>no (kelly :occupation), only(:occupation kelly)</p></li></ul></li></ul></li></ul><h3 id=flow-control>Flow control</h3><h4 id=if>If</h4><p>(if (cond) (then) (else))
+else is optional</p><ul><li><p>if and do</p><p>(do () ()) to create larger blocks that&rsquo;s 1 expression</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>if </span>(<span style=color:#a6e22e>even?</span> <span style=color:#ae81ff>5</span>)
+  (<span style=color:#66d9ef>do </span>(println <span style=color:#e6db74>&#34;even&#34;</span>)
+      true)
+  (<span style=color:#66d9ef>do </span>(println <span style=color:#e6db74>&#34;odd&#34;</span>)
+      false))
+</code></pre></div></li></ul><ul><li>When</li></ul><ul><li><p><code>cond</code></p><ul><li><code>cond</code></li></ul><ul><li><p><code>condp</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#a6e22e>condp</span> = (<span style=color:#e6db74>:type</span> shape)
+    <span style=color:#e6db74>:triangle</span>  (* (<span style=color:#e6db74>:base</span> shape) (<span style=color:#e6db74>:height</span> shape) (/ <span style=color:#ae81ff>1</span> <span style=color:#ae81ff>2</span>))
+    <span style=color:#e6db74>:rectangle</span> (* (<span style=color:#e6db74>:length</span> shape) (<span style=color:#e6db74>:width</span> shape)))
+</code></pre></div></li></ul></li></ul><h4 id=loops>loops</h4><ul><li><p><code>loop</code></p><p>recur calls the <code>loop</code> with the arguments passed as loop&rsquo;s bindings</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>loop </span>[x <span style=color:#ae81ff>1</span>]
+  (<span style=color:#a6e22e>recur</span> (inc x)))
+</code></pre></div></li></ul><ul><li><p>Along a sequence</p><ul><li>doseq</li></ul><ul><li><p>reduce</p><p>process the elements of a collection to build a result.</p></li></ul></li></ul><h3 id=let-bindings>let bindings</h3><ol><li>(let [a 1 b 2] expr)</li><li><code>(let [[a b & rest] [1 2]] expr)</code>
+操作逻辑和表示逻辑。</li></ol><p>usage：</p><ol><li>clarity</li><li>reuse expansive func call</li></ol><h2 id=cookbook-prob-sol>Cookbook Prob/Sol</h2><h3 id=core-string-basic>core string basic</h3><table><thead><tr><th>Library</th><th>Function</th><th>Use</th></tr></thead><tbody><tr><td>clojure.string</td><td>lower-case</td><td>to lower case</td></tr><tr><td></td><td>upper-case</td><td>to upper case</td></tr><tr><td></td><td>capitalize</td><td>this -> This</td></tr><tr><td></td><td>trim</td><td>clean " " at front and tail</td></tr><tr><td></td><td>triml/trimr</td><td>trim 1 end</td></tr><tr><td></td><td>replace</td><td>could use regular.</td></tr><tr><td></td><td>join</td><td>seperator and colletion to string</td></tr><tr><td></td><td>split</td><td>tokenize</td></tr></tbody></table><table><thead><tr><th>Library</th><th>Function</th><th>Use</th></tr></thead><tbody><tr><td>clojure.core</td><td>str</td><td>combine a string</td></tr><tr><td></td><td>interpose</td><td>seperator</td></tr><tr><td></td><td>char</td><td>97 -> \a</td></tr><tr><td></td><td>int</td><td>\a -> 97</td></tr><tr><td></td><td>format</td><td>format string</td></tr><tr><td></td><td>re-find</td><td></td></tr><tr><td></td><td>re-matches</td><td></td></tr><tr><td></td><td>re-seq</td><td></td></tr></tbody></table><h3 id=primitives>Primitives</h3><h4 id=strings>Strings</h4><ul><li><p>multiple whitespace into 1</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#75715e>;; Collapse whitespace into a single space</span>
+(<span style=color:#a6e22e>clojure.string/replace</span> <span style=color:#e6db74>&#34;Who\t\nput  all this\fwhitespace here?&#34;</span> <span style=color:#f92672>#</span><span style=color:#e6db74>&#34;\s+&#34;</span> <span style=color:#e6db74>&#34; &#34;</span>)
+<span style=color:#75715e>;; -&gt; &#34;Who put all this whitespace here?&#34;</span>
+</code></pre></div></li></ul><ul><li><p>build string</p><p>could use <code>str</code> or <code>clojure.string/join</code>
+(join &ldquo;seperator&rdquo; [collection])
+(apply str [collection])</p><ul><li>(str &ldquo;2&rdquo; &ldquo;3&rdquo;) -> &ldquo;23&rdquo;</li></ul><ul><li><p>format string</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>
+  <span style=color:#75715e>;; Produce a filename with a zero-padded sortable index</span>
+(<span style=color:#66d9ef>defn </span>filename [name i]
+  (<span style=color:#a6e22e>format</span> <span style=color:#e6db74>&#34;%03d-%s&#34;</span> i name)) <span style=color:#75715e>; &lt;1&gt;</span>
+
+(<span style=color:#a6e22e>filename</span> <span style=color:#e6db74>&#34;my-awesome-file.txt&#34;</span> <span style=color:#ae81ff>42</span>)
+<span style=color:#75715e>;; -&gt; &#34;042-my-awesome-file.txt&#34;</span>
+
+
+<span style=color:#75715e>;; Create a table using justification</span>
+(<span style=color:#66d9ef>defn </span>tableify [row]
+  (apply format <span style=color:#e6db74>&#34;%-20s | %-20s | %-20s&#34;</span> row)) <span style=color:#75715e>; &lt;2&gt;</span>
+
+(<span style=color:#66d9ef>def </span>header [<span style=color:#e6db74>&#34;First Name&#34;</span>, <span style=color:#e6db74>&#34;Last Name&#34;</span>, <span style=color:#e6db74>&#34;Employee ID&#34;</span>])
+(<span style=color:#66d9ef>def </span>employees [[<span style=color:#e6db74>&#34;Ryan&#34;</span>, <span style=color:#e6db74>&#34;Neufeld&#34;</span>, <span style=color:#ae81ff>2</span>]
+        [<span style=color:#e6db74>&#34;Luke&#34;</span>, <span style=color:#e6db74>&#34;Vanderhart&#34;</span>, <span style=color:#ae81ff>1</span>]])
+
+(<span style=color:#a6e22e>-&gt;&gt;</span> (concat [header] employees)
+     (map tableify)
+     (<span style=color:#a6e22e>mapv</span> println))
+<span style=color:#75715e>;; *out*</span>
+<span style=color:#75715e>;; First Name           | Last Name            | Employee ID</span>
+<span style=color:#75715e>;; Ryan                 | Neufeld              | 2</span>
+<span style=color:#75715e>;; Luke                 | Vanderhart           | 1</span>
+
+</code></pre></div><p>use <code>mapv</code> to print table. Don&rsquo;t know why,but <code>map println</code> gives creepy result</p><p><code>%03s</code> researve with whitespace
+<code>%03d</code> researve wtih 0
+<code>%-20s</code> jestify the string to the left</p></li></ul></li></ul><ul><li><p>Reg</p><ul><li><p>match</p><p>use <code>re-find</code> for part and <code>re-matches</code> for entire match
+<code>\d</code> for digit, <code>\d+</code> for digits in a row. <code>\d{3}</code> for 3 digits
+<code>\w</code> for word</p></li></ul><ul><li><p>extract</p><p>use <code>re-seq</code> to extract all matching items in a string
+no repeat.
+with <code>#"(@|#)(\w)"</code>, would return a vector for each total match
+use group to get out the useful part <code>#"(@|#)\w\w\w(\w+)"</code></p></li></ul><ul><li><p>find and replace</p><p>use <code>replace</code>. the groups would be <code>$1</code>, <code>$2</code> in order.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>linkify-comment
+  <span style=color:#e6db74>&#34;Add Markdown-style links for any GitHub issue numbers present in comment&#34;</span>
+  [repo comment]
+  (<span style=color:#a6e22e>clojure.string/replace</span> comment
+              <span style=color:#f92672>#</span><span style=color:#e6db74>&#34;#(\d+)&#34;</span>
+              (str <span style=color:#e6db74>&#34;[#$1](https://github.com/&#34;</span> repo <span style=color:#e6db74>&#34;/issues/$1)&#34;</span>)))
+
+(<span style=color:#a6e22e>linkify-comment</span> <span style=color:#e6db74>&#34;next/big-thing&#34;</span> <span style=color:#e6db74>&#34;As soon as we fix #42 and #1337 we
+</span><span style=color:#e6db74>should be set to release!&#34;</span>)
+<span style=color:#75715e>;; -&gt; &#34;As soon as we fix</span>
+<span style=color:#75715e>;;     [#42](https://github.com/next/big-thing/issues/42) and</span>
+<span style=color:#75715e>;;     [#1337](https://github.com/next/big-thing/issues/1337) we</span>
+<span style=color:#75715e>;;     should be set to release!&#34;</span>
+
+</code></pre></div></li></ul></li></ul><ul><li><p>Split</p><p>the <code>split</code> function take a <code>limit</code> parameter to specify how many splits are there. set <code>limit</code> to <code>-1</code> make would stop ignoring the trailing empty match.</p></li></ul><ul><li><p>inflection</p><p>use <a href=https://github.com/r0man/inflections-clj>inflections</a> library.</p><ul><li><p>setting up</p><p>specify dependency.
+<code>(require '[inflections.core :as inf])</code> to require</p></li></ul><ul><li>library functions<table><thead><tr><th>library</th><th>functions</th><th>use</th></tr></thead><tbody><tr><td>inflections.core</td><td>pluralize</td><td>1 egg, 2 eggs (can specify plural)</td></tr><tr><td></td><td>plural</td><td>egg -> eggs</td></tr><tr><td></td><td>singular</td><td>eggs -> egg</td></tr><tr><td></td><td>plural!</td><td>eg[g]->eggerscvxegs</td></tr><tr><td></td><td>parameterize</td><td>my-org-website</td></tr><tr><td></td><td>camelize</td><td>MyOrgWebsite</td></tr><tr><td></td><td>ordinalize</td><td>42 -> 42nd</td></tr></tbody></table></li></ul></li></ul><ul><li><p>conversion between stringlike types</p><p>str <code>"data"</code> , symbol <code>'data</code>, and keyword <code>:data</code>
+-> keyword: <code>(keyword 'data)</code>
+symbol -> str: <code>(str 'data)</code>
+keyword -> str: <code>(str :data)</code> -> &ldquo;:data&rdquo; ; <code>(name :data) -> "data" str -> symbol: =(symbol "data")</code>
+keyword -> symbol: <code>(symbol (name :data))</code></p><ul><li><p>namespaced keyword/symbol</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(name <span style=color:#e6db74>:user/valid?</span>) -&gt; valid?
+(namespace <span style=color:#e6db74>:user/valid?</span>) -&gt; user
+(str <span style=color:#e6db74>:user/valid?</span>) -&gt; <span style=color:#e6db74>&#34;:user/valid?&#34;</span>
+(<span style=color:#a6e22e>.substring</span> (str <span style=color:#e6db74>:user/valid?</span>)) -&gt; <span style=color:#e6db74>&#34;user/valid?&#34;</span>
+</code></pre></div><p><code>keyword</code> and <code>symbol</code> can take 2 parameters for namespace and name seperately</p></li></ul></li></ul><ul><li><p>substring</p><p><code>subs</code></p></li></ul><h4 id=numbers>Numbers</h4><ul><li><p>Big Big numbers</p><p><code>(+')</code> help integers to avoid overflow.
+<code>bigdec</code> or <code>bigint</code> function promote number to unbounded <code>Big</code> types</p></li></ul><ul><li><p>Rational numbers</p><p><code>rationalize</code> to convert 0.3 -> 3/10
+at cost of performance</p></li></ul><ul><li><p>Parseing numbers</p><p><code>Integer/parseInt</code> such.
+with very large/precise numbers, <code>bigdec/bigint</code> works.</p></li></ul><ul><li><p>rounding numbers</p><p><code>Math/ceil</code> and <code>Math/floor</code> work.
+<code>int</code> take the integer part.
+<code>Math/round</code> to the nearest integer</p></li></ul><ul><li><p>fuzzy equal</p><p>no built-in function for fault-tolerant equality</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>fuzzy= [arg1 arg2 tolerance]
+  (<span style=color:#66d9ef>let </span>[diff (<span style=color:#a6e22e>Math/abs</span> (- x y ))]
+    (&lt; diff tolerance))
+  )
+
+</code></pre></div><p>equal-within-10? can be established using <code>partial</code>
+fuzzy compareison could be establishd.</p></li></ul><h4 id=math>Math</h4><ul><li><p>Trigonometry</p><p>use that in <code>Math</code>, like <code>Math/sin</code> <code>Math/cos</code>.
+<code>Math/toRadians</code> convert degrees to radians</p></li></ul><ul><li><p>Different bases</p><p>2 to 36 is valid
+<code>2r101010</code> is <code>101010</code> at base 2
+to print number in base n, =(Integer/toString num n)</p></li></ul><ul><li><p>Statistics</p><p><a href=~/playground/clojure-cookbook/01_primitive-data/1-20_simple-statistics.asciidoc>cookbook_simple-stastics</a></p><ul><li><p>Simple</p><ul><li>mean</li></ul><ul><li>median</li></ul><ul><li>mode</li></ul><ul><li>standard deviatio</li></ul></li></ul></li></ul><ul><li><p>bit operation</p><p>use <code>bit-</code> functions. they handle <code>10b3</code> as <code>2b11</code>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#75715e>;; Modeling a subset of Unix filesystem flags in a single integer</span>
+(<span style=color:#66d9ef>def </span>fs-flags [<span style=color:#e6db74>:owner-read</span> <span style=color:#e6db74>:owner-write</span>
+           <span style=color:#e6db74>:group-read</span> <span style=color:#e6db74>:group-write</span>
+           <span style=color:#e6db74>:global-read</span> <span style=color:#e6db74>:global-write</span>])
+
+<span style=color:#75715e>;; Fold flags into a map of flag-&gt;bit</span>
+(<span style=color:#66d9ef>def </span>bitmap (zipmap fs-flags
+            (map (partial bit-shift-left <span style=color:#ae81ff>1</span>) (<span style=color:#a6e22e>range</span>))))
+<span style=color:#75715e>;; -&gt; {:owner-read 1, :owner-write 2, :group-read 4, ...}</span>
+
+(<span style=color:#66d9ef>defn </span>permissions-int [<span style=color:#f92672>&amp;</span> flags]
+  (reduce bit-or <span style=color:#ae81ff>0</span> (map bitmap flags)))
+
+(<span style=color:#66d9ef>def </span>owner-only (<span style=color:#a6e22e>permissions-int</span> <span style=color:#e6db74>:owner-read</span> <span style=color:#e6db74>:owner-write</span>))
+(<span style=color:#a6e22e>Integer/toBinaryString</span> owner-only)
+<span style=color:#75715e>;; -&gt; &#34;11&#34;</span>
+
+(<span style=color:#66d9ef>def </span>read-only (<span style=color:#a6e22e>permissions-int</span> <span style=color:#e6db74>:owner-read</span> <span style=color:#e6db74>:group-read</span> <span style=color:#e6db74>:global-read</span>))
+(<span style=color:#a6e22e>Integer/toBinaryString</span> read-only)
+<span style=color:#75715e>;; -&gt; &#34;10101&#34;</span>
+
+(<span style=color:#66d9ef>defn </span>able-to? [permissions flag]
+  (not= <span style=color:#ae81ff>0</span> (bit-and permissions (<span style=color:#a6e22e>bitmap</span> flag))))
+
+(<span style=color:#a6e22e>able-to?</span> read-only <span style=color:#e6db74>:global-read</span>)  <span style=color:#75715e>;; -&gt; true</span>
+(<span style=color:#a6e22e>able-to?</span> read-only <span style=color:#e6db74>:global-write</span>) <span style=color:#75715e>;; -&gt; false</span>
+
+</code></pre></div></li></ul><ul><li><p>Random number</p><p><code>(rand)</code> for float from 0.0 to 1.0. a argument for a exclusive maximum.
+<code>(rand-int N)</code> for int from 0 to N-1
+<code>(rand-nth [1 2 3])</code> for a random element from a list/vector
+for nonsequential collection(set, map).
+<code>shuffle</code> mess up a sequence. [1 2 3 4 5] -> [5 3 4 1 2]</p></li></ul><h4 id=coding-techniques>Coding techniques</h4><ul><li><p>Wrappr</p><p><code>partial</code> could only specify the first parameter, so in cases that the 2nd parameter is specified, could write a wrapper.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>to-base [radix n]
+  (<span style=color:#a6e22e>Integer/toString</span> n radix))
+(<span style=color:#66d9ef>def </span>base-two (partial to-base <span style=color:#ae81ff>2</span>))
+
+</code></pre></div></li></ul><ul><li><p>use of lazy seq</p><p>while <code>(map (partial bit-shift-left 1) (range))</code> gives out a infinite sequence, <code>(zipmap fs-flags (map (partial bit-shift-left 1) (range))))</code> gives a zipmap of fs-flags to exactly first <code>(.length fs-flags)</code> of the seq. <code>range</code> gives a lazy seq.</p></li></ul><ul><li><p>Map and Apply</p><p>(map + [5 2] [7 2]) would return [5+7 2+2]. map pass parameter by row
+(apply + [5 2]) would return [5+2]. apply pass parameter by column</p></li></ul><h4 id=engineering>Engineering</h4><ul><li><p>money</p><p>[clojurewerkz/money &ldquo;1.4.0&rdquo;] to dependencies.
+never use float to manipulate money. <code>(-0,23 0,24) -> -0.00999999999981</code>
+use a library custom-tailored for money. Money wraps java library Joda-Money.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#a6e22e>require</span> <span style=color:#f92672>&#39;</span>[clojurewerkz.money.amounts    <span style=color:#e6db74>:as</span> ma])
+(<span style=color:#a6e22e>require</span> <span style=color:#f92672>&#39;</span>[clojurewerkz.money.currencies <span style=color:#e6db74>:as</span> mc])
+
+
+</code></pre></div><ul><li><p>amount</p><p>Money treat money vars as &ldquo;amount&rdquo;. <code>(ma/amount-of mc/USD 13.14)</code> stands for <code>USD 13.14</code>. <code>mc</code> have USD,CA,RMB in it.</p></li></ul><ul><li><p>functions</p><table><thead><tr><th>library</th><th>function</th><th>use</th></tr></thead><tbody><tr><td>ma</td><td>amount-of</td><td></td></tr><tr><td></td><td>plus</td><td></td></tr><tr><td></td><td>minus</td><td></td></tr><tr><td></td><td>&lt;</td><td></td></tr><tr><td></td><td>total</td><td></td></tr><tr><td></td><td>round</td><td></td></tr><tr><td></td><td>convert-to</td><td></td></tr></tbody></table><ul><li><p>round</p><p>key words: <code>:ceiling, :floor, :up, :down, :half-up :half-down :half-even</code></p></li></ul></li></ul></li></ul><ul><li><p>UUID</p><p>unique ID.
+use <code>java.util.UUID/randomUUID</code> to generate</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>  (<span style=color:#a6e22e>java.util.UUID/randomUUID</span>)
+<span style=color:#75715e>;; -&gt; #uuid &#34;5358e6e3-7f81-40f0-84e5-750e29e6ee05&#34;</span>
+</code></pre></div><p>sequential UUID could be accomplished with:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>squuid []
+  (<span style=color:#66d9ef>let </span>[uuid (<span style=color:#a6e22e>java.util.UUID/randomUUID</span>)
+    time (<span style=color:#a6e22e>System/currentTimeMillis</span>)
+    secs (quot time <span style=color:#ae81ff>1000</span>)
+    lsb (<span style=color:#a6e22e>.getLeastSignificantBits</span> uuid)
+    msb (<span style=color:#a6e22e>.getMostSignificantBits</span> uuid)
+    timed-msb (bit-or (bit-shift-left secs <span style=color:#ae81ff>32</span>)
+              (bit-and <span style=color:#ae81ff>0</span>x00000000ffffffff msb))]
+    (<span style=color:#a6e22e>java.util.UUID.</span> timed-msb lsb)))
+</code></pre></div><p>this combined time with the most significant bits.</p></li></ul><ul><li><p>Current Date/Time</p><p><code>(java.util.Date.) -> #inst "2022-01-20T06:45:51.137-00:00</code>
+<code>(System/currentTimeMillis) -> 1365260110635</code>
+Criterium library and clj-time library also have similar functionalities.
+clj-time.core/now gives a DateTime, <code>clj-time.local/local-nwo</code> gives a local time zone DateTime instance</p><ul><li><p>Representing Dates as literals</p><p>use <code>#inst</code> literals to represent a point in time.</p><p>when communicating with other processes with <code>edn</code>, use <code>clojure.edn/read</code> to translate literal string into Date objects</p><p><code>clojure.edn/read</code> is safer than <code>clojure.core/read</code>
+<a href=~/playground/clojure-cookbook/01_primitive-data/1-26_reader-literal.asciidoc>1-26 reader-literal</a></p></li></ul><ul><li><p>parse date</p><p>use <code>clj-time.format</code>. formatter to define formats like &ldquo;MM/dd/yy&rdquo;, <code>(parse [formatter] [time-string])</code> gives a DateTime object.</p><p>wrapper of <code>Joda-Time</code></p></li></ul><ul><li><p>print dates</p><p>use <code>clj-time.format/unparse</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#a6e22e>tf/unparse</span> (<span style=color:#a6e22e>tf/formatters</span> <span style=color:#e6db74>:date</span>) (<span style=color:#a6e22e>t/now</span>))
+<span style=color:#75715e>;; -&gt; &#34;2013-04-06&#34;</span>
+
+(<span style=color:#66d9ef>def </span>my-format (<span style=color:#a6e22e>tf/formatter</span> <span style=color:#e6db74>&#34;MMM d, yyyy &#39;at&#39; hh:mm&#34;</span>))
+(<span style=color:#a6e22e>tf/unparse</span> my-format (<span style=color:#a6e22e>t/now</span>))
+<span style=color:#75715e>;; -&gt; &#34;Apr 6, 2013 at 04:54&#34;</span>
+
+</code></pre></div><p><code>clj-time</code> and <code>Joda-Time</code> are famous for making it easy to work with dates/times on JVM</p></li></ul><ul><li><p>communicate with #inst and java DateTime &mldr;</p><p>clj-time.coerce.</p></li></ul><ul><li><p>Comparing dates</p><p><code>compare</code> functions.
+<code>sort</code> hooks <code>compare</code>
+before comparing different objects, should coerce them into 1 type.</p></li></ul><ul><li><p>time-intervals</p><p><code>clj-time.core/interval</code> takes 2 joda-time object to form a interval object.
+<code>clj-time.core/in-&lt;unit></code> functions give the length of a interval in days/years/&mldr;
+leap-second?</p></li></ul><ul><li><p>a range of dates/times</p><p>generate a infinite seq of periodic times, then use a predicate to select some of them.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#a6e22e>require</span> <span style=color:#f92672>&#39;</span>[clj-time.core <span style=color:#e6db74>:as</span> time])
+(<span style=color:#a6e22e>require</span> <span style=color:#f92672>&#39;</span>[clj-time.periodic <span style=color:#e6db74>:as</span> time-period])
+
+(<span style=color:#66d9ef>defn </span>time-range
+  <span style=color:#e6db74>&#34;Return a lazy sequence of DateTimes from start to end, incremented
+</span><span style=color:#e6db74>  by &#39;step&#39; units of time.&#34;</span>
+  [start end step]
+  (<span style=color:#66d9ef>let </span>[inf-range (<span style=color:#a6e22e>time-period/periodic-seq</span> start step)
+    below-end? (<span style=color:#66d9ef>fn </span>[t] (<span style=color:#a6e22e>time/within?</span> (<span style=color:#a6e22e>time/interval</span> start end)
+                     t))]
+    (take-while below-end? inf-range)))
+
+</code></pre></div><p>in use</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>def </span>months-of-the-year (<span style=color:#a6e22e>time-range</span> (<span style=color:#a6e22e>time/date-time</span> <span style=color:#ae81ff>2012</span> <span style=color:#ae81ff>01</span>)
+                    (<span style=color:#a6e22e>time/date-time</span> <span style=color:#ae81ff>2013</span> <span style=color:#ae81ff>01</span>)
+                    (<span style=color:#a6e22e>time/months</span> <span style=color:#ae81ff>1</span>)))
+
+
+<span style=color:#75715e>;; months-of-the-year is an unrealized lazy sequence</span>
+(<span style=color:#a6e22e>realized?</span> months-of-the-year)
+<span style=color:#75715e>;; -&gt; false</span>
+
+(count months-of-the-year)
+<span style=color:#75715e>;; -&gt; 12</span>
+
+<span style=color:#75715e>;; now realized</span>
+(<span style=color:#a6e22e>realized?</span> months-of-the-year)
+<span style=color:#75715e>;; -&gt; true</span>
+
+</code></pre></div><p>lazy is sooooooo good.</p></li></ul><ul><li><p>range using native types</p><p>use <code>repeatedly</code> to create a lazy seq.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>
+(<span style=color:#66d9ef>def </span>daily-from-epoch
+  (<span style=color:#66d9ef>let </span>[start-date (<span style=color:#a6e22e>java.util.GregorianCalendar.</span> <span style=color:#ae81ff>1970</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span>) ]
+    (<span style=color:#a6e22e>repeatedly</span>
+      (<span style=color:#66d9ef>fn </span>[]
+    (<span style=color:#a6e22e>.add</span> start-date java.util.Calendar/DAY_OF_YEAR <span style=color:#ae81ff>1</span>)
+    (<span style=color:#a6e22e>.clone</span> start-date)))))
+
+(take <span style=color:#ae81ff>2</span> (drop <span style=color:#ae81ff>57</span> daily-from-epoch))
+<span style=color:#75715e>;; -&gt; (#inst &#34;1970-02-27T00:00:00.000-07:00&#34;</span>
+<span style=color:#75715e>;;     #inst &#34;1970-02-28T00:00:00.000-07:00&#34;)</span>
+
+</code></pre></div><p>use <code>.clone</code> to return the a copy of <code>start-date</code> object. should not return mutable object itself.</p><p>use <code>java.text.SimpleDateFormat.</code> to format the time.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>def </span>end-of-days (take <span style=color:#ae81ff>3</span> (drop <span style=color:#ae81ff>353</span> (<span style=color:#a6e22e>daily-from-year</span> <span style=color:#ae81ff>2012</span>))))
+(<span style=color:#66d9ef>def </span>cal-format (<span style=color:#a6e22e>java.text.SimpleDateFormat.</span> <span style=color:#e6db74>&#34;EEE M/d/yyyy&#34;</span>))
+(map <span style=color:#f92672>#</span>(<span style=color:#a6e22e>.format</span> cal-format (<span style=color:#a6e22e>.getTime</span> %)) end-of-days)
+
+</code></pre></div><ul><li><p>default year</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>daily-from-year [<span style=color:#f92672>&amp;</span> [start-year]]
+  (<span style=color:#66d9ef>let </span>[start-date (<span style=color:#a6e22e>java.util.GregorianCalendar.</span> (or start-year <span style=color:#ae81ff>1970</span>)
+                         <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span>)]
+    (<span style=color:#a6e22e>repeatedly</span>
+      (<span style=color:#66d9ef>fn </span>[]
+    (<span style=color:#a6e22e>.add</span> start-date java.util.Calendar/DAY_OF_YEAR <span style=color:#ae81ff>1</span>)
+    (<span style=color:#a6e22e>.clone</span> start-date) ))))
+
+</code></pre></div><p>& [ start-year] to take optional param. <code>or</code> returns the first non-nil arg.</p></li></ul></li></ul><ul><li><p>Relative Dates</p><p><code>clj-time.core/ago</code> and <code>from-now</code> works like <code>minus</code> and <code>plus</code>
+<code>(-> 1 t/days t/ago)</code> means 1 days ago.</p></li></ul><ul><li><p>timezone</p><p><code>t/time-zone-for-id "America/Los_Angeles"</code>
+<code>t/from-time-zone UTC-time la-tz</code> tranlate UTC-time from UTC to the <code>la-tz</code> timezone.
+<code>clj-time.local</code> provides functions to work with the machine local time.</p></li></ul></li></ul><h3 id=composite-datas>Composite datas</h3><h4 id=good-properties>good properties</h4><ul><li><p>immutability</p><p>all data contents are &ldquo;value&rdquo; that can&rsquo;t be changed.
+good for concurrent and parallel programming.</p></li></ul><ul><li><p>persistence</p><p>only the modified part will be stored.
+efficient.</p></li></ul><ul><li>sequence abstraction</li></ul><h4 id=list>List</h4><ul><li><p>creating list</p><ul><li><p>ways:</p><ol><li><code>'(1 x)</code>
+everything is not evaluated.
+<code>'()</code> is better for a empty list.</li><li><code>(list 1 x :2)</code>
+everything is evaluated.</li></ol></li></ul><ul><li><p>list / vector</p><p>list works better when need a data structure efficient at insertions at beginning.
+vector is better in other things. appending to the end. look-up.</p></li></ul></li></ul><ul><li><p>conversion into list</p><ol><li><code>(apply list [1 2 3])</code>
+(1 2 3)</li><li><code>(into '() [1 2 3 4 5])</code>
+(5 4 3 2 1)
+faster. 2 time.</li></ol></li></ul><ul><li><p>add item to list</p><ol><li><code>(conj (list 1 2 3) 4)</code>
+(4 1 2 3)</li></ol><ul><li><p>cons and conj in clojure</p><p><code>cons</code> guarantees that the item is added at the front.
+<code>cons</code> return a sequence, not a persistentlist.
+<code>cons</code> return a cons cell</p></li></ul></li></ul><ul><li><p>deleting item from list</p><ol><li><code>(pop '(1 2 3))</code></li><li><code>(rest '(1 2 3))</code></li></ol></li></ul><ul><li><p>test for list</p><ol><li><code>list?</code>
+test for clojure.lang.IPersistentList</li><li><code>seq?</code> better
+test for clojure.lang.ISeq</li></ol></li></ul><h4 id=vector>Vector</h4><ul><li><p>create vector</p><ol><li><code>[1 2 3]</code></li><li><code>(vector 1 2 3)</code></li><li><code>(vec '(1 2 3))</code> readable</li><li><code>(into [] '(1 2 3))</code> 30% faster</li></ol></li></ul><ul><li><p>adding to vector</p><ol><li><code>(conj [1 2 3] 4)</code>
+[1 2 3 4]</li><li><code>(assoc [:a :b :c] 3 :x)</code>
+[:a :b :c :x]</li></ol></li></ul><ul><li><p>removing from a vector</p><ol><li><code>(pop [1 2 3 4])</code> end
+[1 2 3]</li><li><code>(subvec [:a :b :c :d] 1)</code> beginning
+[:b :c :d]
+subvec take a subvector from 1 to &ldquo;"(optional;end if not given).</li></ol><p>drop/rest are sequence operation, not guaranteed for a vector return value.</p></li></ul><ul><li><p>Value at Index</p><ol><li><code>(nth [:a :b :c] 2)</code> sequential nature<ol><li>out of bounds -> exception
+<code>(nth [:a :b :c] 4 :not-found)</code> will give :not-found when out of bounds.</li></ol></li><li>use vector name.
+<code>(def v [:a :b :c])</code>
+<code>(v 2)</code> -> :c</li><li><code>(get [:a :b :c] 2)</code> indexed
+-> :c
+associative interface with integer indexes as keys.
+return nil when out of bounds. also take the not-found param.</li></ol><ul><li><p>choice</p><ul><li>which way make the code most evident</li><li>the nature of data being a sequence(nth), or just stored as a vector(get)?</li><li>want a <code>nil</code> or a exception when failed?</li></ul></li></ul></li></ul><ul><li><p>Setting Value at index</p><p><code>(assoc [:a :b :c] 1 :x)</code>
+<code>(assoc [:a :b :c] 1 :x 2 :y)</code></p></li></ul><h4 id=set>Set</h4><p>have a collection of values, only concerned with the distinct values. lookup very fast (O(1))</p><ul><li><p>Creating a set</p><ol><li>use set literal.
+<code>#{:a :b :c}</code></li><li><code>(hash-set :a :b :c)</code>
+<code>(apply hash-set :a [:b :c])</code></li><li><code>set</code> on another collectoin
+<code>(set "hello") -> #{\e \h \l \o}</code></li><li><code>(into #{} [:a :b :c])</code> faster</li><li><code>(sorted-set 1 2 3)</code>
+in ascending order using compare
+sorted set elements must be comparable.
+<code>(sorted-set-by > 1 2 3)</code> specify the comparator for this sorted set. will be preserved in adding/removing objects</li></ol><p>Between hash set and sorted set:</p><ul><li>hash set
+hash tables<ul><li>constant lookup/insert</li><li>larger space</li></ul></li><li>sorted set
+balanced red-black binary tree<ul><li>less space</li><li>slower lookup/insert</li></ul></li></ul></li></ul><ul><li><p>Adding/removing items</p><ul><li>Adding<ol><li><code>into</code></li><li><code>(conj #{:a :b :C} :d)</code></li></ol></li><li>removing<ol><li><code>(disj) #{:a :b :c} :b :c)</code></li></ol></li></ul><p>Other useful functions in <code>clojure.set</code> namespace like <code>union</code> , <code>difference</code></p></li></ul><ul><li><p>test set membership</p><ol><li><p><code>(contains? #{:red :white} :blue)</code>
+-> true/false</p></li><li><p><code>(get #{:red :white} :blue)</code>
+-> :blue/nil/third-arg</p></li><li><p><code>(my-set :blue)</code>
+:blue/nil</p><p>the ability of set-as-function could be used as <strong>predicate</strong>.
+<code>(filter #{1 2 3} (repeatedly #(rand-int 10)))</code></p></li><li><p><code>(:blue my-set)</code>
+:blue/nil/third-arg
+only keywords.</p></li></ol></li></ul><ul><li><p>set operations</p><p>all in <code>clojure.set</code> namespace</p><ul><li><code>union</code> take any number of sets. return the union.</li><li><code>intersection</code> take any number of sets. return the intersection</li><li><code>difference</code> return the set of the first arg without elements from additional args.</li><li><code>subset?</code> return true when 1st arg is subset of 2nd arg.</li><li><code>superset?</code> work the same.</li></ul></li></ul><ul><li><p><code>set</code> func</p><p><code>(set col)</code> return a set version of col.
+when use <code>(into [] (set col1))</code>, the result would be just unique items like [:a :b].</p></li></ul><h4 id=map>Map</h4><ul><li><p>creating</p><ul><li><p>use literal</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>{<span style=color:#e6db74>:name</span> <span style=color:#e6db74>&#34;&#34;</span>, <span style=color:#e6db74>:class</span> <span style=color:#e6db74>:barbarian</span>
+ <span style=color:#e6db74>:race</span> <span style=color:#e6db74>:half-orc</span>}
+</code></pre></div></li><li><p>array-map, hash-map, soted-map function.</p></li><li><p><code>sorted-map-by</code> for a custom comparator</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(sorted-map-by <span style=color:#f92672>#</span>(&lt; (count %1) (count %2))
+           <span style=color:#e6db74>&#34;pigs&#34;</span> <span style=color:#ae81ff>14</span>
+           <span style=color:#e6db74>&#34;horses&#34;</span> <span style=color:#ae81ff>2</span>
+           <span style=color:#e6db74>&#34;elephants&#34;</span> <span style=color:#ae81ff>1</span>
+           <span style=color:#e6db74>&#34;manatees&#34;</span> <span style=color:#ae81ff>3</span>)
+<span style=color:#75715e>;; -&gt; {&#34;pigs&#34; 14, &#34;horses&#34; 2, &#34;manatees&#34; 3, &#34;elephants&#34; 1}</span>
+</code></pre></div></li><li><p>types</p><ul><li><p>Array maps
+backed with a array</p></li><li><p>Hash maps
+fast loopup and insertion</p></li></ul></li></ul></li></ul><ul><li><p>retrieve value</p><ol><li><code>(get map :name)</code>
+value/nil or default</li><li><code>(:name map)</code> maps as objects, keys as fileds
+keywords implement the IFn interface.
+value/nil or default</li><li><code>(character :name)</code> nil
+the set name charactre.
+value/nil or default</li><li><code>(get-in themap [:weapon :damage])</code>
+value/nil or default
+works with any associative data structure.
+<code>(get-in [{},{},{}] [1 :class])</code></li></ol></li></ul><ul><li><p>retrieving multiple values</p><ul><li><code>(select-keys col [keys])</code> for all kinds of keys
+return a sub-map of col containing only the [keys].
+use <code>vals</code> to get all vals of the submap.
+if only wants the vals, the approach is good</li><li><code>((juxt key1 key2) col)</code> when order matters
+<code>((juxt a b c) x) => [(a x) (b x) (c x)]</code>
+won&rsquo;t work if the key is not a function.</li><li><code>(juxt #(get % "a") #(get % "b"))</code> for all kinds of keys</li></ul></li></ul><ul><li><p>change keys</p><p>the value of the map is <code>immutable</code>&ndash;the <code>(dissoc book :name)</code> won&rsquo;t change the map <code>book</code>. Use def to assign value to it.</p><ul><li><code>assoc col key val</code> add/change the val of the key</li><li><code>dissoc col key</code> delete key</li><li><code>update col key fn args</code> change the key with a function with previous val.</li><li><code>update-in,assoc-in col [keypath]</code> change the map within layers of maps.</li></ul><p><a href=~/playground/clojure-cookbook/02_composite-data/2-18_setting-keys.asciidoc>something bout atom</a> <a href=/braindump/main/20220202160057-states/>states</a></p></li></ul><ul><li><p>use map as seq</p><ul><li><code>seq</code> to transform the map into seq
+([][][])</li><li><code>conj m [:c 3]</code></li><li><code>into</code> uses <code>conj</code></li><li><code>zipmap [:a :b :c] [1 2 3]</code></li><li><code>(find map key)</code>
+gives entry [:name &ldquo;keanu&rdquo;]
+no default value. nil.<ul><li>gives <code>MapEntry</code> object
+(key entry) and (val entry)</li></ul></li></ul></li></ul><ul><li><p>apply fn to map</p><ul><li>key/val
+use <code>vals</code> and <code>keys</code> to extract the vals/keys and <code>zipmap</code> to combine them.</li><li>key & val<ul><li>use <code>into</code> create a new map. <code>(map f col)</code> to use the key/val pair as args of <code>f</code>. Could use <code>(key entry)</code> to extract key/val of a particular entry.</li><li><code>reduce-kv</code> goes along the map.
+f(0,k1,v1)=f1, f(f1,k2,v2)=f2, &mldr;&mldr; , f(fn-1,kn,vn)=fn -> return.
+<a href=~/playground/clojure-cookbook/02_composite-data/2-21_applying-functions-to.asciidoc>file:~/playground/clojure-cookbook/02_composite-data/2-21_applying-functions-to.asciidoc</a></li></ul></li></ul></li></ul><ul><li><p>multiple values for a key</p><p><a href=~/playground/clojure-cookbook/02_composite-data/2-22_multiple-values/2-22_multiple-values.asciidoc>cookbook ref</a></p></li></ul><ul><li><p>combine maps</p><ul><li><p><code>merge</code> for no key in common
+same keys&rsquo; value would be overwritten with the rightmost map with the key.</p></li><li><p><code>merge-with</code> for key in common
+would apply f to the same key&rsquo;s values.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>def </span>Alice {<span style=color:#e6db74>:loves</span> <span style=color:#f92672>#</span>{<span style=color:#e6db74>:clojure</span> <span style=color:#e6db74>:lisp</span> <span style=color:#e6db74>:scheme</span>} <span style=color:#e6db74>:hates</span> <span style=color:#f92672>#</span>{<span style=color:#e6db74>:fortran</span> <span style=color:#e6db74>:c</span> <span style=color:#e6db74>:c++</span>}})
+(<span style=color:#66d9ef>def </span>Bob   {<span style=color:#e6db74>:loves</span> <span style=color:#f92672>#</span>{<span style=color:#e6db74>:clojure</span> <span style=color:#e6db74>:scheme</span>}       <span style=color:#e6db74>:hates</span> <span style=color:#f92672>#</span>{<span style=color:#e6db74>:c</span> <span style=color:#e6db74>:c++</span> <span style=color:#e6db74>:algol</span>}})
+(<span style=color:#66d9ef>def </span>Ted   {<span style=color:#e6db74>:loves</span> <span style=color:#f92672>#</span>{<span style=color:#e6db74>:clojure</span> <span style=color:#e6db74>:lisp</span> <span style=color:#e6db74>:scheme</span>} <span style=color:#e6db74>:hates</span> <span style=color:#f92672>#</span>{<span style=color:#e6db74>:algol</span> <span style=color:#e6db74>:basic</span> <span style=color:#e6db74>:c</span> <span style=color:#e6db74>:c++</span> <span style=color:#e6db74>:fortran</span>}})
+
+(merge-with clojure.set/intersection Alice Bob Ted)
+<span style=color:#75715e>;; -&gt; {:loves #{:scheme :clojure}, :hates #{:c :c++}}</span>
+
+</code></pre></div><p>a deep-merge-with that goes with nested map</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#75715e>;; Copied verbatim from the defunct clojure-contrib (http://bit.ly/deep-merge-with)</span>
+(<span style=color:#66d9ef>defn </span>deep-merge-with [f <span style=color:#f92672>&amp;</span> maps]
+  (<span style=color:#a6e22e>apply</span>
+   (<span style=color:#66d9ef>fn </span>m [<span style=color:#f92672>&amp;</span> maps]
+     (<span style=color:#66d9ef>if </span>(every? map? maps)
+       (apply merge-with m maps)
+       (apply f maps)))
+   maps))
+
+(<span style=color:#a6e22e>deep-merge-with</span> + {<span style=color:#e6db74>:foo</span> {<span style=color:#e6db74>:bar</span> {<span style=color:#e6db74>:baz</span> <span style=color:#ae81ff>1</span>}}}
+         {<span style=color:#e6db74>:foo</span> {<span style=color:#e6db74>:bar</span> {<span style=color:#e6db74>:baz</span> <span style=color:#ae81ff>6</span> <span style=color:#e6db74>:qux</span> <span style=color:#ae81ff>42</span>}}})
+<span style=color:#75715e>;; -&gt; {:foo {:bar {:qux 42, :baz 7}}}</span>
+----
+
+</code></pre></div><p><a href=~/playground/clojure-cookbook/02_composite-data/2-23_combining-maps.asciidoc>cookbook-ref</a></p></li></ul></li></ul><ul><li><p>compare and sorting values</p><p><code>clojure.core</code> functions <code>compare</code> and <code>sort</code></p><ul><li><code>sort predicate col</code> could specify predicate.
+the predicate should return true only when the 1st arg should be before the 2nd arg.</li></ul></li></ul><h4 id=custom-data-structure>custom data structure</h4><h4 id=interfaces>interfaces</h4><ul><li><p>contains?</p><p>the <code>(contains? col key)</code> funciton would return if the key mentioned is contained in the collection. <code>contains?</code> is a lookup function, meaning that it does not work on lists, and communicate with the associative interface, like vector, the key would refer to the <code>index</code></p></li></ul><h3 id=testing>testing</h3><h4 id=do-lazyseq>do lazyseq</h4><p><code>(doall (range 1e5))</code></p><h4 id=record-time>record time</h4><p><code>(time expr)</code></p><p>example: <code>(def largeseq (doall (range 1e5)))</code>
+<code>(time (dotimes [_ 100] (set largeseq)))</code></p><h3 id=general-computing>General computing</h3><h4 id=running-the-clojure>running the clojure</h4><p>download from <a href=http://clojure.org/downloads>http://clojure.org/downloads</a> a release of clojure-x.x.x.jar, and</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>java -cp <span style=color:#e6db74>&#34;clojure-x.x.x.jar clojure.main
+</span></code></pre></div><p>then the clojure repl would be running in the terminal.</p><h4 id=man>Man</h4><p><code>doc</code> , <code>source</code> and <code>find-doc</code> (which takes regular expr.)
+could use <code>sourc</code> to read clojure.core to learn coding.</p><h4 id=exploring-namesapces>EXPLORING NAMESAPCES</h4><ul><li><code>loaded-libs</code> to see a set of currently loaded namespaces</li><li><code>dir</code> to print the public vars in a namespace</li><li><code>ns-publics</code> to have a mapping of symbols to public vars in a namespace</li></ul><h4 id=trying-a-library>trying a library</h4><p>with leiningen 2.1.3 or later,
+Then edit your ~/.lein/profiles.clj file, adding `[lein-try &ldquo;0.4.1&rdquo;]`
+to the <code>:plugins</code> vector of the <code>:user</code> profile:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>{<span style=color:#e6db74>:user</span> {<span style=color:#e6db74>:plugins</span> [[lein-try <span style=color:#e6db74>&#34;0.4.1&#34;</span>]]}}
+
+</code></pre></div><h4 id=running-clojure-programs>running clojure programs</h4><ul><li><p>use <code>clojure scriptpath</code></p></li><li><p>use <code>java</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=color:#75715e># symple call</span>
+java -cp clojure.jar clojure.main my_clojure_program.clj
+<span style=color:#75715e># call with a specified namespace&#39; main. the script being in src.com/example/my_program.clj</span>
+java -cp clojure.jar:src clojure.main --main com.example.my-program
+</code></pre></div></li></ul><ul><li><p>entry point <code>-main</code> function</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#75715e>;; src/com/example/my_program.clj</span>
+(<span style=color:#66d9ef>ns </span>com.example.my-program)
+(<span style=color:#66d9ef>defn </span>-main [<span style=color:#f92672>&amp;</span>args]
+  (println <span style=color:#e6db74>&#34;Hey!&#34;</span>))
+</code></pre></div><p><code>*command-line-args*</code> is a <code>clojure.lang.ArraySeq</code> object variable containing args from the command line interface.
+it&rsquo;s content is the same as <code>[&args]</code></p></li></ul><ul><li><p>writing in namespaces</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>ns </span>foo <span style=color:#75715e>;;the namespace that is being written</span>
+  (<span style=color:#e6db74>:require</span> foo.util)) <span style=color:#75715e>;; the namespace required</span>
+</code></pre></div><p>util namespace is written in <code>/foo/util.clj</code>.</p></li></ul><h4 id=running-clojure-program-from-command-line>running clojure program from command line</h4><p>using <code>leiningen</code>&rsquo;s <code>lein run</code> to quickly start the program from command line.</p><ol><li><code>lein new project_name</code>
+this will create a folder in the present directory with name <code>project_name</code>. Inside will be several files and folders pre-created for the new project.</li><li>Configure <code>project_name/project.clj</code>
+add <code>:main sth</code> to the end of the <code>defproject</code> function.
+<code>sth</code> will specify the main function the <code>lein run</code> command will start at.<ul><li><code>my-cli.core</code> indicate <code>my-cli.core/-main</code></li><li><code>my-cli.core/sthelse</code> indicate <code>my-cli.core/sthelse</code></li></ul></li></ol><h4 id=parsing-command-line-arguments>parsing command-line arguments</h4><p>This chapter is no good. could use a rewrite. Or I can get it from other sources</p><p>the <code>(parse-opts args app-specs)</code> function takes to vectors.</p><ul><li>the <code>args</code> vector is the input arguments.</li><li>the <code>app-specs</code> vector is the specification of the options<ul><li>:default the default value of the option</li><li>:default-desc</li><li>:parse-fn</li><li>:assoc-fn</li><li>:validate the function that returns false when value off the limit</li></ul></li></ul><p>the <code>(parse-opts args app-specs)</code> returns a map. <code>{:count 4, :verbose true}</code> like</p><p>the <code>app-specs</code> vector contains vectors of options.
+<code>["-n" "--count COUNT" :default 5]</code>, where <code>-n</code> stands for a shortcut, <code>--count=</code> stands for a option, which will appear in the returning map as keyword key <code>:count</code>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>  <span style=color:#75715e>;;the app-specs should look like this.</span>
+  (<span style=color:#66d9ef>def </span>app-specs [[<span style=color:#e6db74>&#34;-n&#34;</span> <span style=color:#e6db74>&#34;--count COUNT&#34;</span> <span style=color:#e6db74>:default</span> <span style=color:#ae81ff>5</span>
+				  <span style=color:#e6db74>:default-desc</span> <span style=color:#e6db74>&#34;FIVE&#34;</span>
+				  <span style=color:#e6db74>:parse-fn</span> <span style=color:#f92672>#</span>(<span style=color:#a6e22e>Integer.</span> %)
+				  <span style=color:#e6db74>:assoc-fn</span> assoc-max
+				  <span style=color:#e6db74>:validate</span> [<span style=color:#f92672>#</span>(&lt; % <span style=color:#ae81ff>100</span>) <span style=color:#e6db74>&#34;Reached the maximum.&#34;</span>]]
+		  [<span style=color:#e6db74>&#34;-v&#34;</span> nil <span style=color:#e6db74>:long-opt</span> <span style=color:#e6db74>&#34;--verbose&#34;</span>
+			   <span style=color:#e6db74>:default</span> false]])
+
+(<span style=color:#66d9ef>defn </span>-main [<span style=color:#f92672>&amp;</span> args]
+  (<span style=color:#66d9ef>let </span>[{<span style=color:#e6db74>:keys</span> [options arguments summary errors]}
+	(<span style=color:#a6e22e>parse-opts</span>
+	 args
+	 [[<span style=color:#e6db74>&#34;-h&#34;</span> <span style=color:#e6db74>&#34;--help&#34;</span> <span style=color:#e6db74>&#34;Print this help&#34;</span> <span style=color:#e6db74>:default</span> false]])]
+    (when (<span style=color:#e6db74>:help</span> options)
+      (println summary))))
+
+<span style=color:#75715e>;; Simulate entry into -main at the command line</span>
+(<span style=color:#a6e22e>-main</span> <span style=color:#e6db74>&#34;-h&#34;</span>)
+<span style=color:#75715e>;; *out*</span>
+<span style=color:#75715e>;;   -h, --help  Print this help</span>
+
+</code></pre></div><p><a href=~/playground/clojure-cookbook/03_general-computing/3-07_parse-command-line-arguments.asciidoc>file:~/playground/clojure-cookbook/03_general-computing/3-07_parse-command-line-arguments.asciidoc</a></p><h4 id=lein-templates>lein templates</h4><p>leiningen could make folders. write files.
+<a href=~/playground/clojure-cookbook/03_general-computing/3-08_lein-templates.asciidoc>lein templates</a></p><h4 id=polymorphism>polymorphism</h4><ul><li><p>with <code>cond</code> or <code>condp</code>. small/prototypeing
+pass a map in, and specify the type in <code>:type</code> key/val pair.</p></li><li><p>with protocol. fast only single dispatch</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>    <span style=color:#75715e>;; Define the &#34;shape&#34; of a Shape object</span>
+    (<span style=color:#66d9ef>defprotocol </span>Shape
+      (<span style=color:#a6e22e>area</span> [s] <span style=color:#e6db74>&#34;Calculate the area of a shape&#34;</span>)
+      (<span style=color:#a6e22e>perimeter</span> [s] <span style=color:#e6db74>&#34;Calculate the perimeter of a shape&#34;</span>))
+
+    <span style=color:#75715e>;; Define a concrete Shape, the Rectangle</span>
+    (<span style=color:#66d9ef>defrecord </span>Rectangle [length width]
+      Shape
+      (<span style=color:#a6e22e>area</span> [this] (* length width))
+      (<span style=color:#a6e22e>perimeter</span> [this] (+ (* <span style=color:#ae81ff>2</span> length)
+               (* <span style=color:#ae81ff>2</span> width))))
+
+    (<span style=color:#a6e22e>-&gt;Rectangle</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>4</span>)
+    <span style=color:#75715e>;; -&gt; #user.Rectangle{:length 2, :width 4}</span>
+
+    (<span style=color:#a6e22e>area</span> (<span style=color:#a6e22e>-&gt;Rectangle</span> <span style=color:#ae81ff>2</span> <span style=color:#ae81ff>4</span>))
+    <span style=color:#75715e>;; -&gt; 8</span>
+
+
+<span style=color:#75715e>;; Calculate the area of a rectangle without defining a record</span>
+(<span style=color:#a6e22e>area</span>
+  (<span style=color:#66d9ef>let </span>[b <span style=color:#ae81ff>2</span>
+	h <span style=color:#ae81ff>3</span>]
+    (<span style=color:#a6e22e>reify</span> Shape
+      (<span style=color:#a6e22e>area</span> [this] (* b h))
+      (<span style=color:#a6e22e>perimeter</span> [this] (* <span style=color:#ae81ff>2</span> (+ b h))))))
+<span style=color:#75715e>;; -&gt; 6</span>
+
+
+</code></pre></div><p>between <code>defrecord</code> and <code>deftype</code>,
+Is your class modeling a domain value&ndash;thus benefiting from hash map like functionality and semantics? Use <code>defrecord</code>.
+Do you need to define mutable fields? Use <code>deftype</code>.
+<code>extend</code> family (<code>extend, extend-type, extend-protocol</code>) define implementations for existing types</p></li></ul><ul><li><p>with <code>defn</code>
+like the way <code>+</code> is implemented</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=color:#75715e>;;user&gt; (source +)</span>
+(<span style=color:#66d9ef>defn </span>+
+  <span style=color:#e6db74>&#34;Returns the sum of nums. (+) returns 0. Does not auto-promote
+</span><span style=color:#e6db74>  longs, will throw on overflow. See also: +&#39;&#34;</span>
+  {<span style=color:#e6db74>:inline</span> (<span style=color:#a6e22e>nary-inline</span> <span style=color:#e6db74>&#39;add</span> <span style=color:#e6db74>&#39;unchecked_add</span>)
+   <span style=color:#e6db74>:inline-arities</span> &gt;1?
+   <span style=color:#e6db74>:added</span> <span style=color:#e6db74>&#34;1.2&#34;</span>}
+  ([] <span style=color:#ae81ff>0</span>)
+  ([x] (cast Number x))
+  ([x y] (<span style=color:#66d9ef>. </span>clojure.lang.Numbers (<span style=color:#a6e22e>add</span> x y)))
+  ([x y <span style=color:#f92672>&amp;</span> more]
+   (<span style=color:#a6e22e>reduce1</span> + (+ x y) more)))
+</code></pre></div></li><li><p>with <code>difmfulti</code> extensible, slow</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defmulti </span>area
+  <span style=color:#e6db74>&#34;calculating area of a shape&#34;</span>
+  (<span style=color:#66d9ef>fn </span>[shape] <span style=color:#75715e>;a dispatch function</span>
+    (<span style=color:#e6db74>:shape</span> shape))
+  <span style=color:#e6db74>:default</span> <span style=color:#e6db74>:triangle</span> <span style=color:#75715e>;the default path</span>
+  )
+
+(<span style=color:#66d9ef>defmethod </span>area <span style=color:#e6db74>:triangle</span> [shape]
+  (<span style=color:#a6e22e>expr</span>)
+  )
+</code></pre></div><p>slow.</p></li></ul><p>use returning vector to make multi-factor polymorphism, like <code>convert</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defmulti </span>convert
+  <span style=color:#e6db74>&#34;Convert a thing from one type to another&#34;</span>
+  (<span style=color:#66d9ef>fn </span>[request thing]
+    [(<span style=color:#e6db74>:input-format</span> request) (<span style=color:#e6db74>:output-format</span> request)])) <span style=color:#75715e>; &lt;1&gt;</span>
+
+(<span style=color:#a6e22e>require</span> <span style=color:#e6db74>&#39;clojure.edn</span>)
+(<span style=color:#66d9ef>defmethod </span>convert [<span style=color:#e6db74>:edn-string</span> <span style=color:#e6db74>:clojure</span>] <span style=color:#75715e>;                &lt;2&gt;</span>
+  [_ str]
+  (<span style=color:#a6e22e>clojure.edn/read-string</span> str))
+
+(<span style=color:#a6e22e>require</span> <span style=color:#e6db74>&#39;clojure.data.json</span>)
+(<span style=color:#66d9ef>defmethod </span>convert [<span style=color:#e6db74>:clojure</span> <span style=color:#e6db74>:json</span>] <span style=color:#75715e>;                      &lt;3&gt;</span>
+  [_ thing]
+  (<span style=color:#a6e22e>clojure.data.json/write-str</span> thing))
+
+</code></pre></div><h4 id=extend-built-in-types>extend built-in types</h4><p>also a need for polymorphism.
+when want to give built-in type, like <code>String</code> some more functions,</p><ul><li><p><code>extend-type</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defprotocol </span>Person
+  <span style=color:#e6db74>&#34;Represents the name of a person.&#34;</span>
+  (<span style=color:#a6e22e>first-name</span> [person])
+  (<span style=color:#a6e22e>last-name</span> [person]))
+
+(<span style=color:#a6e22e>extend-type</span> String
+  Person
+  (<span style=color:#a6e22e>first-name</span> [s] (first (<span style=color:#a6e22e>clojure.string/split</span> s <span style=color:#f92672>#</span><span style=color:#e6db74>&#34; &#34;</span>)))
+  (<span style=color:#a6e22e>last-name</span> [s] (second (<span style=color:#a6e22e>clojure.string/split</span> s <span style=color:#f92672>#</span><span style=color:#e6db74>&#34; &#34;</span>))))
+
+(<span style=color:#a6e22e>first-name</span> <span style=color:#e6db74>&#34;john&#34;</span>)
+<span style=color:#75715e>;; -&gt; &#34;john&#34;</span>
+
+(<span style=color:#a6e22e>last-name</span> <span style=color:#e6db74>&#34;john smith&#34;</span>)
+<span style=color:#75715e>;; -&gt; &#34;smith&#34;</span>
+
+</code></pre></div></li><li><p><code>extend</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>first-word [s]
+  (first (<span style=color:#a6e22e>clojure.string/split</span> s <span style=color:#f92672>#</span><span style=color:#e6db74>&#34; &#34;</span>)))
+
+(<span style=color:#66d9ef>defn </span>second-word [s]
+  (second (<span style=color:#a6e22e>clojure.string/split</span> s <span style=color:#f92672>#</span><span style=color:#e6db74>&#34; &#34;</span>)))
+
+(<span style=color:#a6e22e>extend</span> String
+  Person
+  {<span style=color:#e6db74>:first-name</span> first-word
+   <span style=color:#e6db74>:last-name</span> second-word})
+
+
+</code></pre></div></li></ul><h4 id=core-async>core async</h4><p>when need seperate consumers and producers by introducing explicit queues between them.
+without asynchronous queue, any slow consumer would slow down the whole pipeline.</p><p>use channels. can&rsquo;t get the library now, later</p><h3 id=libraries>Libraries</h3><h4 id=library-not-found-dot>library not found.</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>Failed to resolve version <span style=color:#66d9ef>for</span> ring:ring:jar:RELEASE: Could not find metadata ring:ring/maven-metadata.xml in local <span style=color:#f92672>(</span>/Users/hermanhe/.m2/repository<span style=color:#f92672>)</span>
+Failed to read artifact descriptor <span style=color:#66d9ef>for</span> ring:ring:jar:RELEASE
+This could be due to a typo in :dependencies, file system permissions, or network issues.
+If you are behind a proxy, try setting the <span style=color:#e6db74>&#39;http_proxy&#39;</span> environment variable.
+Could not resolve dependencies
+</code></pre></div><p>such warning would arise when sometime the library your trying to use was not found. sometimes you just type in the wrong name, like <code>clojure.tools.cli</code> instead of the correct <code>org.clojure/tools.cli</code></p><h3 id=web-development>Web development</h3><h4 id=base>Base</h4><p>Browser -> HTTP Server -> Ring -> Ring Middleware -> Compojure -> Fns
+Compojure takes uri and</p><h4 id=json-support>json support</h4><p>use <code>wrap-json</code> family under <code>ring-json</code> to add wrapper from <code>app-routes</code> to</p><h4 id=standalone>standalone</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>lein uberjar
+java -jar xxxxxxxxxx.jar
+</code></pre></div><h2 id=my-prob-sol>My Prob/Sol</h2><h3 id=making-csv-from-x-1-y-2-x-2-y-3>making csv from [{:x 1 :y 2} {:x 2 :y 3}]</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>save [records]
+  (<span style=color:#a6e22e>clojure.string/join</span> <span style=color:#e6db74>&#34;\n&#34;</span>  (map <span style=color:#f92672>#</span>(<span style=color:#a6e22e>clojure.string/join</span> <span style=color:#e6db74>&#34;,&#34;</span> (vals %)) records)))
+</code></pre></div><p>首先对item做，出[&ldquo;1,2&rdquo; &ldquo;2,3&rdquo;].这里是对vector的items，所以用map，对每个item map。
+然后对这个vector做，所以直接用join。</p><h3 id=filter-with-map><code>filter</code> with map</h3><p>filter treat map like nested vectors, so use <code>fisrt</code> to retrieve key, and <code>second</code> to retrieve val.</p><h3 id=nested-loop>nested loop</h3><p>if a</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>bubble-sort
+  [array]
+  (<span style=color:#66d9ef>loop </span>[arr array
+	 i <span style=color:#ae81ff>0</span>
+	 n (count array)]
+    (<span style=color:#66d9ef>if </span>(&lt; i n)
+      (<span style=color:#a6e22e>recur</span> (<span style=color:#66d9ef>loop </span>[ar arr <span style=color:#75715e>;; loop in recur.</span>
+		   j (- n <span style=color:#ae81ff>1</span>)]
+	      (<span style=color:#66d9ef>if </span>(&gt; j i)
+		(<span style=color:#a6e22e>recur</span>
+		 (<span style=color:#66d9ef>if </span>(&gt; (<span style=color:#a6e22e>ar</span> (dec j)) (<span style=color:#a6e22e>ar</span> j))
+		   (assoc ar j (<span style=color:#a6e22e>ar</span> (dec j)) (dec j) (<span style=color:#a6e22e>ar</span> j))
+		   ar)
+		 (dec j))
+		ar)
+	      )
+	    (inc i)
+	    n)
+     arr)
+    ))
+</code></pre></div><h2 id=smart-asses>Smart-asses</h2><p>用300000000来测试到底有多快
+from 4clojure and project euler</p><h3 id=last-without-last>last without last</h3><p><code>Reduce is the fastest in this kind of task</code>
+find the last element of a sequence without using <code>last</code></p><ul><li>last: 952 msecs</li><li>fisrt reverse: 174 msecs</li><li>reduce (fn [a b] b): 38 msecs
+but with very large set, reduce works better than nth</li><li>recur: 70 msecs</li><li>(fn <input checked disabled type=checkbox> (nth x (dec (count x)))): 12 msecs
+count is timeless</li></ul><h3 id=count-without-count>Count without Count</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(reduce (<span style=color:#66d9ef>fn </span>[l n] (+ l <span style=color:#ae81ff>1</span>)) <span style=color:#ae81ff>0</span> col)
+</code></pre></div><h2 id=utilities>Utilities</h2><h3 id=yasnippets>Yasnippets</h3><h4 id=usable>Usable</h4><ul><li>bench: test time</li><li>def/defm/defr/deft: def ,macro, func, record, type</li><li>doseq</li><li>fn</li><li>for</li><li>if/ifl</li><li>let/letfn</li><li>map</li><li>map lambda</li><li>pr</li><li>print</li><li>reduce</li><li>require</li><li>try</li><li>use</li><li>when/whenl</li><li>cond/condp</li><li>main</li><li>->/->></li></ul><h4 id=i-don-t-understand>I don&rsquo;t understand</h4><ul><li>import</li><li>is</li><li>mdoc</li><li>ns</li><li>opts</li><li>test</li><li>com</li><li>fdef</li><li>sdef</li><li>skeys</li><li>testing</li></ul><h2 id=questions>Questions</h2><h3 id=w>[\W]</h3><p>why [\W] turned into &ldquo;[\\W]&rdquo;
+#+begin_src clojure
+(str &ldquo;John&rdquo; [\W] " " &ldquo;de&rdquo;)
+;;-> &ldquo;John[\\W] de&rdquo;
+#+end_src></p><h3 id=robovm-and-clojureclr-for-ios-and-windows-phone>RoboVM and ClojureCLR for IOS and Windows Phone?</h3><h3 id=how-to-iterate-reduce-on-2-seqs>TODO How to iterate/reduce on 2 seqs?</h3></div><div class=bl-section><h4>Links to this note</h4><div class=backlinks><ul><li><a href=/braindump/daily/2022-03-05/>2022-03-05</a></li><li><a href=/braindump/main/20211102001428-engineer/>Engineer</a></li><li><a href=/braindump/main/20220301151624-programming_languages/>Programming Languages</a></li></ul></div></div></div></div></div><script src=https://hermanhel.github.io/braindump/js/URI.js type=text/javascript></script><script src=https://hermanhel.github.io/braindump/js/page.js type=text/javascript></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></body></html>

@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       B67886C1-BBAB-4141-8B19-0297F7BE42BA
+:END:
+#+title: EAP121
+* ACTIVE EAP121
+* Tutoring Schedule
+** Seminar
+SCHEDULED: <2021-10-19 Tue 16:00-18:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-14 Thu 15:54]
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2021-10-14 Thu 15:54]
+:END:
+** Seminar
+SCHEDULED: <2021-10-15 Fri 17:00-19:00 +1w>
+* Tasks
+** WEEK Preview #1
+SCHEDULED: <2021-10-10 Sun  +1w>
+** WEEK Preview #2
+SCHEDULED: <2021-10-13 Wed  +1w>
+** NEXT Build the EAP121 node
+SCHEDULED: <2021-10-12 Tue 19:00-19:30>
+** NEXT Catch up with the content of EAP121 Node
+SCHEDULED: <2021-10-12 Tue 19:30-20:30>
+
+

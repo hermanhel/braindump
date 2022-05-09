@@ -1,0 +1,397 @@
+:PROPERTIES:
+:ID:       814578FE-18C2-4612-BBB9-EA33701728FB
+:CATEGORY: CPT104
+:END:
+#+title: CPT104 OS Concepts
+#+HUGO_SECTION:main
+* look up
+* MCS
+** Goals
+1. State the overall =structure and functionality= of a modern operating system and the interactions between computer hardware and user-programs.
+2. Identify the operations of the major components of an operating system, including the =device= manager, =file= manager, =memory= manager, and =process= manager.
+3. Identify the functions of system programs, including =parser= s, =compilers=, and =virtual machines=.
+4. Construct programs which demonstrate in a simple form the operation of examples of systems programs
+
+** Assesment
+| Method           | Type     | Duration |  % |
+|------------------+----------+----------+----|
+| Assesment Task 1 | CW(quiz) |          | 10 |
+| Assesment Task 2 | CW(quiz) |          | 10 |
+| Final Exam       | Exam     | 2 hour   | 80 |
+
+** syllabus
+| Week | Lecture | Topic                                   | Pre-reading |
+|    1 |         | Intro, Processes                        | Ch 1,2,3    |
+|    2 |         | Threads                                 | Ch 4        |
+|    3 |         | Process Synchronization                 | Ch 5        |
+|    4 |         | CPU Scheduling I                        | Ch 6        |
+|    5 |         | CPU SCheduling II                       | Ch 6,7      |
+|    6 |         | Deadlocks                               | Ch 7        |
+|    7 |         | Ass I                                   |             |
+|    8 |         | Main Memory                             | Ch 8        |
+|    9 |         | Virtual Memory                          | Ch 9        |
+|   10 |         | Mass Storage Systems                    | Ch 10       |
+|   11 |         | File system                             | Ch 11,12    |
+|   12 |         | I/o System                              | Ch 13       |
+|   13 |         | Protection and Security + Ass II        | Ch 14,15    |
+|   14 |         | Virtual Machines and Distributed System | Ch 16,17    |
+
+** comparing syllabuses
+
+*** kent
++ Overview of operating systems, functionalities and charateristics of OS.
++ Hardware concepts related to OS, CPU states, I/O channels, memory hierarchy, microprogramming
++ The concept of a process, operations on processes, process states, concurrent processes, process control block, process context.
++ UNIX process control and management, PCB, signals, forks and pipes.
++ Interrupt processing, operating system organisation, OS kernel FLIH, dispatcher.
++ Job and processor scheduling, scheduling algorithms, process hierarchies.
++ Problems of concurrent processes, critical sections, mutual exclusion, synchronisation, deadlock.
++ Mutual exclusion, process co-operation, producer and consumer processes.
++ Semaphores: definition, init, wait, signal operations.
++ Use of semaphores to implement mutex, process synchronisation etc., implementation of semaphores.
++ Critical regions, Conditional Critical Regions, Monitors, Ada Tasks.
++ Interprocess Communication (IPC), Message Passing, Direct and Indirect
++ Deadlock: prevention, detection, avoidance, banker's algorithm.
++ Memory organisation and management, storage allocation.
++ Virtual memory concepts, paging and segmentation, address mapping.
++ Virtual storage management, page replacemant strategies.
++ File organisation: blocking and buffering, file descriptor, directory structure
++ File and Directory structures, blocks and fragments, directory tree, inodes, file descriptors, UNIX file structure. 
+
+*** villanova
+1. Overview
+2. Processes
+3. Micro-kernel and Concurrency
+4. Deadclock
+5. Memory
+6. Scheduling
+7. I/O and Files
+8. Security
+
+* UTS
+** Deliver Plan
+*** Lectures
+**** DONE Lecture 1
+CLOSED: [2022-03-01 Tue 09:50] SCHEDULED: <2022-02-21 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-01 Tue 09:50]
+:END:
+**** DONE Lecture 2
+CLOSED: [2022-03-01 Tue 09:49] SCHEDULED: <2022-02-28 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-01 Tue 09:49]
+CLOCK: [2022-02-28 Mon 14:46]--[2022-03-01 Tue 09:28] => 18:42
+:END:
+**** DONE Lecture 3
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-07 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+**** DONE Lecture 4
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-14 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+CLOCK: [2022-03-14 Mon 14:57]--[2022-03-14 Mon 16:31] =>  1:34
+:END:
+Scheduling.criteria and algorithms.
+Chapter 6 of the book
+***** Scheduling Algorithms
+****** First in First execute
+****** Shortest time first
+****** Shortest remaining time first.
+Doing P1 for 3 ms, arrives P2, which is shorter, than do P2 first.
+
+
+**** DONE Lecture 5
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-21 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+CLOCK: [2022-03-21 Mon 14:04]--[2022-03-22 Tue 11:03] => 20:59
+:END:
+**** DONE Lecture 6
+CLOSED: [2022-03-29 Tue 09:04] SCHEDULED: <2022-03-28 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-29 Tue 09:04]
+:END:
+**** DONE Lecture 7
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-04 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+**** DONE Lecture 8
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-11 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+CLOCK: [2022-04-11 Mon 14:33]--[2022-04-11 Mon 15:42] =>  1:09
+:END:
+**** DONE Lecture 9
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-18 Mon 14:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+**** Lecture 10
+SCHEDULED: <2022-04-25 Mon 14:00>
+:LOGBOOK:
+CLOCK: [2022-04-25 Mon 14:02]--[2022-04-25 Mon 15:24] =>  1:22
+CLOCK: [2022-04-25 Mon 13:57]--[2022-04-25 Mon 13:57] =>  0:00
+:END:
+***** Secondary Storage
+****** Sequential access devices
+******* Disk speed
+******** Transfer time
+******** seek time
+******** Rotational latency
+******** Positioning time/Random access time
+******** Disk access time
+******* Disk structure
+
+****** Direct access
+**** Lecture 11
+SCHEDULED: <2022-05-02 Mon 14:00>
+**** Lecture 12
+SCHEDULED: <2022-05-09 Mon 14:00>
+**** Lecture 13
+SCHEDULED: <2022-05-16 Mon 14:00>
+*** Tutorial
+**** DONE Tutorial 1 
+CLOSED: [2022-03-01 Tue 09:50] SCHEDULED: <2022-02-24 Thu 10:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-01 Tue 09:50]
+:END:
+**** DONE Tutorial 2
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-03 Thu 10:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+**** DONE Tutorial 3 332
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-10 Thu 10:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+**** DONE Tutorial 4 3
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-17 Thu 10:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+**** DONE Tutorial 5 
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-24 Thu 10:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+**** DONE Tutorial 6 
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-03-31 Thu 10:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+**** DONE Tutorial 7 
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-07 Thu 10:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+**** DONE Tutorial 8 
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-14 Thu 10:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+**** Tutorial 9 
+SCHEDULED: <2022-04-21 Thu 10:00>
+**** Tutorial 10 
+SCHEDULED: <2022-04-28 Thu 10:00>
+**** Tutorial 11 
+SCHEDULED: <2022-05-05 Thu 10:00>
+**** Tutorial 12 
+SCHEDULED: <2022-05-12 Thu 10:00>
+**** Tutorial 13 
+SCHEDULED: <2022-05-19 Thu 10:00>
+*** Comp. Lab
+**** DONE Comp. Lab 1
+CLOSED: [2022-03-01 Tue 09:50] SCHEDULED: <2022-02-22 Tue 15:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-01 Tue 09:50]
+:END:
+an hour
+
+**** Comp. Lab 2
+
+SCHEDULED: <2022-03-01 Tue 15:00>
+an hour
+
+**** DONE Comp. Lab 3
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-08 Tue 15:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+an hour
+
+**** DONE Comp. Lab 4
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-15 Tue 15:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+an hour
+https://xjtlu.zhumu.com/j/605555028?pwd=RnpQT2hCNFlpVThjazlwV2pYY2ovUT09
+**** DONE Comp. Lab 5
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-22 Tue 15:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+CLOCK: [2022-03-22 Tue 15:09]--[2022-03-22 Tue 16:00] =>  0:51
+:END:
+an hour
+
+**** DONE Comp. Lab 6
+CLOSED: [2022-03-30 Wed 17:19] SCHEDULED: <2022-03-29 Tue 15:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-30 Wed 17:19]
+:END:
+an hour
+
+**** DONE Comp. Lab 7
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-05 Tue 15:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+an hour
+
+**** DONE Comp. Lab 8
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-12 Tue 15:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+an hour
+
+***** Linux IPC
+
+****** Signal
+
+****** Pipe
+
+****** Socket
+
+****** file locking
+
+****** message queue
+
+****** semaphore
+
+****** shared memory
+
+**** DONE Comp. Lab 9
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-19 Tue 15:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+an hour
+
+**** Comp. Lab 10
+SCHEDULED: <2022-04-26 Tue 15:00>
+an hour
+
+**** Comp. Lab 11
+SCHEDULED: <2022-05-03 Tue 15:00>
+an hour
+
+**** Comp. Lab 12
+SCHEDULED: <2022-05-10 Tue 15:00>
+an hour
+
+**** Comp. Lab 13
+SCHEDULED: <2022-05-17 Tue 15:00>
+an hour
+
+* PAS
+The System I guess contains massive self-study, reading and watching videos.
+Should go to teacher for but asking questions, not for glimpse of understanding.
+
+** THREAD The OS Textbook                                           :agenda:
+
+*** TODO Process Synchoronization
+:LOGBOOK:
+CLOCK: [2022-03-07 Mon 15:10]--[2022-03-07 Mon 16:10] =>  1:00
+:END:
+I took this before others because I didn't read before and the teachers covering this now. Plus it looks interesting.
+
+I also use it as a practice to speed reading.
+
+*** 
+
+* Wiki
+** Thread Scheduling
+*** Thread Scheduling
+**** Basic levels to schedule threads
+***** Process Contention Scope
+unbound threads, the number of threads is unlimited
+Available on the many-to-one modle
+
+The competitoin of CPU time is in threads belong ot 1 process
+***** System Contention Scope
+one-to-one modle.
+In many-to-many thread model, user thread can have either scope
+
+The competition of CPU time is in all system wide
+**** Structure of Multi-Processor OSs
+The processors share the same main memory.
+***** Seperate Kernel Configuration
+Disadvantage: parrallel execution is not possible.
+***** Matser-slave
+***** Symmetric Configureation
+****** approaches to Symmetric Configuration
++ common ready queue
++ pre-core run queues
+****** Processor Affinity
+direct a task to a specified core
+******* soft affinity
+=OSs tr= y to make a process on same processor, but no warranty
+******* Hard affinity
+allow a process to =specify a subse= t of processors
+****** Load Balancing
+when every core have their own ready queue. some may have lot of works, while others are resting.
+
+Resolve the imbalance of jobs boost performance.
+******* Push migration
+periodically(like per 200ms) check every ready queue and push process to different queues
+******* Pull migration
+When nothing to do, get process from others ready queue. Slower, but got something to run
+#+ATTR_ORG: :width 700
+[[file:20220220183600-cpt104.org_imgs/20220321_144545_dqQabY.png]]
+
+#+ATTR_ORG: :width 
+*** Multiprocessor Scheduling
+*** Multithreading
+*** Characteristics of Real-time System
+*Time* is very important
+**** Hard real-time: must meet deadline
+fatal error if not meet deadline
+**** Soft real-time: desirable but not necessary
+still make sense to schedule tasks after overdue
+**** Aperiodic tasks
+irregular arrive time
+**** Periodic tasks
+repeated, once per period T, or exactly T units apart
+*** Real-Time CPU Scheduling
+**** Static Scheduling
+prepared schedule
+**** Priority-based Scheduling
+ 
+**** Dynamic scheduling
+
+*** choosing 
+
+**** 1. Determinisitic MOdeling
+avg waiting time
+**** 2. Queueing Models
+** Contiguous Allocation
+** non-contiguous allocation
+*** segment
+**** segment address
+=0001= segment =010111001101= offset
+**** segment table
+| segment |       length |         base |
+|    0001 | 110101011011 | 000000000000 |
+|    0010 | 000101001000 | 110101011100 |
+use segemnt to find the entry
+offset from the base.
+
+is this base changable, like if last segment needs more space, then everyone else move, or if there's unused space in case of that?
+
+*** page
+

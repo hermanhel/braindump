@@ -1,0 +1,61 @@
++++
+title = "2022-02-24"
+author = ["System Administrator"]
+tags = ["draft", "draft"]
+draft = true
++++
+
+## What do I do on my days? {#what-do-i-do-on-my-days}
+
+I write things, trying to make them systemmatic. That includes `program,music,article,novel...`
+
+I read materials, trying to remember them, tell the logic within, evaluate their truth and value,
+
+
+## `Threading Model` {#threading-model}
+
+我所做的每个不在一次结束的事情,都可以看作一个Thread,或者一个Process.
+在SPA003这个事情的Thread里,首先是记忆unidad1的deck,然后是unidad2的deck.
+而在每一天里,则是 `处理SPA003的Thread->处理INT104的Thread->....` 在不同的Thread里切换,像一个处理器处理不同的Process一样.
+
+可以在Project里设置Thread heading, 然后在里面写Thread的相关内容(计画/日志),链接到具体说明的Action heading.
+
+Thread的重要性质:
+
+1.  Thread是可以追踪的,所有的Thread内容可以在一个线性记录上轻易找到
+2.  Thread是可以暂时忽视的
+    1.  Threading保证一项事务会以其自己的速度和进程完成,所以不用每一天划定特定的时间处理这项 事物.
+    2.  Threading准备了一个易于重载的 `思维环境` 可以在每次回到Thread Task时快速进入Thread的Mindset
+        在这方面Thread类似机器和Project. Project也许可以看作一种特殊的Thread. 或者说,把Thread看作成一种对于线性结构的Interface, Project则是与内容相关,是为了一个目标而组成的机器.
+
+Thread与Project的不同在于Project是为了特殊目标在的.而Thread是完全为了实施的目的.
+当我看到Thread的时候,我就基本知道今天要做什么了.推进这些Thread是工作的内容.开始Thread,执行,然后对Thread进行总结.Thread由一个一个的session组成.每个Project可能都会管理几个Thread,也可能有些Thread没有project,但是就像桌子上没有名字的笔记纸一样需要被进行和完成,我们可以看见它之后也许有的发展,
+可预见地,Thread list会成为一个比较庞大的列表,或许有点杂乱.每个Thread都应该有一个关于时间的建议,关于下一个session应该定在什么时候,比如有些有deadline的,就应该在deadline之前把所有过完.
+
+另一个问题是Thread应该作为THREAD-TODO-NEXT-DONE这样的形式,是任务分类的一个类别,还是作为Day Scheduling的一个部分,也就是当前正在进行的Thread.一个中间的方案是像NEXT一样,只激活当前正在进行的thread,另一个是像ACTIVE project 一样,对THREAD打tag,只显示带有agenda的.这种情况下,agenda标签作为激活与否的标志,而thread作为任务的分类.考虑到tag带有遗传特性,Thread作为组合单位不适合当tag,而 `:agenda:` 作为激活的标志,被Thread中的Task继承是合理的.
+
+所以,在Project下,以Action组织采取的行动和方法,以Thread组织任务session的实施.因为Active project是打了:agenda:标签的,相应的Thread也会继承 :agenda: 标签.
+
+Threading的条件是持久,accumulative.
+
+Thread 不一定是提前完全写好的一系列task DONE 1, DONE 2, TODO 3,也可以是一个很可以继续发展下去的主题,比如Machine Learning DONE 4 Kaggle tutorial 3, 下一个可以是Kaggle tutorial 4, 或者Clojure with Machine Learning Chaptor 4之类的. 而关于Recourse的Thread,即同时看两本书,是否给每一本书一个Thread,我觉得在这些session并不那么distinct的时候是不必要的.但这些可以写在Thread的Scheduling Recommandation里.
+
+
+## `Note->Writeing` Model {#note-writeing-model}
+
+小泉八云的写作机器:
+
+1.  记录最得意的部分
+2.  放置一天
+    防止厌倦
+3.  写点周边相关的笔记
+4.  写一遍
+5.  再写一遍
+6.  再写一遍
+
+前面几乎都只是在记录相关的笔记而已,然而在这个过程中,其中的关系就更明晰了,文思结构就更完整,更适宜了.
+
+
+## `interface` 是我们平时思考的自然. {#interface-是我们平时思考的自然-dot}
+
+一个东西自然拥有多个方面可以看待.而我们思考事物时也是一样:我今天做的事情,有计划、有学习...然而都可以看作写作.所以小泉八云的写作模式可以拿来用.

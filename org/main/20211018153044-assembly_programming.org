@@ -1,0 +1,189 @@
+:PROPERTIES:
+:ID:       3157DEA9-7872-4CF3-B456-467B2257FB58
+:END:
+#+title: Assembly Programming
+#+HUGO_SECTION:main
+I started assembly programming after a major crash of inline assembly in C++.
+* Specifications
+** OS X
+[[https://stackoverflow.com/questions/8691792/how-to-write-assembly-language-hello-world-program-for-64-bit-mac-os-x-using-pri][assembly in macOS-stackoverflow]]
+OS X require that stack pointer have 16-byte alignment at the point of any *external* function call
+
+#+begin_src asm
+
+          .cstring
+  _hello:
+          .asciz "Hello, world\n"
+
+          .text
+          .globl _main
+  _main:cmdline 
+          sub  $8, %rsp           // align rsp to 16B boundary
+          mov  $0, %rax
+          lea  _hello(%rip), %rdi // load address of format string
+          call _printf            // call printf
+          add  $8, %rsp           // restore rsp
+          ret
+#+end_src
+** Syntax
+*** Masm
+**** Structure
+#+begin_src asm
+  .data
+  
+  .code	
+#+end_src
+**** Data Declare
+#+begin_src asm
+  .data
+          count BYTE 100
+          wVal WORD 2
+          bVal2 BYTE ?
+#+end_src
+
+* My way
+** 1. Use ~MSVC~ on my bootcamp of windows
+*** Use Clib
+pass parameter the same way, and call the same way.
+
+** 2. Use ~NASM~ and ~gcc~ on Linux
+*** 1. ~ssh~ to my linux virtual machine
+1. open linux in virtual machine
+2. open eshell on host
+3. shell: ~ssh usrname@localhost -p 3022~
+   trapm: ~C-x C-f ssh:usrname@localhost#port:/playground~
+*** 2. assembly and link
+#+begin_src shell
+$nasm -f elf64 -o hello.o hello.asm
+$ld -o hello hello.o
+#+end_src
+** 3. Use dosbox and MASM.EXE inside it.
+1. Edit using emacs inside ~~/dosbox/8086~
+2. run ~masm XX.asm~ and ~link XX.exe~ in dosbox
+
+* Concepts and Syntax
+
+** Example
+#+begin_src asm
+section .data
+   SYS_WrITE equ 1
+   message db 'helloworld', 10
+section .text
+   global _start
+_start:
+   some codes	
+#+end_src
+
+** Registers
+[[~/Notes/NoteAttachments/images/redisters.png]]
+*** Speicial use
+| register | use                  |
+| ~rax~    | store syscall number |
+| ~rdi~    | first PARAM          |
+| ~rsi~    | second PARAM         |
+| ~rdx~    | third PARAM          |
+| ~rcx~    | 4th                  |
+| ~r8~     | 5th                  |
+| ~r9~     | 6th                  |
+other parameters would be passed with Stacks
+*** Zero extension
+movning 16 bit into 32 bit, fill upper part with 0
+#+begin_src asm
+movzx ax, bl
+#+end_src
+
+** Example
+*** sys_call(int fd,pointer buf,int count)
+**** fd
+type of file
++ 0: standard input
++ 1: standard out
+**** buf
+a address of variable X
+e.g.: msg
+**** count
+length of the variable X
+** Arithmetic
+arithmetic instructions takes in 1 argument, and apply it to the ~rax~ register, and leave the result in ~rax~ register
+List of arithmetic instructions:
++ ~sub~: substract
++ ~add~: integer addition
++ ~MUL~: multiply with no sign
++ ~IMUL~: multiply with sign
++ ~DIV~: divide with sign
+  ~div rbx~ means div ~rax~ with ~rbx~, result in ~rax~, reminder in ~rdx~
++ ~IDIV~: divide without sign
++ ~INC~: self increse
+  #+begin_src asm
+inc eax ; eax = eax + 1
+  #+end_src
++ ~DEC~: self decline
++ ~NEG~: not 
+** Control flow
+*** ~CMP~ instruction
+syntax
+#+begin_src asm
+          ;;rax compared to 50
+  cmp rax, 50
+#+end_src
+use conditional jump instruction
+*** Conditional jump instruction
+| instruciton | Meaning                     |
+| ~JE~        | if Equal                    |
+| ~JZ~        | if zero                     |
+| ~JNE~       | if not equal                |
+| ~JG~        | if rax > 50                 |
+| ~JGE~       | if rax >= 50                |
+| ~JA/JAE~    | same as ~JGE~, for unsigned |
+| ~JMP label~ | jump at no condition.Used in loops |
+*** Function
+use lable to declare function
+use ~call~ instruction to call function
+#+begin_src asm
+          call function1
+  function1:
+          mov eax, 5
+          other codes
+          ret
+  
+#+end_src
+~ret~ is returning to the place the function is called
+** Stacks
+ref:[[https://vvl.me/2016/08/translation-Say-hello-to-x64-Assembly-part-3/][asm_progrm_tutorial_3]]
+*** Use
+Execute Function
+the current address would be stored in stack before executing function.
+after function executed, address would be copied to commands counter ~RIP~, where the execution of codes continues.
+*** Instructions
+| ins        | mean                                             |
+| ~push xxx~ | ~RSP inc~ store xxx to the place ~RSP~ points to |
+| ~pop xxx~  | copy to xxx from where ~RSP~ points to           |
+|            |                                                  |
+*** Stack Pointers
+**** RSP - stack pointer
+it points to the top of stack
+it stores address
+when in use, use [rsp] to get the value stored in the address
+#+begin_src asm
+mov rax [rsp + 8]
+#+end_src
+*** Question regarding the tutorial
+The example program results 1^@^@^@^@^@^@^@5^@^@^@^@^@^@^@ instead of 15. Guessing it to be the ASCII code standard of strings. like a \000 at the end or 0x0 something. or just empty, because ASCII charactor use only 8 bit of every register of 64 bits in x86_64 stucture. Other (64-8) are just empty.
+** Other commands
+*** ~XCHG~ exchange
+exchange 2 operand, at least 1 is register
+*** ~OFFSET~ offset
+** Flags
+Arithmetic and bitwise operations would change flags regarding the destination
+~MOV~ don't set flag
+
+Flags are used to perform conditional jump
+*** Zero flag
+*** Sign flag
+*** Carry flag
+*** Overflow flag
+
+* Task
+** immediate operand?
+** ~NEG~ and carry flag?
+

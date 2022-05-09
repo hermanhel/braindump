@@ -1,0 +1,2404 @@
+:PROPERTIES:
+:ID:       14467081-3CB3-44C4-9C4F-3FE83AACDE60
+:CATEGORY: SPA003
+:END:
+#+title: SPA003
+#+HUGO_SECTION:main
+Spanish.
+* PAS
+** Threads
+*** THREAD Quizlet                                                 :agenda:
+**** Scheduling Recommandation
+***** time
+总共 =9= 个单元. 时间 =3= 天. 一天 =3= 个单元
+**** TODO Aula 1 Unidad 0
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 1
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 2
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 3
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 4
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 5
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 6
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 7
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 8
+:PROPERTIES:
+:Effort:   15
+:END:
+**** TODO Aula 1 Unidad 9
+:PROPERTIES:
+:Effort:   15
+:END:
+*** THREAD The Grammar                                             :agenda:
+The grammar contains merely sentences.
+Grab the sentences, repeat to they stick, and I'll be good
+*** THREAD Class Materials                                         :agenda:
+Check on Class materials. Keep up with the progress of the class.
+**** Material path
+in DevonThink, academics/Y2S2/SPA003
+**** TODO Semana 1
+:LOGBOOK:
+CLOCK: [2022-03-14 Mon 12:34]--[2022-03-14 Mon 12:47] =>  0:13
+:END:
+about:
++ Self-intro/Personal info
++ Regu/Irregular verbs in Present tense
++ Reflexive verbs and Routine Activities
+***** Some Expressions
++ que también es
++ una artista mexicana muy guapa y famosa
++ literatura española
++ pasé más de cuatro años estudiando en los Estados Unidos
++ ¿De dónde soy?
++ Es un poco complicado
++ Mi lugar de nacimiento es (a place)
++ pequeña ciudad
++ Xinjiang, una provincia que está en el noroeste de China
++ Pero ahora
++ ciudad turística, histórica y muy bonita
++ que está cerca de Suzhou
++ correo electrónico es. número de teléfono es el 1234567
++ ¿Cuánots años tengo? Pues mi edad...es un secreto
++ Primero
++ Tengo una personalidad tranquila e intelectual
+  where to use =e=,
+  + personalidad words
+    + simpática
+    + paciente con la gente
+    + soy un poco casera
+    + prefiero estar en casa el fin de semana
+    + Pero creo que soy muy acenturera en el corazón
++ normalmente
+**** TODO Semana 3
+:LOGBOOK:
+CLOCK: [2022-03-14 Mon 21:15]--[2022-03-14 Mon 21:55] =>  0:40
+:END:
++ una vida de película
++ ¿Qué vamos a aprender en la unidad 2?
++ fueron los primeros
++ tanto en España como fuera
++ fue muy bien recibida
++ Así es De hecho
++ se inspiró en un relato corto
++ basadas en obras literarias
++ de nuevo
++ qué gran éxito obutuvo este filme
++ se llevó
++ totalmente de acuerdo.
++ la verdad es que
++ el año pasado publiqué un libro sobre esa experiencia
+  + esa experiencia : that experience
+  + sobre : on/about
++ viví en un barco durante un año
++ voc set
+  + dirigir
+  + escribir
+  + casarse
+  + jugar
+  + ganar
+  + protagonizar
+  + inventar
+  + nacer
++ que ganó un Oscar a la actriz principal
++ lincoln obtuvo el óscar a la mejor película
++ por primera vez: for the first time!
++ murío asesinado
++ hizo la primera fotografía en 1926
++ la selección española de fútbol ganó el Mundial
++ los Juegos Olimpicos
++ superó el récord olpímpico en los 100 metros lisos
++ con solo 21 años
+***** simple past tense
+-ir and -er are exactly the same. going for =i= instead of =e= in present tense.
+| person      | Pasar     | Conocer     | Vivir     |
+|-------------+-----------+-------------+-----------|
+| yo          | pasé      | conosí      | viví      |
+| tú          | pasaste   | conociste   | viviste   |
+| él/ella     | pasó      | conoció     | vivió     |
+| nosotros    | pasamos   | conocimos   | vivimos   |
+| vosotros    | pasasteis | conocisteis | vivisteis |
+| ellos/ellas | pasaron   | conocieron  | vivieron  |
+
+| person      | Visitar     | Aprender     | Recibir     |
+|-------------+-------------+--------------+-------------|
+| yo          | visité      | aprendí      | recibí      |
+| tú          | visitaste   | aprendiste   | recibiste   |
+| él/ella     | visitó      | aprendó      | recibó      |
+| nosotros    | visitamos   | aprendimos   | recibimos   |
+| vosotros    | visitasteis | aprendisteis | recibisteis |
+| ellos/ellas | visitaron   | aprendieron  | recibieron  |
+
+| person   | Publicar     | Estar       |
+|----------+--------------+-------------|
+| yo       | publiqué     | estuve      |
+| tú       | publicaste   | estuviste   |
+| él       | publicó      | estuvo      |
+| nosotros | publicamos   | estuvimos   |
+| vosotros | publicasteis | estuvisteis |
+| ello     | publicaron   | estuvieron  |
+***** time markers about the past
+***** action, begin-end
+desde,durante,hasta
+empezar a + infinitivo
+irçirse
+***** Voc
+Achievements
+biography
+cinema
+
+** Memory/Knowledge Bank
+*** [[id:9A766E2D-8851-4E30-A4B7-21AFC25F1CB3][Flashcard]]
+**** TODO Flash card with quizlet
+Quizlet host a series of card decks of Aula1-2.
+***** TODO Transfer from Quizlet to Anki
+I still prefer anki for a customized control.
+***** TODO Use Quizlet
+The function of quizlet along could be enough.
+
+****** A plan of using Quizlet Aula decks:
+as for today <2022-02-24 Thu>, the next SPA003 lecture falls on <2022-03-02 Wed>, with a gap of =5= days.
+
+I almost forgot all from =Aula 1=. Gotta gt the memory in my head.
+
+* UTS
+** Deliver plan
+*** Seminar
+ZHUMU Meeting ID 606-804-2513
+**** DONE Seminar 1
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-02-22 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Seminar 2
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-02-25 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Seminar 3
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-01 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Seminar 4
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-04 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Seminar 5
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-08 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Seminar 6
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-11 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Seminar 7
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-15 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+CLOCK: [2022-03-15 Tue 09:25]--[2022-03-15 Tue 11:06] =>  1:41
+:END:
+是semana 3 的ppt.
++ se convirtió
+**** DONE Seminar 8
+CLOSED: [2022-03-28 Mon 10:07] SCHEDULED: <2022-03-18 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:07]
+:END:
+***** questions
+****** 1
+Estudió en la universidad de Salamenca de 2003 a 2007
+al _año_ siguiente empezó?
+al año siguiente = the next year/a year later
+Trabajo de profesor de español durante uno años
+empezó la carrera en 2003 y siete años después la terminó
+Terminó
+****** story
+una año después, los cuatro se hicieron buenos amigos.
+una año más tarde, 
+***** notes
+****** some
+******* Read carefully
++ para comunicar
++ lexical
++ grammtica
+****** vocabulary
+******* al año siguiente                                        :drill:
+SCHEDULED: <2022-05-02 Mon>
+:PROPERTIES:
+:ID:       C93E066F-15E9-46B4-B391-716A5E8D8BD5
+:DRILL_LAST_INTERVAL: 9.6346
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:24]
+:END:
+the next year/ a year later
+******* la carrera                                              :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       01886137-5611-4BC5-8D82-650104EFB8C3
+:DRILL_LAST_INTERVAL: 3.725
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:29]
+:END:
+major in college.
+******* Traducción                                              :drill:
+:PROPERTIES:
+:ID:       02E7723A-8827-46F5-80D1-597046219038
+:END:
+Translation
+******* editorial                                               :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       748DCDD7-7739-4F61-BA97-23D57582E4FD
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 1.25
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:13]
+:END:
+publisher
+******* lugar y fecha de nacimiento
+place and date of birth
+******* Grado                                                   :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       136EF946-1E54-4062-810A-6F86DAC25F50
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 1.75
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:32]
+:END:
+bachelor
+******* Máster                                                  :drill:
+:PROPERTIES:
+:ID:       ED15E9FA-D6B9-4BDA-8BB6-E998C4B8DA51
+:END:
+Master
+******* doctorado                                               :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       98725D86-6EAD-4117-B0EF-F6AE1036F03D
+:DRILL_LAST_INTERVAL: 4.14
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:40]
+:END:
+Doctor
+******* Nociones basícas
+basic notion 
+******* nivel avanzado                                          :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       BFE860F4-5583-45EB-AFA5-FB9A10BBDC26
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:30]
+:END:
+advanced level
+******* dominiob                                                :drill:
+:PROPERTIES:
+:ID:       0C6696D4-A71A-4254-A27F-DF6E9EAE7E8A
+:END:
+a good knowledge
+un buen dominio de inglés
+a good command of english
+******* disponibilidad para viajar                              :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       32190675-21EC-493A-B91F-5A7C5A03928C
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 1.25
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:28]
+:END:
+availablity to travel
+******* pasar                                                   :drill:
+:PROPERTIES:
+:ID:       1BC4346C-08A0-4E92-A6A0-4BCCEA3ABD63
+:END:
+pass by.
++ to happen, to occur =¿Qué pasa?= what just happend? =Qué pasó= what happend? years ago
+  =¿Qué te pasa?= =¿Qué os pasó?=
+******* se enamoraron a primera vista                           :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       710B1092-7F1F-4493-8D99-43370C447EFA
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:30]
+:END:
+they fall in love in the first sight
+******* cenaron                                                 :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       FBCB233B-9A32-4442-9D44-E4A0388BECE4
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:12]
+:END:
+cenar. pretérito.
+Anoche cené temprano y me fui a dormir
+****** Grammar
+******* hace + _time period_ + que + present tense              :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       F1EEDF67-6DA6-4C0A-A590-111E6A2B0313
+:DRILL_LAST_INTERVAL: 9.43
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:22]
+:END:
+have been doing the thing for some time.
+
+hace 1 año que estudio en XJTLU
+I have been studyingin XJTLU for 1 year
+******* Hace + _time period_                                    :drill:
+:PROPERTIES:
+:ID:       D6144DCD-5C64-4D09-BC43-9C2B36DAC4D9
+:END:
+some time ago
+
+Hace 5 años se casó mi hermano
+5 years ago, my brother get married
+******* ___ después                                             :drill:
+:PROPERTIES:
+:ID:       EC26093E-114E-4282-AE33-62424C1E21E9
+:END:
+18 year later
+
+18 años después
+******* durante __ años                                         :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       231BB41E-E27E-4699-8EC6-7F24A530835C
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:14]
+:END:
+during/for the 14 years
+past tense, and un poco present perfect.
+=durante un tiempo= for some time.
+
+Está prohibido hablar durante el examen
+
+
+******* hasta 2011                                              :drill:
+:PROPERTIES:
+:ID:       07C5A1CD-C30D-49F6-84EA-15A374D24B44
+:END:
+until 2011
+past tense
+
+estudiá en XJTLU hasta 2011
+******* desde _point of time_                                   :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       B5400B41-024F-4358-AF02-9CD5EED8FA01
+:DRILL_LAST_INTERVAL: 3.725
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:36]
+:END:
+since 2012
+use present
+
+estudio en XJTLU desde 2012
+
+******* desde hace _period of time___                           :drill:
+:PROPERTIES:
+:ID:       2F43B5B0-4052-4636-B423-D55EFF6C3DB8
+:END:
+same as desde ____
+
+estudio en XJTLU desde hace 8 años
+hace 8 años que estudio en XJTLU
+******* luego                                                   :drill:
+SCHEDULED: <2022-05-02 Mon>
+:PROPERTIES:
+:ID:       7FEF3A25-AB9E-452F-94DD-F49E37C9E3BA
+:DRILL_LAST_INTERVAL: 10.0
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:23]
+:END:
+later
+
+Ahora voy a comprar y luego al cine
+I'm going shopping and later to cinema
+******* ahora                                                   :drill:
+:PROPERTIES:
+:ID:       F8E1B57A-CD93-4B63-A71A-FF57BCC7F79C
+:END:
+now, just now, right now
+******* [...hora]después/ más tarde                             :drill:
+:PROPERTIES:
+:ID:       283447DE-C9E8-4C8B-A525-07F520CB6085
+:END:
+11 hours after
+******* a ____ siguiente                                        :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       D3F84973-F379-41D1-BC08-EC7893D7B02B
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:18]
+:END:
+the next ___
+
+al día siguiente
+the next day
+******* la/el _time_ pasado/a :drill:
+:PROPERTIES:
+:ID:       7D4B62A6-B508-4875-BA0F-948BE1C2C2D7
+:END:
+el pasado
+the past
+
+el semana pasado
+the past week
+
+******* el _lune_ :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       5146246F-210A-45B4-826D-5D43C60B1192
+:DRILL_LAST_INTERVAL: 9.1096
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:23]
+:END:
+on _the date_
+
+******* en _mayo_ :drill:
+:PROPERTIES:
+:ID:       51DAF82D-9A99-4681-9FE2-76710DDFF320
+:END:
+in may
+in _a time period_ (1998,verano)
+
+******* ayer/anteayer/anoche :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       D406CB80-6EE7-468B-ABDB-92CEA006905D
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:58]
+:END:
+yesterday/day before yesterday/last night
+******* el otro día :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       B6D7B867-2C55-4CD3-A5C7-1CEB7911F3E1
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:45]
+:END:
+another day
+****** raw
+
+******* lo llamó y quedaron :drill:
+:PROPERTIES:
+:ID:       3E3FECB8-72C4-4555-A88D-D32AC51349C5
+:END:
+they are  attrated to each other
+lo quedaron = they dateed
+
+******* salir :drill:
+:PROPERTIES:
+:ID:       1CBEB689-9815-4732-A139-89806C7B3796
+:END:
+go out together
+
+******* irse a vivir juntos :drill:
+SCHEDULED: <2022-04-25 Mon>
+:PROPERTIES:
+:ID:       408B5515-7E65-4309-A53F-F1CEBBA7A772
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-21 Thu 23:24]
+:END:
+go off to live together
+juntos: together
+******* se hizo muy amiga del doctor Urquía :drill:
+:PROPERTIES:
+:ID:       F355B173-2D75-406C-B727-981C948CD64D
+:END:
+she became good friend with the doctor
+******* se enamoró de ella :drill:
+:PROPERTIES:
+:ID:       BBCD47BB-43E4-401F-A4CC-13CEB428F87C
+:END:
+fall in love with her
+**** DONE Seminar 9
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-22 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+***** Voc
+****** verdad :drill:
+:PROPERTIES:
+:ID:       8E147CF7-1D10-4D44-BBB5-66A9FC83BA58
+:END:
+truth
+****** Nació en los años 90 :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       0283D606-E1D0-42DF-AE0A-A0B7610D166A
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:10]
+:END:
+bor in the 90s
+****** cambió de ciudad a los 12 años :drill:
+:PROPERTIES:
+:ID:       E0BA52F6-36BC-4571-9C40-360700FDA25F
+:END:
+move to the city at 12
+****** Está soltera(no se ha casado) :drill:
+:PROPERTIES:
+:ID:       4BDBB344-8AA5-403D-A6A5-FF70A23E42E5
+:END:
+is single(hasn't married)
+****** En XXXX Nacer en una pequeñá ciudad de Sinkiang :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       0840DF5D-0AEE-4F7F-849A-7E7E5126C7A9
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:42]
+:END:
+in 1997 born in a small city of Xinjiang
+****** A los 12 años Trasladarse a Hangzhou :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       35D1C3E3-7E73-4EC0-80C2-8CAFA8277779
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:32]
+:END:
+at 12 yeays old move to Hangzhou
+****** En primavera de 2000 Enamorarse por :drill:
+:PROPERTIES:
+:ID:       C5642537-9382-46D4-AC2E-C0D4FE7F455A
+:END:
+in spring of 2000, fall in love with...
+****** di diste dio...
+
+****** vi viste vio...
+
+****** al año siguente :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       292492E2-B12D-485E-9C9B-F97662D1ADF2
+:DRILL_LAST_INTERVAL: 8.9861
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:24]
+:END:
+the next yesr
+****** se puede decir (que)                                      :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       0BE9EF1C-D68C-49DA-A14B-E4296948B2A0
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:08]
+:END:
+you can say that
+****** sitio = lugar = place  :drill:
+:PROPERTIES:
+:ID:       96228662-CE44-4F7F-BEA5-F4B46D0FF11C
+:END:
+****** finalise (have finished)
+****** recorrer (walk around) :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       C6146C73-C8F2-43E7-AC59-2F8460C2CD96
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 1.4
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:35]
+:END:
+逛
+****** proyecto musical :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       2FE3FAC0-39B2-4984-864B-8939EA3F5EA2
+:DRILL_LAST_INTERVAL: 8.7892
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:22]
+:END:
+music project
+****** canguro :drill:
+:PROPERTIES:
+:ID:       2ADF440F-CCEF-48DC-B258-280EBDF3E5E7
+:END:
+kangaroo (babysitter)
+****** dependienta :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       1DE48189-7D65-46C5-A26E-48C81AA34C00
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:36]
+:END:
+shop saler
+
+**** DONE Seminar 10
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-25 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+
+**** DONE Seminar 11
+CLOSED: [2022-03-29 Tue 10:41] SCHEDULED: <2022-03-29 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-29 Tue 10:41]
+CLOCK: [2022-03-29 Tue 09:11]--[2022-03-29 Tue 10:40] =>  1:29
+:END:
+
+***** Repaso Unidad1-2
+
+****** Presente de indicativo
+
+******* Verbos Regulares
+|   | cant-Ar | com-Er | viv-Ir |
+|   | canto   | como   | vivio  |
+|   | canta   |        |        |
+|   |         |        |        |
+
+******* verbos con diptongo/cambio de vocal :drill:
+:PROPERTIES:
+:ID:       A8EFA07F-ECD7-43B2-A2BA-88AC262ED01F
+:END:
+in yo,tu,el,elles. /not in vosotros, nosotros
+| e > ie | o>ue  | e>i   |
+| pensar | poder | pedir |
+| pienso | puedo | pido  |
+
++ 1 person
+  caer -> caigo
+  saber -> sé
++ 1 person +  vowel change
+  tener, venir decir
++ totally irregular
+  ser, estar, ir
+****** pretérito indefinido :drill:
+:PROPERTIES:
+:ID:       FBB2464B-DD2E-4269-ABAF-9CEE20D3595E
+:END:
+| cantar      | comer   | vivir |
+| canté       | comí    |       |
+| cantaste    | comiste |       |
+| cantó       | comió   |       |
+| cantamos    |      n  |       |
+| cantaseteis |         |       |
+| cantaron    |         |       |
+******* vowel
+in 3rd persons.
+e-i pedir pidieron
+o-u dormir durmió. morir
+******* tail change
+in 1 person.
+-car - -qué 
+-gar - -gué
+-zar - -cé
+******* all different
+******* completely different
+ser dar
+******* hizo
+hacer
+******* verla
+ver
+******* mi me te ...
+
+#+ATTR_ORG: :width 900
+[[/Users/hermanhe/Notes/RoamNotes/mimete.png]]
+******* casi siempre
+******* que hay que
+得怎么样(hay que)
+******* Ahora
+so 
+******* Quieres darnos tu opnión? :drill:
+:PROPERTIES:
+:ID:       E7388D67-BCD3-4793-9AF7-7DA350DBCB16
+:END:
+do you want to give us your opnion
+****** verbos reflexivos
+leventarse, sentirse
+verbo + -se
+15:00 
+| levantarse  | sentirse   |
+| me levanto  | me siento  |
+| te levantas | te sientes |
+doing this action to myself
+other in lecture 2
+
+******* question
+
+******** 1 
+tiene vive estudia desayuna_ trabaja_ trabaja_ lee habla se levanta
+
+******** 2
+vivo conozco pienso me levanto me ducho me viesto salgo tango puedo empiezo cerro trabajo siento 
+
+******** así que
+therefore, so
+
+******** de momento
+for the moment
+
+******** cerrar
+cierro
+
+******** la verdad es que
+the truth is 
+
+******** sentirse / sentir
+sentirse - adj - mental feeling
+sentir - n. - physical feeling
+
+******** veterinaria
+vet.
+
+******** pensar v.
+want to do something
+******** ya
+already
+
+******* todavía :drill:
+:PROPERTIES:
+:ID:       770E744B-BA3B-450C-868F-506AACE15676
+:END:
+still,yet
+******* volver :drill:
+:PROPERTIES:
+:ID:       EB13FC9F-C0EF-4A6C-B94A-E61E487EE8AA
+:END:
+to return
+******* por eso :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       0CFD6E13-D184-4575-B68E-0D92EBDB56D8
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:28]
+:END:
+so, + present tense
+******* paraguas :drill:
+:PROPERTIES:
+:ID:       21375565-5796-4970-8226-7024CE3D7A98
+:END:
+umbrella
+******* lloviendo :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       3F480E81-5A1F-45B5-AA70-AF5F2B5F6DB8
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 5
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:30]
+:END:
+rainy
+****** Marcadores temporales para hablar de la duración
+
+****** marcadores temporales
+
+**** DONE Seminar 12
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-01 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+
+***** rapaso parte 2
+
+****** last
+
+******* el ... pasado
+the last ..
+******** la ... pasada
+******* el lunes/8 de diciembre :drill:
+:PROPERTIES:
+:ID:       0B52CB4C-9458-49A2-BE74-6500E94C7010
+:END:
+
+******* en mayo/1998 :drill:
+:PROPERTIES:
+:ID:       D0AE483D-9C8C-4BA8-BFB0-4E9655A958C5
+:END:
+
+****** things
+
+******* a mediados de los 50 :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       93CC2084-C3DC-47FC-8C26-8CE41494E3A4
+:DRILL_LAST_INTERVAL: 8.9861
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:24]
+:END:
+in the mid-50s
+******* a principos de los 80 :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       E0E760CC-D0DF-4CC8-B6F0-1D950DCACD72
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:27]
+:END:
+in the early-80s
+******* a finales del siglo pasado :drill:
+:PROPERTIES:
+:ID:       A759086A-FF18-4C3C-A407-3819FDB82973
+:END:
+in the late time last centrey
+******* hace 4 años
+
+****** hace + time period :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       7A0C1AD1-7BC2-433D-AFDE-505CB2EED418
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:17]
+:END:
+use simple past tense.
+... ago
+
+****** desde + timepoint/que sentence/hace period :drill:
+:PROPERTIES:
+:ID:       92F02C3D-F8E1-4FA9-966C-AA755A4D95DB
+:END:
+since ...
+use present tense
+****** hace + time period + que + verb in present tense :drill:
+:PROPERTIES:
+:ID:       46EEBA3F-91B5-45A1-B3B6-9A86D6DF0DFD
+:END:
+it's been ...(sometime) one have done something
+****** luego/después/más tarde :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       25DDB4A3-5A38-444F-95D8-6A1B50C9A494
+:DRILL_LAST_INTERVAL: 8.7892
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:21]
+:END:
+later, after
+****** ... después/más tarde :drill:
+SCHEDULED: <2022-05-02 Mon>
+:PROPERTIES:
+:ID:       D5E4E4F5-9B55-45BC-928A-D4F9BFB9DAEB
+:DRILL_LAST_INTERVAL: 9.648
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:24]
+:END:
+18 years later,after.
+luego 不能这么用
+****** cuándo tiempo llevas en España? :drill:
+:PROPERTIES:
+:ID:       3D9B7B09-A0AB-4F34-B345-4EE979131114
+:END:
+dos semanas.
+llevas(spend time in)
+***** carrera :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       2058D53E-5A34-41BA-9236-0B3FDD8D99A7
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:45]
+:END:
+run, race, career
+***** esperé :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       F6769075-A556-431F-9E94-60C783CF5433
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 1.75
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:36]
+:END:
+to wait for
+esperar
+***** enero
+January
+***** julio
+July
+***** Costar :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       7FF9EB7E-3ACD-4205-AB58-D0C85C304D98
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:29]
+:END:
+to cost
+cuesta
+cuestan
+***** hacer recommendation :drill:
+:PROPERTIES:
+:ID:       6EC192DC-58F8-4EC0-854D-AE481ADAEBE8
+:END:
+va (muy) bien + inf/singular
+van bien
+goes well.
+***** dejar de tenerlo :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       EACB15BC-F45B-46BE-A880-0BF557663F39
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:28]
+:END:
+drop that.
+dejar: to stop, to leave
+stop having it
+***** leer en voz alta
+read out loud
+***** buscar en el diccionario
+to look up in the dictionnary
+***** voc :drill:
+:PROPERTIES:
+:ID:       6473A376-D145-4FAA-917E-E52624456713
+:END:
+| verbo     | sustantivo                  |           |
+|           | lapronunciación             |           |
+| memorizar | la memoria, la memorizacion |           |
+| repetir   | la repetición               |           |
+| traducir  | la traduccion               |           |
+| buscar    | la búsqueda                 |           |
+| corregir  | la corrección               |           |
+| escribir  | la escritura                |           |
+| leer      | la lectura                  |           |
+| trabajar  | el trabajo                  |           |
+| estudiar  | el estudio                  |           |
+| conocer   | el conocimiento             | knowledge |
+|           |                             |           |
+
+| nombres     | adjetivos         |   |
+| inseguridad | inseguro,insegura |   |
+| ansiedad    | ansioso/a         |   |
+| miedo       | miedoso           |   |
+| ilusión     | ilusionado        |   |
+| ridiculez   | ridicu            |   |
+|             | entusiasmo        |   |
+|             |                   |   |
+***** another :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       7BCC2B09-3073-4386-A365-73B87939F0EC
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 1.75
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:33]
+:END:
+| combiar | de casa     | moving home.             |
+| tener   | suerte      | have luck                |
+| ganar   | un premio   | workhard to have a prize |
+| tener   | un romance  | have a relationship      |
+| hacerse | rico        | become rich              |
+| tener   | [e]xito     |                          |
+| cambiar | de trabajo  |                          |
+| hacerse | famaso      |                          |
+| ganar   | una medalla |                          |
+spanishdict.com, wordreference.com, collins. good.
+***** ir/irse :drill:
+:PROPERTIES:
+:ID:       4623E024-522D-47F1-B90F-CE67400D2FDC
+:END:
+ir = to go
+irse = to go + to leave
+***** empezar a + infinitivo :drill:
+SCHEDULED: <2022-04-25 Mon>
+:PROPERTIES:
+:ID:       A31FAE8E-635B-46BA-B8B1-E454FCA469BB
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-21 Thu 23:25]
+:END:
+dto start doing something
+***** 2 videos about times.
+***** los estudios
+***** Get the paper dic
+**** DONE Seminar 13
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-05 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+**** DONE Seminar 14
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-08 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+**** DONE Seminar 15
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-12 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+***** clothing
+
+****** camiseta :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       1189D06E-54F6-461F-9459-267C582BC045
+:DRILL_LAST_INTERVAL: 3.725
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:32]
+:END:
+T-shirt
+****** mascarilla :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       B77E0579-8537-497D-A5D4-FD4CF5BD8DEA
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:11]
+:END:
+muska
+****** zapatillas :drill:
+:PROPERTIES:
+:ID:       2ABD8C2B-94E0-42D3-B27F-0E2218A33F82
+:END:
+slippers/sport shoes
+****** mochila :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       F7A542FA-F749-496E-96BB-65ADEDE40FB4
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 5
+:DRILL_AVERAGE_QUALITY: 1.667
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:35]
+:END:
+backpack
+****** chaqueta :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       0010A99D-92D3-4C51-B8CC-D9576219F4C8
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 17:01]
+:END:
+jacket
+****** traje :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       4DAE287B-D436-45E4-AD0A-BE82A883A435
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:35]
+:END:
+suit,dress
+****** gafas :drill:
+:PROPERTIES:
+:ID:       E9C8B7E7-87D8-47D4-8FB3-3B455698047B
+:END:
+glass
+
+gafas de sol
+****** pantalones :drill:
+:PROPERTIES:
+:ID:       A16E4BE6-98D6-41BA-9EA3-3C8EDB1A3F9B
+:END:
+trousers
+****** sandalias :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       0D4D0D48-AAF0-42DC-B645-81B6A65C5692
+:DRILL_LAST_INTERVAL: 3.725
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:36]
+:END:
+sandal
+****** zapatos :drill:
+:PROPERTIES:
+:ID:       260C813B-3C4C-4603-B37A-6D20ECF4F1A5
+:END:
+normal shoes
+****** camisa :drill:
+:PROPERTIES:
+:ID:       9A9AD9C1-742C-4BA7-9525-2941CE0CA135
+:END:
+shirt
+****** vestido :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       EE74CBD6-1DA2-43F4-A549-6F3C4C7F6DBD
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:54]
+:END:
+dress,suit
+
+
+****** bolso :drill:
+:PROPERTIES:
+:ID:       37E22FF4-8C4F-4547-8456-FFF4D1435FA6
+:END:
+bag
+****** jersay :drill:
+:PROPERTIES:
+:ID:       1C8FC1C8-7088-490C-9B39-A1FB234A5ECA
+:END:
+sweater
+****** corbata :drill:
+:PROPERTIES:
+:ID:       EBB51300-2529-494F-A91B-BE6740858EBA
+:END:
+tie
+****** lleva :drill:
+:PROPERTIES:
+:ID:       C8783C7D-6F52-4CF9-A1FE-B3C0C4A29302
+:END:
+she wears
+****** camisa de mangas cortas/largas ; camisa sin mangas :drill:
+:PROPERTIES:
+:ID:       87F13843-6225-4024-9583-B4BE3FBBF4D6
+:END:
+short/long sleave shirt ; shirt without sleave
+****** camisa de rayas/cuadros :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       36867F10-8BC2-4432-AD44-E04A411BA76B
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 1.667
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:27]
+:END:
+shirt with patterns columns/squares
+***** Party
+****** novio/a :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       60CF4BC6-439F-4E31-BB5E-CB8D91EA7F2C
+:DRILL_LAST_INTERVAL: 9.1096
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:21]
+:END:
+broom bride
+****** pastel :drill:
+:PROPERTIES:
+:ID:       1AEDA8E8-5823-44AA-8189-44BB671CB243
+:END:
+cake
+****** estar el lado de :drill:
+:PROPERTIES:
+:ID:       E97AF50C-8C85-45C8-BE33-BD8F71B29401
+:END:
+at the side of 
+****** estar detrás de :drill:
+:PROPERTIES:
+:ID:       A5CF4B89-775B-4E78-A7EA-3D9BB47AA03A
+:END:
+behind something
+****** bigote :drill:
+:PROPERTIES:
+:ID:       BE544E4C-B18B-40B0-912D-EE3F78CD9BA2
+:END:
+mustache
+****** topos :drill:
+:PROPERTIES:
+:ID:       A17015C5-FD49-4405-8AC7-6D355E520BE4
+:END:
+mole
+****** el de la camisa lila :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       6630EDEB-FB93-4C5D-97A5-5F6895118C5E
+:DRILL_LAST_INTERVAL: 8.7892
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:24]
+:END:
+that in lilac shirt
+****** de topos blancos y rojos :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       08256367-851F-4FF5-BC1F-7AD4E33BF113
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:30]
+:END:
+with white and red holes
+****** pelirojo/a :drill:
+:PROPERTIES:
+:ID:       012C7CE6-85B8-4914-9672-FFDC67FE7F4B
+:END:
+red-haired
+****** sentarse :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       3B2D851D-4616-4404-A405-B7603916DB62
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 1.2
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:33]
+:END:
+to sit
+****** la del pelo corto :drill:
+:PROPERTIES:
+:ID:       4AB18DAA-AA61-49D4-ABA4-ECCB3FAB4DAF
+:END:
+that of short hair
+****** primo :drill:
+:PROPERTIES:
+:ID:       D2AAACD3-A957-40C1-9DE3-74F44944B66A
+:END:
+cousin
+****** vecino nuestro :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       F6EE1476-D041-4158-BC90-7EB3C46F8CF9
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 1.667
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:12]
+:END:
+our neighbour
+****** ¡Cuánta gente! :drill:
+SCHEDULED: <2022-05-01 Sun>
+:PROPERTIES:
+:ID:       83F7615D-6CDB-4345-B3A1-3A239BBA55B2
+:DRILL_LAST_INTERVAL: 8.7892
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:22]
+:END:
+Many people!
+****** no conozco a casi nadie :drill:
+:PROPERTIES:
+:ID:       019896BA-7F25-43B5-971F-1318C275BFD7
+:END:
+I don't know almost everyone
+****** nadie :drill:
+:PROPERTIES:
+:ID:       02350BA8-108F-4CA0-B829-FE93A38EBFC9
+:END:
+no one
+****** pariente :drill:
+:PROPERTIES:
+:ID:       09AEF8CE-69F0-445E-A39F-FBFB85FA36B4
+:END:
+reletive
+****** tuyo :drill:
+:PROPERTIES:
+:ID:       6414AD88-1327-478C-8795-FBBB7CFD2041
+:END:
+mine
+****** Aquella del fondo :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       BED26A5D-2F89-443B-A6EA-0969F6336F39
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 1.667
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:15]
+:END:
+that in the deep/far?
+****** Espera :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       38595524-7427-4AF2-ACC9-CEA5A51F6E9B
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 1.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:32]
+:END:
+wait
+****** ese :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       8125D41A-598E-44F0-9017-5044127134AA
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.25
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:30]
+:END:
+that
+****** parece :drill:
+:PROPERTIES:
+:ID:       B2C15998-38D9-4276-B775-E80B7E8A04FC
+:END:
+seems 
+****** simpático :drill:
+:PROPERTIES:
+:ID:       B0A0E0C5-E47D-4AFD-AFC1-CA119BC8B79C
+:END:
+kind
+****** oye,mira :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       CBB0C7FC-99A8-491B-9D12-CFB67EB47BAE
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:51]
+:END:
+hey
+***** Identificar :drill:
+:PROPERTIES:
+:ID:       730AFCC6-4413-4BF4-84CD-DD91C3250B75
+:END:
+un amigo + mi amigo = un amigo mío
+
+mío,tuyo,suyo,nuestro,vuestro,suyo
+***** waiting
+****** andén de la estación :drill:
+:PROPERTIES:
+:ID:       C40D3FFD-344D-4801-9A56-6739906501A2
+:END:
+platform of the station
+****** el pelo largo y liso :drill:
+:PROPERTIES:
+:ID:       B04C0655-5982-4460-B61F-D66C4EC71686
+:END:
+long straight hair
+****** bajita :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       66DF3C7C-C3D4-472D-9980-ED7F3FEFF0BA
+:DRILL_LAST_INTERVAL: 3.725
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:28]
+:END:
+shortish(in height)
+****** delgada :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       F7A2B51E-3A40-4921-929C-03BD6DF90F5A
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:57]
+:END:
+thin
+****** a la derecha :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       A91D630B-3D44-4B4B-B22E-3F03D309599A
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 1.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:26]
+:END:
+to the right
+****** ¡Hasta Ahora!                                             :drill:
+SCHEDULED: <2022-04-16 Sat>
+:PROPERTIES:
+:ID:       414D80E7-74A1-4067-B5E4-AE650C49C17F
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2022-04-12 Tue 16:40]
+:END:
+see you in a minute
+
+¡Hasta pronto!
+see you soon
+****** estar de pie :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       2B89D7D3-9C45-4323-BFAB-DD38F46103CD
+:DRILL_LAST_INTERVAL: 3.725
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:30]
+:END:
+to be standing up
+****** estar sentado/a :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       0A150D95-57E3-4CBE-8F94-750ECE07FDAC
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 1.8
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:35]
+:END:
+to be sitting
+****** llevo el pelo recogido con una pinza :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       D1298DF0-B605-4340-808C-0ECB2DB27262
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:32]
+:END:
+I have my hair collected with a tweezer
+****** trenza :drill:
+SCHEDULED: <2022-04-26 Tue>
+:PROPERTIES:
+:ID:       34BBC3D4-0524-4EDC-8DC4-BBDE4330F095
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2022-04-22 Fri 10:32]
+:END:
+braid, 辫子
+**** DONE Seminar 16
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-15 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+***** vocs
+cara
+la nariz nose
+las cejas 
+la boca mouth
+los labios lips
+las orejas ears
+la piel color of skin
+los ojos
+tener la misma/el mismo
+una camisa lila de
+topos blanco y rojos
+sonrisa
+
+**** DONE Seminar 17
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-19 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+
+**** DONE Seminar 18
+CLOSED: [2022-04-26 Tue 09:22] SCHEDULED: <2022-04-22 Fri 16:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-26 Tue 09:22]
+:END:
+
+***** vol
+
+****** se auie
+
+****** una casa
+
+******* habs
+
+******* baño
+
+******* Terreza
+
+******* Planta
+floor
+******* Ascensor
+
+******* ha bajado 55.000 E
+
+******* tipo de immueble
+type of house
+caso o chalet
+piso: 
+******* antigüedad
+age of 
+30 a 50 años
+******* gastos de comunidad
+management fee included?
+sí
+******* amueblado
+
+******* consumo energía
+145 kW h m² / año
+******* emisiones
+
+******* orientación
+este
+sureste
+
+******* parking
+privado
+******* agua caliente
+gas natural
+******* estado
+condition
+muy bien
+******* asensor
+elevator
+sí
+******* Emisiones
+30 kg CO₂ m² / año
+******* calefacción
+heating
+gas natural
+******* aire acondicionado
+air conditioner
+******* fotografías
+******* plano
+floor plan
+******* tipo de vivienda
+******* pricio
+deósito
+comunidad
+******* muebles
+******* equipamiento
++ auga
++ luz
++ gas
++ internet
++ calefacción
++ aire acondicionado
++ electrodomésticos
++ otras caraterísticas básicas
+******* tamaño
+size
+******* metros cuadrados
+square meters
+******* construidos
+construction
+******* útiles
+util 
+******* habitaciónes
+******* ubicación
+localizatión
+******* garaje
+garage
+******* despacho
+study
+******* habitación doble
+double room
+******* jardín
+******* piscina
+pool
+******* salón-comedor
+living room and dining room
+******* cocina
+kitchen
+******* amplia cocina
+******* lavadero
+lundary room
+******* planta baja
+******* primera planta
+******* habitación individuales
+******* sala de juegos
+gaming room
+******* vestidor
+******* terraza
+balcony
+******* habitación suite
+******* ¡gran oportunidad!
+******* 3500 euros al mes
+3500 euros each month
+******* de nueva construcción
+******* ático
+******* entrenador personal
+******* nivel adquisitivo
+medio-bajo
+******* domicilio
+******* nadar
+******* balcón
+closed balcony
+
+**** DONE Seminar 19
+CLOSED: [2022-04-26 Tue 11:06] SCHEDULED: <2022-04-26 Tue 09:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-26 Tue 11:06]
+:END:
+
+***** inside house
+
+****** baño
+
+****** aseo
+just toilet
+
+****** lavadero
+
+****** vestidor
+closet
+
+****** despacho
+trastero
+
+****** Ubicación: estar ...
+
+******* a cinco minutos de ...
+5 minutes to
+
+******* bien situado
+well located
+
+******* muy bien communicado
+very well connected
+
+****** Tipos de viviendas
+
+******* chalé
+
+******* ático
+
+******* piso
+
+******* estudio
+
+******* apartmento
+
+****** otras características
+
+******* fantásticas vistas
+
+******* antiguo con encanto
+
+******* buena distribución
+well structured
+******* mucho sol
+
+******* muy tranquilo
+
+******* de nueva construcción
+
+******* en perfecto estado
+
+******* muy bien luminoso
+
+******* cocina totalmente equipada
+fully equiped kitchen
+******* sulos de parqué natural
+天然香木地板
+******* sin amueblar
+
+******* con ascensor
+
+******* listo para entrar a vivir
+
+******* lavabo
+洗手池
+
+******* el cuarto
+房间
+
+******* el pasillo
+走廊
+
+******* el techo
+ceiling
+
+******* el suelo
+floor
+
+******* la pared
+内墙
+
+******* la puerta
+door
+
+******* la ventana
+window
+
+******* el porche
+
+******* eledificio
+tall building
+
+******* el apratamento
+
+******* la planta
+i.e. el piso
+******* el piso
+******* las esacleras
+stairs
+******* el ascensor
+elevator
+******* el tejado
+******* la chimenea
+chimney
+壁炉
+******* the practice
+| sillón de madera                  | 木质靠背椅   |
+| sofá de tela blanco de dos plazas | 白布艺双人沙发 |
+| cojín naranja de tela             | 橙布靠枕     |
+| mesa de centro de málmol          | 大理石客桌   |
+| Alfombra de fibra vegetal         | 植物纤维地毯 |
+| lámpara negra de pie              | 黑立灯       |
+| jarrón blanco de cerámica         | 白粘土花瓶   |
+| estantería de madera              | 木书架          |
+******* almohada
+pillow
+******* escritorio
+book desk, study desk
+******* mesa de centro
+茶几
+******* mesilla/mesita de noche
+床头柜 night stand
+******* silla and sillon
+chair and big chair
+******* lámparas
+******** lámpara de techo
+on ceiling
+******** làmpara de pie
+standing on floor
+******** lámpara de mesa
+on desk
+******* patas metálicas
+metal foot
+******* terciopelo
+******* el amarió
+******* el cuadro
+******* la planta
+******* el reloj
+******* las cortinas
+******* el espejo
+******* la bañera
+******* el retrete/la taza del váter
+******* la ducha
+******* la lavavajillas
+******* mesa de cristal
+glass table
+******* silla de plástico
+******* mesa de piedra
+stone desk
+******* lámpara de papel
+******* zapatero de hierro
+shoecase
+******* caja de cartón
+paperboard box
+******* lámpara de papel
+******* sytles
+******** acogedor
+cozy
+******** frío
+opposite to cozy. cool.
+******** luminoso
+******** oscuro
+******** moderno
+******** clásico
+**** Seminar 20
+SCHEDULED: <2022-04-29 Fri 16:00>
+
+**** Seminar 21
+SCHEDULED: <2022-05-03 Tue 09:00>
+
+***** extraanjero
+
+|              | comprar adjetivos   | nombres                     | verbos              |
+|--------------+---------------------+-----------------------------+---------------------|
+| superioridad | más adjectivo       | más nombre (que)            | verbo más (que)     |
+|              | más cara que        | conoces a más gente         | te divertes más que |
+|              | más grandes (que)   | tienen más ayudas que       |                     |
+|--------------+---------------------+-----------------------------+---------------------|
+| Igualdad     | tan adjetivo (como) | tanto/a/os/as nombre (como) | verbo tanto como    |
+|              | tan caros como      | conocer a tanta gente como  | se sufre tanto como |
+|--------------+---------------------+-----------------------------+---------------------|
+| inferioridad | menos adj. que      | menos nombre que            | verbo menos que     |
+|              | son menos conocidos | menos meses de frío que     | cuestan menos que   |
+|              | que...              |                             |                     |
+|--------------+---------------------+-----------------------------+---------------------|
+| inferioridad | no tan adj (como)   | no tantos nombre (como)     | no verbo tanto como |
+|              | no son tan caros c- | no haytantos pisos amuebla- | no gastan tanto co- |
+|              | -omo                | -dos                        | -mo                 |
+
+***** comparar
+
+****** more
+Madrid tiene más parque que Barcelona
+Madrid es más grande que Barcelona
+En Madrid la gente sale más que en Barcelona
+
+más bueno mejor
+más malo peor
+
+****** more age
+mayor older
+
+****** less age
+menor younger
+
+****** más que
+
+****** menos que
+
+****** tan como
+adjective
+****** tanto como
+when it is a verb
+****** tanta como
+when it is a noun
+****** tanto 
+省略掉
+****** espectáculo
+show
+espectáculo musicalos
+****** me llevo bien
+
+****** la suerte
+luck.
+**** Seminar 22
+SCHEDULED: <2022-05-06 Fri 16:00>
+***** tomar el sol
+***** qué envidia
+***** U5
+****** muy cercana
+tu!
+****** cordinal
+****** professional
+****** gerondio
+
+**** Seminar 23
+SCHEDULED: <2022-05-10 Tue 09:00>
+
+**** Seminar 24
+SCHEDULED: <2022-05-13 Fri 16:00>
+
+**** Seminar 25
+SCHEDULED: <2022-05-17 Tue 09:00>
+
+**** Seminar 26
+SCHEDULED: <2022-05-20 Fri 16:00>
+
+*** Lecture
+
+**** DONE Lecture 1
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-02-23 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Lecture 2
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-02 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Lecture 3
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-09 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Lecture 4
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-16 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Lecture 5
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-23 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+
+**** DONE Lecture 6
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-03-30 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+
+**** DONE Lecture 7
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-06 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+**** DONE Lecture 8
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-13 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+**** DONE Lecture 9
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-20 Wed 18:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+
+**** Lecture 10
+SCHEDULED: <2022-04-27 Wed 18:00>
+
+**** Lecture 11
+SCHEDULED: <2022-05-04 Wed 18:00>
+
+**** Lecture 12
+SCHEDULED: <2022-05-11 Wed 18:00>
+
+**** Lecture 13
+SCHEDULED: <2022-05-18 Wed 18:00>
+
+* Resources
+
+** Lecturer's guide
+Ultimate Resource Guide for Spanish Learners
+
+Learning a new language should be fun! You can explore the following online resources to enrich your Spanish learning experience as a beginner. Some of these apps or programs are recommended because of their quality or popularity but are not free. Since you have already paid for your college, always remember to make good use of all the academic resources you have at hand, and don't hesitate to ask your tutor first when you have any questions!
+
+
+DICTIONARIES/TRANSLATORS
+
+    SpanishDict: One of the best Spanish translator and conjugator apps available today, and a surprisingly accurate dictionary with examples, regional usage, and contextual information.
+    WordReference: A very good free dictionary combining Collin Dictionary and a verb conjugator, plus a community forum where you can find and interact with many people willing to help.
+    Collins Spanish Dictionary: The best Spanish-English dictionary for language learners in the world, ever!
+    西语助手: The most comprehensive online Spanish-Chinese dictionary up to date with many features, but still has some flaws and needs improvement in its definitions and examples.
+
+
+WEBSITES/BLOGS
+
+For Reference (Guides and Tips)
+
+    Lingolia Spanish: A great reference site with the most important Spanish grammar topics in a nutshell. Clear, concise explanations with plain, well-organized layout, accompanied by exercises.
+    Spanish411: Very helpful grammar and vocabulary guide for learners of beginner and intermediate level, explained from a comparative perspective between English and Spanish languages.
+    StudySpanish.com: Free online tutorials with audio, cultural notes, grammar, vocabulary, verbs drills, and links to helpful sites. 
+
+For Practice (Activities and Exercises)
+
+    ProfedeELE: One stop shop of resources and activities for students and teachers of Spanish. 
+    VideoELE: Free video courses covering A1 to B2 levels of proficiency, accompanied with additional materials such as transcripts, work booklets, and interactive activities.
+    Más Arriba: An interactive workbook of introductory Spanish language exercises, based on the pictorial contextualization of fundamental vocabulary and language points. The exercise material includes images, sound, feedback and vocabulary help. Created by Gary Aitken, a retired Spanish prof from Trent University. 
+    Check these sites for exercises, exercises, and even more exercises: Ver Taal / Aprender Español / Todo-Claro / Languages Online / Spanish Language & Culture 
+
+APPS/TOOLS
+
+All-in-One
+
+    Duolingo: The most popular language learning app in the world, and it’s FREE! Its gamified bite-size lessons are fun and addictive, and can make your fragments of time more productive. Despite the occasionally weird AI-style sentences, it can still serve as a motivating grammar and vocab activator for beginning learners.
+    There are many great alternatives to Duolingo on the market with fancy design and innovative methods, but most of them only provide full access when you pay for a subscription. Also, remember that no app can take you to fluency; they are at best a casual study supplement that helps you stay tuned. Focusing on only one or two resources is usually enough. Some of the most recommended options for a thorough all-in-one course are: 
+        Fluencia (developed by the SpanishDict team) 
+        Speakly
+        Busuu
+        Babbel
+        LingoDeer
+        Mango Languages
+
+Pronunciation
+
+    Forvo: A database of words and sounds, in tons of languages, and recorded by native speakers as well. That makes this site a great tool for when you find a word whose pronunciation you don’t know. Type it into the Forvo search bar, select the right word, and listen to its pronunciation in Spanish. Repeat the word as many times as it takes to get a similar pronunciation.
+    RhinoSpike: With this site, you can get words, sentences or entire passages of text read out loud by a native speaker. It’s entirely free and based on the principles of language exchange — so it only works if everybody contributes! To get the right pronunciation, you just have to ask, and in exchange, you can read a text or a sentence in Chinese to help someone else.
+    外研随身学: The official app of Foreign Language Teaching and Research Press (FLTRP), where you can listen FOR FREE to the audio companion for the pronunciation guide in the official Chinese edition of AULA Internacional 1 (see the Pronunciation section for the PDF).
+
+Grammar
+Grammar quizzes and verb conjugators.
+
+    Gramática Española: The official companion app (iPad only) for AULA Internacional series by Difusión to help you master Spanish grammar.
+    Kwiziq: A language-learning platform offering courses in Spanish with a curriculum centered around quiz-like exercises. There are plenty of grammar lessons that accompany these quizzes as well as some writing and listening practice opportunities.
+    Verb Demonstrator: A web app showing comprehensive charts and examples of Spanish verb conjugation rules and forms, great for a quick grammar overview and review.
+    Linguasorb: Verb resource For Spanish, French and English. Over 1 million individual verb forms each with audio, translations, practice quizzes and more.
+    Conjuguemos: A tool that makes learning verb conjugations in Spanish, French, and 7 other languages easy with verb lessons, drill practices and fun multi-player games. A community-sourced site that is used by many schools, teachers and students around the world.
+    Spanish Verb Drills: These Spanish verb drills will allow you to master the verb tenses so that you start to use them automatically in your speech. For each topic you can generate quiz after quiz after quiz, giving you the practice you need to succeed.
+    ConjuGato: An app for practicing Spanish conjugations on the go, whenever you have a free minute.
+
+Vocabulary
+Vocab lessons and flashcard tools, mostly with spaced repetition system.
+
+    Quizlet: A learning platform that uses flashcard activities and games to help you practice and master what you're learning. You can find in it the whole set of vocabulary lists for every unit of AULA 1 and 2.
+    Anki: A popular program that enables you to learn many things using flashcards and spaced repetition. You can use an existing deck, created by some of the users – and there are several hundred shared decks for Spanish – or create your own. Anki is an open-source app that works on most operating systems and enables you to sync your decks across devices.
+    Memrise: Memorize words, phrases, spelling, pronunciation, syntax, just name it, like playing a game. You can choose from hundreds of courses, mostly generated by users, or create your own.
+    Lingvist: An app that uses spaced repetition and flashcards to help you build your vocabulary in a language, as well as big data and AI to create relevant and suitably challenging material for every individual learner.
+    Clozemaster: Gamified language learning through mass exposure to vocabulary in context. A great way to practice vocabulary, sentence structures, and reading by completing tons of fill-in-the-blank exercises. You’ll score points as you go.
+    Drops: A 5-minutes-a-day app that helps you memorize words (mostly nouns) with the help of simple visual illustrations. Includes games and exercises that cover vocabulary (matching word and image), spelling and translation.
+
+Listening
+Language immersion and comprehensible input with popular songs, authentic videos, news and podcasts.
+
+    Come Again? A very handy tool to practice intensive listening in a foreign language without needing to install any audio editing software or app. You can use it to repeat or skip a short sentence, to play an audio at slower speeds, or to practice dictation, etc.
+    每日西班牙语听力: A platform built for Chinese Spanish learners to practice listening comprehension, with an ever-expanding collection of handpicked and curated audiovisual resources for all levels, mostly from popular YouTube channels and vloggers. The app is available to all desktop and mobile devices.
+    Spanish Proficiency Exercises: A compilation of brief video clips in which native speakers of Spanish from various locations throughout Latin America and Spain demonstrate various language tasks. Created by Orlando R. Kelm of the University of Texas at Austin. 
+    Spanish Listening: More than 400 free videos, made by speakers from every Spanish-speaking country, for students to practice listening and reading.
+    LyricsTraining: Learn languages through the songs you love. Improve and practice your listening skills with the best music videos. Fill in the gaps to the lyrics as you listen and sing Karaoke to your favorites. (There’s another similar app: Lirica)
+    WordLab: Formerly Language Learning with Netflix, a Chrome extension for Netflix and YouTube that adds dual language subtitles, popup dictionary, precise video playback controls, lets you save words and phrases, recommends best words to learn, and much more. 
+
+Speaking
+Language lessons focused on oral communication with chunks of useful phrases and daily conversations.
+
+    Pimsleur: Based on Pimsleur Method, one of the classic names in language learning. The courses focus on oral, conversational Spanish, and are great for getting people to start speaking right away.
+    SpanishPod101: A self-study learning course that teaches primarily using audio lessons, a lot like podcast episodes supplemented with some other useful features. Typically, a couple of hosts will listen to a dialogue and then go through it line by line, explaining essential phrases and key grammar points, in addition to a segment dedicated to cultural information. 
+    Speechling. A nonprofit language-learning platform focused on speaking with a curriculum of thousands of sentences, which uses a combination of technology and human coaching. You can record yourself speaking sentences in Spanish and compare to a native speaker, do dictation exercises, and get personal feedback on your pronunciation.
+
+Reading
+Language immersion and comprehensible input with books, webpages and whatever contents you like.
+
+    Translate Web Pages: This Firefox add-on can translate your page in real time using Google Translate without the need to open new tabs. It works like magic for beginners and upper beginners who want to explore the many YouTube videos teaching the Spanish language in Spanish, but get hindered by the level. With this tool you can get all their subtitles turned into English in a second.
+    ReadLang: An eReader made specifically for language learners that allows you to import books, articles and webpages, and has a unique swipe-to-translate feature allowing you to effortlessly read texts beyond your current level. All your translations are stored, along with their contexts, for you to work on memorizing them later. Available as a Chrome extension. 
+
+Writing
+
+    Type Spanish Accents: This page allows you to easily type Spanish accents and letters without a Spanish keyboard. 
+
+Language Exchange
+Learn a language and explore new cultures by chatting with native speakers around the world.
+
+    HelloTalk: The 1st global language learning and culture exchange community, connects you with native speakers of other languages.
+    HiNative: A service where you are free to ask questions to native speakers from around the world via your smartphone.
+
+Online Tutoring
+Since you’ve already paid for school, just save this money and don’t hesitate to ask your professor anything!
+
+    Italki: The largest online community for economic and private one-on-one class, loved by many self-taught language learners.
+    Verbling: Another language learning platform where you can find and book classes directly from a professional teacher.
+
+PODCASTS
+
+    Audiria (All Levels / Large online library of Spanish audio clips (800+) that you can choose from based on the subject that you’re interested in. The quality of the podcasts may vary and the majority of episodes are geared towards intermediate/advanced learners)
+    Coffee Break Spanish (All Levels / An excellent introduction to the Spanish language in 15-20 minute episodes. It has a tremendous amount of material with about 160 episodes spread out over 4 seasons. Listening to the audio is free but materials require a premium membership)
+    Notes in Spanish (All Levels / Comprehensive free Spanish podcasts based primarily on conversations regarding real-world topics. The podcasts contain over 200 episodes in all and are designed for all levels of students, from beginners to advanced learners)
+    Spanish Obsessed (All Levels / An excellent series of podcasts for beginner to advanced students, as well as a few specialized podcasts focused on pronunciation and vocabulary. Audio and transcripts are free, while exercises and other materials are available with a paid membership)
+    PodcastsinSpanish.org (Upper-Beginner to Advanced, natural-speed dialogues on all kinds of topics)
+    Podcast En Spanish (Upper-Beginner to Advanced, grammar and vocabulary lessons in slow Spanish)
+    Duolingo Spanish Podcast (Upper-Beginner to Intermediate, bilingual storytelling with exquisite production)
+    News in Slow Spanish (Intermediate to Advanced / A weekly podcast that recaps the news in both Spain and Latin American Spanish. Unlike typical Spanish news radio, the pace of speech is comfortable and slow enough for an intermediate learner to understand)
+
+VIDEO CHANNELS
+
+    SpanishPod101.com (All Levels, taught in English and Spanish)
+    Tio Spanish (All Levels, Spanish grammar, vocabulary, conversation and culture taught in simple Spanish, with animation)
+    Tu Escuela de Español (All Levels, Spanish pronunciation, grammar, vocabulary, orthography and culture taught in Spanish, with animation)
+    The Language Tutor (Beginner, grammar lessons taught in English)
+    Butterfly Spanish (Beginner to Intermediate, old-school style class taught in English, but very well-explained by a sweet and inspiring teacher)
+    Why Not Spanish? (Beginner to Intermediate, taught in English and Spanish by an American/Colombian couple, with touches of comedy)
+    Spanish and Go (Beginner to Intermediate, taught in English and Spanish by a gringo/Mexican couple, focused on real-world travel Spanish)
+    Señor Jordan (Beginner to Intermediate, taught in English and Spanish by a high school teacher with often creative and hilarious ideas)
+    Easy Spanish (Upper Beginner to Advanced, authentic street interviews produced in various locations in Latin America and Spain, so that we get to know the Spanish language as spoken in everyday life)
+    Spanishland School (Intermediate to Advanced)
+    Spanish with Vicente (Intermediate to Advanced)
+    María Español (Intermediate to Advanced)
+    Español con Juan (Intermediate to Advanced)
+    SpanishPodcast.net (Intermediate to Advanced)
+    Español Automático (Intermediate to Advanced)
+    Linguriosa (Intermediate to Advanced)
+
+** My Learning
+I Like to learn by context of artwork, like songs/poem/lines/speeches
+
+*** Singers
+
+**** Álvaro Soler
+
+***** Sofía
+****** sueño
+dream
+****** cuando 
+when
+****** era pequeño
+childhood
+****** en el corazón
+in the heart
+****** sin preocupación
+without worries
+****** sigo
+seguir = follow
+****** viendo
+ver = to see
+*** Musical
++ El Hombre de La Mancha
+

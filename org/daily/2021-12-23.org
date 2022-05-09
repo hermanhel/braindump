@@ -1,0 +1,69 @@
+:PROPERTIES:
+:ID:       F2FE807D-02BB-44C8-B868-EA74883BE9D6
+:END:
+#+title: 2021-12-23
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Review on the day
+** The CPT111 Submission
+Failure.
+
++ 提前完成
+  整个作业是提前完成的。
+
+  + 是在误以为deadline将近时。
+    一个完全提前的deadline被证明是一个很好的催促工具。
+  
++ 忘记署名
+  + 忘记署名这回事
+    我完全没有在coursework spec里发现这一条。没有读到。
+    + Checklist和流程控制
+      没有严格执行Checklist的制作。
+      没有完全浏览、理解、并制作合理的Plan/Checklist
+      没有进行严格的流程控制。
+      流程控制时会根据脑子里记得的部分直接开始继续做，而不是及时在checklist上做记号。
+       这个机器就是因为我的脑子里的这个keep track的功能不可靠所以才建立的。
+      流程控制记录的大小，边界不明白。在什么时候应该做记号，或者做了几件事才能做记号，这样的不明白也是没有严格流程控制的原因————让每个小的session有太多的多余管理工作。这个过程应该在最开始完成。
+    + General Task Machine的背景
+      忘记了。
+
+      事实证明：不在GTM之下，任务执行的可靠程度和清晰程度都下降了。
+  + 拖拉到过期
+    + 在过期之后才发现署名这回事
+      应该提前来得及的时间进行最后检查。
+
+    + 接受了双人模式的邀请
+      容易受到策略的引诱。
+      + 对于主要事情力量的失去意识。
+        General Machine的缺失
+        我的不坚定
+        缺少重复
+        缺少投资，传统建立
+        对于决定-执行的流程的不熟悉。
+      
+** The Habbit
+[[id:E1AE5A71-0D1A-496E-957E-E1FF146D2069][Entertainment Control Machine]] Trying to replace entertainment with Math puzzles for a week
+
++ Interest. 证明数学确实是我的爱好之一。我做数学的时候感觉很有趣，很开心。同时头脑清明程度是让人很舒服地清楚。数学可能是一个更健康的爱好
++ Tradition
+  在玩了一次游戏之后，强烈的冲动来玩下一次。
+  在以数学作为消遣一天之后，这样的观察变得更清晰了。也更好拒绝。
++ Convenient
+  数学比其他的都方便。我有一个专门装数学treat的本子，那么打开本子就可以消遣自己了。
+  手机游戏还要打开，TV还要开浏览器，小说...数学只要每天早晨装填题目，然后打开本子就可以了。
+
+  
+** Workout
+今天的workout执行只有一半
++ 忘记了
+  需要一个提醒机制
+  + Diary appt?
+  + 
+* Improvement on the review
+
+** TODO Task Capture template
+在Org-Capture中加入除Task capture之外的inbox capture。
+两个的区别是： Task capture是加入以后想要做的事。Inbox capture是加入现在马上要做的事的记录。Task capture可以只有标题，加上最简单的说明。Inbox capture需要有流程控制的heading，clock in/out
+
+

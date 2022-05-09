@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       37FD82AE-BDCD-4964-9FF3-C3F5BA3D01C1
+:END:
+#+title: CentOS
+#+HUGO_SECTION:main
+* Problem/sul.
+** 32-bit libs.
+sometimes when =./xxx= report no such file when there actually was. That could be caused by lack of 32-bit lib when under a 64-bit system.
+
+Solution is download respectively the missing libs by =yum install libstdc++.i686=, where libstdc++ replaced by the lib. The =.i686= stands for the 32-bit version of the lib.
+** back running
+use =screen= command.
+=screen= to start a screen, C-a-d to leave, =screen -r= to recovera

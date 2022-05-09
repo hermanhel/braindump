@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       5DCD9BFB-53BD-41EB-A37E-E00FF5FBABBD
+:END:
+#+title: Process Control Machine
+#+HUGO_SECTION:main
+A machine for process control of task.
+converge to Ray Dalieo's principle of Doing: "always have process control to make sure the solution are executed strictly"
+* Use [1/4]
+[1/4]
++ [X] 
++ 
++ [ ] 
++ [ ] 
++ 
++ [ ]

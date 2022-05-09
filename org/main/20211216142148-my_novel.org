@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       165528FF-8C78-4EC6-A60B-AF298B7A621E
+:END:
+#+title: My Novel
+#+HUGO_SECTION:main
+* Drafts
+[[id:6A6C5903-B08E-4032-B02F-7F44EF1C489A][Understanding]]

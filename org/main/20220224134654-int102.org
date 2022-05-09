@@ -1,0 +1,205 @@
+:PROPERTIES:
+:ID:       D68B8A59-F6B6-4224-9801-FB1D061C07BE
+:CATEGORY: INT102
+:END:
+#+title: INT102
+#+HUGO_SECTION:main
+Algorithm
+* UTS
+** Deliver Plan
+*** Lectrue
+https://xjtlu.zhumu.com/j/6208331180
+**** DONE Lecture 1 
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-02-22 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Lecture 2
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-01 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Lecture 3
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-08 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Lecture 4
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-15 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+
+**** DONE Lecture 5
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-22 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+CLOCK: [2022-03-22 Tue 11:03]--[2022-03-22 Tue 12:55] =>  1:52
+:END:
+
+***** Greedy Method
+Best move in =each= step.
+make for the current best choice
+
+****** pro
++ fast
++ easy
++ good
+
+****** con
++ good solution, but no the best
+
+****** How to design
+1. 
+
+****** example
+
+******* Minimum spanning tree
+A graph G with weighted edges, from which a Tree is generated with all vertices of G with minimum weight.
+******** Prim's algorithm
+1. define graph G(V,E)
+2. Start state: V'={v0},E'={}
+3. find the vn in V-V' that connect to any item in V' with the smallest weight.
+4. add the vn into V', and the weight into E'
+********* time complexity
++ weight matrix : O(|V|2)
++ =adjacent lis= t ,and =priority queue= implemented by min-heap: O(|E|log(|V|))
+******** kruskal;s algorithm
+1. arrange the edges from smallest to largest weight
+2. take from the lowest to largest,
+********* proof for correctnesss
+********* time complexity
+incidence matrix
+******* single-source shortest-path
+******** Dij's algorithm
+
+**** DONE Lecture 6
+CLOSED: [2022-03-29 Tue 12:28] SCHEDULED: <2022-03-29 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from "DONE"       [2022-03-29 Tue 12:28]
+- State "DONE"       from              [2022-03-29 Tue 12:28]
+:END:
+
+***** Dynamic Programming(tabular method)
+F(n) = 1 when n = 0; F(n-1) + F(n-2) when n>2.
+
+****** 2 ways
+
+******* 1. recursive
+from the last problem, to F(n) = F(n-1) + F(n-2)
+it's a O(2^n)
+******* 2. accumulating
+from the first problem, F(2) = F(1) + F(0)
+and build the whole thing in a[0], a[1], a[2].....
+it's a O(n)
+**** DONE Lecture 7
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-05 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+**** DONE Lecture 8
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-12 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+
+***** Space-time-tradeoff
+
+****** Input-enhancement
+preprocess the input to store info
+
+******* distribution counting sort
+
+******* horspool algorithm for string search
+****** pre-structuring
+preprocess the input to access easier
+**** DONE Lecture 9
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-04-19 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+
+**** DONE Ledcture 10
+CLOSED: [2022-04-26 Tue 11:31] SCHEDULED: <2022-04-26 Tue 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-26 Tue 11:31]
+:END:
+
+***** NP problems
+
+****** efficient
+an algorithm is =efficient= if:
++ time bounded by a polynomial of its input size.O(N^3)
+  
+
+**** Lecture 11
+SCHEDULED: <2022-05-03 Tue 11:00>
+
+**** Lecture 12
+SCHEDULED: <2022-05-10 Tue 11:00>
+
+**** Lecture 13
+SCHEDULED: <2022-05-17 Tue 11:00>
+
+*** Tutorial
+
+**** DONE Tutorial 1
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-02-24 Thu 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+**** DONE Tutorial 2
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-03 Thu 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+**** DONE Tutorial 3
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-10 Thu 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+**** DONE Tutorial 4
+CLOSED: [2022-03-18 Fri 16:46] SCHEDULED: <2022-03-17 Thu 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-18 Fri 16:46]
+:END:
+**** DONE Tutorial 5
+CLOSED: [2022-03-28 Mon 10:08] SCHEDULED: <2022-03-24 Thu 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-03-28 Mon 10:08]
+:END:
+**** DONE Tutorial 6
+CLOSED: [2022-04-21 Thu 23:16] SCHEDULED: <2022-03-31 Thu 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:16]
+:END:
+**** DONE Tutorial 7
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-07 Thu 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+**** DONE Tutorial 8
+CLOSED: [2022-04-21 Thu 23:15] SCHEDULED: <2022-04-14 Thu 11:00>
+:LOGBOOK:
+- State "DONE"       from              [2022-04-21 Thu 23:15]
+:END:
+**** Tutorial 9
+SCHEDULED: <2022-04-21 Thu 11:00>
+**** Tutorial 10
+SCHEDULED: <2022-04-28 Thu 11:00>
+**** Tutorial 11
+SCHEDULED: <2022-05-05 Thu 11:00>
+**** Tutorial 12
+SCHEDULED: <2022-05-12 Thu 11:00>
+**** Tutorial 13
+SCHEDULED: <2022-05-19 Thu 11:00>
+* PAS
+** THREAD Self-learning
+The speed of the course and content doesn't meet my need.
+I need it faster, and more advanced.
+go through the slides myself
+

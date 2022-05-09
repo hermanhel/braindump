@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       A2060660-46E3-4EAF-9D3E-C6B1C9A750FB
+:END:
+#+title: 2022-04-16
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* self-treat
+** <2022-04-16 Sat 10:43> make a website with clojure
+:PROPERTIES:
+:Effort:   30
+:END:
+:LOGBOOK:
+CLOCK: [2022-04-16 Sat 13:23]--[2022-04-16 Sat 13:43] =>  0:20
+CLOCK: [2022-04-16 Sat 11:20]--[2022-04-16 Sat 11:36] =>  0:16
+CLOCK: [2022-04-16 Sat 10:50]--[2022-04-16 Sat 10:59] =>  0:09
+:END:
+Journey: server? - server! - vm! - deploy! - connected!
+? for concept/explaination, ! for practice
+*** Server?
+**** machine and program
+word =server= is refered to program handling request and machine on which the program runs.
++ server machine: a packed MacBook Pro with macOS BigSur
++ program: a programming constantly running on the MacBook Pro, to handle requests.
+***** journey of request
+1. click [[http://www.communitypicks.com/][http://www.communitypicks.com/]]
+2. browser: figure out IP address and send a HTTP request
+3. machine: recieve request, route the request to a server program it's running
+   1. nginx listen to port 80. get request
+   2. nging forward request to clojure program listing at port 3000
+***** how the machine knows?
+port.
+1 machine can host many servers, like an office could settle many employees.
+By port one request find a correct employee providing certain service, like mail, ssh, etc
+http use port 80.
+
+program listening to port 80 would get the request routed by the machine.
+=nginx= listen to port 80. apache is another
+***** 
+*** Server!
+**** structure
+an example to manage role-playing character sheets
++ front-end: cljs
++ back-end HTTP component
+**** flow of information
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[/Users/hermanhe/Notes/RoamNotes/daily/request.png]]
+*** vm!
+=vagrant up=  to start
+=vagrant halt= to stop
+=vagrant destory -f= to destroy everything. =up= again will recreate everything
+* After I'll do some CPT104 work.
+Now it's afterrrrrrrrr!!!!!!
+I'll do my CPT104 work.
+Let me...... Go through the whole book!
+using 
+* highlight website
+* Computer Systems: A Programmer’s Perspective
+good book
+* 我晕了.
+我看了一会儿沙雕频道,然后晕了.以后看沙雕频道一次最多看2条,之后就做其他事.不然会晕.
+* 晕的处理措施
+晕的状态下是不能自制的.不太能做需要强自制力的动作.需要有趣且主动、创造性强的活动.同时是不导致晕的活动.晕会是在不能够控制的活动中产生,比如看不懂得书,只能复述之类的.
+画画可以
+* Learn Git
+* Learn Projectile

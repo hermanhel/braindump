@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       B5C9FBB2-292F-49FF-BF87-C48DD5812F56
+:END:
+#+title: rsync
+#+HUGO_SECTION:main
+it's basically a =copy= utility.
+executing =rsync -avz src det= will:
++ file - dest: copy the file to dest
++ folder - dest: copy the folder to dest
+
+difference with =cp= is that it's more efficient by checking the difference.
+* syncing file

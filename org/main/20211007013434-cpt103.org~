@@ -1,0 +1,103 @@
+:PROPERTIES:
+:ID:       1C716C73-DC8E-45EA-A998-42DDE75C338D
+:END:
+#+title: CPT103
+* ACTIVE CPT103
+* Class Information
+:LOGBOOK:
+CLOCK: [2021-10-11 Mon 14:20]--[2021-10-11 Mon 14:42] =>  0:22
+:END:
+  *CPT103* is of Database.
+  The class. I seemed to be missing a lot. Got to see that Again
+** Credits - 5
+| num | Method   | rnage | time |  % |
+|   1 | LMo test |       |      | 15 |
+|   2 | LMO test |       |      | 15 |
+|   3 | Project  |       |      | 70 |
+** Professor Info
+*** Jianjun Chen
+**** Contact
++ email(prefer): jianjun.chen@xjtlu.edu.cn
++ office tele:0512-81889137
++ Office hour: SD541 Tuesday 16:00-18:00
+** Course Content Info
+*** [[id:DC5167CD-BFBC-4DE3-8B89-7E1ABFCA6433][SQL]]
+**** Data Def
+**** Queries
+*** Entity-relationship modeling
+*** Normalisation
+*** Transactions
+*** Relational algebra
+** Module Specific Info
+*** Database Server
+**** Type
+DB server: MySqL
+Client for labs: PhpMyAdmin
+**** Logging Info
++ Address: csse-mysql.xjtlu.edu.cn
++ condition: XJTLU wifi or VPN
++ Account
+  + accountname: LinfengHe20
+  + password: 123
+* Resources
+** Lecture slide
+** Online Resoureces
+* Tutoring Schedule
+** Lecture EB138
+SCHEDULED: <2021-10-18 Mon 16:00-18:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-14 Thu 15:54]
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2021-10-14 Thu 15:54]
+:END:
+** Comp. Lab SC464
+SCHEDULED: <2021-10-14 Thu 17:00-18:00 +1w>
+on week 5,6,8-11
+* Tasks
+** WEEK Preview #1
+SCHEDULED: <2021-10-16 Sat +1w>
+*** Preview session W6
+
+** WEEK Preview #2
+SCHEDULED: <2021-10-12 Tue +1w>
+*** Preview session W5
+  
+** WEEK Class content Mindmap
+SCHEDULED: <2021-10-12 Tue>
+   I have little conscious understanding about the topic.
+   I need to make a mindmap out of the syllabus, and what I know.
+   Structural
+** TODO Catch up
+** DONE Course Information CPT103
+CLOSED: [2021-10-12 Tue 01:09] SCHEDULED: <2021-10-11 13:00-13:30 Mon>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-12 Tue 01:09]
+:END:
+   Could use the approach in [[file:20211007013423-cpt107.org::*Course information][Course information]]. Could make a machine out of that.
+   
+** DONE SQL Catch up
+CLOSED: [2021-10-12 Tue 01:09] SCHEDULED: <2021-10-11 13:30-14:30 Mon>
+  :PROPERTIES:
+  :Effort:   60
+  :END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-12 Tue 01:09]
+CLOCK: [2021-10-11 Mon 14:43]--[2021-10-11 Mon 16:41] =>  1:58
+:END:
+  I would say with pity that I'm left behind a little bit in the course.
+  The content would definitely be in my range, but I still have to learn them to have them, and I need to be reliable and at least following the module's schedule.
+  The Approach is:
+  1. I read a tutorial
+  2. I write paper note
+  3. I do exercise
+  4. I write org-roam node [[id:DC5167CD-BFBC-4DE3-8B89-7E1ABFCA6433][SQL]]
+  5. I go back to exercises.
+
+  It's worth mention that this could be a reuseable machine for self-learning of other similar skills.
+  For this task, do as this flow. In the future, could test on other flows like =that without paper note=
+
+* Notes
+| class  | instance |
+| Schema | record   |
+

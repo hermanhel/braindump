@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       5A60D2F9-B216-49A6-818F-4E8BAF249478
+:END:
+#+title: Question answer machine
+#+HUGO_SECTION:main
+* Procedure
+** 1. Pause Filler
+*** Example
++ THat's a difficult question...
++ Let me see
++ Let me think about that for a moment
++ That's an interesting question
+** 2. Repeat/Paraphrase Question(to give you even more thinking time)
+*** Example
+Hmm... Do I agree or disagree introducing more physical education lessons in the school curriculum is the best way to deal with obesity?
+** 3. Use a topic sentence
+*** Example
+I think it is the best way for a number of reasons
+** 4. Use sequencers/Discourse Markers
+
+** 5. Extend and Support your points
+This means that...
+By doing this,...
+** 6. Summarise
+So, as I've sdaid
+To summarise,
+Overall,
+* Analyse the problem
+** Function of the question sentence
+** Plan the body
+*** 1.
+* Example
+1 concrete example would be really nice
+ancient greek architecture in rainaisence rather than ancient greek to rainaisense
+music in 80s rather than all 80s to now
+

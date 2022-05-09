@@ -1,0 +1,110 @@
++++
+title = "2022-04-16"
+author = ["System Administrator"]
+tags = ["draft", "draft"]
+draft = false
++++
+
+## self-treat {#self-treat}
+
+
+### <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-04-16 Sat 10:43&gt; </span></span> make a website with clojure {#make-a-website-with-clojure}
+
+Journey: server? - server! - vm! - deploy! - connected!
+? for concept/explaination, ! for practice
+
+
+#### Server? {#server}
+
+<!--list-separator-->
+
+-  machine and program
+
+    word `server` is refered to program handling request and machine on which the program runs.
+
+    -   server machine: a packed MacBook Pro with macOS BigSur
+    -   program: a programming constantly running on the MacBook Pro, to handle requests.
+
+    <!--list-separator-->
+
+    -  journey of request
+
+        1.  click [http://www.communitypicks.com/](http://www.communitypicks.com/)
+        2.  browser: figure out IP address and send a HTTP request
+        3.  machine: recieve request, route the request to a server program it's running
+            1.  nginx listen to port 80. get request
+            2.  nging forward request to clojure program listing at port 3000
+
+    <!--list-separator-->
+
+    -  how the machine knows?
+
+        port.
+        1 machine can host many servers, like an office could settle many employees.
+        By port one request find a correct employee providing certain service, like mail, ssh, etc
+        http use port 80.
+
+        program listening to port 80 would get the request routed by the machine.
+        `nginx` listen to port 80. apache is another
+
+    <!--list-separator-->
+
+    -
+
+
+#### Server! {#server}
+
+<!--list-separator-->
+
+-  structure
+
+    an example to manage role-playing character sheets
+
+    -   front-end: cljs
+    -   back-end HTTP component
+
+<!--list-separator-->
+
+-  flow of information
+
+    {{< figure src="/ox-hugo/request.png" width="600px" >}}
+
+
+#### vm! {#vm}
+
+`vagrant up`  to start
+`vagrant halt` to stop
+`vagrant destory -f` to destroy everything. `up` again will recreate everything
+
+
+## After I'll do some CPT104 work. {#after-i-ll-do-some-cpt104-work-dot}
+
+Now it's afterrrrrrrrr!!!!!!
+I'll do my CPT104 work.
+Let me...... Go through the whole book!
+using
+
+
+## highlight website {#highlight-website}
+
+
+## Computer Systems: A Programmer’s Perspective {#computer-systems-a-programmer-s-perspective}
+
+good book
+
+
+## 我晕了. {#我晕了-dot}
+
+我看了一会儿沙雕频道,然后晕了.以后看沙雕频道一次最多看2条,之后就做其他事.不然会晕.
+
+
+## 晕的处理措施 {#晕的处理措施}
+
+晕的状态下是不能自制的.不太能做需要强自制力的动作.需要有趣且主动、创造性强的活动.同时是不导致晕的活动.晕会是在不能够控制的活动中产生,比如看不懂得书,只能复述之类的.
+画画可以
+
+
+## Learn Git {#learn-git}
+
+
+## Learn Projectile {#learn-projectile}

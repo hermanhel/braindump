@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       677D1C6E-BD3E-451E-8167-D328D52DF5F0
+:END:
+#+title: 2022-01-03
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* ACTIVE 2022 New year Plan                                          :agenda:
+:PROPERTIES:
+:ID:       17C8D494-ACFA-491D-9BB9-0E42C2C632C9
+:END:
+2022 is a year in my rest about 70 year of life.
+
+For this year, I want something to be accomplished.
+** Neuroscience Pathaway
+I want to establish a path to my neuroscience/neuroengineering career. And step onto that path, with commitment not only to myself but also to a community.
+** Ace Credit
+*** Ace my credits
+
+** Make a living
+I want to ensure that I could make a living in everywhere.
+
++ [[Coding]]
+ Software engineeering could be a good skill to make a living, So I want to make sure that I have the ability to code a stable featured product on my own.
++ Serving
+  In case I don't get a job in coding, part-time job in a bar or cafeteria could always be a choice.
++ Art
+  If art could help me with my income, that could also work
+  + Writing
+    Figure a way where writing could make income
+  + Drawing
+    Figure a way where drawing could make income
+  + Music
+    Figure a way where music could make income
+** Coding
+*** Various Languages
+*** Lisp mastery
+start from common lisp, expand to clojure and scheme
+*** JS mastery
+*** Linux mastery
+*** Software developing machine
+
+** Athlete
+*** Good Shape
+*** Good Strength
+*** Good Skill
+*** Archery Mastery
+
+** Reading
+[[id:7825D689-8874-4FD3-8372-24AFA9BF4255][52 Book Challenge Project]]
+** Music
+*** My musical
+*** Jazz improvement
+** Drawing
+*** Anime style
+*** Bop Style
+
+** Poem
+*** Poem machine
+

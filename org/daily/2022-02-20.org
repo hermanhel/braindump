@@ -1,0 +1,237 @@
+:PROPERTIES:
+:ID:       8B975751-82AC-44FB-82BA-E1AF635DB18D
+:END:
+#+title: 2022-02-20
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Today's Plan
+** DONE Get to know the modules
+CLOSED: [2022-04-29 Fri 15:14]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2022-04-29 Fri 15:14]
+:END:
+*** Goal
+To accomplish good grade in the modules.
+
+Thus, the system of the module content should be examined, the system of university's deliver/teaching should be documented for further use, and a system of me with my own part and use of university's system to know about the module content system should be established.
+**** requirement
+3 systems are to be established. Each will in form of a machine.
++ Document Module Content System(MCS)
+  name: (CPT102-MCS)
+  Full of object/goals. Lack action/flow/principle
++ Document University Teaching System(UTS)
+  name: (CPT102-UTS)
+  Will include schedule, resource, people to contact to.
+  With defined APIs.
+  Would imply some methods.
++ Establish and Document Personal Acquisition System(PAS)
+  name: (CPT102-PAS)
+  Should include Princiople, Actions.
+  Goal fits the goals in MCS.
+  Use API from UTS wisely.
+*** Actions
+**** TODO CPT102[2/3] Data structure
+:PROPERTIES:
+:Effort:   2:00
+:END:
+:LOGBOOK:
+CLOCK: [2022-02-20 Sun 18:07]--[2022-02-20 Sun 18:32] =>  0:25
+- Note taken on [2022-02-20 Sun 17:56] \\
+  Finished MCS
+CLOCK: [2022-02-20 Sun 17:31]--[2022-02-20 Sun 17:56] =>  0:25
+CLOCK: [2022-02-20 Sun 15:56]--[2022-02-20 Sun 17:31] =>  1:35
+:END:
+
+***** DONE TDOO MCS[6/7]
+CLOSED: [2022-02-20 Sun 18:24]
+:LOGBOOK:
+- State "DONE"       from              [2022-02-20 Sun 18:24]
+:END:
+1. [X] Find a location to store the docs
+2. [X] Check Module handbook
+3. [X] Check/Download/organize Current slide/resource
+4. [X] Define the pattern of resource pull from MCS
+5. [ ] [optional] Ask for advise from older students
+6. [X] Add 2 syllabus of the same object from 2 different institutes(to compare to understand)
+7. [X] Wrap up the MCS with summary and index.
+***** DONE UTS[6/8]
+CLOSED: [2022-02-20 Sun 18:32]
+:LOGBOOK:
+- Note taken on [2022-02-20 Sun 18:32] \\
+  UTS finished
+- State "DONE"       from "TODO"       [2022-02-20 Sun 18:32]
+:END:
+1. [X] Check Module Handbook
+   1. [X] Deliver plan
+   2. [X] Suggested study method
+   3. [X] Definition of lec/tutorial
+2. [X] Get Servises(from person) supplyed
+3. [X] Get Tools(digital/like a server) supplyed
+4. [X] Summary the teachers, what do they know, how to contect.
+5. [X] Define the Mechanisms happening officially, and API for me to use them.
+6. [X] Wrap up the system with summary of Methods in it, and Vars in it.
+7. [ ] [optional] Ask for advise from older students
+8. [ ] [optional] other teaching plan from other projects.
+***** TODO PAS[0/4]
+1. [ ] Write system specification. with info from MCS and UTS
+   1. [ ] Use learning principles.
+   2. [ ] Solidify the Knowledge(vars)
+   3. [ ] Solidify the Methods. What skills should I be learning, and how should I learn them.
+   4. [ ] Speicify Input and Output overall
+   5. [ ] Use blackbox abstraction to design each little part
+2. [ ] Write a system that will work together(with a main method), with aid from UTS APIs and targeting data from MCS.
+3. [ ] Specify Log implementation, when to log, and where the log could be find.
+4. [ ] Provide APIs. for other systems like Planning machine etc.
+***** Outline
+
+
+**** TODO CPT104[/]
+:PROPERTIES:
+:Effort:   60
+:END:
+***** TODO MCS[2/6]
+:LOGBOOK:
+CLOCK: [2022-02-20 Sun 18:35]--[2022-02-20 Sun 18:58] =>  0:23
+:END:
+1. [X] Check Module handbook
+2. [ ] Check/Download/organize Current slide/resource
+3. [ ] Define the pattern of resource pull from MCS
+4. [ ] [optional] Ask for advise from older students
+5. [X] Add 2 syllabus of the same object from 2 different institutes(to compare to understand)
+6. [ ] Wrap up the MCS with summary and index.
+***** TODO UTS[0/8]
+1. [ ] Check Module Handbook
+   1. [ ] Deliver plan
+   2. [ ] Suggested study method
+   3. [ ] Definition of lec/tutorial
+2. [ ] Get Servises(from person) supplyed
+3. [ ] Get Tools(digital/like a server) supplyed
+4. [ ] Summary the teachers, what do they know, how to contect.
+5. [ ] Define the Mechanisms happening officially, and API for me to use them.
+6. [ ] Wrap up the system with summary of Methods in it, and Vars in it.
+7. [ ] [optional] Ask for advise from older students
+8. [ ] [optional] other teaching plan from other projects.
+***** TODO PAS[0/4]
+1. [ ] Write system specification. with info from MCS and UTS
+   1. [ ] Use learning principles.
+   2. [ ] Solidify the Knowledge(vars)
+   3. [ ] Solidify the Methods. What skills should I be learning, and how should I learn them.
+   4. [ ] Speicify Input and Output overall
+   5. [ ] Use blackbox abstraction to design each little part
+2. [ ] Write a system that will work together(with a main method), with aid from UTS APIs and targeting data from MCS.
+3. [ ] Specify Log implementation, when to log, and where the log could be find.
+4. [ ] Provide APIs. for other systems like Planning machine etc.
+
+**** TODO INT102[/]
+:PROPERTIES:
+:Effort:   60
+:END:
+***** TODO MCS[0/6]
+1. [ ] Check Module handbook
+2. [ ] Check/Download/organize Current slide/resource
+3. [ ] Define the pattern of resource pull from MCS
+4. [ ] [optional] Ask for advise from older students
+5. [ ] Add 2 syllabus of the same object from 2 different institutes(to compare to understand)
+6. [ ] Wrap up the MCS with summary and index.
+***** TODO UTS[0/8]
+1. [ ] Check Module Handbook
+   1. [ ] Deliver plan
+   2. [ ] Suggested study method
+   3. [ ] Definition of lec/tutorial
+2. [ ] Get Servises(from person) supplyed
+3. [ ] Get Tools(digital/like a server) supplyed
+4. [ ] Summary the teachers, what do they know, how to contect.
+5. [ ] Define the Mechanisms happening officially, and API for me to use them.
+6. [ ] Wrap up the system with summary of Methods in it, and Vars in it.
+7. [ ] [optional] Ask for advise from older students
+8. [ ] [optional] other teaching plan from other projects.
+***** TODO PAS[0/4]
+1. [ ] Write system specification. with info from MCS and UTS
+   1. [ ] Use learning principles.
+   2. [ ] Solidify the Knowledge(vars)
+   3. [ ] Solidify the Methods. What skills should I be learning, and how should I learn them.
+   4. [ ] Speicify Input and Output overall
+   5. [ ] Use blackbox abstraction to design each little part
+2. [ ] Write a system that will work together(with a main method), with aid from UTS APIs and targeting data from MCS.
+3. [ ] Specify Log implementation, when to log, and where the log could be find.
+4. [ ] Provide APIs. for other systems like Planning machine etc.
+
+**** TODO INT104[/]
+:PROPERTIES:
+:Effort:   60
+:END:
+***** TODO MCS[0/6]
+1. [ ] Check Module handbook
+2. [ ] Check/Download/organize Current slide/resource
+3. [ ] Define the pattern of resource pull from MCS
+4. [ ] [optional] Ask for advise from older students
+5. [ ] Add 2 syllabus of the same object from 2 different institutes(to compare to understand)
+6. [ ] Wrap up the MCS with summary and index.
+***** TODO UTS[0/8]
+1. [ ] Check Module Handbook
+   1. [ ] Deliver plan
+   2. [ ] Suggested study method
+   3. [ ] Definition of lec/tutorial
+2. [ ] Get Servises(from person) supplyed
+3. [ ] Get Tools(digital/like a server) supplyed
+4. [ ] Summary the teachers, what do they know, how to contect.
+5. [ ] Define the Mechanisms happening officially, and API for me to use them.
+6. [ ] Wrap up the system with summary of Methods in it, and Vars in it.
+7. [ ] [optional] Ask for advise from older students
+8. [ ] [optional] other teaching plan from other projects.
+***** TODO PAS[0/4]
+1. [ ] Write system specification. with info from MCS and UTS
+   1. [ ] Use learning principles.
+   2. [ ] Solidify the Knowledge(vars)
+   3. [ ] Solidify the Methods. What skills should I be learning, and how should I learn them.
+   4. [ ] Speicify Input and Output overall
+   5. [ ] Use blackbox abstraction to design each little part
+2. [ ] Write a system that will work together(with a main method), with aid from UTS APIs and targeting data from MCS.
+3. [ ] Specify Log implementation, when to log, and where the log could be find.
+4. [ ] Provide APIs. for other systems like Planning machine etc.
+**** TODO SPA003[/]
+:PROPERTIES:
+:Effort:   60
+:END:
+***** TODO MCS[0/6]
+1. [ ] Check Module handbook
+2. [ ] Check/Download/organize Current slide/resource
+3. [ ] Define the pattern of resource pull from MCS
+4. [ ] [optional] Ask for advise from older students
+5. [ ] Add 2 syllabus of the same object from 2 different institutes(to compare to understand)
+6. [ ] Wrap up the MCS with summary and index.
+***** TODO UTS[0/8]
+1. [ ] Check Module Handbook
+   1. [ ] Deliver plan
+   2. [ ] Suggested study method
+   3. [ ] Definition of lec/tutorial
+2. [ ] Get Servises(from person) supplyed
+3. [ ] Get Tools(digital/like a server) supplyed
+4. [ ] Summary the teachers, what do they know, how to contect.
+5. [ ] Define the Mechanisms happening officially, and API for me to use them.
+6. [ ] Wrap up the system with summary of Methods in it, and Vars in it.
+7. [ ] [optional] Ask for advise from older students
+8. [ ] [optional] other teaching plan from other projects.
+***** TODO PAS[0/4]
+1. [ ] Write system specification. with info from MCS and UTS
+   1. [ ] Use learning principles.
+   2. [ ] Solidify the Knowledge(vars)
+   3. [ ] Solidify the Methods. What skills should I be learning, and how should I learn them.
+   4. [ ] Speicify Input and Output overall
+   5. [ ] Use blackbox abstraction to design each little part
+2. [ ] Write a system that will work together(with a main method), with aid from UTS APIs and targeting data from MCS.
+3. [ ] Specify Log implementation, when to log, and where the log could be find.
+4. [ ] Provide APIs. for other systems like Planning machine etc.
+*** Log
+I made decisions on what to do to make MCS,UTS,PAS settled.
+
+Maybe I should reexamine these 3 systems in a while.
+
+The ultimate result of the 3 systems should be data in data structures.
+
+Reading irrelevent material(for current task). Should just skip for now
+
+I first decided to spend 1 hour on each subject, but it seems to short. I spend 2 hour on 1 MCS. So I guess that's the real speed.
+
+2 module each day. 2 hour for MCS, 0.5 hour for UTS.

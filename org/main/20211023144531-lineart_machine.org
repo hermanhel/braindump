@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       86F5C12A-5581-492B-840D-D59FB5B0F4EF
+:END:
+#+title: Lineart Machine
+#+HUGO_SECTION:main
+* Flow
+** 1. Draw the rough more than once
+*** 1. 1st Rough
+Illustrate the mood, very simple, with necessary details
+Use Blue to disguise
+Ignore partial off
+Use pencil like tools
+*** 2. 2st Rough
+Clear lineart.
+Use dark red to let it stand out
+Check the original mood
+Use structure partials and tools (structure line) to clear the structural off

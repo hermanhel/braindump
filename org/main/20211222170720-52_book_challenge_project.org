@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       7825D689-8874-4FD3-8372-24AFA9BF4255
+:CATEGORY: Book Chanllenge
+:END:
+#+title: 52 Book Challenge Project
+#+HUGO_SECTION:main
+* ACTIVE 52 Book Challenge Project                               :agenda:daily:
+The Challenge is =Read a book a week=.
+
+** The project Machine
+Pretty simple, just read one a week.
+
+Take note, Mind maps, practice, essays where it seemed to be interesting, and a review of the book to prove I actually read it.
+
+Record would be kept under [[Record]]
+
+*** NEXT Read
+Read the next chunk of the current reading book, or if I have a plan, next chunk of the plan
+
+** Record
+
+*** Overall
+| Number | Name       | Author              | Time                      |
+|--------+------------+---------------------+---------------------------|
+|      1 | Psychimart | McGraw-Hill Editors | 1st week <2021-12-22 Wed> |
+
+*** Each Book
+
+**** [CURRENT]1. Psychsmart by McGraw-Hill Editors
+This is a book about Psychology. It covers many fields I'm interested in, like neuroscience, conscious, memory, development, pretty much everything in the field of brain
+
+***** <2021-12-24 Fri> Reading: General and Neuroscience perspective
+
+***** <2022-01-04 Tue> Reading
+
+***** <2022-01-05 Wed> Reading
+
+***** <2022-01-06 Thu> Reading
+
+***** <2022-01-07 Fri> Reading
+
+***** <2022-01-08 Sat> Reading
+
+***** <2022-01-09 Sun> Reading
+
+***** <2022-01-09 Sun> Reading
+
+**** 2. Flow by Mihaly Csikszentmihalyi
+A book about the Optimal experience.
+
+**** American Gods by Neil Gaiman
+I kind of want to use this book as a model for my english writing.

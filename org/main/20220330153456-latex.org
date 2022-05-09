@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       572000E7-40E3-4572-8316-89534060064F
+:END:
+#+title: Latex
+#+HUGO_SECTION:main
+${\LaTeX}$ is a system to write science/math format consistent papers.
+* syntax
+** for latex files
+** for Org
+use ~C-c C-x C-l~ to toggle latex preview
+*** inline Math
+**** latex block signal
++ $$ __ $$
++ $_$
++
+  \begin{math}
+  ...
+  \end{math}
++ \[__\]
++ 
+  \begin{equation} e = mc^2 \end{equation}
+**** The math notations
+| notation | meaning                                    |
+|----------+--------------------------------------------|
+| \sin     | sin func(similar other triangle funcitons) |
+| \frac    | fraction   (d for large, t for small)      |
+| \dots    | ...                                        |
+| \int     | integral                                   |
+| \alpha   | alpha                                      |
+| ^{}      | superscript                                |
+| _{}      | subscript                                  |
+| \binom   |                                            |
+
+
+

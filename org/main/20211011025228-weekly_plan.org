@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       188F8050-7BAF-494E-847D-9265398B570A
+:END:
+#+title: Weekly Plan
+#+HUGO_SECTION:main
+This machine is for Weekly Plan
+* Schedule
+The Weekly Plan Machine call scheduled on every Saturday night
+Change if needed
+** TODO [#A] Weekly Plan
+SCHEDULED: <2021-10-23 Sat +1w>
+:PROPERTIES:
+# :STYLE:    habit
+:LAST_REPEAT: [2022-03-18 Fri 16:46]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-18 Fri 16:46]
+- State "DONE"       from "TODO"       [2022-03-18 Fri 16:46]
+CLOCK: [2021-10-12 Tue 02:15]--[2021-10-12 Tue 03:18] =>  1:03
+:END:
+Make Weekly Plan According to this machine
+* Flow of Weekly Plan Machine
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-10-12 Tue 01:13]
+:END:
+** 1. Confirm on the [[id:1130F0BE-A5C1-4E0F-8AF7-9BC582111108][Roles]]
+Recognize the roles and the priority and first things.
+*** Repeated schedules
+**** [[id:391C5CF3-2A11-4BC3-ADE3-6F8C6E557B82][Neuralscientist]]
+***** [[id:4972A60D-3727-4422-B73F-BAF3289C1DB8][Academic Machine]]
++ Preview Session
++ Tutoring Session
++ Homework Session
+** 2. Project: TODO -> WEEK -> NEXT
+Base on the Roles, Find in the Projects nested under roles that are active, and allocate Tasks to this WEEK. First Thing First, always.
+After that, Change the First things to NEXT
+Should set effort
+Refresh NEXT every day. 
+** 3. Maintain: TODO -> WEEK -> NEXT
+Things not in project but are necessary for roles and living.
+eg.: Go to teh hospital, Get Fruits, Repair gear, buying fancy things
+also to WEEK
+** 4. Schedule Time
+According to effort and priority, allocate each Task to days.
+* ~NEXT~ Task
+Focus on the NEXT Tasks only
+** Flow
+1. Mark the Tasks I want to focus on NEXT in the TODO list.
+2. Focus only on the NEXT tasks
+3. When the NEXT list is empty, repeat step 1.
+* Content
+** [[id:4972A60D-3727-4422-B73F-BAF3289C1DB8][Academic Machine]]
+This is the most important project now.
+*** Preview sessions
+See [[id:CEEC218D-CE8B-435A-8C78-4208607DD4DD][Self-Learning Machine]]
+*** Homework sessions

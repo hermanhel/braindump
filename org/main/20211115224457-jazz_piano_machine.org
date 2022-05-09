@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       32570108-B834-48D2-B439-187626176C73
+:END:
+#+title: Jazz Piano machine
+#+HUGO_SECTION:main
+* 进行
+** II-V
+*** 中间夹大小三度交替下行
+十三音可能会好用
+** 下行进行
+*** 三度
+* 问题
+** 看不清
+

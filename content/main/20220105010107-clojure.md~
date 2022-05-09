@@ -1,0 +1,3094 @@
++++
+title = "clojure"
+author = ["System Administrator"]
+draft = false
++++
+
+## Meta {#meta}
+
+
+### plan on the language {#plan-on-the-language}
+
+I hope that I would be able to: <code>[0/5]</code>
+
+1.  [ ] Write a website
+2.  [ ] implement Machine learning Algorithm
+3.  [ ] Build software
+4.  [ ] Know the difference (of clojure and other) and when to use what
+5.  [ ] taught others this language
+
+
+### Credible Resources {#credible-resources}
+
+list of books:
+
+-   [ ] programming clojure
+-   [ ] the joy of clojure
+    maybe too philosophy
+-   [ ] clojure programming
+    maybe little complecx
+-   [ ] clojure cookbook
+-   [ ] living clojure
+    simpler
+
+list of websites:
+
+-   [ ] [clojure for the brave and true](https://www.braveclojure.com/clojure-for-the-brave-and-true/)
+-   [ ] Rich Hickey's talks
+-   [ ] [clojuredocs.org](https://clojuredocs.org/)
+
+
+#### clojure-cookbook {#clojure-cookbook}
+
+This a source of information I found very cool, ergo I would finish.
+
+
+### My journey {#my-journey}
+
+
+#### starting out {#starting-out}
+
+I visited the official getting started page.
+I searched github keyword "clojure"
+
+
+#### sticking to cookbook {#sticking-to-cookbook}
+
+I found clojure-cookbook on github, then sticked to it
+
+
+#### Research {#research}
+
+
+## Metalearning {#metalearning}
+
+
+### How to learn Clojure? research#1 {#how-to-learn-clojure-research-1}
+
+-   Blog
+    -   JUXT's Blog
+        advanced, some thoughts from real engineers
+    -   [Stuart Sierra's Blog](https://stuartsierra.com/)
+-   动手最重要，找个小项目练手
+    -   Blog with clojure running in the backend?
+    -   Todo list
+    -   Pomodoro
+    -   Sound maker/ detecter
+        for pitch
+-   InfoQ clojure video
+-   solve problems from
+    -   [HackerRank](https://www.hackerrank.com/)
+    -   4clojure [4clojure](https://4clojure.oxal.org/)
+        [4clojure repo](https://github.com/4clojure/4clojure)
+    -   [clojure koan](http://clojurekoans.com/)
+        will meet compile error, and that's the file needed to be completed
+    -   [Clojure Katas](https://github.com/gigasquid/wonderland-clojure-katas)
+        like koan.
+    -   [Parens of the Dead](http://www.parens-of-the-dead.com/)
+        I don't exactly know what is it, but it seems very fun.
+-   living clojure
+    -   第一章节快速了解clojure
+    -   第二章节了解 `clojure社区`
+    -   包含一个渐进的curriculum
+-   [functional programming in clojure](http://iloveponies.github.io/120-hour-epic-sax-marathon/index.html)
+-   Programming Clojure
+    对于入门有点hard，可以先看clojure by example
+-   clojure by example[clojure by example](https://kimh.github.io/clojure-by-example/#about-this-page) `well reputation`
+    适合上手
+-   Clojure Programming
+    -   入门。中等难度
+    -   设计上的动机
+    -   best practice
+-   SICP (Structure and Interpretation of Computer Programs) `a must`
+    -   at least 2-3 chapters
+    -   Clojure version
+    -   functional programming
+-   clojure for brave and true `the friendliest`
+    -   函数编程思想
+        -   熟练核心函数 `map,reduce,filter,assoc`
+    -   熟练macro 定义，使用，坑
+    -   interop机制调用java借口
+-   4clojure.com
+    题目
+-   clojuredocs.org
+    查看API
+-   学习 `(source +)` 能看到的源码
+-   Book set
+    -   The set
+        -   clojure programming
+        -   clojure in action
+        -   the joy of clojure
+            good `second book`
+    -   Good
+        -   质量好
+        -   对基础内容概念涵盖全面
+    -   approach
+        -   注意目录
+        -   对自己理解过的概念进行归类
+-   Talks
+    快速了解Clojure 哲学
+    -   Rich Hickey
+    -   Stuart Halloway
+-   Project codes
+    -   Zech Tellman
+    -   clj-http
+    -   ring
+-   Pathaways
+    -   1
+        -   clojure for brave and true
+        -   函数编程思想
+            -   熟练核心函数 `map,reduce,filter,assoc`
+        -   熟练macro 定义，使用，坑
+        -   interop机制调用java接口
+        -   切实作业
+            -   atom, pmap, async 等工程实践接口
+        -   框架
+        -   SICP
+            -   用lisp写代码
+            -   如何设计开发软件系统的思想
+            -   为什么面向对象编程、模式在这里价值不大
+        -   Purely Functional Data Structures
+    -   2
+        these 2 series get you coding quickly and are challenging enough
+        -   clojure for brave and true
+        -   clojure from ground up [clojure from ground up](https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
+    -   3
+        -   David Nolen Enlive tutorial.
+        -   Rich Hickey Talk
+        -   Toy Project/ 4clojure Challenges
+    -   4
+        1.  Clojure for the brave and true
+        2.  getting accostomed to the tools (cider/emacs)
+        3.  finishing the book, start out 4clojure
+        4.  the joy of clojure
+            from beginner to an intermediate
+
+
+### ACTIVE Plan #1 <span class="tag"><span class="agenda">agenda</span></span> {#active-plan-1}
+
+
+#### 1. Start up: Clojure for brave and true {#1-dot-start-up-clojure-for-brave-and-true}
+
+This stage I want to get familiar with clojure and some implementations, so I could perform tasks `properly` with clojure.
+
+-   Main book/resource:  [clojure for the brave and true](https://www.braveclojure.com/clojure-for-the-brave-and-true/)
+-   Side Resources:
+    -   [functional programming in clojure](http://iloveponies.github.io/120-hour-epic-sax-marathon/index.html)
+    -   Clojure Programming
+    -   [clojure by example](https://kimh.github.io/clojure-by-example/#about-this-page)
+    -   [clojure from ground up](https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
+-   Practices:
+    -   HackerRank
+    -   4clojure [4clojure](https://4clojure.oxal.org/)
+        [4clojure repo](https://github.com/4clojure/4clojure)
+    -   [clojure koan](http://clojurekoans.com/)
+        will meet compile error, and that's the file needed to be complete
+    -   [Parens of the Dead](http://www.parens-of-the-dead.com/)
+        I don't exactly know what is it, but it seems very fun.
+-   How the study work.
+    -   Scope:
+        -   Measure of end: The book Clojure for brave and true is finished.
+        -   Capability:
+            I should be able to write anything stupidly with clojure, with full familiarity of a `complete toolbox`.
+            I should have already a favourable `writing style` and some killer function usage.
+            I should have a `complete develop process` using cider and Emacs.
+    -   Method:
+        -   Machines:
+            later to fill
+        -   Methods:
+            -   Feynman technique
+            -   Overstudy
+            -   Active Recall
+            -   Blogging through the treasures
+                Tutorial from newbie for newbie.
+
+<!--list-separator-->
+
+-  Track &amp; Log
+
+    <!--list-separator-->
+
+    -  Track
+
+        <!--list-separator-->
+
+        -  `[main]` Clojure for the brave and ture <code>[1/3]</code>
+
+            -   [X] Part I: Environment Setup
+                -   [X] Chapter 1: Building, Running, and the REPL
+                -   [X] Chapter 2: How to Use Emacs, an Excellent Clojure Editor
+            -   [-] Part II: Language Fundamentals
+                -   [X] Chapter 3: Do Things: A Clojure Crash Course
+                -   [X] Chapter 4: Core Functions in Depth
+                -   [X] Chapter 5: Functional Programming
+                -   [ ] Chapter 6: Organizing Your Project: A Librarian’s Tale
+                -   [ ] Chapter 7: Clojure Alchemy: Reading, Evaluation, and Macros
+                -   [ ] Chapter 8: Writing Macros
+            -   [ ] Part III: Advanced Topics
+                -   [ ] Chapter 9: Concurrent and Parallel Programming
+                -   [ ] Chapter 10: Clojure Metaphysics: Atoms, Refs, Vars, and Cuddle Zombies
+                -   [ ] Chapter 11: Master Concurrent Processes with core.async
+                -   [ ] Chapter 12: Interacting with Java
+                -   [ ] Chapter 13: Create and Extend Abstractions with Multimethods, Protocols, and Records
+
+        <!--list-separator-->
+
+        -  Functional Programming in clojure <code>[0/12]</code>
+
+            -   [ ] Basic tools
+            -   [ ] Training day
+            -   [ ] I am a horse in the land of booleans
+            -   [ ] Structured data
+            -   [ ] style
+            -   [ ] P-P-P-Pokerface
+            -   [ ] Predicates
+            -   [ ] Recursion
+            -   [ ] Looping is recursion
+            -   [ ] One Function to rule them all
+            -   [ ] Blorg Blorg Blorg
+            -   [ ] Sudoku
+
+        <!--list-separator-->
+
+        -  Clojure Programming <code>[0/20]</code>
+
+            1.  [ ] Down the Rabbit Hole
+            2.  [ ] Functional Programming
+            3.  [ ] Collection and Data Structures
+            4.  [ ] Concurrency and Parallelism
+            5.  [ ] Macros
+            6.  [ ] Datatypes and Protocols
+            7.  [ ] Multimethods
+            8.  [ ] Organizing and building Clojure Projects
+            9.  [ ] Java and JVM Interoperability
+            10. [ ] REPL-Oriented Programming
+            11. [ ] Numerics and Mathematics
+            12. [ ] Design Patterns
+            13. [ ] Testing
+            14. [ ] Using Relational Databases
+            15. [ ] Using Nonrelational Databases
+            16. [ ] Clojure and the Web
+            17. [ ] Deploying Clojure Web Applications
+            18. [ ] Choosing Clojure Type Definition Forms Wisely
+            19. [ ] Introducing Clojure into Your Workplace
+            20. [ ] What's Next
+
+        <!--list-separator-->
+
+        -  Clojure by example <code>[0/23]</code>
+
+            1.  [ ] Hello world
+            2.  [ ] Bindings
+            3.  [ ] Functions
+            4.  [ ] Namespaces
+            5.  [ ] Control Flow
+            6.  [ ] Boolean
+            7.  [ ] Strings
+            8.  [ ] Integers
+            9.  [ ] Lists
+            10. [ ] Vectors
+            11. [ ] Sets
+            12. [ ] Maps
+            13. [ ] Sequences
+            14. [ ] Recursion
+            15. [ ] Macros
+            16. [ ] Threading Macros
+            17. [ ] Delays
+            18. [ ] Futures
+            19. [ ] Promises
+            20. [ ] Atoms
+            21. [ ] Refs
+            22. [ ] Java
+
+        <!--list-separator-->
+
+        -  Clojure from ground up <code>[0/11]</code>
+
+            1.  [ ] Welcome
+            2.  [ ] basic types
+            3.  [ ] functions
+            4.  [ ] sequences
+            5.  [ ] macros
+            6.  [ ] state
+            7.  [ ] logistics
+            8.  [ ] modeling
+            9.  [ ] roadmap
+            10. [ ] debugging
+            11. [ ] polymorphism
+
+
+#### 2. Getting going: The Joy of clojure {#2-dot-getting-going-the-joy-of-clojure}
+
+This stage I want to really get into some phylosophy of clojure
+
+-   Main book/resource: the joy of clojure
+-   Side resources:
+    -   clojure in action
+    -   Clojure For machine learning
+    -   Rick Hickey talks
+-   Practices:
+    -   Following practices from privious sources
+    -   Projects
+        -   A Website
+    -   Algorithms
+        -   Neural Network
+        -   聚类和比较算法。找个脑电数据集
+    -   from resources.
+-   How the study work.
+    -   Scope
+        -   Measure of end: The book The Joy of Clojure is finished
+        -   Capability:
+            -   I should know the phylosophy of Clojure, and why they are good
+            -   I should know at least 1 implementation of each phylosophy.
+            -   I should know when, at what tasks clojure works better, and when it don't work good
+            -   I should be able to write a performing web server
+            -   I should be able to write a performing neural network
+    -   Method:
+        -   Machines:
+            later to fill
+        -   Methods:
+            -   Feynman technique
+            -   Overstudy
+            -   Active Recall
+            -   Blogging through the treasures
+                Tutorial from newbie for newbie.
+
+
+## Leiningen {#leiningen}
+
+
+### Create new project {#create-new-project}
+
+```shell
+lein new app clojure-noob
+```
+
+
+### Running Project {#running-project}
+
+```sh
+lein run
+```
+
+
+### Building Project {#building-project}
+
+```sh
+lein uberjar
+```
+
+
+## Feature {#feature}
+
+
+### Converting {#converting}
+
+the conversion between datatypes became easier, because everything's basically list.
+use `(apply vector list)` can built a vector out of the list, and other's similar.
+
+
+### Evaluation of clojure code {#evaluation-of-clojure-code}
+
+procedure:
+
+1.  Source code or interactive input
+    Provide code in unit of `expression`
+2.  Reader
+    Pick `expression` and translate them into clojure data structure
+3.  Compiler
+    translate clojure data into bytecode for JVM
+    the seperate of Reader and Compiler leave space for macros
+4.  JVM
+
+
+#### Structure and semantics {#structure-and-semantics}
+
+(+ 3 4)
+Structureal:
+
+-   `(...)` list
+-   `+` symbol
+-   `3` numbers
+
+Semantics:
+
+-   `(...)` Invocation
+-   `+` Function
+-   `3` Arguments
+
+Most clojure literal forms evaluate to themselves, except `symbol` and `list`.
+
+-   symbol refer to something else
+-   list is invocation
+
+<!--list-separator-->
+
+-  to hold evaluation of `symbols` and `lists`
+
+    (qoute x) or 'x
+
+
+### REPL {#repl}
+
+Read-Eval-Print-Loop
+
+\*1 for the result 1 expression ago
+
+import library using (require '[clojure.repl :refer :all])
+
+
+#### Some useful funcitons in `clojure.repl` {#some-useful-funcitons-in-clojure-dot-repl}
+
+-   (doc x) to give doc of x
+-   (apropos "x") to find x by name
+-   (find-doc "trim") expand to doc string
+-   (dir clojure.repl) give full list of funcitons in a namespace
+-   (source dir) gives doc and source code
+
+
+### Imutable {#imutable}
+
+The `def` function _bond_ value with name. And don't change.
+Should see it as `constant`.
+This works well with `Functional Programming Paradigm`
+
+
+### Simplicity {#simplicity}
+
+reach for built-in first
+Also inc code reusability
+
+
+### Funcitons, macro and Special form {#funcitons-macro-and-special-form}
+
+macro and special form(like if, with only 1 operand evaluated) can't be passed to function as arg.
+
+
+### Abstraction {#abstraction}
+
+Map work on all collections. It call (seq col) first.
+
+
+## Brave Clojure Notes {#brave-clojure-notes}
+
+
+### Abstractions {#abstractions}
+
+Seq abstraction and Col abstraction
+
+
+### Sequence abstractions {#sequence-abstractions}
+
+
+#### core funcs {#core-funcs}
+
+<!--list-separator-->
+
+-  `map`
+
+    -   `(map str ["a" "b" "c"] ["A" "B" "C"])`
+        pass 2 collections as arguments
+    -   `(map #(% numbers) [sum count avg])`
+        pass a seq of functions to perform different operations
+    -   `(map :real identities)`
+        retrive vals assoced with a keyword
+
+<!--list-separator-->
+
+-  `reduce`
+
+    -   `into` in reduce always manage like list and not vector.
+        take the example in the long-add function
+
+        ```clojure
+        (defn long-add
+          "add long integers represented with vector"
+          [s1 s2]
+          (let [large (len-max s1 s2)
+        	small (len-min s1 s2)
+        	filled-small (concat (take (- (count large) (count small)) (repeat 0))
+        			     small)
+        	added-pairs (map  + large filled-small)
+        	carried-pairs (reduce (fn [sum pair] (if (>= (+ pair (first sum)) 10)
+        					       (into (drop 1 sum)
+        						     [(- (+ pair (first sum)) 10) 1])
+        					       (into (drop 1 sum)
+        						     [(+ pair (first sum)) 0])))
+        			      [0]
+        			      (reverse added-pairs))
+        	result (drop-while #(= 0 %) carried-pairs)]
+            result
+
+            )
+          )
+        ```
+    -   go through a seq to build a result
+    -   update a maps values
+
+        ```clojure
+        (reduce (fn [new-map [key val]]
+        	  (assoc new-map key (inc val)))
+        	{}
+        	{:max 30 :min 10})
+        ;; => {:max 31, :min 11}
+        ```
+    -   filter out key/val pair base on pairs
+
+        ```clojure
+        (reduce (fn [new-map [key val]]
+        	  (if (> val 4)
+        	    (assoc new-map key val)
+        	    new-map))
+        	{}
+        	{:human 4.1
+        	 :critter 3.9})
+        					; => {:human 4.1}
+
+        ```
+
+<!--list-separator-->
+
+-  `take(-while),drop(-while)`
+
+    take, drop: (take 5 [1 2 3 4 5 6]) =&gt; [1 2 3 4 5]
+    take-while: (take-while #(&lt; 5 %) [1 2 3 4 5 6])
+     stops when first falsy for the fn.
+
+<!--list-separator-->
+
+-  `filter,some`
+
+    filter,some: (filter predicate col)
+    filter eval `all` of the col.
+    some test for at least one fulfill predicate from col.
+     return the predicate returning.
+     `#(and predicate %)` if want the data to be returned.
+
+<!--list-separator-->
+
+-  `sort,sort-by`
+
+    sort: ascending order
+    sort-by: `(sort-by count ["aaa" "c" "bb"])`
+     sort-by will use `(count "aaa")` as the value to sort-by
+
+<!--list-separator-->
+
+-  `concat`
+
+    appends members of one seq to the end of another.
+
+
+#### Lazy seq {#lazy-seq}
+
+<!--list-separator-->
+
+-  creating lazyseq
+
+    ```clojure
+    (defn even-numbers
+          ([] (even-numbers 0)) ;;base case
+          ([n] ;;
+           (cons
+    	n ;; the val
+    	(lazy-seq (even-numbers (+ n 2))) ;;the recipe. including calling the function with the val.
+    	)))
+    (defn fibo*
+    ([]
+     (fibo* 0 1))
+    ([arg1 arg2]
+     (let [arg3 (+ arg1 arg2)] ;; the calculation could happen here
+       (cons
+        arg3
+        (lazy-seq (fibo* arg2 arg3)))))
+    )
+    ```
+
+<!--list-separator-->
+
+-  Infinite Seq
+
+    `repeat` for 1 val.
+    `repeated` for 1 fn
+    `lazy-seq`
+
+    ```clojure
+    (defn even-numbers
+        ([] (even-numbers 0))
+        ([n] (cons n (lazy-seq (even-numbers (+ n 2))))))
+
+    (take 10 (even-numbers))
+    ; => (0 2 4 6 8 10 12 14 16 18)
+
+    ```
+
+
+### Col abstraction {#col-abstraction}
+
+the collection is considered as a whole
+
+
+#### core funcs {#core-funcs}
+
+<!--list-separator-->
+
+-  `into,conj`
+
+    convert the seq returned by funcs into other types (map,set)
+    conj: similar, but take scaler instead of col.
+
+
+### function functions {#function-functions}
+
+
+#### apply {#apply}
+
+vector of args and scalers of args.
+could use conj/into to build the vectors
+
+
+#### partial {#partial}
+
+use partial when same func-arg combination appear in different contexts
+like logger having (:warn :emergency) cond, and :warn is used frequently, could defn a `warn` functions using partial.
+
+
+#### complement {#complement}
+
+(complement predicate)
+provide the logical complement of the predicate.
+
+
+### Functional Programming {#functional-programming}
+
+functional programming encourage you to
+
+
+#### Pure functions {#pure-functions}
+
+pure functions are reference transparent and have no side-effect
+
+<!--list-separator-->
+
+-  cool things to do with pure functions
+
+    <!--list-separator-->
+
+    -  `comp`
+
+        ```clojure
+        ((comp inc *) 2 3)
+        ```
+
+        1.  the `*` can take any args, but the rest can take only 1
+        2.  the order is like inc(\*(2,3)) in written math.
+
+        usage:
+
+        1.  retrive attr in RPG
+
+            ```clojure
+            (def character
+              {:name "Smooches McCutes"
+               :attributes {:intelligence 10
+            		:strength 4
+            		:dexterity 5}})
+            (def c-int (comp :intelligence :attributes))
+            (def c-str (comp :strength :attributes))
+            (def c-dex (comp :dexterity :attributes))
+
+            (c-int character)
+            ;; => 10
+
+            (c-str character)
+            ;; => 4
+
+            (c-dex character)
+            ;; => 5
+
+            ```
+
+        2.  when need to use more args, use anonymous function
+
+            ```clojure
+            (def spell-slots-comp (comp int inc #(/ % 2) c-int))
+
+            ```
+
+    <!--list-separator-->
+
+    -  `memoize`
+
+        remember the input/output pair.
+
+    <!--list-separator-->
+
+    -  `reduce` over functions
+
+        ```clojure
+        (defn clean
+          [text]
+          (reduce (fn [string string-fn] (string-fn string))
+        	  text
+        	  [s/trim #(s/replace % #"lol" "LOL")]))
+
+        ```
+
+
+#### recursion instead of for {#recursion-instead-of-for}
+
+
+#### function compisition instead of mutate middle vars {#function-compisition-instead-of-mutate-middle-vars}
+
+-   decouple functions and data
+-   programming to a small set of abstractions
+
+
+#### mindsets {#mindsets}
+
+oop: data can be pour in a object, and we shape it
+fp: data don't change, derive new data from old data. the property of the data rather than operation on data.
+
+
+### Declare {#declare}
+
+to refer to functions before they're created
+
+
+## Clojure for Machine Learning Notes {#clojure-for-machine-learning-notes}
+
+
+### libs {#libs}
+
+
+#### matrix {#matrix}
+
+-   core.matrix
+    with clj. bit slower on big matrix
+-   vectorz-clj
+    with java
+-   clatrix
+     Basic Linear Algebra Subprograms (BLAS) spec
+    native libs
+    performance better
+    mutable matrix
+
+
+### Matrix {#matrix}
+
+
+#### Representing {#representing}
+
+-   `(matrix :clatrix [[1 2 3] [4 5 6]])`
+-   `(pm m)` to print the matrix nicely
+-   Size
+    -   `row-count`
+    -   `column-count`
+-   Retrive
+    -   `(cl/get A row column)`
+        the row/column index starts from 0
+    -   `(mget A row column)`
+        for core.matrix
+        `(mget A index)` goes
+
+        | 0 | 2 | 4 |
+        |---|---|---|
+        | 1 | 3 | 5 |
+-   Change
+    -   `(cl/set A row column val)` mutate
+    -   `(mset A row column val)` immutate
+-   Map
+    -   `map,cl/map`
+        regular map
+        immutable
+    -   `(cl/map-indexed (fn [i j val]) m)` operates with the coordinates
+        immutable
+
+
+#### Generating {#generating}
+
+-   `idedntity-matrix n`
+    gives idendity matrix
+-   could implement a square matrix functions
+    2 \* `repeat`
+-   random
+    -   use generate 100 100 100 ... Matrix
+        then use `cl/map` `rand-int`
+    -   `cl/rnorm`
+        -   `mean std row col` row \* col
+        -   `row` row \* 1
+        -   `row col`
+-   `(compute-matrix [row col] (fn [i j] expr ))`
+
+
+#### Operatiors (+ - \* / ...) {#operatiors--plus-dot-dot-dot}
+
+```clojure
+(ns my-namespace
+    (:use clojure.core.matrix)
+    (:require [clojure.core.matrix.operators :as M]))
+```
+
+<!--list-separator-->
+
+-  Adding
+
+    -   `M/+`
+    -   `M/==` for equality check
+    -   implementation are trival.
+
+<!--list-separator-->
+
+-  Multiply
+
+    -   `M/*` for A \* B
+        the clatrix use native lib. loading native BLAS lib take 35-40 ms, and the multiplication afterwards take 1ms each(dim=100). in contrast of core.matrix's 1s.
+    -   `scale A 10` for 10 \* A
+
+<!--list-separator-->
+
+-  Transpose/Invert
+
+    -   `transppose A`
+    -   `inverse A`
+    -   `det A` determinant
+
+<!--list-separator-->
+
+-  Interpolating
+
+    using a [linear progression]({{< relref "20220215212534-linear_progression.md" >}})
+
+    1.  create a band matrix
+    2.  represent the data points
+    3.  visual using `incanter` lib
+
+
+### Machine learning {#machine-learning}
+
+ultimate objective: `generalize` facts from _some empirical sample data_. _generalization_
+
+categories:
+
+-   supervised ~
+    labeled data
+-   unsupervised ~
+    finding pattern
+    no definite yes-or-no based reward system to determin in the estimated model is accurate or not
+
+
+## Setting {#setting}
+
+
+### Java {#java}
+
+currently(2022.1.4) clojure supports java 8 and 11
+In order for clojure to work proporly, should use java 11
+
+
+#### Modification on macOS {#modification-on-macos}
+
+Should use java 8 (or 11, but haven't tried yet). If on java 16 will report error of lack of com.apple.ewat.quitHandler something.
+
+from `usr/libexec/java_home -V` get existing java on the machine.
+change the environmental viriable `JAVA_HOME` to `` `/usr/libexec/java_home -v 1.8` ``
+Then the default java is java 8
+
+
+### Emacs {#emacs}
+
+Use `cider` and `clojure` mode to work with clojure in emacs
+
+
+#### with clojure/cider {#with-clojure-cider}
+
+`C-x C-e` and `C-c C-c` to eval the code in .clj buffer.
+`C-u C-x C-e` to print the result after mark
+`C-c M-n M-n` to switch cider to the ns stated top of the file
+`C-c C-k` to compile the current file in REPL
+`C-enter` in REPL to close the paretheses and eval.
+`C-c C-d C-d` gives doc of symbol at point. `q` to close that doc.
+`M-.` to find source, `M-,` to return to original buffer and position
+`C-c C-d C-a` to find text in function name/doc
+
+
+#### with paredit-mode {#with-paredit-mode}
+
+`M-(` to wrap at point
+`C-->` to slurp a thing in
+`C-<-` to unslurp a thing(barf a thing)
+`C-M-f,C-M-b` to go to openning, enclosing paren
+
+
+## Walkthrough {#walkthrough}
+
+
+### Tutorial {#tutorial}
+
+
+#### Official website {#official-website}
+
+I first checked  [offical clojure website](https://clojure.org/guides/getting_started), in search of download, tutorials and doc. I followed the install instruction step by step and went through the tutorials.
+
+Then I checked several websites mentioned in [the control flow part](https://clojure.org/guides/learn/flow) of the tutorial.
+
+
+#### Setting up cider and failure {#setting-up-cider-and-failure}
+
+The next thing I wanted to do is to set myself up for CIDER in Emacs. And the I met the first obstacle: it won't work. Both jack-in-clj in Emacs and `lein` in termianl would end up java reporting compile issue, missing class file in class path and so on. I checked the error information in DuckDuckGo, several guys have same issue, but no real solutions. I tried some solutions, including reinstalling everything, editing `~/.lein/profile.clj`, `~/.lein/project.clj/`, filling `~/.m2/cider/` with source files from github repo `/src` folder, none worked. The issue went away after I restarted the computer.
+
+So if you have similar issue, I would suggest restart your computer.
+
+
+#### Cookbook {#cookbook}
+
+Next thing I did is visit github.com and search keyword "clojure", in search of tutorial/sample repo, popular library, and other thing other clojure programmers cared about(the high star repos), where I accidentally discovered clojurescript(this stuff compiles to js! cool!), and this amazing repo [clojure-cookbook](https://github.com/clojure-cookbook/clojure-cookbook). It's like everything I want put together
+
+
+### Environment {#environment}
+
+I first installed clojure, I forgot exactly how, I got
+
+
+## Basic Syntaxes &amp; features {#basic-syntaxes-and-features}
+
+
+### Types {#types}
+
+
+#### Numeric {#numeric}
+
+```clojure
+42 ; integer
+-1.5 ; float
+22/7 ; ratio
+##Inf, ##-INF, ##NaN
+```
+
+
+#### Char {#char}
+
+```clojure
+"hello" ; string
+\e ; character
+\newline, \spec, \tab
+
+#"[0-9]+" ; regular expression
+```
+
+
+#### Symbol {#symbol}
+
+Symbols are things that could hold something. Like a drawer with name.
+
+Cells:
+
+-   Print name
+    String. Same as the symbol. Automatically set. cannot change.
+-   value
+    store the symbol's value. When not void, the symbol's a variable
+-   function
+    store
+    -   function definition object
+    -   lisp macro
+    -   other objects act as function
+-   property list
+    hold a list of name/value pairs.
+    Used to store meta info about the symbol.
+
+    Keywards
+
+    ```clojure
+    clojure.core/+ ; namespaced symbol
+    :x ; keyward
+    ```
+
+
+#### Literal collection {#literal-collection}
+
+```clojure
+'(1 2 3) ; list
+[1 2 3]; vector
+#{1 2 3}; set
+{:a 1, :b 2} ; map
+
+
+```
+
+
+### Basics {#basics}
+
+
+#### Def {#def}
+
+def = setq
+also added namespace
+
+
+#### Printing {#printing}
+
+-   println : for humans
+-   print
+-   prn : readable as data
+-   pr
+
+
+### Functions {#functions}
+
+Functions are first-class. could be passed-to or returned-from other functions
+
+`defn` defines a named funciton
+
+```clojure
+(defn greet [name] (str "Hello, " name))
+
+```
+
+
+#### returning func {#returning-func}
+
+higher order functions take func as input or return funcs
+
+```clojure
+((or + -) 1 2 3)
+```
+
+
+#### Multi-arity {#multi-arity}
+
+Taking different number of args
+could be used to provide default
+
+```clojure
+(defn greet
+  ([] (messenger "Hello World!"))
+  ([arg] (println arg))
+  )
+(defn greet
+  ([name title] (str "Greetings, " title " " name))
+  ([name] (str "Greetings, " "Stranger" " " name )))
+
+```
+
+
+#### Variadic {#variadic}
+
+a bunch of parameters passing to the function without specified number.
+(+ 1 2 3 4 5 6 7 8 9)
+must at the end of parameters, and marked by a `&`
+The parameters would be collected as a list
+
+```clojure
+(defn hello [greeting & who]
+  (println greeting who))
+
+```
+
+
+#### Anonymous {#anonymous}
+
+```clojure
+(fn [message] (println message))
+
+```
+
+<!--list-separator-->
+
+-  Short way
+
+    ```clojure
+    #(+ 6 %1) ;position
+    #(print %1 $&) ; %& for the rest variadic parameters
+    ```
+
+
+#### Apply {#apply}
+
+Apply works when the parameters were get in sequence
+
+```clojure
+(apply f '(1 2 3 4))
+(defn plot [shape coords]; coords = [x y]
+  (plotxy shape (first coords) (second coords)))
+(defn plot [shape coords]
+  (apply plotxy shape coords))
+```
+
+Apply works with `CSV` files well. like constructing a csv file
+
+```clojure
+;; Constructing a CSV from a header string and vector of rows
+(def header "first_name,last_name,employee_number\n")
+(def rows ["luke,vanderhart,1"
+	   "ryan,neufeld,2"])
+
+(apply str header (interpose "\n" rows))
+;; -> "first_name,last_name,employee_number\nluke,vanderhart,1\nryan,neufeld,2"
+```
+
+
+#### Let {#let}
+
+```clojure
+(let [a 7 b 8]
+  (print a b "hello"))
+
+```
+
+
+#### Closure {#closure}
+
+Closure provided by fn close over the lexical scope, and hold it there for another call(maybe)
+
+```clojure
+(defn messenger-builder [greeting]
+  (fn [who] (println greeting who))) ; closes over greeting
+
+;; greeting provided here, then goes out of scope
+(def hello-er (messenger-builder "Hello"))
+
+;; greeting value still available because hello-er is a closure
+(hello-er "world!")
+;; Hello world!
+
+```
+
+
+#### Destructuring {#destructuring}
+
+```clojure
+(defn my-third "return the third item"
+  [[_ _ third & rest]]
+  third
+  )
+```
+
+
+### With Java {#with-java}
+
+| Task            | Java              | Clojure          |
+|-----------------|-------------------|------------------|
+| Create instance | new Widget("foo") | (Widget. "foo")  |
+| Instance method | rnd.nextInt()     | (.nextInt rnd)   |
+| Instance field  | object.field      | (.-filed object) |
+| static method   | Math.sqrt(25)     | (Math/sqrt 25)   |
+| static field    | Math.PI           | Math/PI          |
+
+Java functions are not Clojure functions
+can't be stored or passed
+
+can be wrapped in functions.
+
+```clojure
+(fn [arg] (Math/sqrt arg))
+
+#(Math/sqrt %)
+
+```
+
+
+### Graphics {#graphics}
+
+
+#### Quil {#quil}
+
+
+### with Datatypes {#with-datatypes}
+
+
+#### Sequential collection {#sequential-collection}
+
+<!--list-separator-->
+
+-  vector `[1 2 3]`
+
+    <!--list-separator-->
+
+    -  indexed access
+
+        ```clojure
+        user=> (get ["abc" false 99] 0)
+        "abc"
+        user=> (get ["abc" false 99] 1)
+        false
+        user=> (get ["abc" false 99] 14)
+        nil
+        ```
+
+    <!--list-separator-->
+
+    -  Length (count)
+
+        ```clojure
+        (count [ 1 2 3])
+        3
+        ```
+
+    <!--list-separator-->
+
+    -  constructing
+
+        ```clojure
+        (vector 1 2 3)
+        ```
+
+    <!--list-separator-->
+
+    -  Adding elements
+
+        ```clojure
+        (conj [1 2 3] 4 5 6)
+        ```
+
+<!--list-separator-->
+
+-  List `'(1 2 3)`
+
+    <!--list-separator-->
+
+    -  Constructing
+
+        ```clojure
+        (def cards '(10 :ace :jack 9))
+        ```
+
+    <!--list-separator-->
+
+    -  Acsess
+
+        list is not indexed.
+        use `first` and `rest` to
+
+        ```clojure
+        user=> (first cards)
+        10
+        user=> (rest cards)
+        '(:ace :jack 9)
+        ```
+
+    <!--list-separator-->
+
+    -  Adding elements
+
+        `conj` can add element to list.
+        but to the front. like a stack
+
+    <!--list-separator-->
+
+    -  Stack access
+
+        `peek` told you the first element
+        `pop` takes out the first element
+
+
+#### Hashed collection {#hashed-collection}
+
+<!--list-separator-->
+
+-  Set
+
+    <!--list-separator-->
+
+    -  Add
+
+        (conj players "fred")
+
+    <!--list-separator-->
+
+    -  Remove from
+
+        (disj players "Bob" "sal")
+
+    <!--list-separator-->
+
+    -  Contain?
+
+        (contains? players "Kelly")
+
+    <!--list-separator-->
+
+    -  Sorted sets
+
+        (conj (sorted-set) "Bravo" "Charlie" "Sigma" "Alpha")
+        this uses a natural `compare` function in clojure
+        could use `sorted-set-by` function to choose compare function
+
+    <!--list-separator-->
+
+    -  into
+
+        `into` combines collections, and return the datatype of the first argument
+
+<!--list-separator-->
+
+-  Map
+
+    hold key/value paire;hold domain application info
+
+    <!--list-separator-->
+
+    -  Creating
+
+        ```clojure
+        (def scores {"Fred"  1400
+        	     "Bob"   1240
+        	     "Angela" 1024})
+        ```
+
+        could use `,` between pairs. they are like whitespace.
+
+        <!--list-separator-->
+
+        -  Zipmap
+
+            ```clojure
+            user=> (def players #{"Alice" "Bob" "Kelly"})
+            #'user/players
+
+            user=> (zipmap players (repeat 0))
+            {"Kelly" 0, "Bob" 0, "Alice" 0}
+            ```
+
+    <!--list-separator-->
+
+    -  Add
+
+        (assoc scores "Sally" 0)
+
+    <!--list-separator-->
+
+    -  Remove
+
+        (dissoc scores "Bob")
+
+    <!--list-separator-->
+
+    -  Looking up by key
+
+        (get scores "Angela")
+
+        <!--list-separator-->
+
+        -  directly call
+
+            can call (directions :north) to have `:north 1` showed.
+            will report error if no `:north` in `directions`
+
+        <!--list-separator-->
+
+        -  with a default
+
+            (get scores "sam" 0)
+            (directions :northwest -1)
+
+    <!--list-separator-->
+
+    -  Checking contains
+
+        (contains? scores "Fresd")
+        true
+        (find scores "fred")
+        ["fred" 1400]
+
+    <!--list-separator-->
+
+    -  Keys or values
+
+        user=&gt; (keys scores)
+        ("Fred" "Bob" "Angela")
+
+        user=&gt; (vals scores)
+        (1400 1240 1024)
+
+    <!--list-separator-->
+
+    -  Combine maps
+
+        ```clojure
+        user=> (def new-scores {"Angela" 300 "Jeff" 900})
+        #'user/new-scores
+
+        user=> (merge scores new-scores)
+        {"Fred" 1400, "Bob" 1240, "Jeff" 900, "Angela" 300}
+        ```
+
+        when 2 pairs with 1 key, the rightmost wins.
+
+    <!--list-separator-->
+
+    -  sorted maps
+
+    <!--list-separator-->
+
+    -  Domain information
+
+        Map could be used like object and fields
+
+        ```clojure
+
+        (def person
+          {
+           :name "Herman"
+           :lastname "He"
+           :tele "1234253536"
+
+           })
+
+        ```
+
+        <!--list-separator-->
+
+        -  field accessor
+
+            ```clojure
+            (get person :occupation)
+            (person :occupation)
+            (:occupation person)
+            ```
+
+            all works.
+            the last is used more.
+
+        <!--list-separator-->
+
+        -  Updating field
+
+            (assoc person :occupation "baker")
+
+        <!--list-separator-->
+
+        -  Removing a field
+
+            (dissoc person :age)
+
+        <!--list-separator-->
+
+        -  Nested
+
+            Nested entities could
+
+            ```clojure
+            (def company
+              {:name "WidgetCo"
+               :address {:street "123 Main St"
+            	     :city "Springfield"
+            	     :state "IL"}})
+            ```
+
+            <!--list-separator-->
+
+            -  instructions
+
+                (get-in company [:address :state])
+                "IL"
+
+                Use this could get info at any level.
+                update-in
+
+        <!--list-separator-->
+
+        -  Record
+
+            ```clojure
+            ;; Define a record structure
+            (defrecord Person [first-name last-name age occupation])
+
+            ;; Positional constructor - generated
+            (def kelly (->Person "Kelly" "Keen" 32 "Programmer"))
+
+            ;; Map constructor - generated
+            (def kelly (map->Person
+            	     {:first-name "Kelly"
+            	      :last-name "Keen"
+            	      :age 32
+            	      :occupation "Programmer"}))
+
+            ```
+
+            no (kelly :occupation), only(:occupation kelly)
+
+
+### Flow control {#flow-control}
+
+
+#### If {#if}
+
+(if (cond) (then) (else))
+else is optional
+
+<!--list-separator-->
+
+-  if and do
+
+    (do () ()) to create larger blocks that's 1 expression
+
+    ```clojure
+    (if (even? 5)
+      (do (println "even")
+          true)
+      (do (println "odd")
+          false))
+    ```
+
+<!--list-separator-->
+
+-  When
+
+<!--list-separator-->
+
+-  `cond`
+
+    <!--list-separator-->
+
+    -  `cond`
+
+    <!--list-separator-->
+
+    -  `condp`
+
+        ```clojure
+        (condp = (:type shape)
+            :triangle  (* (:base shape) (:height shape) (/ 1 2))
+            :rectangle (* (:length shape) (:width shape)))
+        ```
+
+
+#### loops {#loops}
+
+<!--list-separator-->
+
+-  `loop`
+
+    recur calls the `loop` with the arguments passed as loop's bindings
+
+    ```clojure
+    (loop [x 1]
+      (recur (inc x)))
+    ```
+
+<!--list-separator-->
+
+-  Along a sequence
+
+    <!--list-separator-->
+
+    -  doseq
+
+    <!--list-separator-->
+
+    -  reduce
+
+        process the elements of a collection to build a result.
+
+
+### let bindings {#let-bindings}
+
+1.  (let [a 1 b 2] expr)
+2.  `(let [[a b & rest] [1 2]] expr)`
+    操作逻辑和表示逻辑。
+
+usage：
+
+1.  clarity
+2.  reuse expansive func call
+
+
+## Cookbook Prob/Sol {#cookbook-prob-sol}
+
+
+### core string basic {#core-string-basic}
+
+| Library        | Function    | Use                               |
+|----------------|-------------|-----------------------------------|
+| clojure.string | lower-case  | to lower case                     |
+|                | upper-case  | to upper case                     |
+|                | capitalize  | this -&gt; This                   |
+|                | trim        | clean " " at front and tail       |
+|                | triml/trimr | trim 1 end                        |
+|                | replace     | could use regular.                |
+|                | join        | seperator and colletion to string |
+|                | split       | tokenize                          |
+
+| Library      | Function   | Use              |
+|--------------|------------|------------------|
+| clojure.core | str        | combine a string |
+|              | interpose  | seperator        |
+|              | char       | 97 -&gt; \a      |
+|              | int        | \a -&gt; 97      |
+|              | format     | format string    |
+|              | re-find    |                  |
+|              | re-matches |                  |
+|              | re-seq     |                  |
+
+
+### Primitives {#primitives}
+
+
+#### Strings {#strings}
+
+<!--list-separator-->
+
+-  multiple whitespace into 1
+
+    ```clojure
+    ;; Collapse whitespace into a single space
+    (clojure.string/replace "Who\t\nput  all this\fwhitespace here?" #"\s+" " ")
+    ;; -> "Who put all this whitespace here?"
+    ```
+
+<!--list-separator-->
+
+-  build string
+
+    could use `str` or `clojure.string/join`
+    (join "seperator" [collection])
+    (apply str [collection])
+
+    -   (str "2" "3") -&gt; "23"
+
+    <!--list-separator-->
+
+    -  format string
+
+        ```clojure
+
+          ;; Produce a filename with a zero-padded sortable index
+        (defn filename [name i]
+          (format "%03d-%s" i name)) ; <1>
+
+        (filename "my-awesome-file.txt" 42)
+        ;; -> "042-my-awesome-file.txt"
+
+
+        ;; Create a table using justification
+        (defn tableify [row]
+          (apply format "%-20s | %-20s | %-20s" row)) ; <2>
+
+        (def header ["First Name", "Last Name", "Employee ID"])
+        (def employees [["Ryan", "Neufeld", 2]
+        		["Luke", "Vanderhart", 1]])
+
+        (->> (concat [header] employees)
+             (map tableify)
+             (mapv println))
+        ;; *out*
+        ;; First Name           | Last Name            | Employee ID
+        ;; Ryan                 | Neufeld              | 2
+        ;; Luke                 | Vanderhart           | 1
+
+        ```
+
+        use `mapv` to print table. Don't know why,but `map println` gives creepy result
+
+        `%03s` researve with whitespace
+        `%03d` researve wtih 0
+        `%-20s` jestify the string to the left
+
+<!--list-separator-->
+
+-  Reg
+
+    <!--list-separator-->
+
+    -  match
+
+        use `re-find` for part and `re-matches` for entire match
+        `\d` for digit, `\d+` for digits in a row. `\d{3}` for 3 digits
+        `\w` for word
+
+    <!--list-separator-->
+
+    -  extract
+
+        use `re-seq` to extract all matching items in a string
+        no repeat.
+        with `#"(@|#)(\w)"`, would return a vector for each total match
+        use group to get out the useful part `#"(@|#)\w\w\w(\w+)"`
+
+    <!--list-separator-->
+
+    -  find and replace
+
+        use `replace`. the groups would be `$1`, `$2` in order.
+
+        ```clojure
+        (defn linkify-comment
+          "Add Markdown-style links for any GitHub issue numbers present in comment"
+          [repo comment]
+          (clojure.string/replace comment
+        			  #"#(\d+)"
+        			  (str "[#$1](https://github.com/" repo "/issues/$1)")))
+
+        (linkify-comment "next/big-thing" "As soon as we fix #42 and #1337 we
+        should be set to release!")
+        ;; -> "As soon as we fix
+        ;;     [#42](https://github.com/next/big-thing/issues/42) and
+        ;;     [#1337](https://github.com/next/big-thing/issues/1337) we
+        ;;     should be set to release!"
+
+        ```
+
+<!--list-separator-->
+
+-  Split
+
+    the `split` function take a `limit` parameter to specify how many splits are there. set `limit` to `-1` make would stop ignoring the trailing empty match.
+
+<!--list-separator-->
+
+-  inflection
+
+    use [inflections](https://github.com/r0man/inflections-clj) library.
+
+    <!--list-separator-->
+
+    -  setting up
+
+        specify dependency.
+        `(require '[inflections.core :as inf])` to require
+
+    <!--list-separator-->
+
+    -  library functions
+
+        | library          | functions    | use                                |
+        |------------------|--------------|------------------------------------|
+        | inflections.core | pluralize    | 1 egg, 2 eggs (can specify plural) |
+        |                  | plural       | egg -&gt; eggs                     |
+        |                  | singular     | eggs -&gt; egg                     |
+        |                  | plural!      | eg[g]-&gt;eggerscvxegs             |
+        |                  | parameterize | my-org-website                     |
+        |                  | camelize     | MyOrgWebsite                       |
+        |                  | ordinalize   | 42 -&gt; 42nd                      |
+
+<!--list-separator-->
+
+-  conversion between stringlike types
+
+    str `"data"` , symbol `'data`, and keyword `:data`
+    -&gt; keyword: `(keyword 'data)`
+    symbol -&gt; str: `(str 'data)`
+    keyword -&gt; str: `(str :data)` -&gt; ":data" ; `(name :data) -> "data"
+    str -> symbol: =(symbol "data")`
+    keyword -&gt; symbol: `(symbol (name :data))`
+
+    <!--list-separator-->
+
+    -  namespaced keyword/symbol
+
+        ```clojure
+        (name :user/valid?) -> valid?
+        (namespace :user/valid?) -> user
+        (str :user/valid?) -> ":user/valid?"
+        (.substring (str :user/valid?)) -> "user/valid?"
+        ```
+
+        `keyword` and `symbol` can take 2 parameters for namespace and name seperately
+
+<!--list-separator-->
+
+-  substring
+
+    `subs`
+
+
+#### Numbers {#numbers}
+
+<!--list-separator-->
+
+-  Big Big numbers
+
+    `(+')` help integers to avoid overflow.
+    `bigdec` or `bigint` function promote number to unbounded `Big` types
+
+<!--list-separator-->
+
+-  Rational numbers
+
+    `rationalize` to convert 0.3 -&gt; 3/10
+    at cost of performance
+
+<!--list-separator-->
+
+-  Parseing numbers
+
+    `Integer/parseInt` such.
+    with very large/precise numbers, `bigdec/bigint` works.
+
+<!--list-separator-->
+
+-  rounding numbers
+
+    `Math/ceil` and `Math/floor` work.
+    `int` take the integer part.
+    `Math/round` to the nearest integer
+
+<!--list-separator-->
+
+-  fuzzy equal
+
+    no built-in function for fault-tolerant equality
+
+    ```clojure
+    (defn fuzzy= [arg1 arg2 tolerance]
+      (let [diff (Math/abs (- x y ))]
+        (< diff tolerance))
+      )
+
+    ```
+
+    equal-within-10? can be established using `partial`
+    fuzzy compareison could be establishd.
+
+
+#### Math {#math}
+
+<!--list-separator-->
+
+-  Trigonometry
+
+    use that in `Math`, like `Math/sin` `Math/cos`.
+    `Math/toRadians` convert degrees to radians
+
+<!--list-separator-->
+
+-  Different bases
+
+    2 to 36 is valid
+    `2r101010` is `101010` at base 2
+    to print number in base n, =(Integer/toString num n)
+
+<!--list-separator-->
+
+-  Statistics
+
+    [cookbook_simple-stastics](~/playground/clojure-cookbook/01_primitive-data/1-20_simple-statistics.asciidoc)
+
+    <!--list-separator-->
+
+    -  Simple
+
+        <!--list-separator-->
+
+        -  mean
+
+        <!--list-separator-->
+
+        -  median
+
+        <!--list-separator-->
+
+        -  mode
+
+        <!--list-separator-->
+
+        -  standard deviatio
+
+<!--list-separator-->
+
+-  bit operation
+
+    use `bit-` functions. they handle `10b3` as `2b11`.
+
+    ```clojure
+    ;; Modeling a subset of Unix filesystem flags in a single integer
+    (def fs-flags [:owner-read :owner-write
+    	       :group-read :group-write
+    	       :global-read :global-write])
+
+    ;; Fold flags into a map of flag->bit
+    (def bitmap (zipmap fs-flags
+    		    (map (partial bit-shift-left 1) (range))))
+    ;; -> {:owner-read 1, :owner-write 2, :group-read 4, ...}
+
+    (defn permissions-int [& flags]
+      (reduce bit-or 0 (map bitmap flags)))
+
+    (def owner-only (permissions-int :owner-read :owner-write))
+    (Integer/toBinaryString owner-only)
+    ;; -> "11"
+
+    (def read-only (permissions-int :owner-read :group-read :global-read))
+    (Integer/toBinaryString read-only)
+    ;; -> "10101"
+
+    (defn able-to? [permissions flag]
+      (not= 0 (bit-and permissions (bitmap flag))))
+
+    (able-to? read-only :global-read)  ;; -> true
+    (able-to? read-only :global-write) ;; -> false
+
+    ```
+
+<!--list-separator-->
+
+-  Random number
+
+    `(rand)` for float from 0.0 to 1.0. a argument for a exclusive maximum.
+    `(rand-int N)` for int from 0 to N-1
+    `(rand-nth [1 2 3])` for a random element from a list/vector
+    for nonsequential collection(set, map).
+    `shuffle` mess up a sequence. [1 2 3 4 5] -&gt; [5 3 4 1 2]
+
+
+#### Coding techniques {#coding-techniques}
+
+<!--list-separator-->
+
+-  Wrappr
+
+    `partial` could only specify the first parameter, so in cases that the 2nd parameter is specified, could write a wrapper.
+
+    ```clojure
+    (defn to-base [radix n]
+      (Integer/toString n radix))
+    (def base-two (partial to-base 2))
+
+    ```
+
+<!--list-separator-->
+
+-  use of lazy seq
+
+    while `(map (partial bit-shift-left 1) (range))` gives out a infinite sequence, `(zipmap fs-flags (map (partial bit-shift-left 1) (range))))` gives a zipmap of fs-flags to exactly first `(.length fs-flags)` of the seq. `range` gives a lazy seq.
+
+<!--list-separator-->
+
+-  Map and Apply
+
+    (map + [5 2] [7 2]) would return [5+7 2+2]. map pass parameter by row
+    (apply + [5 2]) would return [5+2]. apply pass parameter by column
+
+
+#### Engineering {#engineering}
+
+<!--list-separator-->
+
+-  money
+
+    [clojurewerkz/money "1.4.0"] to dependencies.
+    never use float to manipulate money. `(-0,23 0,24) -> -0.00999999999981`
+    use a library custom-tailored for money. Money wraps java library Joda-Money.
+
+    ```clojure
+    (require '[clojurewerkz.money.amounts    :as ma])
+    (require '[clojurewerkz.money.currencies :as mc])
+
+
+    ```
+
+    <!--list-separator-->
+
+    -  amount
+
+        Money treat money vars as "amount". `(ma/amount-of mc/USD 13.14)` stands for `USD 13.14`. `mc` have USD,CA,RMB in it.
+
+    <!--list-separator-->
+
+    -  functions
+
+        | library | function   | use |
+        |---------|------------|-----|
+        | ma      | amount-of  |     |
+        |         | plus       |     |
+        |         | minus      |     |
+        |         | &lt;       |     |
+        |         | total      |     |
+        |         | round      |     |
+        |         | convert-to |     |
+
+        <!--list-separator-->
+
+        -  round
+
+            key words: `:ceiling, :floor, :up, :down, :half-up :half-down :half-even`
+
+<!--list-separator-->
+
+-  UUID
+
+    unique ID.
+    use `java.util.UUID/randomUUID` to generate
+
+    ```clojure
+      (java.util.UUID/randomUUID)
+    ;; -> #uuid "5358e6e3-7f81-40f0-84e5-750e29e6ee05"
+    ```
+
+    sequential UUID could be accomplished with:
+
+    ```clojure
+    (defn squuid []
+      (let [uuid (java.util.UUID/randomUUID)
+    	time (System/currentTimeMillis)
+    	secs (quot time 1000)
+    	lsb (.getLeastSignificantBits uuid)
+    	msb (.getMostSignificantBits uuid)
+    	timed-msb (bit-or (bit-shift-left secs 32)
+    			  (bit-and 0x00000000ffffffff msb))]
+        (java.util.UUID. timed-msb lsb)))
+    ```
+
+    this combined time with the most significant bits.
+
+<!--list-separator-->
+
+-  Current Date/Time
+
+    `(java.util.Date.) -> #inst "2022-01-20T06:45:51.137-00:00`
+    `(System/currentTimeMillis) -> 1365260110635`
+    Criterium library and clj-time library also have similar functionalities.
+    clj-time.core/now gives a DateTime, `clj-time.local/local-nwo` gives a local time zone DateTime instance
+
+    <!--list-separator-->
+
+    -  Representing Dates as literals
+
+        use `#inst` literals to represent a point in time.
+
+        when communicating with other processes with `edn`, use `clojure.edn/read` to translate literal string into Date objects
+
+        `clojure.edn/read` is safer than `clojure.core/read`
+        [1-26 reader-literal](~/playground/clojure-cookbook/01_primitive-data/1-26_reader-literal.asciidoc)
+
+    <!--list-separator-->
+
+    -  parse date
+
+        use `clj-time.format`. formatter to define formats like "MM/dd/yy", `(parse [formatter] [time-string])` gives a DateTime object.
+
+        wrapper of `Joda-Time`
+
+    <!--list-separator-->
+
+    -  print dates
+
+        use `clj-time.format/unparse`
+
+        ```clojure
+        (tf/unparse (tf/formatters :date) (t/now))
+        ;; -> "2013-04-06"
+
+        (def my-format (tf/formatter "MMM d, yyyy 'at' hh:mm"))
+        (tf/unparse my-format (t/now))
+        ;; -> "Apr 6, 2013 at 04:54"
+
+        ```
+
+        `clj-time` and `Joda-Time` are famous for making it easy to work with dates/times on JVM
+
+    <!--list-separator-->
+
+    -  communicate with #inst and java DateTime ...
+
+        clj-time.coerce.
+
+    <!--list-separator-->
+
+    -  Comparing dates
+
+        `compare` functions.
+        `sort` hooks `compare`
+        before comparing different objects, should coerce them into 1 type.
+
+    <!--list-separator-->
+
+    -  time-intervals
+
+        `clj-time.core/interval` takes 2 joda-time object to form a interval object.
+        `clj-time.core/in-<unit>` functions give the length of a interval in days/years/...
+        leap-second?
+
+    <!--list-separator-->
+
+    -  a range of dates/times
+
+        generate a infinite seq of periodic times, then use a predicate to select some of them.
+
+        ```clojure
+        (require '[clj-time.core :as time])
+        (require '[clj-time.periodic :as time-period])
+
+        (defn time-range
+          "Return a lazy sequence of DateTimes from start to end, incremented
+          by 'step' units of time."
+          [start end step]
+          (let [inf-range (time-period/periodic-seq start step)
+        	below-end? (fn [t] (time/within? (time/interval start end)
+        					 t))]
+            (take-while below-end? inf-range)))
+
+        ```
+
+        in use
+
+        ```clojure
+        (def months-of-the-year (time-range (time/date-time 2012 01)
+        				    (time/date-time 2013 01)
+        				    (time/months 1)))
+
+
+        ;; months-of-the-year is an unrealized lazy sequence
+        (realized? months-of-the-year)
+        ;; -> false
+
+        (count months-of-the-year)
+        ;; -> 12
+
+        ;; now realized
+        (realized? months-of-the-year)
+        ;; -> true
+
+        ```
+
+        lazy is sooooooo good.
+
+    <!--list-separator-->
+
+    -  range using native types
+
+        use `repeatedly` to create a lazy seq.
+
+        ```clojure
+
+        (def daily-from-epoch
+          (let [start-date (java.util.GregorianCalendar. 1970 0 0 0 0) ]
+            (repeatedly
+              (fn []
+        	(.add start-date java.util.Calendar/DAY_OF_YEAR 1)
+        	(.clone start-date)))))
+
+        (take 2 (drop 57 daily-from-epoch))
+        ;; -> (#inst "1970-02-27T00:00:00.000-07:00"
+        ;;     #inst "1970-02-28T00:00:00.000-07:00")
+
+        ```
+
+        use `.clone` to return the a copy of `start-date` object. should not return mutable object itself.
+
+        use `java.text.SimpleDateFormat.` to format the time.
+
+        ```clojure
+        (def end-of-days (take 3 (drop 353 (daily-from-year 2012))))
+        (def cal-format (java.text.SimpleDateFormat. "EEE M/d/yyyy"))
+        (map #(.format cal-format (.getTime %)) end-of-days)
+
+        ```
+
+        <!--list-separator-->
+
+        -  default year
+
+            ```clojure
+            (defn daily-from-year [& [start-year]]
+              (let [start-date (java.util.GregorianCalendar. (or start-year 1970)
+            						 0 0 0 0)]
+                (repeatedly
+                  (fn []
+            	(.add start-date java.util.Calendar/DAY_OF_YEAR 1)
+            	(.clone start-date) ))))
+
+            ```
+
+            &amp; [ start-year] to take optional param. `or` returns the first non-nil arg.
+
+    <!--list-separator-->
+
+    -  Relative Dates
+
+        `clj-time.core/ago` and `from-now` works like `minus` and `plus`
+        `(-> 1 t/days t/ago)` means 1 days ago.
+
+    <!--list-separator-->
+
+    -  timezone
+
+        `t/time-zone-for-id "America/Los_Angeles"`
+        `t/from-time-zone UTC-time la-tz` tranlate UTC-time from UTC to the `la-tz` timezone.
+        `clj-time.local` provides functions to work with the machine local time.
+
+
+### Composite datas {#composite-datas}
+
+
+#### good properties {#good-properties}
+
+<!--list-separator-->
+
+-  immutability
+
+    all data contents are "value" that can't be changed.
+    good for concurrent and parallel programming.
+
+<!--list-separator-->
+
+-  persistence
+
+    only the modified part will be stored.
+    efficient.
+
+<!--list-separator-->
+
+-  sequence abstraction
+
+
+#### List {#list}
+
+<!--list-separator-->
+
+-  creating list
+
+    <!--list-separator-->
+
+    -  ways:
+
+        1.  `'(1 x)`
+            everything is not evaluated.
+            `'()` is better for a empty list.
+        2.  `(list 1 x :2)`
+            everything is evaluated.
+
+    <!--list-separator-->
+
+    -  list / vector
+
+        list works better when need a data structure efficient at insertions at beginning.
+        vector is better in other things. appending to the end. look-up.
+
+<!--list-separator-->
+
+-  conversion into list
+
+    1.  `(apply list [1 2 3])`
+        (1 2 3)
+    2.  `(into '() [1 2 3 4 5])`
+        (5 4 3 2 1)
+        faster. 2 time.
+
+<!--list-separator-->
+
+-  add item to list
+
+    1.  `(conj (list 1 2 3) 4)`
+        (4 1 2 3)
+
+    <!--list-separator-->
+
+    -  cons and conj in clojure
+
+        `cons` guarantees that the item is added at the front.
+        `cons` return a sequence, not a persistentlist.
+        `cons` return a cons cell
+
+<!--list-separator-->
+
+-  deleting item from list
+
+    1.  `(pop '(1 2 3))`
+    2.  `(rest '(1 2 3))`
+
+<!--list-separator-->
+
+-  test for list
+
+    1.  `list?`
+        test for clojure.lang.IPersistentList
+    2.  `seq?` better
+        test for clojure.lang.ISeq
+
+
+#### Vector {#vector}
+
+<!--list-separator-->
+
+-  create vector
+
+    1.  `[1 2 3]`
+    2.  `(vector 1 2 3)`
+    3.  `(vec '(1 2 3))` readable
+    4.  `(into [] '(1 2 3))`  30% faster
+
+<!--list-separator-->
+
+-  adding to vector
+
+    1.  `(conj [1 2 3] 4)`
+        [1 2 3 4]
+    2.  `(assoc [:a :b :c] 3 :x)`
+        [:a :b :c :x]
+
+<!--list-separator-->
+
+-  removing from a vector
+
+    1.  `(pop [1 2 3 4])` end
+        [1 2 3]
+    2.  `(subvec [:a :b :c :d] 1)` beginning
+        [:b :c :d]
+        subvec take a subvector from 1 to ""(optional;end if not given).
+
+    drop/rest are sequence operation, not guaranteed for a vector return value.
+
+<!--list-separator-->
+
+-  Value at Index
+
+    1.  `(nth [:a :b :c] 2)` sequential nature
+        1.  out of bounds -&gt; exception
+            `(nth [:a :b :c] 4 :not-found)` will give :not-found when out of bounds.
+    2.  use vector name.
+        `(def v [:a :b :c])`
+        `(v 2)` -&gt; :c
+    3.  `(get [:a :b :c] 2)` indexed
+        -&gt; :c
+        associative interface with integer indexes as keys.
+        return nil when out of bounds. also take the not-found param.
+
+    <!--list-separator-->
+
+    -  choice
+
+        -   which way make the code most evident
+        -   the nature of data being a sequence(nth), or just stored as a vector(get)?
+        -   want a `nil` or a exception when failed?
+
+<!--list-separator-->
+
+-  Setting Value at index
+
+    `(assoc [:a :b :c] 1 :x)`
+    `(assoc [:a :b :c] 1 :x 2 :y)`
+
+
+#### Set {#set}
+
+have a collection of values, only concerned with the distinct values. lookup very fast (O(1))
+
+<!--list-separator-->
+
+-  Creating a set
+
+    1.  use set literal.
+        `#{:a :b :c}`
+    2.  `(hash-set :a :b :c)`
+        `(apply hash-set :a [:b :c])`
+    3.  `set` on another collectoin
+        `(set "hello") -> #{\e \h \l \o}`
+    4.  `(into #{} [:a :b :c])` faster
+    5.  `(sorted-set 1 2 3)`
+        in ascending order using compare
+        sorted set elements must be comparable.
+        `(sorted-set-by > 1 2 3)` specify the comparator for this sorted set. will be preserved in adding/removing objects
+
+    Between hash set and sorted set:
+
+    -   hash set
+        hash tables
+        -   constant lookup/insert
+        -   larger space
+    -   sorted set
+        balanced red-black binary tree
+        -   less space
+        -   slower lookup/insert
+
+<!--list-separator-->
+
+-  Adding/removing items
+
+    -   Adding
+        1.  `into`
+        2.  `(conj #{:a :b :C} :d)`
+    -   removing
+        1.  `(disj) #{:a :b :c} :b :c)`
+
+    Other useful functions in `clojure.set` namespace like `union` , `difference`
+
+<!--list-separator-->
+
+-  test set membership
+
+    1.  `(contains? #{:red :white} :blue)`
+        -&gt; true/false
+    2.  `(get #{:red :white} :blue)`
+        -&gt; :blue/nil/third-arg
+    3.  `(my-set :blue)`
+        :blue/nil
+
+        the ability of set-as-function could be used as **predicate**.
+        `(filter #{1 2 3} (repeatedly #(rand-int 10)))`
+    4.  `(:blue my-set)`
+        :blue/nil/third-arg
+        only keywords.
+
+<!--list-separator-->
+
+-  set operations
+
+    all in `clojure.set` namespace
+
+    -   `union` take any number of sets. return the union.
+    -   `intersection` take any number of sets. return the intersection
+    -   `difference` return the set of the first arg without elements from additional args.
+    -   `subset?` return true when 1st arg is subset of 2nd arg.
+    -   `superset?` work the same.
+
+<!--list-separator-->
+
+-  `set` func
+
+    `(set col)` return a set version of col.
+    when use `(into [] (set col1))`, the result would be just unique items like [:a :b].
+
+
+#### Map {#map}
+
+<!--list-separator-->
+
+-  creating
+
+    -   use literal
+
+        ```clojure
+        {:name "", :class :barbarian
+         :race :half-orc}
+        ```
+    -   array-map, hash-map, soted-map function.
+    -   `sorted-map-by` for a custom comparator
+
+        ```clojure
+        (sorted-map-by #(< (count %1) (count %2))
+        	       "pigs" 14
+        	       "horses" 2
+        	       "elephants" 1
+        	       "manatees" 3)
+        ;; -> {"pigs" 14, "horses" 2, "manatees" 3, "elephants" 1}
+        ```
+
+    -   types
+        -   Array maps
+            backed with a array
+
+        -   Hash maps
+            fast loopup and insertion
+
+<!--list-separator-->
+
+-  retrieve value
+
+    1.  `(get map :name)`
+        value/nil or default
+    2.  `(:name map)` maps as objects, keys as fileds
+        keywords implement the IFn interface.
+        value/nil or default
+    3.  `(character :name)` nil
+        the set name charactre.
+        value/nil or default
+    4.  `(get-in themap [:weapon :damage])`
+        value/nil or default
+        works with any associative data structure.
+        `(get-in [{},{},{}] [1 :class])`
+
+<!--list-separator-->
+
+-  retrieving multiple values
+
+    -   `(select-keys col [keys])` for all kinds of keys
+        return a sub-map of col containing only the [keys].
+        use `vals` to get all vals of the submap.
+        if only wants the vals, the approach is good
+    -   `((juxt key1 key2) col)` when order matters
+        `((juxt a b c) x) => [(a x) (b x) (c x)]`
+        won't work if the key is not a function.
+    -   `(juxt #(get % "a") #(get % "b"))` for all kinds of keys
+
+<!--list-separator-->
+
+-  change keys
+
+    the value of the map is `immutable`--the `(dissoc book :name)` won't change the map `book`. Use def to assign value to it.
+
+    -   `assoc col key val` add/change the val of the key
+    -   `dissoc col key` delete key
+    -   `update col key fn args` change the key with a function with previous val.
+    -   `update-in,assoc-in col [keypath]` change the map within layers of maps.
+
+    [something bout atom](~/playground/clojure-cookbook/02_composite-data/2-18_setting-keys.asciidoc) [states]({{< relref "20220202160057-states.md" >}})
+
+<!--list-separator-->
+
+-  use map as seq
+
+    -   `seq` to transform the map into seq
+        ([][][])
+    -   `conj m [:c 3]`
+    -   `into` uses `conj`
+    -   `zipmap [:a :b :c] [1 2 3]`
+    -   `(find map key)`
+        gives entry [:name "keanu"]
+        no default value. nil.
+        -   gives `MapEntry` object
+            (key entry) and (val entry)
+
+<!--list-separator-->
+
+-  apply fn to map
+
+    -   key/val
+        use `vals` and `keys` to extract the vals/keys and `zipmap` to combine them.
+    -   key &amp; val
+        -   use `into` create a new map. `(map f col)` to use the key/val pair as args of `f`. Could use `(key entry)` to extract key/val of a particular entry.
+        -   `reduce-kv` goes along the map.
+            f(0,k1,v1)=f1, f(f1,k2,v2)=f2, ...... , f(fn-1,kn,vn)=fn -&gt; return.
+            [file:~/playground/clojure-cookbook/02_composite-data/2-21_applying-functions-to.asciidoc](~/playground/clojure-cookbook/02_composite-data/2-21_applying-functions-to.asciidoc)
+
+<!--list-separator-->
+
+-  multiple values for a key
+
+    [cookbook ref](~/playground/clojure-cookbook/02_composite-data/2-22_multiple-values/2-22_multiple-values.asciidoc)
+
+<!--list-separator-->
+
+-  combine maps
+
+    -   `merge` for no key in common
+        same keys' value would be overwritten with the rightmost map with the key.
+    -   `merge-with` for key in common
+        would apply f to the same key's values.
+
+        ```clojure
+        (def Alice {:loves #{:clojure :lisp :scheme} :hates #{:fortran :c :c++}})
+        (def Bob   {:loves #{:clojure :scheme}       :hates #{:c :c++ :algol}})
+        (def Ted   {:loves #{:clojure :lisp :scheme} :hates #{:algol :basic :c :c++ :fortran}})
+
+        (merge-with clojure.set/intersection Alice Bob Ted)
+        ;; -> {:loves #{:scheme :clojure}, :hates #{:c :c++}}
+
+        ```
+
+        a deep-merge-with that goes with nested map
+
+        ```clojure
+        ;; Copied verbatim from the defunct clojure-contrib (http://bit.ly/deep-merge-with)
+        (defn deep-merge-with [f & maps]
+          (apply
+           (fn m [& maps]
+             (if (every? map? maps)
+               (apply merge-with m maps)
+               (apply f maps)))
+           maps))
+
+        (deep-merge-with + {:foo {:bar {:baz 1}}}
+        		 {:foo {:bar {:baz 6 :qux 42}}})
+        ;; -> {:foo {:bar {:qux 42, :baz 7}}}
+        ----
+
+        ```
+
+        [cookbook-ref](~/playground/clojure-cookbook/02_composite-data/2-23_combining-maps.asciidoc)
+
+<!--list-separator-->
+
+-  compare and sorting values
+
+    `clojure.core` functions `compare` and `sort`
+
+    -   `sort predicate col` could specify predicate.
+        the predicate should return true only when the 1st arg should be before the 2nd arg.
+
+
+#### custom data structure {#custom-data-structure}
+
+
+#### interfaces {#interfaces}
+
+<!--list-separator-->
+
+-  contains?
+
+    the `(contains? col key)` funciton would return if the key mentioned is contained in the collection. `contains?` is a lookup function, meaning that it does not work on lists, and communicate with the associative interface, like vector, the key would refer to the `index`
+
+
+### testing {#testing}
+
+
+#### do lazyseq {#do-lazyseq}
+
+`(doall (range 1e5))`
+
+
+#### record time {#record-time}
+
+`(time expr)`
+
+example: `(def largeseq (doall (range 1e5)))`
+`(time (dotimes [_ 100] (set largeseq)))`
+
+
+### General computing {#general-computing}
+
+
+#### running the clojure {#running-the-clojure}
+
+download from  <http://clojure.org/downloads> a release of clojure-x.x.x.jar, and
+
+```shell
+java -cp "clojure-x.x.x.jar clojure.main
+```
+
+then the clojure repl would be running in the terminal.
+
+
+#### Man {#man}
+
+`doc` , `source` and `find-doc` (which takes regular expr.)
+could use `sourc` to read clojure.core to learn coding.
+
+
+#### EXPLORING NAMESAPCES {#exploring-namesapces}
+
+-   `loaded-libs` to see a set of currently loaded namespaces
+-   `dir` to print the public vars in a namespace
+-   `ns-publics` to have a mapping of symbols to public vars in a namespace
+
+
+#### trying a library {#trying-a-library}
+
+with leiningen 2.1.3 or later,
+ Then edit your <span class="underline">~/.lein/profiles.clj</span> file, adding \`[lein-try "0.4.1"]\`
+to the `:plugins` vector of the `:user` profile:
+
+```clojure
+{:user {:plugins [[lein-try "0.4.1"]]}}
+
+```
+
+
+#### running clojure programs {#running-clojure-programs}
+
+-   use `clojure scriptpath`
+-   use `java`
+
+    ```shell
+    # symple call
+    java -cp clojure.jar clojure.main my_clojure_program.clj
+    # call with a specified namespace' main. the script being in src.com/example/my_program.clj
+    java -cp clojure.jar:src clojure.main --main com.example.my-program
+    ```
+
+<!--list-separator-->
+
+-  entry point `-main` function
+
+    ```clojure
+    ;; src/com/example/my_program.clj
+    (ns com.example.my-program)
+    (defn -main [&args]
+      (println "Hey!"))
+    ```
+
+    `*command-line-args*` is a `clojure.lang.ArraySeq` object variable containing args from the command line interface.
+    it's content is the same as `[&args]`
+
+<!--list-separator-->
+
+-  writing in namespaces
+
+    ```clojure
+    (ns foo ;;the namespace that is being written
+      (:require foo.util)) ;; the namespace required
+    ```
+
+    util namespace is written in `/foo/util.clj`.
+
+
+#### running clojure program from command line {#running-clojure-program-from-command-line}
+
+using `leiningen`'s `lein run` to quickly start the program from command line.
+
+1.  `lein new project_name`
+    this will create a folder in the present directory with name `project_name`. Inside will be several files and folders pre-created for the new project.
+2.  Configure `project_name/project.clj`
+    add `:main sth` to the end of the `defproject` function.
+    `sth` will specify the main function the `lein run` command will start at.
+    -   `my-cli.core` indicate `my-cli.core/-main`
+    -   `my-cli.core/sthelse` indicate `my-cli.core/sthelse`
+
+
+#### parsing command-line arguments {#parsing-command-line-arguments}
+
+This chapter is no good. could use a rewrite. Or I can get it from other sources
+
+the `(parse-opts args app-specs)` function takes to vectors.
+
+-   the `args` vector is the input arguments.
+-   the `app-specs` vector is the specification of the options
+    -   :default the default value of the option
+    -   :default-desc
+    -   :parse-fn
+    -   :assoc-fn
+    -   :validate the function that returns false when value off the limit
+
+the `(parse-opts args app-specs)` returns a map. `{:count 4, :verbose true}` like
+
+the `app-specs` vector contains vectors of options.
+`["-n" "--count COUNT" :default 5]`, where `-n` stands for a shortcut, `--count=` stands for a option, which will appear in the returning map as keyword key `:count`.
+
+```clojure
+  ;;the app-specs should look like this.
+  (def app-specs [["-n" "--count COUNT" :default 5
+				  :default-desc "FIVE"
+				  :parse-fn #(Integer. %)
+				  :assoc-fn assoc-max
+				  :validate [#(< % 100) "Reached the maximum."]]
+		  ["-v" nil :long-opt "--verbose"
+			   :default false]])
+
+(defn -main [& args]
+  (let [{:keys [options arguments summary errors]}
+	(parse-opts
+	 args
+	 [["-h" "--help" "Print this help" :default false]])]
+    (when (:help options)
+      (println summary))))
+
+;; Simulate entry into -main at the command line
+(-main "-h")
+;; *out*
+;;   -h, --help  Print this help
+
+```
+
+[file:~/playground/clojure-cookbook/03_general-computing/3-07_parse-command-line-arguments.asciidoc](~/playground/clojure-cookbook/03_general-computing/3-07_parse-command-line-arguments.asciidoc)
+
+
+#### lein templates {#lein-templates}
+
+leiningen could make folders. write files.
+[lein templates](~/playground/clojure-cookbook/03_general-computing/3-08_lein-templates.asciidoc)
+
+
+#### polymorphism {#polymorphism}
+
+-   with `cond` or `condp`. small/prototypeing
+    pass a map in, and specify the type in `:type` key/val pair.
+-   with protocol. fast only single dispatch
+
+    ```clojure
+        ;; Define the "shape" of a Shape object
+        (defprotocol Shape
+          (area [s] "Calculate the area of a shape")
+          (perimeter [s] "Calculate the perimeter of a shape"))
+
+        ;; Define a concrete Shape, the Rectangle
+        (defrecord Rectangle [length width]
+          Shape
+          (area [this] (* length width))
+          (perimeter [this] (+ (* 2 length)
+    			   (* 2 width))))
+
+        (->Rectangle 2 4)
+        ;; -> #user.Rectangle{:length 2, :width 4}
+
+        (area (->Rectangle 2 4))
+        ;; -> 8
+
+
+    ;; Calculate the area of a rectangle without defining a record
+    (area
+      (let [b 2
+    	h 3]
+        (reify Shape
+          (area [this] (* b h))
+          (perimeter [this] (* 2 (+ b h))))))
+    ;; -> 6
+
+
+    ```
+
+    between `defrecord` and `deftype`,
+    Is your class modeling a domain value--thus benefiting from hash map like functionality and semantics? Use `defrecord`.
+    Do you need to define mutable fields? Use `deftype`.
+    `extend` family (`extend, extend-type, extend-protocol`) define implementations for existing types
+
+<!--listend-->
+
+-   with `defn`
+    like the way `+` is implemented
+
+    ```clojure
+    ;;user> (source +)
+    (defn +
+      "Returns the sum of nums. (+) returns 0. Does not auto-promote
+      longs, will throw on overflow. See also: +'"
+      {:inline (nary-inline 'add 'unchecked_add)
+       :inline-arities >1?
+       :added "1.2"}
+      ([] 0)
+      ([x] (cast Number x))
+      ([x y] (. clojure.lang.Numbers (add x y)))
+      ([x y & more]
+       (reduce1 + (+ x y) more)))
+    ```
+-   with `difmfulti` extensible, slow
+
+    ```clojure
+    (defmulti area
+      "calculating area of a shape"
+      (fn [shape] ;a dispatch function
+        (:shape shape))
+      :default :triangle ;the default path
+      )
+
+    (defmethod area :triangle [shape]
+      (expr)
+      )
+    ```
+
+    slow.
+
+use returning vector to make multi-factor polymorphism, like `convert`
+
+```clojure
+(defmulti convert
+  "Convert a thing from one type to another"
+  (fn [request thing]
+    [(:input-format request) (:output-format request)])) ; <1>
+
+(require 'clojure.edn)
+(defmethod convert [:edn-string :clojure] ;                <2>
+  [_ str]
+  (clojure.edn/read-string str))
+
+(require 'clojure.data.json)
+(defmethod convert [:clojure :json] ;                      <3>
+  [_ thing]
+  (clojure.data.json/write-str thing))
+
+```
+
+
+#### extend built-in types {#extend-built-in-types}
+
+also a need for polymorphism.
+when want to give built-in type, like `String` some more functions,
+
+-   `extend-type`
+
+    ```clojure
+    (defprotocol Person
+      "Represents the name of a person."
+      (first-name [person])
+      (last-name [person]))
+
+    (extend-type String
+      Person
+      (first-name [s] (first (clojure.string/split s #" ")))
+      (last-name [s] (second (clojure.string/split s #" "))))
+
+    (first-name "john")
+    ;; -> "john"
+
+    (last-name "john smith")
+    ;; -> "smith"
+
+    ```
+
+-   `extend`
+
+    ```clojure
+    (defn first-word [s]
+      (first (clojure.string/split s #" ")))
+
+    (defn second-word [s]
+      (second (clojure.string/split s #" ")))
+
+    (extend String
+      Person
+      {:first-name first-word
+       :last-name second-word})
+
+
+    ```
+
+
+#### core async {#core-async}
+
+when need seperate consumers and producers by introducing explicit queues between them.
+without asynchronous queue, any slow consumer would slow down the whole pipeline.
+
+use channels. can't get the library now, later
+
+
+### Libraries {#libraries}
+
+
+#### library not found. {#library-not-found-dot}
+
+```sh
+Failed to resolve version for ring:ring:jar:RELEASE: Could not find metadata ring:ring/maven-metadata.xml in local (/Users/hermanhe/.m2/repository)
+Failed to read artifact descriptor for ring:ring:jar:RELEASE
+This could be due to a typo in :dependencies, file system permissions, or network issues.
+If you are behind a proxy, try setting the 'http_proxy' environment variable.
+Could not resolve dependencies
+```
+
+such warning would arise when sometime the library your trying to use was not found. sometimes you just type in the wrong name, like `clojure.tools.cli` instead of the correct `org.clojure/tools.cli`
+
+
+### Web development {#web-development}
+
+
+#### Base {#base}
+
+Browser -&gt; HTTP Server -&gt; Ring -&gt; Ring Middleware -&gt; Compojure -&gt; Fns
+Compojure takes uri and
+
+
+#### json support {#json-support}
+
+use `wrap-json` family under `ring-json` to add wrapper from `app-routes` to
+
+
+#### standalone {#standalone}
+
+```shell
+lein uberjar
+java -jar xxxxxxxxxx.jar
+```
+
+
+## My Prob/Sol {#my-prob-sol}
+
+
+### making csv from [{:x 1 :y 2} {:x 2 :y 3}] {#making-csv-from-x-1-y-2-x-2-y-3}
+
+```clojure
+(defn save [records]
+  (clojure.string/join "\n"  (map #(clojure.string/join "," (vals %)) records)))
+```
+
+首先对item做，出["1,2" "2,3"].这里是对vector的items，所以用map，对每个item map。
+然后对这个vector做，所以直接用join。
+
+
+### `filter` with map {#filter-with-map}
+
+filter treat map like nested vectors, so use `fisrt` to retrieve key, and `second` to retrieve val.
+
+
+### nested loop {#nested-loop}
+
+if a
+
+```clojure
+(defn bubble-sort
+  [array]
+  (loop [arr array
+	 i 0
+	 n (count array)]
+    (if (< i n)
+      (recur (loop [ar arr ;; loop in recur.
+		   j (- n 1)]
+	      (if (> j i)
+		(recur
+		 (if (> (ar (dec j)) (ar j))
+		   (assoc ar j (ar (dec j)) (dec j) (ar j))
+		   ar)
+		 (dec j))
+		ar)
+	      )
+	    (inc i)
+	    n)
+     arr)
+    ))
+```
+
+
+## Smart-asses {#smart-asses}
+
+用300000000来测试到底有多快
+from 4clojure and project euler
+
+
+### last without last {#last-without-last}
+
+`Reduce is the fastest in this kind of task`
+find the last element of a sequence without using `last`
+
+-   last: 952 msecs
+-   fisrt reverse: 174 msecs
+-   reduce (fn [a b] b): 38 msecs
+    but with very large set, reduce works better than nth
+-   recur: 70 msecs
+-   (fn [x] (nth x (dec (count x)))): 12 msecs
+    count is timeless
+
+
+### Count without Count {#count-without-count}
+
+```clojure
+(reduce (fn [l n] (+ l 1)) 0 col)
+```
+
+
+## Utilities {#utilities}
+
+
+### Yasnippets {#yasnippets}
+
+
+#### Usable {#usable}
+
+-   bench: test time
+-   def/defm/defr/deft: def ,macro, func, record, type
+-   doseq
+-   fn
+-   for
+-   if/ifl
+-   let/letfn
+-   map
+-   map lambda
+-   pr
+-   print
+-   reduce
+-   require
+-   try
+-   use
+-   when/whenl
+-   cond/condp
+-   main
+-   -&gt;/-&gt;&gt;
+
+
+#### I don't understand {#i-don-t-understand}
+
+-   import
+-   is
+-   mdoc
+-   ns
+-   opts
+-   test
+-   com
+-   fdef
+-   sdef
+-   skeys
+-   testing
+
+
+## Questions {#questions}
+
+
+### [\W] {#w}
+
+why [\W] turned into "[\\\W]"
+\#+begin_src clojure
+(str "John" [\W] " " "de")
+;;-&gt; "John[\\\W] de"
+\#+end_src&gt;
+
+
+### RoboVM and ClojureCLR for IOS and Windows Phone? {#robovm-and-clojureclr-for-ios-and-windows-phone}
+
+
+### <span class="org-todo todo TODO">TODO</span> How to iterate/reduce on 2 seqs? {#how-to-iterate-reduce-on-2-seqs}

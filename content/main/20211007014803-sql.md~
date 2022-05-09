@@ -1,0 +1,117 @@
++++
+title = "SQL"
+author = ["System Administrator"]
+draft = false
++++
+
+Database Language for [Relational Database]({{< relref "../20220509210234-relational_database.md" >}})
+
+
+## Use Emacs {#use-emacs}
+
+
+## SQL Background {#sql-background}
+
+SQL == Structured Query Language
+keywords ==&gt; not case-sensitive
+names ==&gt; case sensitive
+end with `;`
+
+
+### 2 Parts {#2-parts}
+
+-   Data Definition Language
+    -   Create tables &amp; their constraints
+    -   Changing columns/constraints
+    -   Tuples Adding/Updating/Remoing
+-   Data Manipulation Language
+
+
+### Hierarchy of database containment {#hierarchy-of-database-containment}
+
+-   Computer
+    -   Cluster 1
+        a database server
+        -   Catalog 1
+            just database
+            -   Schema 1
+                namespace of table.
+                [tables, views, domains, assertions, collations, translation, character sets]
+                same owner
+            -   Schema 2
+        -   Catalog 2
+    -   Cluster 2
+
+
+### SQL DB and Related Softwares {#sql-db-and-related-softwares}
+
+DBMS is an application. Usually runs on a server `MySQL server`
+Different client Applications access this server the same time.[^fn:1]
+
+
+## `SELECT` Command {#select-command}
+
+```sql
+select * from table-name
+       where predicate;
+-- the predicate is like conditions in if and where statement in python
+```
+
+
+### Predicates {#predicates}
+
+warning: **Include all specifications.**
+
+
+### Select XX {#select-xx}
+
+can put boolean expression after `XX`
+
+
+### From multiple tables {#from-multiple-tables}
+
+==&gt; [Cartesian Product]({{< relref "20211011172653-cartesian_product.md" >}})
+
+
+### Alias {#alias}
+
+
+#### Self join {#self-join}
+
+Consider the situation:
+ find all staff same department as andy.
+ Without alias and 1 table, 2 selects have to be performed
+ With alias, and a copy of the table, 1 select is needed.
+
+
+## Creating Tables {#creating-tables}
+
+`varchar` for strings.
+`not null` to have no `NULL` in this column
+
+```sql
+create table `teachers`
+  (
+      `id` int, -- we will add primary key later. NOT NULL and UNIQUE is not needed.
+      `name` varchar(200) not null,
+      `tel_no` varchar(40),  -- not using INT here as we have numbers like +44
+      `office` varchar(15) not null
+  );
+
+
+```
+
+
+### CreateSchema {#createschema}
+
+```sql
+select
+```
+
+
+## Tuple Manipulation {#tuple-manipulation}
+
+
+## Constraints {#constraints}
+
+[^fn:1]: like GNU/Linux

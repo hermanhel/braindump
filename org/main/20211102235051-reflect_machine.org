@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       EAD2BDED-4AE1-4E91-BF44-24BAD882447A
+:END:
+#+title: Reflect Machine
+#+HUGO_SECTION:main
+

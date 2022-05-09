@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       AE9E6BBE-4E5A-427F-8097-4EA9494E3204
+:END:
+#+title: 2022-03-27
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:

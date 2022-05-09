@@ -1,0 +1,342 @@
+:PROPERTIES:
+:ID:       F989F96D-F5C2-4DCA-935D-63C673F041A2
+:CATEGORY: CPT101
+:END:
+#+title: CPT101
+#+HUGO_SECTION:main
+CPT101 is into Computer System Architeture.
+The class consist of the knowledge of the computer system, and a bit of assembly language programming in the assembly language used in C, a AMD RISC.
+The class is slow and shallow. *Recommanded Method is Self Study and Go to the Professor for Problems*
+
+[[file:~/Downloads/NDM File/CPT Module Handbook_CPT101 AY21-22_S1.pdf][CPT101 Module Handbook]]
+
+#+COLUMNS: %25ITEM %TODO %3PRIORITY %TAGS %3CATEGORY(he){+}
+* ACTIVE CPT101                                                      :agenda:
+* resources
+** Textbook
+   /Computer Systems Architecture: A Networking Approach./ by Rob Williams
+   I have a copy of it. This is the mandatory textbook.
+** Lecture Slides
+   Lecture slides are often released a week before.
+   The professor would be covering the exact content of the slids.
+   Maybe base of Exams.
+*** Week 5
+[[file:~/Downloads/NDM File/CS102-pdf-07 LS.pdf][Lecture 07]]
+*** All slides and lab material:
+[[file:~/Notes/NoteAttachments/PDF/CPT101/][CPT101 resource]]
+
+** Online Resources
+   I would say MIT OCW definitely have courses under the topic.
+* Tutoring Schedule
+** DONE Lecture ESG09
+CLOSED: [2021-11-02 Tue 00:00] SCHEDULED: <2021-11-01 Mon 09:00-11:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-01 Mon 01:16]
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2021-11-02 Tue 00:00]
+- State "DONE"       from ""           [2021-11-01 Mon 01:16]
+- State "DONE"       from              [2021-11-01 Mon 01:16]
+- State "DONE"       from ""           [2021-11-01 Mon 01:16]
+- State "DONE"       from              [2021-11-01 Mon 01:16]
+- State "DONE"       from              [2021-10-14 Thu 15:53]
+:END:
+** DONE Comp Lab SD554
+DEADLINE: <2021-12-24 Fri> SCHEDULED: <2021-11-30 Tue 10:00-11:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:12]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-12 Fri 16:58]
+- State "DONE"       from              [2021-11-12 Fri 16:58]
+- State "DONE"       from ""           [2021-11-09 Tue 22:55]
+- State "DONE"       from              [2021-11-09 Tue 22:55]
+- State "DONE"       from ""           [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-11-01 Mon 12:40]
+- State "DONE"       from ""           [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-10-14 Thu 15:44]
+:END:
+Class D1/4
+only in week 5,6,9
+** Office Hour
+* Tasks
+** DONE Preview #1
+SCHEDULED: <2021-12-01 Wed  +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-12-29 Wed 00:38]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-12-29 Wed 00:38]
+- State "DONE"       from              [2021-12-29 Wed 00:38]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-12 Fri 16:58]
+- State "DONE"       from              [2021-11-12 Fri 16:58]
+- State "DONE"       from ""           [2021-11-09 Tue 22:56]
+- State "DONE"       from              [2021-11-09 Tue 22:56]
+- State "DONE"       from ""           [2021-10-16 Sat 12:05]
+- State "DONE"       from ""           [2021-10-16 Sat 12:05]
+- State "DONE"       from "WEEK"       [2021-10-14 Thu 15:52] actually not done.
+:END:
+** DONE Preview #2
+SCHEDULED: <2021-11-28 Sun  +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:12]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-09 Tue 22:57]
+- State "DONE"       from              [2021-11-09 Tue 22:57]
+- State "DONE"       from ""           [2021-11-09 Tue 22:55]
+- State "DONE"       from              [2021-11-09 Tue 22:55]
+- State "DONE"       from ""           [2021-11-01 Mon 14:10]
+- State "DONE"       from              [2021-11-01 Mon 14:10]
+- State "DONE"       from ""           [2021-11-01 Mon 14:10]
+- State "DONE"       from              [2021-11-01 Mon 14:10]
+- State "DONE"       from ""           [2021-10-16 Sat 12:17]
+:END:
+** DONE Study for Assesment 1 and 2 [0/24]
+CLOSED: [2021-11-18 Thu 16:15]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-11-18 Thu 16:15]
+:END:
+Basically get everything learned and refered at hand
++ [ ] Lecture 1
++ [ ] Lecture 2
++ [ ] Lecture 3
++ [ ] Lecture 4
++ [ ] Lecture 5
++ [ ] Lecture 6
++ [ ] Lecture 7
++ [ ] Lecture 8
++ [ ] Lecture 9
++ [ ] Lecture 10
++ [ ] Lecture 11
++ [ ] Lecture 12
++ [ ] Lecture 13
++ [ ] Lecture 14
++ [ ] Lecture 15
++ [ ] Lecture 16
++ [ ] Lecture 17
++ [ ] Lecture 18
++ [ ] Lecture 20
++ [ ] Lecture 21
++ [ ] Lecture 19
++ [ ] Lecture 22
++ [ ] Lecture 23
++ [ ] Lecture 24
+** DONE Assesment 1 and 2
+CLOSED: [2021-11-24 Wed 12:10] SCHEDULED: <2021-11-17 Wed 13:00>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-11-24 Wed 12:10]
+:END:
+it start at 13:00 and end at 13:40.
+Sequential 4 questions
+
+** DONE Build the CPT101 Node[3/3]
+CLOSED: [2021-11-15 Mon 16:56] SCHEDULED: <2021-10-12 Tue>
+:PROPERTIES:
+:Effort:   20
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-11-15 Mon 16:56]
+CLOCK: [2021-11-15 Mon 16:35]--[2021-11-15 Mon 16:56] =>  0:21
+:END:
+1. [X] Important dates
+2. [X] Check info in email
+3. [X] Add task of importance.(the test)
+
+
+** DONE [#A] Final exam
+CLOSED: [2022-03-01 Tue 12:18] SCHEDULED: <2022-01-12 Wed>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-03-01 Tue 12:18]
+:END:
+
+** DONE Review CPT101 [2/6]
+CLOSED: [2022-02-25 Fri 13:29]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2022-02-25 Fri 13:29]
+CLOCK: [2022-01-03 Mon 19:51]--[2022-01-03 Mon 19:59] =>  0:08
+:END:
+*** 做法
+使用Feynman Technique，和Active Recall。
+Feynman Technique的重点是理解，AR的重点是具体和具体的Chunk。
+1. 设定Chunk
+2. 建立模型
+3. 做出解释（文章）
+4. 修改Chunk
+5. Chunk编号进入Anki
+*** TODO Computer Syste Architecture
+
+**** TODO Data Storage
+
+**** TODO OS
+
+**** TODO Models
+:LOGBOOK:
+CLOCK: [2022-01-04 Tue 15:19]--[2022-01-04 Tue 15:55] =>  0:36
+:END:
+
+**** TODO Hierachy
+1. Hardware
+2. OS procedure
+   1. Kernel
+   2. API
+3. User code
+**** Features
+
+***** Backward Compatibility
+When written: Old machine
+can run on: New machine
+*** TODO Instruction execution
+
+**** TODO Complier
+
+**** TODO Intepreter
+
+*** DONE Assembly programing
+CLOSED: [2022-02-25 Fri 13:30] SCHEDULED: <2022-01-07 Fri>
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2022-02-25 Fri 13:30]
+CLOCK: [2022-01-07 Fri 08:02]--[2022-01-07 Fri 08:12] =>  0:10
+:END:
+
+**** TODO Instructions
+
+**** TODO Stack
+
+**** TODO IO
+
+**** TODO Subroutine
+
+**** TODO Parameters
+
+**** TODO control flow
+
+**** TODO instructions
+*** TODO Data representation
+SCHEDULED: <2022-01-08 Sat>
+**** TODO Char
+**** TODO Number
+
+*** DONE Logic circuits
+CLOSED: [2022-04-29 Fri 15:14]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2022-04-29 Fri 15:14]
+:END:
+
+*** TODO Make a reference note.
+Use PS 导出，画板至PDF 
+** TODO Question tutor session
+SCHEDULED: <2022-01-07 Fri>
+Preserve a time for the 
+
+* Log
+** <2021-10-11 Mon> Lecture
+- 0:00:16 ::
+- 0:48:28 :: Installed succecfully pdf-tools.el
+- 1:00:22 :: Find pdf-annot not available
+* Outline
+** Knowledge 
+*** Computer system structure
+*** Processor Structure/Behavior
+*** Memory Behavior
+**** Storages
+***** Representation of number/string
+****** Ascii charactor
+every ascii charactor holds 8 bits
+****** BCD(binary-coded decimal) for unsigned integers
+Each decimal digit => 4 bits of binary.
+******* Compared to binary
+less economical(space)
+difficult calculation
+easy translation to character form(ascii 5 01100101, BCD 5 0101)
+****** Complementary representation
+Use half of the range to denote negative integers
+******* method
+x - y = x + -y
+
+the overflow will take away the highest digit.
+
+
+***** bit, Byte, word, Mbyte
+***** Storage of video/audio
+** Assembly Language
+*** Assembly language Behavior
+**** I/O
+***** output
+#+begin_src assembly
+lea eax,format
+push eax
+call printf
+add esp,4
+#+end_src
+Equivalent to ~printf("Hello World\n);~
+1. push the second parameter (integer variable) (to the stack)
+2. push the first parameter (address of string)
+3. call ~printf~ routine
+4. clean up top 2 position of the stack
+
+**** Subroutine
+*** instructions
+Cheat Sheet:
+| ~Instruction~ | Meaning | Behavior |
+|---------------+---------+----------|
+|               |         |          |
+**** POP 
+* used Code
+#+begin_src emacs-lisp
+  (defun p-progress-list ()
+    "insert lecture 1/2/3/4/..."
+    ;; (interactive)
+  
+     (let (i)
+       (setq i 1)
+    (while (<= i 24)
+      (progn
+        ;; (insert "+ [ ] Lec")
+        ;; (insert (number-to-string i)
+        (insert (format "+ [ ] Lecture %d" i))
+        (setq i (1+ i))
+        (insert "\n")
+        )
+      )
+    )
+     )
+
+  )
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+#+end_src

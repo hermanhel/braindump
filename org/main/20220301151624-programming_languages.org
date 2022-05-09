@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       043E4D2A-F01B-418C-95F4-20B1987D453E
+:END:
+#+title: Programming Languages
+#+HUGO_SECTION:main
+This is the index of programming languages I have note for.
++ [[id:BC6E1F04-70AC-43B3-A046-47311CCCD893][C/C++]]
++ [[id:1429A922-A7CD-435D-AE5D-ECE2907F4FDE][Python]]
++ [[id:FF2E7FC4-3E64-4791-B320-2B5A0CC852EA][clojure]]
++ [[id:78B35333-C194-4CE0-A6D0-39A1FBCDF319][Java]]

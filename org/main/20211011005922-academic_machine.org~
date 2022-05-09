@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID:       4972A60D-3727-4422-B73F-BAF3289C1DB8
+:END:
+#+title:  Academic Machine
+This machine do academic activities.(get good grade in university; come up with good academic product)
+The machine consist of 3 sub machines particularly for academic sucess:
++ Tutor Machine
++ Self-Learning Machine
++ Homework Machine
+* Status
+** Current Project
+[[id:63662D42-26CC-47B2-B049-BC4046FB304D][XJTLU-Y2S1]]
+** Upcoming Project
+*** XJTLU
++ XJTLU-Y2S2
+*** Liverpool University
+*** (optional) 研究生？
+*** Doctor in Neuralscience
+* Submachines
+** [[id:CEEC218D-CE8B-435A-8C78-4208607DD4DD][Self-Learning Machine]]
+Should be ahead of time.
+Session regularly scheduled 2 days before a formal tutoring session. others as my wave goes.
+** Tutor Machine
+This machine apply to classes, lectures, tutorials, and *office hours*.
+Emphasis on the *TUTOR* presence. Find Professor, TA or classmates to tutor myself
+Really use *Office Hours*
+*** Principle
+**** Think before ask
+communication have following disadvantags:
+- Cost energy
+- Easy to distract
+- sometimes hard to follow and/or explain clearly
+Therefore, should leave communication in the first (as in [[id:8C76C05A-ECD1-40E6-9257-9467631918E8][Metalearning]]) or the last solution.
+**** Always Log
+One of my crucial flaw of taking tutoring sessions is that things would vanish in the wind as I trying follow up while finding and remembering my questions.
+Log the questions as they pop up.
+**** Prepared
+Best go to tutoring sessions with preparation(made in [[id:CEEC218D-CE8B-435A-8C78-4208607DD4DD][self-study]]):
++ to content
+  so there will be 余裕 to raise questions
++ to activitiy
+  got a list of questions to ask or clarify
+*** Flow
+** Homework Machine
+This machine apply to any work/Coursework that would count in credit. Include preparation for exam
+practice for learning prupose is in self-learning machine.
+*** Principle
+**** As Fast As possible
+Finish every homework as fast as possible
+*** Flow
+**** 1. Record
+Record the homework immediately
+ways are:
++ in Task.org(by C-c c tt task entry)
++ in the module node "Task" heading
++ in the "homework.org" file, if I'm going to have one
+either 3 ways, the TODO should be tagged ~:homework:~

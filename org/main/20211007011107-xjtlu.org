@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       43B24795-B514-43ED-A8C9-5E03A9652A9A
+:END:
+#+title: XJTLU
+#+HUGO_SECTION:main
+I go to University at XJTLU in 2020.
+I'll spend 2 year in XJTLU and 2 year in Liverpool University.
+Now is the beginning of the 2nd year of my time in XJTLU, Therefore I'll host 2 subproject for academic success:
++ [[id:63662D42-26CC-47B2-B049-BC4046FB304D][XJTLU-Y2S1]]
++ XJTLU-Y2S2(not created yet
+  

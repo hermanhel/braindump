@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       5AA94607-4D2C-431C-AEB1-8F0552732B3D
+:END:
+#+title: Archery Machine
+#+HUGO_SECTION:main
+#+filetags: :machine:Archery:
+* Principles
+** Field
+*** Weather
+**** Rain Cloud                                                   :unchecked:
+     When it start to rain, look at the clouds:
+     + Look heavy and dark
+       It's going to rain heavily after a while ==> Run Fast
+     + Not little, but thin
+       The rain would be minor and stop soon ==> Stay and Watch
+       

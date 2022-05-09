@@ -1,0 +1,497 @@
+:PROPERTIES:
+:ID:       B67886C1-BBAB-4141-8B19-0297F7BE42BA
+:CATEGORY: EAP121
+:END:
+#+title: EAP121
+#+HUGO_SECTION:main
+* COMPLETED EAP121                                                   :agenda:
+CLOSED: [2021-12-22 Wed 17:18]
+** Tutoring Schedule
+*** DONE Seminar
+SCHEDULED: <2021-12-07 Tue 16:00-18:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-12-29 Wed 00:37]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-12-29 Wed 00:37]
+- State "DONE"       from              [2021-12-29 Wed 00:37]
+- State "DONE"       from ""           [2021-11-24 Wed 12:13]
+- State "DONE"       from              [2021-11-24 Wed 12:13]
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-09 Tue 22:55]
+- State "DONE"       from ""           [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-11-01 Mon 12:40]
+- State "DONE"       from ""           [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-10-14 Thu 15:54]
+:END:
+*** DONE Seminar
+SCHEDULED: <2021-11-26 Fri 17:00-19:00 +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:12]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:12]
+- State "DONE"       from              [2021-11-24 Wed 12:12]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-09 Tue 22:57]
+- State "DONE"       from              [2021-11-09 Tue 22:56]
+- State "DONE"       from ""           [2021-11-01 Mon 12:41]
+- State "DONE"       from              [2021-11-01 Mon 12:41]
+- State "DONE"       from ""           [2021-11-01 Mon 12:41]
+- State "DONE"       from              [2021-11-01 Mon 12:41]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+** Tasks
+*** DONE Preview #1
+CLOSED: [2021-11-09 Tue 22:57] SCHEDULED: <2021-11-07 Sun  +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-01 Mon 12:39]
+:END:
+:PROPERTIES:
+n:LAST_REPEAT: [2021-10-16 Sat 12:17]
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2021-11-09 Tue 22:57]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-10-16 Sat 12:17]
+:END:
+*** DONE Preview #2
+SCHEDULED: <2021-12-01 Wed  +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-11-24 Wed 12:10]
+:END:
+:LOGBOOK:
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-24 Wed 12:10]
+- State "DONE"       from              [2021-11-24 Wed 12:10]
+- State "DONE"       from ""           [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-11-01 Mon 12:40]
+- State "DONE"       from ""           [2021-11-01 Mon 12:40]
+- State "DONE"       from              [2021-11-01 Mon 12:40]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-11-01 Mon 12:39]
+- State "DONE"       from              [2021-11-01 Mon 12:39]
+- State "DONE"       from ""           [2021-10-16 Sat 12:18]
+:END:
+*** DONE Build the EAP121 node
+CLOSED: [2021-11-15 Mon 17:13] SCHEDULED: <2021-10-12 Tue 19:00-19:30>
+:PROPERTIES:
+:Effort:   10
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-11-15 Mon 17:13]
+CLOCK: [2021-11-15 Mon 17:02]--[2021-11-15 Mon 17:13] =>  0:11
+:END:
++ [X] Get the schedules
++ [X] other informations
+*** TODO Homework.
+*** DONE Catch up with the content of EAP121 Node
+CLOSED: [2021-12-29 Wed 00:43] SCHEDULED: <2021-10-12 Tue 19:30-20:30>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-29 Wed 00:43]
+- Note taken on [2021-12-24 Fri 00:47] \\
+  Too late
+:END:
+*** TODO Speaking Test
+[[file:~/Downloads/Online EAP121 Final Speaking Coursework_Task Sheet 210908.pdf][speaking test task sheet]]
+**** DONE Formative group pre
+CLOSED: [2021-11-24 Wed 12:11] SCHEDULED: <2021-11-19 Fri>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-11-24 Wed 12:11]
+:END:
+[[file:~/Downloads/EAP121 Formative Speaking Assignment_Group Presentation 2.0.pdf][Group pre task sheet]]
+Go to wechat group for further organisation
+**** DONE attend test
+CLOSED: [2021-12-24 Fri 01:16] DEADLINE: <2021-12-07 Mon 16:55>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-24 Fri 01:16]
+:END:
+*** DONE Finish first draft
+CLOSED: [2021-11-15 Mon 17:04]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-11-15 Mon 17:04]
+:END:
+*** DONE Fix first language
+CLOSED: [2021-11-15 Mon 17:04]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-11-15 Mon 17:04]
+:END:
+under linggle something
+** Outline
+*** Conclusion and Abstract
++ First and last thing
++ Goal
+  + Tell people what this is about
+  + Persuade them that this is well written
+**** Conclusion
+components:
++ How aims are achieved
++ implication
++ review of main points
++ suggestion of future study
++ limitation of this study
+***** summary
+****** Purpose.restate
+****** keyFindings.summarize
+****** generalFindings.explain
+***** limitation
+****** problemOfTheResearch.
+****** problemOfTheResearch.Importance
+***** Further Research/Implication
+****** further researches
++ new research questions
+  
++ avoid the limitations
+****** Implications
++ of practical situation or real life
++ recommendations.
+** DONE The Research Report Project
+CLOSED: [2021-11-12 Fri 17:14] DEADLINE: <2021-10-25 Mon 09:00>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-11-12 Fri 17:14]
+:END:
+*** Spec
+**** Topic
+University student perceptions, attitudes, motivations or behaviour relating to
+Counterfeit Product
+**** RQs
++ RQ1: How prevalent is counterfeit products used among this sample?
++ RQ2: Is the sample aware that the products are counterfeit before they use?
++ RQ3: What are the factors which result in the usage of counterfeit products among this sample?
+**** Hypothesis
++ H1: The usage of counterfeit products is quite prevalent among the sample. Females may be more likely to accept counterfeits than males.
++ H2: The majority of this sample may have the awareness due to their willingness to purchase, while some people might be deceived without being aware of.
++ H3: There are many factors, including the sample preference and external facts, that lead to the appearance of counterfeit products.
+  
+**** Data
+Check in [[file:~/playground/questionnaire result/][Here]]
+**** format
+[[file:~/playground/EAP 121 Writing Coursework Progression Worksheet.pdf][Check Here]]
+report format:
++ Abstract
++ Introduction
++ Method
++ Results
++ Discussion
++ Conclusion
+Doc format:
++ MS Doc
++ filename: EAP121_WCW_First/Final Draft
++ spacing:1.5 line
++ Font Arial 12
++ page number: t
++ Use headings
++ Graphs: (heading . t) (label . t)
+
+  
+**** Sources
++ Minimum 6
++ In Havard Style
++ Must paraphase/summarize: 1 quotation within 5% of text is allowed
+
+**** Graphs
+2-4
+
+**** Wordcount
+>=1300(10%)
+
+*** Data Analysis
+The questionaire includes:
++ Gender
+  2
++ Kind
+  3-11
++ Location?
+  12-20
++ Frencuncy
+  21
++ Active?
+  22
+  + Active Reason?
+    23-29
++ Reason for the situation
+  30-36
++ Defend Right?
+  37
+  + Why not?
+    38-44
++ Agree boycott Counterfeit?
+45
+To answer the RQs and test the Hypothesis.
+
+**** RQ1: How  prevalent
+Examine the percentage of =Never Buy Counterfeit Product= in the field =Kind=
+
+***** Algo
+1. find sample space(102)
+2. find the number of =Never Buy Counterfeit Product=
+3. Could make a pie chart of the whole field
+   1. Count each field number
+   2. make a pie chart using =graphviz=
+    
+***** Result
+Only 23.5% of the sample thought that haven't bought any kind of counterfeit. The other 76.4% of sample confirm that they had bought counterfeit products. That is to say, buying counterfeit product as a experiance, either willingly or by fault, is widespread as the majority of the sample.
+A less reliable extra information is that if multipled with the frequency of buying counterfeit products collected from the sample, the overall frequency of sample purchasing counterfeit product is 25.1%. That is to say, among every 4 object purchased by XJTLU students, 1 will be fake-branded.
+**** RQ2: Aware of Counterfeit?
+Examine the precentage of =Active Buying Counterfiet Product= in the field =Active=
+***** Result
+Data showes that among sample, 42.1% were aware of the counterfeit feature of the goods, and chose to buy them even after knowing it. If we shrink sample from all of the sample space to only the ones who thought they have purchased counterfeit product, the number will be as high as 55%.
+That is to say, for these 42.1% of all people, counterfeit product had become not only a presence, but an option, that would be deliberately considered.
+With these numbers, it is revealed that not only is counterfeit product very common to be seen, there are actually large portion people actively seeking to see and purchase them.
+The next question is: What's it that make this situation.
+
+**** RQ3: Factors affecting the counterfeit products usage(to be high)?
+Examine:
++ =Active Reason=
+
++ =Reason for the situation=
+
++
+
+ 
+***** Result
+
+****** Easy Access
+Taobao is the main source of the counterfeit product mentioned by the sample, and the main source of most purchase we made
+
+****** Kind
+
+****** Reason told
+
+****** Reason thought --> reveal something
+
+****** Defending is hard
+
+****** Agreement to boycott counterfeit product
+**** Limitation
+
+***** Student confirm if they have purchase counterfeit product
+They could be ignoring something they bought. According to the survey, among 76.4% of sample who have purchased counterfeit product, only 42.1% of people bought their counterfeit products willingly.
+
+***** The research focus on person having buying the product, the scale is kind of neglected
+*** First Draft
+The sequence: [2/6]
++ [X] Method
++ [ ] Results
++ [ ] Discussion
++ [ ] Introduction
++ [X] Conclusion
++ [ ] Abstrat
+**** Abstract
+The current state of counterfeit goods purchasing among university students, as well as the variables that contribute to it, are investigated in this research. Data was obtained from 102 university students using an online questionnaire, and simple statistics were used to analyze the results. The findings demonstrate that counterfeit products are common among university students, with a high percentage of them actively purchasing counterfeits. Factors such as overpriced genuine product and expensive defense costs are examined.
+**** Introduction
+***** Background
+Counterfeit products have been a huge commercial issue for a long time, and the mechanism that allows them to persist is fascinating. The behavior of university students in regards to counterfeit products was investigated in this research in order to better understand the factors that contribute to the widespread prevalence of counterfeit goods.
+***** Literature Review
+The flow of counterfeit items can be divided into two types: non-deceptive and deceptive, with the difference being whether or not the consumers were aware of the products' counterfeit nature (Grossman and Shapiro, 1988).
+
+Previous studies looked into a range of elements that seem to have a significance in counterfeiting, which may be classified into three categories: psychographic factors, demographic factors, and product factors (Wee, Tan and Cheok, 1995; Michaelidou, 2011). (Christodoulides and Michaelidou, 2011)
+
+Product attributes were often regarded as the most important factor contributing to counterfeiting. Singh and Kumar argued that the marketing of counterfeit products, such as lowering the price to an accessible level and ensuring high availability and localisation of the counterfeits, has made counterfeits quite popular in rural India (Singh and Kumar, 2017). Product type was also investigated to see if it had a high correlation with individuals purchasing counterfeits, resulting in an obvious preference for counterfeit experiential products over symbolic products (Michaelidou and Christodoulides, 2011).Aside from that, researchers discovered that the low price and high quality of counterfeit items, like other regular things, would have a favorable influence on their purchase (Singh and Kumar, 2017). (Nik Hashim, Shah and Omar, 2018). Nonetheless, brand image has been proved to have a complicated impact on counterfeiting, with loyal customers rejecting counterfeits while counterfeit manufacturers being positively encouraged to imitate them (Nik Hashim, Shah, and Omar, 2018). (Hoang Cuu Long and Nguyen Nhat Vinh, 2017).
+
+In terms of psychographic factors, the ethical obligation of the consumer was commonly seen as a determinant. According to Michaelidou, luxury counterfeits may be rejected owing to consumers' ethical obligations, whereas experiential items such as music or films may be allowed (Michaelidou and Christodoulides, 2011). Eisend and Quoquab conducted similar consistent researches. (2017) (Quoquab et al) (Eisend, 2019). Consumer purchasing attitudes were also considered a factor in counterfeiting, particularly with regard to the relationship between hedonic attitude and garment purchase (Moon et al., 2018) Nguyen Nhat Vinh and Hoang Cuu Long (2017)
+Furthermore, materialism and oral communication were examined to have positive impact on counterfeiting in certain scenarios(Davidson, Nepomuceno and Laroche, 2019)(Khalid and Rahman, 2015)
+
+
+***** Aims and Hypotheses
+The goal of this study is to comprehend the current state of counterfeit items and how they got to be that way. The following research questions would be examined in particular: how widespread is counterfeit product in the sample; how many of the sample were aware of purchasing counterfeit items; and what reasons contribute to the problem.
+Our hypothesis for these questions are as follows: counterfeit items are quite common in the sample; many of the sample were aware of purchasing counterfeit products; and a range of factors, including vanity and sample preferences, were involved.
+**** Methododology
+***** Sample
+The sample size is 102 persons, 46 males and 56 females chosen at random from all XJTLU students.
+***** Materials
+A questionaire of ten questions is employed, with a range of question types such as multichoice questions, yes/no questions, scaling questions, and open questions.
+Questionairs are created using Wenjuanxin.com and delivered over WeChat during the procedure. Jupyter notebook, Python, and several libraries such as matplotlib and numpy are used for data analysis and visualization.
+***** Procedure
+We initially proposed the study questions and hypotheses throughout the survey. Based on the hypotheses, we identified several discriptive features of the targets that seem to be relevant in terms of counterfeit goods purchase among XJTLU students. Then, questionnaires are designed to collect data on these features. They are then distributed online.
+After receiving the data, the distributive features are examined first. Multiple characteristics would then be shown in pairs to check whether there is any evidence of relationship.
+**** Results and Discussion
+***** Finding 1: Prevalence
+Counterfeit items are quite common among university students. Only 23.5 percent of those polled said they had never purchased a counterfeit goods. The remaining 76.4 percent admit to having purchased counterfeit goods at least once. That is, the bulk of the sample buys counterfeit items as an experience, either consciously or unintentionally.
+A less credible piece of information is that when the frequency of them purchasing counterfeit items is multiplied, general frequency of the sample purchasing counterfeit products is 25.1 percent. That is, one out of every four items purchased by university students will be counterfeit.
+***** Finding 2: Awareness
+The percentage of university students being aware that they are purchasing counterfeit goods is pretty high.
+
+According to the data, 42.1 percent of the sample were aware of the counterfeit feature of their products and opted to acquire them knowing full about it.
+If we reduce the sample size from the whole sample space to simply those who believed they had purchased a counterfeit goods, the figure could be as high as 55%.
+
+That is, for this 42.1 percent of all consumers, counterfeit product has become more than just a presence, but also an intentional consideration, which is consistent with Eisend's findings (Eisend, 2019). 
+
+With these figures, it is clear that not only are counterfeit products widely available, but a sizable proportion of people deliberately seek to see and purchase them.
+
+The second question is, "What is it that is causing this situation?" 
+***** Finding 3:
+****** Easy access
+It was determined that the counterfeit items were obtained exclusively from Taobao.com, an online shopping site that dominates the sample shopping form. Possiblitie could be derived that the easy availability of counterfeits have encouraged university students to purchase them.
+****** Reason
+Another indicator is that over 28% of students believe that certain authentic products have exorbitant prices and are not worth purchasing. When such needs exists and certain "alternatives" emerge with affordable pricing and comparable capabilities, it seems obvious that these alternatives should be given more consideration. The student's independent pricing judge also demonstrates an ethical conflict between them and the brands, which supports Lysonski's discovery that customers might occasionally claim the innocence of counterfeits (Lysonski and Durvasula 2008).
+Meanwhile, with over 55% of the sample believing that they would never take action against counterfeit items owing to the significant expense of protecting their rights, both in time and money, the low risk of making counterfeit products might be a factor contributing to the issue.
+**** Conclusion
+***** Summary of Findings
+Counterfeit items appeared to be highly common among university students, with a high level of awareness of them. Factors contributing to this issue include the ease with which counterfeit items may be obtained, the exorbitant prices of certain brands, the enormous expense of protecting their rights, and the durability of counterfeit products.
+***** Limitations
+This study use questionnaires to elicit the sample's subjective self-description. Individual findings may be erroneous or ambiguous owing to misinterpretation of the questions or of themselves.
+Furthermore, this study was conducted on a per-student basis, which implies that while the outcome is stactical and quantitative, the true characteristic of the outcome is qualitative, with a limited view on the level of each feature.
+***** Recommendation
+Despite the large level of support for boycotting, it appears that counterfeit items will not be easily eliminated. As long as the ground feeding counterfeit items persists—exorbitant pricing, excessive costs of right defending—the room of counterfeit product will always be spared and never empty.
+As a result, in order to eliminate counterfeit items, companies should evaluate their pricing and product quality.Social groups that reduce the expense of protecting one's rights in the context of counterfeit products would also be beneficial. 
+
+***** Future Research
+Future research with multiple ways to measure the scale of counterfeit product use or purchase would be recommended.
+** TODO Reference Finding
+*** TODO Taobao having much counterfeit product
+*** references
+**** 
+** TODO Graphs
+*** Prevalence
+** Speaking test
+*** Content
+**** 1. presentation
++ introduce the survey project briefly
++ Describe interesting results
+  + use >=1 graph
++ Recommend ways to improve the project based on the results presented
++ Conclude the presentation with a conclusion
+
+Requirements
++ 5 minutes
++ Finish within 5 minutes
+**** 2. interview
+a interview <= 5 minutes
+including:
++ Questions about presentation/survey/giving a presentation
++ Reflection on EAP Skills
++ questions related to TED TALks in this semester
+  + Power of smiling
+  + Half a million secrets
+  + How to listen
+  + Technology work buddies
+
+Requirements:
++ at least 3 questions
+**** 
+*** Organization
+**** intro
+**** body
+**** conclusion
+*** Technique
+**** idiomatic language
+use image to convey idea 
+*** Visual
+**** Impact
+***** Number simplification
+The most critical number and number part(17% instead of 18283849 people)
+** TODO Speaking test preparation
+*** TODO Make slides
+:PROPERTIES:
+:Effort:   3:00
+:END:
+:LOGBOOK:
+CLOCK: [2021-12-02 Thu 21:52]--[2021-12-02 Thu 23:37] => 1:45
+CLOCK: [2021-12-02 Thu 19:51]--[2021-12-02 Thu 21:52] =>  2:01
+:END:
+**** Generating Visuals
+***** Charts [5/5]
++ [X] Prevalence
++ [X] Awareness
++ [X] Access
++ [X] Reasons
++ [X] Right Defending
+***** Image
++ [X] Counterfeit
++ [X] TAOBAO
++ [X] Famous Brand Product
++ [X] Right Protection
+
+*** TODO Question scenario 
+**** already covered question
+Thanks for your question,Just like what I have said before
+**** off topic/Too complex
+**** Not shure
+I don't have that information now
+To be honest, I don't know it exactly
+**** Don't understand the questions
+I didn't catch that... could you repeat the question?
+Sorry, what do you mean by "XXX"
+
+*** DONE Write and resite script
+CLOSED: [2021-12-22 Wed 17:32]
+:PROPERTIES:
+:Effort:   30
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-12-22 Wed 17:32]
+CLOCK: [2021-12-04 Sat 23:55]--[2021-12-05 Sun 01:38] =>  1:43
+:END:
+
+**** DONE Resite[7/7]
+CLOSED: [2021-12-22 Wed 17:32]
+:PROPERTIES:
+:Effort:   105
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-12-22 Wed 17:32]
+CLOCK: [2021-12-06 Mon 15:59]--[2021-12-06 Mon 16:53] =>  0:54
+:END:
++ [X] Openning
++ [X] Intro
++ [X] Metho
++ [X] Finding1
++ [X] Finding2
++ [X] Recommendation
++ [X] Conclusion
+
+** [[id:5A60D2F9-B216-49A6-818F-4E8BAF249478][Question answer machine]] 
+
+** Tutorial introduction
+
+*** Report
+
+**** The not that reliable data
+Should I keep them
+
+**** How to refine them
+
+*** Pre
+
+**** The text.
+
+***** Sentence?
+To make the slide make sence, should include the points
+but the point would be too long.
+
+To make people followed on the topic, should include the information hard to remember.
+I'm thinking the slide as a prompt for things to say for presentor and have said for listener. If the point are to short, it'll be difficult to recall what are these for.
+
+Totally non-text slide, with only keywords
+
+How do I evaluate if the text is too long/short
+
+***** The structural slides
+The introduction, the index slide, the summary, the conclusion
+
+I find that there's nothing to say about them.
+
+****** The connection between
+the index and the summary followed by each other
+
+*** age of the ref
+get up to date references
+
+*** TODO format of the ref
+Review the ref, and corret the format issues.
+

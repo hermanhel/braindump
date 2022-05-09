@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       65FB1736-55E0-4A08-865D-8A0745A64589
+:END:
+#+title: Jupyter
+* Notebook
+** Installation
+*** Tornado
+Detected 4.5.3 instead of >=5
+solution
+** xlsx
+#+begin_src python
+  import pandas as pd
+  path = ('')
+  
+  xl = pd.ExcelFile(path)
+  df1 = xl.parse('') # sheet name; into Dataframe 
+  ardf1 = df1.values # into array
+#+end_src

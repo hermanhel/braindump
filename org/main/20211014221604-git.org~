@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       BB4F4DF9-FEB2-4A0C-9B6C-2320B8611BEF
+:END:
+#+title: Git
+* Magit
+/Magit/ is a git interface in Emacs.
+** Commands
+*** 1. Magit status
+~C-x g~

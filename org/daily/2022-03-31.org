@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       5B7100BD-305E-4014-91A0-9ECAF7420C4D
+:END:
+#+title: 2022-03-31
+#+HUGO_SECTION:daily
+#+filetags: :draft:
+#+filetags: :draft:
+* Doing org-roam hack!
+I found that the org-roam-node-find function would also collect org-drill cards. So I wrote a small filter function to filter them out. I added it in my emacs.org
+
+during the process, I'm more familiar with elisp's function, member, cl-defstruct and struct-fieldname function to retrive fields in struct.
+

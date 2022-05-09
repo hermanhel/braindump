@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8C60C7CD-3CB9-4738-AF1D-956F8340C99F
+:END:
+#+title: Genral Purpose
+#+HUGO_SECTION:main
+funciton like ~(sort col compare-fn)~.
+
+The ~compare-fn~ can be customized, so the ~sort~ won't just sort to asending order, but also other =prupose= like descending order, or other order based on (somefunc x) or specific entry in composite date.
