@@ -28,7 +28,7 @@
 
 (require 'org)
 (add-to-list 'load-path (org-find-library-dir "ol-info"))
-
+(prin1 load-path)
 (package-install 'find-lisp)
 (package-install 'ox-hugo)
 ;; Load the publishing system
