@@ -1,0 +1,9 @@
+#+title: The hello page
+#+HUGO_SECTION:
+* Hi!
+You've steped into the forbidden holy garage crowned /HERMAN/'s name ~~
+
+If you're interested in how the website is built, see [[id:9C335A29-B444-402C-A95F-5E752A60988E][credits]]
+
+a test link! [[id:2677F2BC-EB38-47D1-90FC-59943B97B870][emacs-lisp]]
+

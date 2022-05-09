@@ -1,0 +1,200 @@
+:PROPERTIES:
+:ID:       42192A37-B734-472B-84D8-235611DBD1E9
+:END:
+#+title: Note-taking
+Note-taking is a skill and art of writing notes to record one's thinking
+
+Different flow could be seperately declared by:
++ Material of reflex
+  + reality(nature)
+  + article
+  + someone's work
+  + tutorial/textbook
++ Time(context)
+  + in leisure
+  + in work(about work)
+  + in class
++ objective
+  + machine (to build a flow)
+  + principle (to test)
+  + facts
+  + plan (project machine)
+
+* Jethro's Note taking
+I read [[https://jethrokuan.github.io/org-roam-guide/][Jethro's How I take notes with Org-roam]] and was really inspired.
+
+A good thing is that I do very similar thing like him. The difference is that I aim at being a scholar, with bunch of original ideas(an idea generator!) , but as I'm still a student now, I learn from material mostly. Therefore, I could (and will be very happy to) integrate most of his practice without further adjustment into my machine.
+
+
+** TODO Integrating Jethro's practice
+:LOGBOOK:
+CLOCK: [2022-05-08 Sun 11:03]
+CLOCK: [2022-05-08 Sun 10:53]
+:END:
+
+*** TODO Reconstruct the RoamNote folder (slipbox setup)
+
+**** DONE all current goes into main
+CLOSED: [2022-05-08 Sun 11:04]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-05-08 Sun 11:04]
+:END:
+***** DONE change all occurance of resource
+CLOSED: [2022-05-08 Sun 10:38]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-05-08 Sun 10:38]
+:END:
+if it's "./resource/filename" then there's nothing to change. otherwise, change "resource" into "main/resource". It's relative, so nothing to chagne. Yeah! just move everything into main.
+#+attr_html: :width 600px 
+#+ATTR_ORG: :width 600
+[[./resource/20220508095438-note_taking/test.png]]
+
+**** DONE new folders
+CLOSED: [2022-05-08 Sun 11:06]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-05-08 Sun 11:06]
+:END:
++ Reference: for ingesting materials like articles and website tutorials and textbooks. Typically, I place navigation and description of subconcepts of a field in the Main folder. This is an accent on the principle that =I personally actively wrote these descriptions rather than copying and pasting=.
++ Main: for all refined notes
++ inbox.org: for all first sight notes. Nodes in inbox. Put them in a file for conveniance of checking and going back to, with newbie priviledge.
++ Machine: for all refined machines. when a machine is complete and working in inbox.org, move it into Machine.
++ Dailies: Jethro don't use it anymore, But I'm a huge user of it. It's like my everyday draftbook. the plans, morning pages,.etc. The date information is typically for a couple of following days to find a thing/project that's on my mind recently. When I don't know where to put a thing, I put it into the daily page.
++ Articles: just like jethro having it, for combined writing to illustrate some points.
+
+I'm thinking of a standalone folder for linear algebra, calculus, etc, but it seems not worth a standalone, because they are just ideas like others. Maybe I'll have to tag them for which part is referenced and which part is my own creation, but I'll leave it to then.
+
+result:
+#+begin_example
+.
+|-- articles
+|-- bibliography.bib
+|-- daily
+|-- inbox.org
+|-- machine
+|-- main
+`-- reference
+#+end_example
+**** TODO the capture templates and display functions
+***** DONE display
+CLOSED: [2022-05-08 Sun 11:13]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-05-08 Sun 11:13]
+:END:
+****** property: type
+#+begin_src emacs-lisp
+  (cl-defmethod org-roam-node-type ((node org-roam-node))
+    "Return the TYPE of NODE."
+    (condition-case nil
+        (file-name-nondirectory
+         (directory-file-name
+          (file-name-directory
+           (file-relative-name (org-roam-node-file node) org-roam-directory))))
+      (error "")))
+  
+#+end_src
+****** Display template
+#+begin_src emacs-lisp
+(setq org-roam-node-display-template
+      (concat "${type:10} ${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
+#+end_src
+***** capture templates
+#+begin_src emacs-lisp
+  (setq org-roam-capture-templates
+        '(("m" "main" plain
+           "%?"
+           :if-new (file+head "main/${slug}.org"q
+                              "#+title: ${title}\n")
+           :immediate-finish t
+           :unnarrowed t)
+          ("r" "reference" plain "%?"
+           :if-new
+           (file+head "reference/${title}.org" "#+title: ${title}\n")
+           :immediate-finish t
+           :unnarrowed t)
+          ("a" "article" plain "%?"
+           :if-new
+           (file+head "articles/${title}.org" "#+title: ${title}\n#+filetags: :article:\n")
+           :immediate-finish t
+           :unnarrowed t)
+          ("h" "machine" plain "%?"
+           :if-new
+           (file+head "machine/${title}.org" "#+title: ${title}\n#+filetags: :machine:\n")
+           :immediate-finish t
+           :unnarrowed t)
+          
+          ))
+#+end_src
+***** 
+
+***** TODO Reference
+#+begin_src emacs-lisp
+      (use-package citar
+        :custom
+        (citar-bibliography
+         "~/Notes/RoamNotes/bibliography.bib")
+        )
+    
+      (defun jethro/org-roam-node-from-cite (keys-entries)
+          (interactive (list (citar-select-ref :multiple nil :rebuild-cache t)))
+          (let ((title (citar--format-entry-no-widths (cdr keys-entries)
+                                                      "${author editor} :: ${title}")))
+            (org-roam-capture- :templates
+                               '(("r" "reference" plain "%?" :if-new
+                                  (file+head
+                                   "reference/${citekey}.org"
+  ":PROPERTIES:
+:ROAM_REFS: [cite:@${citekey}]
+:END:
+#+title: ${title}\n"
+                                   )
+                                  :immediate-finish t
+                                  :unnarrowed t))
+                               :info (list :citekey (car keys-entries))
+                               :node (org-roam-node-create :title title)
+                               :props '(:finalize find-file))))
+    
+    
+#+end_src
+Refer to this post of Jethro's
+
+***** draft hook
+#+begin_src emacs-lisp
+(defun jethro/tag-new-node-as-draft ()
+  (org-roam-tag-add '("draft")))
+(add-hook 'org-roam-capture-new-node-hook #'jethro/tag-new-node-as-draft)
+#+end_src
+
+**** TODO Record the folder informations.
+They are recorded here. and in 
+*** TODO Reconstruct Note-taking machine
+* Zettelkasten
+Zettelkasten note is note that:
++ is small
++ is context-free
++ is atomic
++ have link in between one another
+
+** Writing Zettelkasten note.
+A well writen Zettelkasten notes looks like this:
+#+begin_example
+#+title: Note-taking
+Note-taking is xxxxxxxxxxxxxxx.
+
+*some relevent topics, relation to other concepts
+#+end_example
+
+*** title
+Idealy, the title should be a word that describe the concept very good.
+
+But when there's no such word available, a short sentence is also OK
+
+*** Description
+should be very concise, with high SNR.
+
+*** relevent topics
+Things grow tricky when coming to sub topics of a concept(topic). Particularly in length.
+
+Some times a subtopic could very large, with much things to discuss about. In that scenario, could make that subtopic standalone, and replaced the heading with the relation of the subtopic and the current topic.
+
+a example is this node. /Writing Zettelkasten note/ could be far larger a topic than everything else discussed in the node /Zettelkasten/. When the /Writing/ grow very large, could make it standalone.
+
