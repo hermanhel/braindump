@@ -25,7 +25,9 @@
 ;; (require 'use-package)
 ;; Install dependencies
 (package-install 'org)
-(shell-command "tree")
+
+(require 'org)
+(add-to-list 'load-path (org-find-library-dir "ol-info"))
 
 (package-install 'find-lisp)
 (package-install 'ox-hugo)
