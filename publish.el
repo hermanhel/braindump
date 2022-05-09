@@ -34,6 +34,8 @@
 (package-install 'find-lisp)
 (package-install 'ox-hugo)
 ;; Load the publishing system
+
+(prin1 (org-version  current-prefix-arg t (not current-prefix-arg) ))
 (require 'ox-hugo)
 (require 'find-lisp)
 ;;change roam-directory to ".", so that after the agenda, the search for ID will visit "."
