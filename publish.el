@@ -27,7 +27,9 @@
 (package-install 'org)
 
 (require 'org)
-(add-to-list 'load-path (org-find-library-dir "ol-info"))
+(add-to-list 'load-path (org-find-library-dir "org"))
+(prin1 load-path)
+(prin1 (directory-files-recursively "/usr/share/emacs/26.3/lisp/org" ""))
 (prin1 load-path)
 (package-install 'find-lisp)
 (package-install 'ox-hugo)
