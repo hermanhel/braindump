@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy: # from publish to deploy. I think it's not part of syntax.
-    runs-on: ubuntu-20.04 # change from latest to 20.04
+    runs-on: ubuntu-latest # change from latest to 20.04
     steps:
       - name: Check out
         uses: actions/checkout@v2 # previously use v1 and no sub-things
