@@ -1,2 +1,2 @@
 #!/bin/sh
-emacs -Q --script publish.el
+sudo emacs -Q --script publish.el
