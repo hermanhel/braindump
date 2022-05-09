@@ -3,27 +3,44 @@ name: Publish to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main # I'm now using main
+  pull_request:	   # as sugeested in the hugo website
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
+  deploy: # from publish to deploy. I think it's not part of syntax.
+    runs-on: ubuntu-20.04 # change from latest to 20.04
     steps:
       - name: Check out
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2 # previously use v1 and no sub-things
+	with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Install Emacs
         run: sudo apt install emacs-nox --yes
 
       - name: Build the md
         run: ./build.sh
-	
-      - name: Build the site
-        run: ./hugo.sh
 
-
-      - name: Publish generated content to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          branch: gh-pages
-          folder: public
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Build the hugo site
+        run: hugo --minify
+
+
+#      - name: Publish generated content to GitHub Pages
+#        uses: JamesIves/github-pages-deploy-action@4.1.4
+#        with:
+#          branch: gh-pages
+#          folder: public
+
+      - name: Deploy # as suggested on the hugo website
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
