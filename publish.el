@@ -29,6 +29,7 @@
 (require 'org)
 (add-to-list 'load-path (org-find-library-dir "org"))
 (add-to-list 'load-path "./ol")
+
 (prin1 load-path)
 (prin1 (directory-files-recursively "/usr/share/emacs/26.3/lisp/org" ""))
 (prin1 load-path)
@@ -41,7 +42,7 @@
 ;;change roam-directory to ".", so that after the agenda, the search for ID will visit "."
 (setq org-roam-directory default-directory)
 (setq org-agenda-files nil)
-(setq org)
+
 (defun hermanhel/braindump-publish (file)
   (with-current-buffer (find-file-noselect file)
      ;; (setq org-hugo-base-dir "../..")
