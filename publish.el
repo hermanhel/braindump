@@ -25,8 +25,10 @@
 ;; (require 'use-package)
 ;; Install dependencies
 (package-install 'org)
+(require 'ol-info)
 (package-install 'find-lisp)
 (package-install 'ox-hugo)
+(shell-command "tree")
 ;; Load the publishing system
 (require 'ox-hugo)
 (require 'find-lisp)
