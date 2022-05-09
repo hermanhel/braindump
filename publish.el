@@ -34,7 +34,6 @@
 (package-install 'find-lisp)
 (package-install 'ox-hugo)
 ;; Load the publishing system
-
 (prin1 (org-version  current-prefix-arg t (not current-prefix-arg) ))
 (require 'ox-hugo)
 (require 'find-lisp)
