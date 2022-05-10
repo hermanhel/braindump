@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://hermanhel.github.io/braindump/daily/2022-05-02/</loc>
+    <loc>/daily/2022-05-02/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/daily/</loc>
+    <loc>/daily/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/tags/draft/</loc>
+    <loc>/tags/draft/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/</loc>
+    <loc>/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/inbox/</loc>
+    <loc>/inbox/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/main/20220423190558-linear_algebra/</loc>
+    <loc>/main/20220423190558-linear_algebra/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/main/</loc>
+    <loc>/main/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/main/20220328151029-operating_system/</loc>
+    <loc>/main/20220328151029-operating_system/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/main/20211011143205-relational_database/</loc>
+    <loc>/main/20211011143205-relational_database/</loc>
   </url><url>
-    <loc>http://hermanhel.github.io/braindump/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
