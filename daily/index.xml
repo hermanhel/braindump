@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dailies on Herman&#39;s place</title>
-    <link>/daily/</link>
+    <link>https://hermanhel.github.io/braindump/daily/</link>
     <description>Recent content in Dailies on Herman&#39;s place</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/daily/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/daily/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022-05-02*</title>
-      <link>/daily/2022-05-02/</link>
+      <link>https://hermanhel.github.io/braindump/daily/2022-05-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/daily/2022-05-02/</guid>
+      <guid>https://hermanhel.github.io/braindump/daily/2022-05-02/</guid>
       <description>PROPERTIES: :ID: 4FBDA423-3258-4C4E-BBA1-408DCA2D036B
 rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions are:
   not finding:
