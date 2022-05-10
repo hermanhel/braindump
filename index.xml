@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Herman&#39;s place</title>
+    <link>http://hermanhel.github.io/braindump/</link>
+    <description>Recent content on Herman&#39;s place</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://hermanhel.github.io/braindump/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022-05-02*</title>
+      <link>http://hermanhel.github.io/braindump/daily/2022-05-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hermanhel.github.io/braindump/daily/2022-05-02/</guid>
+      <description>PROPERTIES: :ID: 4FBDA423-3258-4C4E-BBA1-408DCA2D036B
+rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions are:
+  not finding:
+ if the buffer contains no heading then add 1 matching the first heading in path search again if not on a heading only when going in the buffer for the first time goto the next heading if the buffer have heading, but the top level have no headings of cur-finding add 1 heading at end, with cur-finding, search again if the level (not top level) have no heading of cur-finding insert a heading at end of level with cur-ding search again    finding:</description>
+    </item>
+    
+    <item>
+      <title>Inbox</title>
+      <link>http://hermanhel.github.io/braindump/inbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hermanhel.github.io/braindump/inbox/</guid>
+      <description>蘇格拉底詰問程序 將蘇格拉底詰問法寫成formulated的算法,然後像doctor一樣實施,讓大家可以自己嘗試被詰問.</description>
+    </item>
+    
+    <item>
+      <title>Linear Algebra</title>
+      <link>http://hermanhel.github.io/braindump/main/20220423190558-linear_algebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hermanhel.github.io/braindump/main/20220423190558-linear_algebra/</guid>
+      <description>Linear Algebra is set of algebra formulated rules, formulated methods and found facts
+Resource  This note is originally a reading note on math4ml. I&amp;rsquo;m adding my own insights afterwards.  Spaces Vector space set of vectors defining:
+ add operation: v1 + v2 scale operation: n * v1  propositions  0: x + 0 = x -x: for each x, exist -x + x = 0 1: 1x = x commutativity: x+y=y+x Associativity: (x+y)+z=x+(y+z),(ab)x=a(bx) Distributivity: a(x + y) = ax + ay  linear combination  set of vectors: \(V=\{v_1,v_2&amp;hellip;\}\) set of real numbers: \(R = \{a_1,a_2&amp;hellip;\}\) linear combination: \(a_1v_1 + a_2v_2+&amp;hellip;+a_nv_n\)  linear independent only combination of \(a_1v_1+a_2v_2+a_3v_3+&amp;hellip;=0\) is \(a_1 = a_2 = &amp;hellip; = 0\)</description>
+    </item>
+    
+    <item>
+      <title>Operating System</title>
+      <link>http://hermanhel.github.io/braindump/main/20220328151029-operating_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hermanhel.github.io/braindump/main/20220328151029-operating_system/</guid>
+      <description>The Info comes most from MITOCW
+MIT 6.S081 meta 6.s081. a website. qemu, a hardware simulation under linux xv6, a teaching OS, on RISC-V processor
+Overview What Operating system do  Abstract Hardware Multiplex Isolation Sharing Security access Preformance Range of application  orgnization Image Kernel have filesystem, process management, memory management&amp;hellip;codes.
+ filesystem: give more high-level way to name files, orgnize directories,etc. process management: vi, cc are like different processes, and we want then to run concurrently, without interfering each other.</description>
+    </item>
+    
+    <item>
+      <title>Relational Database</title>
+      <link>http://hermanhel.github.io/braindump/main/20211011143205-relational_database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hermanhel.github.io/braindump/main/20211011143205-relational_database/</guid>
+      <description>ca:PROPERTIES: :ID: 916112C1-589D-4FC2-B430-93EB989A1350
+Relational Model Relation table with columns and rows records(Tuples) with common attributes
+Attribute named column
+         attribute 1 attrbute 2    Domain allowable values for Attribute e.g: Age ==&amp;gt; Positive Integer
+Tuple a row of a relation
+Degree the number of attributes of a Relation
+Cardinality number of Tuples in a Relation
+Relation schema Definition of a relation Contains:</description>
+    </item>
+    
+  </channel>
+</rss>
