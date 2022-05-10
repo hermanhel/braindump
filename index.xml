@@ -63,6 +63,22 @@ Overview What Operating system do  Abstract Hardware Multiplex Isolation Sharing
     
     <item>
       <title>Relational Database</title>
+      <link>https://hermanhel.github.io/braindump/20220509210234-relational_database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/20220509210234-relational_database/</guid>
+      <description>Relational Model Relation table with columns and rows records(Tuples) with common attributes
+Attribute named column
+         attribute 1 attrbute 2    Domain allowable values for Attribute e.g: Age ==&amp;gt; Positive Integer
+Tuple a row of a relation
+Degree the number of attributes of a Relation
+Cardinality number of Tuples in a Relation
+Relation schema Definition of a relation Contains:
+ attributes  name domain    Relational database schema A set of relation schemas.</description>
+    </item>
+    
+    <item>
+      <title>Relational Database</title>
       <link>https://hermanhel.github.io/braindump/main/20211011143205-relational_database/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
