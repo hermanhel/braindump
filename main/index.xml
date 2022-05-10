@@ -36,6 +36,7 @@ Overview What Operating system do  Abstract Hardware Multiplex Isolation Sharing
       
       <guid>https://hermanhel.github.io/braindump/main/20211011143205-relational_database/</guid>
       <description>ca:PROPERTIES: :ID: 916112C1-589D-4FC2-B430-93EB989A1350
+:END:
 Relational Model Relation table with columns and rows records(Tuples) with common attributes
 Attribute named column
          attribute 1 attrbute 2    Domain allowable values for Attribute e.g: Age ==&amp;gt; Positive Integer
