@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>References on Herman&#39;s place</title>
+    <link>https://hermanhel.github.io/braindump/reference/</link>
+    <description>Recent content in References on Herman&#39;s place</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/reference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>meta-learning</title>
+      <link>https://hermanhel.github.io/braindump/reference/meta-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/reference/meta-learning/</guid>
+      <description>Do research about ways to learn a thing before learning it.
+A principle and stage in learning that the writer Scott Young concluded.
+narrative Want to learn drawing
+After meta-learning should know:
+ common pathaway of progressively learning drawing creditable resources/tutorials where to find practice materials; where is better/with what feature benchmark of learning; syllabus; multiple versions. well-known/creditable drills mentioned multiple times. atomic concepts/skills=procedures/facts to tackle  quote  make well-informed decision on how to put up a plan, considering resource available and current best approach/drills, while covering all necessary concept/skill/facts.</description>
+    </item>
+    
+    <item>
+      <title>well-informed decision</title>
+      <link>https://hermanhel.github.io/braindump/reference/well-informed-decision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/reference/well-informed-decision/</guid>
+      <description>Do research, and then make decision. Make sure the decision is backed with information of reality.
+a prinicple from Ray Daleo</description>
+    </item>
+    
+  </channel>
+</rss>

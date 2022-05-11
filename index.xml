@@ -50,6 +50,30 @@ Resource  This note is originally a reading note on math4ml. I&amp;rsquo;m addin
     </item>
     
     <item>
+      <title>meta-learning</title>
+      <link>https://hermanhel.github.io/braindump/reference/meta-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/reference/meta-learning/</guid>
+      <description>Do research about ways to learn a thing before learning it.
+A principle and stage in learning that the writer Scott Young concluded.
+narrative Want to learn drawing
+After meta-learning should know:
+ common pathaway of progressively learning drawing creditable resources/tutorials where to find practice materials; where is better/with what feature benchmark of learning; syllabus; multiple versions. well-known/creditable drills mentioned multiple times. atomic concepts/skills=procedures/facts to tackle  quote  make well-informed decision on how to put up a plan, considering resource available and current best approach/drills, while covering all necessary concept/skill/facts.</description>
+    </item>
+    
+    <item>
+      <title>Note-taking</title>
+      <link>https://hermanhel.github.io/braindump/main/20220508095438-note_taking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/20220508095438-note_taking/</guid>
+      <description>Note-taking is a skill and art of writing notes to record one&amp;rsquo;s thinking
+Different flow could be seperately declared by:
+ Material of reflex  reality(nature) article someone&amp;rsquo;s work tutorial/textbook   Time(context)  in leisure in work(about work) in class   objective  machine (to build a flow) principle (to test) facts plan (project machine)    Jethro&amp;rsquo;s Note taking I read Jethro&amp;rsquo;s How I take notes with Org-roam and was really inspired.</description>
+    </item>
+    
+    <item>
       <title>Operating System</title>
       <link>https://hermanhel.github.io/braindump/main/20220328151029-operating_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -91,6 +115,16 @@ Tuple a row of a relation
 Degree the number of attributes of a Relation
 Cardinality number of Tuples in a Relation
 Relation schema Definition of a relation Contains:</description>
+    </item>
+    
+    <item>
+      <title>well-informed decision</title>
+      <link>https://hermanhel.github.io/braindump/reference/well-informed-decision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/reference/well-informed-decision/</guid>
+      <description>Do research, and then make decision. Make sure the decision is backed with information of reality.
+a prinicple from Ray Daleo</description>
     </item>
     
   </channel>
