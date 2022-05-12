@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithm on Herman&#39;s place</title>
+    <link>https://hermanhel.github.io/braindump/tags/algorithm/</link>
+    <description>Recent content in algorithm on Herman&#39;s place</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary-searching</title>
+      <link>https://hermanhel.github.io/braindump/main/binary_searching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/binary_searching/</guid>
+      <description>Binary searching is a searching algorithm for sorted data.
+Input proposition  sorted  Algorithm Algorithm B (Binary-search) With given sorted seq S, find POS of value ELT in S. B1. [Middle value] Find middle value MID of S, compare MID and ELT B2. [Change field] If MID &amp;gt; ELT, then change search region to the lesser side of MID of S B3. [recur] Repeat from B1, until S have length 1, where if MID \(\neq\) ELT, then there&amp;rsquo;s no ELT in S.</description>
+    </item>
+    
+    <item>
+      <title>Merge-sort</title>
+      <link>https://hermanhel.github.io/braindump/main/merge_sort/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/merge_sort/</guid>
+      <description>a Divide &amp;amp; conquer algorithm to sort a seq.
+Algorithm 1. [devide] Represent the original seq by seq1 and seq2, where seq1 is seq[0..n/2], seq[n/2+1..n]
+2. [conquer]  [trivial condition] for a seq with 1 item, it&amp;rsquo;s sorted self is it self  3. [combine] merge compare car of 2 ordered seq. if sorted desc.ly, append the largest one to the end of the result list.
+Proof devide and conquer is trivial for merge-sort.</description>
+    </item>
+    
+  </channel>
+</rss>

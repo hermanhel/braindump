@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/main/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Binary-searching</title>
+      <link>https://hermanhel.github.io/braindump/main/binary_searching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/binary_searching/</guid>
+      <description>Binary searching is a searching algorithm for sorted data.
+Input proposition  sorted  Algorithm Algorithm B (Binary-search) With given sorted seq S, find POS of value ELT in S. B1. [Middle value] Find middle value MID of S, compare MID and ELT B2. [Change field] If MID &amp;gt; ELT, then change search region to the lesser side of MID of S B3. [recur] Repeat from B1, until S have length 1, where if MID \(\neq\) ELT, then there&amp;rsquo;s no ELT in S.</description>
+    </item>
+    
+    <item>
       <title>Linear Algebra</title>
       <link>https://hermanhel.github.io/braindump/main/20220423190558-linear_algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -15,6 +25,28 @@
       <description>Linear Algebra is set of algebra formulated rules, formulated methods and found facts
 Resource  This note is originally a reading note on math4ml. I&amp;rsquo;m adding my own insights afterwards.  Spaces Vector space set of vectors defining:
  add operation: v1 + v2 scale operation: n * v1  propositions  0: x + 0 = x -x: for each x, exist -x + x = 0 1: 1x = x commutativity: x+y=y+x Associativity: (x+y)+z=x+(y+z),(ab)x=a(bx) Distributivity: a(x + y) = ax + ay  linear combination  set of vectors: \(V=\{v_1,v_2&amp;hellip;\}\) set of real numbers: \(R = \{a_1,a_2&amp;hellip;\}\) linear combination: \(a_1v_1 + a_2v_2+&amp;hellip;+a_nv_n\)  linear independent only combination of \(a_1v_1+a_2v_2+a_3v_3+&amp;hellip;=0\) is \(a_1 = a_2 = &amp;hellip; = 0\)</description>
+    </item>
+    
+    <item>
+      <title>Machine</title>
+      <link>https://hermanhel.github.io/braindump/main/20211104155334-machine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/20211104155334-machine/</guid>
+      <description>Decription Machine typically should contain below information:
+ Flow of action. In similar format as Algorithm Notation Other than actions, materials and places should be spcified here also, like in algorithms. Related Principles. Proof should be included in the principles&amp;rsquo; node. If the principle have no proof, note that [noProof] principle xxxx  Categories Purpose Project machines A machine could be constructed just for a particular project, with itself used for only once.</description>
+    </item>
+    
+    <item>
+      <title>Merge-sort</title>
+      <link>https://hermanhel.github.io/braindump/main/merge_sort/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/merge_sort/</guid>
+      <description>a Divide &amp;amp; conquer algorithm to sort a seq.
+Algorithm 1. [devide] Represent the original seq by seq1 and seq2, where seq1 is seq[0..n/2], seq[n/2+1..n]
+2. [conquer]  [trivial condition] for a seq with 1 item, it&amp;rsquo;s sorted self is it self  3. [combine] merge compare car of 2 ordered seq. if sorted desc.ly, append the largest one to the end of the result list.
+Proof devide and conquer is trivial for merge-sort.</description>
     </item>
     
     <item>

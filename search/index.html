@@ -48,6 +48,26 @@ window.store = {
     
     
     
+    "https:\/\/hermanhel.github.io\/braindump\/tags\/algorithm\/": {
+        
+        "title": "algorithm",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/tags\/algorithm\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/main\/binary_searching\/": {
+        
+        "title": "Binary-searching",
+        "tags": ["algorithm",],
+        "content": "Binary searching is a searching algorithm for sorted data.\nInput proposition  sorted  Algorithm Algorithm B (Binary-search) With given sorted seq S, find POS of value ELT in S. B1. [Middle value] Find middle value MID of S, compare MID and ELT B2. [Change field] If MID \u0026gt; ELT, then change search region to the lesser side of MID of S B3. [recur] Repeat from B1, until S have length 1, where if MID \\(\\neq\\) ELT, then there\u0026rsquo;s no ELT in S.\n", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/main\/binary_searching\/"
+    },
+    
+    
+    
     "https:\/\/hermanhel.github.io\/braindump\/categories\/": {
         
         "title": "Categories",
@@ -118,12 +138,52 @@ window.store = {
     
     
     
+    "https:\/\/hermanhel.github.io\/braindump\/tags\/machine\/": {
+        
+        "title": "machine",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/tags\/machine\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/main\/20211104155334-machine\/": {
+        
+        "title": "Machine",
+        "tags": [],
+        "content": "Decription Machine typically should contain below information:\n Flow of action. In similar format as Algorithm Notation Other than actions, materials and places should be spcified here also, like in algorithms. Related Principles. Proof should be included in the principles\u0026rsquo; node. If the principle have no proof, note that [noProof] principle xxxx  Categories Purpose Project machines A machine could be constructed just for a particular project, with itself used for only once.\nSuch machine have components that should work with each other that will make the project success, like my credit in EAP121 or make a particular robot.\ncomponents could be preparation of a presentation or moving algorithm of the robot\nEveryday machines machines could also be designed to deal with a type of repetitive occuring tasks, like loundary.\nShape Chain with steps and components and levels one after another to reach a higher height\nLoop With repeating steps to accumulate and build height.\nMachine page machine page holdes all information of the machine, including implementation, scientific source, experiance reasons .etc.\nImplementation When applying the machine in task/sessions, there could be some measures as below:\nInformation Scheme There could be specific place to seek information needed for the machine.\nExample:\n slides-from lmo mail list-collect through university websites  Currently, the informations are perfered to be collected in the scheme session, and wrote as detailed plan in the task descriptions.\nInstead of that, a Information Scheme could be established in the task description, with structure specified in the Machine page .\n", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/main\/20211104155334-machine\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/machine\/": {
+        
+        "title": "Machines",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/machine\/"
+    },
+    
+    
+    
     "https:\/\/hermanhel.github.io\/braindump\/main\/": {
         
         "title": "Mains",
         "tags": [],
         "content": "", 
         "url": "https:\/\/hermanhel.github.io\/braindump\/main\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/main\/merge_sort\/": {
+        
+        "title": "Merge-sort",
+        "tags": ["algorithm",],
+        "content": "a Divide \u0026amp; conquer algorithm to sort a seq.\nAlgorithm 1. [devide] Represent the original seq by seq1 and seq2, where seq1 is seq[0..n/2], seq[n/2+1..n]\n2. [conquer]  [trivial condition] for a seq with 1 item, it\u0026rsquo;s sorted self is it self  3. [combine] merge compare car of 2 ordered seq. if sorted desc.ly, append the largest one to the end of the result list.\nProof devide and conquer is trivial for merge-sort.\n[combine] merge  objective: ensure that the result is strictly desc. (if sort desc.)  -\u0026gt; ensure that the appended element is the correct one  correct one: smaller than before, larger than after   -\u0026gt; ensure that the appended element is the largest in both seq1 and se2  [provided] seq1 and seq2 is sorted desc.  -\u0026gt; car of seq1 and seq2 is larger than cdr or seq1 and seq2 -\u0026gt; if car(seq1) \u0026gt; car(seq2), car(seq1) is larger than all ELT in seq2.   ensured.   ensured.    Code Example (defun devide (seq)  \u0026#34;devide a problem into 2 problems. Return the the combined solution of the 2 problems\u0026#34;  (if (or (not seq) \t(= (length seq) 1))  ;; when small enough to swallow  (conquer seq)  ;; otherwise, keep dividing  (my-merge (devide (seq-subseq seq 0 (floor (/ (length seq) 2)))) \t(devide (seq-subseq seq (floor (/ (length seq) 2)))))))  (defun conquer (seq)  \u0026#34;conquer the order of a length 1 seq\u0026#34;  seq)  (defun my-merge (seq1 \u0026amp;optional seq2) ;;merge is defined in cl.el  \u0026#34;merge 2 sorted seq\u0026#34;  (setq result nil)  (while (or seq1 \tseq2)  (if (and seq1 seq2 (\u0026lt; (car seq1) (car seq2))) ;;append have no side-effect \t(progn (setq result (append result (list (car seq1)))) \t(pop seq1)) ;;append take seqs as argument  (progn (setq result (append result (list (car seq2)))) \t(pop seq2)) ;;append take seqs as argument  )  (unless seq2 (progn (setq result (append result seq1)) \t(setq seq1 nil)))  (unless seq1 (progn (setq result (append result seq2)) \t(setq seq2 nil)))  )  result) ;;test (devide \u0026#39;( 9 8 3 5 2 6 8 6 4 3)) ", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/main\/merge_sort\/"
     },
     
     
@@ -144,6 +204,16 @@ window.store = {
         "tags": [],
         "content": "Note-taking is a skill and art of writing notes to record one\u0026rsquo;s thinking\nDifferent flow could be seperately declared by:\n Material of reflex  reality(nature) article someone\u0026rsquo;s work tutorial/textbook   Time(context)  in leisure in work(about work) in class   objective  machine (to build a flow) principle (to test) facts plan (project machine)    Jethro\u0026rsquo;s Note taking I read Jethro\u0026rsquo;s How I take notes with Org-roam and was really inspired.\nA good thing is that I do very similar thing like him. The difference is that I aim at being a scholar, with bunch of original ideas(an idea generator!) , but as I\u0026rsquo;m still a student now, I learn from material mostly. Therefore, I could (and will be very happy to) integrate most of his practice without further adjustment into my machine.\nZettelkasten Zettelkasten note is note that:\n is small is context-free is atomic have link in between one another  Writing Zettelkasten note. A well writen Zettelkasten notes looks like this:\n#+title: Note-taking Note-taking is xxxxxxxxxxxxxxx.  *some relevent topics, relation to other concepts title Idealy, the title should be a word that describe the concept very good.\nBut when there\u0026rsquo;s no such word available, a short sentence is also OK\nDescription should be very concise, with high SNR.\nrelevent topics Things grow tricky when coming to sub topics of a concept(topic). Particularly in length.\nSome times a subtopic could very large, with much things to discuss about. In that scenario, could make that subtopic standalone, and replaced the heading with the relation of the subtopic and the current topic.\na example is this node. Writing Zettelkasten note could be far larger a topic than everything else discussed in the node Zettelkasten. When the Writing grow very large, could make it standalone.\n", 
         "url": "https:\/\/hermanhel.github.io\/braindump\/main\/20220508095438-note_taking\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/machine\/note-taking-machine\/": {
+        
+        "title": "Note-taking machine",
+        "tags": ["machine",],
+        "content": "Note-taking machine listed ways I find ensuring principles/outcome and/or specifically tackle circumstances where note-taking could be not intuitive and/or when intuitive approach hides pitfalls.\nMachine Redrafting 3-pass method Taking note while reading articles Taking notes from live lecture Taking notes from video Taking notes from static material (blog,textbook) Notes in direct practice Experiment Research note with emphasis on meta-learning\nLiterature review pitfalls Generally, all notes are good as long as they are relevent, concise, and make sence to me. Yet some really unsatisfying conditions should be avoid.\ncopy large text from source sin:\n generally, a note should be that long. Node like Linear Algebra is a exception. Inside it are small, self-containing nodes, which could standalone very well. Them stacking together save my screen space (they tend to appear together) I don\u0026rsquo;t remember copied large text very well. I don\u0026rsquo;t remember it\u0026rsquo;s meaning, and then have to re-read it again. It might not use a lot of time, but it\u0026rsquo;s very annoying finding things you don\u0026rsquo;t have control over ion your note. I don\u0026rsquo;t remember it\u0026rsquo;s purpose, and it\u0026rsquo;ll be a very dirty nonsence in my note.  outline from index Well, Generally it\u0026rsquo;s considered a well-organized approach to first have a outline exactly like the index, and plan your time according to it.\nHere\u0026rsquo;s how I find it not working:\n  You start copy 1 thing, you start copy another, and you should not copy large text from source. Once you accept the materials largest outline, you might have to accept it\u0026rsquo;s in-chapter outline, and then the paragraph\u0026hellip;\u0026hellip;\nOne thing after another, you\u0026rsquo;ll be forced to copy large texts from source, without further processing, and found you lost your foundation for understanding further content in a garden fall of familiar flowers without names.\n  The writer\u0026rsquo;s organization might not work for you, especially in the first pass. when lack experiance with a field, one can\u0026rsquo;t really understand what\u0026rsquo;s behind the name of the chapters. Some are intuitive, some are strange, some are conflict. Forcing yourself to understand what the writer think is sometimes misleading. It\u0026rsquo;s better to consider the truths themselves.\n  and here\u0026rsquo;s my suggestions for using outlines:\n [checklist] Use it as checklist item, as you still need to start/end somewhere, and have progress track. [atom] break the outline into the smallest pieces, and rearrange them to your liking. [evaluating] treat it as a work of classmate and not holy rules, evaluate where of it looks good and where is strange.  Try to understand the author/lecturer rather than the knowledge when note from a book/lecture, we are tricked into repeating the words from the lecturer.\nAll description provides dimensions and point of view. Not necessarily accurate or consistant. ref/jargon issue.\nDirectly go for the knowledge is better. The objective is understand no one but knowledge.\nVery long, detailed note, providing too much justification rather than observation Like in this page. I gotta rearrange it someday.\nBad for  Difficult to read. usually not justified well, making the observations not reliable hiding useful information little use justification in some notes. too trival.  Not reviewing/rearranging the notes a big problem of mine is that I don\u0026rsquo;t do a thing twice.\nGenerally, I think of doing a thing as 1 time in the future 30. It\u0026rsquo;s logical that I don\u0026rsquo;t do things perfectly in the first run. But the ugly outcome often prevent me from reviewing or manipulating it again\nsource and attribution This machine borrowed vastly from Jethro Kuan\u0026rsquo;s way of note-taking. (print org-capture-templates)\n", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/machine\/note-taking-machine\/"
     },
     
     

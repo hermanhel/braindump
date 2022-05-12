@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machines on Herman&#39;s place</title>
+    <link>https://hermanhel.github.io/braindump/machine/</link>
+    <description>Recent content in Machines on Herman&#39;s place</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/machine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note-taking machine</title>
+      <link>https://hermanhel.github.io/braindump/machine/note-taking-machine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/machine/note-taking-machine/</guid>
+      <description>Note-taking machine listed ways I find ensuring principles/outcome and/or specifically tackle circumstances where note-taking could be not intuitive and/or when intuitive approach hides pitfalls.
+Machine Redrafting 3-pass method Taking note while reading articles Taking notes from live lecture Taking notes from video Taking notes from static material (blog,textbook) Notes in direct practice Experiment Research note with emphasis on meta-learning
+Literature review pitfalls Generally, all notes are good as long as they are relevent, concise, and make sence to me.</description>
+    </item>
+    
+  </channel>
+</rss>

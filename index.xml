@@ -19,6 +19,16 @@ rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions 
     </item>
     
     <item>
+      <title>Binary-searching</title>
+      <link>https://hermanhel.github.io/braindump/main/binary_searching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/binary_searching/</guid>
+      <description>Binary searching is a searching algorithm for sorted data.
+Input proposition  sorted  Algorithm Algorithm B (Binary-search) With given sorted seq S, find POS of value ELT in S. B1. [Middle value] Find middle value MID of S, compare MID and ELT B2. [Change field] If MID &amp;gt; ELT, then change search region to the lesser side of MID of S B3. [recur] Repeat from B1, until S have length 1, where if MID \(\neq\) ELT, then there&amp;rsquo;s no ELT in S.</description>
+    </item>
+    
+    <item>
       <title>Errors</title>
       <link>https://hermanhel.github.io/braindump/errors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,6 +60,28 @@ Resource  This note is originally a reading note on math4ml. I&amp;rsquo;m addin
     </item>
     
     <item>
+      <title>Machine</title>
+      <link>https://hermanhel.github.io/braindump/main/20211104155334-machine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/20211104155334-machine/</guid>
+      <description>Decription Machine typically should contain below information:
+ Flow of action. In similar format as Algorithm Notation Other than actions, materials and places should be spcified here also, like in algorithms. Related Principles. Proof should be included in the principles&amp;rsquo; node. If the principle have no proof, note that [noProof] principle xxxx  Categories Purpose Project machines A machine could be constructed just for a particular project, with itself used for only once.</description>
+    </item>
+    
+    <item>
+      <title>Merge-sort</title>
+      <link>https://hermanhel.github.io/braindump/main/merge_sort/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/merge_sort/</guid>
+      <description>a Divide &amp;amp; conquer algorithm to sort a seq.
+Algorithm 1. [devide] Represent the original seq by seq1 and seq2, where seq1 is seq[0..n/2], seq[n/2+1..n]
+2. [conquer]  [trivial condition] for a seq with 1 item, it&amp;rsquo;s sorted self is it self  3. [combine] merge compare car of 2 ordered seq. if sorted desc.ly, append the largest one to the end of the result list.
+Proof devide and conquer is trivial for merge-sort.</description>
+    </item>
+    
+    <item>
       <title>meta-learning</title>
       <link>https://hermanhel.github.io/braindump/reference/meta-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -71,6 +103,17 @@ After meta-learning should know:
       <description>Note-taking is a skill and art of writing notes to record one&amp;rsquo;s thinking
 Different flow could be seperately declared by:
  Material of reflex  reality(nature) article someone&amp;rsquo;s work tutorial/textbook   Time(context)  in leisure in work(about work) in class   objective  machine (to build a flow) principle (to test) facts plan (project machine)    Jethro&amp;rsquo;s Note taking I read Jethro&amp;rsquo;s How I take notes with Org-roam and was really inspired.</description>
+    </item>
+    
+    <item>
+      <title>Note-taking machine</title>
+      <link>https://hermanhel.github.io/braindump/machine/note-taking-machine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/machine/note-taking-machine/</guid>
+      <description>Note-taking machine listed ways I find ensuring principles/outcome and/or specifically tackle circumstances where note-taking could be not intuitive and/or when intuitive approach hides pitfalls.
+Machine Redrafting 3-pass method Taking note while reading articles Taking notes from live lecture Taking notes from video Taking notes from static material (blog,textbook) Notes in direct practice Experiment Research note with emphasis on meta-learning
+Literature review pitfalls Generally, all notes are good as long as they are relevent, concise, and make sence to me.</description>
     </item>
     
     <item>
