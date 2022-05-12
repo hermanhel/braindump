@@ -73,6 +73,21 @@ Broken link They present in 3 conditions:
     </item>
     
     <item>
+      <title>INT102</title>
+      <link>https://hermanhel.github.io/braindump/main/20220224134654-int102/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/20220224134654-int102/</guid>
+      <description>Algorithm
+What&amp;rsquo;s covered in INT102 Big-O Divide &amp;amp; conquer Greedy Method Dynamic Programming Space-Time tradeoff P/NP Branch &amp;amp; Bound UTS Deliver Plan Lectrue https://xjtlu.zhumu.com/j/6208331180
+ DONELecture 1   DONELecture 2   DONELecture 3   DONELecture 4    DONELecture 5
+  Greedy Method
+Best move in each step. make for the current best choice
+  pro
+ fast easy good      con</description>
+    </item>
+    
+    <item>
       <title>Linear Algebra</title>
       <link>https://hermanhel.github.io/braindump/main/20220423190558-linear_algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

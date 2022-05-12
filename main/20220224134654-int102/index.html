@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>meta-learning</title>
+<html><title>INT102</title>
 
 
 <meta charset="utf-8">
@@ -26,24 +26,304 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-        <h1>meta-learning</h1>
-        <p>Do research about <code>ways to learn a thing</code> before learning it.</p>
-<p>A principle and stage in learning that the writer <em>Scott Young</em> concluded.</p>
-<h2 id="narrative">narrative</h2>
-<p>Want to learn drawing</p>
-<p>After meta-learning should know:</p>
+        <h1>INT102</h1>
+        <p>Algorithm</p>
+<h2 id="what-s-covered-in-int102">What&rsquo;s covered in INT102</h2>
+<h3 id="big-o--big-o-dot-md"><a href="/braindump/errors/">Big-O</a></h3>
+<h3 id="divide-and-conquer--divide-conquer-dot-md"><a href="/braindump/errors/">Divide &amp; conquer</a></h3>
+<h3 id="greedy-method--greedy-method-dot-md"><a href="/braindump/errors/">Greedy Method</a></h3>
+<h3 id="dynamic-programming--dynamic-programming-dot-md"><a href="/braindump/errors/">Dynamic Programming</a></h3>
+<h3 id="space-time-tradeoff--space-time-tradeoff-dot-md"><a href="/braindump/errors/">Space-Time tradeoff</a></h3>
+<h3 id="p-np--p-np-dot-md"><a href="/braindump/errors/">P/NP</a></h3>
+<h3 id="branch-and-bound--branch-bound-dot-md"><a href="/braindump/errors/">Branch &amp; Bound</a></h3>
+<h2 id="uts">UTS</h2>
+<h3 id="deliver-plan">Deliver Plan</h3>
+<h4 id="lectrue">Lectrue</h4>
+<p><a href="https://xjtlu.zhumu.com/j/6208331180">https://xjtlu.zhumu.com/j/6208331180</a></p>
+<!-- raw HTML omitted -->
 <ul>
-<li>common pathaway of progressively learning drawing</li>
-<li>creditable resources/tutorials</li>
-<li>where to find practice materials; where is better/with what feature</li>
-<li>benchmark of learning; syllabus; multiple versions.</li>
-<li>well-known/creditable drills mentioned multiple times.</li>
-<li>atomic concepts/skills=procedures/facts to tackle</li>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 1</li>
 </ul>
-<h2 id="quote">quote</h2>
+<!-- raw HTML omitted -->
 <ul>
-<li>make <a href="/braindump/reference/well-informed-decision/">well-informed decision</a> on how to put up a plan, considering resource available and current best approach/drills, while covering all necessary concept/skill/facts.</li>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 2</li>
 </ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 3</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 4</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 5</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Greedy Method</p>
+<p>Best move in <code>each</code> step.
+make for the current best choice</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>pro</p>
+<ul>
+<li>fast</li>
+<li>easy</li>
+<li>good</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>con</p>
+<ul>
+<li>good solution, but no the best</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>How to design</p>
+<ol>
+<li></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>    &lt;!--list-separator--&gt;
+
+    -  example
+
+        &lt;!--list-separator--&gt;
+
+        -  Minimum spanning tree
+
+            A graph G with weighted edges, from which a Tree is generated with all vertices of G with minimum weight.
+
+            &lt;!--list-separator--&gt;
+
+            -  Prim's algorithm
+
+                1.  define graph G(V,E)
+                2.  Start state: V'={v0},E'={}
+                3.  find the vn in V-V' that connect to any item in V' with the smallest weight.
+                4.  add the vn into V', and the weight into E'
+
+                &lt;!--list-separator--&gt;
+
+                -  time complexity
+
+                    -   weight matrix : O(|V|2)
+                    -   `adjacent lis` t ,and `priority queue` implemented by min-heap: O(|E|log(|V|))
+
+            &lt;!--list-separator--&gt;
+
+            -  kruskal;s algorithm
+
+                1.  arrange the edges from smallest to largest weight
+                2.  take from the lowest to largest,
+
+                &lt;!--list-separator--&gt;
+
+                -  proof for correctnesss
+
+                &lt;!--list-separator--&gt;
+
+                -  time complexity
+
+                    incidence matrix
+
+        &lt;!--list-separator--&gt;
+
+        -  single-source shortest-path
+
+            &lt;!--list-separator--&gt;
+
+            -  Dij's algorithm
+</code></pre>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 6</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Dynamic Programming(tabular method)</p>
+<p>F(n) = 1 when n = 0; F(n-1) + F(n-2) when n&gt;2.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>2 ways</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<ol>
+<li>recursive</li>
+</ol>
+<p>from the last problem, to F(n) = F(n-1) + F(n-2)
+it&rsquo;s a O(2^n)</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<ol start="2">
+<li>accumulating</li>
+</ol>
+<p>from the first problem, F(2) = F(1) + F(0)
+and build the whole thing in a[0], a[1], a[2]&hellip;..
+it&rsquo;s a O(n)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 7</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 8</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Space-time-tradeoff</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Input-enhancement</p>
+<p>preprocess the input to store info</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>distribution counting sort</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>horspool algorithm for string search</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>pre-structuring</p>
+<p>preprocess the input to access easier</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Lecture 9</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Ledcture 10</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>NP problems</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>efficient</p>
+<p>an algorithm is <code>efficient</code> if:</p>
+<ul>
+<li>time bounded by a polynomial of its input size.O(N^3)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Lecture 11</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Lecture 12</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Lecture 13</li>
+</ul>
+<h4 id="tutorial">Tutorial</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Tutorial 1</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Tutorial 2</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Tutorial 3</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Tutorial 4</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Tutorial 5</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Tutorial 6</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Tutorial 7</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->DONE<!-- raw HTML omitted -->  Tutorial 8</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Tutorial 9</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Tutorial 10</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Tutorial 11</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Tutorial 12</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Tutorial 13</li>
+</ul>
+<h2 id="pas">PAS</h2>
+<h3 id="thread-self-learning">THREAD Self-learning</h3>
+<p>The speed of the course and content doesn&rsquo;t meet my need.
+I need it faster, and more advanced.
+go through the slides myself</p>
 
       </div>
       
@@ -68,29 +348,29 @@
    
 
    
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
       
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
    
 
    
@@ -116,7 +396,7 @@
     <div class="backlinks">
       <ul>
        
-          <li><a href="/braindump/machine/note-taking-machine/">Note-taking machine</a></li>
+          <li><a href="/braindump/">Good Morning!</a></li>
        
      </ul>
     </div>
