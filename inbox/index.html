@@ -29,10 +29,138 @@
         <h1>Inbox</h1>
         <h2 id="蘇格拉底詰問程序">蘇格拉底詰問程序</h2>
 <p>將蘇格拉底詰問法寫成formulated的算法,然後像doctor一樣實施,讓大家可以自己嘗試被詰問.</p>
+<p>*</p>
+<h2 id="document-util">Document util</h2>
+<h3 id="conversion">conversion</h3>
+<h4 id="pandoc">Pandoc</h4>
+<p>pandoc is a program that translate a variety of formats <strong>sanely</strong> to another. written in haskell.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>usage</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pandoc -s -f source.org -o output.docx
+</span></span></code></pre></div><p>-s
+: standalone. this flag make sure output.docx is complete
+without -s, pandoc may only generate body, ignore the head(in html).</p>
+</li>
+</ul>
+<h2 id="基本學習-學術-邏輯">基本學習[學術]邏輯</h2>
+<dl>
+<dt>輸入-[braindump]-輸出</dt>
+<dd>從閱讀材料和他人的文章,輸入braindump,最後從braindump中輸出可能對別人也有用的內容.
+<ul>
+<li><strong>輸入:</strong> 發現自己沒想到過的東西,看看其他思路,站在巨人肩膀
+<ul>
+<li><strong>提供 [概念名字/目標]:</strong> 將什麼範圍中的什麼特點抽象,當成一個統一的概念來應對和提供相關proposition</li>
+<li><strong>提供 [一種想法]:</strong> 概念的定義,提供一些proposition&hellip;還有其他好玩的東西.</li>
+</ul>
+</li>
+<li><strong>braindump:</strong> 想像,抽象,解釋,規則化處理
+<ul>
+<li><strong>生成 [自己定義]:</strong> 對於[概念名字]所圈定的特點群,自己的解釋和定義.最好更精簡,更能夠聯繫到我的其他想法</li>
+<li><strong>與[一種想法]相對比:</strong> 是否完全?是否符合?是否理解?以及側重不同之處等等.</li>
+<li><strong>生成 [多維觀點]:</strong> 在尋找合適,可理解定義/proposition過程中統歸各種視點.[規則化處理]</li>
+<li><strong>生成 [自己假設]:</strong> 在解釋途中需要解釋原因[假設生成點];需要做出heuristic[假設生成點]決策(在多種路徑中選擇一條);「如果這樣&hellip;會怎樣?」的想像[假設生成點「&hellip;會這樣&hellip;」].
+<ul>
+<li><strong>進入[實驗機器]:</strong> 驗證[假設真偽],成為[新概念,假設,定義,陳述]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>輸出:</strong> 學術貢獻,他人讀了之後能夠借鑑,給別人可以抄的實踐,老辦法用在不熟悉領域啟發新參數的介紹&hellip;
+<ul>
+<li>
+<p><strong>Futures:</strong> 在此次工作(思考,找文章,做實驗)中發現的不懂點/新問題/新假設/沒證實成功,只證實目前這種辦法不能工作,所以這個假設還要用另外方法來證實&hellip;</p>
+</li>
+<li>
+<p><strong>統歸脈絡:</strong> 一些概念[參數][觀察]之間有一些聯繫!</p>
+</li>
+<li>
+<p><strong>理論體系:</strong> 很大規模,也許在一些空間上完全的脈絡</p>
+</li>
+<li>
+<p><strong>模型想法:</strong> 可以這樣建立這個系統&hellip;但是只寫好最初步和大概的後續</p>
+</li>
+<li>
+<p><strong>老體系的新proposition:</strong></p>
+</li>
+<li>
+<p><strong>老體系在新field:</strong> 成果[效果如何],新參數的介紹可能(適應更genral的情況,很多時候是把hardcode的東西轉換成變量.)</p>
+</li>
+<li>
+<p><strong>新概念,假設,定義,陳述:</strong> 當然要經過初步的證實,來自進入了[實驗機器]的[自己假設].</p>
+</li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt>Fact, Concept, Procedure</dt>
+<dd>對於學習[學術]研究內容的分類
+<ul>
+<li><strong>Fact:</strong> 觀察,數據,已有的陳述,歷史,</li>
+<li><strong>Concept:</strong> 從Fact中,抽取相似特徵群(好多好多Fact中都有這些特徵),經過抽象,想像之後腦子裡面想像現實中的如何運行最後投射出這些特徵.[如何運行]常常是一個原則/mapping,也就是模型.
+<ul>
+<li><strong>推論與實驗驗證:</strong> 在原則下,結合其它原則產生進一步推論.實驗驗證concept是否與現實同義/行為一致.如果concept本身很難驗證,就可以驗證推論.</li>
+</ul>
+</li>
+<li><strong>Procedure:</strong> 在Concept的原則下,為了達成一種<a href="%E6%9C%80%E5%A4%A7%E5%8C%96%E6%94%B6%E7%9B%8A?%E6%9C%80%E5%BF%AB%E9%80%9F?%E6%9C%80%E5%A4%A7%E5%80%BC?%E6%9C%80%E5%B0%8F%E5%80%BC?%E5%BE%A9%E5%90%88%E8%A1%A8%E7%8F%BE%E5%87%BD%E6%95%B8?">Performance</a>,通過預見原則指導下的現實結果,在實踐中遵守的Heuristic Instruction.任何的Procedure都是Heuristic的————對於各種原則、場合、決策的選擇,基本有alternative,或者一定會有更好的選擇.即使在Justification下,也不能否認這個空間.</li>
+</ul>
+</dd>
+</dl>
+<h2 id="標準">標準</h2>
+<p>自我覺知[靈肉分離/合一]
+:</p>
+<p>有趣
+:</p>
+<dl>
+<dt>可愛</dt>
+<dd>主要對於觀察和感覺</dd>
+</dl>
+<p>冷靜[沉靜]
+:</p>
+<p>學者氣
+:</p>
+<p>積極[生成]
+:</p>
+<p>effective
+:</p>
+<p>實際[現實]
+:</p>
+<p>光亮[conditional]
+:</p>
+<p>Focused
+:</p>
+<p>腦袋清醒
+:</p>
+<dl>
+<dt>身形矯健</dt>
+<dd>優美,符合概念中的想像,</dd>
+</dl>
+<p>有節奏
+:</p>
+<dl>
+<dt>運動[主動]</dt>
+<dd>運動和靜止之中,在對於我的評估上,運動是更積極的標準.在對於機器的評價上則相反</dd>
+</dl>
+<h2 id="解構元素">解構元素</h2>
+<p>任何一個系統,都是它背後概念所提供的一種heuristic方案.當這些概念逐漸不被重視之後,人們也就出門右轉,轉移到新的系統.為了使這樣一個系統能夠是在heuritsic到optimization中提供一個更高視角的可能,應該為其提供一些解構的元素,提供一些衝突,和改變系統的可能,一些空位的卡槽.
+我想這個概念應該可以指導一種optimization,就是像在戲劇中不能只有一種說話方式一樣.現在的電視劇一碰到敏感話題就好像在寫小辯論文,聞風很謹慎,很一致&ndash;就好像是同一個聲音在說話.一種說法也許會說「這就是人民之聲啊!」.但是如果人民只有一種聲音,那麼人民於強權大概是一樣,這種聲音或許也失去更加符合現實,發現之前沒注意到的參量的機會.</p>
+<h2 id="machine-learning-based-on-continous-label-that-is-larger-than-last-and-less-than-last">machine learning based on continous label that is [larger than last] and [less than last]</h2>
+<h2 id="命名学">命名学</h2>
+<p>对概念进行命名时的一些策略</p>
+<h3 id="序号">序号</h3>
+<p><code>第一类杠杆,第二类杠杆</code>
+<code>第一类永动机</code>
+<code>热力学第一定律</code>
+很方便.难有具体想象.</p>
+<h3 id="概括字的组合">概括字的组合</h3>
+<p>像是win-win,win-lose, lose-lose,每个win和lose指代的是“(我)赢(他)输”.</p>
 
       </div>
       
 
+
+   
 
    
 

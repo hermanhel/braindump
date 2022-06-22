@@ -47,12 +47,21 @@ Namely, you could find lots of ideas of this kind in
       
       <guid>https://hermanhel.github.io/braindump/main/20220224134654-int102/</guid>
       <description>Algorithm
-What&amp;rsquo;s covered in INT102 Big-O Divide &amp;amp; conquer Greedy Method Dynamic Programming Space-Time tradeoff P/NP Branch &amp;amp; Bound UTS Deliver Plan Lectrue https://xjtlu.zhumu.com/j/6208331180
+What&amp;rsquo;s covered in INT102 Big-O Divide &amp;amp; conquer Greedy Method Dynamic Programming Space-Time tradeoff P/NP Branch &amp;amp; Bound Horspool&amp;rsquo;s algorithm Bellman-Ford Algorithm Backtracking Branch &amp;amp; Bound UTS Deliver Plan Lectrue https://xjtlu.zhumu.com/j/6208331180
  DONELecture 1   DONELecture 2   DONELecture 3   DONELecture 4    DONELecture 5
   Greedy Method
 Best move in each step. make for the current best choice
-  pro
- fast easy good      con</description>
+  pro</description>
+    </item>
+    
+    <item>
+      <title>knowledge</title>
+      <link>https://hermanhel.github.io/braindump/main/knowledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/knowledge/</guid>
+      <description>Knowledge is information gained by experience or education. A common category is:
+ Fact Knowledge that is Dead True. Ususally, descriptive information of real things falls into Fact.  e.g.: history event and year, experiment result, axioms   Concept Knowledge that is Abstract. Usually, analytic systems, seperate atom point ofview and explanation of mechinism of nature fall into Concept.  e.g.: Demand &amp;amp; supply, Functional programming, Webber&amp;rsquo;s socialogy catorization.   Procedure Knowledge that is Executed  Utilization This category illustrate the utilization definition of knowledge: Knowledge is information that&#39;s useful.</description>
     </item>
     
     <item>
@@ -72,8 +81,8 @@ Resource  This note is originally a reading note on math4ml. I&amp;rsquo;m addin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hermanhel.github.io/braindump/main/20211104155334-machine/</guid>
-      <description>Decription Machine typically should contain below information:
- Flow of action. In similar format as Algorithm Notation Other than actions, materials and places should be spcified here also, like in algorithms. Related Principles. Proof should be included in the principles&amp;rsquo; node. If the principle have no proof, note that [noProof] principle xxxx  Categories Purpose Project machines A machine could be constructed just for a particular project, with itself used for only once.</description>
+      <description>Machine typically should contain below information:
+ Flow of action. In similar format as Algorithm Notation Other than actions, materials and places should be spcified here also, like in algorithms. side-effects and benchmarks should also be noted, if any. Related Principles. Proof should be included in the principles&amp;rsquo; node. If the principle have no proof, note that [noProof] principle xxxx  Categories Purpose Project machines A machine could be constructed just for a particular project, with itself used for only once.</description>
     </item>
     
     <item>
@@ -106,9 +115,11 @@ Different flow could be seperately declared by:
       
       <guid>https://hermanhel.github.io/braindump/main/20220328151029-operating_system/</guid>
       <description>The Info comes most from MITOCW
-MIT 6.S081 meta 6.s081. a website. qemu, a hardware simulation under linux xv6, a teaching OS, on RISC-V processor
-Overview What Operating system do  Abstract Hardware Multiplex Isolation Sharing Security access Preformance Range of application  orgnization Image Kernel have filesystem, process management, memory management&amp;hellip;codes.
- filesystem: give more high-level way to name files, orgnize directories,etc. process management: vi, cc are like different processes, and we want then to run concurrently, without interfering each other.</description>
+What&amp;rsquo;s coverd in OS Main Memory Mass storage I/O systems Archive MIT 6.S081 meta 6.s081. a website. qemu, a hardware simulation under linux xv6, a teaching OS, on RISC-V processor
+Overview   What Operating system do
+ Abstract Hardware Multiplex Isolation Sharing Security access Preformance Range of application      orgnization Image
+Kernel have filesystem, process management, memory management&amp;hellip;codes.
+ filesystem: give more high-level way to name files, orgnize directories,etc.</description>
     </item>
     
     <item>

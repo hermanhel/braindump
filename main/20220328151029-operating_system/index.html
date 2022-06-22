@@ -28,13 +28,21 @@
       <div class="content">
         <h1>Operating System</h1>
         <p>The Info comes most from MITOCW</p>
-<h2 id="mit-6-dot-s081">MIT 6.S081</h2>
-<h3 id="meta">meta</h3>
+<h2 id="what-s-coverd-in-os">What&rsquo;s coverd in OS</h2>
+<h3 id="main-memory--main-memory-dot-md"><a href="/braindump/errors/">Main Memory</a></h3>
+<h3 id="mass-storage--mass-storage-dot-md"><a href="/braindump/errors/">Mass storage</a></h3>
+<h3 id="i-o-systems--i-o-systems-dot-md"><a href="/braindump/errors/">I/O systems</a></h3>
+<h2 id="archive">Archive</h2>
+<h3 id="mit-6-dot-s081">MIT 6.S081</h3>
+<h4 id="meta">meta</h4>
 <p>6.s081. a website.
 qemu, a hardware simulation under linux
 xv6, a teaching OS, on RISC-V processor</p>
-<h3 id="overview">Overview</h3>
-<h4 id="what-operating-system-do">What Operating system do</h4>
+<h4 id="overview">Overview</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>What Operating system do</p>
 <ul>
 <li>Abstract Hardware</li>
 <li>Multiplex</li>
@@ -45,7 +53,12 @@ access</li>
 <li>Preformance</li>
 <li>Range of application</li>
 </ul>
-<h4 id="orgnization-image">orgnization Image</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>orgnization Image</p>
 <p><img src="/ox-hugo/os1.png" alt="">
 Kernel have filesystem, process management, memory management&hellip;codes.</p>
 <ul>
@@ -53,10 +66,20 @@ Kernel have filesystem, process management, memory management&hellip;codes.</p>
 <li>process management: vi, cc are like different processes, and we want then to run concurrently, without interfering each other.</li>
 <li>memory: and we divide and allocate memory to them.</li>
 </ul>
-<h4 id="api-kernel">API - kernel</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>API - kernel</p>
 <p><code>fd = open(&quot;path&quot;,1)</code>
 much like defining a funciton, but <code>system calls</code> jump into kernel and run kernel code. The kernel code have the special access to hardware and other kernel code user-defined function don&rsquo;t have</p>
-<h4 id="why-os-is-interesting">Why OS is interesting?</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Why OS is interesting?</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>OS have it&rsquo;s projection into all softwares</li>
@@ -97,7 +120,12 @@ much like defining a funciton, but <code>system calls</code> jump into kernel an
 <ul>
 <li>Tracking bugs</li>
 </ul>
-<h4 id="example-of-system-call-what-it-looks-like">Example of system call - what it looks like?</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example of system call - what it looks like?</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -185,12 +213,22 @@ much like defining a funciton, but <code>system calls</code> jump into kernel an
 </span></span></code></pre></div><p>after <code>close(1);</code>, file descriptor <code>1</code> is closed. <code>open(&quot;output.txt&quot;,)</code> will bind the lowest number of available file descriptor(1) to <code>output.txt</code></p>
 </li>
 </ul>
-<h3 id="os-organization">OS organization</h3>
-<h4 id="to-check">to check</h4>
+</li>
+</ul>
+<h4 id="os-organization">OS organization</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>to check</p>
 <p>prime
 pipe: in fork, it will have 4 ends.
 concurent</p>
-<h4 id="isolation">isolation</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>isolation</p>
 <p>strong isolation between OS and app. So OS won&rsquo;t crash with error of app</p>
 <!-- raw HTML omitted -->
 <ul>
@@ -350,22 +388,49 @@ a kernel.asm is gnerated to see the full form of kernel.</p>
 <p>The qemu enulate a board of risc5 schema board. Should think it that way. It&rsquo;s a c program of for loop</p>
 </li>
 </ul>
-<h4 id="kernel-user-mode">kernel/user mode</h4>
-<h4 id="system-call">system call</h4>
-<h4 id="the-above-in-xv6">the above in xv6</h4>
-<h3 id="page-tables--virtual-memory">Page Tables (virtual memory)</h3>
-<h3 id="inbox">Inbox</h3>
-<h4 id="hold-and-wait-condition">hold and wait condition</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>kernel/user mode</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>system call</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>the above in xv6</li>
+</ul>
+<h4 id="page-tables--virtual-memory">Page Tables (virtual memory)</h4>
+<h4 id="inbox">Inbox</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>hold and wait condition</p>
 <p>to prevail</p>
-<h4 id="mutual-exclusion">Mutual exclusion</h4>
-<h4 id="scheduling">Scheduling</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Mutual exclusion</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Scheduling</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>Round Robin Scheduling Algorithm</li>
 </ul>
-<h2 id="the-dinosaur-book">the Dinosaur book</h2>
-<h3 id="introduction">Introduction</h3>
-<h4 id="what-is-os">What is OS?</h4>
+</li>
+</ul>
+<h3 id="the-dinosaur-book">the Dinosaur book</h3>
+<h4 id="introduction">Introduction</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>What is OS?</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -381,7 +446,12 @@ graphic, database, multimedia</li>
 </ul>
 </li>
 </ul>
-<h4 id="computer-system-operation">Computer-System Operation</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Computer-System Operation</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -436,9 +506,14 @@ graphic, database, multimedia</li>
 </ul>
 </li>
 </ul>
-<h3 id="operating-system-structure">Operating-System Structure</h3>
-<h3 id="processes">Processes</h3>
-<h4 id="process">Process</h4>
+</li>
+</ul>
+<h4 id="operating-system-structure">Operating-System Structure</h4>
+<h4 id="processes">Processes</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Process</p>
 <p>Program in execution
 Program = xx.exe. Process = that thing in memory after you load xx.exe into memory</p>
 <!-- raw HTML omitted -->
@@ -457,7 +532,12 @@ Program = xx.exe. Process = that thing in memory after you load xx.exe into memo
 </ul>
 </li>
 </ul>
-<h4 id="states">States</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>States</p>
 <p>As the program executed, the states change.
 states: <code>new,ready,running,waiting,terminated</code></p>
 <ul>
@@ -471,7 +551,12 @@ like I/O or siganl</li>
 <figure><img src="/ox-hugo/procstates.png"/>
 </figure>
 
-<h4 id="queues">Queues</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Queues</p>
 <p>Queue is where process is put when not executing
 Dispatch: selected to exec</p>
 <figure><img src="/ox-hugo/queues.png"/>
@@ -494,7 +579,12 @@ Generally a <code>linked list</code></p>
 <p>Each PCB have a field pointing to next PCB</p>
 </li>
 </ul>
-<h4 id="pcb">PCB</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>PCB</p>
 <p>Process Control Block(task control block) is the representation of Process</p>
 <figure><img src="/ox-hugo/pcb.png"/>
 </figure>
@@ -530,9 +620,19 @@ memory stuffs, like page table.</li>
 </ul>
 </li>
 </ul>
-<h4 id="thread">Thread</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Thread</p>
 <p>the <a href="#pcb">PCB</a> will be modified to include thread information to support multi thread system</p>
-<h4 id="scheduling">Scheduling</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Scheduling</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -602,7 +702,12 @@ swapping(more in <a href="#main-memory">Main Memory</a>)</p>
 putting the context in other place, and load the context in the new process&rsquo;s PCB</p>
 </li>
 </ul>
-<h4 id="operations-on-process">Operations on Process</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Operations on Process</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -644,7 +749,12 @@ This:</p>
 <p>Parent use <code>wait()</code> to wait for child to finish</p>
 </li>
 </ul>
-<h4 id="parent-child-process">Parent/Child process</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Parent/Child process</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -653,7 +763,12 @@ This:</p>
 Concurrent is good forL <code>information sharing, computation speedup, modularity, and convenience</code></p>
 </li>
 </ul>
-<h4 id="coorperating-process">Coorperating process</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Coorperating process</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -786,7 +901,9 @@ a connection between 2 applications include 2 sockets on each end of communicati
 </ul>
 </li>
 </ul>
-<h3 id="threads">Threads</h3>
+</li>
+</ul>
+<h4 id="threads">Threads</h4>
 <p>Thread is a <code>stream of instruciton</code></p>
 <ul>
 <li>Benefits:
@@ -805,7 +922,10 @@ a connection between 2 applications include 2 sockets on each end of communicati
 </ul>
 </li>
 </ul>
-<h4 id="multicore-programming">Multicore Programming</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Multicore Programming</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -816,7 +936,12 @@ a connection between 2 applications include 2 sockets on each end of communicati
 </ul>
 </li>
 </ul>
-<h4 id="multithreading-models">Multithreading Models</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Multithreading Models</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -858,28 +983,47 @@ a connection between 2 applications include 2 sockets on each end of communicati
 Each user thread map into 1 kernel thread</p>
 </li>
 </ul>
-<h4 id="thread-libraries">Thread Libraries</h4>
-<h4 id="implicit-threading">Implicit Threading</h4>
-<h4 id="threading-issues-design-method">Threading issues/Design method</h4>
-<h3 id="process-synchronization">Process Synchronization</h3>
-<h3 id="cpu-scheduling">CPU Scheduling</h3>
-<h3 id="deadlocks">Deadlocks</h3>
-<h3 id="main-memory">Main Memory</h3>
-<h3 id="virtual-memory">Virtual Memory</h3>
-<h3 id="mass-storage-structure">Mass-Storage Structure</h3>
-<h3 id="file-system-interface">File-System Interface</h3>
-<h3 id="file-system-implement">File-System Implement</h3>
-<h3 id="i-o-systems">I/O Systems</h3>
-<h3 id="protection">Protection</h3>
-<h3 id="security">Security</h3>
-<h3 id="virtual-machines">Virtual Machines</h3>
-<h3 id="distributed-systems">Distributed Systems</h3>
-<h2 id="trying-machine">Trying Machine</h2>
-<h3 id="thread">Thread</h3>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Thread Libraries</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Implicit Threading</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Threading issues/Design method</li>
+</ul>
+<h4 id="process-synchronization">Process Synchronization</h4>
+<h4 id="cpu-scheduling">CPU Scheduling</h4>
+<h4 id="deadlocks">Deadlocks</h4>
+<h4 id="main-memory">Main Memory</h4>
+<h4 id="virtual-memory">Virtual Memory</h4>
+<h4 id="mass-storage-structure">Mass-Storage Structure</h4>
+<h4 id="file-system-interface">File-System Interface</h4>
+<h4 id="file-system-implement">File-System Implement</h4>
+<h4 id="i-o-systems">I/O Systems</h4>
+<h4 id="protection">Protection</h4>
+<h4 id="security">Security</h4>
+<h4 id="virtual-machines">Virtual Machines</h4>
+<h4 id="distributed-systems">Distributed Systems</h4>
+<h3 id="trying-machine">Trying Machine</h3>
 <h4 id="thread">Thread</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Thread</p>
 <p>stream of instruciotn
 flow of control in a process</p>
-<h4 id="pros-of-thread">Pros of Thread</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Pros of Thread</p>
 <ul>
 <li>Responsiveness
 have 1 thread doing a very difficult job
@@ -891,24 +1035,44 @@ faster in creation and context switch due to resource sharing</li>
 <li>Scalability
 can run faster on multicore systems. while 1 thread process runs the same on multicore or singlecore.</li>
 </ul>
-<h4 id="thread-control-block">Thread Control Block</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Thread Control Block</p>
 <ul>
 <li>thread ID</li>
 <li>program counter</li>
 <li>register set</li>
 <li>stack</li>
 </ul>
-<h4 id="sequential-multi-threaded-program">Sequential/Multi-threaded program</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Sequential/Multi-threaded program</p>
 <ul>
 <li>Sequential program: program with only 1 stream of instruction</li>
 <li>multi-threaded program: program with n streams of instruction</li>
 </ul>
-<h4 id="single-multi-threaded-processes">single/multi-threaded processes</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>single/multi-threaded processes</p>
 <ul>
 <li>single thread process: traditional process</li>
 <li>multithreaded process: same code, data, file. but multiple threads. Perform more than 1 task at time</li>
 </ul>
-<h4 id="thread-life-cycle">Thread life cycle</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Thread life cycle</p>
 <figure><img src="/ox-hugo/threadlifecycle.png"/>
 </figure>
 
@@ -916,14 +1080,24 @@ can run faster on multicore systems. while 1 thread process runs the same on mul
 <ul>
 <li>Preemption</li>
 </ul>
-<h4 id="amdahl-s-law">Amdahl&rsquo;s law</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Amdahl&rsquo;s law</p>
 <p>\(speedup \le \frac{1}{S + \frac{(1 - S)}{N}}\) where S stands for <code>serial parts of the program</code>
 the law states:</p>
 <ul>
 <li>the speed up rise with N(core number) rise</li>
 <li>the speed converge to \(\frac{1}{S}\) as N approach \(\inf\).</li>
 </ul>
-<h4 id="challenges-with-multicore-programming">Challenges with multicore programming</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Challenges with multicore programming</p>
 <ul>
 <li>Identifying Tasks
 find areas that can be devided into concurrent threads
@@ -937,7 +1111,12 @@ when proc1 depend on the result of proc2. They should be synchronized, so that t
 <li>Testing and debugging
 The possible order of instruction execution increase largely when concurent.</li>
 </ul>
-<h4 id="concurrency-parallelism">Concurrency/Parallelism</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Concurrency/Parallelism</p>
 <ul>
 <li>Concurrency: little bit of every one</li>
 <li>parallelism: more cores.</li>
@@ -955,7 +1134,12 @@ unique operation to cores</li>
 </ul>
 </li>
 </ul>
-<h4 id="synchrounous-threading">Synchrounous threading</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Synchrounous threading</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -964,7 +1148,12 @@ unique operation to cores</li>
 data sharing is significant. The parent may use all the data child manipulated.</p>
 </li>
 </ul>
-<h4 id="threading-support">Threading Support</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Threading Support</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -1021,7 +1210,12 @@ program -libs-&gt; multiple little threads scheduled -&gt; new program -&gt; loa
 </ul>
 </li>
 </ul>
-<h4 id="lightweight-process">lightweight process</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>lightweight process</p>
 <p>an intermediate data structure between user and kernel threads</p>
 <ul>
 <li>to user: virtual processor</li>
@@ -1029,7 +1223,12 @@ program -libs-&gt; multiple little threads scheduled -&gt; new program -&gt; loa
 <li>when blocking happens: block on thread level, not process.</li>
 <li>could use multiple cores.</li>
 </ul>
-<h4 id="multithreading-models">multithreading models</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>multithreading models</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -1062,7 +1261,12 @@ Therefore unlimited user threads, concurrency and clever blocking.</p>
 <p>M to M + O to O side by side.</p>
 </li>
 </ul>
-<h4 id="thread-libraries">Thread libraries</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Thread libraries</p>
 <p>lib that provide functions to <code>create</code> <code>use</code> <code>terminate</code> therads</p>
 <!-- raw HTML omitted -->
 <ul>
@@ -1102,12 +1306,22 @@ codes and data structure in kernel space</li>
 </ul>
 </li>
 </ul>
-<h4 id="asynchronous-synchronous-threading">Asynchronous/synchronous threading</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Asynchronous/synchronous threading</p>
 <ul>
 <li>Asynchronous: parent don&rsquo;t wait child</li>
 <li>synchronous: parent wait child.</li>
 </ul>
-<h4 id="explicit-inplicit-threading">Explicit/Inplicit threading</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Explicit/Inplicit threading</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -1194,20 +1408,38 @@ there&rsquo;s 3 concurrent queue with different priority.</li>
 </ul>
 </li>
 </ul>
-<h4 id="asynchronous-procedure-call--apc">asynchronous procedure call (APC)</h4>
-<h4 id="fork">fork()</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>asynchronous procedure call (APC)</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>fork()</p>
 <p>create a new child thread from the parent thread. an identical copy.</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>child/parent thread</li>
 </ul>
-<h4 id="exec">exec()</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>exec()</p>
 <p>replace the executable of the thread. others stay the same.</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>interaction of exec() and fork()</li>
 </ul>
-<h4 id="signal-handling">signal handling</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>signal handling</p>
 <p>a interrupt or event generated by a unix system
 in response to a condition/actoin</p>
 <!-- raw HTML omitted -->
@@ -1232,7 +1464,12 @@ all signals are handled exactly once</p>
 <p>from the same process</p>
 </li>
 </ul>
-<h4 id="thread-cancellation">thread cancellation</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>thread cancellation</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>target thread</li>
@@ -1260,9 +1497,20 @@ the canceled thread has sent the cancellation request</p>
 </ul>
 </li>
 </ul>
-<h4 id="single-to-multi-thread">single- to multi-thread</h4>
-<h4 id="thread-local-storage--tls">Thread-local storage (TLS)</h4>
-<h4 id="scheduler-activations--lightweight-process">Scheduler Activations (lightweight process)</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>single- to multi-thread</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Thread-local storage (TLS)</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Scheduler Activations (lightweight process)</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>upcall</li>
@@ -1271,12 +1519,28 @@ the canceled thread has sent the cancellation request</p>
 <ul>
 <li>upcall handler</li>
 </ul>
-<h4 id="linux-thread-story">Linux thread story</h4>
-<h3 id="process-synchronization">Process Synchronization</h3>
-<h4 id="coordination-of-process">coordination of process</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Linux thread story</li>
+</ul>
+<h4 id="process-synchronization">Process Synchronization</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>coordination of process</p>
 <p>manageing the execution of processes so that no 2 processes access same resource the same time</p>
-<h4 id="share-resource">share resource</h4>
-<h4 id="critical-section-problem">critical-section problem</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>share resource</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>critical-section problem</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -1527,16 +1791,40 @@ for resource having multiple instances</p>
 </ul>
 </li>
 </ul>
-<h4 id="atomic-instuction">atomic instuction</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>atomic instuction</p>
 <p>instruction that is not interuptable.</p>
-<h4 id="preemptive-nonpreemptive-kernel">Preemptive/nonpreemptive kernel</h4>
-<h4 id="multiprogramming">multiprogramming</h4>
-<h4 id="synchronization-hardware">Synchronization hardware</h4>
-<h4 id="race-condition">Race condition</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Preemptive/nonpreemptive kernel</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>multiprogramming</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Synchronization hardware</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Race condition</p>
 <p>the condition that multiple proc.s manipulate same shared data concurrently.
 final value depends on the random order of the manipulation.</p>
 <p>To prevent race condition, concurrent processes must be synchronized</p>
-<h4 id="classical-process-synchronization-probelms">classical process-synchronization probelms</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>classical process-synchronization probelms</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -1578,9 +1866,17 @@ use a reader-writer lock that specify the mode of lock.</p>
 </ul>
 </li>
 </ul>
-<h4 id="monitor">Monitor</h4>
-<h3 id="cpu-scheduling">CPU Scheduling</h3>
-<h4 id="concepts">concepts</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Monitor</li>
+</ul>
+<h4 id="cpu-scheduling">CPU Scheduling</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>concepts</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -1680,7 +1976,12 @@ called in every process switch</p>
 </ul>
 </li>
 </ul>
-<h4 id="criteria">criteria</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>criteria</p>
 <ul>
 <li>Max CPU utilization – keep the CPU as busy as possible</li>
 <li>Max Throughput – complete as many processes as possible per unit time</li>
@@ -1688,7 +1989,12 @@ called in every process switch</p>
 <li>Min Waiting time – process should not wait long in the ready queue</li>
 <li>Min Response time – CPU should respond immediately</li>
 </ul>
-<h4 id="algorithms">algorithms</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>algorithms</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -1967,292 +2273,297 @@ one-to-one</p>
 </ul>
 </li>
 </ul>
-<pre><code>    &lt;!--list-separator--&gt;
+</li>
+</ul>
+<pre><code>        &lt;!--list-separator--&gt;
 
-    -  3 structures
-
-        &lt;!--list-separator--&gt;
-
-        -  Separate Kernel Configuration
-
-            every Processor have it's own I/O device and file system
-            little interdependency
-
-            -   no parrallel execution
-
-        &lt;!--list-separator--&gt;
-
-        -  Master–Slave Configuration (Asymmetric Configuration)
-
-             1 master processor and other slave processors
-            OS run by master
-            process scheduling run by master
-
-        &lt;!--list-separator--&gt;
-
-        -  Symmetric Configuration
-
-            Any processor can access any device and can handle any interrupts generated on it.
-
-            Mutual Exclusion for the OS is required.
-            OS is seperated into independent parts. to prevent concurrency
+        -  3 structures
 
             &lt;!--list-separator--&gt;
 
-            -  approaches
+            -  Separate Kernel Configuration
 
-                &lt;!--list-separator--&gt;
+                every Processor have it's own I/O device and file system
+                little interdependency
 
-                -  common ready queue
-
-                &lt;!--list-separator--&gt;
-
-                -  per-core run queues
+                -   no parrallel execution
 
             &lt;!--list-separator--&gt;
 
-            -  Process Affinity
+            -  Master–Slave Configuration (Asymmetric Configuration)
 
-                caches make 1 processor more &quot;familier&quot; for a process.
-                So it's better to use 1 processor all along.
-
-                &lt;!--list-separator--&gt;
-
-                -  soft affinity
-
-                    no guarentee
-
-                &lt;!--list-separator--&gt;
-
-                -  hard affinity
-
-                    allowing a
+                 1 master processor and other slave processors
+                OS run by master
+                process scheduling run by master
 
             &lt;!--list-separator--&gt;
 
-            -  Load Balencing
+            -  Symmetric Configuration
 
-                for each core's queue
+                Any processor can access any device and can handle any interrupts generated on it.
 
-                &lt;!--list-separator--&gt;
-
-                -  Push migration
-
-                    when too long, push task to other processor's queue
+                Mutual Exclusion for the OS is required.
+                OS is seperated into independent parts. to prevent concurrency
 
                 &lt;!--list-separator--&gt;
 
-                -  Pull migration
+                -  approaches
 
-                    when empty ready queue, read from othre processors' queue. Transfer them into my own queue
+                    &lt;!--list-separator--&gt;
 
-            &lt;!--list-separator--&gt;
+                    -  common ready queue
 
-            -  Multicore Processors
+                    &lt;!--list-separator--&gt;
 
-                a core executes a thread a time
-
-                &lt;!--list-separator--&gt;
-
-                -  Memory stall
-
-                    single-core processor waiting for the data to become available.
-
-                    use that time to execute other thread.
-
-            &lt;!--list-separator--&gt;
-
-            -  Hyperthreading
-
-                a intel technology
-                a physical processor divieded into 2 logical processors that are treated like seperate physical processors.
-
-            &lt;!--list-separator--&gt;
-
-            -  Multithreading
-
-                multiple thread on same core
+                    -  per-core run queues
 
                 &lt;!--list-separator--&gt;
 
-                -  coarse-grained
+                -  Process Affinity
 
-                    switch thread only when 1 thread block
+                    caches make 1 processor more &quot;familier&quot; for a process.
+                    So it's better to use 1 processor all along.
+
+                    &lt;!--list-separator--&gt;
+
+                    -  soft affinity
+
+                        no guarentee
+
+                    &lt;!--list-separator--&gt;
+
+                    -  hard affinity
+
+                        allowing a
 
                 &lt;!--list-separator--&gt;
 
-                -  fine-grained
+                -  Load Balencing
 
-                    scheduling in Round Robin policy
+                    for each core's queue
 
-&lt;!--list-separator--&gt;
+                    &lt;!--list-separator--&gt;
 
--  Real-Time CPU Scheduling
+                    -  Push migration
+
+                        when too long, push task to other processor's queue
+
+                    &lt;!--list-separator--&gt;
+
+                    -  Pull migration
+
+                        when empty ready queue, read from othre processors' queue. Transfer them into my own queue
+
+                &lt;!--list-separator--&gt;
+
+                -  Multicore Processors
+
+                    a core executes a thread a time
+
+                    &lt;!--list-separator--&gt;
+
+                    -  Memory stall
+
+                        single-core processor waiting for the data to become available.
+
+                        use that time to execute other thread.
+
+                &lt;!--list-separator--&gt;
+
+                -  Hyperthreading
+
+                    a intel technology
+                    a physical processor divieded into 2 logical processors that are treated like seperate physical processors.
+
+                &lt;!--list-separator--&gt;
+
+                -  Multithreading
+
+                    multiple thread on same core
+
+                    &lt;!--list-separator--&gt;
+
+                    -  coarse-grained
+
+                        switch thread only when 1 thread block
+
+                    &lt;!--list-separator--&gt;
+
+                    -  fine-grained
+
+                        scheduling in Round Robin policy
 
     &lt;!--list-separator--&gt;
 
-    -  Real-time system
-
-        a system where time play important role
+    -  Real-Time CPU Scheduling
 
         &lt;!--list-separator--&gt;
 
-        -  hard real-time system
+        -  Real-time system
 
-            must meet deadline
+            a system where time play important role
+
+            &lt;!--list-separator--&gt;
+
+            -  hard real-time system
+
+                must meet deadline
+
+            &lt;!--list-separator--&gt;
+
+            -  soft real-time system
+
+                desirable not not necesary
+
+                &lt;!--list-separator--&gt;
+
+                -  aperiodic tasks
+
+                    irregular arrival time
+
+                &lt;!--list-separator--&gt;
+
+                -  periodic tasks
+
+                    once per period T
 
         &lt;!--list-separator--&gt;
 
-        -  soft real-time system
+        -  Scheduling real-time tasks
 
-            desirable not not necesary
-
-            &lt;!--list-separator--&gt;
-
-            -  aperiodic tasks
-
-                irregular arrival time
-
-            &lt;!--list-separator--&gt;
-
-            -  periodic tasks
-
-                once per period T
-
-    &lt;!--list-separator--&gt;
-
-    -  Scheduling real-time tasks
-
-        <figure><img src="/ox-hugo/realtimelatency.png"/>
+            <figure><img src="/ox-hugo/realtimelatency.png"/>
 </figure>
 
 
+            &lt;!--list-separator--&gt;
+
+            -  interrupt latency
+
+                determine interrupt type
+                switch context
+
+            &lt;!--list-separator--&gt;
+
+            -  dispatch latency
+
         &lt;!--list-separator--&gt;
 
-        -  interrupt latency
+        -  Static Scheduling
 
-            determine interrupt type
-            switch context
+            schedule prepared before app startup
 
         &lt;!--list-separator--&gt;
 
-        -  dispatch latency
+        -  Priority-based scheduling
 
-    &lt;!--list-separator--&gt;
+            priority assigned base on how quickly it must react
 
-    -  Static Scheduling
+        &lt;!--list-separator--&gt;
 
-        schedule prepared before app startup
+        -  Dynamic scheduling
 
-    &lt;!--list-separator--&gt;
+            schedule change over time.
 
-    -  Priority-based scheduling
+        &lt;!--list-separator--&gt;
 
-        priority assigned base on how quickly it must react
+        -  timing constraints
 
-    &lt;!--list-separator--&gt;
+            -   period:
+            -   deadline:
+            -
 
-    -  Dynamic scheduling
+        &lt;!--list-separator--&gt;
 
-        schedule change over time.
+        -  scheduling criteria
 
-    &lt;!--list-separator--&gt;
+            -   timing constraints met
+            -   cost of context switch, while preempting, must be reduced
+            -
 
-    -  timing constraints
+        &lt;!--list-separator--&gt;
 
-        -   period:
-        -   deadline:
-        -
+        -  preemptively/non-preemptively, staticly/dynamically
 
-    &lt;!--list-separator--&gt;
+        &lt;!--list-separator--&gt;
 
-    -  scheduling criteria
+        -  Rate-Monotonic Scheduling
 
-        -   timing constraints met
-        -   cost of context switch, while preempting, must be reduced
-        -
+            static priority-based preemptive scheduling algorithm
 
-    &lt;!--list-separator--&gt;
+            shortest period = highest priority
 
-    -  preemptively/non-preemptively, staticly/dynamically
+        &lt;!--list-separator--&gt;
 
-    &lt;!--list-separator--&gt;
+        -  Earlies-Deadline-First Scheduling
 
-    -  Rate-Monotonic Scheduling
+            deadline - priority
+            dynamically assign priority according to deadline
 
-        static priority-based preemptive scheduling algorithm
+        &lt;!--list-separator--&gt;
 
-        shortest period = highest priority
+        -  Proportional Share Scheduling
 
-    &lt;!--list-separator--&gt;
+            T shares are allocated to all procs. in the system
+            An app recive N shares. N &amp;lt; T
 
-    -  Earlies-Deadline-First Scheduling
+        &lt;!--list-separator--&gt;
 
-        deadline - priority
-        dynamically assign priority according to deadline
+        -  Process in here
 
-    &lt;!--list-separator--&gt;
+            periodic.
 
-    -  Proportional Share Scheduling
+            -   once the process get CPU, it has:
+                -   fixed processing time \\(t\\)
+                -   deadline \\(d\\)
+                -   period \\(p\\)
+                -   \\(0 \le t \le d \le p\\)
+                -   rate \\(\frac{1}{p}\\)
+                -   illustrate
 
-        T shares are allocated to all procs. in the system
-        An app recive N shares. N &amp;lt; T
-
-    &lt;!--list-separator--&gt;
-
-    -  Process in here
-
-        periodic.
-
-        -   once the process get CPU, it has:
-            -   fixed processing time \\(t\\)
-            -   deadline \\(d\\)
-            -   period \\(p\\)
-            -   \\(0 \le t \le d \le p\\)
-            -   rate \\(\frac{1}{p}\\)
-            -   illustrate
-
-                <figure><img src="/ox-hugo/ptd.png"/>
+                    <figure><img src="/ox-hugo/ptd.png"/>
 </figure>
 
 
-&lt;!--list-separator--&gt;
-
--  Algorithm Evaluation
-
-    ❑
-
     &lt;!--list-separator--&gt;
 
-    -  Deterministic evaluation
+    -  Algorithm Evaluation
 
-        1.  define workload: avg waiting time?
-        2.  test.
-
-    &lt;!--list-separator--&gt;
-
-    -  Queueing Models
-
-        we define queues for I/O and CPU, then queueing theory comes in handy
+        ❑
 
         &lt;!--list-separator--&gt;
 
-        -  little's formula
+        -  Deterministic evaluation
 
-            \\(n = \lambda \times W\\)
-            n:average queue length
-            W:avg waiting time
-            \\(\lambda\\):avg arrival rate
-            if we know 2 of the parameters, we know the thirs
+            1.  define workload: avg waiting time?
+            2.  test.
 
-    &lt;!--list-separator--&gt;
+        &lt;!--list-separator--&gt;
 
-    -  Simulations
+        -  Queueing Models
 
-        trace tapes to provide real machine process to simulate algorithms on.
+            we define queues for I/O and CPU, then queueing theory comes in handy
+
+            &lt;!--list-separator--&gt;
+
+            -  little's formula
+
+                \\(n = \lambda \times W\\)
+                n:average queue length
+                W:avg waiting time
+                \\(\lambda\\):avg arrival rate
+                if we know 2 of the parameters, we know the thirs
+
+        &lt;!--list-separator--&gt;
+
+        -  Simulations
+
+            trace tapes to provide real machine process to simulate algorithms on.
 </code></pre>
-<h3 id="deadlock">Deadlock</h3>
-<h4 id="system-model">System Model</h4>
+<h4 id="deadlock">Deadlock</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>System Model</p>
 <ul>
 <li>system have resources.</li>
 <li>Resource have R types</li>
@@ -2265,7 +2576,12 @@ one-to-one</p>
 </ul>
 </li>
 </ul>
-<h4 id="deadlock-characterizaiton">Deadlock Characterizaiton</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Deadlock Characterizaiton</p>
 <p>deadlock arise if the four condition the same time</p>
 <!-- raw HTML omitted -->
 <ul>
@@ -2319,7 +2635,12 @@ one-to-one</p>
 </ul>
 </li>
 </ul>
-<h4 id="methods-for-handling-deadlocks">Methods for handling Deadlocks</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Methods for handling Deadlocks</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -2532,7 +2853,12 @@ if too late, the deadlock would grow large and hard to deal with</p>
 </ul>
 </li>
 </ul>
-<h4 id="recovery-from-deadlock">Recovery from deadlock</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Recovery from deadlock</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -2565,8 +2891,10 @@ make sure limited time 1 is a victim</li>
 </ol>
 </li>
 </ul>
-<h2 id="the-project">The Project</h2>
-<h3 id="scheduler">Scheduler</h3>
+</li>
+</ul>
+<h3 id="the-project">The Project</h3>
+<h4 id="scheduler">Scheduler</h4>
 <p>My goal is to:</p>
 <ol>
 <li>Gain practical experiance of OS</li>
@@ -2583,8 +2911,11 @@ it contains much practical problems.</li>
 <p>The MIT course is in video and practices, and the dinosour book is a book. I plan to use <a href="#page-reading-machine">page reading machine</a> on <a href="#the-dinosaur-book">the Dinosaur book</a> and <a href="#video-watching-machine">video watching machine</a> on the video materails of MIT.</p>
 <p>I&rsquo;ll be holding Notes in this page, which, will be transformed into blogs in the future on my website.</p>
 <p>Keep that in mind, and knows that there&rsquo;s an audiance. So make them comprehensible, and complete.</p>
-<h3 id="page-reading-machine">page reading machine</h3>
-<h4 id="principle">Principle</h4>
+<h4 id="page-reading-machine">page reading machine</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Principle</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -2599,7 +2930,12 @@ it contains much practical problems.</li>
 <p>Taking Initiative counters dizziness and copying.</p>
 </li>
 </ul>
-<h4 id="flow">Flow</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Flow</p>
 <ol>
 <li>Go through the headings, mark seemed important keywords to headings</li>
 <li>after the first skim, go to the notes and try to explain them. When failed, check the text.</li>
@@ -2612,8 +2948,13 @@ it contains much practical problems.</li>
 <li>Go to next link(<code>C-c C-x C-n</code>)</li>
 <li>Repeat step 4-7 until all links are pointing to somewhere.</li>
 </ol>
-<h3 id="video-watching-machine">video watching machine</h3>
-<h4 id="constructing-video-watching-machine"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Constructing video watching machine</h4>
+</li>
+</ul>
+<h4 id="video-watching-machine">video watching machine</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p><!-- raw HTML omitted -->TODO<!-- raw HTML omitted -->  Constructing video watching machine</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -2696,13 +3037,21 @@ it contains much practical problems.</li>
 </ul>
 </li>
 </ul>
-<h3 id="practice">Practice</h3>
+</li>
+</ul>
+<h4 id="practice">Practice</h4>
 <p>The MIT course provides extensive lab practices.
 The completion and logging would be stored in <a href="#mit-6-dot-s081-lab-logs">MIT 6.S081 Lab Logs</a></p>
-<h2 id="mit-6-dot-s081-lab-logs">MIT 6.S081 Lab Logs</h2>
-<h3 id="lab-1-unix-utils">Lab 1: Unix utils</h3>
-<h4 id="reading-xv6-ch1"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> reading xv6 ch1</h4>
-<h4 id="xv6-system-calls">xv6 system calls</h4>
+<h3 id="mit-6-dot-s081-lab-logs">MIT 6.S081 Lab Logs</h3>
+<h4 id="lab-1-unix-utils">Lab 1: Unix utils</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->TODO<!-- raw HTML omitted -->  reading xv6 ch1</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>xv6 system calls</p>
 <table>
 <thead>
 <tr>
@@ -2800,7 +3149,12 @@ The completion and logging would be stored in <a href="#mit-6-dot-s081-lab-logs"
 </tr>
 </tbody>
 </table>
-<h4 id="fork">fork()</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>fork()</p>
 <p>create a child process</p>
 <!-- raw HTML omitted -->
 <ul>
@@ -2853,24 +3207,61 @@ if use <code>pid1=fork()</code> to store the pid, then all processes in the rout
 </ul>
 </li>
 </ul>
-<h4 id="wait">wait()</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>wait()</p>
 <p>wait() is companion of <a href="#fork">fork()</a>, parent block until childs finish.</p>
-<h4 id="exit">exit()</h4>
-<h4 id="file-descriptor">File Descriptor</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>exit()</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>File Descriptor</p>
 <p>it&rsquo;s an integer.
 like, 0 - standard in, 1 - standard out, 2 - standard error</p>
-<h4 id="read">read()</h4>
-<h4 id="write">write()</h4>
-<h4 id="file-system">File system</h4>
-<h4 id="pipe">Pipe</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>read()</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>write()</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>File system</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Pipe</p>
 <ul>
 <li>1 pipe for one way communication.</li>
 <li>the file</li>
 </ul>
-<h4 id="lab1-dot-2-sleep">lab1.2: sleep()</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>lab1.2: sleep()</p>
 <p>I see that you need 1 pipe for each direction of communication, 1 for P1 to P2, and 1 for P2 to P1
 Otherwise, when P1 finished writing and start to read, it could read the data it just write into the pipe.</p>
-<h4 id="lab1-dot-3-prime">lab1.3: prime()</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>lab1.3: prime()</p>
 <ul>
 <li>I see that procedure doing it is not promising: no</li>
 <li>I see that funciton layer_init don&rsquo;t work well. it don&rsquo;t tell whether the nums are prime.</li>
@@ -2938,7 +3329,12 @@ it should be not in the while loop for while loop is giving it chance to</li>
 
 </li>
 </ul>
-<h4 id="miscellaneous">miscellaneous</h4>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>miscellaneous</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -2994,11 +3390,15 @@ wrong number of args!usertrap(): unexpected scause 0x000000000000000f (store/AMO
 <p>a int? a char?</p>
 </li>
 </ul>
-<h2 id="address-space">Address space</h2>
+</li>
+</ul>
+<h3 id="address-space">Address space</h3>
 
       </div>
       
 
+
+   
 
    
 
