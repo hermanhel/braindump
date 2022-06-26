@@ -65,6 +65,18 @@ Broken link They present in 3 conditions:
     </item>
     
     <item>
+      <title>Herman the Machine</title>
+      <link>https://hermanhel.github.io/braindump/main/herman_the_machine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/herman_the_machine/</guid>
+      <description>Herman the Machine kept rolling on this string of liffe and time&amp;hellip;
+This is a state of art machine, meaning it&amp;rsquo;s an organic collection/flow of machines I use on daily basis, rather than a machine with 1 sole purpose.
+kernel machine :: Entry point and REPL The purpose of this machine is to provide a simple interface to integrate machines and principles into my line of life.
+The band holding my life and machines, principles, and roles.</description>
+    </item>
+    
+    <item>
       <title>Inbox</title>
       <link>https://hermanhel.github.io/braindump/inbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -225,6 +237,19 @@ Relation schema Definition of a relation Contains:</description>
       <description>style choice is a decisive layer on top of a Descriptive perspective to enable people (often artists) to make decision (on techniques), in order to create concrete work.
 inclusive standard usually, standards are exclusive, to make decision definite and unique. e.g.: in technology, standards are better overall performance, and on this dimension, there are no parallel consistent standard like leeser overall performance.
 Style, on the other hand, are disigned for Descriptive perspectives, which often with lesser objectives in better decision making, but cirtain effects to achieve.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Plan</title>
+      <link>https://hermanhel.github.io/braindump/main/20211011025228-weekly_plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/20211011025228-weekly_plan/</guid>
+      <description>This machine is for Weekly Plan
+Schedule The Weekly Plan Machine call scheduled on every Saturday night Change if needed
+TODOWeekly Plan :LAST_REPEAT: [2022-03-18 Fri 16:46]Make Weekly Plan According to this machine
+Flow 1. Assign time in [role-line-diet-machine] hierachy Normally 1 week I have about 8*5+16*2 = 72h free time.(16*7=112h in holidays) (upper limit). Balance time allocated to each role like:
+   Roles Artist Engineer Athlete Scholar Neuralscientist     Time 20 20 12 10 10       Roles Artist Engineer Athlete Scholar Neuralscientist     Time 30 30 16 18 18    In each role, balance time allocation in lines, and then machines according to the current diet in line.</description>
     </item>
     
     <item>
