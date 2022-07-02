@@ -298,6 +298,26 @@ window.store = {
     
     
     
+    "https:\/\/hermanhel.github.io\/braindump\/tags\/project\/": {
+        
+        "title": "project",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/tags\/project\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/project\/": {
+        
+        "title": "Projects",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/project\/"
+    },
+    
+    
+    
     "https:\/\/hermanhel.github.io\/braindump\/reference\/": {
         
         "title": "References",
@@ -354,6 +374,16 @@ window.store = {
         "tags": [],
         "content": "", 
         "url": "https:\/\/hermanhel.github.io\/braindump\/tags\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/project\/tetris-project\/": {
+        
+        "title": "Tetris Project",
+        "tags": ["machine","project",],
+        "content": "This project my external mentor Jun Zhang instruct us 3 to gain experiance in software development (writing program).\nStatement of Requirement state representations field 10 * 20 grid field\nbricks 7 types of brricks, 19 possible brick shapes. 1 + 4 + 4 + 2 + 2 + 4 + 2\n   O L(l) L(r) Z(l) Z(r) T I     1 4 4 2 2 4 2    state which slots of the field is filled with bricks\n predicates brick-action-legal-p return t if the result of an action on brick is legal.(i.e., every slot of the brick is in an available slot)\nslot-available-p brick-land-p return true if the brick can\u0026rsquo;t go any deeper in the field\nfield-row-filled-p return true if the row is filled and can be exterminated.\ngame-over-p User Actions brick-move(move-left/move-right) brick-rotate brick-drop-imediately brick-drop-faster Game process score-count pass to it score count type:[:]\ntetris-speed[var] The speed of brick dropping is denoted 1 block per x ms\ntetris-speed-update brick-new generate new brick and place it on the init place\nfield-scan-for-filled-line return lines to eliminate\nAdditional functions tetris-pause-game tetris-score-board(check/save) flow chart digraph{ node [shape=box,style=rounded] a [label=\u0026#34;Entry:Game start\u0026#34;] b [label=\u0026#34;new brick generate from generation point\u0026#34;] c [label=\u0026#34;brick falls,\\nUser action change brick location\u0026#34;] d [label=\u0026#34;test: upper end higher than height of field?\u0026#34;] e [label=\u0026#34;test: can go deeper?\u0026#34;] g [label=\u0026#34;destroy filled rows and update the field\u0026#34;] f [label=\u0026#34;game over\u0026#34;] a -\u0026gt; b -\u0026gt; c -\u0026gt; e e -\u0026gt; c [label=\u0026#34;yes\u0026#34;] e -\u0026gt; d [label=\u0026#34;no\u0026#34;] d -\u0026gt; g [label=\u0026#34;yes\u0026#34;] d -\u0026gt; f [label=\u0026#34;no\u0026#34;] g -\u0026gt; b } ", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/project\/tetris-project\/"
     },
     
     

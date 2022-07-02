@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>Merge-sort</title>
+<html><title>Tetris Project</title>
 
 
 <meta charset="utf-8">
@@ -26,79 +26,89 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-        <h1>Merge-sort</h1>
-        <p>a <a href="/braindump/errors/">Divide &amp; conquer</a> algorithm to <a href="/braindump/errors/">sort</a> a seq.</p>
-<h2 id="algorithm">Algorithm</h2>
-<h3 id="1-dot-devide">1. [devide]</h3>
-<p>Represent the original seq by seq1 and seq2, where seq1 is seq[0..n/2], seq[n/2+1..n]</p>
-<h3 id="2-dot-conquer">2. [conquer]</h3>
-<ul>
-<li>[trivial condition] for a seq with 1 item, it&rsquo;s sorted self is it self</li>
-</ul>
-<h3 id="3-dot-combine-merge">3. [combine] merge</h3>
-<p>compare <code>car</code> of 2 ordered seq.
-if sorted desc.ly, append the largest one to the end of the result list.</p>
-<h2 id="proof">Proof</h2>
-<p>devide and conquer is trivial for merge-sort.</p>
-<h3 id="combine-merge">[combine] merge</h3>
-<ul>
-<li>objective: ensure that the result is strictly desc. (if sort desc.)
-<ul>
-<li>-&gt; ensure that the appended element is the correct one
-<ul>
-<li>correct one: smaller than before, larger than after</li>
-</ul>
-</li>
-<li>-&gt; ensure that the appended element is the largest in both seq1 and se2
-<ul>
-<li>[provided] seq1 and seq2 is sorted desc.
-<ul>
-<li>-&gt; <code>car</code> of seq1 and seq2 is larger than <code>cdr</code> or seq1 and seq2</li>
-<li>-&gt; if car(seq1) &gt; car(seq2), car(seq1) is larger than all ELT in seq2.</li>
-</ul>
-</li>
-<li>ensured.</li>
-</ul>
-</li>
-<li>ensured.</li>
-</ul>
-</li>
-</ul>
-<h2 id="code-example">Code Example</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(defun devide (seq)
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;devide a problem into 2 problems. Return the the combined solution of the 2 problems&#34;</span>
-</span></span><span style="display:flex;"><span>  (if (or (not seq)
-</span></span><span style="display:flex;"><span>	  (<span style="color:#a6e22e">=</span> (<span style="color:#a6e22e">length</span> seq) <span style="color:#ae81ff">1</span>))
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">;; when small enough to swallow</span>
-</span></span><span style="display:flex;"><span>      (conquer seq)
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;; otherwise, keep dividing</span>
-</span></span><span style="display:flex;"><span>    (my-merge (devide (seq-subseq seq <span style="color:#ae81ff">0</span> (<span style="color:#a6e22e">floor</span> (<span style="color:#a6e22e">/</span> (<span style="color:#a6e22e">length</span> seq) <span style="color:#ae81ff">2</span>))))
-</span></span><span style="display:flex;"><span>	   (devide (seq-subseq seq (<span style="color:#a6e22e">floor</span> (<span style="color:#a6e22e">/</span> (<span style="color:#a6e22e">length</span> seq) <span style="color:#ae81ff">2</span>)))))))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>(defun conquer (seq)
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;conquer the order of a length 1 seq&#34;</span>
-</span></span><span style="display:flex;"><span>  seq)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>(defun my-merge (seq1 <span style="color:#66d9ef">&amp;optional</span> seq2) <span style="color:#75715e">;;merge is defined in cl.el</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;merge 2 sorted seq&#34;</span>
-</span></span><span style="display:flex;"><span>  (setq result <span style="color:#66d9ef">nil</span>)
-</span></span><span style="display:flex;"><span>  (while (or seq1
-</span></span><span style="display:flex;"><span>	     seq2)
-</span></span><span style="display:flex;"><span>    (if (and seq1 seq2 (<span style="color:#a6e22e">&lt;</span> (<span style="color:#a6e22e">car</span> seq1) (<span style="color:#a6e22e">car</span> seq2))) <span style="color:#75715e">;;append have no side-effect</span>
-</span></span><span style="display:flex;"><span>	(progn (setq result (<span style="color:#a6e22e">append</span> result (<span style="color:#a6e22e">list</span> (<span style="color:#a6e22e">car</span> seq1))))
-</span></span><span style="display:flex;"><span>	       (pop seq1)) <span style="color:#75715e">;;append take seqs as argument</span>
-</span></span><span style="display:flex;"><span>      (progn (setq result (<span style="color:#a6e22e">append</span> result (<span style="color:#a6e22e">list</span> (<span style="color:#a6e22e">car</span> seq2))))
-</span></span><span style="display:flex;"><span>	     (pop seq2)) <span style="color:#75715e">;;append take seqs as argument</span>
-</span></span><span style="display:flex;"><span>      )
-</span></span><span style="display:flex;"><span>    (unless seq2 (progn (setq result (<span style="color:#a6e22e">append</span> result seq1))
-</span></span><span style="display:flex;"><span>	       (setq seq1 <span style="color:#66d9ef">nil</span>)))
-</span></span><span style="display:flex;"><span>    (unless seq1 (progn (setq result (<span style="color:#a6e22e">append</span> result  seq2))
-</span></span><span style="display:flex;"><span>	       (setq seq2 <span style="color:#66d9ef">nil</span>)))
-</span></span><span style="display:flex;"><span>    )
-</span></span><span style="display:flex;"><span>  result)
-</span></span><span style="display:flex;"><span><span style="color:#75715e">;;test</span>
-</span></span><span style="display:flex;"><span>(devide <span style="color:#f92672">&#39;</span>( <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span>))
-</span></span></code></pre></div>
+        <h1>Tetris Project</h1>
+        <p>This project my external mentor Jun Zhang instruct us 3 to gain experiance in software development (writing program).</p>
+<h2 id="statement-of-requirement">Statement of Requirement</h2>
+<h3 id="state-representations">state representations</h3>
+<h4 id="field">field</h4>
+<p>10 * 20 grid field</p>
+<h4 id="bricks">bricks</h4>
+<p>7 types of brricks, 19 possible brick shapes.
+1 + 4 + 4 + 2 + 2 + 4 + 2</p>
+<table>
+<thead>
+<tr>
+<th>O</th>
+<th>L(l)</th>
+<th>L(r)</th>
+<th>Z(l)</th>
+<th>Z(r)</th>
+<th>T</th>
+<th>I</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="state">state</h4>
+<p>which slots of the field is filled with bricks</p>
+<figure><img src="/ox-hugo/state.png" width="200px"/>
+</figure>
+
+<h3 id="predicates">predicates</h3>
+<h4 id="brick-action-legal-p">brick-action-legal-p</h4>
+<p>return t if the result of an action on brick is legal.(i.e., every slot of the brick is in an available slot)</p>
+<h4 id="slot-available-p">slot-available-p</h4>
+<h4 id="brick-land-p">brick-land-p</h4>
+<p>return true if the brick can&rsquo;t go any deeper in the field</p>
+<h4 id="field-row-filled-p">field-row-filled-p</h4>
+<p>return true if the row is filled and can be exterminated.</p>
+<h4 id="game-over-p">game-over-p</h4>
+<h3 id="user-actions">User Actions</h3>
+<h4 id="brick-move--move-left-move-right">brick-move(move-left/move-right)</h4>
+<h4 id="brick-rotate">brick-rotate</h4>
+<h4 id="brick-drop-imediately">brick-drop-imediately</h4>
+<h4 id="brick-drop-faster">brick-drop-faster</h4>
+<h3 id="game-process">Game process</h3>
+<h4 id="score-count">score-count</h4>
+<p>pass to it score count type:[:]</p>
+<h4 id="tetris-speed-var">tetris-speed[var]</h4>
+<p>The speed of brick dropping is denoted <code>1 block per x ms</code></p>
+<h4 id="tetris-speed-update">tetris-speed-update</h4>
+<h4 id="brick-new">brick-new</h4>
+<p>generate new brick and place it on the init place</p>
+<h4 id="field-scan-for-filled-line">field-scan-for-filled-line</h4>
+<p>return lines to eliminate</p>
+<h3 id="additional-functions">Additional functions</h3>
+<h4 id="tetris-pause-game">tetris-pause-game</h4>
+<h4 id="tetris-score-board--check-save">tetris-score-board(check/save)</h4>
+<h3 id="flow-chart">flow chart</h3>
+<pre tabindex="0"><code class="language-dot" data-lang="dot">digraph{
+	node [shape=box,style=rounded]
+	a [label=&#34;Entry:Game start&#34;]
+	b [label=&#34;new brick generate from generation point&#34;]
+	c [label=&#34;brick falls,\nUser action change brick location&#34;]
+	d [label=&#34;test: upper end higher than height of field?&#34;]
+	e [label=&#34;test: can go deeper?&#34;]
+	g [label=&#34;destroy filled rows and update the field&#34;]
+	f [label=&#34;game over&#34;]
+	a -&gt; b -&gt; c -&gt; e
+	e -&gt; c [label=&#34;yes&#34;]
+	e -&gt; d [label=&#34;no&#34;]
+	d -&gt; g [label=&#34;yes&#34;]
+	d -&gt; f [label=&#34;no&#34;]
+	g -&gt; b
+	}
+</code></pre>
       </div>
       
 

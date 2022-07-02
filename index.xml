@@ -260,6 +260,18 @@ Style, on the other hand, are disigned for Descriptive perspectives, which often
     </item>
     
     <item>
+      <title>Tetris Project</title>
+      <link>https://hermanhel.github.io/braindump/project/tetris-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/project/tetris-project/</guid>
+      <description>This project my external mentor Jun Zhang instruct us 3 to gain experiance in software development (writing program).
+Statement of Requirement state representations field 10 * 20 grid field
+bricks 7 types of brricks, 19 possible brick shapes. 1 + 4 + 4 + 2 + 2 + 4 + 2
+   O L(l) L(r) Z(l) Z(r) T I     1 4 4 2 2 4 2    state which slots of the field is filled with bricks</description>
+    </item>
+    
+    <item>
       <title>Weekly Plan</title>
       <link>https://hermanhel.github.io/braindump/main/20211011025228-weekly_plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
