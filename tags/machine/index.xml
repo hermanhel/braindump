@@ -23,10 +23,10 @@ Literature review pitfalls Generally, all notes are good as long as they are rel
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hermanhel.github.io/braindump/project/tetris-project/</guid>
-      <description>This project my external mentor Jun Zhang instruct us 3 to gain experiance in software development (writing program).
-Statement of Requirement state representations field 10 * 20 grid field
+      <description>Statement of Requirement state representations field 10 * 20 grid field
 bricks 7 types of brricks, 19 possible brick shapes. 1 + 4 + 4 + 2 + 2 + 4 + 2
-   O L(l) L(r) Z(l) Z(r) T I     1 4 4 2 2 4 2    state which slots of the field is filled with bricks</description>
+   O L(l) L(r) Z(l) Z(r) T I     1 4 4 2 2 4 2    state which slots of the field is filled with bricks
+ predicates brick-action-legal-p return t if the result of an action on brick is legal.</description>
     </item>
     
   </channel>

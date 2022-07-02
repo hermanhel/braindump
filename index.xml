@@ -64,10 +64,10 @@ Namely, you could find lots of ideas of this kind in
     
     <item>
       <title>Errors</title>
-      <link>https://hermanhel.github.io/braindump/errors/</link>
+      <link>https://hermanhel.github.io/braindump/braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/errors/</guid>
+      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
       <description>Whoops!Whoops! Whoops!Whoops!
 Whoops! It seems like you&amp;rsquo;ve clicked a Broken Link&amp;hellip;&amp;hellip;very&amp;hellip;naughty&amp;hellip;?
 Broken link They present in 3 conditions:
@@ -98,10 +98,10 @@ The band holding my life and machines, principles, and roles.</description>
     
     <item>
       <title>Inbox</title>
-      <link>https://hermanhel.github.io/braindump/inbox/</link>
+      <link>https://hermanhel.github.io/braindump/braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/inbox/</guid>
+      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
       <description>蘇格拉底詰問程序 將蘇格拉底詰問法寫成formulated的算法,然後像doctor一樣實施,讓大家可以自己嘗試被詰問.
 *
 Document util conversion Pandoc pandoc is a program that translate a variety of formats sanely to another. written in haskell.
@@ -218,10 +218,10 @@ Kernel have filesystem, process management, memory management&amp;hellip;codes.
     
     <item>
       <title>Relational Database</title>
-      <link>https://hermanhel.github.io/braindump/20220509210234-relational_database/</link>
+      <link>https://hermanhel.github.io/braindump/braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/20220509210234-relational_database/</guid>
+      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
       <description>Relational Model Relation table with columns and rows records(Tuples) with common attributes
 Attribute named column
          attribute 1 attrbute 2    Domain allowable values for Attribute e.g: Age ==&amp;gt; Positive Integer
@@ -265,10 +265,10 @@ Style, on the other hand, are disigned for Descriptive perspectives, which often
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hermanhel.github.io/braindump/project/tetris-project/</guid>
-      <description>This project my external mentor Jun Zhang instruct us 3 to gain experiance in software development (writing program).
-Statement of Requirement state representations field 10 * 20 grid field
+      <description>Statement of Requirement state representations field 10 * 20 grid field
 bricks 7 types of brricks, 19 possible brick shapes. 1 + 4 + 4 + 2 + 2 + 4 + 2
-   O L(l) L(r) Z(l) Z(r) T I     1 4 4 2 2 4 2    state which slots of the field is filled with bricks</description>
+   O L(l) L(r) Z(l) Z(r) T I     1 4 4 2 2 4 2    state which slots of the field is filled with bricks
+ predicates brick-action-legal-p return t if the result of an action on brick is legal.</description>
     </item>
     
     <item>
