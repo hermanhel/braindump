@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/main/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>big-medium-small</title>
+      <link>https://hermanhel.github.io/braindump/main/big_mediun_small/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/big_mediun_small/</guid>
+      <description>It&amp;rsquo;s an idea of creating shapes of the 3 sizes hierachy [Big-Medium-Small].
+dd ATTACH #+latex_</description>
+    </item>
+    
+    <item>
       <title>Binary-searching</title>
       <link>https://hermanhel.github.io/braindump/main/binary_searching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

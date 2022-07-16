@@ -48,6 +48,26 @@ window.store = {
     
     
     
+    "https:\/\/hermanhel.github.io\/braindump\/daily\/2022-07-10\/": {
+        
+        "title": "2022-07-10",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/daily\/2022-07-10\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/daily\/2022-07-13\/": {
+        
+        "title": "2022-07-13",
+        "tags": [],
+        "content": "TODOWrite a state-of-art of the system me. TODOImplement org-super-agenda into my configuration I need:\n Lines ACTIVE tagged with line and agenda. Project PROJ tagged with agenda. Maintainance TODO tagged with maintainance.  DONEInstalling using package! DONEWRite the template and replace org-agenda. (let ((org-super-agenda-groups  \u0026#39;( \t;;Today \t(:name \u0026#34;Today\u0026#34; \t:time-grid t \t) \t;;lines \t(:name \u0026#34;Lines\u0026#34; \t:and (:todo \u0026#34;ACTIVE\u0026#34; \t:tag (\u0026#34;line\u0026#34; \u0026#34;agenda\u0026#34;))) \t;;project \t(:name \u0026#34;Projects\u0026#34; \t:and (:todo \u0026#34;PROJ\u0026#34; \t:tag \u0026#34;agenda\u0026#34;) \t) \t;;maintainance \t(:name \u0026#34;Maintainance\u0026#34; \t:tag \u0026#34;maintainance\u0026#34;) \t) \t))  (org-agenda nil \u0026#34;a\u0026#34;) \t) TODOanother test maintainance TODOtest for tommorow DONEFind this package working not to my imaginiation The filter that is implicitly applied first is the date, that is, it only work on items collected by org-agenda.\nPROJ project test agenda TODOtest project task DONERun first thing first machine  Engineer Artist Athlete Neuralscientist   end\nTODOIntegrate my org-roam settings fully into Doom emacs. TODOCraft Experiment machine and start the first experiment experiment on the outcome of 111222333 and 123123123 schedule pattern on algorithm studying\n111222333 Invest full time on 1 algorithm until it get through and wrote tutorial(s) about it.\n123123123 Suggest a algorithm study includes [Idea/Math|Implementation|Tutorial|\u0026hellip;deeper intuition\u0026hellip;] stages, Do 1 stage each time, and interleave algorithms, like [algo1 Idea|algo2 Idea|algo3 Idea| algo1 Implementation|algo2 Implementation\u0026hellip;.]\noutcome It\u0026rsquo;s hard to score understanding on an algorithm, so the outcome is measured by the time it cost before a decent tutorial/article about the algorithm is written. The smaller the time is, the greater the effectiveness.\nScoring and Timer When you can score a thing\u0026rsquo;s percentage of completancy, the thing is accumulated, many things, so it\u0026rsquo;s efficiency.\nWhen you can only record time of a thing\u0026rsquo;s completion, and have no definite idea how to evaluate how long it will take before the thing is done, then it\u0026rsquo;s a whole, and it\u0026rsquo;s effectiveness\n", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/daily\/2022-07-13\/"
+    },
+    
+    
+    
     "https:\/\/hermanhel.github.io\/braindump\/tags\/algorithm\/": {
         
         "title": "algorithm",
@@ -58,12 +78,52 @@ window.store = {
     
     
     
+    "https:\/\/hermanhel.github.io\/braindump\/tags\/article\/": {
+        
+        "title": "article",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/tags\/article\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/articles\/": {
+        
+        "title": "Articles",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/articles\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/main\/big_mediun_small\/": {
+        
+        "title": "big-medium-small",
+        "tags": [],
+        "content": "It\u0026rsquo;s an idea of creating shapes of the 3 sizes hierachy [Big-Medium-Small].\ndd ATTACH #+latex_\n", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/main\/big_mediun_small\/"
+    },
+    
+    
+    
     "https:\/\/hermanhel.github.io\/braindump\/main\/binary_searching\/": {
         
         "title": "Binary-searching",
         "tags": ["algorithm",],
         "content": "Binary searching is a searching algorithm for sorted data.\nInput proposition  sorted list  Algorithm Algorithm B (Binary-search) With given sorted seq S, find POS of value ELT in S.\n B1. [Middle value] Find middle value MID of S, compare MID and ELT B2. [Change field] If MID \u0026gt; ELT, then change search region to the lesser side of MID of S B3. [recur] Repeat from B1, until S have length 1, where if MID \\(\\neq\\) ELT, then there\u0026rsquo;s no ELT in S.  ", 
         "url": "https:\/\/hermanhel.github.io\/braindump\/main\/binary_searching\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/articles\/boyer_moore_search_tutorial\/": {
+        
+        "title": "Boyer-Moore Search Tutorial",
+        "tags": ["tutorial","article",],
+        "content": "Boyer-Moore String Search 算法是很快的字符串搜索算法\n想法 Boyer-Moore 算法的想法很简单:对齐后从后[P的末尾;S与P对齐位置的末尾]往前找mismatch, 在发生mismatch的时候,把整个pattern shift到可以match的一个位置.\n   S A B C A A B D     P    A B D    P     A B D         +     像上面这种情况, P[2]=D 和 S[5]=B 发生了 Mismatch, 就把P向右移动到P中右数第一个B和 S[5]=B 对齐,然后再重新开始从后往前搜索Mismatch.\n可以match的一个位置 这个知识显然来自P字符串.在Boyer-Moore算法中这个知识被储存在一个数组D中.D的长度是所有可能出现在 S 中的字符的数量,也就是说整个字符集中的每个字符都有一个对应的D的entry.\n这个知识的计算规则如下:\n 对于出现在P中的X,这个位置是最后一个X的位置[在P中] 对于未出现在P中的X,没有这个位置,将整个P移到mismatch发生位置的右边(即看作这个位置为-1).  大多数实现里这个位置的表示是P中最后一个X距离字符串末位的距离,如 “ABCD” 中,C对应的这个位置是用 1 来表示.不过 M-1 = 4-1 = 3 也没问题, 知识总量没变, 使用了另外的mapping, 要确认之后的mapping是对应的就OK.\n不过在 D 中不能出现 0 (距离) / M (位置), 因为 0费是危险的设计 存在0(或M)的 D 和之后的算法所张出的状态空间里会存在 “P一动不动” 的状态, 因为结束条件是P走完或者S走完,如果在P走不完,S在中间,P又一动不动,就会有无限的 斩杀 循环.\n结束条件  P走完 因为我们“走”过P和S对齐的位置的时候是在搜索mismatch, 所以P走完就是发现了一个Full match. 此时S中对齐的位置就是P的一个Full match的位置 S走完 同上,如果S走完都没发现Full match, 就是没有Full match.  Code # example of P and S S = \u0026#34;Herman is truely hot and handsome and wise and wit scholar.\u0026#34; P = \u0026#34;wise and wit\u0026#34; #end example #init the lengths N,M = len(S),len(P) #init D D = {}  def makeTable(P:str):  for i in range(0,M-1): #走一遍P,但是不走到P[M-1].[1] \tD[P[i]] = M - i - 1 #做 P[i] : M - i - 1 的Map. Key是P[i], Val是P[i]到末尾的距离. 注意到P[M-2] = 1. \t# 后面的occurance会覆盖前面的. 所以留下来的是最后的occurance def findLastOccurance(C:str):  # 套在字典D的外面,给D里没有的key提供一个default值, M(向右移一整个P那么多)  if not(D.get(C) is None): \treturn D.get(C)  else: \treturn M  def search(P:str,S:str):  #init  i,j,k = M,M,M #i:S上,P的尾巴对齐的位置(S[i-1]=P[M-1]). j:P上的comparison point. k:I上的comparison point.  while i \u0026lt; N and j \u0026gt; 0: # 结束条件: S走完(i\u0026gt;=N)或者P走完(j=0) \t#因为i、j、k都是从M开始,所以比较项的index都是i-1,j-1,k-1.如果是index从0开始的语言或者i,j,k从M-1开始,就是i,j,k,条件中的不等也要加入等于. \tif S[k-1] == P[j-1]: \t#发生Match时:往前走一格 \tj -= 1 \tk -= 1 \telse: \t#发生Mismatch:把P上离尾巴最近的一个P[x]=S[i-1]拽过来 [2]  \ti = i + findLastOccurance(S[i-1]) \tk = i \tj = M  if j == 0: \t#P走完了,有full match \treturn i #full match的右端位置  else: \t#P没走完,没有full match \treturn -1 makeTable(P) return search(P,S), S[search(P,S) - M:search(P,S)]  [1] 当P[M-1]上发生Match, 算法终止(full match); 当在S[i]=P[M-1]上发生Mismatch, 移动距离为0(无限循环+没什么用). [2] 这里是简化版的策略.完整的BM Search Bad Char Rule所寻找的是在 P[j-1] 前与 S[k-1] 相同的字符.这里,为了保证rightmost occurance所寻找的是在 S[x] 前的字符(即向右移动后能够对齐.如果所使用的P中的occurance在当前状态下在 S[k-1] 的左边,就得往左移动.), 将 x 设为 i-1 (对齐部分的最后一个字符).这种做法的效率可能低于精确的完整策略,但其正确性在后面得到了证明.  上面这段程序会给出 S 中的第一个 P 的full match右侧的index, 或者 -1, 如果 S 中没有 P 的full match.\n正确性 任何字符串搜索算法满足两个条件:\n 不漏 当前位置之前没有任何full match存在.(能搜好几次的算法是在搜到一次后在搜索算法外接了一个往后移一位重新开始搜索的机制) 已经匹配完成的部分是一个partial match 如果 P[0..4] 和 S[0..4] 已经匹配过,现在在比较 P[5] 和 S[5], 那么 P[0..4] 和 S[0..4] 满足 \\(\\forall k \\in [0,4]\\) , P[k] = S[k].  可以使用 partial match -\u0026gt; full match -\u0026gt; no full match 联系,写出以下三个相关联的predicates:\n partial match \\(P(i,j) = \\forall k : j\\le k \u0026lt; M:S_{i-M+k} = P_{k}\\) 从P的尾巴算起,到正在比较的P[j]和S[i-M+j],S和P的对应项都一样 full match \\(R(i)=P(i,0)\\) 从P的尾巴算起到头,S和P的对应项都一样 no full match \\(Q(i)=\\forall k: M \\le k \u0026lt; i : \\neg R(k)\\)  这样,我们算法的正确性就可以通过检查 \\(P(i,j)Q(i)\\) 来证明.\n初始化 P(i,M)和Q(M)都为真(因为上面取的不等)\nS[k-1]=P[j-1] Branch 假设在进入分支前P(i,j)Q(i)为真.\n Q(i) i 没有变, 所以Q(i)没有变 P(i,j) P(i,j)为真,即 \\(\\forall k : j\\le k \u0026lt; M:S_{i-M+k} = P_{k}\\) S[k-1]=P[j-1] =\u0026gt; 在改变k,j之前 P(i,j-1) 和 P(i,j)都为真, =\u0026gt; 在j = j-1后, P(i,j)为真.  else Branch 假设在进入分支前P(i,j)Q(i)为真.\n P(i,j) 在赋值后为P(i,M),为真 Q(i) 需要证明,Q(i+D[S[i-1]])在i更改之前成立.考虑到Q的定义和Q(i)为真,其等价为证明 \\(\\forall k: 1 \\le k \u0026lt; D[S[i-1]] - 1, \\neg R(i+k)\\)   根据表D制作的规则: 对一个字符 x \\(\\forall k: M - D\\le k \u0026lt; M - 1, P[k] \\ne x\\) 从尾巴数起,在这个距离以内都没有x\n  将 S[i-1] 代入 x: \\(\\forall k: M - D[S[i-1]] \\le k \u0026lt; M - 1, P[k] \\ne S[i-1]\\) 等价于 \\(\\forall h : 1 \\le h \u0026lt; D[S[i-1]], P[M-1-h] \\ne S[i-1]\\) 等价于 \\(\\forall h : 1 \\le h \\le D[S[i-1]], P[M-1-h] \\ne S[i-1]\\) 可推出 \\(\\forall h : 1 \\le h \\le D[S[i-1]], \\neg R(i+h)\\)\n简单来说,就是既然P[M-1]和S[i-1]mismatch,P中最近的一个S[i-1]又在P[D[S[i-1]]]的位置,到那里为止中间都没有S[i-1]这个字符,自然就没法有任何一个小于D[S[i-1]]的移动可以把P中的一个字符和S[i-1]对齐并发生Match,自然也就谈不上Full match了.\n对下面的情况, ABCB ABCD i = 4,在S[i-1]和P[M-1]发生了mismatch.  简单来说,就是既然P[M-1]:D 和S[i-1]:B mismatch,P中最近的一个B又在P[M - D[S[i-1]] - 1] = P[1] :B 的位置,到那里为止中间都没有S[i-1]:B 这个字符,自然就没法有任何一个小于D[S[i-1]] = 2的移动可以把P中的一个字符:{C,D}(小于二的移动可以和S[i-1]对齐的 P中字符的集合)和S[i-1]:B对齐并发生Match,自然也就谈不上Full match了.     ", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/articles\/boyer_moore_search_tutorial\/"
     },
     
     
@@ -184,6 +244,16 @@ window.store = {
         "tags": [],
         "content": "Algorithm\nWhat\u0026rsquo;s covered in INT102 Big-O Divide \u0026amp; conquer Greedy Method Dynamic Programming Space-Time tradeoff P/NP Branch \u0026amp; Bound Horspool\u0026rsquo;s algorithm Bellman-Ford Algorithm Backtracking Branch \u0026amp; Bound UTS Deliver Plan Lectrue https://xjtlu.zhumu.com/j/6208331180\n DONELecture 1   DONELecture 2   DONELecture 3   DONELecture 4    DONELecture 5\n  Greedy Method\nBest move in each step. make for the current best choice\n  pro\n fast easy good      con\n good solution, but no the best      How to design\n          \u0026lt;!--list-separator--\u0026gt; - example \u0026lt;!--list-separator--\u0026gt; - Minimum spanning tree A graph G with weighted edges, from which a Tree is generated with all vertices of G with minimum weight. \u0026lt;!--list-separator--\u0026gt; - Prim's algorithm 1. define graph G(V,E) 2. Start state: V'={v0},E'={} 3. find the vn in V-V' that connect to any item in V' with the smallest weight. 4. add the vn into V', and the weight into E' \u0026lt;!--list-separator--\u0026gt; - time complexity - weight matrix : O(|V|2) - `adjacent lis` t ,and `priority queue` implemented by min-heap: O(|E|log(|V|)) \u0026lt;!--list-separator--\u0026gt; - kruskal;s algorithm 1. arrange the edges from smallest to largest weight 2. take from the lowest to largest, \u0026lt;!--list-separator--\u0026gt; - proof for correctnesss \u0026lt;!--list-separator--\u0026gt; - time complexity incidence matrix \u0026lt;!--list-separator--\u0026gt; - single-source shortest-path \u0026lt;!--list-separator--\u0026gt; - Dij's algorithm    DONELecture 6\n  Dynamic Programming(tabular method)\nF(n) = 1 when n = 0; F(n-1) + F(n-2) when n\u0026gt;2.\n  2 ways\n   recursive  from the last problem, to F(n) = F(n-1) + F(n-2) it\u0026rsquo;s a O(2^n)\n    accumulating  from the first problem, F(2) = F(1) + F(0) and build the whole thing in a[0], a[1], a[2]\u0026hellip;.. it\u0026rsquo;s a O(n)\n         DONELecture 7    DONELecture 8\n  Space-time-tradeoff\n  Input-enhancement\npreprocess the input to store info\n distribution counting sort   horspool algorithm for string search      pre-structuring\npreprocess the input to access easier\n       DONELecture 9    DONELedcture 10\n  NP problems\n  efficient\nan algorithm is efficient if:\n time bounded by a polynomial of its input size.O(N^3)         DONELecture 11   DONELecture 12   DONELecture 13  Tutorial  DONETutorial 1   DONETutorial 2   DONETutorial 3   DONETutorial 4   DONETutorial 5   DONETutorial 6   DONETutorial 7   DONETutorial 8   DONETutorial 9   DONETutorial 10   DONETutorial 11   DONETutorial 12   DONETutorial 13  DONEFinal exam DONEAss2 Method  take problem find related information I need create note and method to solve the problem, record in note publish write solution, in org. Next problem. if NULL, check for error, and submit.  exeuting   materials\nproblems : \u0026lt;/ox-hugo/INT102-Assignment2.pdf\u0026gt;\nsolutions :\n   DONEquestion 1: horspool\u0026rsquo;s algo   DONEquestion 2: bellman ford   DONEQuestion 3:   DONEQuestion 4   DONEQuestion 5   DONEQuestion 6  PAS CANC Self-learning The speed of the course and content doesn\u0026rsquo;t meet my need. I need it faster, and more advanced. go through the slides myself\n", 
         "url": "https:\/\/hermanhel.github.io\/braindump\/main\/20220224134654-int102\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/braindump\/": {
+        
+        "title": "KMP algorithm",
+        "tags": [],
+        "content": "Knuth-Morris-Pratt String Search Algorithm is a Fast String Search algorithm.\nFast Compared to the naive string search\n   index 0 1 2 3 4 5     Time A A A A A B   1 A A A B     2  A A A B    3   A A A B    In which the comparisons is performed on the indices [0,1,2,3,1,2,3,4,2,3,4,5]\nKMP\u0026rsquo;s idea :: Compare not the part that is already compared.    index 0 1 2 3 4 5     Time A A A A A B   1 A A A B     2  A A A B    3   A A A B    Ideally, No need to look back, compare on the indices [0,1,2,3,3,4,4,5]\nKMP\u0026rsquo;s Method :: An offset table D based on pattern Both versions use a table storing a value D[j] of where to go after spotting mismatch on S[i] and P[j]\nfrom\n   S A B C A B E     i   +      P A B E      j   +       to\n   S A B C A B E     i   +      P A B E      j +         Ver1 :: without -1 The simple version of KMP considered only string before the compared point.\n   S [A B C A B] C A B E     i      +      P [A B C A B] E      j      +       See, The sequence AB before compare point is compared and is exactly the first 2 char in P. Could move j to AB[C]ABE\n   S [A B C A B] C A B E     i      +      P [A B C A B] E      j   +          And Compare after, \u0026ldquo;C\u0026rdquo; = \u0026ldquo;C\u0026rdquo;, \u0026ldquo;A\u0026rdquo; = \u0026ldquo;A\u0026rdquo;\u0026hellip;\nTherefore, skipped 2 comparisons with S[1] and S[2] (skipped), and 2 comparisons with S[3], S[4] (compared). Faster!\nTabel in this senario should look like\u0026hellip;     A B C A B E     D[j] 0 0 0 1 2 X     X The last slot, in this case D[5] is never used. If match, then return; if no match, goto position D[4] D[j] The value of D[j] stands for the length of compared string. The knowledge comes from detecting identical suffix/prefix    S A B C [A B] C A B E     P A B C [A B] E      P    [A B] C A B E   Compare point      +        Usage The map from length of compared part to shift-to position[index] is trival enough to be identical. from    S A B C [A B] C A B E     i      5      P A B C [A B] E      j      5      P    [A B] C A B E    to\n   S A B C [A B] C A B E     i      5      P A B C [A B] E      P    [A B] C A B E   j      2         Ver2 :: with -1 The next version is slightly more complex, for it brought in the comparison point.\n  conditions\n  For P[j] = P[0] P[j] # S[i] \u0026lt;=\u0026gt; P[0] # S[i], so the latter comparison could be skipped.\n  For in between P chars\n   P A B C D [A B C] E     comparison point       +     let k denote the length of suffix/prefix counting the comparison point. e.g., for P[6]=C in the table above, k=3. P[j] # S[i] =\u0026gt; P[j-k+1]\u0026hellip;P[j] # S[i-k+1]\u0026hellip;S[i], so the latter comparisons could be skipped.\n  d\n  d\nTable in this senario should look like\u0026hellip;     A B C A B E     D[j] -1 0 0 -1 0 2     -1 P[j] = P[0] have D[j]=-1, to skip comparing with S[i]    S .. A B C D .. .. .. .. .. ..     P shift to 0     A B C A B E    P shift to -1      A B C A B E     0 in between chars When mismatch happen at P[4]=B, j would be shifted to 0, as no chance S[i-1]..S[i] would be AB, yet there are chance that S[i]=A. Cases are that in between chars happened to be the same as P[0], naturally the latter rule have higher priority. 2 length of identical suffix/prefix. the shift-to location.  d\nCodes Construct Offset Table Ver1 (setq S \u0026#39;(:a :b :c :a :b :c :a :b :e)) (setq P \u0026#39;(:a :b :c :a :b :e)) (defun tablev1 (P)  \u0026#34;return the ver1 table computed from P\u0026#34;  (let ((j 1) ;; start comparison at index 1 \t(k 0) ;; lenght of identical suffix/prefix is 0 originally \t(D (make-vector (length P) 0)))  \t(while (\u0026lt; j (length P)) \t(if (equal (nth j P) ;;P[j] \t(nth k P) ;;P[g(k)] where g(k) = k. \t;;g(k) map the length k to index right after that long of string \t;;e.g. AB[C]......AB[E]... \t;; k j \t;;so if under a scheme where arrays start with 1, g(k) = k + 1. \t) \t;;if P[j]=P[k], increment j and k, and assign D[j] the corresponding \t;;identical suffix/prefix length k. \t(progn (incf k) \t(aset D j k) \t(incf j) \t(message \u0026#34;inc\u0026#34;) \t) \t;; if P[j] # P[k], reset the found length to D[k] \t;; (shifting back to a place where a shorter identical suffix/prefix exist, if any, at P[k], for P[0]...P[k-1]), and restart the process \t(progn (incf j) \t(setq k (aref D k))) \t) \t) \tD \t)  ) (tablev1 P) Ver2 (defun tabelv2 (P)  \t) (tabelv2 P) Search ", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/braindump\/"
     },
     
     
@@ -358,6 +428,16 @@ window.store = {
     
     
     
+    "https:\/\/hermanhel.github.io\/braindump\/braindump\/": {
+        
+        "title": "String Search",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/braindump\/"
+    },
+    
+    
+    
     "https:\/\/hermanhel.github.io\/braindump\/main\/style_choice\/": {
         
         "title": "style choice",
@@ -384,6 +464,16 @@ window.store = {
         "tags": ["machine","project",],
         "content": "Statement of Requirement state representations field 10 * 20 grid field\nbricks 7 types of brricks, 19 possible brick shapes. 1 + 4 + 4 + 2 + 2 + 4 + 2\n   O L(l) L(r) Z(l) Z(r) T I     1 4 4 2 2 4 2    state which slots of the field is filled with bricks\n predicates brick-action-legal-p return t if the result of an action on brick is legal.(i.e., every slot of the brick is in an available slot)\nslot-available-p brick-land-p return true if the brick can\u0026rsquo;t go any deeper in the field\nfield-row-filled-p return true if the row is filled and can be exterminated.\ngame-over-p User Actions brick-move(move-left/move-right) brick-rotate brick-drop-imediately brick-drop-faster Game process score-count pass to it score count type:[:]\ntetris-speed[var] The speed of brick dropping is denoted 1 block per x ms\ntetris-speed-update brick-new generate new brick and place it on the init place\nfield-scan-for-filled-line return lines to eliminate\nAdditional functions tetris-pause-game tetris-score-board(check/save) flow chart digraph{ node [shape=box,style=rounded] a [label=\u0026#34;Entry:Game start\u0026#34;] b [label=\u0026#34;new brick generate from generation point\u0026#34;] c [label=\u0026#34;brick falls,\\nUser action change brick location\u0026#34;] d [label=\u0026#34;test: upper end higher than height of field?\u0026#34;] e [label=\u0026#34;test: can go deeper?\u0026#34;] g [label=\u0026#34;destroy filled rows and update the field\u0026#34;] f [label=\u0026#34;game over\u0026#34;] a -\u0026gt; b -\u0026gt; c -\u0026gt; e e -\u0026gt; c [label=\u0026#34;yes\u0026#34;] e -\u0026gt; d [label=\u0026#34;no\u0026#34;] d -\u0026gt; g [label=\u0026#34;yes\u0026#34;] d -\u0026gt; f [label=\u0026#34;no\u0026#34;] g -\u0026gt; b } ", 
         "url": "https:\/\/hermanhel.github.io\/braindump\/project\/tetris-project\/"
+    },
+    
+    
+    
+    "https:\/\/hermanhel.github.io\/braindump\/tags\/tutorial\/": {
+        
+        "title": "tutorial",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/hermanhel.github.io\/braindump\/tags\/tutorial\/"
     },
     
     

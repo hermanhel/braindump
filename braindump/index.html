@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>Inbox</title>
+<html><title>KMP algorithm</title>
 
 
 <meta charset="utf-8">
@@ -26,144 +26,718 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-        <h1>Inbox</h1>
-        <h2 id="蘇格拉底詰問程序">蘇格拉底詰問程序</h2>
-<p>將蘇格拉底詰問法寫成formulated的算法,然後像doctor一樣實施,讓大家可以自己嘗試被詰問.</p>
-<p>*</p>
-<h2 id="document-util">Document util</h2>
-<h3 id="conversion">conversion</h3>
-<h4 id="pandoc">Pandoc</h4>
-<p>pandoc is a program that translate a variety of formats <strong>sanely</strong> to another. written in haskell.</p>
-<!-- raw HTML omitted -->
-<ul>
-<li>
-<p>usage</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pandoc -s -f source.org -o output.docx
-</span></span></code></pre></div><p>-s
-: standalone. this flag make sure output.docx is complete
-without -s, pandoc may only generate body, ignore the head(in html).</p>
-</li>
-</ul>
-<h2 id="基本學習-學術-邏輯">基本學習[學術]邏輯</h2>
+        <h1>KMP algorithm</h1>
+        <p>Knuth-Morris-Pratt String Search Algorithm is a <strong>Fast</strong> <a href="/braindump/braindump/"> String Search</a> algorithm.</p>
+<h2 id="fast">Fast</h2>
+<p>Compared to the naive string search</p>
+<table>
+<thead>
+<tr>
+<th>index</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Time</td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+<p>In which the comparisons is performed on the indices
+[0,1,2,3,1,2,3,4,2,3,4,5]</p>
+<h2 id="kmp-s-idea-compare-not-the-part-that-is-already-compared-dot">KMP&rsquo;s idea :: Compare not the part that is already compared.</h2>
+<table>
+<thead>
+<tr>
+<th>index</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Time</td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+<p>Ideally, No need to look back, compare on the indices
+[0,1,2,3,3,4,4,5]</p>
+<h2 id="kmp-s-method-an-offset-table-d-based-on-pattern">KMP&rsquo;s Method :: An offset table D based on pattern</h2>
+<p>Both versions use a table storing a value D[j] of where to go after spotting mismatch on S[i] and P[j]</p>
+<p>from</p>
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i</td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td>A</td>
+<td>B</td>
+<td>E</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>j</td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>to</p>
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i</td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td>A</td>
+<td>B</td>
+<td>E</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>j</td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ver1-without-1">Ver1 :: without -1</h3>
+<p>The simple version of KMP considered only string before the compared point.</p>
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>[A</th>
+<th>B</th>
+<th>C</th>
+<th>A</th>
+<th>B]</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td>[A</td>
+<td>B</td>
+<td>C</td>
+<td>A</td>
+<td>B]</td>
+<td>E</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>j</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>See, The sequence AB before compare point is compared and is exactly the first 2 char in P. Could move j to AB[C]ABE</p>
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>[A</th>
+<th>B</th>
+<th>C</th>
+<th>A</th>
+<th>B]</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td>[A</td>
+<td>B</td>
+<td>C</td>
+<td>A</td>
+<td>B]</td>
+<td>E</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>j</td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>And Compare after, &ldquo;C&rdquo; = &ldquo;C&rdquo;, &ldquo;A&rdquo; = &ldquo;A&rdquo;&hellip;</p>
+<p>Therefore, skipped 2 comparisons with S[1] and S[2] (skipped), and 2 comparisons with S[3], S[4] (compared). Faster!</p>
+<h4 id="tabel-in-this-senario-should-look-like-dot-dot-dot">Tabel in this senario should look like&hellip;</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D[j]</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
 <dl>
-<dt>輸入-[braindump]-輸出</dt>
-<dd>從閱讀材料和他人的文章,輸入braindump,最後從braindump中輸出可能對別人也有用的內容.
-<ul>
-<li><strong>輸入:</strong> 發現自己沒想到過的東西,看看其他思路,站在巨人肩膀
-<ul>
-<li><strong>提供 [概念名字/目標]:</strong> 將什麼範圍中的什麼特點抽象,當成一個統一的概念來應對和提供相關proposition</li>
-<li><strong>提供 [一種想法]:</strong> 概念的定義,提供一些proposition&hellip;還有其他好玩的東西.</li>
-</ul>
-</li>
-<li><strong>braindump:</strong> 想像,抽象,解釋,規則化處理
-<ul>
-<li><strong>生成 [自己定義]:</strong> 對於[概念名字]所圈定的特點群,自己的解釋和定義.最好更精簡,更能夠聯繫到我的其他想法</li>
-<li><strong>與[一種想法]相對比:</strong> 是否完全?是否符合?是否理解?以及側重不同之處等等.</li>
-<li><strong>生成 [多維觀點]:</strong> 在尋找合適,可理解定義/proposition過程中統歸各種視點.[規則化處理]</li>
-<li><strong>生成 [自己假設]:</strong> 在解釋途中需要解釋原因[假設生成點];需要做出heuristic[假設生成點]決策(在多種路徑中選擇一條);「如果這樣&hellip;會怎樣?」的想像[假設生成點「&hellip;會這樣&hellip;」].
-<ul>
-<li><strong>進入[實驗機器]:</strong> 驗證[假設真偽],成為[新概念,假設,定義,陳述]</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>輸出:</strong> 學術貢獻,他人讀了之後能夠借鑑,給別人可以抄的實踐,老辦法用在不熟悉領域啟發新參數的介紹&hellip;
-<ul>
-<li>
-<p><strong>Futures:</strong> 在此次工作(思考,找文章,做實驗)中發現的不懂點/新問題/新假設/沒證實成功,只證實目前這種辦法不能工作,所以這個假設還要用另外方法來證實&hellip;</p>
-</li>
-<li>
-<p><strong>統歸脈絡:</strong> 一些概念[參數][觀察]之間有一些聯繫!</p>
-</li>
-<li>
-<p><strong>理論體系:</strong> 很大規模,也許在一些空間上完全的脈絡</p>
-</li>
-<li>
-<p><strong>模型想法:</strong> 可以這樣建立這個系統&hellip;但是只寫好最初步和大概的後續</p>
-</li>
-<li>
-<p><strong>老體系的新proposition:</strong></p>
-</li>
-<li>
-<p><strong>老體系在新field:</strong> 成果[效果如何],新參數的介紹可能(適應更genral的情況,很多時候是把hardcode的東西轉換成變量.)</p>
-</li>
-<li>
-<p><strong>新概念,假設,定義,陳述:</strong> 當然要經過初步的證實,來自進入了[實驗機器]的[自己假設].</p>
-</li>
-</ul>
-</li>
-</ul>
+<dt>X</dt>
+<dd>The last slot, in this case D[5] is never used.
+If match, then return; if no match, goto position D[4]</dd>
+<dt>D[j]</dt>
+<dd>The value of D[j] stands for the <strong>length</strong> of <em>compared</em> string.
+The knowledge comes from detecting identical <strong>suffix/prefix</strong>
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>[A</th>
+<th>B]</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P</td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>[A</td>
+<td>B]</td>
+<td>E</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td></td>
+<td></td>
+<td></td>
+<td>[A</td>
+<td>B]</td>
+<td>C</td>
+<td>A</td>
+<td>B</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Compare point</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </dd>
-<dt>Fact, Concept, Procedure</dt>
-<dd>對於學習[學術]研究內容的分類
-<ul>
-<li><strong>Fact:</strong> 觀察,數據,已有的陳述,歷史,</li>
-<li><strong>Concept:</strong> 從Fact中,抽取相似特徵群(好多好多Fact中都有這些特徵),經過抽象,想像之後腦子裡面想像現實中的如何運行最後投射出這些特徵.[如何運行]常常是一個原則/mapping,也就是模型.
-<ul>
-<li><strong>推論與實驗驗證:</strong> 在原則下,結合其它原則產生進一步推論.實驗驗證concept是否與現實同義/行為一致.如果concept本身很難驗證,就可以驗證推論.</li>
-</ul>
-</li>
-<li><strong>Procedure:</strong> 在Concept的原則下,為了達成一種<a href="%E6%9C%80%E5%A4%A7%E5%8C%96%E6%94%B6%E7%9B%8A?%E6%9C%80%E5%BF%AB%E9%80%9F?%E6%9C%80%E5%A4%A7%E5%80%BC?%E6%9C%80%E5%B0%8F%E5%80%BC?%E5%BE%A9%E5%90%88%E8%A1%A8%E7%8F%BE%E5%87%BD%E6%95%B8?">Performance</a>,通過預見原則指導下的現實結果,在實踐中遵守的Heuristic Instruction.任何的Procedure都是Heuristic的————對於各種原則、場合、決策的選擇,基本有alternative,或者一定會有更好的選擇.即使在Justification下,也不能否認這個空間.</li>
-</ul>
+<dt>Usage</dt>
+<dd>The map from length of <em>compared</em> part to shift-to position[index] is trival enough to be <code>identical</code>.
+from
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>[A</th>
+<th>B]</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>[A</td>
+<td>B]</td>
+<td>E</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>j</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td></td>
+<td></td>
+<td></td>
+<td>[A</td>
+<td>B]</td>
+<td>C</td>
+<td>A</td>
+<td>B</td>
+<td>E</td>
+</tr>
+</tbody>
+</table>
+<p>to</p>
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>[A</th>
+<th>B]</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>[A</td>
+<td>B]</td>
+<td>E</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td></td>
+<td></td>
+<td></td>
+<td>[A</td>
+<td>B]</td>
+<td>C</td>
+<td>A</td>
+<td>B</td>
+<td>E</td>
+</tr>
+<tr>
+<td>j</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </dd>
 </dl>
-<h2 id="標準">標準</h2>
-<p>自我覺知[靈肉分離/合一]
-:</p>
-<p>有趣
-:</p>
+<h3 id="ver2-with-1">Ver2 :: with -1</h3>
+<p>The next version is slightly more complex, for it brought in the <strong>comparison point</strong>.</p>
+<ul>
+<li>
+<p>conditions</p>
+<ul>
+<li>
+<p>For P[j] = P[0]
+P[j] # S[i] &lt;=&gt; P[0] # S[i], so the latter comparison could be skipped.</p>
+</li>
+<li>
+<p>For <em>in between</em> P chars</p>
+<table>
+<thead>
+<tr>
+<th>P</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>[A</th>
+<th>B</th>
+<th>C]</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>comparison point</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>let k denote the length of suffix/prefix counting the comparison point. e.g., for P[6]=C in the table above, k=3.
+P[j] # S[i] =&gt; P[j-k+1]&hellip;P[j] # S[i-k+1]&hellip;S[i], so the latter comparisons could be skipped.</p>
+</li>
+</ul>
+<p>d</p>
+</li>
+</ul>
+<p>d</p>
+<h4 id="table-in-this-senario-should-look-like-dot-dot-dot">Table in this senario should look like&hellip;</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>A</th>
+<th>B</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D[j]</td>
+<td>-1</td>
+<td>0</td>
+<td>0</td>
+<td>-1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
 <dl>
-<dt>可愛</dt>
-<dd>主要對於觀察和感覺</dd>
+<dt>-1</dt>
+<dd>P[j] = P[0] have D[j]=-1, to skip comparing with S[i]
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>..</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>..</th>
+<th>..</th>
+<th>..</th>
+<th>..</th>
+<th>..</th>
+<th>..</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P shift to 0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>A</td>
+<td>B</td>
+<td>E</td>
+<td></td>
+</tr>
+<tr>
+<td>P shift to -1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>A</td>
+<td>B</td>
+<td>E</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>0</dt>
+<dd><em>in between</em> chars
+When mismatch happen at P[4]=B, j would be shifted to 0, as no chance <code>S[i-1]..S[i]</code> would be <code>AB</code>, yet there are chance that S[i]=A.
+Cases are that <em>in between</em> chars happened to be the same as P[0], naturally the latter rule have higher priority.</dd>
+<dt>2</dt>
+<dd>length of identical suffix/prefix. the shift-to location.</dd>
 </dl>
-<p>冷靜[沉靜]
-:</p>
-<p>學者氣
-:</p>
-<p>積極[生成]
-:</p>
-<p>effective
-:</p>
-<p>實際[現實]
-:</p>
-<p>光亮[conditional]
-:</p>
-<p>Focused
-:</p>
-<p>腦袋清醒
-:</p>
-<dl>
-<dt>身形矯健</dt>
-<dd>優美,符合概念中的想像,</dd>
-</dl>
-<p>有節奏
-:</p>
-<dl>
-<dt>運動[主動]</dt>
-<dd>運動和靜止之中,在對於我的評估上,運動是更積極的標準.在對於機器的評價上則相反</dd>
-</dl>
-<h2 id="解構元素">解構元素</h2>
-<p>任何一個系統,都是它背後概念所提供的一種heuristic方案.當這些概念逐漸不被重視之後,人們也就出門右轉,轉移到新的系統.為了使這樣一個系統能夠是在heuritsic到optimization中提供一個更高視角的可能,應該為其提供一些解構的元素,提供一些衝突,和改變系統的可能,一些空位的卡槽.
-我想這個概念應該可以指導一種optimization,就是像在戲劇中不能只有一種說話方式一樣.現在的電視劇一碰到敏感話題就好像在寫小辯論文,聞風很謹慎,很一致&ndash;就好像是同一個聲音在說話.一種說法也許會說「這就是人民之聲啊!」.但是如果人民只有一種聲音,那麼人民於強權大概是一樣,這種聲音或許也失去更加符合現實,發現之前沒注意到的參量的機會.</p>
-<h2 id="machine-learning-based-on-continous-label-that-is-larger-than-last-and-less-than-last">machine learning based on continous label that is [larger than last] and [less than last]</h2>
-<h2 id="命名学">命名学</h2>
-<p>对概念进行命名时的一些策略</p>
-<h3 id="序号">序号</h3>
-<p><code>第一类杠杆,第二类杠杆</code>
-<code>第一类永动机</code>
-<code>热力学第一定律</code>
-很方便.难有具体想象.</p>
-<h3 id="概括字的组合">概括字的组合</h3>
-<p>像是win-win,win-lose, lose-lose,每个win和lose指代的是“(我)赢(他)输”.</p>
-<h2 id="眼睛疲劳和精神疲劳的相关">眼睛疲劳和精神疲劳的相关</h2>
-<p>总感觉眼睛累了之后很快精神也会觉得疲劳.可能和放松的时候首先注意放松眼部周围的肌肉有关系.
-多做眼保健操可以有更多精力用ww</p>
-<h2 id="context">context</h2>
-<p>learning和writing两个context,分别有一些特定的context-specific 原则&hellip;</p>
-<h2 id="decomposition">decomposition</h2>
-<p>像 <code>X,y=train_test_split(input,0.3)</code> 一样,有一个分类类别(decomposition)「所有实体可分为cat1,cat2,cat3」, 和一个实体的集合,那么很容易就对号入座.</p>
-<h2 id="没发现的知识-经验原则">没发现的知识:经验原则</h2>
-<p>想想看,昨天遇见什么场景,做了什么决定,然后有怎么样的结果?这个过程是一定的吗?还是有context的一定?实际上很难有随机性高到没法用的场景.</p>
+<p>d</p>
+<h2 id="codes">Codes</h2>
+<h3 id="construct-offset-table">Construct Offset Table</h3>
+<h4 id="ver1">Ver1</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq S <span style="color:#f92672">&#39;</span>(:a :b :c :a :b :c :a :b :e))
+</span></span><span style="display:flex;"><span>(setq P <span style="color:#f92672">&#39;</span>(:a :b :c :a :b :e))
+</span></span><span style="display:flex;"><span>(defun tablev1 (P)
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;return the ver1 table computed from P&#34;</span>
+</span></span><span style="display:flex;"><span>  (let ((j <span style="color:#ae81ff">1</span>) <span style="color:#75715e">;; start comparison at index 1</span>
+</span></span><span style="display:flex;"><span>	(k <span style="color:#ae81ff">0</span>) <span style="color:#75715e">;; lenght of identical suffix/prefix is 0 originally</span>
+</span></span><span style="display:flex;"><span>	(D (<span style="color:#a6e22e">make-vector</span> (<span style="color:#a6e22e">length</span> P) <span style="color:#ae81ff">0</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	(while (<span style="color:#a6e22e">&lt;</span> j (<span style="color:#a6e22e">length</span> P))
+</span></span><span style="display:flex;"><span>	  (if (<span style="color:#a6e22e">equal</span> (<span style="color:#a6e22e">nth</span> j P) <span style="color:#75715e">;;P[j]</span>
+</span></span><span style="display:flex;"><span>		     (<span style="color:#a6e22e">nth</span> k P) <span style="color:#75715e">;;P[g(k)] where g(k) = k.</span>
+</span></span><span style="display:flex;"><span>		     <span style="color:#75715e">;;g(k) map the length k to index right after that long of string</span>
+</span></span><span style="display:flex;"><span>		     <span style="color:#75715e">;;e.g. AB[C]......AB[E]...</span>
+</span></span><span style="display:flex;"><span>		     <span style="color:#75715e">;;        k          j</span>
+</span></span><span style="display:flex;"><span>		     <span style="color:#75715e">;;so if under a scheme where arrays start with 1, g(k) = k + 1.</span>
+</span></span><span style="display:flex;"><span>		     )
+</span></span><span style="display:flex;"><span>	      <span style="color:#75715e">;;if P[j]=P[k], increment j and k, and assign D[j] the corresponding</span>
+</span></span><span style="display:flex;"><span>	      <span style="color:#75715e">;;identical suffix/prefix length k.</span>
+</span></span><span style="display:flex;"><span>	      (progn (incf k)
+</span></span><span style="display:flex;"><span>		     (<span style="color:#a6e22e">aset</span> D j k)
+</span></span><span style="display:flex;"><span>		     (incf j)
+</span></span><span style="display:flex;"><span>		     (<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;inc&#34;</span>)
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>	    <span style="color:#75715e">;;    if P[j] # P[k], reset the found length to D[k]</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#75715e">;; (shifting back to a place where a shorter identical suffix/prefix exist, if any, at P[k], for P[0]...P[k-1]), and restart the process</span>
+</span></span><span style="display:flex;"><span>	    (progn (incf j)
+</span></span><span style="display:flex;"><span>	      (setq k (<span style="color:#a6e22e">aref</span> D k)))
+</span></span><span style="display:flex;"><span>	    )
+</span></span><span style="display:flex;"><span>	  )
+</span></span><span style="display:flex;"><span>	D
+</span></span><span style="display:flex;"><span>	)
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>(tablev1 P)
+</span></span></code></pre></div><h4 id="ver2">Ver2</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(defun tabelv2 (P)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>(tabelv2 P)
+</span></span></code></pre></div><h3 id="search">Search</h3>
 
       </div>
       
@@ -220,8 +794,6 @@ without -s, pandoc may only generate body, ignore the head(in html).</p>
    
 
    
-      
-   
 
    
 
@@ -245,18 +817,25 @@ without -s, pandoc may only generate body, ignore the head(in html).</p>
 
    
 
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
 
 
-  <div class="bl-section">
-    <h4>Links to this note</h4>
-    <div class="backlinks">
-      <ul>
-       
-          <li><a href="/braindump/main/20220328151029-operating_system/">Operating System</a></li>
-       
-     </ul>
-    </div>
-  </div>
 
 
       </div>

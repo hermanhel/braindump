@@ -19,6 +19,35 @@ rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions 
     </item>
     
     <item>
+      <title>2022-07-10</title>
+      <link>https://hermanhel.github.io/braindump/daily/2022-07-10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/daily/2022-07-10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2022-07-13</title>
+      <link>https://hermanhel.github.io/braindump/daily/2022-07-13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/daily/2022-07-13/</guid>
+      <description>TODOWrite a state-of-art of the system me. TODOImplement org-super-agenda into my configuration I need:
+ Lines ACTIVE tagged with line and agenda. Project PROJ tagged with agenda. Maintainance TODO tagged with maintainance.  DONEInstalling using package! DONEWRite the template and replace org-agenda. (let ((org-super-agenda-groups  &amp;#39;( 	;;Today 	(:name &amp;#34;Today&amp;#34; 	:time-grid t 	) 	;;lines 	(:name &amp;#34;Lines&amp;#34; 	:and (:todo &amp;#34;ACTIVE&amp;#34; 	:tag (&amp;#34;line&amp;#34; &amp;#34;agenda&amp;#34;))) 	;;project 	(:name &amp;#34;Projects&amp;#34; 	:and (:todo &amp;#34;PROJ&amp;#34; 	:tag &amp;#34;agenda&amp;#34;) 	) 	;;maintainance 	(:name &amp;#34;Maintainance&amp;#34; 	:tag &amp;#34;maintainance&amp;#34;) 	) 	))  (org-agenda nil &amp;#34;a&amp;#34;) 	) TODOanother test maintainance TODOtest for tommorow DONEFind this package working not to my imaginiation The filter that is implicitly applied first is the date, that is, it only work on items collected by org-agenda.</description>
+    </item>
+    
+    <item>
+      <title>big-medium-small</title>
+      <link>https://hermanhel.github.io/braindump/main/big_mediun_small/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/main/big_mediun_small/</guid>
+      <description>It&amp;rsquo;s an idea of creating shapes of the 3 sizes hierachy [Big-Medium-Small].
+dd ATTACH #+latex_</description>
+    </item>
+    
+    <item>
       <title>Binary-searching</title>
       <link>https://hermanhel.github.io/braindump/main/binary_searching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -27,6 +56,20 @@ rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions 
       <description>Binary searching is a searching algorithm for sorted data.
 Input proposition  sorted list  Algorithm Algorithm B (Binary-search) With given sorted seq S, find POS of value ELT in S.
  B1. [Middle value] Find middle value MID of S, compare MID and ELT B2. [Change field] If MID &amp;gt; ELT, then change search region to the lesser side of MID of S B3. [recur] Repeat from B1, until S have length 1, where if MID \(\neq\) ELT, then there&amp;rsquo;s no ELT in S.</description>
+    </item>
+    
+    <item>
+      <title>Boyer-Moore Search Tutorial</title>
+      <link>https://hermanhel.github.io/braindump/articles/boyer_moore_search_tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/articles/boyer_moore_search_tutorial/</guid>
+      <description>Boyer-Moore String Search 算法是很快的字符串搜索算法
+想法 Boyer-Moore 算法的想法很简单:对齐后从后[P的末尾;S与P对齐位置的末尾]往前找mismatch, 在发生mismatch的时候,把整个pattern shift到可以match的一个位置.
+   S A B C A A B D     P    A B D    P     A B D         +     像上面这种情况, P[2]=D 和 S[5]=B 发生了 Mismatch, 就把P向右移动到P中右数第一个B和 S[5]=B 对齐,然后再重新开始从后往前搜索Mismatch.
+可以match的一个位置 这个知识显然来自P字符串.在Boyer-Moore算法中这个知识被储存在一个数组D中.D的长度是所有可能出现在 S 中的字符的数量,也就是说整个字符集中的每个字符都有一个对应的D的entry.
+这个知识的计算规则如下:
+ 对于出现在P中的X,这个位置是最后一个X的位置[在P中] 对于未出现在P中的X,没有这个位置,将整个P移到mismatch发生位置的右边(即看作这个位置为-1).</description>
     </item>
     
     <item>
@@ -122,6 +165,17 @@ What&amp;rsquo;s covered in INT102 Big-O Divide &amp;amp; conquer Greedy Method 
   Greedy Method
 Best move in each step. make for the current best choice
   pro</description>
+    </item>
+    
+    <item>
+      <title>KMP algorithm</title>
+      <link>https://hermanhel.github.io/braindump/braindump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
+      <description>Knuth-Morris-Pratt String Search Algorithm is a Fast String Search algorithm.
+Fast Compared to the naive string search
+   index 0 1 2 3 4 5     Time A A A A A B   1 A A A B     2  A A A B    3   A A A B    In which the comparisons is performed on the indices [0,1,2,3,1,2,3,4,2,3,4,5]</description>
     </item>
     
     <item>
@@ -246,6 +300,15 @@ Tuple a row of a relation
 Degree the number of attributes of a Relation
 Cardinality number of Tuples in a Relation
 Relation schema Definition of a relation Contains:</description>
+    </item>
+    
+    <item>
+      <title>String Search</title>
+      <link>https://hermanhel.github.io/braindump/braindump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
+      <description></description>
     </item>
     
     <item>

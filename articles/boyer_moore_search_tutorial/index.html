@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html><title>Boyer-Moore Search Tutorial</title>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<link rel="stylesheet" href="https://hermanhel.github.io/braindump/css/main.min.291920189b1189fd3388c38fd9e8ccbdf24640f05f020c32e3da5ba83f9bd5d8.css"/>
+<body><header>
+    <a href="/" id="logo">
+    <svg id="Capa_1" enable-background="new 0 0 511.992 511.992" height="512" viewBox="0 0 511.992 511.992" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><g><path d="m256 420.826c0 38.345-11.844 68.545-49.991 68.014-27.744-.385-51.481-15.31-61.853-39.46-1.239-2.887-4.024-4.734-7.154-4.725-.07 0-.135 0-.201 0-47.474 0-75.537-26.171-75.537-73.882 0-5.633.542-11.138 1.568-16.468.62-3.229-.825-6.489-3.671-8.125-35.493-20.432-49.161-46.127-49.161-90.183 0-44.057 13.668-69.757 49.161-90.185 2.846-1.636 4.291-4.896 3.671-8.13-1.026-5.33-1.568-10.83-1.568-16.463 0-47.711 28.064-73.882 75.537-73.882h.201c3.13.009 5.915-1.837 7.154-4.729 10.372-24.145 34.109-39.069 61.853-39.455 38.15-.532 49.991 29.668 49.991 68.013" fill="#ff9eb1"/></g><g><g><g><path d="m256 91.166c0-38.344 11.844-68.545 49.991-68.014 27.744.385 51.481 15.31 61.853 39.46 1.239 2.887 4.024 4.734 7.154 4.724h.201c47.474 0 75.537 26.171 75.537 73.882 0 5.633-.542 11.138-1.568 16.468-.62 3.229.825 6.489 3.671 8.125 35.493 20.434 49.161 46.128 49.161 90.185s-13.668 69.756-49.161 90.185c-2.846 1.636-4.291 4.896-3.671 8.13 1.026 5.33 1.568 10.83 1.568 16.463 0 47.711-28.064 73.882-75.537 73.882h-.201c-3.13-.009-5.915 1.837-7.154 4.729-10.372 24.145-34.109 39.069-61.853 39.455-38.15.531-49.991-29.669-49.991-68.014" fill="#ff7d97"/></g></g><g><g><path d="m502 265.996c-4.193 0-7.984-2.713-9.407-6.636-1.419-3.912-.16-8.459 3.063-11.092 3.291-2.689 8.009-2.99 11.621-.758 3.568 2.205 5.404 6.578 4.478 10.669-1.02 4.501-5.126 7.817-9.755 7.817z"/></g></g></g><g><path d="m340.83 229.18h-58.013v-58.014h-53.634v58.014h-58.013v53.633h58.013v58.013h53.634v-58.013h58.013z" fill="#faf7f5"/></g></g><g><g><path d="m498.468 291.859c-5.141-2.02-10.945.508-12.965 5.648-6.442 16.389-18.055 28.727-37.649 40.005-6.513 3.746-9.932 11.253-8.505 18.689.921 4.783 1.388 9.686 1.388 14.572 0 41.792-22.662 63.882-65.537 63.882h-.225c-.938 0-1.864.074-2.771.217-15.031-4.92-23.796-20.93-19.661-36.479 1.42-5.337-1.757-10.815-7.094-12.234-5.333-1.418-10.814 1.756-12.234 7.094-5.958 22.405 4.241 45.396 23.384 56.443-9.583 17.791-28.602 28.836-50.748 29.145-11.303.146-19.802-2.743-26.011-8.867-9.184-9.057-13.84-25.592-13.84-49.148v-70h16.816c5.522 0 10-4.477 10-10v-48.014h48.014c5.522 0 10-4.477 10-10v-53.632c0-5.523-4.478-10-10-10h-48.014v-48.014c0-5.523-4.478-10-10-10h-16.816v-70c0-23.555 4.657-40.09 13.841-49.148 6.21-6.123 14.696-9.022 26.011-8.867 23.862.332 44.096 13.132 52.803 33.405.218.509.458 1.003.719 1.483-3.225 8.243-9.084 15.093-16.833 19.574-8.993 5.2-19.465 6.581-29.485 3.89-5.337-1.434-10.819 1.73-12.251 7.064-1.433 5.334 1.729 10.819 7.063 12.252 5.074 1.363 10.221 2.037 15.338 2.037 10.2 0 20.272-2.681 29.346-7.928 11.083-6.408 19.607-16.017 24.616-27.575 41.6.67 63.569 22.718 63.569 63.866 0 4.89-.467 9.794-1.389 14.582-1.427 7.426 1.991 14.933 8.502 18.678 19.572 11.267 31.176 23.584 37.625 39.936 1.552 3.934 5.318 6.334 9.306 6.333 1.221 0 2.462-.225 3.666-.7 5.138-2.026 7.66-7.834 5.634-12.972-7.943-20.141-22.201-35.773-44.801-49.086.967-5.521 1.457-11.155 1.457-16.772 0-52.114-31.48-83.391-84.288-83.876-12.157-26.863-38.963-43.753-70.318-44.189-16.67-.232-30.255 4.688-40.332 14.625-3.813 3.76-7.08 8.226-9.797 13.382-2.717-5.156-5.984-9.622-9.797-13.382-10.075-9.937-23.668-14.852-40.333-14.625-31.353.437-58.158 17.325-70.32 44.189-52.807.485-84.286 31.762-84.286 83.876 0 5.617.49 11.253 1.458 16.771-37.422 22.031-52.724 50.552-52.724 98.008 0 47.451 15.299 75.969 52.721 98.006-.967 5.521-1.457 11.154-1.457 16.772 0 52.114 31.48 83.391 84.288 83.876 12.157 26.863 38.963 43.753 70.318 44.189.377.005.751.008 1.125.008 16.172 0 29.358-4.92 39.207-14.632 3.813-3.76 7.08-8.226 9.797-13.382 2.717 5.156 5.984 9.622 9.797 13.382 9.849 9.713 23.034 14.633 39.208 14.632.373 0 .749-.003 1.125-.008 31.352-.436 58.158-17.325 70.32-44.189 52.807-.485 84.286-31.762 84.286-83.876 0-5.617-.49-11.253-1.458-16.772 22.634-13.329 36.901-28.989 44.838-49.178 2.022-5.14-.507-10.945-5.647-12.966zm-215.652-52.679h48.014v33.633h-48.014c-5.522 0-10 4.477-10 10v48.014h-33.633v-48.014c0-5.523-4.477-10-10-10h-48.013v-33.633h48.014c5.523 0 10-4.477 10-10v-48.014h33.633v48.014c-.001 5.523 4.477 10 9.999 10zm-50.657 230.794c-6.21 6.124-14.717 9.018-26.011 8.867-23.862-.331-44.096-13.132-52.803-33.405-.218-.509-.458-1.003-.719-1.483 3.225-8.243 9.085-15.093 16.833-19.574 8.992-5.2 19.463-6.581 29.485-3.89 5.337 1.434 10.819-1.73 12.251-7.064 1.433-5.333-1.73-10.819-7.064-12.251-15.188-4.08-31.059-1.988-44.684 5.891-11.083 6.408-19.607 16.017-24.616 27.575-41.6-.67-63.569-22.718-63.569-63.866 0-4.89.467-9.794 1.389-14.582 1.427-7.427-1.991-14.934-8.502-18.678-32.183-18.528-44.149-40.621-44.149-81.517 0-40.9 11.966-62.994 44.146-81.517 6.513-3.746 9.932-11.253 8.505-18.689-.921-4.783-1.388-9.686-1.388-14.572 0-41.792 22.662-63.882 65.537-63.882h.225c.938 0 1.864-.074 2.771-.217 15.031 4.92 23.796 20.93 19.661 36.479-1.42 5.337 1.757 10.815 7.094 12.234.861.229 1.726.338 2.577.338 4.422 0 8.467-2.956 9.657-7.432 5.958-22.405-4.241-45.396-23.384-56.443 9.583-17.791 28.602-28.836 50.748-29.145 11.267-.15 19.801 2.743 26.011 8.867 9.184 9.057 13.84 25.592 13.84 49.148v70h-16.816c-5.522 0-10 4.477-10 10v48.014h-48.014c-5.522 0-10 4.477-10 10v53.633c0 5.523 4.478 10 10 10h48.014v48.014c0 5.523 4.478 10 10 10h16.816v70c0 23.554-4.657 40.09-13.841 49.147z"/><path d="m139.699 228.227c-6.766 0-13.186 1.514-18.907 4.31-3.049-8.65-8.286-16.485-15.336-22.673-4.151-3.643-10.469-3.233-14.113.918-3.643 4.15-3.232 10.469.918 14.112 6.711 5.891 10.816 14.143 11.498 22.953-1.213 1.914-2.293 3.946-3.225 6.088-1.145 2.633-2.015 5.316-2.615 8.019-13.414 11.422-33.601 10.834-46.225-1.792-3.906-3.904-10.236-3.904-14.143 0-3.905 3.905-3.905 10.237 0 14.143 10.524 10.524 24.354 15.784 38.193 15.784 8.04 0 16.083-1.775 23.484-5.325 1.904 5.443 4.967 10.557 9.136 15.03.596.639 1.204 1.269 1.826 1.891 1.953 1.953 4.512 2.929 7.071 2.929 2.56 0 5.118-.976 7.071-2.929 3.905-3.905 3.905-10.237 0-14.143-.458-.458-.906-.922-1.342-1.389-6.26-6.716-7.799-15.778-4.118-24.241 2.878-6.616 9.86-13.686 20.826-13.686 5.522 0 10-4.477 10-10 .001-5.522-4.476-9.999-9.999-9.999z"/><path d="m387.667 287.543c-3.905 3.905-3.905 10.237 0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929c.622-.622 1.23-1.253 1.83-1.896 4.167-4.471 7.229-9.583 9.133-15.025 7.401 3.549 15.444 5.324 23.484 5.324 13.839 0 27.67-5.261 38.193-15.784 3.905-3.905 3.905-10.237 0-14.143-3.906-3.904-10.236-3.904-14.143 0-12.624 12.625-32.811 13.214-46.225 1.792-.6-2.702-1.47-5.386-2.615-8.019-.932-2.142-2.012-4.175-3.225-6.088.682-8.81 4.787-17.062 11.498-22.953 4.15-3.644 4.561-9.962.918-14.112-3.646-4.151-9.964-4.563-14.113-.918-7.05 6.189-12.287 14.023-15.336 22.673-5.721-2.796-12.141-4.31-18.907-4.31-5.523 0-10 4.477-10 10s4.477 10 10 10c10.966 0 17.948 7.07 20.826 13.686 3.681 8.463 2.142 17.525-4.114 24.237-.44.47-.888.935-1.346 1.393z"/></g></g></g></svg>
+  </a>
+  <h3 class="site-title">Herman&#39;s place</h3><form id="search"
+    action='https://hermanhel.github.io/braindump/search/' method="get">
+    <label hidden for="search-input">Search site</label>
+    <input type="text" id="search-input" name="query"
+    placeholder="Type here to search">
+    <input type="submit" value="search">
+</form>
+</header>
+
+<div class="grid-container">
+  <div class="grid">
+    <div class="page" data-level="1">
+      <div class="content">
+        <h1>Boyer-Moore Search Tutorial</h1>
+        <p>Boyer-Moore <a href="/braindump/braindump/">String Search</a> 算法是很快的字符串搜索算法</p>
+<h2 id="想法">想法</h2>
+<p>Boyer-Moore 算法的想法很简单:对齐后从后[P的末尾;S与P对齐位置的末尾]往前找mismatch, 在发生mismatch的时候,把整个pattern shift到<a href="#%E5%8F%AF%E4%BB%A5match%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE">可以match的一个位置</a>.</p>
+<table>
+<thead>
+<tr>
+<th>S</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>A</th>
+<th>A</th>
+<th>B</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P</td>
+<td></td>
+<td></td>
+<td></td>
+<td>A</td>
+<td>B</td>
+<td>D</td>
+<td></td>
+</tr>
+<tr>
+<td>P</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>A</td>
+<td>B</td>
+<td>D</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>像上面这种情况, <code>P[2]=D</code> 和 <code>S[5]=B</code> 发生了 Mismatch, 就把P向右移动到P中右数第一个B和 <code>S[5]=B</code> 对齐,然后再重新开始从后往前搜索Mismatch.</p>
+<h3 id="可以match的一个位置">可以match的一个位置</h3>
+<p>这个知识显然来自P字符串.在Boyer-Moore算法中这个知识被储存在一个数组D中.D的长度是所有可能出现在 <code>S</code> 中的字符的数量,也就是说整个字符集中的每个字符都有一个对应的D的entry.</p>
+<p>这个知识的计算规则如下:</p>
+<ul>
+<li>对于出现在P中的X,这个位置是最后一个X的位置[在P中]</li>
+<li>对于未出现在P中的X,没有这个位置,将整个P移到mismatch发生位置的右边(即看作这个位置为-1).</li>
+</ul>
+<p>大多数实现里这个位置的表示是P中最后一个X距离字符串末位的距离,如 <code>“ABCD”</code> 中,C对应的这个位置是用 <code>1</code> 来表示.不过 <code>M-1 = 4-1 = 3</code> 也没问题, 知识总量没变, 使用了另外的mapping, 要确认之后的mapping是对应的就OK.</p>
+<p>不过在 <code>D</code> 中不能出现 <code>0</code> (距离) / <code>M</code> (位置), 因为 <del>0费是危险的设计</del> 存在0(或M)的 <code>D</code> 和之后的算法所张出的状态空间里会存在 “P一动不动” 的状态, 因为<a href="#%E7%BB%93%E6%9D%9F%E6%9D%A1%E4%BB%B6">结束条件</a>是P走完或者S走完,如果在P走不完,S在中间,P又一动不动,就会有无限的 <del>斩杀</del> 循环.</p>
+<h3 id="结束条件">结束条件</h3>
+<dl>
+<dt>P走完</dt>
+<dd>因为我们“走”过P和S对齐的位置的时候是在搜索mismatch, 所以P走完就是发现了一个Full match. 此时S中对齐的位置就是P的一个Full match的位置</dd>
+<dt>S走完</dt>
+<dd>同上,如果S走完都没发现Full match, 就是没有Full match.</dd>
+</dl>
+<h3 id="code">Code</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># example of P and S</span>
+</span></span><span style="display:flex;"><span>S <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Herman is truely hot and handsome and wise and wit scholar.&#34;</span>
+</span></span><span style="display:flex;"><span>P <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wise and wit&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#end example</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#init the lengths</span>
+</span></span><span style="display:flex;"><span>N,M <span style="color:#f92672">=</span> len(S),len(P)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#init D</span>
+</span></span><span style="display:flex;"><span>D <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">makeTable</span>(P:str):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,M<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>): <span style="color:#75715e">#走一遍P,但是不走到P[M-1].[1]</span>
+</span></span><span style="display:flex;"><span>	D[P[i]] <span style="color:#f92672">=</span> M <span style="color:#f92672">-</span> i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e">#做 P[i] : M - i - 1 的Map. Key是P[i], Val是P[i]到末尾的距离. 注意到P[M-2] = 1.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># 后面的occurance会覆盖前面的. 所以留下来的是最后的occurance</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findLastOccurance</span>(C:str):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 套在字典D的外面,给D里没有的key提供一个default值, M(向右移一整个P那么多)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span>(D<span style="color:#f92672">.</span>get(C) <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> D<span style="color:#f92672">.</span>get(C)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> M
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search</span>(P:str,S:str):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#init</span>
+</span></span><span style="display:flex;"><span>    i,j,k <span style="color:#f92672">=</span> M,M,M <span style="color:#75715e">#i:S上,P的尾巴对齐的位置(S[i-1]=P[M-1]). j:P上的comparison point. k:I上的comparison point.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> N <span style="color:#f92672">and</span> j <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>: <span style="color:#75715e"># 结束条件: S走完(i&gt;=N)或者P走完(j=0)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#因为i、j、k都是从M开始,所以比较项的index都是i-1,j-1,k-1.如果是index从0开始的语言或者i,j,k从M-1开始,就是i,j,k,条件中的不等也要加入等于.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> S[k<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> P[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>	    <span style="color:#75715e">#发生Match时:往前走一格</span>
+</span></span><span style="display:flex;"><span>	    j <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	    k <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>	    <span style="color:#75715e">#发生Mismatch:把P上离尾巴最近的一个P[x]=S[i-1]拽过来 [2]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	    i <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> findLastOccurance(S[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>	    k <span style="color:#f92672">=</span> i
+</span></span><span style="display:flex;"><span>	    j <span style="color:#f92672">=</span> M
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> j <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#P走完了,有full match</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> i <span style="color:#75715e">#full match的右端位置</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#P没走完,没有full match</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>makeTable(P)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> search(P,S), S[search(P,S) <span style="color:#f92672">-</span> M:search(P,S)]
+</span></span></code></pre></div><dl>
+<dt>[1]</dt>
+<dd>当P[M-1]上发生Match, 算法终止(full match); 当在S[i]=P[M-1]上发生Mismatch, 移动距离为0(无限循环+没什么用).</dd>
+<dt>[2]</dt>
+<dd>这里是简化版的策略.完整的BM Search Bad Char Rule所寻找的是在 <code>P[j-1]</code> 前与 <code>S[k-1]</code> 相同的字符.这里,为了保证rightmost occurance所寻找的是在 <code>S[x]</code> 前的字符(即向右移动后能够对齐.如果所使用的P中的occurance在当前状态下在 <code>S[k-1]</code> 的左边,就得往左移动.), 将 <code>x</code> 设为 <code>i-1</code> (对齐部分的最后一个字符).这种做法的效率可能低于精确的完整策略,但其正确性在<a href="#else-branch">后面</a>得到了证明.</dd>
+</dl>
+<p>上面这段程序会给出 <code>S</code> 中的第一个 <code>P</code> 的full match右侧的index, 或者 <code>-1</code>, 如果 <code>S</code> 中没有 <code>P</code> 的full match.</p>
+<h3 id="正确性">正确性</h3>
+<p>任何字符串搜索算法满足两个条件:</p>
+<dl>
+<dt>不漏</dt>
+<dd>当前位置之前没有任何full match存在.(能搜好几次的算法是在搜到一次后在搜索算法外接了一个往后移一位重新开始搜索的机制)</dd>
+<dt>已经匹配完成的部分是一个partial match</dt>
+<dd>如果 P[0..4] 和 S[0..4] 已经匹配过,现在在比较 P[5] 和 S[5], 那么 P[0..4] 和 S[0..4] 满足 \(\forall k \in [0,4]\) , P[k] = S[k].</dd>
+</dl>
+<p>可以使用 partial match -&gt; full match -&gt; no full match 联系,写出以下三个相关联的predicates:</p>
+<dl>
+<dt>partial match</dt>
+<dd>\(P(i,j) = \forall k : j\le k &lt; M:S_{i-M+k} = P_{k}\)
+从P的尾巴算起,到正在比较的P[j]和S[i-M+j],S和P的对应项都一样</dd>
+<dt>full match</dt>
+<dd>\(R(i)=P(i,0)\)
+从P的尾巴算起到头,S和P的对应项都一样</dd>
+<dt>no full match</dt>
+<dd>\(Q(i)=\forall k: M \le k &lt; i :  \neg R(k)\)</dd>
+</dl>
+<p>这样,我们算法的正确性就可以通过检查 \(P(i,j)Q(i)\) 来证明.</p>
+<h4 id="初始化">初始化</h4>
+<p>P(i,M)和Q(M)都为真(因为上面取的不等)</p>
+<h4 id="s-k-1-p-j-1-branch">S[k-1]=P[j-1] Branch</h4>
+<p>假设在进入分支前P(i,j)Q(i)为真.</p>
+<dl>
+<dt>Q(i)</dt>
+<dd>i 没有变, 所以Q(i)没有变</dd>
+<dt>P(i,j)</dt>
+<dd>P(i,j)为真,即 \(\forall k : j\le k &lt; M:S_{i-M+k} = P_{k}\)
+S[k-1]=P[j-1] =&gt; 在改变k,j之前 P(i,j-1) 和 P(i,j)都为真, =&gt; 在j = j-1后, P(i,j)为真.</dd>
+</dl>
+<h4 id="else-branch">else Branch</h4>
+<p>假设在进入分支前P(i,j)Q(i)为真.</p>
+<dl>
+<dt>P(i,j)</dt>
+<dd>在赋值后为P(i,M),为真</dd>
+<dt>Q(i)</dt>
+<dd>需要证明,Q(i+D[S[i-1]])在i更改之前成立.考虑到Q的定义和Q(i)为真,其等价为证明 \(\forall k: 1 \le k &lt; D[S[i-1]] - 1, \neg R(i+k)\)
+<ul>
+<li>
+<p><strong>根据表D制作的规则:</strong> 对一个字符 <code>x</code> \(\forall k: M - D<input checked="" disabled="" type="checkbox"> \le k &lt; M - 1, P[k] \ne x\)
+从尾巴数起,在这个距离以内都没有x</p>
+</li>
+<li>
+<p><strong>将 <code>S[i-1]</code> 代入 x:</strong> \(\forall k: M - D[S[i-1]] \le k &lt; M - 1, P[k] \ne S[i-1]\)
+等价于 \(\forall h : 1 \le h &lt; D[S[i-1]], P[M-1-h] \ne S[i-1]\)
+等价于 \(\forall h : 1 \le h \le D[S[i-1]], P[M-1-h] \ne S[i-1]\)
+可推出  \(\forall h : 1 \le h \le D[S[i-1]], \neg R(i+h)\)</p>
+<p>简单来说,就是既然P[M-1]和S[i-1]mismatch,P中最近的一个S[i-1]又在P[D[S[i-1]]]的位置,到那里为止中间都没有S[i-1]这个字符,自然就没法有任何一个小于D[S[i-1]]的移动可以把P中的一个字符和S[i-1]对齐并发生Match,自然也就谈不上Full match了.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>对下面的情况,
+</span></span><span style="display:flex;"><span>ABCB
+</span></span><span style="display:flex;"><span>ABCD
+</span></span><span style="display:flex;"><span>i = 4,在S[i-1]和P[M-1]发生了mismatch.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>简单来说,就是既然P[M-1]:D 和S[i-1]:B mismatch,P中最近的一个B又在P[M - D[S[i-1]] - 1] = P[1] :B 的位置,到那里为止中间都没有S[i-1]:B 这个字符,自然就没法有任何一个小于D[S[i-1]] = 2的移动可以把P中的一个字符:{C,D}(小于二的移动可以和S[i-1]对齐的
+</span></span><span style="display:flex;"><span>P中字符的集合)和S[i-1]:B对齐并发生Match,自然也就谈不上Full match了.
+</span></span></code></pre></div><!-- raw HTML omitted -->
+</li>
+</ul>
+</dd>
+</dl>
+
+      </div>
+      
+
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+
+
+
+      </div>
+   </div>
+</div>
+
+<script src="https://hermanhel.github.io/braindump/js/URI.js" type="text/javascript"></script>
+
+<script src="https://hermanhel.github.io/braindump/js/page.js" type="text/javascript"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

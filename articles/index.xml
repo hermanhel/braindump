@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Herman&#39;s place</title>
+    <link>https://hermanhel.github.io/braindump/articles/</link>
+    <description>Recent content in Articles on Herman&#39;s place</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Boyer-Moore Search Tutorial</title>
+      <link>https://hermanhel.github.io/braindump/articles/boyer_moore_search_tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/articles/boyer_moore_search_tutorial/</guid>
+      <description>Boyer-Moore String Search 算法是很快的字符串搜索算法
+想法 Boyer-Moore 算法的想法很简单:对齐后从后[P的末尾;S与P对齐位置的末尾]往前找mismatch, 在发生mismatch的时候,把整个pattern shift到可以match的一个位置.
+   S A B C A A B D     P    A B D    P     A B D         +     像上面这种情况, P[2]=D 和 S[5]=B 发生了 Mismatch, 就把P向右移动到P中右数第一个B和 S[5]=B 对齐,然后再重新开始从后往前搜索Mismatch.
+可以match的一个位置 这个知识显然来自P字符串.在Boyer-Moore算法中这个知识被储存在一个数组D中.D的长度是所有可能出现在 S 中的字符的数量,也就是说整个字符集中的每个字符都有一个对应的D的entry.
+这个知识的计算规则如下:
+ 对于出现在P中的X,这个位置是最后一个X的位置[在P中] 对于未出现在P中的X,没有这个位置,将整个P移到mismatch发生位置的右边(即看作这个位置为-1).</description>
+    </item>
+    
+  </channel>
+</rss>
