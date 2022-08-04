@@ -33,8 +33,8 @@ rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hermanhel.github.io/braindump/daily/2022-07-13/</guid>
-      <description>TODOWrite a state-of-art of the system me. TODOImplement org-super-agenda into my configuration I need:
- Lines ACTIVE tagged with line and agenda. Project PROJ tagged with agenda. Maintainance TODO tagged with maintainance.  DONEInstalling using package! DONEWRite the template and replace org-agenda. (let ((org-super-agenda-groups  &amp;#39;( 	;;Today 	(:name &amp;#34;Today&amp;#34; 	:time-grid t 	) 	;;lines 	(:name &amp;#34;Lines&amp;#34; 	:and (:todo &amp;#34;ACTIVE&amp;#34; 	:tag (&amp;#34;line&amp;#34; &amp;#34;agenda&amp;#34;))) 	;;project 	(:name &amp;#34;Projects&amp;#34; 	:and (:todo &amp;#34;PROJ&amp;#34; 	:tag &amp;#34;agenda&amp;#34;) 	) 	;;maintainance 	(:name &amp;#34;Maintainance&amp;#34; 	:tag &amp;#34;maintainance&amp;#34;) 	) 	))  (org-agenda nil &amp;#34;a&amp;#34;) 	) TODOanother test maintainance TODOtest for tommorow DONEFind this package working not to my imaginiation The filter that is implicitly applied first is the date, that is, it only work on items collected by org-agenda.</description>
+      <description>KILL Write a state-of-art of the system me. TODOImplement org-super-agenda into my configuration I need:
+ Lines ACTIVE tagged with line and agenda. Project PROJ tagged with agenda. Maintainance TODO tagged with maintainance.  DONEInstalling using package! DONEWRite the template and replace org-agenda. (let ((org-super-agenda-groups  &amp;#39;( 	;;Today 	(:name &amp;#34;Today&amp;#34; 	:time-grid t 	) 	;;lines 	(:name &amp;#34;Lines&amp;#34; 	:and (:todo &amp;#34;ACTIVE&amp;#34; 	:tag (&amp;#34;line&amp;#34; &amp;#34;agenda&amp;#34;))) 	;;project 	(:name &amp;#34;Projects&amp;#34; 	:and (:todo &amp;#34;PROJ&amp;#34; 	:tag &amp;#34;agenda&amp;#34;) 	) 	;;maintainance 	(:name &amp;#34;Maintainance&amp;#34; 	:tag &amp;#34;maintainance&amp;#34;) 	) 	))  (org-agenda nil &amp;#34;a&amp;#34;) 	) TODOanother test maintainance KILL test for tommorow DONEFind this package working not to my imaginiation The filter that is implicitly applied first is the date, that is, it only work on items collected by org-agenda.</description>
     </item>
     
     <item>
@@ -125,6 +125,21 @@ Broken link They present in 3 conditions:
       <guid>https://hermanhel.github.io/braindump/main/generation_experience/</guid>
       <description>experience with &amp;ldquo;generate/produce/create something&amp;rdquo; as paradigm/blueprint/storyline/objective.
 example  drawing when you dry to copy/analyse the object and create it on your paper writing when you are having a idea from scratch and examples, and are trying to put it to clear image/definition/illustration. playing jazz standard when you are finding ways to translate the lead sheet and finding riff/licks to use or improvising.  propositions you can do(or not do) anything in generation paradigm.</description>
+    </item>
+    
+    <item>
+      <title>Heapsort Tutorial</title>
+      <link>https://hermanhel.github.io/braindump/articles/heapsort_tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/articles/heapsort_tutorial/</guid>
+      <description>Heapsort is a very fast sort taking advantage of heap&amp;rsquo;s structure. 堆排序是一个很快的排序算法. 它基本上是利用堆这个信息结构正规很方便的特性.
+What is Heap? 什么是堆? Heap is any Full Binary Tree satisfying the following conditions: 堆是一个满足以下条件的满二叉树:
+  root &amp;lt; left_child, root &amp;lt; right_child.任何一个根结点 大于 其所有子节点 如果你使用一维数组的堆implementation, 那么数量关系可以表达为 \(h_i &amp;lt; h_{2i+1}, h_i &amp;lt; h_{2i+2}\)
+   最多只有一个叶节点没有兄弟节点的树.|上一层没放满就不能往下一层放的树.
+    堆的正规化 正规化说的很术语, 意思其实是指「插入一个新节点后, 保证这个新数据结构还是堆的procedure」. 这个过程也被叫做 sift, 是筛的意思.
+sift过程:
+ 选择一个节点, 如果它大于其子节点中小的那个, 将其与这个子节点交换. 对于新的位置的子节点, 做step 1, 直到做不了或者没有子节点.  a = [44, 53, 12, 42, 94, 18, 6, 67] #一个一维数组(还没正规成堆)  def sift(L:int, R:int): #L 和 R代表 筛的范围 [L,R] 或者 [L,R+1) 或者 a[L:R+1](在这篇文章里同时也是已经具备堆性质的范围)  i = L #指向现在考察范围内的根结点  j = 2*i + 1 #指向对应的一个子节点(左子节点)  while j &amp;lt;= R: 	if j &amp;lt; R and a[j+1] &amp;lt; a[j]: #防止a[j+1]超过数组上界 	j = j+1 #指向两个子节点中小的那个  	if a[i] &amp;gt; a[j]: #如果根节点大于小的子节点, 就交换它们 	m = a[i] 	a[i] = a[j] 	a[j] = m  	i = j #根结点转移到换过去的位置 	j = 2*i + 1 #指向对应的一个子节点(左子节点) 	#在这个函数里, 如果不用换了(项找到了它在堆里的位置), i和j还是会一直走到叶节点.</description>
     </item>
     
     <item>

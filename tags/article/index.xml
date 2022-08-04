@@ -20,5 +20,20 @@
  对于出现在P中的X,这个位置是最后一个X的位置[在P中] 对于未出现在P中的X,没有这个位置,将整个P移到mismatch发生位置的右边(即看作这个位置为-1).</description>
     </item>
     
+    <item>
+      <title>Heapsort Tutorial</title>
+      <link>https://hermanhel.github.io/braindump/articles/heapsort_tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hermanhel.github.io/braindump/articles/heapsort_tutorial/</guid>
+      <description>Heapsort is a very fast sort taking advantage of heap&amp;rsquo;s structure. 堆排序是一个很快的排序算法. 它基本上是利用堆这个信息结构正规很方便的特性.
+What is Heap? 什么是堆? Heap is any Full Binary Tree satisfying the following conditions: 堆是一个满足以下条件的满二叉树:
+  root &amp;lt; left_child, root &amp;lt; right_child.任何一个根结点 大于 其所有子节点 如果你使用一维数组的堆implementation, 那么数量关系可以表达为 \(h_i &amp;lt; h_{2i+1}, h_i &amp;lt; h_{2i+2}\)
+   最多只有一个叶节点没有兄弟节点的树.|上一层没放满就不能往下一层放的树.
+    堆的正规化 正规化说的很术语, 意思其实是指「插入一个新节点后, 保证这个新数据结构还是堆的procedure」. 这个过程也被叫做 sift, 是筛的意思.
+sift过程:
+ 选择一个节点, 如果它大于其子节点中小的那个, 将其与这个子节点交换. 对于新的位置的子节点, 做step 1, 直到做不了或者没有子节点.  a = [44, 53, 12, 42, 94, 18, 6, 67] #一个一维数组(还没正规成堆)  def sift(L:int, R:int): #L 和 R代表 筛的范围 [L,R] 或者 [L,R+1) 或者 a[L:R+1](在这篇文章里同时也是已经具备堆性质的范围)  i = L #指向现在考察范围内的根结点  j = 2*i + 1 #指向对应的一个子节点(左子节点)  while j &amp;lt;= R: 	if j &amp;lt; R and a[j+1] &amp;lt; a[j]: #防止a[j+1]超过数组上界 	j = j+1 #指向两个子节点中小的那个  	if a[i] &amp;gt; a[j]: #如果根节点大于小的子节点, 就交换它们 	m = a[i] 	a[i] = a[j] 	a[j] = m  	i = j #根结点转移到换过去的位置 	j = 2*i + 1 #指向对应的一个子节点(左子节点) 	#在这个函数里, 如果不用换了(项找到了它在堆里的位置), i和j还是会一直走到叶节点.</description>
+    </item>
+    
   </channel>
 </rss>

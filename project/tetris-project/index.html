@@ -73,7 +73,7 @@
 <p>return true if the row is filled and can be exterminated.</p>
 <h4 id="game-over-p">game-over-p</h4>
 <h3 id="user-actions">User Actions</h3>
-<h4 id="brick-move--move-left-move-right">brick-move(move-left/move-right)</h4>
+<h4 id="brick-transition--move-left-move-right">brick-transition(move-left/move-right)</h4>
 <h4 id="brick-rotate">brick-rotate</h4>
 <h4 id="brick-drop-imediately">brick-drop-imediately</h4>
 <h4 id="brick-drop-faster">brick-drop-faster</h4>
@@ -107,10 +107,132 @@
 	d -&gt; f [label=&#34;no&#34;]
 	g -&gt; b
 	}
-</code></pre>
+</code></pre><h2 id="statement-of-requirement-v2">Statement of Requirement v2</h2>
+<h3 id="introduction">Introduction</h3>
+<h4 id="purepose">Purepose</h4>
+<p>Implementing a GUI tetris game with Java</p>
+<h4 id="definitions">Definitions</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Bricks</p>
+<figure><img src="/ox-hugo/bricks.png" width="600px"/>
+</figure>
+
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Field</p>
+<p>10(col) * 20(row) grid field</p>
+</li>
+</ul>
+<h3 id="features">Features</h3>
+<h4 id="tetris-rules">Tetris rules</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Legal transition</p>
+<p>Any transition is a <em>legal transition</em> if every grid the brick would occupy after the transition is <em>empty</em>, and inside the field.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Horizontal move</p>
+<p>Legal transition retaining the rotation of the brick to left and right 1 grid is defined</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Vertical move</p>
+<p>Legal transition rataining the rotation of the brick to bottom 1 grid and <em>all grids to <a href="#land">Land</a></em> is defined</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Rotating</p>
+<p>Legal transition retaining the place of the brick to clockwise and counter-clockwise 90 degree is defined</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Falling</p>
+<p>Bricks falls at a <em>controled speed</em> automatically. The speed is represented as 1 grid to bottom per <code>fall-speed</code> ms.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Land</p>
+<p>When a Falling move is detected as a illegal transition, the brick lands at the place before the illegal falling move.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Row extermination</p>
+<p>When each grid of a row in the field is occupied, the row of grid would be exterminated, and all occupied grids above the row fall down a grid.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Game over</p>
+<p>When the highest occupied grid is above the given threshold or height of the field.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Brick generation</p>
+<p>Brick would be generated at a given place, default at middle top of the field.</p>
+</li>
+</ul>
+<h4 id="scoring">Scoring</h4>
+<p>Score is a metric of how hard a go of game had become at its end.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Score Criteria</p>
+<p>Score of 1 go of game grows at:</p>
+<ul>
+<li>Land</li>
+<li>Row extermination</li>
+</ul>
+<p>and depends on:</p>
+<ul>
+<li>shape(kind) of brick</li>
+<li>Falling speed</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Counting and Displaying score</p>
+<p>The score is updated after each land and row extermination, and displayed alongside the field</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>History</p>
+<p>Scores of past game would be recorded locally with time and name information.</p>
+</li>
+</ul>
+<h3 id="datas-and-representations">Datas and representations</h3>
+<h4 id="brick">Brick</h4>
+
       </div>
       
 
+
+   
 
    
 
