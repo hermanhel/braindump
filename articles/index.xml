@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Herman&#39;s place</title>
-    <link>https://hermanhel.github.io/braindump/articles/</link>
+    <link>/braindump/articles/</link>
     <description>Recent content in Articles on Herman&#39;s place</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/articles/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/braindump/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Boyer-Moore Search Tutorial</title>
-      <link>https://hermanhel.github.io/braindump/articles/boyer_moore_search_tutorial/</link>
+      <link>/braindump/articles/boyer_moore_search_tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/articles/boyer_moore_search_tutorial/</guid>
+      <guid>/braindump/articles/boyer_moore_search_tutorial/</guid>
       <description>Boyer-Moore String Search 算法是很快的字符串搜索算法
 想法 Boyer-Moore 算法的想法很简单:对齐后从后[P的末尾;S与P对齐位置的末尾]往前找mismatch, 在发生mismatch的时候,把整个pattern shift到可以match的一个位置.
    S A B C A A B D     P    A B D    P     A B D         +     像上面这种情况, P[2]=D 和 S[5]=B 发生了 Mismatch, 就把P向右移动到P中右数第一个B和 S[5]=B 对齐,然后再重新开始从后往前搜索Mismatch.
@@ -22,10 +22,10 @@
     
     <item>
       <title>Heapsort Tutorial</title>
-      <link>https://hermanhel.github.io/braindump/articles/heapsort_tutorial/</link>
+      <link>/braindump/articles/heapsort_tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/articles/heapsort_tutorial/</guid>
+      <guid>/braindump/articles/heapsort_tutorial/</guid>
       <description>Heapsort is a very fast sort taking advantage of heap&amp;rsquo;s structure. 堆排序是一个很快的排序算法. 它基本上是利用堆这个信息结构正规很方便的特性.
 What is Heap? 什么是堆? Heap is any Full Binary Tree satisfying the following conditions: 堆是一个满足以下条件的满二叉树:
   root &amp;lt; left_child, root &amp;lt; right_child.任何一个根结点 大于 其所有子节点 如果你使用一维数组的堆implementation, 那么数量关系可以表达为 \(h_i &amp;lt; h_{2i+1}, h_i &amp;lt; h_{2i+2}\)

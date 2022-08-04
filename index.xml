@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Good Morning! on Herman&#39;s place</title>
-    <link>https://hermanhel.github.io/braindump/</link>
+    <link>/braindump/</link>
     <description>Recent content in Good Morning! on Herman&#39;s place</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/braindump/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022-05-02*</title>
-      <link>https://hermanhel.github.io/braindump/daily/2022-05-02/</link>
+      <link>/braindump/daily/2022-05-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/daily/2022-05-02/</guid>
+      <guid>/braindump/daily/2022-05-02/</guid>
       <description>PROPERTIES: :ID: 4FBDA423-3258-4C4E-BBA1-408DCA2D036B
 rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions are:
   not finding:
@@ -20,39 +20,39 @@ rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions 
     
     <item>
       <title>2022-07-10</title>
-      <link>https://hermanhel.github.io/braindump/daily/2022-07-10/</link>
+      <link>/braindump/daily/2022-07-10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/daily/2022-07-10/</guid>
+      <guid>/braindump/daily/2022-07-10/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2022-07-13</title>
-      <link>https://hermanhel.github.io/braindump/daily/2022-07-13/</link>
+      <link>/braindump/daily/2022-07-13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/daily/2022-07-13/</guid>
+      <guid>/braindump/daily/2022-07-13/</guid>
       <description>KILL Write a state-of-art of the system me. TODOImplement org-super-agenda into my configuration I need:
  Lines ACTIVE tagged with line and agenda. Project PROJ tagged with agenda. Maintainance TODO tagged with maintainance.  DONEInstalling using package! DONEWRite the template and replace org-agenda. (let ((org-super-agenda-groups  &amp;#39;( 	;;Today 	(:name &amp;#34;Today&amp;#34; 	:time-grid t 	) 	;;lines 	(:name &amp;#34;Lines&amp;#34; 	:and (:todo &amp;#34;ACTIVE&amp;#34; 	:tag (&amp;#34;line&amp;#34; &amp;#34;agenda&amp;#34;))) 	;;project 	(:name &amp;#34;Projects&amp;#34; 	:and (:todo &amp;#34;PROJ&amp;#34; 	:tag &amp;#34;agenda&amp;#34;) 	) 	;;maintainance 	(:name &amp;#34;Maintainance&amp;#34; 	:tag &amp;#34;maintainance&amp;#34;) 	) 	))  (org-agenda nil &amp;#34;a&amp;#34;) 	) TODOanother test maintainance KILL test for tommorow DONEFind this package working not to my imaginiation The filter that is implicitly applied first is the date, that is, it only work on items collected by org-agenda.</description>
     </item>
     
     <item>
       <title>big-medium-small</title>
-      <link>https://hermanhel.github.io/braindump/main/big_mediun_small/</link>
+      <link>/braindump/main/big_mediun_small/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/big_mediun_small/</guid>
+      <guid>/braindump/main/big_mediun_small/</guid>
       <description>It&amp;rsquo;s an idea of creating shapes of the 3 sizes hierachy [Big-Medium-Small].
 dd ATTACH #+latex_</description>
     </item>
     
     <item>
       <title>Binary-searching</title>
-      <link>https://hermanhel.github.io/braindump/main/binary_searching/</link>
+      <link>/braindump/main/binary_searching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/binary_searching/</guid>
+      <guid>/braindump/main/binary_searching/</guid>
       <description>Binary searching is a searching algorithm for sorted data.
 Input proposition  sorted list  Algorithm Algorithm B (Binary-search) With given sorted seq S, find POS of value ELT in S.
  B1. [Middle value] Find middle value MID of S, compare MID and ELT B2. [Change field] If MID &amp;gt; ELT, then change search region to the lesser side of MID of S B3. [recur] Repeat from B1, until S have length 1, where if MID \(\neq\) ELT, then there&amp;rsquo;s no ELT in S.</description>
@@ -60,10 +60,10 @@ Input proposition  sorted list  Algorithm Algorithm B (Binary-search) With given
     
     <item>
       <title>Boyer-Moore Search Tutorial</title>
-      <link>https://hermanhel.github.io/braindump/articles/boyer_moore_search_tutorial/</link>
+      <link>/braindump/articles/boyer_moore_search_tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/articles/boyer_moore_search_tutorial/</guid>
+      <guid>/braindump/articles/boyer_moore_search_tutorial/</guid>
       <description>Boyer-Moore String Search 算法是很快的字符串搜索算法
 想法 Boyer-Moore 算法的想法很简单:对齐后从后[P的末尾;S与P对齐位置的末尾]往前找mismatch, 在发生mismatch的时候,把整个pattern shift到可以match的一个位置.
    S A B C A A B D     P    A B D    P     A B D         +     像上面这种情况, P[2]=D 和 S[5]=B 发生了 Mismatch, 就把P向右移动到P中右数第一个B和 S[5]=B 对齐,然后再重新开始从后往前搜索Mismatch.
@@ -74,20 +74,20 @@ Input proposition  sorted list  Algorithm Algorithm B (Binary-search) With given
     
     <item>
       <title>consumption experience</title>
-      <link>https://hermanhel.github.io/braindump/main/comsuption_experiance/</link>
+      <link>/braindump/main/comsuption_experiance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/comsuption_experiance/</guid>
+      <guid>/braindump/main/comsuption_experiance/</guid>
       <description>experience with &amp;ldquo;consuming a product&amp;rdquo; as paradigm/blueprint/storyline.
 product  product matter with corresponding usage/traditional(habitual) usage logic. When getting beer, drink it and get drunk; when look at meme picture, read the image and the word and understand it&amp;rsquo;s humour&amp;hellip;  consumption experience is controlled/directed by a cirtain product (like a bottle of wine, a dose of drug, a play, a game, a meme image&amp;hellip;). When you are under a consumption experience, the control over what you&amp;rsquo;re going to do lies little on you but the story told by the product.</description>
     </item>
     
     <item>
       <title>Decisive perspective</title>
-      <link>https://hermanhel.github.io/braindump/main/decisive_persipective/</link>
+      <link>/braindump/main/decisive_persipective/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/decisive_persipective/</guid>
+      <guid>/braindump/main/decisive_persipective/</guid>
       <description>A decisive perspective is one that prompt for decision.
 namely, you coudl find lots of ideas of this kind in:
  politics religions self-help materials business math/computer science (with conventional standard of performance) technology (performance)  example of highly decisive perspective Always go with blue: When it&amp;rsquo;s your decision to decide on a color, always go with blue. Here&amp;rsquo;s some feature of such a highly decisive idea.
@@ -96,10 +96,10 @@ namely, you coudl find lots of ideas of this kind in:
     
     <item>
       <title>Descriptive perspective</title>
-      <link>https://hermanhel.github.io/braindump/main/descriptive_perspective/</link>
+      <link>/braindump/main/descriptive_perspective/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/descriptive_perspective/</guid>
+      <guid>/braindump/main/descriptive_perspective/</guid>
       <description>A descriptive perspective is ideas that watch certain senario, maybe trying to understand the mechanism.
 Namely, you could find lots of ideas of this kind in
  science certain phylosophy Art(Visual, Performing, Literacture&amp;hellip;) in Art, a Decisive perspective layer usually put on descriptive ideas to construct a concrete work is sometimes refered to as style choice  example of descriptive perspective /There&amp;rsquo;s 4</description>
@@ -107,10 +107,10 @@ Namely, you could find lots of ideas of this kind in
     
     <item>
       <title>Errors</title>
-      <link>https://hermanhel.github.io/braindump/braindump/</link>
+      <link>/braindump/braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
+      <guid>/braindump/braindump/</guid>
       <description>Whoops!Whoops! Whoops!Whoops!
 Whoops! It seems like you&amp;rsquo;ve clicked a Broken Link&amp;hellip;&amp;hellip;very&amp;hellip;naughty&amp;hellip;?
 Broken link They present in 3 conditions:
@@ -119,20 +119,20 @@ Broken link They present in 3 conditions:
     
     <item>
       <title>generation experience</title>
-      <link>https://hermanhel.github.io/braindump/main/generation_experience/</link>
+      <link>/braindump/main/generation_experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/generation_experience/</guid>
+      <guid>/braindump/main/generation_experience/</guid>
       <description>experience with &amp;ldquo;generate/produce/create something&amp;rdquo; as paradigm/blueprint/storyline/objective.
 example  drawing when you dry to copy/analyse the object and create it on your paper writing when you are having a idea from scratch and examples, and are trying to put it to clear image/definition/illustration. playing jazz standard when you are finding ways to translate the lead sheet and finding riff/licks to use or improvising.  propositions you can do(or not do) anything in generation paradigm.</description>
     </item>
     
     <item>
       <title>Heapsort Tutorial</title>
-      <link>https://hermanhel.github.io/braindump/articles/heapsort_tutorial/</link>
+      <link>/braindump/articles/heapsort_tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/articles/heapsort_tutorial/</guid>
+      <guid>/braindump/articles/heapsort_tutorial/</guid>
       <description>Heapsort is a very fast sort taking advantage of heap&amp;rsquo;s structure. 堆排序是一个很快的排序算法. 它基本上是利用堆这个信息结构正规很方便的特性.
 What is Heap? 什么是堆? Heap is any Full Binary Tree satisfying the following conditions: 堆是一个满足以下条件的满二叉树:
   root &amp;lt; left_child, root &amp;lt; right_child.任何一个根结点 大于 其所有子节点 如果你使用一维数组的堆implementation, 那么数量关系可以表达为 \(h_i &amp;lt; h_{2i+1}, h_i &amp;lt; h_{2i+2}\)
@@ -144,10 +144,10 @@ sift过程:
     
     <item>
       <title>Herman the Machine</title>
-      <link>https://hermanhel.github.io/braindump/main/herman_the_machine/</link>
+      <link>/braindump/main/herman_the_machine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/herman_the_machine/</guid>
+      <guid>/braindump/main/herman_the_machine/</guid>
       <description>Herman the Machine kept rolling on this string of liffe and time&amp;hellip;
 This is a state of art machine, meaning it&amp;rsquo;s an organic collection/flow of machines I use on daily basis, rather than a machine with 1 sole purpose.
 kernel machine :: Entry point and REPL The purpose of this machine is to provide a simple interface to integrate machines and principles into my line of life.
@@ -156,10 +156,10 @@ The band holding my life and machines, principles, and roles.</description>
     
     <item>
       <title>Inbox</title>
-      <link>https://hermanhel.github.io/braindump/braindump/</link>
+      <link>/braindump/braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
+      <guid>/braindump/braindump/</guid>
       <description>蘇格拉底詰問程序 將蘇格拉底詰問法寫成formulated的算法,然後像doctor一樣實施,讓大家可以自己嘗試被詰問.
 *
 Document util conversion Pandoc pandoc is a program that translate a variety of formats sanely to another. written in haskell.
@@ -170,10 +170,10 @@ pandoc -s -f source.org -o output.docx -s : standalone. this flag make sure outp
     
     <item>
       <title>INT102</title>
-      <link>https://hermanhel.github.io/braindump/main/20220224134654-int102/</link>
+      <link>/braindump/main/20220224134654-int102/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/20220224134654-int102/</guid>
+      <guid>/braindump/main/20220224134654-int102/</guid>
       <description>Algorithm
 What&amp;rsquo;s covered in INT102 Big-O Divide &amp;amp; conquer Greedy Method Dynamic Programming Space-Time tradeoff P/NP Branch &amp;amp; Bound Horspool&amp;rsquo;s algorithm Bellman-Ford Algorithm Backtracking Branch &amp;amp; Bound UTS Deliver Plan Lectrue https://xjtlu.zhumu.com/j/6208331180
  DONELecture 1   DONELecture 2   DONELecture 3   DONELecture 4    DONELecture 5
@@ -184,10 +184,10 @@ Best move in each step. make for the current best choice
     
     <item>
       <title>KMP algorithm</title>
-      <link>https://hermanhel.github.io/braindump/braindump/</link>
+      <link>/braindump/braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
+      <guid>/braindump/braindump/</guid>
       <description>Knuth-Morris-Pratt String Search Algorithm is a Fast String Search algorithm.
 Fast Compared to the naive string search
    index 0 1 2 3 4 5     Time A A A A A B   1 A A A B     2  A A A B    3   A A A B    In which the comparisons is performed on the indices [0,1,2,3,1,2,3,4,2,3,4,5]</description>
@@ -195,20 +195,20 @@ Fast Compared to the naive string search
     
     <item>
       <title>knowledge</title>
-      <link>https://hermanhel.github.io/braindump/main/knowledge/</link>
+      <link>/braindump/main/knowledge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/knowledge/</guid>
+      <guid>/braindump/main/knowledge/</guid>
       <description>Knowledge is information gained by experience or education. A common category is:
  Fact Knowledge that is Dead True. Ususally, descriptive information of real things falls into Fact.  e.g.: history event and year, experiment result, axioms   Concept Knowledge that is Abstract. Usually, analytic systems, seperate atom point ofview and explanation of mechinism of nature fall into Concept.  e.g.: Demand &amp;amp; supply, Functional programming, Webber&amp;rsquo;s socialogy catorization.   Procedure Knowledge that is Executed  Utilization This category illustrate the utilization definition of knowledge: Knowledge is information that&#39;s useful.</description>
     </item>
     
     <item>
       <title>Linear Algebra</title>
-      <link>https://hermanhel.github.io/braindump/main/20220423190558-linear_algebra/</link>
+      <link>/braindump/main/20220423190558-linear_algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/20220423190558-linear_algebra/</guid>
+      <guid>/braindump/main/20220423190558-linear_algebra/</guid>
       <description>Linear Algebra is set of algebra formulated rules, formulated methods and found facts
 Resource  This note is originally a reading note on math4ml. I&amp;rsquo;m adding my own insights afterwards.  Spaces Vector space set of vectors defining:
  add operation: v1 + v2 scale operation: n * v1  propositions  0: x + 0 = x -x: for each x, exist -x + x = 0 1: 1x = x commutativity: x+y=y+x Associativity: (x+y)+z=x+(y+z),(ab)x=a(bx) Distributivity: a(x + y) = ax + ay  linear combination  set of vectors: \(V=\{v_1,v_2&amp;hellip;\}\) set of real numbers: \(R = \{a_1,a_2&amp;hellip;\}\) linear combination: \(a_1v_1 + a_2v_2+&amp;hellip;+a_nv_n\)  linear independent only combination of \(a_1v_1+a_2v_2+a_3v_3+&amp;hellip;=0\) is \(a_1 = a_2 = &amp;hellip; = 0\)</description>
@@ -216,20 +216,20 @@ Resource  This note is originally a reading note on math4ml. I&amp;rsquo;m addin
     
     <item>
       <title>Machine</title>
-      <link>https://hermanhel.github.io/braindump/main/20211104155334-machine/</link>
+      <link>/braindump/main/20211104155334-machine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/20211104155334-machine/</guid>
+      <guid>/braindump/main/20211104155334-machine/</guid>
       <description>Machine typically should contain below information:
  Flow of action. In similar format as Algorithm Notation Other than actions, materials and places should be spcified here also, like in algorithms. side-effects and benchmarks should also be noted, if any. Related Principles. Proof should be included in the principles&amp;rsquo; node. If the principle have no proof, note that [noProof] principle xxxx  Categories Purpose Project machines A machine could be constructed just for a particular project, with itself used for only once.</description>
     </item>
     
     <item>
       <title>Merge-sort</title>
-      <link>https://hermanhel.github.io/braindump/main/merge_sort/</link>
+      <link>/braindump/main/merge_sort/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/merge_sort/</guid>
+      <guid>/braindump/main/merge_sort/</guid>
       <description>a Divide &amp;amp; conquer algorithm to sort a seq.
 Algorithm 1. [devide] Represent the original seq by seq1 and seq2, where seq1 is seq[0..n/2], seq[n/2+1..n]
 2. [conquer]  [trivial condition] for a seq with 1 item, it&amp;rsquo;s sorted self is it self  3. [combine] merge compare car of 2 ordered seq. if sorted desc.ly, append the largest one to the end of the result list.
@@ -238,10 +238,10 @@ Proof devide and conquer is trivial for merge-sort.</description>
     
     <item>
       <title>meta-learning</title>
-      <link>https://hermanhel.github.io/braindump/reference/meta-learning/</link>
+      <link>/braindump/reference/meta-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/reference/meta-learning/</guid>
+      <guid>/braindump/reference/meta-learning/</guid>
       <description>Do research about ways to learn a thing before learning it.
 A principle and stage in learning that the writer Scott Young concluded.
 narrative Want to learn drawing
@@ -251,10 +251,10 @@ After meta-learning should know:
     
     <item>
       <title>Note-taking</title>
-      <link>https://hermanhel.github.io/braindump/main/20220508095438-note_taking/</link>
+      <link>/braindump/main/20220508095438-note_taking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/20220508095438-note_taking/</guid>
+      <guid>/braindump/main/20220508095438-note_taking/</guid>
       <description>Note-taking is a skill and art of writing notes to record one&amp;rsquo;s thinking
 Different flow could be seperately declared by:
  Material of reflex  reality(nature) article someone&amp;rsquo;s work tutorial/textbook   Time(context)  in leisure in work(about work) in class   objective  machine (to build a flow) principle (to test) facts plan (project machine)    Jethro&amp;rsquo;s Note taking I read Jethro&amp;rsquo;s How I take notes with Org-roam and was really inspired.</description>
@@ -262,10 +262,10 @@ Different flow could be seperately declared by:
     
     <item>
       <title>Note-taking machine</title>
-      <link>https://hermanhel.github.io/braindump/machine/note-taking-machine/</link>
+      <link>/braindump/machine/note-taking-machine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/machine/note-taking-machine/</guid>
+      <guid>/braindump/machine/note-taking-machine/</guid>
       <description>Note-taking machine listed ways I find ensuring principles/outcome and/or specifically tackle circumstances where note-taking could be not intuitive and/or when intuitive approach hides pitfalls.
 Machine Redrafting 3-pass method Taking note while reading articles Taking notes from live lecture Taking notes from video Taking notes from static material (blog,textbook) Notes in direct practice Experiment Research note with emphasis on meta-learning
 Literature review pitfalls Generally, all notes are good as long as they are relevent, concise, and make sence to me.</description>
@@ -273,10 +273,10 @@ Literature review pitfalls Generally, all notes are good as long as they are rel
     
     <item>
       <title>Operating System</title>
-      <link>https://hermanhel.github.io/braindump/main/20220328151029-operating_system/</link>
+      <link>/braindump/main/20220328151029-operating_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/20220328151029-operating_system/</guid>
+      <guid>/braindump/main/20220328151029-operating_system/</guid>
       <description>The Info comes most from MITOCW
 What&amp;rsquo;s coverd in OS Main Memory Mass storage I/O systems Archive MIT 6.S081 meta 6.s081. a website. qemu, a hardware simulation under linux xv6, a teaching OS, on RISC-V processor
 Overview   What Operating system do
@@ -287,10 +287,10 @@ Kernel have filesystem, process management, memory management&amp;hellip;codes.
     
     <item>
       <title>Relational Database</title>
-      <link>https://hermanhel.github.io/braindump/braindump/</link>
+      <link>/braindump/braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
+      <guid>/braindump/braindump/</guid>
       <description>Relational Model Relation table with columns and rows records(Tuples) with common attributes
 Attribute named column
          attribute 1 attrbute 2    Domain allowable values for Attribute e.g: Age ==&amp;gt; Positive Integer
@@ -303,10 +303,10 @@ Relation schema Definition of a relation Contains:
     
     <item>
       <title>Relational Database</title>
-      <link>https://hermanhel.github.io/braindump/main/20211011143205-relational_database/</link>
+      <link>/braindump/main/20211011143205-relational_database/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/20211011143205-relational_database/</guid>
+      <guid>/braindump/main/20211011143205-relational_database/</guid>
       <description>ca:PROPERTIES: :ID: 916112C1-589D-4FC2-B430-93EB989A1350
 Relational Model Relation table with columns and rows records(Tuples) with common attributes
 Attribute named column
@@ -319,19 +319,19 @@ Relation schema Definition of a relation Contains:</description>
     
     <item>
       <title>String Search</title>
-      <link>https://hermanhel.github.io/braindump/braindump/</link>
+      <link>/braindump/braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/braindump/</guid>
+      <guid>/braindump/braindump/</guid>
       <description></description>
     </item>
     
     <item>
       <title>style choice</title>
-      <link>https://hermanhel.github.io/braindump/main/style_choice/</link>
+      <link>/braindump/main/style_choice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/style_choice/</guid>
+      <guid>/braindump/main/style_choice/</guid>
       <description>style choice is a decisive layer on top of a Descriptive perspective to enable people (often artists) to make decision (on techniques), in order to create concrete work.
 inclusive standard usually, standards are exclusive, to make decision definite and unique. e.g.: in technology, standards are better overall performance, and on this dimension, there are no parallel consistent standard like leeser overall performance.
 Style, on the other hand, are disigned for Descriptive perspectives, which often with lesser objectives in better decision making, but cirtain effects to achieve.</description>
@@ -339,10 +339,10 @@ Style, on the other hand, are disigned for Descriptive perspectives, which often
     
     <item>
       <title>Tetris Project</title>
-      <link>https://hermanhel.github.io/braindump/project/tetris-project/</link>
+      <link>/braindump/project/tetris-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/project/tetris-project/</guid>
+      <guid>/braindump/project/tetris-project/</guid>
       <description>Statement of Requirement state representations field 10 * 20 grid field
 bricks 7 types of brricks, 19 possible brick shapes. 1 + 4 + 4 + 2 + 2 + 4 + 2
    O L(l) L(r) Z(l) Z(r) T I     1 4 4 2 2 4 2    state which slots of the field is filled with bricks
@@ -351,10 +351,10 @@ bricks 7 types of brricks, 19 possible brick shapes. 1 + 4 + 4 + 2 + 2 + 4 + 2
     
     <item>
       <title>Weekly Plan</title>
-      <link>https://hermanhel.github.io/braindump/main/20211011025228-weekly_plan/</link>
+      <link>/braindump/main/20211011025228-weekly_plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/main/20211011025228-weekly_plan/</guid>
+      <guid>/braindump/main/20211011025228-weekly_plan/</guid>
       <description>This machine is for Weekly Plan
 Schedule The Weekly Plan Machine call scheduled on every Saturday night Change if needed
 TODOWeekly Plan :LAST_REPEAT: [2022-03-18 Fri 16:46]Make Weekly Plan According to this machine
@@ -364,10 +364,10 @@ Flow 1. Assign time in [role-line-diet-machine] hierachy Normally 1 week I have 
     
     <item>
       <title>well-informed decision</title>
-      <link>https://hermanhel.github.io/braindump/reference/well-informed-decision/</link>
+      <link>/braindump/reference/well-informed-decision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/reference/well-informed-decision/</guid>
+      <guid>/braindump/reference/well-informed-decision/</guid>
       <description>Do research, and then make decision. Make sure the decision is backed with information of reality.
 a prinicple from Ray Daleo</description>
     </item>

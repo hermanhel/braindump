@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Herman&#39;s place</title>
-    <link>https://hermanhel.github.io/braindump/tags/</link>
+    <link>/braindump/tags/</link>
     <description>Recent content in Tags on Herman&#39;s place</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/braindump/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>algorithm</title>
-      <link>https://hermanhel.github.io/braindump/tags/algorithm/</link>
+      <link>/braindump/tags/algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/tags/algorithm/</guid>
+      <guid>/braindump/tags/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>article</title>
-      <link>https://hermanhel.github.io/braindump/tags/article/</link>
+      <link>/braindump/tags/article/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/tags/article/</guid>
+      <guid>/braindump/tags/article/</guid>
       <description></description>
     </item>
     
     <item>
       <title>draft</title>
-      <link>https://hermanhel.github.io/braindump/tags/draft/</link>
+      <link>/braindump/tags/draft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/tags/draft/</guid>
+      <guid>/braindump/tags/draft/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine</title>
-      <link>https://hermanhel.github.io/braindump/tags/machine/</link>
+      <link>/braindump/tags/machine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/tags/machine/</guid>
+      <guid>/braindump/tags/machine/</guid>
       <description></description>
     </item>
     
     <item>
       <title>project</title>
-      <link>https://hermanhel.github.io/braindump/tags/project/</link>
+      <link>/braindump/tags/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/tags/project/</guid>
+      <guid>/braindump/tags/project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>https://hermanhel.github.io/braindump/tags/tutorial/</link>
+      <link>/braindump/tags/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/tags/tutorial/</guid>
+      <guid>/braindump/tags/tutorial/</guid>
       <description></description>
     </item>
     

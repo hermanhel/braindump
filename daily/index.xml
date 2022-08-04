@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dailies on Herman&#39;s place</title>
-    <link>https://hermanhel.github.io/braindump/daily/</link>
+    <link>/braindump/daily/</link>
     <description>Recent content in Dailies on Herman&#39;s place</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://hermanhel.github.io/braindump/daily/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/braindump/daily/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022-05-02*</title>
-      <link>https://hermanhel.github.io/braindump/daily/2022-05-02/</link>
+      <link>/braindump/daily/2022-05-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/daily/2022-05-02/</guid>
+      <guid>/braindump/daily/2022-05-02/</guid>
       <description>PROPERTIES: :ID: 4FBDA423-3258-4C4E-BBA1-408DCA2D036B
 rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions are:
   not finding:
@@ -20,19 +20,19 @@ rewrite hermhel/org-find-headline-in-buffer-olp in cond fashion. the conditions 
     
     <item>
       <title>2022-07-10</title>
-      <link>https://hermanhel.github.io/braindump/daily/2022-07-10/</link>
+      <link>/braindump/daily/2022-07-10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/daily/2022-07-10/</guid>
+      <guid>/braindump/daily/2022-07-10/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2022-07-13</title>
-      <link>https://hermanhel.github.io/braindump/daily/2022-07-13/</link>
+      <link>/braindump/daily/2022-07-13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hermanhel.github.io/braindump/daily/2022-07-13/</guid>
+      <guid>/braindump/daily/2022-07-13/</guid>
       <description>KILL Write a state-of-art of the system me. TODOImplement org-super-agenda into my configuration I need:
  Lines ACTIVE tagged with line and agenda. Project PROJ tagged with agenda. Maintainance TODO tagged with maintainance.  DONEInstalling using package! DONEWRite the template and replace org-agenda. (let ((org-super-agenda-groups  &amp;#39;( 	;;Today 	(:name &amp;#34;Today&amp;#34; 	:time-grid t 	) 	;;lines 	(:name &amp;#34;Lines&amp;#34; 	:and (:todo &amp;#34;ACTIVE&amp;#34; 	:tag (&amp;#34;line&amp;#34; &amp;#34;agenda&amp;#34;))) 	;;project 	(:name &amp;#34;Projects&amp;#34; 	:and (:todo &amp;#34;PROJ&amp;#34; 	:tag &amp;#34;agenda&amp;#34;) 	) 	;;maintainance 	(:name &amp;#34;Maintainance&amp;#34; 	:tag &amp;#34;maintainance&amp;#34;) 	) 	))  (org-agenda nil &amp;#34;a&amp;#34;) 	) TODOanother test maintainance KILL test for tommorow DONEFind this package working not to my imaginiation The filter that is implicitly applied first is the date, that is, it only work on items collected by org-agenda.</description>
     </item>
